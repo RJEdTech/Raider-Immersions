@@ -58,3 +58,5 @@ a.card:hover{border-color:var(--rj)}
 .labs{margin-top:-14px}
 @media(max-width:600px){body{font-size:16px}.stat b{font-size:22px}}
 @media print{.tabs,.labs,.back,.btn{display:none}}
+
+.draft{background:var(--warn-bg);border:1px dashed var(--warn);border-radius:10px;padding:8px 14px;font-size:15px;margin:12px 0}
