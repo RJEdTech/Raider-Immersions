@@ -9,10 +9,10 @@ var app=$('#app');
 
 /* Altitude chart: every site against Denver's mile-high line */
 function altChart(list,hi){
-  var w=640,row=30,top=10,h=top+list.length*row+34,x0=150,x1=w-70,max=11000;
+  var nar=(window.innerWidth||800)<560,w=nar?400:640,row=30,top=10,h=top+list.length*row+34,x0=nar?128:150,x1=w-(nar?58:70),max=11000;
   var X=function(f){return x0+(x1-x0)*f/max};
   var s='<svg viewBox="0 0 '+w+' '+h+'" role="img" aria-label="Altitude of each immersion site compared with Denver">';
-  for(var g=0;g<=10000;g+=2500)s+='<line x1="'+X(g)+'" x2="'+X(g)+'" y1="'+top+'" y2="'+(h-26)+'" stroke="var(--g-grid)"/><text x="'+X(g)+'" y="'+(h-10)+'" font-size="12" text-anchor="middle" fill="var(--muted)">'+fmt(g)+' ft</text>';
+  for(var g=0;g<=10000;g+=(nar?5000:2500))s+='<line x1="'+X(g)+'" x2="'+X(g)+'" y1="'+top+'" y2="'+(h-26)+'" stroke="var(--g-grid)"/><text x="'+X(g)+'" y="'+(h-10)+'" font-size="12" text-anchor="middle" fill="var(--muted)">'+fmt(g)+' ft</text>';
   list.forEach(function(p,i){var y=top+i*row,me=hi&&p.id===hi;
     s+='<text x="'+(x0-8)+'" y="'+(y+19)+'" font-size="14" text-anchor="end" font-weight="'+(me?700:400)+'">'+esc(p.short)+'</text>'+
        '<rect x="'+x0+'" y="'+(y+5)+'" width="'+Math.max(2,X(p.ft)-x0)+'" height="18" rx="4" fill="'+(p.id==='denver'?'var(--muted)':me?'var(--rj)':'var(--s2)')+'"/>'+
