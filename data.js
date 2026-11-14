@@ -536,13 +536,13 @@ window.TOOLS={
  turnout:['Who votes? Turnout around the world',C],hiddenends:['The hidden ends: the richest and the poorest',C],
  minutesofwork:['What life costs, in minutes of work',M],costofliving:['Cost of living: more than a price tag',M],
  livingwage:['Build a living wage',M],povertypremium:['Why it costs more to have less',M],opportunity:['Where you grow up',M],zipscores:['Zip code and test scores',M],
- immigecon:['Immigration and the economy: what actually happens',C],claims:['Does the math hold up? Immigrants and taxes',C],twohomes:['Two homes, one subsidy',C],greenwood:['Greenwood: built, burned, rebuilt',C]};
+ twohomes:['Two homes, one subsidy',C],greenwood:['Greenwood: built, burned, rebuilt',C]};
 window.RELATED={
  peru:['northsouth','minutesofwork','whosehands','jubileedebt','livingwage','polygons'],
  quito:['minutesofwork','costofliving','livingwage','remittances','northsouth','polygons'],
  memphis:['redlining','twohomes','mutuality','opportunity','zipscores','povertypremium','pitcount'],
  zuni:['hiddenends','povertypremium','opportunity','turnout','polygons'],
- tijuana:['immigecon','claims','remittances','minutesofwork','livingwage'],
+ tijuana:['remittances','minutesofwork','livingwage','northsouth'],
  jfarm:['redlining','twohomes','opportunity','povertypremium','pitcount','mutuality'],
  honduras:['remittances','aidcuts','whosehands','minutesofwork','northsouth'],
  dr:['remittances','minutesofwork','livingwage','whosehands','jubileedebt']};
