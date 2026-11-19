@@ -25,7 +25,7 @@ function chartList(){var l=sites().slice();l.push({id:'denver',short:'Denver (ho
 function home(){
   document.title='Raider Immersions';
   var h='<p class="lede">One set of resources for every immersion: the place by its numbers, the barriers the people there face, the history and the Church there, and what to do before you go and after you come home.</p>'+
-   '<div class="grid">'+IMM.map(function(p){var r=p.status==='ready';
+   '<div class="grid">'+IMM.filter(function(p){return p.status!=='hold'}).map(function(p){var r=p.status==='ready';
      return (r?'<a class="card" href="#'+p.id+'">':'<div class="card soon">')+'<span class="badge'+(r?' ready':'')+'">'+(r?'Ready':'Coming next')+'</span><h3>'+esc(p.name)+'</h3><div class="meta">'+esc(p.place)+(r?'<br>'+fmt(miles(p))+' miles from Denver · '+fmt(p.ft)+' ft':'')+'</div>'+(r?'</a>':'</div>')}).join('')+'</div>'+
    '<h2>How high are you going?</h2><div class="chart">'+altChart(chartList())+'<p class="cap">The dashed red line is Denver, 5,280 feet. Two trips go well above it; plan for the altitude.</p></div>'+
    '<h2>Barriers: eight areas, one claim</h2><p class="lede">Each immersion has eight barrier areas. Each one asks you to find one number, check it, and pull it apart: how much of this barrier is <b>nature</b>, how much is <b>luck</b>, and how much was <b>built</b> by people who could decide otherwise. Then ask who gains.</p>';

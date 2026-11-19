@@ -63,7 +63,7 @@ window.IMM = [
    further:['Illiteracy among women whose first language is indigenous.','Farm size by gender.','How many Centros Emergencia Mujer serve the province.'],
    where:[['ONPE / JNE — election authorities','https://www.onpe.gob.pe/','District results by candidate.'],['INEI — Cusco census volume','https://www.inei.gob.pe/media/MenuRecursivo/publicaciones_digitales/Est/Lib1559/08TOMO_01.pdf','pp. 36–37 side by side.']],
    nature:'None.',luck:'None.',built:'All of it: who can stand for election, whose name is on the title, who was sent to school, where the emergency office was built.',
-   gains:'The people who hold the positions and titles; and unpaid work is a subsidy to everyone who benefits from it.',carry:'A woman said: “If we have money, they do not abuse us anymore.” What is the argument?'}
+   gains:'The people who hold the positions and titles; and unpaid work is a subsidy to everyone who benefits from it.',carry:'When women in a community earn their own money, what changes about who gets heard, and why?'}
  ]},
 
 {id:'quito',name:'Quito, Ecuador',short:'Quito',flag:'EC',status:'ready',
@@ -194,7 +194,7 @@ window.IMM = [
    gains:'Whoever already votes in high numbers.',carry:'What would the sanitation workers ask of you?'}
  ]},
 
-{id:'zuni',name:'Zuni Pueblo, New Mexico',short:'Zuni',flag:'US',status:'ready',
+{id:'zuni',name:'Zuni Pueblo, New Mexico',short:'Zuni',flag:'US',status:'hold',
  place:'The Pueblo of Zuni (A:shiwi), western New Mexico, about 40 miles south of Gallup',partner:'Deer Hill Expeditions (check your section), with the Zuni community',partnerNote:'Some sections call this the New Mexico immersion. A six-day cross-cultural experience of community service, learning and relationships with the Zuni people, a sovereign nation with its own government, language (Shiwi’ma) and religion on its ancestral homeland.',
  ft:6300,lat:35.07,lon:-108.85,lang:'Shiwi’ma (Zuni) and English',
  church:'Spanish Franciscans built a mission at Hawikku in 1629; in the Pueblo Revolt of 1680 the Zuni and other Pueblos drove the Spanish out. Our Lady of Guadalupe Mission and St. Anthony Indian School serve Catholics in Zuni today, alongside Zuni religion.',
