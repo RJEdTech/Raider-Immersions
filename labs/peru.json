@@ -294,6 +294,156 @@
    },
    "notice": "The same amount costs the family with papers, a contract and a group a little, and the family with none of them a lot. The poorest borrower pays the highest price.",
    "yourCall": "What would it take for this family to borrow at the bank's rate, and whose rule is it to change?"
+  },
+  "WHO": {
+   "kind": "WhoDecides",
+   "title": "Who decides for Quispicanchi?",
+   "question": "Seven decisions that shape life in the South Valley. Who made each one: the comunidad, Cusco, or Lima?",
+   "levels": [
+    {
+     "id": "com",
+     "label": "The comunidad",
+     "home": true
+    },
+    {
+     "id": "cus",
+     "label": "Cusco (region and towns)"
+    },
+    {
+     "id": "lima",
+     "label": "Lima (national)"
+    }
+   ],
+   "decisions": [
+    {
+     "q": "Who farms which plot",
+     "level": "com",
+     "detail": "Most land is held through the comunidad campesina, not as private titles, and families farm small plots scattered across the mountain.",
+     "src": "Peru packet, Barrier 1",
+     "mark": "ok"
+    },
+    {
+     "q": "When the irrigation canals are cleaned",
+     "level": "com",
+     "detail": "Canals are kept up by faenas, communal work days the community organizes.",
+     "src": "Peru packet, Barrier 2",
+     "mark": "ok"
+    },
+    {
+     "q": "How the Cusco tourist-ticket money is split",
+     "level": "lima",
+     "detail": "National law splits it: 40% to district towns, 30% to the Ministry of Culture, 20% to provinces and 10% to regional tourism.",
+     "src": "Ley 28719 (recheck against Ley 32586, May 2026)",
+     "mark": "care"
+    },
+    {
+     "q": "Whether towns may spend ticket money on clean water",
+     "level": "lima",
+     "detail": "The national rules limit what the money may pay for. The Comptroller found ten Cusco towns, Quispicanchi among them, spent S/104 million on uses not allowed, such as water and sanitation (2018–19).",
+     "src": "Contraloría via Gestión (Peru packet)",
+     "mark": "ok"
+    },
+    {
+     "q": "School meals in Cusco's schools",
+     "level": "lima",
+     "detail": "A national program, Wasi Mikuna, served 204,560 students in 4,105 Cusco schools at the end of 2024.",
+     "src": "MIDIS to Congress, Feb 2025 (Peru packet)",
+     "mark": "ok"
+    },
+    {
+     "q": "Who became president in 2026",
+     "level": "lima",
+     "detail": "A national vote: Keiko Fujimori won the runoff with 50.1%, carried by metropolitan Lima, while the south voted heavily for Roberto Sánchez.",
+     "src": "Rio Times; GeoCurrents",
+     "mark": "ok",
+     "url": "https://www.riotimesonline.com/?p=708464"
+    },
+    {
+     "q": "Bringing agencies together on femicide and family violence in the region",
+     "level": "cus",
+     "detail": "In September 2026 Cusco's regional governor convened the region's agencies to act on femicide and family violence.",
+     "src": "Gobierno Regional Cusco",
+     "mark": "ok",
+     "url": "https://www.gob.pe/institucion/regioncusco/noticias/1450600-cusco-cierra-filas-contra-la-violencia-gobernador-werner-salcedo-exige-accion-firme-para-proteger-a-mujeres-y-familias-de-la-region"
+    }
+   ],
+   "notice": "The comunidad decides a great deal about land and water close to home. The money, the rules for spending it and the national vote are decided in Lima. Both are true at once.",
+   "yourCall": "What does the comunidad decide for itself that your own neighborhood does not? What would you hand to it, and what to Lima?",
+   "denver": {
+    "levels": [
+     {
+      "id": "city",
+      "label": "Denver",
+      "home": true
+     },
+     {
+      "id": "state",
+      "label": "The state (Colorado)"
+     },
+     {
+      "id": "fed",
+      "label": "Washington (federal)"
+     }
+    ],
+    "decisions": [
+     {
+      "q": "The lowest wage a Denver employer may pay",
+      "level": "city",
+      "detail": "Denver sets its own minimum wage, $19.29 an hour in 2026, after Colorado let cities do so in 2019.",
+      "src": "Denver Department of Finance, Aug 2025",
+      "mark": "ok",
+      "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/News/2025/Denver-Local-Minimum-Wage-Adjusts-to-19.29-per-Hour-for-2026"
+     },
+     {
+      "q": "Whether Denver workers get paid family and medical leave",
+      "level": "state",
+      "detail": "Colorado voters approved FAMLI in 2020; it pays up to 12 weeks. A separate 2020 state law gives paid sick leave at employers of every size.",
+      "src": "Denver shared mirror (FAMLI; Healthy Families and Workplaces Act)",
+      "mark": "ok",
+      "url": "https://famli.colorado.gov/"
+     },
+     {
+      "q": "Who draws Colorado's congressional districts",
+      "level": "state",
+      "detail": "An independent 12-member commission, created when voters passed Amendment Y in 2018, took the job from the legislature.",
+      "src": "Colorado Independent Redistricting Commissions",
+      "mark": "ok",
+      "url": "https://redistricting.colorado.gov/content/congressional-redistricting"
+     },
+     {
+      "q": "Whether Denver police use license-plate cameras",
+      "level": "city",
+      "detail": "The city council rejected a Flock contract extension unanimously in May 2025, the mayor extended it with new limits, and in 2026 the council approved 50 Axon cameras, 7 to 6.",
+      "src": "Colorado Politics; Denver7",
+      "mark": "ok",
+      "url": "https://www.denver7.com/news/local-news/denver-city-council-narrowly-approves-axon-contract-to-replace-flock-cameras"
+     },
+     {
+      "q": "How Coloradans vote, and whether people on parole may vote",
+      "level": "state",
+      "detail": "Colorado mails every registered voter a ballot, registers voters automatically, and since 2019 lets people on parole vote.",
+      "src": "Colorado Secretary of State; Colorado Springs Gazette",
+      "mark": "ok",
+      "url": "https://www.coloradosos.gov/pubs/newsRoom/pressReleases/2020/PR20200519VoterReg.html"
+     },
+     {
+      "q": "Whether a low-wage Denver parent can get Medicaid",
+      "level": "state",
+      "detail": "Colorado expanded Medicaid under the Affordable Care Act: adults qualify up to about 133% of the poverty level.",
+      "src": "Denver shared mirror (Health First Colorado, HCPF)",
+      "mark": "ok",
+      "url": "https://hcpf.colorado.gov/"
+     },
+     {
+      "q": "Whether those Medicaid adults must report work hours from 2027",
+      "level": "fed",
+      "detail": "The 2025 federal budget law adds work or community-engagement requirements for expansion adults from January 1, 2027, in every expansion state.",
+      "src": "Denver shared mirror (H.R. 1, 2025)",
+      "mark": "ok",
+      "url": "https://hcpf.colorado.gov/"
+     }
+    ]
+   }
   }
  },
  "replace": [

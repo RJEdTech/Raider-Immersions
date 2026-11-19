@@ -206,6 +206,161 @@
    "start": {
     "bank": true
    }
+  },
+  "WHO": {
+   "kind": "WhoDecides",
+   "title": "Who decides for D.C.?",
+   "question": "Seven decisions about life in the nation's capital. Who made each one: D.C.'s own government, Congress, or the president?",
+   "levels": [
+    {
+     "id": "city",
+     "label": "D.C. (mayor and council)",
+     "home": true
+    },
+    {
+     "id": "cong",
+     "label": "Congress"
+    },
+    {
+     "id": "pres",
+     "label": "The president"
+    }
+   ],
+   "decisions": [
+    {
+     "q": "Whether a law the D.C. Council passes takes effect",
+     "level": "cong",
+     "detail": "Every D.C. act goes to Congress for a review period (30 days, 60 for criminal law), and Congress can block it; it did in 2023 with D.C.'s criminal code rewrite.",
+     "src": "Congressional Research Service",
+     "mark": "ok",
+     "url": "https://www.everycrsreport.com/reports/IN12122.html"
+    },
+    {
+     "q": "D.C.'s budget",
+     "level": "cong",
+     "detail": "The Home Rule Act lets Congress disapprove the city's laws, including its annual budget.",
+     "src": "Congressional Research Service",
+     "mark": "ok",
+     "url": "https://www.everycrsreport.com/reports/R44099.html"
+    },
+    {
+     "q": "Who controlled D.C.'s police in August 2025",
+     "level": "pres",
+     "detail": "The president declared a public-safety emergency and took control of the Metropolitan Police; the city went to court and the administration partly retreated.",
+     "src": "AP via Yahoo News",
+     "mark": "ok",
+     "url": "https://www.yahoo.com/news/articles/president-trump-ramps-takeover-washingtons-164400281.html"
+    },
+    {
+     "q": "Whether the National Guard patrols D.C.",
+     "level": "pres",
+     "detail": "The D.C. Guard is the only Guard unit that reports to the president alone; by August 2026 the deployment had grown to 4,636 troops from 23 states.",
+     "src": "Axios; Boston Globe",
+     "mark": "ok",
+     "url": "https://www.bostonglobe.com/2026/08/10/nation/trump-washington-takeover-national-guard/"
+    },
+    {
+     "q": "Whether D.C.'s member of Congress can vote on final passage of a bill",
+     "level": "cong",
+     "detail": "D.C.'s delegate votes in committee but not on final passage in the full House; whether she may vote on amendments depends on House rules set by the majority.",
+     "src": "Washington Times, 2017; Office of Del. Norton",
+     "mark": "ok",
+     "url": "https://norton.house.gov/media-center/press-releases/norton-votes-on-house-floor-in-committee-of-the-whole"
+    },
+    {
+     "q": "Paid family leave for D.C. workers",
+     "level": "city",
+     "detail": "D.C. Paid Family Leave is a local law: up to 12 weeks for a new baby, 10 for your own illness, at 90% of pay for lower-wage workers.",
+     "src": "D.C. Code § 32-541.04",
+     "mark": "ok",
+     "url": "https://code.dccouncil.gov/us/dc/council/code/sections/32-541.04"
+    },
+    {
+     "q": "Clearing homeless encampments from federal parkland in D.C.",
+     "level": "pres",
+     "detail": "In August 2025 the White House said U.S. Park Police had removed about 70 encampments, offering shelter or treatment.",
+     "src": "AP via Philadelphia Inquirer",
+     "mark": "ok",
+     "url": "https://www.inquirer.com/news/nation-world/trump-washington-dc-national-guard-troops-20250812.html"
+    }
+   ],
+   "notice": "D.C. elects a mayor and council, but most of the big levers sit with people D.C. residents do not elect. Compare Denver, where most of the same decisions are made by people Denver voters elect.",
+   "yourCall": "Is there a reason the capital should be governed differently from a state? Give the best case for it and the best case against it.",
+   "denver": {
+    "levels": [
+     {
+      "id": "city",
+      "label": "Denver",
+      "home": true
+     },
+     {
+      "id": "state",
+      "label": "The state (Colorado)"
+     },
+     {
+      "id": "fed",
+      "label": "Washington (federal)"
+     }
+    ],
+    "decisions": [
+     {
+      "q": "The lowest wage a Denver employer may pay",
+      "level": "city",
+      "detail": "Denver sets its own minimum wage, $19.29 an hour in 2026, after Colorado let cities do so in 2019.",
+      "src": "Denver Department of Finance, Aug 2025",
+      "mark": "ok",
+      "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/News/2025/Denver-Local-Minimum-Wage-Adjusts-to-19.29-per-Hour-for-2026"
+     },
+     {
+      "q": "Whether Denver workers get paid family and medical leave",
+      "level": "state",
+      "detail": "Colorado voters approved FAMLI in 2020; it pays up to 12 weeks. A separate 2020 state law gives paid sick leave at employers of every size.",
+      "src": "Denver shared mirror (FAMLI; Healthy Families and Workplaces Act)",
+      "mark": "ok",
+      "url": "https://famli.colorado.gov/"
+     },
+     {
+      "q": "Who draws Colorado's congressional districts",
+      "level": "state",
+      "detail": "An independent 12-member commission, created when voters passed Amendment Y in 2018, took the job from the legislature.",
+      "src": "Colorado Independent Redistricting Commissions",
+      "mark": "ok",
+      "url": "https://redistricting.colorado.gov/content/congressional-redistricting"
+     },
+     {
+      "q": "Whether Denver police use license-plate cameras",
+      "level": "city",
+      "detail": "The city council rejected a Flock contract extension unanimously in May 2025, the mayor extended it with new limits, and in 2026 the council approved 50 Axon cameras, 7 to 6.",
+      "src": "Colorado Politics; Denver7",
+      "mark": "ok",
+      "url": "https://www.denver7.com/news/local-news/denver-city-council-narrowly-approves-axon-contract-to-replace-flock-cameras"
+     },
+     {
+      "q": "How Coloradans vote, and whether people on parole may vote",
+      "level": "state",
+      "detail": "Colorado mails every registered voter a ballot, registers voters automatically, and since 2019 lets people on parole vote.",
+      "src": "Colorado Secretary of State; Colorado Springs Gazette",
+      "mark": "ok",
+      "url": "https://www.coloradosos.gov/pubs/newsRoom/pressReleases/2020/PR20200519VoterReg.html"
+     },
+     {
+      "q": "Whether a low-wage Denver parent can get Medicaid",
+      "level": "state",
+      "detail": "Colorado expanded Medicaid under the Affordable Care Act: adults qualify up to about 133% of the poverty level.",
+      "src": "Denver shared mirror (Health First Colorado, HCPF)",
+      "mark": "ok",
+      "url": "https://hcpf.colorado.gov/"
+     },
+     {
+      "q": "Whether those Medicaid adults must report work hours from 2027",
+      "level": "fed",
+      "detail": "The 2025 federal budget law adds work or community-engagement requirements for expansion adults from January 1, 2027, in every expansion state.",
+      "src": "Denver shared mirror (H.R. 1, 2025)",
+      "mark": "ok",
+      "url": "https://hcpf.colorado.gov/"
+     }
+    ]
+   }
   }
  },
  "replace": [

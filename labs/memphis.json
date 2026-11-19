@@ -221,6 +221,177 @@
    "start": {
     "bank": true
    }
+  },
+  "WHO": {
+   "kind": "WhoDecides",
+   "title": "Who decides for Memphis?",
+   "question": "Nine decisions that shape a Memphis family's week. Who made each one: the city, the state in Nashville, or Washington?",
+   "levels": [
+    {
+     "id": "city",
+     "label": "Memphis or Shelby County",
+     "home": true
+    },
+    {
+     "id": "state",
+     "label": "Nashville (the state)"
+    },
+    {
+     "id": "fed",
+     "label": "Washington (federal)"
+    }
+   ],
+   "decisions": [
+    {
+     "q": "The lowest wage a Memphis employer may pay",
+     "level": "state",
+     "detail": "Tennessee has no state minimum wage, so the federal $7.25 applies, and a 2013 state law bars cities and counties from requiring private employers to pay more.",
+     "src": "Tenn. Code § 50-2-112",
+     "mark": "ok",
+     "url": "https://law.justia.com/codes/tennessee/2019/title-50/chapter-2/part-1/section-50-2-112/"
+    },
+    {
+     "q": "Whether Memphis workers get paid sick leave",
+     "level": "state",
+     "detail": "The same 2013 law bars local governments from requiring leave policies beyond state and federal law.",
+     "src": "HR Daily Advisor, on Tennessee's 2013 law",
+     "mark": "ok",
+     "url": "https://hrdailyadvisor.com/?p=47382"
+    },
+    {
+     "q": "Who represents Memphis in Congress",
+     "level": "state",
+     "detail": "In May 2026 the legislature split the 9th District, the state's only majority-Black district, into three, and the governor signed the map the same day. The NAACP sued in state court.",
+     "src": "AP via Atlanta Journal-Constitution",
+     "mark": "ok",
+     "url": "https://www.ajc.com/news/2026/05/tennessee-enacts-new-us-house-map-carving-up-majority-black-district-in-memphis/"
+    },
+    {
+     "q": "Who controls the budget and the superintendent of Memphis-Shelby County Schools",
+     "level": "state",
+     "detail": "A 2026 state law created a nine-member board appointed by the governor and the two legislative speakers, with final say over the budget, large contracts and the superintendent until 2030. The district and the county commission sued.",
+     "src": "Chalkbeat Tennessee",
+     "mark": "ok",
+     "url": "https://www.chalkbeat.org/tennessee/2026/05/22/memphis-schools-takeover-becomes-law/"
+    },
+    {
+     "q": "Whether federal agents and the National Guard patrol Memphis streets",
+     "level": "fed",
+     "detail": "A presidential memorandum created the Memphis Safe Task Force, which began on September 29, 2025, with the governor's support for the Guard.",
+     "src": "WTVF NewsChannel 5",
+     "mark": "ok",
+     "url": "https://www.newschannel5.com/news/trump-signs-order-deploying-national-guard-to-memphis-to-combat-crime"
+    },
+    {
+     "q": "Whether the Justice Department's findings on Memphis police still stand",
+     "level": "fed",
+     "detail": "The department found a pattern of excessive force and discrimination in December 2024, then closed the case and retracted the findings in May 2025.",
+     "src": "Tennessee Lookout",
+     "mark": "ok",
+     "url": "https://tennesseelookout.com/2025/05/21/department-of-justice-scraps-memphis-police-investigation/"
+    },
+    {
+     "q": "Whether Memphis would negotiate a federal consent decree on policing in 2024",
+     "level": "city",
+     "detail": "The city told the Justice Department it would not enter an agreement in principle; the police chief pointed to changes already made.",
+     "src": "CNN via ABC17",
+     "mark": "ok",
+     "url": "https://abc17news.com/?p=1403598"
+    },
+    {
+     "q": "When someone with a felony record can vote again",
+     "level": "state",
+     "detail": "A 2026 state law dropped the rule that all court costs be paid first and eased the child-support rule; Tennessee still has more than 400,000 people who cannot vote because of a felony.",
+     "src": "Tennessee Lookout",
+     "mark": "ok",
+     "url": "https://tennesseelookout.com/2026/03/17/lawmakers-ease-financial-hurdles-for-regaining-voting-rights-after-felony-convictions/"
+    },
+    {
+     "q": "Whether a low-wage Memphis parent can get Medicaid",
+     "level": "state",
+     "detail": "Tennessee has not expanded Medicaid; TennCare covers a parent only up to 100% of the poverty level.",
+     "src": "TennCare eligibility guide (Memphis packet)",
+     "mark": "ok",
+     "url": "https://www.tn.gov/tenncare/members-applicants/eligibility-reference-guide.html"
+    }
+   ],
+   "notice": "Count where each decision was made. Then run it in Denver, where the city sets its own wage. The frustration is not only what was decided, but how little of it was decided in Memphis.",
+   "yourCall": "Pick one decision made in Nashville. Who would have to agree for Memphis to decide it for itself, and what would they say?",
+   "denver": {
+    "levels": [
+     {
+      "id": "city",
+      "label": "Denver",
+      "home": true
+     },
+     {
+      "id": "state",
+      "label": "The state (Colorado)"
+     },
+     {
+      "id": "fed",
+      "label": "Washington (federal)"
+     }
+    ],
+    "decisions": [
+     {
+      "q": "The lowest wage a Denver employer may pay",
+      "level": "city",
+      "detail": "Denver sets its own minimum wage, $19.29 an hour in 2026, after Colorado let cities do so in 2019.",
+      "src": "Denver Department of Finance, Aug 2025",
+      "mark": "ok",
+      "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/News/2025/Denver-Local-Minimum-Wage-Adjusts-to-19.29-per-Hour-for-2026"
+     },
+     {
+      "q": "Whether Denver workers get paid family and medical leave",
+      "level": "state",
+      "detail": "Colorado voters approved FAMLI in 2020; it pays up to 12 weeks. A separate 2020 state law gives paid sick leave at employers of every size.",
+      "src": "Denver shared mirror (FAMLI; Healthy Families and Workplaces Act)",
+      "mark": "ok",
+      "url": "https://famli.colorado.gov/"
+     },
+     {
+      "q": "Who draws Colorado's congressional districts",
+      "level": "state",
+      "detail": "An independent 12-member commission, created when voters passed Amendment Y in 2018, took the job from the legislature.",
+      "src": "Colorado Independent Redistricting Commissions",
+      "mark": "ok",
+      "url": "https://redistricting.colorado.gov/content/congressional-redistricting"
+     },
+     {
+      "q": "Whether Denver police use license-plate cameras",
+      "level": "city",
+      "detail": "The city council rejected a Flock contract extension unanimously in May 2025, the mayor extended it with new limits, and in 2026 the council approved 50 Axon cameras, 7 to 6.",
+      "src": "Colorado Politics; Denver7",
+      "mark": "ok",
+      "url": "https://www.denver7.com/news/local-news/denver-city-council-narrowly-approves-axon-contract-to-replace-flock-cameras"
+     },
+     {
+      "q": "How Coloradans vote, and whether people on parole may vote",
+      "level": "state",
+      "detail": "Colorado mails every registered voter a ballot, registers voters automatically, and since 2019 lets people on parole vote.",
+      "src": "Colorado Secretary of State; Colorado Springs Gazette",
+      "mark": "ok",
+      "url": "https://www.coloradosos.gov/pubs/newsRoom/pressReleases/2020/PR20200519VoterReg.html"
+     },
+     {
+      "q": "Whether a low-wage Denver parent can get Medicaid",
+      "level": "state",
+      "detail": "Colorado expanded Medicaid under the Affordable Care Act: adults qualify up to about 133% of the poverty level.",
+      "src": "Denver shared mirror (Health First Colorado, HCPF)",
+      "mark": "ok",
+      "url": "https://hcpf.colorado.gov/"
+     },
+     {
+      "q": "Whether those Medicaid adults must report work hours from 2027",
+      "level": "fed",
+      "detail": "The 2025 federal budget law adds work or community-engagement requirements for expansion adults from January 1, 2027, in every expansion state.",
+      "src": "Denver shared mirror (H.R. 1, 2025)",
+      "mark": "ok",
+      "url": "https://hcpf.colorado.gov/"
+     }
+    ]
+   }
   }
  },
  "replace": [

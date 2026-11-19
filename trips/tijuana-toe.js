@@ -1215,6 +1215,111 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
      }
     ]
    }
+  },
+  "HOURS": {
+   "kind": "HoursOfWork",
+   "title": "Hours of work: Tijuana, San Diego, Denver",
+   "question": "The same household needs food, rent and bus rides. How many hours of minimum-wage work does that take on each side of the wall, and in Denver?",
+   "people": 4,
+   "rides": 44,
+   "notice": "Measured in hours, not dollars or pesos, there is no exchange rate to argue about. Tijuana's food basket alone takes more hours than a Denver family's food and many bus rides together. The rent is the open question: no source yet gives a colonia rent, so you set it.",
+   "yourCall": "How many full-time earners does the Tijuana household need at your rent? Who in the family would that be, and what would they stop doing?",
+   "places": [
+    {
+     "id": "tj",
+     "label": "Tijuana",
+     "cur": "MX$",
+     "wage": 64.29354166666667,
+     "month": 208,
+     "wageText": "440.87 pesos a day (2026), about 64 pesos an hour on a 48-hour week (our arithmetic: a daily wage also pays the rest day)",
+     "wageSrc": {
+      "src": "CONASAMI via Tijuana packet",
+      "url": "https://www.gob.mx/conasami"
+     },
+     "food": {
+      "pp": 2590.61,
+      "text": "INEGI's urban food basket: 2,590.61 pesos per person a month (Sept 2026).",
+      "src": "INEGI, Líneas de pobreza por ingresos",
+      "url": "https://www.inegi.org.mx/temas/lineas/"
+     },
+     "rent": {
+      "amt": null,
+      "guess": 5000,
+      "min": 1000,
+      "max": 15000,
+      "step": 250,
+      "label": "Rent in a Tijuana colonia (your estimate)",
+      "note": "No source yet gives a colonia rent. Set your own estimate and say so in your answer.",
+      "text": "Your estimate.",
+      "src": "not yet sourced"
+     },
+     "bus": {
+      "fare": 15,
+      "text": "Most routes charged 15 pesos until October 2026; some now charge 18–20 without approval.",
+      "src": "Zeta Tijuana, Nov 2026",
+      "url": "https://zetatijuana.com/2026/11/por-falta-de-acuerdos-con-imos-transportistas-aplican-tarifazo-en-rutas-de-tijuana/"
+     }
+    },
+    {
+     "id": "sd",
+     "label": "San Diego",
+     "cur": "$",
+     "wage": 17.75,
+     "month": 173,
+     "wageText": "$17.75 an hour in the city of San Diego (2026)",
+     "wageSrc": {
+      "src": "City of San Diego",
+      "url": "https://www.sandiego.gov/sites/default/files/2025-12/2025-12-31-city-of-san-diego-hourly-minimum-wage-will-increase-to-17.75-effective-jan-1-2026.pdf"
+     },
+     "food": {
+      "pp": 254.55,
+      "text": "USDA Thrifty Food Plan: $1,018.20 a month for a family of four (June 2026), about $255 a person (our arithmetic). National, not San Diego prices.",
+      "src": "USDA Thrifty Food Plan via WTOP",
+      "url": "https://wtop.com/news/2026/07/how-much-should-i-spend-on-groceries/"
+     },
+     "rent": {
+      "amt": 2270,
+      "text": "Average one-bedroom rent: $2,270 (Nov 2026).",
+      "src": "Rentometer",
+      "url": "https://www.rentometer.com/average-rent-in/ca/san-diego-ca"
+     },
+     "bus": {
+      "fare": 3.0,
+      "text": "One-way MTS fare: $3 since October 1, 2026.",
+      "src": "San Diego MTS",
+      "url": "https://www.sdmts.com/sites/default/files/attachments/september-service-change-2026-web.pdf"
+     }
+    },
+    {
+     "id": "den",
+     "label": "Denver",
+     "cur": "$",
+     "wage": 19.29,
+     "month": 173,
+     "wageText": "$19.29 an hour in Denver (2026)",
+     "wageSrc": {
+      "src": "Denver Department of Finance",
+      "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/News/2025/Denver-Local-Minimum-Wage-Adjusts-to-19.29-per-Hour-for-2026"
+     },
+     "food": {
+      "pp": 254.55,
+      "text": "USDA Thrifty Food Plan: $1,018.20 a month for a family of four (June 2026), about $255 a person (our arithmetic). National, not Denver prices.",
+      "src": "USDA Thrifty Food Plan via WTOP",
+      "url": "https://wtop.com/news/2026/07/how-much-should-i-spend-on-groceries/"
+     },
+     "rent": {
+      "amt": 1874,
+      "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
+      "src": "USAFacts (Denver mirror D-HOUSING)"
+     },
+     "bus": {
+      "fare": 2.75,
+      "text": "RTD standard fare: $2.75 for a three-hour pass.",
+      "src": "RTD",
+      "url": "https://www.rtd-denver.com/fares"
+     }
+    }
+   ]
   }
  }
 };

@@ -94,3 +94,16 @@ a.card:hover{border-color:var(--rj)}
 .fences{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}.fence{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px}.fence p{margin:4px 0 0}
 a.area-btn{text-decoration:none;display:block}a.area-btn[aria-current=true]{border-color:var(--rj)}
 details summary{cursor:pointer}
+
+/* who decides, hours of work */
+.wd{border:1px solid var(--line,#ddd);border-radius:10px;padding:10px 12px;margin:10px 0;background:var(--card,#fff)}
+.wd .wq{margin:0 0 6px;font-weight:600}
+.wd .sort button.right{background:#e5f4e4;border-color:#2e7d32;color:#1b5e20}
+.wd .sort button.wrong{background:#fbebeb;border-color:#b71c1c;color:#8e1515}
+.wdbar{display:grid;grid-template-columns:minmax(120px,38%) 1fr 2em;gap:8px;align-items:center;margin:4px 0}
+.wdbar .bar{height:14px;background:#eee;border-radius:7px;overflow:hidden;display:block}
+.wdbar .bar .sg{display:block;height:100%}
+button.linkish{background:none;border:0;color:var(--rj,#a6192e);text-decoration:underline;cursor:pointer;padding:0;font:inherit}
+.stack.hw{position:relative}
+.stack .mark,.legend .mark{position:absolute;top:-4px;bottom:-4px;width:3px;background:#222}
+.legend .mark.inline{position:relative;display:inline-block;height:14px;vertical-align:middle;top:0}

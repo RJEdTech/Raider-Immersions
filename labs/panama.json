@@ -149,6 +149,135 @@
     "Two counters"
    ],
    "caption": "Each dot is one person out of 100 in the Comarca Ngäbe-Buglé. Every number is honest: what changed is the measure, the year, or who did the counting."
+  },
+  "WHO": {
+   "kind": "WhoDecides",
+   "title": "Who decides for the Ngäbe?",
+   "question": "Four decisions about land, pensions and mining. Who made each one: the comarca, Panama's national government, or the courts?",
+   "levels": [
+    {
+     "id": "com",
+     "label": "The comarca",
+     "home": true
+    },
+    {
+     "id": "nat",
+     "label": "Panama's national government"
+    },
+    {
+     "id": "court",
+     "label": "The courts"
+    }
+   ],
+   "decisions": [
+    {
+     "q": "Creating the Comarca Ngäbe-Buglé and holding its land in common",
+     "level": "nat",
+     "detail": "The comarca was created by national law in 1997, after decades of Ngäbe organizing; its land is held collectively.",
+     "src": "Ley 10 de 1997 (Panama packet)",
+     "mark": "care"
+    },
+    {
+     "q": "Marking the boundaries of the comarca's annex areas",
+     "level": "nat",
+     "detail": "The 1997 law requires it, and it is still not done: in May 2026 Ngäbe leaders told a UN forum that about 150,000 people lack secure land as a result.",
+     "src": "La Estrella de Panamá",
+     "mark": "ok",
+     "url": "https://www.laestrella.com.pa/panama/nacional/lideres-ngabe-denuncian-ante-la-onu-desalojos-y-abusos-en-bocas-del-toro-EE22519269"
+    },
+    {
+     "q": "The 2025 social security reform (Law 462)",
+     "level": "nat",
+     "detail": "The National Assembly passed it in March 2025; protests in the comarca followed, and the government declared a state of emergency in neighboring Bocas del Toro.",
+     "src": "Front Line Defenders",
+     "mark": "ok",
+     "url": "https://frontlinedefenders.org/tr/node/8917"
+    },
+    {
+     "q": "Whether the Cobre Panamá mine contract stood",
+     "level": "court",
+     "detail": "After nationwide protests, the Supreme Court ruled the contract unconstitutional in late November 2023 and the mine stopped producing.",
+     "src": "Panama packet",
+     "mark": "care"
+    }
+   ],
+   "notice": "All four were decided far from the comarca, by a government the Ngäbe vote for but do not control. The one thing the comarca holds itself, its land in common, exists because of a national law it fought for.",
+   "yourCall": "If you were writing the rule for when Panama must ask the Ngäbe first, which of these four would it cover, and who would object?",
+   "denver": {
+    "levels": [
+     {
+      "id": "city",
+      "label": "Denver",
+      "home": true
+     },
+     {
+      "id": "state",
+      "label": "The state (Colorado)"
+     },
+     {
+      "id": "fed",
+      "label": "Washington (federal)"
+     }
+    ],
+    "decisions": [
+     {
+      "q": "The lowest wage a Denver employer may pay",
+      "level": "city",
+      "detail": "Denver sets its own minimum wage, $19.29 an hour in 2026, after Colorado let cities do so in 2019.",
+      "src": "Denver Department of Finance, Aug 2025",
+      "mark": "ok",
+      "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/News/2025/Denver-Local-Minimum-Wage-Adjusts-to-19.29-per-Hour-for-2026"
+     },
+     {
+      "q": "Whether Denver workers get paid family and medical leave",
+      "level": "state",
+      "detail": "Colorado voters approved FAMLI in 2020; it pays up to 12 weeks. A separate 2020 state law gives paid sick leave at employers of every size.",
+      "src": "Denver shared mirror (FAMLI; Healthy Families and Workplaces Act)",
+      "mark": "ok",
+      "url": "https://famli.colorado.gov/"
+     },
+     {
+      "q": "Who draws Colorado's congressional districts",
+      "level": "state",
+      "detail": "An independent 12-member commission, created when voters passed Amendment Y in 2018, took the job from the legislature.",
+      "src": "Colorado Independent Redistricting Commissions",
+      "mark": "ok",
+      "url": "https://redistricting.colorado.gov/content/congressional-redistricting"
+     },
+     {
+      "q": "Whether Denver police use license-plate cameras",
+      "level": "city",
+      "detail": "The city council rejected a Flock contract extension unanimously in May 2025, the mayor extended it with new limits, and in 2026 the council approved 50 Axon cameras, 7 to 6.",
+      "src": "Colorado Politics; Denver7",
+      "mark": "ok",
+      "url": "https://www.denver7.com/news/local-news/denver-city-council-narrowly-approves-axon-contract-to-replace-flock-cameras"
+     },
+     {
+      "q": "How Coloradans vote, and whether people on parole may vote",
+      "level": "state",
+      "detail": "Colorado mails every registered voter a ballot, registers voters automatically, and since 2019 lets people on parole vote.",
+      "src": "Colorado Secretary of State; Colorado Springs Gazette",
+      "mark": "ok",
+      "url": "https://www.coloradosos.gov/pubs/newsRoom/pressReleases/2020/PR20200519VoterReg.html"
+     },
+     {
+      "q": "Whether a low-wage Denver parent can get Medicaid",
+      "level": "state",
+      "detail": "Colorado expanded Medicaid under the Affordable Care Act: adults qualify up to about 133% of the poverty level.",
+      "src": "Denver shared mirror (Health First Colorado, HCPF)",
+      "mark": "ok",
+      "url": "https://hcpf.colorado.gov/"
+     },
+     {
+      "q": "Whether those Medicaid adults must report work hours from 2027",
+      "level": "fed",
+      "detail": "The 2025 federal budget law adds work or community-engagement requirements for expansion adults from January 1, 2027, in every expansion state.",
+      "src": "Denver shared mirror (H.R. 1, 2025)",
+      "mark": "ok",
+      "url": "https://hcpf.colorado.gov/"
+     }
+    ]
+   }
   }
  }
 }

@@ -101,20 +101,24 @@ function labs(t,p,sub){var L=labList(t);
   if(cfg&&cfg.kind==='OneBadWeek')oneBadWeek(t,cfg,box);
   else if(cfg&&cfg.kind==='TwoWays')twoWays(t,cfg,box);
   else if(cfg&&cfg.kind==='LoanCost')loanCost(t,cfg,box);
+  else if(cfg&&cfg.kind==='WhoDecides')whoDecides(t,cfg,box);
+  else if(cfg&&cfg.kind==='HoursOfWork')hoursOfWork(t,cfg,box);
   else box.innerHTML=(l.changes?'<div class="sec"><p class="kick">What you change</p><p>'+md(l.changes)+'</p></div>':'')+(l.data?'<div class="sec"><p class="kick">The real numbers</p><p>'+md(l.data)+'</p></div>':'')}
 
 function oneBadWeek(t,c,box){
-  var st={shock:c.shocks[0].id,weeks:null,extra:null,sav:{},ins:{},ln:{}};
-  c.families.forEach(function(f){st.sav[f.id]=f.savings;st.ins[f.id]=f.lifeInsLikely;st.ln[f.id]=0});
-  function loanOf(f){var L=f.loanOptions;return L?L[st.ln[f.id]]:{rate:f.loanRate,note:f.loanNote}}
+  var MINE_LEND=[{label:'Family who would lend at no interest',rate:0,note:'No interest, if someone can.'},{label:'A credit card',monthly:0.2119/12,note:'Average card rate: 21.19% a year (Federal Reserve, Q3 2026).'},{label:"A small loan under Colorado's 36% cap",monthly:0.03,note:'Colorado caps small loans at 36% a year (Prop 111, 2018).'},{label:'No one would lend',none:true,note:'Nowhere to borrow.'}];
+  var fams=c.families.slice();if(c.mine!==false)fams.push({id:'mine',mine:true,label:'A family like mine'});
+  var st={shock:c.shocks[0].id,weeks:null,extra:null,sav:{},ins:{},ln:{},mine:{lw:0,ls:70,lend:0}};
+  fams.forEach(function(f){st.sav[f.id]=f.mine?2:f.savings;st.ins[f.id]=!!f.lifeInsLikely;st.ln[f.id]=0});
+  function loanOf(f){if(f.mine)return MINE_LEND[st.mine.lend];var L=f.loanOptions;return L?L[st.ln[f.id]]:{rate:f.loanRate,note:f.loanNote}}
   function draw(){
     var s=c.shocks.filter(function(x){return x.id===st.shock})[0],wk=st.weeks==null?s.weeks:st.weeks,ex=st.extra==null?s.extra:st.extra,max=1;
-    var rows=c.families.map(function(f){
-      var lb=(f.leaveBy||{})[s.id],lw=lb?lb[0]:f.leaveWeeks,ls=lb?lb[1]:f.leaveShare,lost=f.fixedIncome?0:wk;
+    var rows=fams.map(function(f){
+      var lb=(f.leaveBy||{})[s.id],lw=f.mine?st.mine.lw:lb?lb[0]:f.leaveWeeks,ls=f.mine?st.mine.ls/100:lb?lb[1]:f.leaveShare,lost=f.fixedIncome?0:wk;
       var leave=Math.min(lost,lw)*ls,sav=st.sav[f.id],need=lost-leave+ex,ins=s.id==='death'&&st.ins[f.id],L=loanOf(f);
       if(ins){leave=0;need=0}
-      var fromSav=Math.min(sav,need),gap=Math.max(0,need-fromSav),known=L.rate!=null||L.monthly!=null,
-          interest=!known?0:L.monthly!=null?gap*L.monthly*6:gap*(Math.pow(1+L.rate,0.5)-1);
+      var fromSav=Math.min(sav,need),gap=Math.max(0,need-fromSav),known=L.rate!=null||L.monthly!=null||L.none,
+          interest=!known||L.none?0:L.monthly!=null?gap*L.monthly*6:gap*(Math.pow(1+L.rate,0.5)-1);
       var r={f:f,L:L,known:known,leave:leave,sav:fromSav,gap:gap,interest:interest,ins:ins};max=Math.max(max,leave+fromSav+gap+interest);return r});
     var W=100/max;
     box.innerHTML=(c.note?'<p class="muted">'+esc(c.note)+'</p>':'')+'<div class="sec"><p class="kick">1 · Pick what happens</p><div class="sort">'+c.shocks.map(function(x){return '<button data-sh="'+x.id+'" class="'+(x.id===st.shock?'on':'')+'">'+esc(x.label)+'</button>'}).join('')+'</div>'+
@@ -125,16 +129,21 @@ function oneBadWeek(t,c,box){
        '<div class="stack" role="img" aria-label="'+esc(f.label)+': '+fmt(r.leave,1)+' weeks paid leave, '+fmt(r.sav,1)+' from savings, '+fmt(r.gap,1)+' borrowed'+(r.known?', '+fmt(r.interest,1)+' interest':', interest unknown')+'">'+
         (r.ins?'<span class="sg ins" style="width:100%">Life insurance pays</span>':
         '<span class="sg leave" style="width:'+(r.leave*W)+'%"></span><span class="sg sav" style="width:'+(r.sav*W)+'%"></span><span class="sg gap" style="width:'+(r.gap*W)+'%"></span><span class="sg int" style="width:'+(r.interest*W)+'%"></span>')+'</div>'+
-       '<p class="fsum">'+(r.ins?'Covered by life insurance.':(r.gap>0?'Has to borrow <b>'+fmt(r.gap,1)+' weeks</b> of pay'+(r.known?' and pay back <b>'+fmt(r.interest,1)+' more</b> in six months of interest.':'. What that costs here is <b>not yet sourced</b>: find it.'):'Gets through without borrowing.'))+'</p>'+
+       '<p class="fsum">'+(r.ins?'Covered by life insurance.':(r.gap>0&&r.L.none?'Is short <b>'+fmt(r.gap,1)+' weeks</b> of pay, with no one to borrow from: bills go unpaid.':r.gap>0?'Has to borrow <b>'+fmt(r.gap,1)+' weeks</b> of pay'+(r.known?' and pay back <b>'+fmt(r.interest,1)+' more</b> in six months of interest.':'. What that costs here is <b>not yet sourced</b>: find it.'):'Gets through without borrowing.'))+'</p>'+
        '<label class="sl">Savings, in weeks of pay: <b>'+st.sav[f.id]+'</b><input type="range" min="0" max="26" value="'+st.sav[f.id]+'" data-sv="'+f.id+'"></label>'+
+       (f.mine?'<p class="muted" style="font-size:14px">This card is yours to set. It stays on this page: it is not saved and not sent anywhere. RJ families are not all like the salaried family above; set what is true, or leave it.</p>'+
+        '<label class="sl">Paid leave, in weeks: <b>'+st.mine.lw+'</b><input type="range" min="0" max="12" value="'+st.mine.lw+'" data-mn="lw"></label>'+
+        '<label class="sl">Share of pay while on leave: <b>'+st.mine.ls+'%</b><input type="range" min="0" max="100" step="10" value="'+st.mine.ls+'" data-mn="ls"></label>'+
+        '<label class="sl">Who would lend: <select data-mn="lend">'+MINE_LEND.map(function(o,i){return '<option value="'+i+'"'+(i===st.mine.lend?' selected':'')+'>'+esc(o.label)+'</option>'}).join('')+'</select></label>':'')+
        (f.loanOptions&&f.loanOptions.length>1?'<label class="sl">Who will lend: <select data-ln="'+f.id+'">'+f.loanOptions.map(function(o,i){return '<option value="'+i+'"'+(i===st.ln[f.id]?' selected':'')+'>'+esc(o.label)+'</option>'}).join('')+'</select></label>':'')+
        (s.id==='death'?'<label class="chk"><input type="checkbox" data-in="'+f.id+'"'+(st.ins[f.id]?' checked':'')+'> Has life insurance</label>':'')+
-       '<ul class="cus">'+(f.fixedIncome?'<li>'+esc(f.incomeNote||'')+'</li>':'')+'<li>'+esc(f.leaveNote)+'</li><li>'+esc(f.health)+'</li><li>'+esc(r.L.note||'')+'</li>'+(s.id==='death'?'<li>'+esc(f.lifeInsNote)+'</li>':'')+'</ul></div>'}).join('')+
+       (f.mine?'<ul class="cus"><li>'+esc(r.L.note)+'</li></ul>':'<ul class="cus">'+(f.fixedIncome?'<li>'+esc(f.incomeNote||'')+'</li>':'')+'<li>'+esc(f.leaveNote)+'</li><li>'+esc(f.health)+'</li><li>'+esc(r.L.note||'')+'</li>'+(s.id==='death'?'<li>'+esc(f.lifeInsNote)+'</li>':'')+'</ul>')+'</div>'}).join('')+
      '<p class="legend"><span class="sg leave"></span> paid leave <span class="sg sav"></span> savings <span class="sg gap"></span> borrowed <span class="sg int"></span> interest</p></div>';
     box.querySelectorAll('[data-sh]').forEach(function(b){b.onclick=function(){st.shock=b.dataset.sh;st.weeks=null;st.extra=null;draw()}});
     box.querySelectorAll('[data-r]').forEach(function(r){r.oninput=function(){st[r.dataset.r]=+r.value;draw();var x=box.querySelector('[data-r="'+r.dataset.r+'"]');x&&x.focus()}});
     box.querySelectorAll('[data-sv]').forEach(function(r){r.oninput=function(){st.sav[r.dataset.sv]=+r.value;draw();var x=box.querySelector('[data-sv="'+r.dataset.sv+'"]');x&&x.focus()}});
     box.querySelectorAll('[data-ln]').forEach(function(r){r.onchange=function(){st.ln[r.dataset.ln]=+r.value;draw();var x=box.querySelector('[data-ln="'+r.dataset.ln+'"]');x&&x.focus()}});
+    box.querySelectorAll('[data-mn]').forEach(function(r){var k=r.dataset.mn;r[r.tagName==='SELECT'?'onchange':'oninput']=function(){st.mine[k]=+r.value;draw();var x=box.querySelector('[data-mn="'+k+'"]');x&&x.focus()}});
     box.querySelectorAll('[data-in]').forEach(function(r){r.onchange=function(){st.ins[r.dataset.in]=r.checked;draw()}})}
   draw()}
 
@@ -145,6 +154,43 @@ function twoWays(t,c,box){var pi=0,V=function(id){return c.views.filter(function
      '<div class="pair">'+pr.map(function(v){var m=v.mark||'ok';return '<div class="pv"><b class="big">'+fmt(v.value,1)+'%</b><p>'+esc(v.label)+'</p>'+dots(v.value)+'<p class="src">Source: '+esc(v.src)+' <span class="pill '+m+'">'+(m==='ok'?'checked':'read with care')+'</span>'+(v.caveat?'<br><small>'+esc(v.caveat)+'</small>':'')+'</p></div>'}).join('')+'</div>'+
      '<p class="muted">'+esc(c.caption||'Each dot is one child out of 100 aged 6–35 months. Same children, same year: the only thing that changed is the rule for counting, or where you drew the line.')+'</p>';
     box.querySelectorAll('[data-p]').forEach(function(b){b.onclick=function(){pi=+b.dataset.p;draw()}})}
+  draw()}
+
+function srcLink(d){return d.url?'<a href="'+esc(d.url)+'" target="_blank" rel="noopener">'+esc(d.src)+'</a>':esc(d.src)}
+function whoDecides(t,c,box){var st={dv:false,g:{},rev:{}};
+  function draw(){var set=st.dv?c.denver:c,L=set.levels,D=set.decisions,pre=st.dv?'d':'t',done=0,right=0,cnt={};
+    L.forEach(function(l){cnt[l.id]=0});
+    var tried=0;D.forEach(function(d,i){cnt[d.level]++;var g=st.g[pre+i];if(g!=null){done++;if(!st.rev[pre+i]){tried++;if(g===d.level)right++}}});
+    box.innerHTML=(c.denver?'<div class="sec"><div class="sort"><button data-dv="0" class="'+(!st.dv?'on':'')+'">'+esc(t.short)+'</button><button data-dv="1" class="'+(st.dv?'on':'')+'">Run it in Denver</button></div></div>':'')+
+     '<p class="muted">For each decision, tap who you think made it. Then read what happened.</p>'+
+     D.map(function(d,i){var k=pre+i,g=st.g[k];return '<div class="wd'+(g!=null?' done':'')+'"><p class="wq">'+md(d.q)+'</p><div class="sort">'+
+       L.map(function(l){var cls=g==null?'':l.id===d.level?' right':g===l.id?' wrong':'';return '<button data-k="'+k+'" data-l="'+l.id+'" class="'+cls.trim()+'">'+esc(l.label)+'</button>'}).join('')+'</div>'+
+       (g!=null?'<p class="fsum">'+(g===d.level?'<b>Yes.</b> ':'<b>It was '+esc(L.filter(function(l){return l.id===d.level})[0].label)+'.</b> ')+md(d.detail)+' <span class="pill '+(d.mark||'ok')+'">'+((d.mark||'ok')==='ok'?'checked':'read with care')+'</span><br><small>Source: '+srcLink(d)+'</small></p>':'')+'</div>'}).join('')+
+     (done<D.length?'<p><button class="linkish" data-all>Show every answer</button></p>':'')+
+     (done===D.length?'<div class="sec"><p class="kick">Who decided these '+D.length+'</p>'+L.map(function(l){return '<div class="wdbar"><span>'+esc(l.label)+'</span><span class="bar"><span class="sg '+(l.home?'leave':'gap')+'" style="width:'+(cnt[l.id]/D.length*100)+'%"></span></span><b>'+cnt[l.id]+'</b></div>'}).join('')+
+       (tried?'<p class="muted">You matched '+right+' of the '+tried+' you tried.</p>':'')+'</div>':'');
+    box.querySelectorAll('[data-dv]').forEach(function(b){b.onclick=function(){st.dv=b.dataset.dv==='1';draw()}});
+    box.querySelectorAll('[data-k]').forEach(function(b){b.onclick=function(){if(st.g[b.dataset.k]==null){st.g[b.dataset.k]=b.dataset.l;draw()}}});
+    var a=box.querySelector('[data-all]');a&&(a.onclick=function(){D.forEach(function(d,i){if(st.g[pre+i]==null){st.g[pre+i]=d.level;st.rev[pre+i]=1}});draw()})}
+  draw()}
+
+function hoursOfWork(t,c,box){var st={people:c.people||4,rides:c.rides||44,rent:{}};
+  c.places.forEach(function(p){if(p.rent.amt==null)st.rent[p.id]=p.rent.guess});
+  function draw(){var R=c.places.map(function(p){var rent=p.rent.amt!=null?p.rent.amt:st.rent[p.id],
+      it=[{k:'food',lab:'Food for the household',h:p.food.pp*st.people/p.wage},{k:'rent',lab:'Rent',h:rent/p.wage},{k:'bus',lab:'Bus rides',h:p.bus.fare*st.rides/p.wage}],
+      tot=it.reduce(function(a,b){return a+b.h},0);return {p:p,it:it,tot:tot,rent:rent}}),
+      max=Math.max.apply(null,R.map(function(r){return Math.max(r.tot,r.p.month)}));
+    box.innerHTML='<div class="sec"><div class="sliders"><label>People in the household: <b>'+st.people+'</b><input type="range" min="1" max="6" value="'+st.people+'" data-hw="people"></label>'+
+      '<label>Bus rides a month: <b>'+st.rides+'</b><input type="range" min="0" max="120" value="'+st.rides+'" data-hw="rides"></label>'+
+      c.places.filter(function(p){return p.rent.amt==null}).map(function(p){return '<label>'+esc(p.rent.label)+': <b>'+p.cur+fmt(st.rent[p.id])+'</b><input type="range" min="'+p.rent.min+'" max="'+p.rent.max+'" step="'+p.rent.step+'" value="'+st.rent[p.id]+'" data-rent="'+p.id+'"></label><p class="muted" style="font-size:14px">'+esc(p.rent.note)+'</p>'}).join('')+
+      '</div></div>'+
+      R.map(function(r){var p=r.p;return '<div class="fam"><h4>'+esc(p.label)+'</h4><p class="muted" style="font-size:14px">Minimum wage: '+esc(p.wageText)+'</p>'+
+        '<div class="stack hw" role="img" aria-label="'+esc(p.label)+': '+fmt(r.tot)+' hours of work a month">'+r.it.map(function(x){return '<span class="sg '+({food:'leave',rent:'gap',bus:'sav'})[x.k]+'" style="width:'+(x.h/max*100)+'%"></span>'}).join('')+'<i class="mark" style="left:'+(p.month/max*100)+'%"></i></div>'+
+        '<p class="fsum"><b>'+fmt(r.tot)+' hours</b> of minimum-wage work a month. One full-time worker has about '+fmt(p.month)+', so this household needs <b>'+fmt(r.tot/p.month,1)+' full-time earners</b>.</p>'+
+        '<ul class="cus">'+r.it.map(function(x){var src=x.k==='food'?p.food:x.k==='rent'?p.rent:p.bus;return '<li><b>'+x.lab+'</b>: '+fmt(x.h)+' hours. '+esc(src.text||'')+' <small>Source: '+srcLink(src)+'</small></li>'}).join('')+'<li><small>Wage source: '+srcLink(p.wageSrc)+'</small></li></ul></div>'}).join('')+
+      '<p class="legend"><span class="sg leave"></span> food <span class="sg gap"></span> rent <span class="sg sav"></span> bus <i class="mark inline"></i> one full-time month</p>';
+    box.querySelectorAll('[data-hw]').forEach(function(r){r.oninput=function(){st[r.dataset.hw]=+r.value;draw();box.querySelector('[data-hw="'+r.dataset.hw+'"]').focus()}});
+    box.querySelectorAll('[data-rent]').forEach(function(r){r.oninput=function(){st.rent[r.dataset.rent]=+r.value;draw();box.querySelector('[data-rent="'+r.dataset.rent+'"]').focus()}})}
   draw()}
 
 function loanCost(t,c,box){var start=function(d){return JSON.parse(JSON.stringify((d&&d.start)||{papers:true}))},st={dv:false,amt:c.amount,g:start(c)};
