@@ -1,0 +1,236 @@
+{
+ "name": "The Cibao campos, Dominican Republic",
+ "short": "Dominican Republic",
+ "status": "public",
+ "asOf": "2026-11-19",
+ "region": "Rural campos of the northern Cibao, from the Creighton-ILAC center in Santiago de los Caballeros",
+ "ft": 600,
+ "lat": 19.45,
+ "lon": -70.7,
+ "lang": "Spanish",
+ "partner": {
+  "name": "Creighton University ILAC",
+  "url": "https://www.creighton.edu/geo/ilac/encuentroabouttheilaccenter"
+ },
+ "currency": "RD$",
+ "interactive": {
+  "D": {
+   "kind": "OneBadWeek",
+   "families": [
+    {
+     "id": "there",
+     "label": "A farm family in a Cibao campo",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "No paid leave: 54.1% of Dominican workers are informal (Q1 2026). Paid maternity (14 weeks) reaches only the formal regime.",
+     "health": "Covered by SENASA's subsidized plan, but specialists and surgery are in Santiago.",
+     "loanOptions": [
+      {
+       "label": "A prestamista (moneylender)",
+       "monthly": 0.2,
+       "note": "Prestamistas: about 20% a month, interest only (read with care)."
+      },
+      {
+       "label": "Bank microcredit",
+       "rate": 0.358,
+       "note": "Microcredit averaged 35.8% a year (Superintendencia de Bancos, March 2026)."
+      },
+      {
+       "label": "Banco Agrícola, if they can reach it",
+       "rate": 0.08,
+       "note": "Banco Agrícola lends at 8% (June 2025), if the family can reach it and has title."
+      }
+     ],
+     "lifeInsLikely": false,
+     "lifeInsNote": "Insurance of all kinds came to 1.4% of GDP, half the Latin American average (2022; read with care).",
+     "savings": 1
+    },
+    {
+     "id": "salaried",
+     "label": "A Denver family with a salaried parent",
+     "leaveWeeks": 12,
+     "leaveShare": 0.7,
+     "leaveNote": "Colorado FAMLI: up to 12 paid weeks; about 70% of pay at this salary (90% up to half the state average wage, 50% above).",
+     "health": "Insured through work. Colorado's uninsured rate is 5.9% (2025).",
+     "loanRate": 0.2119,
+     "loanNote": "Average credit-card rate, 21.19% a year (Federal Reserve, Q3 2026).",
+     "lifeInsNote": "71% of U.S. households earning $150,000+ own life insurance (LIMRA 2024).",
+     "lifeInsLikely": true,
+     "savings": 8
+    },
+    {
+     "id": "lowwage",
+     "label": "A Denver family whose father does day labor for cash",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "FAMLI needs $2,500 in reported Colorado wages; cash day labor often has none.",
+     "health": "Coverage is uncertain; Denver Health is the city's safety net.",
+     "loanRate": 0.36,
+     "loanNote": "Colorado caps small loans at 36% a year (Prop 111, 2018).",
+     "lifeInsNote": "31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "lifeInsLikely": false,
+     "savings": 0
+    }
+   ],
+   "shocks": [
+    {
+     "id": "injury",
+     "label": "The earner breaks a leg",
+     "weeks": 8,
+     "extra": 1
+    },
+    {
+     "id": "storm",
+     "label": "A hurricane destroys the crop (hail totals the car here)",
+     "weeks": 0,
+     "extra": 8
+    },
+    {
+     "id": "birth",
+     "label": "A baby is born early",
+     "weeks": 12,
+     "extra": 2
+    },
+    {
+     "id": "surgery",
+     "label": "A child needs surgery",
+     "weeks": 2,
+     "extra": 4
+    },
+    {
+     "id": "death",
+     "label": "The earner dies",
+     "weeks": 26,
+     "extra": 2
+    }
+   ]
+  },
+  "E": {
+   "kind": "LoanCost",
+   "amount": 100000,
+   "min": 10000,
+   "max": 300000,
+   "step": 5000,
+   "months": 12,
+   "options": [
+    {
+     "label": "Banco Agrícola",
+     "needs": [
+      "title",
+      "reach"
+     ],
+     "src": "Banco Agrícola, June 2025 (7% for women-led businesses, 0% for young producers)",
+     "rate": 0.08
+    },
+    {
+     "label": "Bank microcredit",
+     "needs": [
+      "papers",
+      "income"
+     ],
+     "src": "Superintendencia de Bancos, March 2026",
+     "rate": 0.358
+    },
+    {
+     "label": "A credit card",
+     "needs": [
+      "papers",
+      "income"
+     ],
+     "src": "Superintendencia de Bancos, March 2026",
+     "rate": 0.578
+    },
+    {
+     "label": "A prestamista",
+     "needs": [],
+     "src": "About 20% a month, interest only until the loan is paid (read with care)",
+     "monthly": 0.2
+    },
+    {
+     "label": "A san (rotating savings)",
+     "needs": [
+      "san"
+     ],
+     "src": "No interest, but you wait for your turn, and storms don't wait",
+     "rate": 0
+    }
+   ],
+   "gates": [
+    {
+     "id": "papers",
+     "label": "Has a cédula (national ID)"
+    },
+    {
+     "id": "title",
+     "label": "Has a registered land title"
+    },
+    {
+     "id": "income",
+     "label": "Has documented income (a formal job or a crop contract)"
+    },
+    {
+     "id": "reach",
+     "label": "Can reach a Banco Agrícola office"
+    },
+    {
+     "id": "san",
+     "label": "Has a san turn coming up"
+    }
+   ],
+   "denver": {
+    "currency": "$",
+    "amount": 400,
+    "options": [
+     {
+      "label": "A credit card",
+      "rate": 0.2119,
+      "apr": true,
+      "needs": [
+       "papers"
+      ],
+      "src": "Federal Reserve G.19, Q3 2026"
+     },
+     {
+      "label": "A small loan under Colorado's cap",
+      "rate": 0.36,
+      "apr": true,
+      "needs": [],
+      "src": "Prop 111 (2018): payday loans capped at 36% a year"
+     },
+     {
+      "label": "Family who can lend",
+      "rate": 0,
+      "needs": [
+       "group"
+      ],
+      "src": "Depends on who you know. 63% of U.S. adults could cover $400 in cash."
+     }
+    ],
+    "gates": [
+     {
+      "id": "papers",
+      "label": "Has a credit history"
+     },
+     {
+      "id": "group",
+      "label": "Has family who can lend"
+     }
+    ]
+   }
+  }
+ },
+ "replace": [
+  [
+   "^\\*\\*Edwidge Danticat\\*\\*.*$",
+   ""
+  ],
+  [
+   ", the context box\\)",
+   ")"
+  ],
+  [
+   "someone says, [\\u201c\"]Why not just send the money instead of going\\?[\\u201d\"]",
+   "someone asks why not just send the money instead of going."
+  ]
+ ]
+}

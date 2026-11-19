@@ -1,0 +1,209 @@
+{
+ "name": "Tijuana, Baja California (Theology of Encounter)",
+ "short": "Tijuana",
+ "status": "public",
+ "asOf": "2026-11-19",
+ "region": "Tijuana and the border, crossing on foot from San Diego",
+ "ft": 70,
+ "lat": 32.53,
+ "lon": -117.02,
+ "lang": "Spanish and English",
+ "currency": "MX$",
+ "interactive": {
+  "B": {
+   "kind": "OneBadWeek",
+   "families": [
+    {
+     "id": "there",
+     "label": "A family in a Tijuana canyon colonia: both parents work informally",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "No paid leave: 36.6% of Tijuana's employed work informally (Q1 2026). Leave rules for formal workers are still being checked.",
+     "health": "Without social security, care is through IMSS-Bienestar, the federal system.",
+     "loanOptions": [
+      {
+       "label": "A small bank loan, if they have an account",
+       "rate": 0.565,
+       "note": "Bank loans up to MX$5,000 averaged 56.5% a year (Banxico, data to Feb 2026)."
+      },
+      {
+       "label": "Group microcredit",
+       "rate": 0.731,
+       "note": "Group microcredit: 73.1% a year (Banxico)."
+      }
+     ],
+     "lifeInsLikely": false,
+     "lifeInsNote": "22.9% of Mexican adults had any insurance policy (INEGI ENIF 2024).",
+     "savings": 1
+    },
+    {
+     "id": "salaried",
+     "label": "A Denver family with a salaried parent",
+     "leaveWeeks": 12,
+     "leaveShare": 0.7,
+     "leaveNote": "Colorado FAMLI: up to 12 paid weeks; about 70% of pay at this salary (90% up to half the state average wage, 50% above).",
+     "health": "Insured through work. Colorado's uninsured rate is 5.9% (2025).",
+     "loanRate": 0.2119,
+     "loanNote": "Average credit-card rate, 21.19% a year (Federal Reserve, Q3 2026).",
+     "lifeInsNote": "71% of U.S. households earning $150,000+ own life insurance (LIMRA 2024).",
+     "lifeInsLikely": true,
+     "savings": 8
+    },
+    {
+     "id": "lowwage",
+     "label": "A Denver family whose father does day labor for cash",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "FAMLI needs $2,500 in reported Colorado wages; cash day labor often has none.",
+     "health": "Coverage is uncertain; Denver Health is the city's safety net.",
+     "loanRate": 0.36,
+     "loanNote": "Colorado caps small loans at 36% a year (Prop 111, 2018).",
+     "lifeInsNote": "31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "lifeInsLikely": false,
+     "savings": 0
+    }
+   ],
+   "shocks": [
+    {
+     "id": "injury",
+     "label": "The earner is hurt at work",
+     "weeks": 6,
+     "extra": 1
+    },
+    {
+     "id": "rain",
+     "label": "Winter rains crack the house (a basement floods here)",
+     "weeks": 0,
+     "extra": 6
+    },
+    {
+     "id": "birth",
+     "label": "A baby is born early",
+     "weeks": 12,
+     "extra": 2
+    },
+    {
+     "id": "deported",
+     "label": "The earner is deported or detained",
+     "weeks": 26,
+     "extra": 3
+    },
+    {
+     "id": "death",
+     "label": "The earner dies",
+     "weeks": 26,
+     "extra": 2
+    }
+   ]
+  },
+  "E": {
+   "kind": "LoanCost",
+   "amount": 5000,
+   "min": 1000,
+   "max": 30000,
+   "step": 500,
+   "months": 12,
+   "options": [
+    {
+     "label": "A small personal loan from a bank",
+     "needs": [
+      "papers",
+      "bank"
+     ],
+     "src": "Banxico, data to Feb 2026: loans up to MX$5,000; interest only, before VAT and fees",
+     "rate": 0.565,
+     "maxAmt": 5000
+    },
+    {
+     "label": "Compartamos",
+     "needs": [
+      "papers"
+     ],
+     "src": "Banxico: MX$5,000–30,000",
+     "rate": 0.819,
+     "minAmt": 5000
+    },
+    {
+     "label": "Group microcredit",
+     "needs": [
+      "papers"
+     ],
+     "src": "Banxico: system-wide average",
+     "rate": 0.731
+    },
+    {
+     "label": "A tanda among neighbors",
+     "needs": [
+      "tanda"
+     ],
+     "src": "No interest; it works because neighbors trust each other",
+     "rate": 0
+    }
+   ],
+   "gates": [
+    {
+     "id": "papers",
+     "label": "Has an INE voter card and a CURP"
+    },
+    {
+     "id": "bank",
+     "label": "Has a formal job with a payroll account"
+    },
+    {
+     "id": "tanda",
+     "label": "Belongs to a tanda"
+    }
+   ],
+   "denver": {
+    "currency": "$",
+    "amount": 400,
+    "options": [
+     {
+      "label": "A credit card",
+      "rate": 0.2119,
+      "apr": true,
+      "needs": [
+       "papers"
+      ],
+      "src": "Federal Reserve G.19, Q3 2026"
+     },
+     {
+      "label": "A small loan under Colorado's cap",
+      "rate": 0.36,
+      "apr": true,
+      "needs": [],
+      "src": "Prop 111 (2018): payday loans capped at 36% a year"
+     },
+     {
+      "label": "Family who can lend",
+      "rate": 0,
+      "needs": [
+       "group"
+      ],
+      "src": "Depends on who you know. 63% of U.S. adults could cover $400 in cash."
+     }
+    ],
+    "gates": [
+     {
+      "id": "papers",
+      "label": "Has a credit history (needs an SSN or ITIN)"
+     },
+     {
+      "id": "group",
+      "label": "Has family who can lend"
+     }
+    ]
+   }
+  }
+ },
+ "replace": [
+  [
+   "\\([\\u201c\"]Guaranteeing the States Protection Against Invasion[\\u201d\"]\\)",
+   "(*Guaranteeing the States Protection Against Invasion*)"
+  ],
+  [
+   "Her words: [\\u201c\"]I hope there won't be a fence too long here\\.?[\\u201d\"]",
+   "She said she hoped the fence would not stand long."
+  ]
+ ]
+}

@@ -1,0 +1,217 @@
+{
+ "name": "Washington, D.C.",
+ "short": "Washington, D.C.",
+ "status": "public",
+ "asOf": "2026-11-19",
+ "region": "The Father McKenna Center on North Capitol Street, Washington, D.C.",
+ "ft": 50,
+ "lat": 38.9,
+ "lon": -77.01,
+ "lang": "English",
+ "partner": {
+  "name": "Father McKenna Center",
+  "url": "https://fathermckennacenter.org/"
+ },
+ "currency": "$",
+ "interactive": {
+  "A": {
+   "kind": "OneBadWeek",
+   "families": [
+    {
+     "id": "there",
+     "label": "A renter family in Ward 8: one parent works hourly",
+     "leaveWeeks": 10,
+     "leaveShare": 0.9,
+     "leaveBy": {
+      "birth": [
+       12,
+       0.9
+      ]
+     },
+     "leaveNote": "D.C. Paid Family Leave (from Oct 2026): 10 weeks for your own illness, 12 for a new baby, 6 to care for family; 90% of pay at this wage (D.C. Code § 32-541.04), up to $1,100 a week. Federal and D.C. government workers are outside it.",
+     "health": "Medicaid to 138% of poverty, then Healthy DC to 200% (2026).",
+     "loanOptions": [
+      {
+       "label": "A bank or credit union, under the 24% cap",
+       "monthly": 0.02,
+       "note": "D.C. caps most loans at 24% a year (D.C. Code § 28-3301), if a lender will see you."
+      },
+      {
+       "label": "An online lender routing around the cap",
+       "monthly": 0.13333333333333333,
+       "note": "Online lenders charged 160–251% until the Attorney General's settlements (OAG 2024)."
+      }
+     ],
+     "lifeInsLikely": false,
+     "lifeInsNote": "No D.C. figure. 31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "savings": 1
+    },
+    {
+     "id": "salaried",
+     "label": "A Denver family with a salaried parent",
+     "leaveWeeks": 12,
+     "leaveShare": 0.7,
+     "leaveNote": "Colorado FAMLI: up to 12 paid weeks; about 70% of pay at this salary (90% up to half the state average wage, 50% above).",
+     "health": "Insured through work. Colorado's uninsured rate is 5.9% (2025).",
+     "loanRate": 0.2119,
+     "loanNote": "Average credit-card rate, 21.19% a year (Federal Reserve, Q3 2026).",
+     "lifeInsNote": "71% of U.S. households earning $150,000+ own life insurance (LIMRA 2024).",
+     "lifeInsLikely": true,
+     "savings": 8
+    },
+    {
+     "id": "lowwage",
+     "label": "A Denver family whose father does day labor for cash",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "FAMLI needs $2,500 in reported Colorado wages; cash day labor often has none.",
+     "health": "Coverage is uncertain; Denver Health is the city's safety net.",
+     "loanRate": 0.36,
+     "loanNote": "Colorado caps small loans at 36% a year (Prop 111, 2018).",
+     "lifeInsNote": "31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "lifeInsLikely": false,
+     "savings": 0
+    }
+   ],
+   "shocks": [
+    {
+     "id": "injury",
+     "label": "The earner breaks a leg and can't work for six weeks",
+     "weeks": 6,
+     "extra": 1
+    },
+    {
+     "id": "birth",
+     "label": "A baby is born early and spends 12 days in the NICU",
+     "weeks": 12,
+     "extra": 3
+    },
+    {
+     "id": "notice",
+     "label": "The landlord sells and gives 30 days' notice",
+     "weeks": 0,
+     "extra": 4
+    },
+    {
+     "id": "arrest",
+     "label": "A teenage son is arrested",
+     "weeks": 1,
+     "extra": 3
+    },
+    {
+     "id": "death",
+     "label": "The earner dies",
+     "weeks": 26,
+     "extra": 2
+    }
+   ]
+  },
+  "E": {
+   "kind": "LoanCost",
+   "amount": 400,
+   "min": 100,
+   "max": 2000,
+   "step": 50,
+   "months": 12,
+   "options": [
+    {
+     "label": "A bank or credit union",
+     "needs": [
+      "id",
+      "bank",
+      "credit"
+     ],
+     "src": "D.C. Code § 28-3301: most loans capped at 24% a year",
+     "rate": 0.24,
+     "apr": true,
+     "rateText": "24% a year at most"
+    },
+    {
+     "label": "An online lender routing around the cap",
+     "needs": [
+      "bank"
+     ],
+     "src": "OAG 2024: rates of 160–251% the Attorney General sued over",
+     "rate": 1.6,
+     "apr": true,
+     "rateText": "160–251% a year"
+    },
+    {
+     "label": "A friend or relative",
+     "needs": [
+      "group"
+     ],
+     "src": "Depends on who you know",
+     "rate": 0
+    }
+   ],
+   "gates": [
+    {
+     "id": "id",
+     "label": "Has a valid photo ID and a fixed address"
+    },
+    {
+     "id": "bank",
+     "label": "Has a bank account"
+    },
+    {
+     "id": "credit",
+     "label": "Has a credit history"
+    },
+    {
+     "id": "group",
+     "label": "Has someone who can lend"
+    }
+   ],
+   "denver": {
+    "currency": "$",
+    "amount": 400,
+    "options": [
+     {
+      "label": "A credit card",
+      "rate": 0.2119,
+      "apr": true,
+      "needs": [
+       "papers"
+      ],
+      "src": "Federal Reserve G.19, Q3 2026"
+     },
+     {
+      "label": "A small loan under Colorado's cap",
+      "rate": 0.36,
+      "apr": true,
+      "needs": [],
+      "src": "Prop 111 (2018): payday loans capped at 36% a year"
+     },
+     {
+      "label": "Family who can lend",
+      "rate": 0,
+      "needs": [
+       "group"
+      ],
+      "src": "Depends on who you know. 63% of U.S. adults could cover $400 in cash."
+     }
+    ],
+    "gates": [
+     {
+      "id": "papers",
+      "label": "Has a credit history"
+     },
+     {
+      "id": "group",
+      "label": "Has family who can lend"
+     }
+    ]
+   },
+   "start": {
+    "bank": true
+   }
+  }
+ },
+ "replace": [
+  [
+   "Fr\\. McKenna's line, inscribed at McKenna Hall: [\\u201c\"]The greatest undeveloped resource of our nation and our world is the poor\\.?[\\u201d\"]",
+   "A line of Fr. McKenna's, inscribed at McKenna Hall, calls the poor the greatest undeveloped resource of the nation and the world."
+  ]
+ ]
+}

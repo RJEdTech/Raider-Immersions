@@ -1,0 +1,154 @@
+{
+ "name": "Tierras Altas, Panama",
+ "short": "Panama",
+ "status": "public",
+ "asOf": "2026-11-19",
+ "region": "Tierras Altas, Chiriquí: Cerro Punta and Guadalupe",
+ "ft": 6500,
+ "lat": 8.85,
+ "lon": -82.57,
+ "lang": "Spanish and Ngäbere",
+ "partner": {
+  "name": "AMIGOS",
+  "url": "https://amigosinternational.org/programs/panama-tierras-altas/"
+ },
+ "currency": "$",
+ "interactive": {
+  "A": {
+   "kind": "OneBadWeek",
+   "families": [
+    {
+     "id": "there",
+     "label": "A Ngäbe farmworker family in Paso Ancho",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "No paid leave for informal and day workers; 76.0% of work in the comarca is informal (INEC).",
+     "health": "Only 25.1% of Indigenous people are covered by the CSS (Census 2023; read with care).",
+     "loanOptions": [
+      {
+       "label": "Whoever will lend",
+       "rate": null,
+       "note": "Only 15.9% of Panamanian adults borrowed from a formal lender (Findex 2025). Loan rates: not yet sourced."
+      }
+     ],
+     "lifeInsLikely": false,
+     "lifeInsNote": "CSS survivor benefits reach only contributors' families.",
+     "savings": 1
+    },
+    {
+     "id": "salaried",
+     "label": "A Denver family with a salaried parent",
+     "leaveWeeks": 12,
+     "leaveShare": 0.7,
+     "leaveNote": "Colorado FAMLI: up to 12 paid weeks; about 70% of pay at this salary (90% up to half the state average wage, 50% above).",
+     "health": "Insured through work. Colorado's uninsured rate is 5.9% (2025).",
+     "loanRate": 0.2119,
+     "loanNote": "Average credit-card rate, 21.19% a year (Federal Reserve, Q3 2026).",
+     "lifeInsNote": "71% of U.S. households earning $150,000+ own life insurance (LIMRA 2024).",
+     "lifeInsLikely": true,
+     "savings": 8
+    },
+    {
+     "id": "lowwage",
+     "label": "A Denver family whose father does day labor for cash",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "FAMLI needs $2,500 in reported Colorado wages; cash day labor often has none.",
+     "health": "Coverage is uncertain; Denver Health is the city's safety net.",
+     "loanRate": 0.36,
+     "loanNote": "Colorado caps small loans at 36% a year (Prop 111, 2018).",
+     "lifeInsNote": "31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "lifeInsLikely": false,
+     "savings": 0
+    }
+   ],
+   "shocks": [
+    {
+     "id": "injury",
+     "label": "The earner breaks an arm",
+     "weeks": 6,
+     "extra": 1
+    },
+    {
+     "id": "flood",
+     "label": "The creek floods the house",
+     "weeks": 2,
+     "extra": 6
+    },
+    {
+     "id": "birth",
+     "label": "A baby is born early",
+     "weeks": 12,
+     "extra": 2
+    },
+    {
+     "id": "hospital",
+     "label": "A child is in the hospital",
+     "weeks": 2,
+     "extra": 3
+    },
+    {
+     "id": "death",
+     "label": "The earner dies",
+     "weeks": 26,
+     "extra": 2
+    }
+   ]
+  },
+  "D": {
+   "kind": "TwoWays",
+   "views": [
+    {
+     "id": "ipm25",
+     "label": "Multidimensional poverty, 2025",
+     "value": 73.2,
+     "src": "MEF, IPM 2025",
+     "mark": "ok"
+    },
+    {
+     "id": "ipm22",
+     "label": "Multidimensional poverty, 2022",
+     "value": 81.1,
+     "src": "MEF, IPM 2025, Anexo 1",
+     "mark": "ok"
+    },
+    {
+     "id": "undp",
+     "label": "Income poverty, 2025",
+     "value": 78.2,
+     "src": "UNDP 2025",
+     "mark": "care",
+     "caveat": "A different measure and year."
+    },
+    {
+     "id": "idea",
+     "label": "Poverty, as IDEA reports it, 2026",
+     "value": 86.5,
+     "src": "IDEA 2026, citing INEC",
+     "mark": "care",
+     "caveat": "A different measure and year."
+    }
+   ],
+   "pairs": [
+    [
+     "ipm25",
+     "undp"
+    ],
+    [
+     "ipm22",
+     "ipm25"
+    ],
+    [
+     "undp",
+     "idea"
+    ]
+   ],
+   "pairLabels": [
+    "Two measures",
+    "Two years",
+    "Two counters"
+   ],
+   "caption": "Each dot is one person out of 100 in the Comarca Ngäbe-Buglé. Every number is honest: what changed is the measure, the year, or who did the counting."
+  }
+ }
+}

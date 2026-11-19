@@ -1,0 +1,251 @@
+{
+ "name": "Historic Northeast, Kansas City",
+ "short": "Kansas City",
+ "status": "public",
+ "asOf": "2026-11-19",
+ "region": "Historic Northeast Kansas City, Missouri, with Jerusalem Farm",
+ "ft": 900,
+ "lat": 39.11,
+ "lon": -94.55,
+ "lang": "English, Spanish and many more",
+ "partner": {
+  "name": "Jerusalem Farm",
+  "url": "https://www.jerusalemfarm.org/"
+ },
+ "currency": "$",
+ "interactive": {
+  "B": {
+   "kind": "OneBadWeek",
+   "families": [
+    {
+     "id": "there",
+     "label": "An older homeowner in the Northeast: owns her house, lives on Social Security",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "fixedIncome": true,
+     "incomeNote": "Her Social Security keeps coming, so time off costs her no pay. The extra costs are what hurt.",
+     "leaveNote": "Missouri has no state paid sick leave: it was repealed in Aug 2025.",
+     "health": "Medicare.",
+     "loanOptions": [
+      {
+       "label": "A payday lender",
+       "monthly": 0.304225,
+       "note": "Payday: average APR 365% on an average $307 loan (Missouri Division of Finance, 2021–22)."
+      },
+      {
+       "label": "Jerusalem Farm's no-interest loan",
+       "rate": 0,
+       "note": "No interest, but about a year's wait (LISC 2023)."
+      }
+     ],
+     "lifeInsLikely": false,
+     "lifeInsNote": "No Missouri figure. 31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "savings": 1
+    },
+    {
+     "id": "salaried",
+     "label": "A Denver family with a salaried parent",
+     "leaveWeeks": 12,
+     "leaveShare": 0.7,
+     "leaveNote": "Colorado FAMLI: up to 12 paid weeks; about 70% of pay at this salary (90% up to half the state average wage, 50% above).",
+     "health": "Insured through work. Colorado's uninsured rate is 5.9% (2025).",
+     "loanRate": 0.2119,
+     "loanNote": "Average credit-card rate, 21.19% a year (Federal Reserve, Q3 2026).",
+     "lifeInsNote": "71% of U.S. households earning $150,000+ own life insurance (LIMRA 2024).",
+     "lifeInsLikely": true,
+     "savings": 8
+    },
+    {
+     "id": "lowwage",
+     "label": "A Denver family whose father does day labor for cash",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "FAMLI needs $2,500 in reported Colorado wages; cash day labor often has none.",
+     "health": "Coverage is uncertain; Denver Health is the city's safety net.",
+     "loanRate": 0.36,
+     "loanNote": "Colorado caps small loans at 36% a year (Prop 111, 2018).",
+     "lifeInsNote": "31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "lifeInsLikely": false,
+     "savings": 0
+    }
+   ],
+   "shocks": [
+    {
+     "id": "furnace",
+     "label": "The furnace dies in January",
+     "weeks": 0,
+     "extra": 4
+    },
+    {
+     "id": "injury",
+     "label": "She falls and breaks a leg (the earner, in Denver)",
+     "weeks": 8,
+     "extra": 2
+    },
+    {
+     "id": "bill",
+     "label": "A $3,000 bill arrives (tax, deductible or ER)",
+     "weeks": 0,
+     "extra": 6
+    },
+    {
+     "id": "hospital",
+     "label": "A family member is in the hospital for a week",
+     "weeks": 1,
+     "extra": 3
+    },
+    {
+     "id": "death",
+     "label": "The earner dies",
+     "weeks": 26,
+     "extra": 2
+    }
+   ]
+  },
+  "E": {
+   "kind": "LoanCost",
+   "amount": 2500,
+   "min": 500,
+   "max": 10000,
+   "step": 100,
+   "months": 12,
+   "options": [
+    {
+     "label": "Jerusalem Farm",
+     "needs": [],
+     "src": "LISC 2023: a signed statement, no-interest loan",
+     "rate": 0,
+     "wait": "about a year"
+    },
+    {
+     "label": "The city repair program (a grant)",
+     "needs": [
+      "deed"
+     ],
+     "src": "KCMO: deed required",
+     "rate": 0,
+     "wait": "4–5 times more eligible applicants than funds"
+    },
+    {
+     "label": "A bank loan against the house",
+     "needs": [
+      "deed",
+      "credit",
+      "bank"
+     ],
+     "src": "LISC 2023: 8.21–9.82%, first lien, $10,000 minimum",
+     "rate": 0.0821,
+     "apr": true,
+     "minAmt": 10000,
+     "rateText": "8.21–9.82% a year"
+    },
+    {
+     "label": "A payday lender",
+     "needs": [
+      "bank"
+     ],
+     "src": "Missouri Division of Finance 2023: average APR 365%, up to 75% of the loan in fees over renewals, $500 most",
+     "rate": 3.65,
+     "apr": true,
+     "maxAmt": 500,
+     "capTotal": 0.75
+    },
+    {
+     "label": "A relative who can lend",
+     "needs": [
+      "group"
+     ],
+     "src": "Depends on who you know",
+     "rate": 0
+    }
+   ],
+   "gates": [
+    {
+     "id": "deed",
+     "label": "Has her own name on the deed"
+    },
+    {
+     "id": "credit",
+     "label": "Has a good credit score"
+    },
+    {
+     "id": "bank",
+     "label": "Has a bank account"
+    },
+    {
+     "id": "group",
+     "label": "Has a relative who can lend"
+    }
+   ],
+   "denver": {
+    "currency": "$",
+    "amount": 2500,
+    "options": [
+     {
+      "label": "A credit card",
+      "rate": 0.2119,
+      "apr": true,
+      "needs": [
+       "papers"
+      ],
+      "src": "Federal Reserve G.19, Q3 2026"
+     },
+     {
+      "label": "A small loan under Colorado's cap",
+      "rate": 0.36,
+      "apr": true,
+      "needs": [],
+      "src": "Prop 111 (2018): payday loans capped at 36% a year"
+     },
+     {
+      "label": "Family who can lend",
+      "rate": 0,
+      "needs": [
+       "group"
+      ],
+      "src": "Depends on who you know. 63% of U.S. adults could cover $400 in cash."
+     }
+    ],
+    "gates": [
+     {
+      "id": "papers",
+      "label": "Has a credit history"
+     },
+     {
+      "id": "group",
+      "label": "Has family who can lend"
+     }
+    ]
+   },
+   "start": {
+    "bank": true
+   }
+  }
+ },
+ "replace": [
+  [
+   "[\\u201c\"]built on the four cornerstones of Prayer, Community, Service and Simplicity\\.?[\\u201d\"]",
+   "built on four cornerstones: prayer, community, service and simplicity."
+  ],
+  [
+   "comes [\\u201c\"]directly from the community, not from us\\.?[\\u201d\"]",
+   "comes from the community itself, not from Jerusalem Farm."
+  ],
+  [
+   "with [\\u201c\"]financial, educational, or emotional barriers[\\u201d\"]",
+   "with financial, educational or emotional barriers"
+  ],
+  [
+   "\\([\\u201c\"]the money has already been spent[\\u201d\"]\\)",
+   "(the city said the money had already been spent)"
+  ],
+  [
+   "[\\u201c\"]Among the highest legal caps in the country[\\u201d\"] was not checked",
+   "Whether it is among the highest legal caps in the country was not checked"
+  ],
+  [
+   "until students heard whom it was for",
+   "until someone said whom it was for"
+  ]
+ ]
+}

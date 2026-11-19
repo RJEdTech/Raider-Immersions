@@ -1,0 +1,236 @@
+{
+ "name": "Memphis, Tennessee",
+ "short": "Memphis",
+ "status": "public",
+ "asOf": "2026-11-19",
+ "region": "Memphis, Tennessee, with Serve901",
+ "ft": 337,
+ "lat": 35.15,
+ "lon": -90.05,
+ "lang": "English",
+ "partner": {
+  "name": "Serve901",
+  "url": "https://serve901-memphis.squarespace.com/your-guides"
+ },
+ "currency": "$",
+ "interactive": {
+  "D": {
+   "kind": "OneBadWeek",
+   "families": [
+    {
+     "id": "there",
+     "label": "A Memphis family: one parent works full-time in a warehouse",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "Tennessee has no paid sick or family leave law; it depends on the employer. 61% of the lowest-paid quarter of U.S. private workers have paid sick leave (BLS 2026).",
+     "health": "Tennessee has not expanded Medicaid. TennCare covers a parent only up to 100% of poverty ($2,277 a month for three). Uninsured: 9.7%.",
+     "loanOptions": [
+      {
+       "label": "A title loan on the car",
+       "monthly": 0.22,
+       "note": "Title loans: 2% a month plus up to 20% per 30-day renewal (TDFI)."
+      },
+      {
+       "label": "A flex loan",
+       "monthly": 0.23291666666666666,
+       "note": "Flex loans: up to 279.5% APR on lines to $4,000 (ProPublica)."
+      },
+      {
+       "label": "A credit card, if the credit file allows",
+       "monthly": 0.017658333333333335,
+       "note": "Average card rate: 21.19% (Federal Reserve, Q3 2026)."
+      }
+     ],
+     "lifeInsLikely": false,
+     "lifeInsNote": "No Memphis figure. 31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "savings": 1
+    },
+    {
+     "id": "salaried",
+     "label": "A Denver family with a salaried parent",
+     "leaveWeeks": 12,
+     "leaveShare": 0.7,
+     "leaveNote": "Colorado FAMLI: up to 12 paid weeks; about 70% of pay at this salary (90% up to half the state average wage, 50% above).",
+     "health": "Insured through work. Colorado's uninsured rate is 5.9% (2025).",
+     "loanRate": 0.2119,
+     "loanNote": "Average credit-card rate, 21.19% a year (Federal Reserve, Q3 2026).",
+     "lifeInsNote": "71% of U.S. households earning $150,000+ own life insurance (LIMRA 2024).",
+     "lifeInsLikely": true,
+     "savings": 8
+    },
+    {
+     "id": "lowwage",
+     "label": "A Denver family whose father does day labor for cash",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "FAMLI needs $2,500 in reported Colorado wages; cash day labor often has none.",
+     "health": "Coverage is uncertain; Denver Health is the city's safety net.",
+     "loanRate": 0.36,
+     "loanNote": "Colorado caps small loans at 36% a year (Prop 111, 2018).",
+     "lifeInsNote": "31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "lifeInsLikely": false,
+     "savings": 0
+    }
+   ],
+   "shocks": [
+    {
+     "id": "injury",
+     "label": "The earner breaks a leg",
+     "weeks": 8,
+     "extra": 1
+    },
+    {
+     "id": "hospital",
+     "label": "A child is in the hospital for asthma",
+     "weeks": 1,
+     "extra": 3
+    },
+    {
+     "id": "car",
+     "label": "The car dies",
+     "weeks": 1,
+     "extra": 3
+    },
+    {
+     "id": "filing",
+     "label": "The complex files on you after one late payment",
+     "weeks": 0,
+     "extra": 3
+    },
+    {
+     "id": "death",
+     "label": "The earner dies",
+     "weeks": 26,
+     "extra": 2
+    }
+   ]
+  },
+  "E": {
+   "kind": "LoanCost",
+   "amount": 500,
+   "min": 100,
+   "max": 3000,
+   "step": 50,
+   "months": 12,
+   "options": [
+    {
+     "label": "A credit card",
+     "needs": [
+      "credit"
+     ],
+     "src": "Federal Reserve G.19, Q3 2026",
+     "rate": 0.2119,
+     "apr": true
+    },
+    {
+     "label": "A payday loan",
+     "needs": [
+      "bank"
+     ],
+     "src": "Tenn. Code § 45-17-112 (2010 text, read with care): fee up to 15%, $500 most, 31 days; about 391% a year (our arithmetic)",
+     "rate": 3.91,
+     "apr": true,
+     "maxAmt": 500,
+     "months": 1
+    },
+    {
+     "label": "A flex loan",
+     "needs": [
+      "bank"
+     ],
+     "src": "ProPublica: up to 279.5% APR on lines to $4,000",
+     "rate": 2.795,
+     "apr": true,
+     "maxAmt": 4000
+    },
+    {
+     "label": "A title loan on the car",
+     "needs": [
+      "car"
+     ],
+     "src": "TDFI: 2% a month plus up to 20% per 30-day renewal",
+     "monthly": 0.22
+    },
+    {
+     "label": "A relative who can lend",
+     "needs": [
+      "group"
+     ],
+     "src": "Depends on who you know",
+     "rate": 0
+    }
+   ],
+   "gates": [
+    {
+     "id": "credit",
+     "label": "Has a good credit file (no eviction judgment)"
+    },
+    {
+     "id": "bank",
+     "label": "Has a bank account"
+    },
+    {
+     "id": "car",
+     "label": "Owns the car outright"
+    },
+    {
+     "id": "group",
+     "label": "Has a relative who can lend"
+    }
+   ],
+   "denver": {
+    "currency": "$",
+    "amount": 500,
+    "options": [
+     {
+      "label": "A credit card",
+      "rate": 0.2119,
+      "apr": true,
+      "needs": [
+       "papers"
+      ],
+      "src": "Federal Reserve G.19, Q3 2026"
+     },
+     {
+      "label": "A small loan under Colorado's cap",
+      "rate": 0.36,
+      "apr": true,
+      "needs": [],
+      "src": "Prop 111 (2018): payday loans capped at 36% a year"
+     },
+     {
+      "label": "Family who can lend",
+      "rate": 0,
+      "needs": [
+       "group"
+      ],
+      "src": "Depends on who you know. 63% of U.S. adults could cover $400 in cash."
+     }
+    ],
+    "gates": [
+     {
+      "id": "papers",
+      "label": "Has a credit history"
+     },
+     {
+      "id": "group",
+      "label": "Has family who can lend"
+     }
+    ]
+   },
+   "start": {
+    "bank": true
+   }
+  }
+ },
+ "replace": [
+  [
+   "— [\\u201c\"]the largest and shortest public school district merger in U\\.S\\. history[\\u201d\"] in the Daily Memphian's words —",
+   "— which the Daily Memphian called the largest, and shortest-lived, public school district merger in U.S. history —"
+  ],
+  [
+   "bridging [\\u201c\"]the gap between visitors and locals,?[\\u201d\"]",
+   "bridging the gap between visitors and locals,"
+  ]
+ ]
+}

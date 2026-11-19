@@ -1,0 +1,256 @@
+{
+ "name": "Floyd County, Kentucky",
+ "short": "Kentucky",
+ "status": "public",
+ "asOf": "2026-11-19",
+ "region": "Floyd County and the Big Sandy valley in eastern Kentucky, with Hand in Hand Ministries in Auxier",
+ "ft": 700,
+ "lat": 37.73,
+ "lon": -82.76,
+ "lang": "English",
+ "partner": {
+  "name": "Hand in Hand Ministries",
+  "url": "https://myhandinhand.org/about/"
+ },
+ "currency": "$",
+ "interactive": {
+  "A": {
+   "kind": "OneBadWeek",
+   "families": [
+    {
+     "id": "there",
+     "label": "An older homeowner in a Floyd County hollow: fixed income, a manufactured home beside a creek",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "fixedIncome": true,
+     "incomeNote": "Her check keeps coming, so time off costs her no pay. The extra costs are what hurt.",
+     "leaveNote": "Kentucky has no state paid sick or family leave (KFF 2025).",
+     "health": "Medicaid is the main coverage for 38.1%; uninsured 5.2% (2024). Drive times to care: not yet sourced.",
+     "loanOptions": [
+      {
+       "label": "A licensed installment loan",
+       "monthly": 0.03,
+       "note": "Installment loans: up to 3% a month under $5,000 (KRS 286.4-530)."
+      },
+      {
+       "label": "A payday loan",
+       "monthly": 0.32583333333333336,
+       "note": "Payday: $15 per $100 for two weeks, about 391% a year (our arithmetic); $600 most (KRS 286.9-100, 2026)."
+      },
+      {
+       "label": "A credit card, if her credit allows",
+       "monthly": 0.017658333333333335,
+       "note": "Average card rate: 21.19% (Federal Reserve, Q3 2026)."
+      }
+     ],
+     "lifeInsLikely": false,
+     "lifeInsNote": "No local life-insurance figure. Social Security survivor benefits reach 1,115 widow(er)s and parents and 595 children in Floyd County (Dec 2025).",
+     "savings": 1
+    },
+    {
+     "id": "salaried",
+     "label": "A Denver family with a salaried parent",
+     "leaveWeeks": 12,
+     "leaveShare": 0.7,
+     "leaveNote": "Colorado FAMLI: up to 12 paid weeks; about 70% of pay at this salary (90% up to half the state average wage, 50% above).",
+     "health": "Insured through work. Colorado's uninsured rate is 5.9% (2025).",
+     "loanRate": 0.2119,
+     "loanNote": "Average credit-card rate, 21.19% a year (Federal Reserve, Q3 2026).",
+     "lifeInsNote": "71% of U.S. households earning $150,000+ own life insurance (LIMRA 2024).",
+     "lifeInsLikely": true,
+     "savings": 8
+    },
+    {
+     "id": "lowwage",
+     "label": "A Denver family whose father does day labor for cash",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "FAMLI needs $2,500 in reported Colorado wages; cash day labor often has none.",
+     "health": "Coverage is uncertain; Denver Health is the city's safety net.",
+     "loanRate": 0.36,
+     "loanNote": "Colorado caps small loans at 36% a year (Prop 111, 2018).",
+     "lifeInsNote": "31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "lifeInsLikely": false,
+     "savings": 0
+    }
+   ],
+   "shocks": [
+    {
+     "id": "fall",
+     "label": "A fall breaks a hip",
+     "weeks": 8,
+     "extra": 4
+    },
+    {
+     "id": "flood",
+     "label": "The creek floods (a basement floods here)",
+     "weeks": 2,
+     "extra": 10
+    },
+    {
+     "id": "parttime",
+     "label": "The earner is hurt and can only work part-time",
+     "weeks": 4,
+     "extra": 0
+    },
+    {
+     "id": "grandchild",
+     "label": "A grandchild comes to live with you",
+     "weeks": 0,
+     "extra": 4
+    },
+    {
+     "id": "death",
+     "label": "A parent dies",
+     "weeks": 26,
+     "extra": 2
+    }
+   ]
+  },
+  "E": {
+   "kind": "LoanCost",
+   "amount": 1000,
+   "min": 200,
+   "max": 3000,
+   "step": 50,
+   "months": 12,
+   "options": [
+    {
+     "label": "A volunteer crew (Hand in Hand, a church)",
+     "needs": [
+      "crew"
+     ],
+     "src": "Free labor",
+     "rate": 0,
+     "wait": "not yet known: ask Hand in Hand"
+    },
+    {
+     "label": "Borrowing against the house",
+     "needs": [
+      "equity",
+      "credit"
+     ],
+     "src": "Near the 30-year mortgage rate, 7.11%",
+     "rate": 0.0711,
+     "apr": true
+    },
+    {
+     "label": "A credit card",
+     "needs": [
+      "credit"
+     ],
+     "src": "Federal Reserve G.19, Q3 2026",
+     "rate": 0.2119,
+     "apr": true
+    },
+    {
+     "label": "A licensed installment loan",
+     "needs": [
+      "bank"
+     ],
+     "src": "KRS 286.4-530: up to 3% a month under $5,000",
+     "monthly": 0.03
+    },
+    {
+     "label": "A payday loan",
+     "needs": [
+      "bank"
+     ],
+     "src": "KRS 286.9-100 (2026): $15 per $100 per two weeks; two loans, $600 total",
+     "rate": 3.91,
+     "apr": true,
+     "maxAmt": 600,
+     "months": 1,
+     "rateText": "about 391% a year (our arithmetic)"
+    },
+    {
+     "label": "A relative who can lend",
+     "needs": [
+      "group"
+     ],
+     "src": "Depends on who you know",
+     "rate": 0
+    }
+   ],
+   "gates": [
+    {
+     "id": "bank",
+     "label": "Has a bank account"
+    },
+    {
+     "id": "credit",
+     "label": "Has a good credit score"
+    },
+    {
+     "id": "equity",
+     "label": "Has equity and a clear title to the house"
+    },
+    {
+     "id": "crew",
+     "label": "Can get a volunteer crew this year"
+    },
+    {
+     "id": "group",
+     "label": "Has a relative who can lend"
+    }
+   ],
+   "denver": {
+    "currency": "$",
+    "amount": 1000,
+    "options": [
+     {
+      "label": "A credit card",
+      "rate": 0.2119,
+      "apr": true,
+      "needs": [
+       "papers"
+      ],
+      "src": "Federal Reserve G.19, Q3 2026"
+     },
+     {
+      "label": "A small loan under Colorado's cap",
+      "rate": 0.36,
+      "apr": true,
+      "needs": [],
+      "src": "Prop 111 (2018): payday loans capped at 36% a year"
+     },
+     {
+      "label": "Family who can lend",
+      "rate": 0,
+      "needs": [
+       "group"
+      ],
+      "src": "Depends on who you know. 63% of U.S. adults could cover $400 in cash."
+     }
+    ],
+    "gates": [
+     {
+      "id": "papers",
+      "label": "Has a credit history"
+     },
+     {
+      "id": "group",
+      "label": "Has family who can lend"
+     }
+    ]
+   },
+   "start": {
+    "bank": true
+   }
+  }
+ },
+ "replace": [
+  [
+   "Prestonsburg's mayor after the 2025 flood: [\\u201c\"]Everybody is lending a helping hand\\.?[\\u201d\"]",
+   "After the 2025 flood, Prestonsburg's mayor said everyone was pitching in."
+  ],
+  [
+   "ownership [\\u201c\"]highly concentrated among a few absentee and corporate owners\\.?[\\u201d\"]",
+   "ownership highly concentrated among a few absentee and corporate owners."
+  ],
+  [
+   "Teach it only as [\\u201c\"]how much medicine moves through a county,?[\\u201d\"]",
+   "Teach it only as how much medicine moves through a county,"
+  ]
+ ]
+}

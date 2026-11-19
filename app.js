@@ -24,12 +24,12 @@ function chartList(){var l=sites().slice();l.push({id:'denver',short:'Denver (ho
 
 function home(){
   document.title='Raider Immersions';
-  var TR=window.TRIPS||{},list=[];
+  var TR=window.TRIPS||{},list=[],ORDER=['peru','quito','honduras-sps','honduras-teg','dr','panama','tijuana-toe','tijuana-doc','memphis','jfarm','kentucky','dc','denver'];
   Object.keys(TR).forEach(function(k){var t=TR[k];if(t.status==='public')list.push({id:t.id,name:t.name,place:t.region,ft:t.ft,lat:t.lat,lon:t.lon,ready:true,fresh:true})});
-  IMM.forEach(function(p){if(p.status==='hold'||TR[p.id])return;list.push({id:p.id,name:p.name,place:p.place,ft:p.ft,lat:p.lat,lon:p.lon,ready:p.status==='ready',fresh:false})});
+  list.sort(function(a,b){var x=ORDER.indexOf(a.id),y=ORDER.indexOf(b.id);return (x<0?99:x)-(y<0?99:y)});
   var h='<p class="lede">One set of resources for every immersion: the place and its people, the barriers that set the price of ordinary life there, labs where you change the numbers, and the same structures in the Denver you live in.</p>'+
    '<div class="grid">'+list.map(function(p){var r=p.ready;
-     return (r?'<a class="card" href="#'+p.id+'">':'<div class="card soon">')+'<span class="badge'+(p.fresh?' ready':'')+'">'+(p.fresh?'New research':r?'Earlier draft':'Coming next')+'</span><h3>'+esc(p.name)+'</h3><div class="meta">'+esc(p.place)+(r?'<br>'+fmt(miles(p))+' miles from Denver':'')+'</div>'+(r?'</a>':'</div>')}).join('')+'</div>'+
+     return (r?'<a class="card" href="#'+p.id+'">':'<div class="card soon">')+'<span class="badge'+(p.fresh?' ready':'')+'">'+(p.fresh?'New research':r?'Earlier draft':'Coming next')+'</span><h3>'+esc(p.name)+'</h3><div class="meta">'+esc(p.place)+(r?'<br>'+(miles(p)<30?'In the Denver metro':fmt(miles(p))+' miles from Denver'):'')+'</div>'+(r?'</a>':'</div>')}).join('')+'</div>'+
    '<h2>The same structures at home</h2><p class="lede">Every barrier on a trip has a mirror in Denver: wages, paid leave, health care, what borrowing costs, housing. <a href="#denver-mirror">See the Denver side →</a></p>';
   app.innerHTML=h;window.scrollTo(0,0)}
 
@@ -87,7 +87,8 @@ function area(p,i){
   box.querySelectorAll('[data-s]').forEach(function(b){b.onclick=function(){store(k,b.dataset.s);area(p,i)}});
   var t=$('#area-top');if(t&&t.scrollIntoView)t.scrollIntoView({block:'start'})}
 
-function route(){var h=(location.hash||'').slice(1).split('/');if(window.TRIP_ROUTE&&window.TRIP_ROUTE(h))return;var p=IMM.filter(function(x){return x.id===h[0]&&x.status==='ready'})[0];
+var ALIAS={honduras:'honduras-sps',tijuana:'tijuana-toe'};
+function route(){var h=(location.hash||'').slice(1).split('/');if(ALIAS[h[0]]){location.replace('#'+ALIAS[h[0]]);return}if(window.TRIP_ROUTE&&window.TRIP_ROUTE(h))return;var p=IMM.filter(function(x){return x.id===h[0]&&x.status==='ready'})[0];
   if(!p)return home();var ai=h[2]?parseInt(h[2],10)-1:null;place(p,h[1],isNaN(ai)?null:ai)}
 window.addEventListener('hashchange',route);route();
 })();

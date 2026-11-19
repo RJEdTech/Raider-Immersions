@@ -1,0 +1,270 @@
+{
+ "name": "Tijuana, Baja California (Social Documentary)",
+ "short": "Tijuana (film)",
+ "status": "public",
+ "asOf": "2026-11-19",
+ "region": "Tijuana and the border, on the Social Documentary trip",
+ "ft": 70,
+ "lat": 32.53,
+ "lon": -117.02,
+ "lang": "Spanish and English",
+ "partner": {
+  "name": "PeaceWorks Travel",
+  "url": "https://peaceworkstravel.com/about-peace-works-travel/"
+ },
+ "currency": "MX$",
+ "interactive": {
+  "A": {
+   "kind": "OneBadWeek",
+   "families": [
+    {
+     "id": "formal",
+     "label": "A Tijuana colonia family, if it hits the parent on the maquila shift (formal, IMSS)",
+     "leaveWeeks": 52,
+     "leaveShare": 0.6,
+     "leaveBy": {
+      "birth": [
+       12,
+       1.0
+      ]
+     },
+     "leaveNote": "IMSS sick pay: 60% of wage from day 4 (read with care); 100% for 84 days after a birth.",
+     "health": "IMSS clinics and hospitals.",
+     "loanOptions": [
+      {
+       "label": "A personal loan from a bank",
+       "rate": 0.405,
+       "note": "Personal loans averaged 40.5% a year (Banxico, Aug 2025)."
+      }
+     ],
+     "lifeInsLikely": false,
+     "lifeInsNote": "Life-insurance coverage in Mexico: not yet sourced.",
+     "savings": 1
+    },
+    {
+     "id": "informal",
+     "label": "The same family, if it hits the parent who sells at the sobreruedas (informal)",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "Informal: no paid leave. 36.6% of Tijuana workers are informal (Q1 2026).",
+     "health": "The public system (IMSS-Bienestar).",
+     "loanOptions": [
+      {
+       "label": "A small bank loan",
+       "rate": 0.578,
+       "note": "Loans up to 5,000 pesos: 57.8% a year (Banxico, Aug 2025)."
+      },
+      {
+       "label": "Group microcredit",
+       "rate": 0.731,
+       "note": "Group microcredit: 73.1% a year (Banxico, Aug 2025)."
+      }
+     ],
+     "lifeInsLikely": false,
+     "lifeInsNote": "Life-insurance coverage in Mexico: not yet sourced.",
+     "savings": 1
+    },
+    {
+     "id": "salaried",
+     "label": "A Denver family with a salaried parent",
+     "leaveWeeks": 12,
+     "leaveShare": 0.7,
+     "leaveNote": "Colorado FAMLI: up to 12 paid weeks; about 70% of pay at this salary (90% up to half the state average wage, 50% above).",
+     "health": "Insured through work. Colorado's uninsured rate is 5.9% (2025).",
+     "loanRate": 0.2119,
+     "loanNote": "Average credit-card rate, 21.19% a year (Federal Reserve, Q3 2026).",
+     "lifeInsNote": "71% of U.S. households earning $150,000+ own life insurance (LIMRA 2024).",
+     "lifeInsLikely": true,
+     "savings": 8
+    },
+    {
+     "id": "lowwage",
+     "label": "A Denver family whose father does day labor for cash",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "FAMLI needs $2,500 in reported Colorado wages; cash day labor often has none.",
+     "health": "Coverage is uncertain; Denver Health is the city's safety net.",
+     "loanRate": 0.36,
+     "loanNote": "Colorado caps small loans at 36% a year (Prop 111, 2018).",
+     "lifeInsNote": "31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "lifeInsLikely": false,
+     "savings": 0
+    }
+   ],
+   "shocks": [
+    {
+     "id": "injury",
+     "label": "The earner breaks a wrist",
+     "weeks": 6,
+     "extra": 1
+    },
+    {
+     "id": "rain",
+     "label": "Heavy rain damages the house",
+     "weeks": 0,
+     "extra": 6
+    },
+    {
+     "id": "birth",
+     "label": "A baby is born early",
+     "weeks": 12,
+     "extra": 2
+    },
+    {
+     "id": "hospital",
+     "label": "A child is in the hospital for a week",
+     "weeks": 1,
+     "extra": 3
+    },
+    {
+     "id": "deported",
+     "label": "The earner is detained and deported",
+     "weeks": 26,
+     "extra": 3
+    },
+    {
+     "id": "death",
+     "label": "The earner dies",
+     "weeks": 26,
+     "extra": 2
+    }
+   ]
+  },
+  "E": {
+   "kind": "LoanCost",
+   "amount": 10000,
+   "min": 1000,
+   "max": 50000,
+   "step": 500,
+   "months": 12,
+   "options": [
+    {
+     "label": "The city loan",
+     "needs": [
+      "papers",
+      "bill",
+      "equip"
+     ],
+     "src": "SEDETI 2025: up to 50,000 pesos over 18 months; equipment yes, construction no",
+     "rate": 0.03,
+     "rateText": "3%",
+     "months": 18
+    },
+    {
+     "label": "A personal loan from a bank",
+     "needs": [
+      "papers",
+      "bank"
+     ],
+     "src": "Banxico, Aug 2025",
+     "rate": 0.405
+    },
+    {
+     "label": "A small loan (up to 5,000 pesos)",
+     "needs": [
+      "papers"
+     ],
+     "src": "Banxico, Aug 2025",
+     "rate": 0.578,
+     "maxAmt": 5000
+    },
+    {
+     "label": "Individual microcredit",
+     "needs": [
+      "papers"
+     ],
+     "src": "Banxico, Aug 2025",
+     "rate": 0.583
+    },
+    {
+     "label": "Group microcredit",
+     "needs": [
+      "papers"
+     ],
+     "src": "Banxico, Aug 2025",
+     "rate": 0.731
+    },
+    {
+     "label": "A tanda",
+     "needs": [
+      "tanda"
+     ],
+     "src": "No interest, but you get the pot on your turn, not on the day the rain comes",
+     "rate": 0
+    }
+   ],
+   "gates": [
+    {
+     "id": "papers",
+     "label": "Has an INE with a Tijuana address"
+    },
+    {
+     "id": "bill",
+     "label": "Has a utility bill in their own name"
+    },
+    {
+     "id": "bank",
+     "label": "Has a bank account and a payroll job"
+    },
+    {
+     "id": "equip",
+     "label": "Is buying equipment (the city loan won't pay for construction)"
+    },
+    {
+     "id": "tanda",
+     "label": "Belongs to a tanda"
+    }
+   ],
+   "denver": {
+    "currency": "$",
+    "amount": 500,
+    "options": [
+     {
+      "label": "A credit card",
+      "rate": 0.2119,
+      "apr": true,
+      "needs": [
+       "papers"
+      ],
+      "src": "Federal Reserve G.19, Q3 2026"
+     },
+     {
+      "label": "A small loan under Colorado's cap",
+      "rate": 0.36,
+      "apr": true,
+      "needs": [],
+      "src": "Prop 111 (2018): payday loans capped at 36% a year"
+     },
+     {
+      "label": "Family who can lend",
+      "rate": 0,
+      "needs": [
+       "group"
+      ],
+      "src": "Depends on who you know. 63% of U.S. adults could cover $400 in cash."
+     }
+    ],
+    "gates": [
+     {
+      "id": "papers",
+      "label": "Has a credit history"
+     },
+     {
+      "id": "group",
+      "label": "Has family who can lend"
+     }
+    ]
+   }
+  }
+ },
+ "replace": [
+  [
+   "into the [\\u201c\"]up to one or two minimum wages[\\u201d\"] bands",
+   "into the bands of up to one or two minimum wages"
+  ],
+  [
+   "The founder describes the trips as [\\u201c\"]rather than this just being an exercise in voyeurism\\.?[\\u201d\"]",
+   "The founder says she wants the trips to be more than an exercise in voyeurism."
+  ]
+ ]
+}

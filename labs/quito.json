@@ -1,0 +1,231 @@
+{
+ "name": "Quito, Ecuador",
+ "short": "Quito",
+ "status": "public",
+ "asOf": "2026-11-19",
+ "region": "North Quito, with The Center: A Family of Families",
+ "ft": 9350,
+ "lat": -0.18,
+ "lon": -78.47,
+ "lang": "Spanish",
+ "partner": {
+  "name": "The Center: A Family of Families",
+  "url": "https://www.c4wf.org/our-work"
+ },
+ "currency": "$",
+ "interactive": {
+  "A": {
+   "kind": "OneBadWeek",
+   "families": [
+    {
+     "id": "there",
+     "label": "A Center family in north Quito: two informal earners",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "No paid leave: 51.9% of Quito's employed have no social security (2025). IESS sick pay (75% from day 4) reaches only contributors.",
+     "health": "Free on paper, but in Dec 2025 Quito's public hospitals stocked about 40–52% of the medicines they should.",
+     "loanOptions": [
+      {
+       "label": "A street lender",
+       "monthly": 0.2,
+       "note": "Street lenders charge about 20% a month (press reports; read with care)."
+      },
+      {
+       "label": "Microcredit, if a lender will take them",
+       "rate": 0.192,
+       "note": "Microcredit averaged 19.20% a year (BCE, June 2026), but needs papers and documented income."
+      }
+     ],
+     "lifeInsLikely": false,
+     "lifeInsNote": "About 2% of low- and middle-income Ecuadorians have any microinsurance (2025).",
+     "savings": 1
+    },
+    {
+     "id": "salaried",
+     "label": "A Denver family with a salaried parent",
+     "leaveWeeks": 12,
+     "leaveShare": 0.7,
+     "leaveNote": "Colorado FAMLI: up to 12 paid weeks; about 70% of pay at this salary (90% up to half the state average wage, 50% above).",
+     "health": "Insured through work. Colorado's uninsured rate is 5.9% (2025).",
+     "loanRate": 0.2119,
+     "loanNote": "Average credit-card rate, 21.19% a year (Federal Reserve, Q3 2026).",
+     "lifeInsNote": "71% of U.S. households earning $150,000+ own life insurance (LIMRA 2024).",
+     "lifeInsLikely": true,
+     "savings": 8
+    },
+    {
+     "id": "lowwage",
+     "label": "A Denver family whose father does day labor for cash",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "FAMLI needs $2,500 in reported Colorado wages; cash day labor often has none.",
+     "health": "Coverage is uncertain; Denver Health is the city's safety net.",
+     "loanRate": 0.36,
+     "loanNote": "Colorado caps small loans at 36% a year (Prop 111, 2018).",
+     "lifeInsNote": "31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "lifeInsLikely": false,
+     "savings": 0
+    }
+   ],
+   "shocks": [
+    {
+     "id": "injury",
+     "label": "The earner breaks an arm",
+     "weeks": 6,
+     "extra": 1
+    },
+    {
+     "id": "power",
+     "label": "The power goes out 14 hours a day for a month",
+     "weeks": 2,
+     "extra": 1
+    },
+    {
+     "id": "birth",
+     "label": "A baby is born early",
+     "weeks": 12,
+     "extra": 2
+    },
+    {
+     "id": "vacuna",
+     "label": "The stall is told to pay a vacuna (extortion)",
+     "weeks": 0,
+     "extra": 3
+    },
+    {
+     "id": "death",
+     "label": "The earner dies",
+     "weeks": 26,
+     "extra": 2
+    }
+   ]
+  },
+  "E": {
+   "kind": "LoanCost",
+   "amount": 400,
+   "min": 100,
+   "max": 3000,
+   "step": 50,
+   "months": 12,
+   "options": [
+    {
+     "label": "A social-housing loan (for the house)",
+     "needs": [
+      "papers",
+      "income",
+      "title"
+     ],
+     "src": "Social-interest housing rate, 2026: only with title and documents",
+     "rate": 0.0499
+    },
+    {
+     "label": "Microcredit at the average rate",
+     "needs": [
+      "papers",
+      "income"
+     ],
+     "src": "BCE, June 2026",
+     "rate": 0.192
+    },
+    {
+     "label": "Microcredit at the legal maximum",
+     "needs": [
+      "papers"
+     ],
+     "src": "JPRF, 2026",
+     "rate": 0.2823
+    },
+    {
+     "label": "A street lender",
+     "needs": [],
+     "src": "Press reports: about 20% a month, collected daily (read with care)",
+     "monthly": 0.2
+    },
+    {
+     "label": "A savings group",
+     "needs": [
+      "group"
+     ],
+     "src": "No interest, but only what the group has saved",
+     "rate": 0
+    }
+   ],
+   "gates": [
+    {
+     "id": "papers",
+     "label": "Has an Ecuadorian ID or a visa"
+    },
+    {
+     "id": "income",
+     "label": "Has documented income (a RUC tax number or IESS)"
+    },
+    {
+     "id": "title",
+     "label": "Has title to the house"
+    },
+    {
+     "id": "group",
+     "label": "Belongs to a savings group"
+    }
+   ],
+   "denver": {
+    "currency": "$",
+    "amount": 400,
+    "options": [
+     {
+      "label": "A credit card",
+      "rate": 0.2119,
+      "apr": true,
+      "needs": [
+       "papers"
+      ],
+      "src": "Federal Reserve G.19, Q3 2026"
+     },
+     {
+      "label": "A small loan under Colorado's cap",
+      "rate": 0.36,
+      "apr": true,
+      "needs": [],
+      "src": "Prop 111 (2018): payday loans capped at 36% a year"
+     },
+     {
+      "label": "Family who can lend",
+      "rate": 0,
+      "needs": [
+       "group"
+      ],
+      "src": "Depends on who you know. 63% of U.S. adults could cover $400 in cash."
+     }
+    ],
+    "gates": [
+     {
+      "id": "papers",
+      "label": "Has a credit history"
+     },
+     {
+      "id": "group",
+      "label": "Has family who can lend"
+     }
+    ]
+   }
+  }
+ },
+ "replace": [
+  [
+   "Halligan said the same in 2009: [\\u201c\"]Ours is not a charity program\\.?[\\u201d\"] \\(NCR\\)\\.",
+   "Halligan said the same in 2009: the Center is not a charity program (NCR)."
+  ],
+  [
+   "a public answer to [\\u201c\"]where do children go after school\\.?[\\u201d\"]",
+   "a public answer to the question of where children go after school."
+  ],
+  [
+   "Say [\\u201c\"]no household cuts as of Oct 2026,?[\\u201d\"]",
+   "Say there were no household cuts as of Oct 2026,"
+  ],
+  [
+   "[\\u201c\"]universales y gratuitos en todos los niveles de atención[\\u201d\"],?",
+   "universal and free at every level of care,"
+  ]
+ ]
+}

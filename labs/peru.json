@@ -259,6 +259,7 @@
      {
       "label": "A credit card",
       "rate": 0.2119,
+      "apr": true,
       "needs": [
        "papers"
       ],
@@ -267,8 +268,9 @@
      {
       "label": "A small loan under Colorado's cap",
       "rate": 0.36,
+      "apr": true,
       "needs": [],
-      "src": "Prop 111 (2018)"
+      "src": "Prop 111 (2018): payday loans capped at 36% a year"
      },
      {
       "label": "Family who can lend",
@@ -276,7 +278,7 @@
       "needs": [
        "group"
       ],
-      "src": "Depends on who you know"
+      "src": "Depends on who you know. 63% of U.S. adults could cover $400 in cash."
      }
     ],
     "gates": [

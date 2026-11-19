@@ -40,10 +40,10 @@ function page(t,tab,sub){
 
 function over(t,p){var up=t.ft-D.ft;
   p.innerHTML='<p class="lede">'+esc(t.region)+'.</p><div class="stats">'+
-   '<div class="stat"><b>'+fmt(miles(t))+' mi</b><span>from Denver, in a straight line</span></div>'+
-   '<div class="stat"><b>'+fmt(t.ft)+' ft</b><span>'+(up>0?fmt(up)+' ft higher than Denver':fmt(-up)+' ft lower than Denver')+'</span></div>'+
+   (miles(t)<30?'<div class="stat"><b>Here</b><span>in the Denver metro</span></div>':'<div class="stat"><b>'+fmt(miles(t))+' mi</b><span>from Denver, in a straight line</span></div>')+
+   '<div class="stat"><b>'+fmt(t.ft)+' ft</b><span>'+(Math.abs(up)<300?'about the same as Denver':up>0?fmt(up)+' ft higher than Denver':fmt(-up)+' ft lower than Denver')+'</span></div>'+
    '<div class="stat"><b style="font-size:19px">'+esc(t.lang)+'</b><span>what you will hear</span></div></div>'+
-   '<h3>Who we go with</h3><p><a href="'+esc(t.partner.url)+'" target="_blank" rel="noopener"><b>'+esc(t.partner.name)+'</b></a></p>'+
+   (t.partner?'<h3>Who we go with</h3><p>'+(t.partner.url?'<a href="'+esc(t.partner.url)+'" target="_blank" rel="noopener"><b>'+esc(t.partner.name)+'</b></a>':'<b>'+esc(t.partner.name)+'</b>')+'</p>':'')+
    t.place.map(function(b){return '<h3>'+md(b.h)+'</h3>'+(b.text?'<p>'+md(b.text)+'</p>':'')+(b.items.length?'<ul class="tl">'+b.items.map(function(i){return '<li>'+md(i)+'</li>'}).join('')+'</ul>':'')}).join('')+
    (t.web?'<h3>How the barriers stack</h3><div class="claim">'+md(t.web)+'</div><p><a class="btn" href="#'+t.id+'/bar">See the barriers →</a></p>':'')}
 
@@ -95,7 +95,7 @@ function labs(t,p,sub){var L=labList(t);
   var l=L.filter(function(x){return x.key===sub})[0],cfg=(t.interactive||{})[sub];
   p.innerHTML='<a class="back" href="#'+t.id+'/labs">← All labs</a><h3>'+md(l.title)+'</h3><p class="lede">'+md(l.question)+'</p><div id="lab"></div>'+
    '<div class="sec"><details><summary><b>What to notice</b> (open after you try it)</summary><p>'+md(l.notice||'')+'</p></details></div>'+
-   (l.denverRun&&!(cfg&&cfg.denver)?'<div class="sec mirror"><p class="kick">Run it in Denver</p><p>'+md(l.denverRun)+'</p></div>':'')+
+   (l.denverRun&&!(cfg&&cfg.denver)?'<div class="sec mirror"><p class="kick">Run it in Denver</p><p>'+md(l.denverRun.charAt(0).toUpperCase()+l.denverRun.slice(1))+'</p></div>':'')+
    answerBox(t.id+':lab:'+sub,l.yourCall||'Your call')+copyBtn('lab');
   var box=$('#lab',p);
   if(cfg&&cfg.kind==='OneBadWeek')oneBadWeek(t,cfg,box);
@@ -104,55 +104,64 @@ function labs(t,p,sub){var L=labList(t);
   else box.innerHTML=(l.changes?'<div class="sec"><p class="kick">What you change</p><p>'+md(l.changes)+'</p></div>':'')+(l.data?'<div class="sec"><p class="kick">The real numbers</p><p>'+md(l.data)+'</p></div>':'')}
 
 function oneBadWeek(t,c,box){
-  var st={shock:c.shocks[0].id,weeks:null,extra:null,sav:{},ins:{}};
-  c.families.forEach(function(f){st.sav[f.id]=f.savings;st.ins[f.id]=f.lifeInsLikely});
+  var st={shock:c.shocks[0].id,weeks:null,extra:null,sav:{},ins:{},ln:{}};
+  c.families.forEach(function(f){st.sav[f.id]=f.savings;st.ins[f.id]=f.lifeInsLikely;st.ln[f.id]=0});
+  function loanOf(f){var L=f.loanOptions;return L?L[st.ln[f.id]]:{rate:f.loanRate,note:f.loanNote}}
   function draw(){
     var s=c.shocks.filter(function(x){return x.id===st.shock})[0],wk=st.weeks==null?s.weeks:st.weeks,ex=st.extra==null?s.extra:st.extra,max=1;
     var rows=c.families.map(function(f){
-      var leave=Math.min(wk,f.leaveWeeks)*f.leaveShare,sav=st.sav[f.id],need=wk-leave+ex,ins=s.id==='death'&&st.ins[f.id];
+      var lb=(f.leaveBy||{})[s.id],lw=lb?lb[0]:f.leaveWeeks,ls=lb?lb[1]:f.leaveShare,lost=f.fixedIncome?0:wk;
+      var leave=Math.min(lost,lw)*ls,sav=st.sav[f.id],need=lost-leave+ex,ins=s.id==='death'&&st.ins[f.id],L=loanOf(f);
       if(ins){leave=0;need=0}
-      var fromSav=Math.min(sav,need),gap=Math.max(0,need-fromSav),interest=gap*(Math.pow(1+f.loanRate,0.5)-1);
-      var r={f:f,leave:leave,sav:fromSav,gap:gap,interest:interest,ins:ins};max=Math.max(max,leave+fromSav+gap+interest);return r});
+      var fromSav=Math.min(sav,need),gap=Math.max(0,need-fromSav),known=L.rate!=null||L.monthly!=null,
+          interest=!known?0:L.monthly!=null?gap*L.monthly*6:gap*(Math.pow(1+L.rate,0.5)-1);
+      var r={f:f,L:L,known:known,leave:leave,sav:fromSav,gap:gap,interest:interest,ins:ins};max=Math.max(max,leave+fromSav+gap+interest);return r});
     var W=100/max;
-    box.innerHTML='<div class="sec"><p class="kick">1 · Pick what happens</p><div class="sort">'+c.shocks.map(function(x){return '<button data-sh="'+x.id+'" class="'+(x.id===st.shock?'on':'')+'">'+esc(x.label)+'</button>'}).join('')+'</div>'+
+    box.innerHTML=(c.note?'<p class="muted">'+esc(c.note)+'</p>':'')+'<div class="sec"><p class="kick">1 · Pick what happens</p><div class="sort">'+c.shocks.map(function(x){return '<button data-sh="'+x.id+'" class="'+(x.id===st.shock?'on':'')+'">'+esc(x.label)+'</button>'}).join('')+'</div>'+
      '<div class="sliders"><label>Weeks without pay: <b>'+wk+'</b><input type="range" min="0" max="52" value="'+wk+'" data-r="weeks"></label>'+
      '<label>Extra costs, in weeks of pay: <b>'+ex+'</b><input type="range" min="0" max="20" value="'+ex+'" data-r="extra"></label><p class="muted" style="font-size:14px">These two are examples you can change, not data. Everything below each family comes from a source.</p></div></div>'+
-     '<div class="sec"><p class="kick">2 · Watch three families</p><p class="muted" style="font-size:14px">Measured in weeks of that family\'s own pay, so the three can be compared.</p>'+
+     '<div class="sec"><p class="kick">2 · Watch '+(['','one family','two families','three families','four families'][c.families.length]||c.families.length+' families')+'</p><p class="muted" style="font-size:14px">Measured in weeks of that family\'s own pay, so they can be compared.</p>'+
      rows.map(function(r){var f=r.f;return '<div class="fam"><h4>'+esc(f.label)+'</h4>'+
-       '<div class="stack" role="img" aria-label="'+esc(f.label)+': '+fmt(r.leave,1)+' weeks paid leave, '+fmt(r.sav,1)+' from savings, '+fmt(r.gap,1)+' borrowed, '+fmt(r.interest,1)+' interest">'+
+       '<div class="stack" role="img" aria-label="'+esc(f.label)+': '+fmt(r.leave,1)+' weeks paid leave, '+fmt(r.sav,1)+' from savings, '+fmt(r.gap,1)+' borrowed'+(r.known?', '+fmt(r.interest,1)+' interest':', interest unknown')+'">'+
         (r.ins?'<span class="sg ins" style="width:100%">Life insurance pays</span>':
         '<span class="sg leave" style="width:'+(r.leave*W)+'%"></span><span class="sg sav" style="width:'+(r.sav*W)+'%"></span><span class="sg gap" style="width:'+(r.gap*W)+'%"></span><span class="sg int" style="width:'+(r.interest*W)+'%"></span>')+'</div>'+
-       '<p class="fsum">'+(r.ins?'Covered by life insurance.':(r.gap>0?'Has to borrow <b>'+fmt(r.gap,1)+' weeks</b> of pay and pay back <b>'+fmt(r.interest,1)+' more</b> in six months of interest.':'Gets through without borrowing.'))+'</p>'+
+       '<p class="fsum">'+(r.ins?'Covered by life insurance.':(r.gap>0?'Has to borrow <b>'+fmt(r.gap,1)+' weeks</b> of pay'+(r.known?' and pay back <b>'+fmt(r.interest,1)+' more</b> in six months of interest.':'. What that costs here is <b>not yet sourced</b>: find it.'):'Gets through without borrowing.'))+'</p>'+
        '<label class="sl">Savings, in weeks of pay: <b>'+st.sav[f.id]+'</b><input type="range" min="0" max="26" value="'+st.sav[f.id]+'" data-sv="'+f.id+'"></label>'+
+       (f.loanOptions&&f.loanOptions.length>1?'<label class="sl">Who will lend: <select data-ln="'+f.id+'">'+f.loanOptions.map(function(o,i){return '<option value="'+i+'"'+(i===st.ln[f.id]?' selected':'')+'>'+esc(o.label)+'</option>'}).join('')+'</select></label>':'')+
        (s.id==='death'?'<label class="chk"><input type="checkbox" data-in="'+f.id+'"'+(st.ins[f.id]?' checked':'')+'> Has life insurance</label>':'')+
-       '<ul class="cus"><li>'+esc(f.leaveNote)+'</li><li>'+esc(f.health)+'</li><li>'+esc(f.loanNote)+'</li>'+(s.id==='death'?'<li>'+esc(f.lifeInsNote)+'</li>':'')+'</ul></div>'}).join('')+
+       '<ul class="cus">'+(f.fixedIncome?'<li>'+esc(f.incomeNote||'')+'</li>':'')+'<li>'+esc(f.leaveNote)+'</li><li>'+esc(f.health)+'</li><li>'+esc(r.L.note||'')+'</li>'+(s.id==='death'?'<li>'+esc(f.lifeInsNote)+'</li>':'')+'</ul></div>'}).join('')+
      '<p class="legend"><span class="sg leave"></span> paid leave <span class="sg sav"></span> savings <span class="sg gap"></span> borrowed <span class="sg int"></span> interest</p></div>';
     box.querySelectorAll('[data-sh]').forEach(function(b){b.onclick=function(){st.shock=b.dataset.sh;st.weeks=null;st.extra=null;draw()}});
     box.querySelectorAll('[data-r]').forEach(function(r){r.oninput=function(){st[r.dataset.r]=+r.value;draw();var x=box.querySelector('[data-r="'+r.dataset.r+'"]');x&&x.focus()}});
     box.querySelectorAll('[data-sv]').forEach(function(r){r.oninput=function(){st.sav[r.dataset.sv]=+r.value;draw();var x=box.querySelector('[data-sv="'+r.dataset.sv+'"]');x&&x.focus()}});
+    box.querySelectorAll('[data-ln]').forEach(function(r){r.onchange=function(){st.ln[r.dataset.ln]=+r.value;draw();var x=box.querySelector('[data-ln="'+r.dataset.ln+'"]');x&&x.focus()}});
     box.querySelectorAll('[data-in]').forEach(function(r){r.onchange=function(){st.ins[r.dataset.in]=r.checked;draw()}})}
   draw()}
 
 function dots(v){var s='';for(var i=0;i<100;i++)s+='<i class="'+(i<Math.round(v)?'on':'')+'"></i>';return '<div class="dots" role="img" aria-label="'+v+' out of 100">'+s+'</div>'}
-function twoWays(t,c,box){var pi=0;
-  function draw(){var pr=c.pairs[pi].map(function(id){return c.views.filter(function(v){return v.id===id})[0]});
-    box.innerHTML='<div class="sec"><p class="kick">Pick two ways to count</p><div class="sort">'+c.pairs.map(function(pp,k){var a=c.views.filter(function(v){return v.id===pp[0]})[0];return '<button data-p="'+k+'" class="'+(k===pi?'on':'')+'">'+esc(a.label.replace(/,.*$/,''))+(k===2?' (urban vs rural)':' (two methods)')+'</button>'}).join('')+'</div></div>'+
-     '<div class="pair">'+pr.map(function(v){return '<div class="pv"><b class="big">'+fmt(v.value,1)+'%</b><p>'+esc(v.label)+'</p>'+dots(v.value)+'<p class="src">Source: '+esc(v.src)+' <span class="pill ok">checked</span></p></div>'}).join('')+'</div>'+
-     '<p class="muted">Each dot is one child out of 100 aged 6–35 months. Same children, same year: the only thing that changed is the rule for counting, or where you drew the line.</p>';
+function twoWays(t,c,box){var pi=0,V=function(id){return c.views.filter(function(v){return v.id===id})[0]};
+  function draw(){var pr=c.pairs[pi].map(V);
+    box.innerHTML='<div class="sec"><p class="kick">Pick two ways to count</p><div class="sort">'+c.pairs.map(function(pp,k){var lab=(c.pairLabels||[])[k]||(V(pp[0]).label.replace(/,.*$/,'')+(k===2?' (urban vs rural)':' (two methods)'));return '<button data-p="'+k+'" class="'+(k===pi?'on':'')+'">'+esc(lab)+'</button>'}).join('')+'</div></div>'+
+     '<div class="pair">'+pr.map(function(v){var m=v.mark||'ok';return '<div class="pv"><b class="big">'+fmt(v.value,1)+'%</b><p>'+esc(v.label)+'</p>'+dots(v.value)+'<p class="src">Source: '+esc(v.src)+' <span class="pill '+m+'">'+(m==='ok'?'checked':'read with care')+'</span>'+(v.caveat?'<br><small>'+esc(v.caveat)+'</small>':'')+'</p></div>'}).join('')+'</div>'+
+     '<p class="muted">'+esc(c.caption||'Each dot is one child out of 100 aged 6–35 months. Same children, same year: the only thing that changed is the rule for counting, or where you drew the line.')+'</p>';
     box.querySelectorAll('[data-p]').forEach(function(b){b.onclick=function(){pi=+b.dataset.p;draw()}})}
   draw()}
 
-function loanCost(t,c,box){var st={dv:false,amt:c.amount,g:{papers:true}};
-  function draw(){var dv=st.dv&&c.denver,opts=dv?c.denver.options:c.options,gates=dv?c.denver.gates:c.gates,cur=dv?c.denver.currency:(t.currency||''),n=c.months,res=[],max=1;
-    opts.forEach(function(o){var ok=o.needs.every(function(g){return st.g[g]}),r=Math.pow(1+o.rate,1/12)-1,pay=r?st.amt*r/(1-Math.pow(1+r,-n)):st.amt/n,tot=pay*n;res.push({o:o,ok:ok,tot:tot,int:tot-st.amt});if(ok)max=Math.max(max,tot)});
+function loanCost(t,c,box){var start=function(d){return JSON.parse(JSON.stringify((d&&d.start)||{papers:true}))},st={dv:false,amt:c.amount,g:start(c)};
+  function pct(n){return Number(n).toLocaleString('en-US',{maximumFractionDigits:2})}
+  function rateText(o){return o.rateText||(o.monthly!=null?'about '+pct(o.monthly*100)+'% a month':o.rate===0?'no interest':pct(o.rate*100)+'% a year')}
+  function draw(){var dv=st.dv&&c.denver,opts=dv?c.denver.options:c.options,gates=dv?c.denver.gates:c.gates,cur=dv?c.denver.currency:(t.currency||''),res=[],max=1;
+    opts.forEach(function(o){var n=o.months||c.months,ok=o.needs.every(function(g){return st.g[g]}),size=(o.maxAmt&&st.amt>o.maxAmt)?'Lends at most '+cur+fmt(o.maxAmt)+'.':(o.minAmt&&st.amt<o.minAmt)?'Won\'t lend less than '+cur+fmt(o.minAmt)+'.':'',
+      r=o.monthly!=null?o.monthly:o.apr?o.rate/12:Math.pow(1+o.rate,1/12)-1,pay=r?st.amt*r/(1-Math.pow(1+r,-n)):st.amt/n,tot=pay*n;if(o.capTotal)tot=Math.min(tot,st.amt*(1+o.capTotal));
+      res.push({o:o,n:n,ok:ok&&!size,size:size,need:!ok,tot:tot,int:tot-st.amt});if(ok&&!size)max=Math.max(max,tot)});
     box.innerHTML='<div class="sec"><div class="sort"><button data-dv="0" class="'+(!st.dv?'on':'')+'">'+esc(t.short)+'</button>'+(c.denver?'<button data-dv="1" class="'+(st.dv?'on':'')+'">Run it in Denver</button>':'')+'</div>'+
-     '<div class="sliders"><label>How much: <b>'+cur+fmt(st.amt)+'</b><input type="range" min="'+(dv?100:c.min)+'" max="'+(dv?3000:c.max)+'" step="'+(dv?50:c.step)+'" value="'+st.amt+'" data-amt></label><p class="muted" style="font-size:14px">Paid back in '+n+' equal monthly payments.</p></div>'+
+     '<div class="sliders"><label>How much: <b>'+cur+fmt(st.amt)+'</b><input type="range" min="'+(dv?(c.denver.min||100):c.min)+'" max="'+(dv?(c.denver.max||3000):c.max)+'" step="'+(dv?(c.denver.step||50):c.step)+'" value="'+st.amt+'" data-amt></label><p class="muted" style="font-size:14px">Paid back in equal monthly payments: '+c.months+' months unless a lender sets its own term.</p></div>'+
      '<p class="kick">What this family has</p>'+gates.map(function(g){return '<label class="chk"><input type="checkbox" data-g="'+g.id+'"'+(st.g[g.id]?' checked':'')+'> '+esc(g.label)+'</label>'}).join('')+'</div>'+
-     '<div class="sec">'+res.map(function(r){return '<div class="loan'+(r.ok?'':' off')+'"><div class="lt"><b>'+esc(r.o.label)+'</b> · '+fmt(r.o.rate*100,2)+'% a year<br><small>'+esc(r.o.src)+'</small></div>'+
-       (r.ok?'<div class="bar"><span class="sg sav" style="width:'+(st.amt/max*100)+'%"></span><span class="sg int" style="width:'+(r.int/max*100)+'%"></span></div><div class="lt">Pays back <b>'+cur+fmt(r.tot)+'</b>: '+cur+fmt(r.int)+' in interest</div>':
-        '<div class="lt muted">Not open to this family. Needs: '+r.o.needs.map(function(g){return (gates.filter(function(x){return x.id===g})[0]||{label:g}).label.replace(/^Has /,'').replace(/^Belongs/,'belongs')}).join(' and ')+'.</div>')+'</div>'}).join('')+
-     '<p class="legend"><span class="sg sav"></span> the loan <span class="sg int"></span> interest</p></div>';
-    box.querySelectorAll('[data-dv]').forEach(function(b){b.onclick=function(){st.dv=b.dataset.dv==='1';st.amt=st.dv?c.denver.amount:c.amount;st.g={papers:true};draw()}});
+     '<div class="sec">'+res.map(function(r){var o=r.o;return '<div class="loan'+(r.ok?'':' off')+'"><div class="lt"><b>'+esc(o.label)+'</b> · '+rateText(o)+(o.months?' · '+o.months+' months':'')+'<br><small>'+esc(o.src)+'</small>'+(o.wait?'<br><small><b>The wait:</b> '+esc(o.wait)+'</small>':'')+'</div>'+
+       (r.ok?'<div class="bar"><span class="sg sav" style="width:'+(st.amt/max*100)+'%"></span><span class="sg int" style="width:'+(r.int/max*100)+'%"></span></div><div class="lt">Pays back <b>'+cur+fmt(r.tot)+'</b>: '+cur+fmt(r.int)+' in interest and fees</div>':
+        '<div class="lt muted">'+(r.need?'Not open to this family. Needs: '+o.needs.map(function(g){return (gates.filter(function(x){return x.id===g})[0]||{label:g}).label.replace(/^Has /,'').replace(/^Belongs/,'belongs').replace(/^Can /,'can ').replace(/^Owns /,'owns ').replace(/^Is /,'is ')}).join(' and ')+'.':'')+(r.size?' '+r.size:'')+'</div>')+'</div>'}).join('')+
+     '<p class="legend"><span class="sg sav"></span> the loan <span class="sg int"></span> interest and fees</p></div>';
+    box.querySelectorAll('[data-dv]').forEach(function(b){b.onclick=function(){st.dv=b.dataset.dv==='1';st.amt=st.dv?c.denver.amount:c.amount;st.g=start(st.dv?c.denver:c);draw()}});
     box.querySelectorAll('[data-g]').forEach(function(b){b.onchange=function(){st.g[b.dataset.g]=b.checked;draw()}});
     var a=box.querySelector('[data-amt]');a.oninput=function(){st.amt=+a.value;draw();box.querySelector('[data-amt]').focus()}}
   draw()}

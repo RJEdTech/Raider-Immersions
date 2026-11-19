@@ -22,7 +22,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
     "**1969:** Velasco's Agrarian Reform, which promised the land to those who work it, breaks up the estates and produces the small, scattered plots families farm now.",
     "**1980–2000:** the internal armed conflict. Peru's Truth and Reconciliation Commission found that about three-quarters of the roughly 69,000 dead spoke Quechua as their first language.",
     "**2022–23:** protests in which state repression fell hardest on the southern Andes.",
-    "**In their own words:** *Gregorio Condori Mamani: Autobiografía* (Valderrama & Escalante, 1977; English: *Andean Lives*, 1996) — a Quechua porter and his wife Asunta, Cusco city, told in their voices. *Willaq Pirqa* (2022), the first Quechua feature film shot in Cusco, cast in Maras. Reporting that names people from this province is listed in §3."
+    "**In their own words:** *Gregorio Condori Mamani: Autobiografía* (Valderrama & Escalante, 1977; English: *Andean Lives*, 1996) — a Quechua porter and his wife Asunta, Cusco city, told in their voices. *Willaq Pirqa* (2022), the first Quechua feature film shot in Cusco, cast in Maras."
    ]
   },
   {
@@ -985,7 +985,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
  "theology": {
   "readings": [
    "**Gustavo Gutiérrez, *We Drink from Our Own Wells* (1983).** Peru's own theologian (d. 2024): the spirituality of the poor is a well, not a lack; the visitor comes to drink, not to dig. Pair with QP's *riysisaq*.",
-   "**Pope Francis, *Laudato Si'* §§25 and 51 (2015).** The poor suffer most from climate change they did least to cause; an ecological debt between North and South. The Vilcanota glaciers are that paragraph with a name.",
+   "The Vilcanota glaciers are that paragraph with a name.",
    "**St. Josephine Bakhita** (feast 8 Feb, World Day of Prayer against Human Trafficking) — enslaved as a child, freed, canonized. For Barrier 9: the Church names trafficked people as saints-in-waiting, not as statistics."
   ],
   "question": "The people here have kept their language, their land arrangements and their faith through 450 years of being told they were wrong. What do they know that I have never had to learn — and will I let them teach me?"
@@ -1142,10 +1142,6 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
      "url": ""
     }
    ]
-  },
-  {
-   "h": "Reporting",
-   "items": []
   },
   {
    "h": "Church",
@@ -1387,6 +1383,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
      {
       "label": "A credit card",
       "rate": 0.2119,
+      "apr": true,
       "needs": [
        "papers"
       ],
@@ -1395,8 +1392,9 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
      {
       "label": "A small loan under Colorado's cap",
       "rate": 0.36,
+      "apr": true,
       "needs": [],
-      "src": "Prop 111 (2018)"
+      "src": "Prop 111 (2018): payday loans capped at 36% a year"
      },
      {
       "label": "Family who can lend",
@@ -1404,7 +1402,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
       "needs": [
        "group"
       ],
-      "src": "Depends on who you know"
+      "src": "Depends on who you know. 63% of U.S. adults could cover $400 in cash."
      }
     ],
     "gates": [

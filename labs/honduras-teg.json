@@ -1,0 +1,223 @@
+{
+ "name": "Buen Samaritano, Tegucigalpa, Honduras",
+ "short": "Tegucigalpa",
+ "status": "public",
+ "asOf": "2026-11-19",
+ "region": "Buen Samaritano, a community beside the Tegucigalpa dump",
+ "ft": 3300,
+ "lat": 14.07,
+ "lon": -87.19,
+ "lang": "Spanish",
+ "partner": {
+  "name": "International Samaritan",
+  "url": "https://www.internationalsamaritan.org"
+ },
+ "currency": "L",
+ "hideBarriers": [
+  6
+ ],
+ "interactive": {
+  "A": {
+   "kind": "OneBadWeek",
+   "families": [
+    {
+     "id": "there",
+     "label": "A Buen Samaritano family: the mother picks recyclables at the dump",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "Pickers are no one's employees: 74.8% of work is informal (INE 2024). IHSS pays 66% from day 4, only to contributors.",
+     "health": "At Hospital Escuela, the capital's main public hospital, relatives reported buying their own medicines and surgical supplies (July 2026).",
+     "loanOptions": [
+      {
+       "label": "A street lender",
+       "monthly": 0.2,
+       "note": "Street lenders charge about 20% a month, collected daily (2022 report; read with care)."
+      },
+      {
+       "label": "A bank, if the family has a DNI, a title and provable income",
+       "rate": 0.2011,
+       "note": "Bank loans up to L500,000: 20.11% a year (BCH, June 2026)."
+      },
+      {
+       "label": "The relative abroad sends it",
+       "rate": 0,
+       "note": "No interest, as long as the money keeps coming."
+      }
+     ],
+     "lifeInsLikely": false,
+     "lifeInsNote": "176 individual life policies per 10,000 adults in Honduras (CNBS 2025).",
+     "savings": 1
+    },
+    {
+     "id": "salaried",
+     "label": "A Denver family with a salaried parent",
+     "leaveWeeks": 12,
+     "leaveShare": 0.7,
+     "leaveNote": "Colorado FAMLI: up to 12 paid weeks; about 70% of pay at this salary (90% up to half the state average wage, 50% above).",
+     "health": "Insured through work. Colorado's uninsured rate is 5.9% (2025).",
+     "loanRate": 0.2119,
+     "loanNote": "Average credit-card rate, 21.19% a year (Federal Reserve, Q3 2026).",
+     "lifeInsNote": "71% of U.S. households earning $150,000+ own life insurance (LIMRA 2024).",
+     "lifeInsLikely": true,
+     "savings": 8
+    },
+    {
+     "id": "lowwage",
+     "label": "A Denver family whose father does day labor for cash",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "FAMLI needs $2,500 in reported Colorado wages; cash day labor often has none.",
+     "health": "Coverage is uncertain; Denver Health is the city's safety net.",
+     "loanRate": 0.36,
+     "loanNote": "Colorado caps small loans at 36% a year (Prop 111, 2018).",
+     "lifeInsNote": "31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "lifeInsLikely": false,
+     "savings": 0
+    }
+   ],
+   "shocks": [
+    {
+     "id": "injury",
+     "label": "The earner is hurt and can't work for three weeks",
+     "weeks": 3,
+     "extra": 1
+    },
+    {
+     "id": "water",
+     "label": "The water stops for twelve days",
+     "weeks": 0,
+     "extra": 1
+    },
+    {
+     "id": "birth",
+     "label": "A baby is born early",
+     "weeks": 12,
+     "extra": 2
+    },
+    {
+     "id": "deported",
+     "label": "The uncle who sends money is deported",
+     "weeks": 0,
+     "extra": 6
+    },
+    {
+     "id": "death",
+     "label": "The earner dies",
+     "weeks": 26,
+     "extra": 2
+    }
+   ]
+  },
+  "E": {
+   "kind": "LoanCost",
+   "amount": 5000,
+   "min": 500,
+   "max": 30000,
+   "step": 500,
+   "months": 12,
+   "options": [
+    {
+     "label": "A bank loan",
+     "needs": [
+      "papers",
+      "title",
+      "income"
+     ],
+     "src": "BCH via El Heraldo, June 2026",
+     "rate": 0.2011
+    },
+    {
+     "label": "Banhprovi MyPE+ (state micro-business line)",
+     "needs": [
+      "papers",
+      "biz"
+     ],
+     "src": "La Prensa, 2025: registered businesses only",
+     "rate": 0.22
+    },
+    {
+     "label": "A street lender",
+     "needs": [],
+     "src": "About 20% a month, collected daily (2022 report, read with care)",
+     "monthly": 0.2
+    },
+    {
+     "label": "A relative abroad sends it",
+     "needs": [
+      "abroad"
+     ],
+     "src": "No interest, if someone can send it",
+     "rate": 0
+    }
+   ],
+   "gates": [
+    {
+     "id": "papers",
+     "label": "Has a DNI"
+    },
+    {
+     "id": "title",
+     "label": "Has title to the lot"
+    },
+    {
+     "id": "income",
+     "label": "Has provable income (IHSS or a contract)"
+    },
+    {
+     "id": "biz",
+     "label": "Has a registered business"
+    },
+    {
+     "id": "abroad",
+     "label": "Has a relative abroad who can send it"
+    }
+   ],
+   "denver": {
+    "currency": "$",
+    "amount": 400,
+    "options": [
+     {
+      "label": "A credit card",
+      "rate": 0.2119,
+      "apr": true,
+      "needs": [
+       "papers"
+      ],
+      "src": "Federal Reserve G.19, Q3 2026"
+     },
+     {
+      "label": "A small loan under Colorado's cap",
+      "rate": 0.36,
+      "apr": true,
+      "needs": [],
+      "src": "Prop 111 (2018): payday loans capped at 36% a year"
+     },
+     {
+      "label": "Family who can lend",
+      "rate": 0,
+      "needs": [
+       "group"
+      ],
+      "src": "Depends on who you know. 63% of U.S. adults could cover $400 in cash."
+     }
+    ],
+    "gates": [
+     {
+      "id": "papers",
+      "label": "Has a credit history"
+     },
+     {
+      "id": "group",
+      "label": "Has family who can lend"
+     }
+    ]
+   }
+  }
+ },
+ "replace": [
+  [
+   "^.*class visit from two IS staff.*$",
+   ""
+  ]
+ ]
+}

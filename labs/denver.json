@@ -1,0 +1,111 @@
+{
+ "name": "Tennyson Center for Children, Denver",
+ "short": "Denver (Tennyson)",
+ "status": "public",
+ "asOf": "2026-11-19",
+ "region": "Tennyson Center for Children, in Berkeley, northwest Denver",
+ "ft": 5350,
+ "lat": 39.78,
+ "lon": -105.04,
+ "lang": "English and Spanish",
+ "partner": {
+  "name": "Tennyson Center for Children",
+  "url": "https://tennysoncenter.org"
+ },
+ "currency": "$",
+ "hideBarriers": [
+  8
+ ],
+ "interactive": {
+  "B": {
+   "kind": "OneBadWeek",
+   "families": [
+    {
+     "id": "salaried",
+     "label": "A salaried RJ family in Douglas or Arapahoe County",
+     "leaveWeeks": 12,
+     "leaveShare": 0.7,
+     "leaveNote": "Colorado FAMLI: up to 12 paid weeks; about 70% of pay at this salary (90% up to half the state average wage, 50% above).",
+     "health": "Insured through work. Colorado's uninsured rate is 5.9% (2025).",
+     "loanRate": 0.2119,
+     "loanNote": "Average credit-card rate, 21.19% a year (Federal Reserve, Q3 2026).",
+     "lifeInsNote": "71% of U.S. households earning $150,000+ own life insurance (LIMRA 2024).",
+     "lifeInsLikely": true,
+     "savings": 8
+    },
+    {
+     "id": "lowwage",
+     "label": "A Denver day-labor family: one parent on hiring corners, one in hourly work",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "FAMLI needs $2,500 in reported wages, and job protection starts after 180 days. 62% of surveyed Denver-area day laborers had experienced wage theft (DU, 2016–17; read with care).",
+     "health": "Coverage is uncertain; Denver Health is the city's safety net.",
+     "loanRate": 0.36,
+     "loanNote": "Colorado caps small loans at 36% a year (Prop 111, 2018).",
+     "lifeInsNote": "31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "lifeInsLikely": false,
+     "savings": 0
+    }
+   ],
+   "shocks": [
+    {
+     "id": "crisis",
+     "label": "A child has a mental-health crisis and needs care for weeks",
+     "weeks": 4,
+     "extra": 3
+    },
+    {
+     "id": "injury",
+     "label": "The earner is injured",
+     "weeks": 8,
+     "extra": 1
+    },
+    {
+     "id": "care",
+     "label": "Child care closes",
+     "weeks": 4,
+     "extra": 0
+    },
+    {
+     "id": "rent",
+     "label": "The rent goes up $300",
+     "weeks": 0,
+     "extra": 2
+    },
+    {
+     "id": "car",
+     "label": "The car breaks down the week of a court date",
+     "weeks": 1,
+     "extra": 3
+    }
+   ],
+   "note": "A third household, a newly arrived migrant family in a shelter, waits until its shelter, health and work-permit rules are checked."
+  }
+ },
+ "replace": [
+  [
+   ", was one of the three original Denver-area treatment centers in the \\*Colorado Sun\\*'s hotline analysis alongside Tennyson and Cleo Wallace\\.",
+   "."
+  ],
+  [
+   ", hotline data with 9News \\(Jun 2026\\)",
+   ""
+  ],
+  [
+   "^\\*\\*Barrier 8\\*\\* involves a criminal case.*$",
+   ""
+  ],
+  [
+   ", hotline$",
+   ""
+  ],
+  [
+   "^\\*Colorado Sun\\* / 9News, hotline calls.*$",
+   ""
+  ],
+  [
+   "Do not write [\\u201c\"]children are taken for being poor\\.?[\\u201d\"]",
+   "It is not accurate to say children are taken for being poor."
+  ]
+ ]
+}

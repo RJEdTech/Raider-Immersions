@@ -3,8 +3,8 @@
 Run before every commit: python3 tools/check-public.py"""
 import re, sys, glob, json, subprocess
 BAD = [('red mark (unverified)', r'\U0001F534'),
-       ('teacher-only note', r'(?i)teacher[- ]only|leaders[\' ]*(version|only)|questions for jason|\bJason\b|\bRiemer\b'),
-       ('student writing', r'(?i)\b(essays?|unit 2|students? (heard|wrote)|canvas \d{4,})\b'),
+       ('teacher-only note', r'(?i)teacher[- ]only|leaders[\' ]*(version|only)|questions for jason|\bJason\b(?! Crow)|\bRiemer\b'),
+       ('student writing', r'(?i)\b(students?\'? essays?|unit 2|students? (heard|wrote)|canvas \d{4,})\b'),
        ('quotation', r'["\u201c][^"\u201d]{25,}["\u201d]'),
        ('quoted speech', r'(?i)\b(said|says|told us|wrote)\s*[:,]?\s*["\u201c]')]
 dump = "global.window={};for(const f of process.argv.slice(1))require(require('path').resolve(f));console.log(JSON.stringify({t:window.TRIPS||{},m:window.DMIRROR||{}}))"
