@@ -24,11 +24,13 @@ function chartList(){var l=sites().slice();l.push({id:'denver',short:'Denver (ho
 
 function home(){
   document.title='Raider Immersions';
-  var h='<p class="lede">One set of resources for every immersion: the place by its numbers, the barriers the people there face, the history and the Church there, and what to do before you go and after you come home.</p>'+
-   '<div class="grid">'+IMM.filter(function(p){return p.status!=='hold'}).map(function(p){var r=p.status==='ready';
-     return (r?'<a class="card" href="#'+p.id+'">':'<div class="card soon">')+'<span class="badge'+(r?' ready':'')+'">'+(r?'Ready':'Coming next')+'</span><h3>'+esc(p.name)+'</h3><div class="meta">'+esc(p.place)+(r?'<br>'+fmt(miles(p))+' miles from Denver · '+fmt(p.ft)+' ft':'')+'</div>'+(r?'</a>':'</div>')}).join('')+'</div>'+
-   '<h2>How high are you going?</h2><div class="chart">'+altChart(chartList())+'<p class="cap">The dashed red line is Denver, 5,280 feet. Two trips go well above it; plan for the altitude.</p></div>'+
-   '<h2>Barriers: eight areas, one claim</h2><p class="lede">Each immersion has eight barrier areas. Each one asks you to find one number, check it, and pull it apart: how much of this barrier is <b>nature</b>, how much is <b>luck</b>, and how much was <b>built</b> by people who could decide otherwise. Then ask who gains.</p>';
+  var TR=window.TRIPS||{},list=[];
+  Object.keys(TR).forEach(function(k){var t=TR[k];if(t.status==='public')list.push({id:t.id,name:t.name,place:t.region,ft:t.ft,lat:t.lat,lon:t.lon,ready:true,fresh:true})});
+  IMM.forEach(function(p){if(p.status==='hold'||TR[p.id])return;list.push({id:p.id,name:p.name,place:p.place,ft:p.ft,lat:p.lat,lon:p.lon,ready:p.status==='ready',fresh:false})});
+  var h='<p class="lede">One set of resources for every immersion: the place and its people, the barriers that set the price of ordinary life there, labs where you change the numbers, and the same structures in the Denver you live in.</p>'+
+   '<div class="grid">'+list.map(function(p){var r=p.ready;
+     return (r?'<a class="card" href="#'+p.id+'">':'<div class="card soon">')+'<span class="badge'+(p.fresh?' ready':'')+'">'+(p.fresh?'New research':r?'Earlier draft':'Coming next')+'</span><h3>'+esc(p.name)+'</h3><div class="meta">'+esc(p.place)+(r?'<br>'+fmt(miles(p))+' miles from Denver':'')+'</div>'+(r?'</a>':'</div>')}).join('')+'</div>'+
+   '<h2>The same structures at home</h2><p class="lede">Every barrier on a trip has a mirror in Denver: wages, paid leave, health care, what borrowing costs, housing. <a href="#denver-mirror">See the Denver side →</a></p>';
   app.innerHTML=h;window.scrollTo(0,0)}
 
 var TABS=[['over','Overview'],['bar','Barriers'],['before','Before you go'],['after','After you return'],['tools','Lab tools']];
@@ -85,7 +87,7 @@ function area(p,i){
   box.querySelectorAll('[data-s]').forEach(function(b){b.onclick=function(){store(k,b.dataset.s);area(p,i)}});
   var t=$('#area-top');if(t&&t.scrollIntoView)t.scrollIntoView({block:'start'})}
 
-function route(){var h=(location.hash||'').slice(1).split('/'),p=IMM.filter(function(x){return x.id===h[0]&&x.status==='ready'})[0];
+function route(){var h=(location.hash||'').slice(1).split('/');if(window.TRIP_ROUTE&&window.TRIP_ROUTE(h))return;var p=IMM.filter(function(x){return x.id===h[0]&&x.status==='ready'})[0];
   if(!p)return home();var ai=h[2]?parseInt(h[2],10)-1:null;place(p,h[1],isNaN(ai)?null:ai)}
 window.addEventListener('hashchange',route);route();
 })();

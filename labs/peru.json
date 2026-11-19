@@ -1,0 +1,373 @@
+{
+ "name": "Quispicanchi, Peru",
+ "short": "Peru",
+ "status": "public",
+ "asOf": "2026-11-19",
+ "region": "Andahuaylillas, Huaro and Urcos: the South Valley of Quispicanchi province, Cusco",
+ "ft": 10500,
+ "lat": -13.67,
+ "lon": -71.68,
+ "lang": "Spanish and Quechua",
+ "partner": {
+  "name": "The Quispicanchi Project (Encuentro)",
+  "url": "https://www.quispicanchi.org/encuentro"
+ },
+ "currency": "S/",
+ "cushionKeys": {
+  "What work pays": [
+   "D-WAGE",
+   "D-MINWAGE"
+  ],
+  "Does the minimum wage": [
+   "D-MINWAGE",
+   "D-INFORMAL"
+  ],
+  "Health care": [
+   "D-HEALTH"
+  ],
+  "Paid leave": [
+   "D-LEAVE"
+  ],
+  "A bank account": [
+   "D-BANK"
+  ],
+  "What borrowing costs": [
+   "D-CREDIT"
+  ],
+  "If the earner dies": [
+   "D-LIFEINS"
+  ],
+  "If the house burns": [
+   "D-HOMEINS"
+  ],
+  "Disability": [
+   "D-DISABILITY"
+  ],
+  "Old age": [
+   "D-OLDAGE"
+  ]
+ },
+ "interactive": {
+  "E": {
+   "kind": "OneBadWeek",
+   "families": [
+    {
+     "id": "there",
+     "label": "A farm family in Quispicanchi",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "No paid leave: 94.5% of rural work in Peru is informal (INEI 2025).",
+     "health": "Covered by SIS, the free public plan, but the hospital is a trip down the mountain.",
+     "loanRate": 0.5878,
+     "loanNote": "Mibanco microenterprise loan, 58.78% a year (SBS, Sept 2026).",
+     "lifeInsNote": "Only about 2 in 7 Peruvian families who suffered a loss had life insurance (APESEG 2025).",
+     "lifeInsLikely": false,
+     "savings": 1
+    },
+    {
+     "id": "salaried",
+     "label": "A Denver family with a salaried parent",
+     "leaveWeeks": 12,
+     "leaveShare": 0.7,
+     "leaveNote": "Colorado FAMLI: up to 12 paid weeks; about 70% of pay at this salary (90% up to half the state average wage, 50% above).",
+     "health": "Insured through work. Colorado's uninsured rate is 5.9% (2025).",
+     "loanRate": 0.2119,
+     "loanNote": "Average credit-card rate, 21.19% a year (Federal Reserve, Q3 2026).",
+     "lifeInsNote": "71% of U.S. households earning $150,000+ own life insurance (LIMRA 2024).",
+     "lifeInsLikely": true,
+     "savings": 8
+    },
+    {
+     "id": "lowwage",
+     "label": "A Denver family whose father does day labor for cash",
+     "leaveWeeks": 0,
+     "leaveShare": 0,
+     "leaveNote": "FAMLI needs $2,500 in reported Colorado wages; cash day labor often has none.",
+     "health": "Coverage is uncertain; Denver Health is the city's safety net.",
+     "loanRate": 0.36,
+     "loanNote": "Colorado caps small loans at 36% a year (Prop 111, 2018).",
+     "lifeInsNote": "31% of U.S. households earning under $50,000 own life insurance (LIMRA 2024).",
+     "lifeInsLikely": false,
+     "savings": 0
+    }
+   ],
+   "shocks": [
+    {
+     "id": "injury",
+     "label": "The earner breaks a leg",
+     "weeks": 8,
+     "extra": 1
+    },
+    {
+     "id": "hail",
+     "label": "Hail destroys the harvest (or totals the car)",
+     "weeks": 0,
+     "extra": 6
+    },
+    {
+     "id": "birth",
+     "label": "A baby is born early",
+     "weeks": 12,
+     "extra": 2
+    },
+    {
+     "id": "hospital",
+     "label": "A child is in the hospital for a week",
+     "weeks": 2,
+     "extra": 3
+    },
+    {
+     "id": "death",
+     "label": "The earner dies",
+     "weeks": 26,
+     "extra": 2
+    }
+   ]
+  },
+  "A": {
+   "kind": "TwoWays",
+   "unit": "of children aged 6–35 months have anemia",
+   "views": [
+    {
+     "id": "nat-minsa",
+     "label": "Peru, 2025, Ministry of Health rule (MINSA 2022)",
+     "value": 43.4,
+     "src": "INEI, ENDES 2025"
+    },
+    {
+     "id": "nat-who",
+     "label": "Peru, 2025, WHO 2024 guideline",
+     "value": 34.9,
+     "src": "INEI, ENDES 2025"
+    },
+    {
+     "id": "rur-minsa",
+     "label": "Rural Peru, 2025, MINSA rule",
+     "value": 50.4,
+     "src": "INEI, ENDES 2025"
+    },
+    {
+     "id": "rur-who",
+     "label": "Rural Peru, 2025, WHO guideline",
+     "value": 43.2,
+     "src": "INEI, ENDES 2025"
+    },
+    {
+     "id": "cus-all",
+     "label": "Cusco region, 2023",
+     "value": 49.9,
+     "src": "INEI, ENDES 2023, Cusco"
+    },
+    {
+     "id": "cus-urb",
+     "label": "Urban Cusco, 2023",
+     "value": 50.3,
+     "src": "INEI, ENDES 2023, Cusco"
+    },
+    {
+     "id": "cus-rur",
+     "label": "Rural Cusco, 2023",
+     "value": 49.5,
+     "src": "INEI, ENDES 2023, Cusco"
+    }
+   ],
+   "pairs": [
+    [
+     "nat-minsa",
+     "nat-who"
+    ],
+    [
+     "rur-minsa",
+     "rur-who"
+    ],
+    [
+     "cus-urb",
+     "cus-rur"
+    ]
+   ]
+  },
+  "LOAN": {
+   "kind": "LoanCost",
+   "title": "Fix the roof or stock the stall",
+   "question": "A family needs money this month to fix the roof before the rains, or to stock a stall before the market. Where can it borrow, and what will it cost?",
+   "amount": 1000,
+   "min": 200,
+   "max": 5000,
+   "step": 100,
+   "months": 12,
+   "options": [
+    {
+     "label": "A bank (the lowest microenterprise rate)",
+     "rate": 0.2465,
+     "needs": [
+      "papers",
+      "income"
+     ],
+     "src": "SBS, Sept 2026"
+    },
+    {
+     "label": "A municipal caja",
+     "rate": 0.5346,
+     "needs": [
+      "papers"
+     ],
+     "src": "SBS, July 2026 (Caja Piura, the lowest caja)"
+    },
+    {
+     "label": "Mibanco",
+     "rate": 0.5878,
+     "needs": [
+      "papers"
+     ],
+     "src": "SBS, Sept 2026"
+    },
+    {
+     "label": "The most expensive lender on the SBS list",
+     "rate": 0.9567,
+     "needs": [
+      "papers"
+     ],
+     "src": "SBS via Infomercado, Sept 2026"
+    },
+    {
+     "label": "A savings group or ayni among neighbors",
+     "rate": 0,
+     "needs": [
+      "group"
+     ],
+     "src": "No interest, but only what the group has saved"
+    }
+   ],
+   "gates": [
+    {
+     "id": "papers",
+     "label": "Has a national ID (DNI)"
+    },
+    {
+     "id": "income",
+     "label": "Has income on paper (a contract or a tax number)"
+    },
+    {
+     "id": "group",
+     "label": "Belongs to a savings group"
+    }
+   ],
+   "denver": {
+    "currency": "$",
+    "amount": 400,
+    "options": [
+     {
+      "label": "A credit card",
+      "rate": 0.2119,
+      "needs": [
+       "papers"
+      ],
+      "src": "Federal Reserve G.19, Q3 2026"
+     },
+     {
+      "label": "A small loan under Colorado's cap",
+      "rate": 0.36,
+      "needs": [],
+      "src": "Prop 111 (2018)"
+     },
+     {
+      "label": "Family who can lend",
+      "rate": 0,
+      "needs": [
+       "group"
+      ],
+      "src": "Depends on who you know"
+     }
+    ],
+    "gates": [
+     {
+      "id": "papers",
+      "label": "Has a credit history"
+     },
+     {
+      "id": "group",
+      "label": "Has family who can lend"
+     }
+    ]
+   },
+   "notice": "The same amount costs the family with papers, a contract and a group a little, and the family with none of them a lot. The poorest borrower pays the highest price.",
+   "yourCall": "What would it take for this family to borrow at the bank's rate, and whose rule is it to change?"
+  }
+ },
+ "replace": [
+  [
+   "Velasco's Agrarian Reform — \"la tierra es de quien la trabaja\" — breaks",
+   "Velasco's Agrarian Reform, which promised the land to those who work it, breaks"
+  ],
+  [
+   "CEPLAN \"22% of glaciers in 30 years\" vs INAIGEM",
+   "CEPLAN counts 22% of glacier area lost in 30 years, INAIGEM"
+  ],
+  [
+   "Quechua official \"in the zones where they predominate\\.\"",
+   "Quechua is official only in the zones where it predominates."
+  ],
+  [
+   "or \"they have so little but they're so happy,\" which",
+   "or telling ourselves they have so little but are so happy, which"
+  ],
+  [
+   "\"'Without the ice cap, we cannot live'\" \\(2023\\)",
+   "on the ice cap above Phinaya (2023)"
+  ],
+  [
+   "\"They have so little but they're so happy\" \\(romanticizing\\)",
+   "Calling people poor but happy (romanticizing)"
+  ]
+ ],
+ "barrierKeys": {
+  "1": [
+   "D-HOUSING",
+   "D-CREDIT"
+  ],
+  "2": [
+   "D-INFORMAL"
+  ],
+  "3": [
+   "D-INFORMAL",
+   "D-MINWAGE"
+  ],
+  "5": [
+   "D-WATER"
+  ],
+  "6": [
+   "D-LANGUAGE",
+   "D-SCHOOL"
+  ],
+  "7": [
+   "D-DISABILITY"
+  ],
+  "8": [
+   "D-LANGUAGE"
+  ],
+  "9": [
+   "D-TRAFFICK",
+   "D-INFORMAL"
+  ],
+  "10": [
+   "D-DV"
+  ],
+  "11": [
+   "D-HOUSING"
+  ],
+  "12": [
+   "D-COMMON",
+   "D-FOOD"
+  ],
+  "13": [
+   "D-SCHOOL"
+  ],
+  "14": [
+   "D-LADDER"
+  ],
+  "15": [
+   "D-INFORMAL",
+   "D-LEAVE"
+  ]
+ }
+}

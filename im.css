@@ -60,3 +60,37 @@ a.card:hover{border-color:var(--rj)}
 @media print{.tabs,.labs,.back,.btn{display:none}}
 
 .draft{background:var(--warn-bg);border:1px dashed var(--warn);border-radius:10px;padding:8px 14px;font-size:15px;margin:12px 0}
+/* ---- new-research trip pages (trip.js) ---- */
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:1px 8px;border-radius:999px;border:1px solid;vertical-align:1px}
+.pill.ok{color:var(--good);border-color:var(--good)}.pill.care{color:#a15c00;border-color:#d08a2c}
+.nums{list-style:none;padding:0;margin:6px 0}.num{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0}
+.num .src{font-size:14px;color:var(--muted);margin-top:4px}.num .note{font-style:italic}
+.chain{list-style:none;counter-reset:c;padding:0;margin:8px 0}
+.chain li{counter-increment:c;position:relative;padding:8px 12px 8px 46px;margin:0 0 18px;background:var(--card);border:1px solid var(--line);border-radius:10px}
+.chain li:before{content:counter(c);position:absolute;left:10px;top:8px;width:26px;height:26px;border-radius:50%;background:var(--rj);color:#fff;font-weight:700;text-align:center;line-height:26px;font-size:14px}
+.chain li:not(:last-child):after{content:'';position:absolute;left:22px;bottom:-18px;border:7px solid transparent;border-top:9px solid var(--rj)}
+.oneday{border:2px solid var(--rj);border-radius:10px;padding:10px 14px;background:var(--card)}
+.sec.doing{border-left:5px solid var(--good);padding-left:12px}
+.sec.mirror{border:1px dashed var(--rj);border-radius:12px;padding:10px 14px;margin-top:16px}
+.nlbt{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-top:10px}
+.ans{display:block;margin:12px 0}.ans span{display:block;font-weight:700;margin-bottom:4px}.ans textarea{width:100%;box-sizing:border-box;font:inherit;padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--fg)}
+.tl li{margin:4px 0}
+.cush{display:grid;gap:8px;margin:10px 0}
+.ch,.cr{display:grid;grid-template-columns:180px 1fr 1fr;gap:10px;align-items:start}
+.cr{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px}
+.cr .cl{font-weight:700}.cr .there{border-left:4px solid #d08a2c;padding-left:8px}.cr .home{border-left:4px solid var(--good);padding-left:8px}
+@media(max-width:700px){.ch{display:none}.cr{grid-template-columns:1fr}.cr .there:before{content:'There: ';font-weight:700}.cr .home:before{content:'Denver: ';font-weight:700}}
+.sliders label,.sl{display:block;margin:8px 0}.sliders input,.sl input{width:100%}
+.chk{display:block;margin:6px 0}
+.fam{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:10px 0}.fam h4{margin:0 0 8px;font-size:17px}
+.stack,.bar{display:flex;height:28px;border-radius:6px;overflow:hidden;background:var(--line)}
+.sg{display:inline-block;height:100%}.legend .sg{width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin:0 4px 0 10px}
+.sg.leave{background:#2e7d32}.sg.sav{background:#1565c0}.sg.gap{background:#e57373}.sg.int{background:#b71c1c}.sg.ins{background:#6a1b9a;color:#fff;font-size:13px;line-height:28px;padding-left:8px}
+.fsum{margin:6px 0}.cus{font-size:14px;color:var(--muted);margin:6px 0 0;padding-left:18px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:600px){.pair{grid-template-columns:1fr}}
+.pv{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}.pv .big{font-size:34px}.pv .src{font-size:14px;color:var(--muted)}
+.dots{display:grid;grid-template-columns:repeat(10,1fr);gap:4px;max-width:260px;margin:8px 0}.dots i{display:block;aspect-ratio:1;border-radius:50%;background:var(--line)}.dots i.on{background:var(--rj)}
+.loan{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:8px 0}.loan.off{opacity:.55}.loan .bar{margin:6px 0}.loan .lt small{color:var(--muted)}
+.fences{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}.fence{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px}.fence p{margin:4px 0 0}
+a.area-btn{text-decoration:none;display:block}a.area-btn[aria-current=true]{border-color:var(--rj)}
+details summary{cursor:pointer}
