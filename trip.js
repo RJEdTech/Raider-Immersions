@@ -124,7 +124,7 @@ function oneBadWeek(t,c,box){
     box.innerHTML=(c.note?'<p class="muted">'+esc(c.note)+'</p>':'')+'<div class="sec"><p class="kick">1 · Pick what happens</p><div class="sort">'+c.shocks.map(function(x){return '<button data-sh="'+x.id+'" class="'+(x.id===st.shock?'on':'')+'">'+esc(x.label)+'</button>'}).join('')+'</div>'+
      '<div class="sliders"><label>Weeks without pay: <b>'+wk+'</b><input type="range" min="0" max="52" value="'+wk+'" data-r="weeks"></label>'+
      '<label>Extra costs, in weeks of pay: <b>'+ex+'</b><input type="range" min="0" max="20" value="'+ex+'" data-r="extra"></label><p class="muted" style="font-size:14px">These two are examples you can change, not data. Everything below each family comes from a source.</p></div></div>'+
-     '<div class="sec"><p class="kick">2 · Watch '+(['','one family','two families','three families','four families'][c.families.length]||c.families.length+' families')+'</p><p class="muted" style="font-size:14px">Measured in weeks of that family\'s own pay, so they can be compared.</p>'+
+     '<div class="sec"><p class="kick">2 · Watch '+(['','one family','two families','three families','four families','five families'][fams.length]||fams.length+' families')+'</p><p class="muted" style="font-size:14px">Measured in weeks of that family\'s own pay, so they can be compared.</p>'+
      rows.map(function(r){var f=r.f;return '<div class="fam"><h4>'+esc(f.label)+'</h4>'+
        '<div class="stack" role="img" aria-label="'+esc(f.label)+': '+fmt(r.leave,1)+' weeks paid leave, '+fmt(r.sav,1)+' from savings, '+fmt(r.gap,1)+' borrowed'+(r.known?', '+fmt(r.interest,1)+' interest':', interest unknown')+'">'+
         (r.ins?'<span class="sg ins" style="width:100%">Life insurance pays</span>':
