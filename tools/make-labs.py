@@ -388,31 +388,51 @@ peru['interactive']['WHO'] = who(
     "What does the comunidad decide for itself that your own neighborhood does not? What would you hand to it, and what to Lima?")
 
 # ---------- Hours of work ----------
+US_MONTH = 40 * 52 / 12
+def custom(def_, lo, hi, step, note, label="Set it yourself", household=False):
+    return {"label": label, "custom": True, "def": def_, "min": lo, "max": hi, "step": step, "note": note, "household": household}
+DEN_PLACE = {"id": "den", "label": "Denver", "cur": "$", "month": US_MONTH,
+    "pays": [{"label": "The minimum wage (one full-time earner)", "monthly": round(19.29 * US_MONTH), "note": "$19.29 an hour in 2026, about $3,343 a month full time (our arithmetic).", "src": "Denver Department of Finance", "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/News/2025/Denver-Local-Minimum-Wage-Adjusts-to-19.29-per-Hour-for-2026"},
+             custom(3343, 500, 8000, 50, "Day labor and cash work often pay less: 62% of surveyed Denver-area day laborers had experienced wage theft (2016–17).")],
+    "food": {"pp": 1018.20 / 4, "text": "USDA Thrifty Food Plan: $1,018.20 a month for a family of four (June 2026), about $255 a person (our arithmetic). National, not Denver prices.", "src": "USDA Thrifty Food Plan via WTOP", "url": "https://wtop.com/news/2026/07/how-much-should-i-spend-on-groceries/"},
+    "rent": {"amt": 1874, "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).", "src": "USAFacts (Denver mirror D-HOUSING)"},
+    "bus": {"fare": 2.75, "text": "RTD standard fare: $2.75 for a three-hour pass.", "src": "RTD", "url": "https://www.rtd-denver.com/fares"}}
 HOURS = {
-    "kind": "HoursOfWork", "title": "Hours of work: Tijuana, San Diego, Denver",
-    "question": "The same household needs food, rent and bus rides. How many hours of minimum-wage work does that take on each side of the wall, and in Denver?",
+    "kind": "HoursOfWork", "title": "What the pay has to cover: Tijuana, San Diego, Denver",
+    "question": "The same household needs food, rent and bus rides. How much of a month's pay does that take on each side of the wall, and in Denver, at the minimum wage and below it?",
     "people": 4, "rides": 44,
-    "notice": "Measured in hours, not dollars or pesos, there is no exchange rate to argue about. Tijuana's food basket alone takes more hours than a Denver family's food and many bus rides together. The rent is the open question: no source yet gives a colonia rent, so you set it.",
-    "yourCall": "How many full-time earners does the Tijuana household need at your rent? Who in the family would that be, and what would they stop doing?",
+    "notice": "Start at the minimum wage, then switch Tijuana to what many workers really earn. In Baja California almost a third earn one minimum wage or less, and nearly a third more don't report their pay. Measured in hours and shares of pay, there is no exchange rate to argue about. The rent is the open question: no source yet gives a colonia rent, so you set it.",
+    "yourCall": "At the pay you chose, how many earners does the Tijuana household need? Who in the family would that be, and what would they stop doing?",
     "places": [
-        {"id": "tj", "label": "Tijuana", "cur": "MX$", "wage": 440.87 * 7 / 48, "month": 208,
-         "wageText": "440.87 pesos a day (2026), about 64 pesos an hour on a 48-hour week (our arithmetic: a daily wage also pays the rest day)",
-         "wageSrc": {"src": "CONASAMI via Tijuana packet", "url": "https://www.gob.mx/conasami"},
-         "food": {"pp": 2590.61, "text": "INEGI's urban food basket: 2,590.61 pesos per person a month (Sept 2026).", "src": "INEGI, Líneas de pobreza por ingresos", "url": "https://www.inegi.org.mx/temas/lineas/"},
+        {"id": "tj", "label": "Tijuana", "cur": "MX$", "month": 208,
+         "pays": [{"label": "The minimum wage (one full-time earner)", "monthly": 13402, "note": "440.87 pesos a day (2026), about 13,400 a month on a 48-hour week (our arithmetic; a daily wage also pays the rest day).", "src": "CONASAMI via Tijuana packet", "url": "https://www.gob.mx/conasami"},
+                  custom(6700, 1000, 30000, 250, "In Baja California, 31.5% of workers earned up to one minimum wage and 30.4% did not report their pay (Q2 2025). No source gives what a vendor earns; this starts at half the minimum. Set your own and say so.")],
+         "food": {"pp": 2590.61, "text": "INEGI's urban food basket: 2,590.61 pesos per person a month (Sept 2026).", "src": "INEGI, L\u00edneas de pobreza por ingresos", "url": "https://www.inegi.org.mx/temas/lineas/"},
          "rent": {"amt": None, "guess": 5000, "min": 1000, "max": 15000, "step": 250, "label": "Rent in a Tijuana colonia (your estimate)", "note": "No source yet gives a colonia rent. Set your own estimate and say so in your answer.", "text": "Your estimate.", "src": "not yet sourced"},
-         "bus": {"fare": 15, "text": "Most routes charged 15 pesos until October 2026; some now charge 18–20 without approval.", "src": "Zeta Tijuana, Nov 2026", "url": "https://zetatijuana.com/2026/11/por-falta-de-acuerdos-con-imos-transportistas-aplican-tarifazo-en-rutas-de-tijuana/"}},
-        {"id": "sd", "label": "San Diego", "cur": "$", "wage": 17.75, "month": 173,
-         "wageText": "$17.75 an hour in the city of San Diego (2026)",
-         "wageSrc": {"src": "City of San Diego", "url": "https://www.sandiego.gov/sites/default/files/2025-12/2025-12-31-city-of-san-diego-hourly-minimum-wage-will-increase-to-17.75-effective-jan-1-2026.pdf"},
+         "bus": {"fare": 15, "text": "Most routes charged 15 pesos until October 2026; some now charge 18\u201320 without approval.", "src": "Zeta Tijuana, Nov 2026", "url": "https://zetatijuana.com/2026/11/por-falta-de-acuerdos-con-imos-transportistas-aplican-tarifazo-en-rutas-de-tijuana/"}},
+        {"id": "sd", "label": "San Diego", "cur": "$", "month": US_MONTH,
+         "pays": [{"label": "The minimum wage (one full-time earner)", "monthly": round(17.75 * US_MONTH), "note": "$17.75 an hour in the city of San Diego (2026), about $3,077 a month full time (our arithmetic).", "src": "City of San Diego", "url": "https://www.sandiego.gov/sites/default/files/2025-12/2025-12-31-city-of-san-diego-hourly-minimum-wage-will-increase-to-17.75-effective-jan-1-2026.pdf"},
+                  custom(3077, 500, 8000, 50, "Set what a worker below the minimum, or part time, really brings home.")],
          "food": {"pp": 1018.20 / 4, "text": "USDA Thrifty Food Plan: $1,018.20 a month for a family of four (June 2026), about $255 a person (our arithmetic). National, not San Diego prices.", "src": "USDA Thrifty Food Plan via WTOP", "url": "https://wtop.com/news/2026/07/how-much-should-i-spend-on-groceries/"},
          "rent": {"amt": 2270, "text": "Average one-bedroom rent: $2,270 (Nov 2026).", "src": "Rentometer", "url": "https://www.rentometer.com/average-rent-in/ca/san-diego-ca"},
          "bus": {"fare": 3.00, "text": "One-way MTS fare: $3 since October 1, 2026.", "src": "San Diego MTS", "url": "https://www.sdmts.com/sites/default/files/attachments/september-service-change-2026-web.pdf"}},
-        {"id": "den", "label": "Denver", "cur": "$", "wage": 19.29, "month": 173,
-         "wageText": "$19.29 an hour in Denver (2026)",
-         "wageSrc": {"src": "Denver Department of Finance", "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/News/2025/Denver-Local-Minimum-Wage-Adjusts-to-19.29-per-Hour-for-2026"},
-         "food": {"pp": 1018.20 / 4, "text": "USDA Thrifty Food Plan: $1,018.20 a month for a family of four (June 2026), about $255 a person (our arithmetic). National, not Denver prices.", "src": "USDA Thrifty Food Plan via WTOP", "url": "https://wtop.com/news/2026/07/how-much-should-i-spend-on-groceries/"},
-         "rent": {"amt": 1874, "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).", "src": "USAFacts (Denver mirror D-HOUSING)"},
-         "bus": {"fare": 2.75, "text": "RTD standard fare: $2.75 for a three-hour pass.", "src": "RTD", "url": "https://www.rtd-denver.com/fares"}}]}
+        copy.deepcopy(DEN_PLACE)]}
+T['quito']['interactive']['HOURS'] = {
+    "kind": "HoursOfWork", "title": "What the pay has to cover: Quito and Denver",
+    "question": "A family in north Quito and a family in Denver need food, rent and bus fare. How much of what they earn does that take, at the minimum wage and at what Center families actually earn?",
+    "people": 5, "rides": 44,
+    "notice": "The Center's families qualify because they earn less than the minimum wage. Divide their income by five people and compare it with Ecuador's own poverty line. Then look at Denver: one full-time minimum-wage job barely covers the same three needs for five people there too. The difference is what catches a Denver family when the pay runs short (try One bad week), and how many Denver workers are paid at least the minimum. In Quito, most Center families are not.",
+    "yourCall": "Which of the three costs would the Quito family cut first, and what would that cost them later?",
+    "places": [
+        {"id": "uio", "label": "Quito (north)", "cur": "$", "month": US_MONTH,
+         "pays": [{"label": "The Center's average family income (whole family)", "monthly": 360, "household": True, "note": "Just over $360 a month for an average of five people; families qualify because their income is below the minimum wage. The page is undated.", "src": "The Center (c4wf.org)", "url": "https://www.c4wf.org/our-work", "mark": "care"},
+                  {"label": "The minimum wage (one full-time earner)", "monthly": 482, "note": "$482 a month in 2026, which most Center families do not reach.", "src": "Ministry of Labor, Acuerdo MDT-2025-195 (Quito packet)"},
+                  custom(240, 50, 1200, 10, "Set a family's monthly income. A budget scenario from class can go here; label it a scenario, not a real family.", "Set it yourself (whole family)", True)],
+         "line": {"text": "Ecuador's poverty line is $92.40 a person a month (Dec 2025).", "src": "INEC via Primicias", "url": "https://www.primicias.ec/economia/pobreza-ecuador-ingresos-urbana-rural-desigualdad-diciembre2025-113335/"},
+         "food": {"pp": 52.07, "lab": "Food at the extreme-poverty line", "text": "INEC's extreme-poverty line, $52.07 a person a month (Dec 2025), marks income too low to cover basic food.", "src": "INEC via Primicias", "url": "https://www.primicias.ec/revistagestion/analisis/pobreza-ecuador-inec-desigualdad-estadisticas-ingresos-115027/"},
+         "rent": {"amt": None, "guess": 250, "min": 50, "max": 600, "step": 10, "label": "Rent for the family (your estimate)", "note": "No source yet for rents in the Center's neighborhoods. A 2025 group was told the cheapest housing starts at about $400 a month; that is unverified. This starts at $250. Set your own.", "text": "Your estimate.", "src": "not yet sourced"},
+         "bus": {"fare": 0.35, "text": "Quito's bus fare stays $0.35 through 2026 and rises to $0.40 on January 1, 2027.", "src": "Primicias, May 2026", "url": "https://www.primicias.ec/quito/pasaje-buses-alza-municipio-transportistas-alcalde-pabel-munoz-123431/"}},
+        dict(copy.deepcopy(DEN_PLACE), label="Denver")]}
 for tid in ('tijuana-toe', 'tijuana-doc'):
     T[tid]['interactive']['HOURS'] = copy.deepcopy(HOURS)
 

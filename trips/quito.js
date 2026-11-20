@@ -1402,6 +1402,121 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
      }
     ]
    }
+  },
+  "HOURS": {
+   "kind": "HoursOfWork",
+   "title": "What the pay has to cover: Quito and Denver",
+   "question": "A family in north Quito and a family in Denver need food, rent and bus fare. How much of what they earn does that take, at the minimum wage and at what Center families actually earn?",
+   "people": 5,
+   "rides": 44,
+   "notice": "The Center's families qualify because they earn less than the minimum wage. Divide their income by five people and compare it with Ecuador's own poverty line. Then look at Denver: one full-time minimum-wage job barely covers the same three needs for five people there too. The difference is what catches a Denver family when the pay runs short (try One bad week), and how many Denver workers are paid at least the minimum. In Quito, most Center families are not.",
+   "yourCall": "Which of the three costs would the Quito family cut first, and what would that cost them later?",
+   "places": [
+    {
+     "id": "uio",
+     "label": "Quito (north)",
+     "cur": "$",
+     "month": 173.33333333333334,
+     "pays": [
+      {
+       "label": "The Center's average family income (whole family)",
+       "monthly": 360,
+       "household": true,
+       "note": "Just over $360 a month for an average of five people; families qualify because their income is below the minimum wage. The page is undated.",
+       "src": "The Center (c4wf.org)",
+       "url": "https://www.c4wf.org/our-work",
+       "mark": "care"
+      },
+      {
+       "label": "The minimum wage (one full-time earner)",
+       "monthly": 482,
+       "note": "$482 a month in 2026, which most Center families do not reach.",
+       "src": "Ministry of Labor, Acuerdo MDT-2025-195 (Quito packet)"
+      },
+      {
+       "label": "Set it yourself (whole family)",
+       "custom": true,
+       "def": 240,
+       "min": 50,
+       "max": 1200,
+       "step": 10,
+       "note": "Set a family's monthly income. A budget scenario from class can go here; label it a scenario, not a real family.",
+       "household": true
+      }
+     ],
+     "line": {
+      "text": "Ecuador's poverty line is $92.40 a person a month (Dec 2025).",
+      "src": "INEC via Primicias",
+      "url": "https://www.primicias.ec/economia/pobreza-ecuador-ingresos-urbana-rural-desigualdad-diciembre2025-113335/"
+     },
+     "food": {
+      "pp": 52.07,
+      "lab": "Food at the extreme-poverty line",
+      "text": "INEC's extreme-poverty line, $52.07 a person a month (Dec 2025), marks income too low to cover basic food.",
+      "src": "INEC via Primicias",
+      "url": "https://www.primicias.ec/revistagestion/analisis/pobreza-ecuador-inec-desigualdad-estadisticas-ingresos-115027/"
+     },
+     "rent": {
+      "amt": null,
+      "guess": 250,
+      "min": 50,
+      "max": 600,
+      "step": 10,
+      "label": "Rent for the family (your estimate)",
+      "note": "No source yet for rents in the Center's neighborhoods. A 2025 group was told the cheapest housing starts at about $400 a month; that is unverified. This starts at $250. Set your own.",
+      "text": "Your estimate.",
+      "src": "not yet sourced"
+     },
+     "bus": {
+      "fare": 0.35,
+      "text": "Quito's bus fare stays $0.35 through 2026 and rises to $0.40 on January 1, 2027.",
+      "src": "Primicias, May 2026",
+      "url": "https://www.primicias.ec/quito/pasaje-buses-alza-municipio-transportistas-alcalde-pabel-munoz-123431/"
+     }
+    },
+    {
+     "id": "den",
+     "label": "Denver",
+     "cur": "$",
+     "month": 173.33333333333334,
+     "pays": [
+      {
+       "label": "The minimum wage (one full-time earner)",
+       "monthly": 3344,
+       "note": "$19.29 an hour in 2026, about $3,343 a month full time (our arithmetic).",
+       "src": "Denver Department of Finance",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/News/2025/Denver-Local-Minimum-Wage-Adjusts-to-19.29-per-Hour-for-2026"
+      },
+      {
+       "label": "Set it yourself",
+       "custom": true,
+       "def": 3343,
+       "min": 500,
+       "max": 8000,
+       "step": 50,
+       "note": "Day labor and cash work often pay less: 62% of surveyed Denver-area day laborers had experienced wage theft (2016–17).",
+       "household": false
+      }
+     ],
+     "food": {
+      "pp": 254.55,
+      "text": "USDA Thrifty Food Plan: $1,018.20 a month for a family of four (June 2026), about $255 a person (our arithmetic). National, not Denver prices.",
+      "src": "USDA Thrifty Food Plan via WTOP",
+      "url": "https://wtop.com/news/2026/07/how-much-should-i-spend-on-groceries/"
+     },
+     "rent": {
+      "amt": 1874,
+      "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
+      "src": "USAFacts (Denver mirror D-HOUSING)"
+     },
+     "bus": {
+      "fare": 2.75,
+      "text": "RTD standard fare: $2.75 for a three-hour pass.",
+      "src": "RTD",
+      "url": "https://www.rtd-denver.com/fares"
+     }
+    }
+   ]
   }
  }
 };

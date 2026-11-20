@@ -107,3 +107,5 @@ button.linkish{background:none;border:0;color:var(--rj,#a6192e);text-decoration:
 .stack.hw{position:relative}
 .stack .mark,.legend .mark{position:absolute;top:-4px;bottom:-4px;width:3px;background:#222}
 .legend .mark.inline{position:relative;display:inline-block;height:14px;vertical-align:middle;top:0}
+
+.sl select{max-width:100%;font-size:15px}

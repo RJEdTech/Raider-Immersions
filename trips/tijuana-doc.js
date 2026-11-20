@@ -1516,24 +1516,37 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
   },
   "HOURS": {
    "kind": "HoursOfWork",
-   "title": "Hours of work: Tijuana, San Diego, Denver",
-   "question": "The same household needs food, rent and bus rides. How many hours of minimum-wage work does that take on each side of the wall, and in Denver?",
+   "title": "What the pay has to cover: Tijuana, San Diego, Denver",
+   "question": "The same household needs food, rent and bus rides. How much of a month's pay does that take on each side of the wall, and in Denver, at the minimum wage and below it?",
    "people": 4,
    "rides": 44,
-   "notice": "Measured in hours, not dollars or pesos, there is no exchange rate to argue about. Tijuana's food basket alone takes more hours than a Denver family's food and many bus rides together. The rent is the open question: no source yet gives a colonia rent, so you set it.",
-   "yourCall": "How many full-time earners does the Tijuana household need at your rent? Who in the family would that be, and what would they stop doing?",
+   "notice": "Start at the minimum wage, then switch Tijuana to what many workers really earn. In Baja California almost a third earn one minimum wage or less, and nearly a third more don't report their pay. Measured in hours and shares of pay, there is no exchange rate to argue about. The rent is the open question: no source yet gives a colonia rent, so you set it.",
+   "yourCall": "At the pay you chose, how many earners does the Tijuana household need? Who in the family would that be, and what would they stop doing?",
    "places": [
     {
      "id": "tj",
      "label": "Tijuana",
      "cur": "MX$",
-     "wage": 64.29354166666667,
      "month": 208,
-     "wageText": "440.87 pesos a day (2026), about 64 pesos an hour on a 48-hour week (our arithmetic: a daily wage also pays the rest day)",
-     "wageSrc": {
-      "src": "CONASAMI via Tijuana packet",
-      "url": "https://www.gob.mx/conasami"
-     },
+     "pays": [
+      {
+       "label": "The minimum wage (one full-time earner)",
+       "monthly": 13402,
+       "note": "440.87 pesos a day (2026), about 13,400 a month on a 48-hour week (our arithmetic; a daily wage also pays the rest day).",
+       "src": "CONASAMI via Tijuana packet",
+       "url": "https://www.gob.mx/conasami"
+      },
+      {
+       "label": "Set it yourself",
+       "custom": true,
+       "def": 6700,
+       "min": 1000,
+       "max": 30000,
+       "step": 250,
+       "note": "In Baja California, 31.5% of workers earned up to one minimum wage and 30.4% did not report their pay (Q2 2025). No source gives what a vendor earns; this starts at half the minimum. Set your own and say so.",
+       "household": false
+      }
+     ],
      "food": {
       "pp": 2590.61,
       "text": "INEGI's urban food basket: 2,590.61 pesos per person a month (Sept 2026).",
@@ -1562,13 +1575,26 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
      "id": "sd",
      "label": "San Diego",
      "cur": "$",
-     "wage": 17.75,
-     "month": 173,
-     "wageText": "$17.75 an hour in the city of San Diego (2026)",
-     "wageSrc": {
-      "src": "City of San Diego",
-      "url": "https://www.sandiego.gov/sites/default/files/2025-12/2025-12-31-city-of-san-diego-hourly-minimum-wage-will-increase-to-17.75-effective-jan-1-2026.pdf"
-     },
+     "month": 173.33333333333334,
+     "pays": [
+      {
+       "label": "The minimum wage (one full-time earner)",
+       "monthly": 3077,
+       "note": "$17.75 an hour in the city of San Diego (2026), about $3,077 a month full time (our arithmetic).",
+       "src": "City of San Diego",
+       "url": "https://www.sandiego.gov/sites/default/files/2025-12/2025-12-31-city-of-san-diego-hourly-minimum-wage-will-increase-to-17.75-effective-jan-1-2026.pdf"
+      },
+      {
+       "label": "Set it yourself",
+       "custom": true,
+       "def": 3077,
+       "min": 500,
+       "max": 8000,
+       "step": 50,
+       "note": "Set what a worker below the minimum, or part time, really brings home.",
+       "household": false
+      }
+     ],
      "food": {
       "pp": 254.55,
       "text": "USDA Thrifty Food Plan: $1,018.20 a month for a family of four (June 2026), about $255 a person (our arithmetic). National, not San Diego prices.",
@@ -1592,13 +1618,26 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
      "id": "den",
      "label": "Denver",
      "cur": "$",
-     "wage": 19.29,
-     "month": 173,
-     "wageText": "$19.29 an hour in Denver (2026)",
-     "wageSrc": {
-      "src": "Denver Department of Finance",
-      "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/News/2025/Denver-Local-Minimum-Wage-Adjusts-to-19.29-per-Hour-for-2026"
-     },
+     "month": 173.33333333333334,
+     "pays": [
+      {
+       "label": "The minimum wage (one full-time earner)",
+       "monthly": 3344,
+       "note": "$19.29 an hour in 2026, about $3,343 a month full time (our arithmetic).",
+       "src": "Denver Department of Finance",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/News/2025/Denver-Local-Minimum-Wage-Adjusts-to-19.29-per-Hour-for-2026"
+      },
+      {
+       "label": "Set it yourself",
+       "custom": true,
+       "def": 3343,
+       "min": 500,
+       "max": 8000,
+       "step": 50,
+       "note": "Day labor and cash work often pay less: 62% of surveyed Denver-area day laborers had experienced wage theft (2016–17).",
+       "household": false
+      }
+     ],
      "food": {
       "pp": 254.55,
       "text": "USDA Thrifty Food Plan: $1,018.20 a month for a family of four (June 2026), about $255 a person (our arithmetic). National, not Denver prices.",

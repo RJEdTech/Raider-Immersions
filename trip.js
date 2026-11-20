@@ -174,23 +174,32 @@ function whoDecides(t,c,box){var st={dv:false,g:{},rev:{}};
     var a=box.querySelector('[data-all]');a&&(a.onclick=function(){D.forEach(function(d,i){if(st.g[pre+i]==null){st.g[pre+i]=d.level;st.rev[pre+i]=1}});draw()})}
   draw()}
 
-function hoursOfWork(t,c,box){var st={people:c.people||4,rides:c.rides||44,rent:{}};
-  c.places.forEach(function(p){if(p.rent.amt==null)st.rent[p.id]=p.rent.guess});
-  function draw(){var R=c.places.map(function(p){var rent=p.rent.amt!=null?p.rent.amt:st.rent[p.id],
-      it=[{k:'food',lab:'Food for the household',h:p.food.pp*st.people/p.wage},{k:'rent',lab:'Rent',h:rent/p.wage},{k:'bus',lab:'Bus rides',h:p.bus.fare*st.rides/p.wage}],
-      tot=it.reduce(function(a,b){return a+b.h},0);return {p:p,it:it,tot:tot,rent:rent}}),
+function hoursOfWork(t,c,box){var st={people:c.people||4,rides:c.rides||44,rent:{},pay:{},custom:{}};
+  c.places.forEach(function(p){if(p.rent.amt==null)st.rent[p.id]=p.rent.guess;st.pay[p.id]=0;var cu=p.pays.filter(function(x){return x.custom})[0];if(cu)st.custom[p.id]=cu.def});
+  function payOf(p){var o=p.pays[st.pay[p.id]];return {o:o,monthly:o.custom?st.custom[p.id]:o.monthly}}
+  function draw(){var R=c.places.map(function(p){var P=payOf(p),hourly=P.monthly/p.month,rent=p.rent.amt!=null?p.rent.amt:st.rent[p.id],
+      it=[{k:'food',lab:p.food.lab||'Food for the household',cost:p.food.pp*st.people},{k:'rent',lab:'Rent',cost:rent},{k:'bus',lab:'Bus rides',cost:p.bus.fare*st.rides}];
+      it.forEach(function(x){x.h=hourly>0?x.cost/hourly:0});var cost=it.reduce(function(a,b){return a+b.cost},0);
+      return {p:p,P:P,it:it,cost:cost,tot:hourly>0?cost/hourly:0,share:P.monthly>0?cost/P.monthly:0}}),
       max=Math.max.apply(null,R.map(function(r){return Math.max(r.tot,r.p.month)}));
-    box.innerHTML='<div class="sec"><div class="sliders"><label>People in the household: <b>'+st.people+'</b><input type="range" min="1" max="6" value="'+st.people+'" data-hw="people"></label>'+
+    box.innerHTML='<div class="sec"><div class="sliders"><label>People in the household: <b>'+st.people+'</b><input type="range" min="1" max="8" value="'+st.people+'" data-hw="people"></label>'+
       '<label>Bus rides a month: <b>'+st.rides+'</b><input type="range" min="0" max="120" value="'+st.rides+'" data-hw="rides"></label>'+
       c.places.filter(function(p){return p.rent.amt==null}).map(function(p){return '<label>'+esc(p.rent.label)+': <b>'+p.cur+fmt(st.rent[p.id])+'</b><input type="range" min="'+p.rent.min+'" max="'+p.rent.max+'" step="'+p.rent.step+'" value="'+st.rent[p.id]+'" data-rent="'+p.id+'"></label><p class="muted" style="font-size:14px">'+esc(p.rent.note)+'</p>'}).join('')+
       '</div></div>'+
-      R.map(function(r){var p=r.p;return '<div class="fam"><h4>'+esc(p.label)+'</h4><p class="muted" style="font-size:14px">Minimum wage: '+esc(p.wageText)+'</p>'+
+      R.map(function(r){var p=r.p,o=r.P.o,whole=o.household;return '<div class="fam"><h4>'+esc(p.label)+'</h4>'+
+        '<label class="sl">Whose pay? <select data-pay="'+p.id+'">'+p.pays.map(function(x,i){return '<option value="'+i+'"'+(i===st.pay[p.id]?' selected':'')+'>'+esc(x.label)+'</option>'}).join('')+'</select></label>'+
+        (o.custom?'<label class="sl">Monthly pay: <b>'+p.cur+fmt(st.custom[p.id])+'</b><input type="range" min="'+o.min+'" max="'+o.max+'" step="'+o.step+'" value="'+st.custom[p.id]+'" data-cu="'+p.id+'"></label>':'')+
+        '<p class="muted" style="font-size:14px">'+esc(o.note||'')+(o.src?' <small>Source: '+srcLink(o)+'</small>':'')+(o.mark==='care'?' <span class="pill care">read with care</span>':'')+'</p>'+
         '<div class="stack hw" role="img" aria-label="'+esc(p.label)+': '+fmt(r.tot)+' hours of work a month">'+r.it.map(function(x){return '<span class="sg '+({food:'leave',rent:'gap',bus:'sav'})[x.k]+'" style="width:'+(x.h/max*100)+'%"></span>'}).join('')+'<i class="mark" style="left:'+(p.month/max*100)+'%"></i></div>'+
-        '<p class="fsum"><b>'+fmt(r.tot)+' hours</b> of minimum-wage work a month. One full-time worker has about '+fmt(p.month)+', so this household needs <b>'+fmt(r.tot/p.month,1)+' full-time earners</b>.</p>'+
-        '<ul class="cus">'+r.it.map(function(x){var src=x.k==='food'?p.food:x.k==='rent'?p.rent:p.bus;return '<li><b>'+x.lab+'</b>: '+fmt(x.h)+' hours. '+esc(src.text||'')+' <small>Source: '+srcLink(src)+'</small></li>'}).join('')+'<li><small>Wage source: '+srcLink(p.wageSrc)+'</small></li></ul></div>'}).join('')+
-      '<p class="legend"><span class="sg leave"></span> food <span class="sg gap"></span> rent <span class="sg sav"></span> bus <i class="mark inline"></i> one full-time month</p>';
+        '<p class="fsum">Food, rent and bus cost <b>'+p.cur+fmt(r.cost)+'</b> a month: <b>'+fmt(r.share*100)+'%</b> of '+(whole?'what the whole family earns':'this pay')+'. '+
+          (whole?(r.share>1?'The family is short <b>'+p.cur+fmt(r.cost-r.P.monthly)+'</b> every month before anything else: clothes, school, a doctor.':'What is left for everything else: <b>'+p.cur+fmt(r.P.monthly-r.cost)+'</b>.'):
+          'At this pay that is <b>'+fmt(r.tot)+' hours</b> of work, or <b>'+fmt(r.share,1)+'</b> full-time '+(r.share>=1.05?'earners':'earner')+'.')+'</p>'+
+        (p.line&&whole?'<p class="fsum">Per person: <b>'+p.cur+fmt(r.P.monthly/st.people)+'</b> a month. '+esc(p.line.text)+' <small>Source: '+srcLink(p.line)+'</small></p>':'')+'<ul class="cus">'+r.it.map(function(x){var src=x.k==='food'?p.food:x.k==='rent'?p.rent:p.bus;return '<li><b>'+x.lab+'</b>: '+p.cur+fmt(x.cost)+'. '+esc(src.text||'')+' <small>Source: '+srcLink(src)+'</small></li>'}).join('')+'</ul></div>'}).join('')+
+      '<p class="legend"><span class="sg leave"></span> food <span class="sg gap"></span> rent <span class="sg sav"></span> bus <i class="mark inline"></i> one full-time month at the chosen pay</p>';
     box.querySelectorAll('[data-hw]').forEach(function(r){r.oninput=function(){st[r.dataset.hw]=+r.value;draw();box.querySelector('[data-hw="'+r.dataset.hw+'"]').focus()}});
-    box.querySelectorAll('[data-rent]').forEach(function(r){r.oninput=function(){st.rent[r.dataset.rent]=+r.value;draw();box.querySelector('[data-rent="'+r.dataset.rent+'"]').focus()}})}
+    box.querySelectorAll('[data-rent]').forEach(function(r){r.oninput=function(){st.rent[r.dataset.rent]=+r.value;draw();box.querySelector('[data-rent="'+r.dataset.rent+'"]').focus()}});
+    box.querySelectorAll('[data-cu]').forEach(function(r){r.oninput=function(){st.custom[r.dataset.cu]=+r.value;draw();box.querySelector('[data-cu="'+r.dataset.cu+'"]').focus()}});
+    box.querySelectorAll('[data-pay]').forEach(function(r){r.onchange=function(){st.pay[r.dataset.pay]=+r.value;draw();box.querySelector('[data-pay="'+r.dataset.pay+'"]').focus()}})}
   draw()}
 
 function loanCost(t,c,box){var start=function(d){return JSON.parse(JSON.stringify((d&&d.start)||{papers:true}))},st={dv:false,amt:c.amount,g:start(c)};
