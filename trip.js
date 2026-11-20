@@ -25,16 +25,16 @@ function numberCard(t,n){var u=srcUrl(t,n.src);
    (n.mark==='ok'?'<span class="pill ok">checked</span>':n.mark==='care'?'<span class="pill care">read with care</span>':'')+
    (n.note?' <span class="note">'+md(n.note)+'</span>':'')+(u?' · <a href="'+esc(u)+'" target="_blank" rel="noopener">Check it yourself</a>':'')+'</div></li>'}
 
-var TABS=[['see','See it'],['bar','Barriers'],['cush','What catches you'],['labs','Labs'],['act','Respond'],['before','Before you go'],['after','After you return'],['over','The place'],['src','Sources']];
+var TABS=[['walk','Walk it'],['see','See it'],['bar','Barriers'],['cush','What catches you'],['labs','Labs'],['act','Respond'],['before','Before you go'],['after','After you return'],['over','The place'],['src','Sources']];
 
 function page(t,tab,sub){
-  document.title=t.name+' · Raider Immersions';tab=tab||(allPics(t).length&&!t.weekIntro?'see':'over');if(tab==='faith')tab='act';if(tab==='see'&&!allPics(t).length)tab='over';
+  document.title=t.name+' · Raider Immersions';tab=tab||(t.weekIntro?'over':obwOf(t)?'walk':allPics(t).length?'see':'over');if(tab==='faith')tab='act';if(tab==='see'&&!allPics(t).length)tab='over';
   var app=$('#app');
   app.innerHTML='<a class="back" href="#">← All immersions</a><p class="kick">Immersion · research as of '+esc(t.asOf)+'</p><h2 style="margin-top:0">'+esc(t.name)+'</h2>'+
    '<div class="tabs" role="tablist">'+TABS.map(function(x){return '<button role="tab" aria-selected="'+(x[0]===tab)+'" data-tab="'+x[0]+'">'+x[1]+'</button>'}).join('')+'</div><div id="pane"></div>';
   app.querySelectorAll('[data-tab]').forEach(function(b){b.onclick=function(){location.hash=t.id+'/'+b.dataset.tab}});
   var pane=$('#pane');
-  ({see:see,over:over,bar:barriers,cush:cushion,labs:labs,before:before,after:after,act:respond,src:sources}[tab]||over)(t,pane,sub);
+  ({walk:walk,see:see,over:over,bar:barriers,cush:cushion,labs:labs,before:before,after:after,act:respond,src:sources}[tab]||over)(t,pane,sub);
   wireAnswers(pane);wireCopy(pane,t.name+' · '+(TABS.filter(function(x){return x[0]===tab})[0]||TABS[0])[1]);
   if(sub==null||tab==='see')window.scrollTo(0,0)}
 
@@ -333,13 +333,73 @@ function wirePics(root,t,inBar){root.querySelectorAll('figure[data-pic]').forEac
   var ag=f.querySelector('[data-again]');if(ag)ag.onclick=function(){store('pic:'+f.dataset.pic,'');swap('',null)}})}
 function picsHTML(t,i,inBar){return picsOf(t,i).map(function(p,k){return picHTML(t,i,k,p,store('pic:'+t.id+':'+(i+1)+':'+k),inBar)}).join('')}
 
+/* ---------- Walk it: a few months beside one family, one choice at a time ----------
+   Built from the trip's One bad week data (labs/<id>.json): the same rules, prices and sources, lived in order instead of read off a chart.
+   Never a game: no score, no winning. One box is one week of that family's own pay. */
+var WALK={};
+function obwOf(t){var I=t.interactive||{};for(var k in I)if(I[k].kind==='OneBadWeek')return {k:k,c:I[k]};return null}
+function walkFam(c){var F=c.families,pick=function(id){return F.filter(function(f){return f.id===id})[0]};return pick('there')||pick('informal')||pick('lowwage')||F[0]}
+function wkTxt(n){n=Math.round(n*10)/10;return fmt(n,n%1?1:0)+(n===1?' week':' weeks')}
+function lendersOf(f){return (f.loanOptions||[{label:'The lender this family can reach',rate:f.loanRate,note:f.loanNote}]).concat([{label:'No one will lend',none:true,note:'Then the bills go unpaid: the rent, the light, the next visit to a doctor.'}])}
+function wcalc(f,s,sav,L,ins){var lb=(f.leaveBy||{})[s.id],lw=lb?lb[0]:f.leaveWeeks,ls=lb?lb[1]:f.leaveShare,lost=f.fixedIncome?0:s.weeks,leave=Math.min(lost,lw)*ls,need=lost-leave+s.extra;
+  if(ins)return {need:lost+s.extra,leave:0,sav:0,gap:0,int:0,ins:true,lost:lost};
+  var fs=Math.min(sav,need),gap=Math.max(0,need-fs),it=!L||L.none||(L.rate==null&&L.monthly==null)?0:L.monthly!=null?gap*L.monthly*6:gap*(Math.pow(1+L.rate,0.5)-1);
+  return {need:lost+s.extra,leave:leave,sav:fs,gap:gap,int:it,lost:lost,none:!!(L&&L.none)}}
+function boxes(n,cls){var s='',f=Math.floor(n+1e-9),r=n-f;for(var i=0;i<f;i++)s+='<i class="wk '+cls+'"></i>';if(r>0.04)s+='<i class="wk part"><b class="'+cls+'" style="width:'+Math.round(r*100)+'%"></b></i>';return s}
+/* show: {leave,sav,lend} = which answers the student has asked for so far */
+function calHTML(r,show,label){var lv=show.leave?r.leave:0,sv=show.sav?r.sav:0,hole=Math.max(0,r.need-lv-sv);
+  return '<div class="cal" role="img" aria-label="'+esc(label||'')+': '+wkTxt(r.need)+' of pay needed; '+wkTxt(lv)+' paid by the job; '+wkTxt(sv)+' from savings; '+wkTxt(hole)+' short'+(show.lend&&r.int?'; '+wkTxt(r.int)+' more in interest':'')+'">'+
+   (r.ins?'<span class="calins">Life insurance pays</span>':boxes(lv,'leave')+boxes(sv,'sav')+boxes(hole,show.lend&&!r.none?'lent':'hole')+(show.lend?boxes(r.int,'intr'):''))+'</div>'}
+function sumTxt(r){return r.ins?'Life insurance pays. They do not have to borrow.':r.gap>0&&r.none?'They are short <b>'+wkTxt(r.gap)+'</b> of pay, and no one will lend.':r.gap>0?'They borrow <b>'+wkTxt(r.gap)+'</b> of pay and pay back <b>'+wkTxt(r.int)+'</b> more in interest over six months.':'They get through without borrowing.'}
+var WLEG='<p class="legend wleg"><i class="wk leave"></i> the job keeps paying <i class="wk sav"></i> savings <i class="wk hole"></i> nothing there <i class="wk lent"></i> borrowed <i class="wk intr"></i> interest</p>';
+function walk(t,p){var o=obwOf(t);if(!o){over(t,p);return}
+  var c=o.c,f=walkFam(c),others=c.families.filter(function(x){return x!==f&&!x.mine}),L=lendersOf(f);
+  var st=WALK[t.id]=WALK[t.id]||{step:0,shock:null,asked:{},sav:f.savings||0,lender:null};
+  function go(n){st.step=n;draw();var top=$('#walk-top',p);if(top&&top.scrollIntoView)top.scrollIntoView({block:'start'})}
+  function draw(){var s=c.shocks.filter(function(x){return x.id===st.shock})[0],death=s&&s.id==='death',h='';
+    var prog='<div class="steps wsteps" aria-hidden="true">'+[0,1,2,3,4].map(function(k){return '<a class="'+(k===st.step?'on':k<st.step?'done':'')+'"></a>'}).join('')+'</div>';
+    if(st.step===0)h='<h3 style="margin-top:0">Walk a few months beside one family</h3><div class="oneday wfam">'+esc(f.label)+(f.incomeNote?'<span>'+esc(f.incomeNote)+'</span>':'')+'</div>'+
+      '<p>You will make the choices this family has to make. Nothing that happens is invented: each rule and price comes from a source.</p><p><button class="btn" data-go="1">Begin</button></p>';
+    else if(st.step===1)h='<p class="kick">'+esc(f.label)+'</p><h3 style="margin-top:0">Something happens. Choose one.</h3><div class="wchoices">'+c.shocks.map(function(x){return '<button data-shock="'+x.id+'">'+esc(x.label)+'</button>'}).join('')+'</div>';
+    else if(st.step===2){var r=wcalc(f,s,st.sav,null,death&&st.asked.ins&&f.lifeInsLikely),all=st.asked.job&&st.asked.sav&&st.asked.doc&&(!death||st.asked.ins),hole=Math.max(0,r.need-(st.asked.job?r.leave:0)-(st.asked.sav?r.sav:0));
+      var lb=(f.leaveBy||{})[s.id],lw=lb?lb[0]:f.leaveWeeks;
+      h='<p class="kick">'+esc(f.label)+'</p><h3 style="margin-top:0">'+esc(s.label)+'</h3>'+
+       '<p>'+(r.lost?'<b>'+wkTxt(r.lost)+'</b> without work':'No work is lost')+(s.extra?(r.lost?', and ':', but ')+'<b>'+wkTxt(s.extra)+'</b> of pay in new costs':'')+'. One box is one week of this family’s pay.</p>'+
+       calHTML(r,{leave:st.asked.job,sav:st.asked.sav},f.label)+WLEG+
+       '<p><b>What is there to catch them? Ask.</b></p><div class="asks">'+
+        [['job','Does the job keep paying?',(f.fixedIncome?esc(f.incomeNote||'Their income is fixed.')+' ':(r.leave>0?'Yes, for part of it: about <b>'+wkTxt(r.leave)+'</b> of pay. ':lw>0?'There is leave, but it does not cover this. ':'<b>No.</b> ')) +esc(f.leaveNote||'')],
+         ['sav','Is there anything saved?','Say they have <b>'+wkTxt(st.sav)+'</b> of pay saved. This one is an example, not data: change it. <span class="pm"><button data-sav="-1" aria-label="One week less saved"'+(st.sav<=0?' disabled':'')+'>−</button><button data-sav="1" aria-label="One week more saved">+</button></span>'],
+         ['doc','Who pays the doctor?',esc(f.health||'We have not found a sourced answer yet.')]].concat(death?[['ins','Is there life insurance?',(f.lifeInsLikely?'Probably. ':'Probably not. ')+esc(f.lifeInsNote||'')]]:[]).map(function(a){
+           return st.asked[a[0]]?'<div class="ask open"><b>'+a[1]+'</b><p>'+a[2]+'</p></div>':'<button class="ask" data-ask="'+a[0]+'">'+a[1]+'</button>'}).join('')+'</div>'+
+       (all?'<p class="psay">'+(r.ins?'Life insurance pays.':hole>0?'What is left is a hole: '+wkTxt(hole)+' of pay.':'They get through without borrowing.')+'</p><p><button class="btn" data-go="'+(hole>0&&!r.ins?3:4)+'">'+(hole>0&&!r.ins?'The hole has to be filled →':'The same thing, somewhere else →')+'</button></p>':'<p class="muted">Ask all '+(death?'four':'three')+' to go on.</p>')}
+    else if(st.step===3){var Lx=st.lender==null?null:L[st.lender],r3=wcalc(f,s,st.sav,Lx,false);
+      h='<p class="kick">'+esc(s.label)+'</p><h3 style="margin-top:0">The hole has to be borrowed. Who will lend '+wkTxt(r3.gap)+' of pay?</h3>'+
+       '<div class="wchoices lend">'+L.map(function(x,i){return '<button data-lend="'+i+'" class="'+(i===st.lender?'on':'')+'"><b>'+esc(x.label)+'</b><span>'+esc(x.note||'')+'</span></button>'}).join('')+'</div>'+
+       (Lx?calHTML(r3,{leave:1,sav:1,lend:1},f.label)+WLEG+'<p class="psay">'+sumTxt(r3)+'</p>'+(Lx.none?'':'<p class="muted">The interest boxes are weeks of work that go to the lender.</p>')+'<p><button class="btn" data-go="4">The same thing, somewhere else →</button></p>':'')}
+    else{var Lm=st.lender==null?null:L[st.lender],mine=wcalc(f,s,st.sav,Lm,death&&f.lifeInsLikely),rows=[[f,mine]].concat(others.map(function(g){var Lg=g.loanOptions?g.loanOptions[0]:{rate:g.loanRate,note:g.loanNote};return [g,wcalc(g,s,g.savings||0,Lg,death&&g.lifeInsLikely)]}));
+      h='<p class="kick">'+esc(s.label)+'</p><h3 style="margin-top:0">The same thing, somewhere else</h3><p>The same event lands on each family below. One box is one week of that family’s own pay.</p>'+
+       rows.map(function(x,i){var g=x[0];return '<div class="fam'+(i===0?' walked':'')+'"><h4>'+esc(g.label)+'</h4>'+calHTML(x[1],{leave:1,sav:1,lend:1},g.label)+'<p class="fsum">'+sumTxt(x[1])+'</p><ul class="cus"><li>'+esc(g.leaveNote||'')+'</li><li>'+esc(g.health||'')+'</li></ul></div>'}).join('')+WLEG+
+       '<p class="psay">The event was the same. What each family had under them was not.</p>'+
+       '<p class="muted">Savings here are examples. The leave, health and loan rules are real, with sources in the <a href="#'+t.id+'/labs/'+o.k+'">One bad week lab</a>, where you can change every number and add a family like yours.</p>'+
+       answerBox(t.id+':walk','Which moment in this walk would you most want to change? Who would have to decide it?')+copyBtn('walk')+
+       '<p class="seenav"><button class="btn ghost" data-again>Walk it again with something else</button> <a class="btn" href="#'+t.id+'/bar">Who decided these rules? →</a></p>'}
+    p.innerHTML='<div id="walk-top"></div>'+prog+'<div class="frame">'+h+'</div>';
+    p.querySelectorAll('[data-go]').forEach(function(b){b.onclick=function(){go(+b.dataset.go)}});
+    p.querySelectorAll('[data-shock]').forEach(function(b){b.onclick=function(){st.shock=b.dataset.shock;st.asked={};st.lender=null;go(2)}});
+    p.querySelectorAll('[data-ask]').forEach(function(b){b.onclick=function(){st.asked[b.dataset.ask]=1;draw()}});
+    p.querySelectorAll('[data-sav]').forEach(function(b){b.onclick=function(){st.sav=Math.max(0,Math.min(26,st.sav+(+b.dataset.sav)));draw()}});
+    p.querySelectorAll('[data-lend]').forEach(function(b){b.onclick=function(){st.lender=+b.dataset.lend;draw()}});
+    var ag=p.querySelector('[data-again]');if(ag)ag.onclick=function(){st.shock=null;st.asked={};st.lender=null;go(1)};
+    wireAnswers(p);wireCopy(p,t.name+' · Walk it')}
+  draw()}
+
 /* ---------- See it: the pictures one at a time ---------- */
 function see(t,p,sub){var F=allPics(t);if(!F.length){over(t,p);return}
   var i=sub==null?0:Math.max(0,Math.min(F.length,sub));
   var steps='<div class="steps" role="navigation" aria-label="Pictures">'+F.map(function(x,k){return '<a href="#'+t.id+'/see/'+(k+1)+'" class="'+(k===i?'on':k<i?'done':'')+'" aria-label="Picture '+(k+1)+'"'+(k===i?' aria-current="step"':'')+'></a>'}).join('')+
     '<a href="#'+t.id+'/see/'+(F.length+1)+'" class="end'+(i===F.length?' on':'')+'" aria-label="How it stacks up"></a></div>';
   if(i<F.length){var x=F[i],b=t.barriers[x.bi];
-    p.innerHTML=(i===0?'<p class="lede">Before the reading, look. Each picture is one real comparison. Guess first, then see it.</p>':'')+steps+
+    p.innerHTML=(i===0?'<p class="lede">The numbers behind the walk. Every dot and bar here stands for people: neighbors of the family you walked beside. Guess first, then look.</p>':'')+steps+
      '<div class="frame"><p class="kick">Picture '+(i+1)+' of '+F.length+'</p><h3 style="margin-top:0">'+md(b.title)+'</h3>'+
      (b.oneDay?'<div class="oneday"><b>One day:</b> '+md(cap(b.oneDay))+'</div>':b.plain?'<p>'+md(first(b.plain))+'</p>':'')+
      picHTML(t,x.bi,x.k,x.p,store('pic:'+t.id+':'+(x.bi+1)+':'+x.k),false)+

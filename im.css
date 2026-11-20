@@ -194,3 +194,23 @@ details.crd summary::-webkit-details-marker{display:none}details.crd summary:aft
 .cr2 .there{border-left:4px solid var(--rj)}.cr2 .home{border-left:4px solid var(--good)}
 @media(max-width:700px){.cr2{grid-template-columns:1fr}}
 .pic.open .pr.hi{margin-bottom:26px}
+
+/* Walk it (Nov 20 2026, night) */
+.wfam{font-size:20px;font-weight:700}.wfam span{display:block;font-size:16px;font-weight:400;margin-top:6px}
+.wchoices{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin:10px 0}
+.wchoices button{font:inherit;font-size:17px;font-weight:700;text-align:left;padding:14px 16px;border-radius:12px;border:2px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.wchoices button:hover,.wchoices button.on{border-color:var(--rj)}
+.wchoices.lend button span{display:block;font-weight:400;font-size:14px;color:var(--muted);margin-top:4px}
+.cal{display:flex;flex-wrap:wrap;gap:5px;margin:10px 0;min-height:34px}
+.wk{display:inline-block;width:30px;height:30px;border-radius:6px;box-sizing:border-box;vertical-align:-8px}
+.wk.hole{border:2px dashed var(--rj);background:none}.wk.leave{background:#2e7d32}.wk.sav{background:#1565c0}.wk.lent{background:#e57373}.wk.intr{background:#8e1a1a}
+.wk.part{border:1px solid var(--line);overflow:hidden;background:none}.wk.part b{display:block;height:100%}
+.wk.part b.hole{background:repeating-linear-gradient(45deg,transparent 0 4px,var(--rj) 4px 6px)}.wk.part b.leave{background:#2e7d32}.wk.part b.sav{background:#1565c0}.wk.part b.lent{background:#e57373}.wk.part b.intr{background:#8e1a1a}
+.calins{background:#6a1b9a;color:#fff;border-radius:6px;padding:4px 12px;font-weight:700}
+.wleg{font-size:14px}.wleg .wk{width:16px;height:16px;border-radius:4px;vertical-align:-3px;margin:0 4px 0 10px}
+.asks{display:grid;gap:8px;margin:8px 0}
+button.ask{font:inherit;font-size:17px;font-weight:700;text-align:left;padding:12px 16px;border-radius:12px;border:2px dashed var(--rj);background:var(--card);color:var(--rj-ink);cursor:pointer}
+.ask.open{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 16px}.ask.open p{margin:4px 0 0}
+.ask .pm{display:inline-flex;gap:6px;margin-left:8px;vertical-align:middle}.ask .pm button{width:34px;height:34px;font-size:18px}
+.fam.walked{border:2px solid var(--rj)}
+.wsteps a{width:44px}
