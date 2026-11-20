@@ -134,10 +134,6 @@ window.DMIRROR={
    {
     "text": "Denver Health served **271,089** people (1.41 million visits) in 2025, including **13,784** people experiencing homelessness. — Denver Health, *Report to the City 2025*. It projected **$155.5 million** in uncompensated care for 2024; uninsured visits rose from 61,000 (2022) to 75,000 (2023). — Denver7, Sept 2024. Projection; find the 2025 actual in the full Report to the City (Uncompensated Care section, beyond the part read).",
     "mark": "care"
-   },
-   {
-    "text": "Look for: Denver Health Paramedic Division's published transport charges; CIVHC's Colorado price-transparency tools; HCPF's Hospital Discounted Care rate schedule (the discounted rate an uninsured low-income patient would actually owe).",
-    "mark": ""
    }
   ],
   "misses": [
@@ -170,10 +166,6 @@ window.DMIRROR={
    {
     "text": "**94%** of U.S. adults had a bank account in 2025, nearly all adults earning $100,000+ vs. **77%** of those earning under $25,000. — Federal Reserve SHED 2025. National.",
     "mark": "ok"
-   },
-   {
-    "text": "Pull Colorado.",
-    "mark": ""
    }
   ],
   "misses": [
@@ -263,11 +255,7 @@ window.DMIRROR={
     "mark": "care"
    },
    {
-    "text": "Look for the NAIC/Federal Insurance Office data, or a Colorado Division of Insurance consumer report. Industry surveys (Lemonade, Policygenius) exist but are not neutral.",
-    "mark": ""
-   },
-   {
-    "text": "Find its latest homeowners market report.",
+    "text": "Industry surveys (Lemonade, Policygenius) exist but are not neutral.",
     "mark": ""
    }
   ],
@@ -290,10 +278,6 @@ window.DMIRROR={
    {
     "text": "Access to employer disability insurance (private industry, March 2026): short-term **44%**, long-term **37%**. — BLS. National.",
     "mark": "ok"
-   },
-   {
-    "text": "CBPP has published press releases on record initial-decision waits (headlines of over 6 and over 7 months), but the pages didn't load. SSA's own processing-time page shows charts only. Look for: SSA's *Annual Statistical Report on the SSDI Program* (award rates by stage); ssa.gov/ssa-performance (initial claims, months); SSA hearing-office wait for the Denver hearing office.",
-    "mark": ""
    }
   ],
   "misses": [
@@ -340,10 +324,6 @@ window.DMIRROR={
    {
     "text": "**1,803** schools participate in Healthy School Meals for All; about 382 would have lost free meals without LL and MM. — Chalkbeat Colorado, 4 Nov 2025. MM passed. — Chalkbeat/CBS headlines, 4 Nov 2025.",
     "mark": "care"
-   },
-   {
-    "text": "Check USDA FNS and CDHS guidance.",
-    "mark": ""
    }
   ],
   "misses": [
@@ -402,10 +382,6 @@ window.DMIRROR={
    {
     "text": "**2026 PIT (26 Jan 2026):** Denver **6,411** people, down 12.5% from 7,327 in 2025; **5,893** sheltered, **518** unsheltered. Metro Denver **9,950**. — MDHI via Denver7 and *Colorado Politics*, May 2026. MDHI's full-year data counted **35,601** people in metro Denver, more than three times the one-night count. — *Colorado Politics*. Check the reporting year on MDHI's State of Homelessness report.",
     "mark": "care"
-   },
-   {
-    "text": "Not pulled.",
-    "mark": ""
    }
   ],
   "misses": [
@@ -451,10 +427,6 @@ window.DMIRROR={
    {
     "text": "RTD made youth rides free year-round (2023). — Chalkbeat Colorado, 31 Jul 2023 (headline).",
     "mark": "care"
-   },
-   {
-    "text": "DPS's transportation page links to subpages but didn't show the rules. Check transportation.dpsk12.org.",
-    "mark": ""
    }
   ],
   "misses": [

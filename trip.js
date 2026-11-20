@@ -82,13 +82,13 @@ function barrier(t,i,box,keep){
 
 function mirrorLine(keys){var k=(keys||[]).filter(function(x){return M[x]})[0];if(!k)return '';var f=(M[k].figures||[])[0];
   return (f?md(f.text):md(M[k].plain||''))+' <a href="#denver-mirror/'+k+'">More</a>'}
-function cushion(t,p){
-  p.innerHTML='<p class="lede">When something goes wrong (a broken leg, a hailstorm, a death), what catches a family? Most of these cushions are invisible to the people inside them. Read across each row: there, and at home.</p>'+
-   '<div class="cush"><div class="ch"><span></span><b>'+esc(t.short)+'</b><b>Denver and Colorado</b></div>'+
+function cushion(t,p){var I=t.interactive||{},obw=Object.keys(I).filter(function(k){return I[k].kind==='OneBadWeek'})[0]||'E';
+  p.innerHTML='<p class="lede">When something goes wrong (a broken leg, a hailstorm, a death), what catches a family? Most of these cushions are invisible to the people inside them.</p>'+
+   '<a class="card seefirst" href="#'+t.id+'/labs/'+obw+'"><span class="badge ready">See it happen</span><h3>One bad week</h3><div class="meta">Pick what goes wrong. Watch a family here and a family in Denver get through it, side by side.</div></a>'+
+   '<h3>Question by question</h3><p class="muted">Open one. Read across: there, and at home.</p><div class="cush">'+
    t.cushion.map(function(r){var dv=r.denver.text?md(r.denver.text):mirrorLine(r.denver.keys);
-     return '<div class="cr"><span class="cl">'+md(r.label)+'</span><div class="there">'+(r.there.text?md(r.there.text):'<span class="muted">Not yet sourced.</span>')+'</div><div class="home">'+(dv||'<span class="muted">Not yet sourced.</span>')+'</div></div>'}).join('')+'</div>'+
-   (t.cushionNotice?'<div class="claim">'+md(t.cushionNotice)+'</div>':'')+
-   '<p><a class="btn" href="#'+t.id+'/labs/E">Try it: One bad week →</a></p>'}
+     return '<details class="crd"><summary>'+md(r.label)+'</summary><div class="cr2"><div class="there"><b>'+esc(t.short)+'</b>'+(r.there.text?md(r.there.text):'<span class="muted">We have not found a sourced answer yet.</span>')+'</div><div class="home"><b>Denver and Colorado</b>'+(dv||'<span class="muted">We have not found a sourced answer yet.</span>')+'</div></div></details>'}).join('')+'</div>'+
+   (t.cushionNotice?'<div class="claim">'+md(t.cushionNotice)+'</div>':'')}
 
 /* ---------- labs ---------- */
 function labList(t){var L=(t.labs||[]).slice(),I=t.interactive||{};
@@ -296,6 +296,8 @@ function dgrid(tot,n,ghost,mark){var s='';for(var i=0;i<tot;i++)s+='<i class="'+
 var SEG=['var(--rj)','#1565c0','#2e7d32','#d08a2c','#6a1b9a'];
 function picSrc(t,b,p,inBar){var out=[];p.s.forEach(function(s){var x;
     if(s==='d')x='Denver and Colorado figures: '+(inBar?'see “The same structure in Denver” on this page.':'see the Denver note on the barrier page.');
+    else if(typeof s==='object')x=esc(s.t)+' '+(s.mark==='care'?'<span class="pill care" title="Not double-checked against the original source">read with care</span>':'<span class="pill ok">checked</span>')+(s.u?' · <a href="'+esc(s.u)+'" target="_blank" rel="noopener">Check it yourself</a>':'');
+    else if(s.indexOf('m:')===0){var mk=M[s.slice(2)];if(!mk)return;x='Denver and U.S. figures: <a href="#denver-mirror/'+esc(s.slice(2))+'">'+esc(mk.title)+'</a>'}
     else{var n=b.numbers[+s.slice(1)];if(!n)return;var u=srcUrl(t,n.src);
       x=(n.src?md(n.src):'This barrier’s number list')+' '+(n.mark==='care'?'<span class="pill care" title="Not double-checked against the original source">read with care</span>':'<span class="pill ok">checked</span>')+(u?' · <a href="'+esc(u)+'" target="_blank" rel="noopener">Check it yourself</a>':'')}
     if(out.indexOf(x)<0)out.push(x)});
@@ -311,7 +313,7 @@ function picHTML(t,bi,k,p,g,inBar){
       '<ul class="sleg">'+rows.map(function(r,i){return '<li><i style="background:'+(r[2]==='o'?'var(--line)':SEG[i%SEG.length])+'"></i><b>'+val(p,r[1],r[2]==='o'?1:null)+'</b> '+esc(r[0])+'</li>'}).join('')+'</ul>';
   }else{
     h+='<div class="prs">'+p.rows.map(function(r,i){var me=i===xi,hid=me&&!open,tot=p.of||100;
-      return '<div class="pr'+(me?' hi':'')+(r[2]==='h'?' home':'')+'"><div class="pl">'+esc(r[0])+(r[2]==='h'?' <span class="tag">home</span>':'')+'</div>'+
+      return '<div class="pr'+(me?' hi':'')+(r[2]==='h'||r[2]==='u'?' home':'')+'"><div class="pl">'+esc(r[0])+(r[2]==='h'?' <span class="tag">home</span>':r[2]==='u'?' <span class="tag">U.S.</span>':'')+'</div>'+
         (p.k==='dots'?'<div class="pd">'+dgrid(tot,hid?0:Math.round(r[1]),0,me&&open?gn:null)+'<b class="pval">'+(hid?'?':val(p,r[1],d)+(p.of?' of '+p.of:''))+'</b></div>'
           :'<div class="pt"><span class="pb" style="width:'+(hid?0:r[1]/ax*100)+'%"></span>'+(hid?'<span class="pb ghost" style="width:0%"></span>':'')+(me&&open&&gn!=null?'<i class="gm" style="left:'+Math.min(100,gn/ax*100)+'%"></i>':'')+'<b class="pval">'+(hid?'?':val(p,r[1],d))+'</b></div>')+
         (hid?'<div class="pg"><label><span>Drag to guess: <b data-gv>?</b></span><input type="range" min="0" max="'+ax+'" step="'+gstep(p,ax)+'" value="0" aria-label="Your guess for '+esc(r[0])+'"></label><button class="btn" data-show>Show it</button></div>':'')+'</div>'}).join('')+'</div>';

@@ -1,8 +1,9 @@
 /* Raider Immersions: one picture per barrier, drawn from numbers already on the page.
    Hand-written (not generated). Every value here is copied from a sourced number in trips/<id>.js:
-   s:['n3'] = that barrier's number card 3 (counting from 0); 'd' = the barrier's Denver note.
-   w = a phrase in the source that states the value in words ('three times', '3 in 4').
-   k: bar | dots | split.  rows: [label, value, flag]  flag 'x' = the row the student guesses, 'h' = home (Denver/Colorado).
+   s:['n3'] = that barrier's number card 3 (counting from 0); 'd' = the barrier's Denver note;
+   'm:D-WAGE' = that topic on the Denver page (trips/denver-mirror.js); {t,u,mark,v:[values]} = a source researched for this picture.
+   w = a phrase in the source that states the value in words ('three times', '3 in 4'), or {value:'phrase'} for single rows.
+   k: bar | dots | split.  rows: [label, value, flag]  flag 'x' = the row the student guesses, 'h' = home (Denver/Colorado), 'u' = the United States.
    lead:1 = the picture a trip opens with.
    b = the start of the barrier's title, so a regenerated trip file can never pair a picture with the wrong barrier.
    tools/check-pictures.py verifies every value appears in its source text. */
@@ -66,17 +67,17 @@ P.peru={
    say:'In the countryside, the job with a payslip is the rare one.'}]
 };
 P.quito={
- 1:[{b:'Work with no floor',k:'bar',t:'One month of income',u:'$',pre:1,s:['n5','n6'],
-   rows:[['The legal minimum wage, for one worker',482],['A whole family at the Center, about five people',360,'x']],
-   say:'Five people on less than one minimum wage. Most of this work has no contract to enforce.'}],
+ 1:[{b:'Work with no floor',k:'bar',t:'One month of income, in U.S. dollars (Ecuador uses the dollar)',u:'$',pre:1,s:['n5','n6','m:D-WAGE'],
+   rows:[['Full-time at Denver’s minimum wage ($40,120 a year, divided by 12: our arithmetic)',3343,'h'],['Ecuador’s legal minimum wage, for one worker',482],['A whole family at the Center, about five people',360,'x']],
+   say:'The same dollars. Prices differ too: the Hours of work lab shows what a month of food takes in each place.'}],
  2:[{b:'The formal door',k:'bar',t:'Workers in Quito with adequate employment (2025)',u:'%',s:['n0'],
    rows:[['Men',62.0],['Women',47.6,'x']],
    say:'Adequate means at least the minimum wage and a full week.'},
   {b:'The formal door',k:'bar',t:'Unpaid care and housework',u:' hours a week',s:['n4'],
    rows:[['Men',10],['Women',31,'x']],
    say:'Someone has to watch the children before anyone can take the formal job.'}],
- 3:[{b:'The house',k:'bar',t:'Center families who own their home',u:'%',s:['n1'],
-   rows:[['Before joining the Center',21],['After',67,'x']],
+ 3:[{b:'The house',k:'bar',t:'Families who own their home',u:'%',s:['n1','m:D-HOMEINS'],
+   rows:[['Center families, before joining',21],['Center families, after',67,'x'],['Denver households',48.8,'h']],
    say:'Built on weekends by brigades of 10 to 12 volunteers. The families did the building.'},
   {b:'The house',k:'bar',t:'Households in Quito that rent (2022)',u:'%',s:['n4'],
    rows:[['Ecuadorian households',32],['Venezuelan households',92,'x']],
@@ -113,8 +114,8 @@ P['honduras-sps']={
  5:[{b:'The maquila wage',k:'bar',t:'One month: the factory wage and the cost of the basics',u:'L',pre:1,s:['n0','n3'],
    rows:[['The legal minimum wage in a garment factory (2026)',12930],['The basic basket for a family of four',21469,'x']],
    say:'A full-time legal wage, sewing clothes for export, covers about 60% of the basket (our arithmetic).'}],
- 6:[{b:'After sixth grade',k:'bar',t:'Young people in school, Honduras (2025)',u:'%',s:['n0'],
-   rows:[['Ages 6 to 11',91.6],['Ages 15 to 17, in cities',42.6],['Ages 15 to 17, in the countryside',27.0,'x']],
+ 6:[{b:'After sixth grade',k:'bar',t:'Staying in school',u:'%',s:['n0',{t:'Colorado Department of Education, reported by Chalkbeat Colorado, 13 Jan 2026',u:'https://www.chalkbeat.org/colorado/2026/01/13/class-of-2025-graduation-rate-rose-dropout-rate-fell',mark:'ok',v:[85.6]}],
+   rows:[['Honduras, ages 6 to 11, in school',91.6],['Honduras, ages 15 to 17, in school, in cities',42.6],['Honduras, ages 15 to 17, in school, in the countryside',27.0,'x'],['Colorado students who finish high school in four years',85.6,'h']],
    say:'School is free on paper. Something else stops most students after sixth grade.'}],
  7:[{b:'The road north',k:'dots',t:'Money sent home, as a share of the whole economy (2025)',u:'%',s:['n1'],
    rows:[['Of every 100 lempiras in the economy',30,'x']],
@@ -130,9 +131,9 @@ P['honduras-teg']={
  1:[{b:'The price of a pound',k:'bar',t:'Prices at the dump',u:'L',pre:1,s:['n2'],
    rows:[['One pound of cardboard',0.20],['One egg',3,'x']],
    say:'Fifteen pounds of cardboard buys one egg.'}],
- 2:[{b:'After sixth grade',k:'dots',t:'Of 100 children who started first grade in 2012',u:'%',s:['n0'],
-   rows:[['Finished ninth grade nine years later (our arithmetic)',46,'x']],
-   say:'Fewer than half. The cost is not tuition: it is the uniform, the notebooks and the bus.'}],
+ 2:[{b:'After sixth grade',k:'dots',t:'Starting school, and finishing',u:'%',s:['n0',{t:'Colorado Department of Education, reported by Chalkbeat Colorado, 13 Jan 2026',u:'https://www.chalkbeat.org/colorado/2026/01/13/class-of-2025-graduation-rate-rose-dropout-rate-fell',mark:'ok',v:[85.6]}],
+   rows:[['Honduras: started first grade in 2012 and finished ninth grade (our arithmetic)',46,'x'],['Colorado: started high school and graduated within four years (class of 2025)',85.6,'h']],
+   say:'Honduras is counting ninth grade. Colorado is counting twelfth. The cost in Honduras is not tuition: it is the uniform, the notebooks and the bus.'}],
  3:[{b:'Work with no floor',k:'dots',t:'Wage earners in Honduras (2025)',u:'%',s:['n4'],
    rows:[['Paid less than the legal minimum wage',44.75,'x']],
    say:'A minimum wage exists. Nearly half of the people with a wage do not get it.'}],
@@ -173,8 +174,8 @@ P.dr={
  6:[{b:'The road out',k:'dots',t:'Dominican adults',u:'%',s:['n0'],
    rows:[['Receive money from family abroad',37,'x']],
    say:'A record US$11,866 million in 2025; in December, 80% of it came from the United States.'}],
- 7:[{b:'School past the campo',k:'bar',t:'Ages 15 to 17 attending upper secondary school',u:'%',s:['n0'],
-   rows:[['In cities',69.2],['In the campo',56.9,'x']],
+ 7:[{b:'School past the campo',k:'bar',t:'Staying in school',u:'%',s:['n0',{t:'Colorado Department of Education, reported by Chalkbeat Colorado, 13 Jan 2026',u:'https://www.chalkbeat.org/colorado/2026/01/13/class-of-2025-graduation-rate-rose-dropout-rate-fell',mark:'ok',v:[85.6]}],
+   rows:[['Dominican Republic, ages 15 to 17, in upper secondary, in cities',69.2],['Dominican Republic, ages 15 to 17, in upper secondary, in the campo',56.9,'x'],['Colorado students who finish high school in four years',85.6,'h']],
    say:'In the campo the pattern is falling behind, then stopping at fifteen to seventeen.'}],
  8:[{b:'Papers',k:'dots',t:'Dominican farm producers',u:'%',s:['n0'],
    rows:[['Have no title to the land they work',74,'x']],
@@ -258,8 +259,8 @@ P.dc={
  2:[{b:'East of the River',k:'bar',t:'Full-service grocery stores, by ward',u:'',s:['n0'],
    rows:[['Ward 3, west of Rock Creek Park',17],['Ward 8, east of the river',4],['Ward 7, east of the river',3,'x']],
    say:'One city, one mayor, one bus system.'},
-  {b:'East of the River',k:'bar',t:'Median household income in D.C.',u:'$',pre:1,s:['n2'],
-   rows:[['White households',169247],['Black households',60446,'x']],
+  {b:'East of the River',k:'bar',t:'Median household income',u:'$',pre:1,s:['n2','m:D-WAGE'],
+   rows:[['White households in D.C.',169247],['All households in Denver',94718,'h'],['Black households in D.C.',60446,'x']],
    say:'A gap of 2.8 times, inside one city of 68 square miles.'}],
  3:[{b:'Moving the neighborhood',k:'dots',t:'D.C.’s lower-income neighborhoods, 2000 to 2013',u:'%',s:['n0'],
    rows:[['Gentrified',40,'x']],
@@ -290,9 +291,9 @@ P.kentucky={
  4:[{b:'After coal',k:'bar',t:'Median household income (2024)',u:'$',pre:1,s:['n0','d'],
    rows:[['Denver',94718,'h'],['Floyd County',41279,'x']],
    say:'Mining jobs in these counties fell 77% between 2006 and 2022.'}],
- 5:[{b:'Medicaid',k:'bar',t:'Kentuckians with no health insurance',u:'%',s:['n3'],
-   rows:[['Before Kentucky expanded Medicaid',14.3],['By 2023',5.4,'x']],
-   say:'A rule changed, and nine in every hundred people gained coverage.'},
+ 5:[{b:'Medicaid',k:'bar',t:'People with no health insurance',u:'%',s:['n3','d'],
+   rows:[['Kentucky, before it expanded Medicaid',14.3],['Kentucky, by 2023',5.4,'x'],['Colorado, 2025',5.9,'h']],
+   say:'A rule changed, and nine in every hundred Kentuckians gained coverage. Kentucky’s rate is now a little below Colorado’s.'},
   {b:'Medicaid',k:'split',t:'How people in Floyd County are covered',u:'%',s:['n1'],
    rows:[['Medicaid',38.1],['A job',32],['Medicare',16.7],['Uninsured',5.2]],
    say:'Public coverage, not an employer, carries this county.'}],
@@ -355,4 +356,48 @@ P.jfarm={
    rows:[['Jerusalem Farm’s loan for materials',0,'x'],['A bank repair loan in 2023, at best (and $10,000 at least)',8.21],['A personal loan from a community lender (at most)',18]],
    say:'No interest and no paperwork: the loan runs on knowing your neighbor.'}]
 };
+
+/* ---- added later on 20 Nov 2026: Denver, Colorado and U.S. rows on the same axis ---- */
+function add(trip,bi,pic){(P[trip][bi]=P[trip][bi]||[]).push(pic)}
+add('memphis',1,{b:'The eviction docket',k:'bar',t:'Eviction cases filed in court, 2025',u:'',
+   s:['n0',{t:'Axios Denver, 29 Jul 2026 (figures from Denver’s Department of Housing Stability)',u:'https://www.axios.com/local/denver/2026/07/29/eviction-assistance-grows-after-near-record-filings',mark:'ok',v:[15953]}],
+   rows:[['Shelby County (Memphis)',27658,'x'],['Denver',15953,'h']],
+   say:'Denver’s number is near its own record. The two places are different sizes, so read these as two dockets, not a ranking.'});
+add('memphis',6,{b:'A wage with no floor',k:'bar',t:'People with no health insurance',u:'%',s:['n4','d'],
+   rows:[['Tennessee',9.7,'x'],['United States',8.2,'u'],['Colorado',5.9,'h']],
+   say:'Tennessee is one of 10 states that have not expanded Medicaid.'});
+add('memphis',6,{b:'A wage with no floor',k:'bar',t:'Median household income',u:'$',pre:1,s:['n7','d'],
+   rows:[['Memphis',52679,'x'],['Denver',94718,'h']],
+   say:'Half of households earn less than this, half earn more.'});
+add('peru',8,{b:'Who speaks',k:'dots',t:'Living in two languages',u:'%',s:['n0','m:D-LANGUAGE'],
+   rows:[['People in the Cusco region who first learned to speak in Quechua (623,188 of 1,147,188: our arithmetic)',54.3,'x'],['Denver Public Schools students who speak another language at home',40.8,'h']],
+   say:'Denver classrooms are multilingual too. In both places the question is which language school happens in.'});
+add('peru',14,{b:'The ladder that isn',k:'dots',t:'Who gets to higher education',u:'%',s:['n1','d'],w:{50:'About half'},
+   rows:[['Rural young people in Peru (a second source says about 1 in 4)',12.6,'x'],['Colorado high school graduates who go to college (about half)',50,'h']],
+   say:'The two groups are counted differently, so read the gap, not the decimals.'});
+add('quito',5,{b:'The *vacuna*',k:'bar',t:'Homicides for every 100,000 people',u:'',
+   s:['n1',{t:'Axios Denver, 11 Aug 2025 (Colorado state data)',u:'https://www.axios.com/local/denver/2025/08/11/colorado-homicide-rate-2024',mark:'ok',v:[5.1]}],
+   rows:[['Ecuador, 2025',50.91,'x'],['Colorado, 2024',5.1,'h']],
+   say:'About ten times Colorado’s rate (our arithmetic). Among the dead in Ecuador in 2025: 46 children and 537 adolescents.'});
+add('kentucky',4,{b:'After coal',k:'dots',t:'Living below the poverty line',u:'%',s:['n1','m:D-WAGE'],
+   rows:[['Floyd County children',30.6],['Everyone in Floyd County',28,'x'],['Everyone in Denver',11.2,'h']],
+   say:'Each dot is one person out of 100.'});
+add('kentucky',9,{b:'What a loan costs',k:'bar',t:'Households with no bank account (2023)',u:'%',s:['n3'],
+   rows:[['Kentucky',5.8,'x'],['United States',4.2,'u']],
+   say:'No account means no bank loan and no credit card.'});
+add('dc',1,{b:'What a room costs',k:'bar',t:'One hour of work: the legal minimum, and what the rent takes',u:'$',pre:1,s:['n0','d'],
+   rows:[['D.C.’s minimum wage',18.40],['Denver’s minimum wage',19.29,'h'],['What an hour must pay to afford a two-bedroom in D.C.',43.19,'x']],
+   say:'Denver’s floor is a little higher than D.C.’s. D.C.’s minimum covers less than half of what its rent takes (our arithmetic).'});
+add('honduras-sps',9,{b:'What a loan costs',k:'dots',t:'Adults with a bank account',u:'%',s:['n3','m:D-BANK'],
+   rows:[['Honduras, in the countryside',27.0],['Honduras, all adults',39.7,'x'],['United States',94,'u']],
+   say:'No account, no bank loan. Of Hondurans without one, 31.2% said it costs too much to open and keep.'});
+add('honduras-sps',4,{b:'Work with no floor',k:'dots',t:'Living in poverty, by each country’s own line',u:'%',s:['n5','m:D-WAGE'],
+   rows:[['Households in Honduras (2025)',60.1,'x'],['People in Denver',11.2,'h']],
+   say:'Two different poverty lines, each set by its own country. In Honduras, 38.3% of households are in extreme poverty.'});
+add('tijuana-doc',11,{b:'What a loan costs',k:'dots',t:'Adults with a bank account',u:'%',s:['n4','m:D-BANK'],
+   rows:[['Mexico',53,'x'],['United States',94,'u']],
+   say:'Only 15% of Mexican adults borrowed from a formal lender in the past year.'});
+add('jfarm',10,{b:'What a loan costs',k:'bar',t:'Households with no bank account',u:'%',s:['n5','m:D-BANK'],
+   rows:[['Kansas City metro, 2021',6.4],['United States, 2023',4.2,'u'],['Kansas City metro, 2023',0.8,'x']],
+   say:'A fast drop in two years. The survey is small, so read it with care.'});
 })();

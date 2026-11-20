@@ -227,7 +227,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
     "a minga can do in a weekend what would take one family months"
    ],
    "oneDay": "a family of five moves into two finished rooms of a three-room house, with rebar sticking out of the roof for the floor they hope to add.",
-   "contested": "Look for Quito's *Regula tu Barrio* unit and its count of neighborhoods awaiting legalization.",
+   "contested": "",
    "who": "Banks lend on documented income. That rule is reasonable for the bank, and it is the barrier for the family. The family pays twice: first in rent, then in years of building.",
    "nlb": "Nature: the steep slopes of the valley. Luck: a cheap lot that later gets water and a bus line. **Built:** who gets a mortgage, how fast a neighborhood is legalized, where the city runs water and buses.",
    "doing": "The **minga** is the answer, and it belongs to them, not to visitors. Families save for land; the Center teaches savings; neighbors build each other's houses. The Center's metal and carpentry shops make doors, windows and frames. ✅ (2020 file).",

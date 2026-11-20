@@ -131,7 +131,7 @@ button.linkish{background:none;border:0;color:var(--rj,#a6192e);text-decoration:
 .pb.ghost{position:absolute;left:0;top:0;background:none!important;border:2px dashed var(--rj);box-sizing:border-box;transition:none;min-width:0}
 .pval{font-size:22px;font-weight:800;margin-left:10px;white-space:nowrap;font-variant-numeric:tabular-nums}
 .pt .gm{position:absolute;top:-5px;bottom:-5px;width:0;border-left:3px dashed var(--fg);opacity:.7}
-.pt .gm:after{content:'your guess';position:absolute;top:-17px;left:-3px;font-size:11px;font-weight:700;white-space:nowrap;font-style:normal}
+.pt .gm:after{content:'your guess';position:absolute;bottom:-15px;left:-3px;font-size:11px;font-weight:700;white-space:nowrap;font-style:normal}
 .pg{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin:8px 0 0;padding:10px 12px;border:2px dashed var(--rj);border-radius:10px}
 .pg label{flex:1 1 260px;font-weight:700}.pg label span{display:block}.pg input{width:100%;margin-top:4px}
 .pg [data-gv]{font-size:20px;color:var(--rj-ink)}
@@ -184,3 +184,13 @@ details.fence.mine{border-color:var(--rj);border-width:2px}
 @media print{.pg,.steps,.seenav,.pm{display:none}}
 
 .src li,.read li,.work li,.num{overflow-wrap:anywhere}
+
+/* What catches you: questions that open (Nov 20 2026, later) */
+.card.seefirst{border:2px solid var(--rj);margin:6px 0 14px;max-width:640px}
+details.crd{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:0 14px}
+details.crd summary{cursor:pointer;font-weight:700;padding:10px 0;list-style:none;display:flex;justify-content:space-between;gap:10px}
+details.crd summary::-webkit-details-marker{display:none}details.crd summary:after{content:'+';color:var(--rj-ink)}details.crd[open] summary:after{content:'−'}
+.cr2{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:0 0 12px}.cr2>div{padding-left:10px}.cr2>div>b:first-child{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.cr2 .there{border-left:4px solid var(--rj)}.cr2 .home{border-left:4px solid var(--good)}
+@media(max-width:700px){.cr2{grid-template-columns:1fr}}
+.pic.open .pr.hi{margin-bottom:26px}

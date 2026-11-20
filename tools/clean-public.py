@@ -87,7 +87,8 @@ PROC = re.compile('|'.join([
  r'Say so if used', r'Not needed for', r'\bpackets?\b', r'\bCanvas\b', r'teacher pages?', r'course (map )?pages?', r'second test',
  r'\bcheck (the (statute|Census|COG)|it against)', r'\bRe-?check\b', r'exact date not', r'not reachable', r'site not stated',
  r'widely cited', r'listing page read', r'label it as ours', r'Not in the mirror', r'No mirror key', r'[Vv]intage to confirm',
- r'purpose unconfirmed', r'Not recent\b(?=\.? *$)']), re.I)
+ r'purpose unconfirmed', r'Not recent\b(?=\.? *$)',
+ r'(?-i:Look for\b)', r'(?-i:Pull Colorado)', r'(?-i:Not pulled)', r'(?-i:Find its latest)', r"didn.t (load|show)", r'(?-i:Check (USDA|transportation))', r'shows charts only']), re.I)
 
 DK = r'\**D-[A-Z]{3,}\**'
 DKS = DK + r'(?:\s*(?:,|and|/|;|, and)\s*' + DK + r')*'
@@ -214,6 +215,8 @@ def run():
         manual(data, fid); walk(data, fid)
         for tr, bi, ni, old, full in SRC_AT:
             if tr == fid and data['barriers'][bi - 1]['numbers'][ni]['src'] == old: data['barriers'][bi - 1]['numbers'][ni]['src'] = full
+        if fid == 'denver-mirror':
+            for k in data: data[k]['figures'] = [f for f in data[k]['figures'] if f['text'].strip()]
         new = head + json.dumps(data, indent=1, ensure_ascii=False) + ';\n'
         if new != raw: open(f, 'w', encoding='utf-8').write(new); n += 1
     for f in sorted(glob.glob('labs/*.json')):
