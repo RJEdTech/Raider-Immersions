@@ -114,3 +114,5 @@ button.linkish{background:none;border:0;color:var(--rj,#a6192e);text-decoration:
 .sec .wq button{margin:3px 2px}
 .fq{display:grid;gap:6px;margin:.5em 0}.fchk{display:flex;gap:8px;align-items:flex-start;font-size:16px}.fchk input{margin-top:4px;width:18px;height:18px;flex:0 0 18px}.ask li{margin:.35em 0}.mirrorbox{border-left:4px solid var(--rj)}
 .mirrorbox .big{font-size:30px;font-weight:700;margin:.2em 0}
+.tbl{overflow-x:auto;margin:.6em 0}.tbl table{border-collapse:collapse;width:100%;font-size:15px}.tbl th,.tbl td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}.tbl thead th{font-size:13px;color:var(--muted);font-weight:600}.tbl tbody th{font-weight:600;min-width:9em}
+.wlog{font-size:15px}.wlog li{margin:.35em 0}

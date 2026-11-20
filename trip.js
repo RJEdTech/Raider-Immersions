@@ -90,7 +90,7 @@ function labList(t){var L=(t.labs||[]).slice(),I=t.interactive||{};
   return L}
 function labs(t,p,sub){var L=labList(t);
   if(sub==null||!L.filter(function(l){return l.key===sub})[0]){
-    p.innerHTML='<p class="lede">Change the numbers and watch what happens. Every number in a lab comes from a source you can check.</p><div class="grid"><a class="card" href="#family"><span class="badge ready">For every trip</span><h3>Your family’s road</h3><div class="meta">How did your family come to be here, under what rules, and why? Compare it with the stories you will hear. Nothing you enter is saved.</div></a>'+
+    p.innerHTML='<p class="lede">Change the numbers and watch what happens. Every number in a lab comes from a source you can check.</p><div class="grid"><a class="card" href="#rules"><span class="badge ready">Game · every trip</span><h3>Different rules</h3><div class="meta">Twelve weeks on a real income with real prices. Then the same weeks under Denver\'s rules.</div></a><a class="card" href="#family"><span class="badge ready">For every trip</span><h3>Your family’s road</h3><div class="meta">How did your family come to be here, under what rules, and why? Compare it with the stories you will hear. Nothing you enter is saved.</div></a>'+
      L.map(function(l){var kind=(t.interactive||{})[l.key];return '<a class="card" href="#'+t.id+'/labs/'+l.key+'"><span class="badge'+(kind?' ready':'')+'">'+(kind?'Interactive':'Think it through')+'</span><h3>'+md(l.title)+'</h3><div class="meta">'+md(l.question)+'</div></a>'}).join('')+'</div>';return}
   var l=L.filter(function(x){return x.key===sub})[0],cfg=(t.interactive||{})[sub];
   p.innerHTML='<a class="back" href="#'+t.id+'/labs">← All labs</a><h3>'+md(l.title)+'</h3><p class="lede">'+md(l.question)+'</p><div id="lab"></div>'+
@@ -300,6 +300,7 @@ function mirror(key){var app=$('#app');document.title='The same structures in De
 window.TRIP_ROUTE=function(h){
   if(h[0]==='denver-mirror'){mirror(h[1]);return true}
   if(h[0]==='family'&&window.FAMILY_PAGE){window.FAMILY_PAGE();return true}
+  if(h[0]==='rules'&&window.RULES_PAGE){window.RULES_PAGE();return true}
   var t=T[h[0]];if(!t||t.status!=='public')return false;
   var sub=h[2];if(h[1]==='bar'&&sub!=null){sub=parseInt(sub,10)-1;if(isNaN(sub))sub=null}
   page(t,h[1],sub==null?null:sub);return true};

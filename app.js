@@ -31,7 +31,8 @@ function home(){
    '<div class="grid">'+list.map(function(p){var r=p.ready;
      return (r?'<a class="card" href="#'+p.id+'">':'<div class="card soon">')+'<span class="badge'+(p.fresh?' ready':'')+'">'+(p.fresh?'New research':r?'Earlier draft':'Coming next')+'</span><h3>'+esc(p.name)+'</h3><div class="meta">'+esc(p.place)+(r?'<br>'+(miles(p)<30?'In the Denver metro':fmt(miles(p))+' miles from Denver'):'')+'</div>'+(r?'</a>':'</div>')}).join('')+'</div>'+
    '<h2>The same structures at home</h2><p class="lede">Every barrier on a trip has a mirror in Denver: wages, paid leave, health care, what borrowing costs, housing. <a href="#denver-mirror">See the Denver side →</a></p>'+
-   '<h2>Your own family’s road</h2><p class="lede">How did your family come to be here, under what rules, and why? Put your story beside the ones you will hear. Nothing you enter is saved. <a href="#family">Start →</a></p>';
+   '<h2>Your own family’s road</h2><p class="lede">How did your family come to be here, under what rules, and why? Put your story beside the ones you will hear. Nothing you enter is saved. <a href="#family">Start →</a></p>'+
+   '<h2>Different rules: a twelve-week game</h2><p class="lede">Live twelve weeks on a real income from one of the trips, with real prices and a card each week. Then replay the same weeks under Denver’s rules. <a href="#rules">Play →</a></p>';
   app.innerHTML=h;window.scrollTo(0,0)}
 
 var TABS=[['over','Overview'],['bar','Barriers'],['before','Before you go'],['after','After you return'],['tools','Lab tools']];
