@@ -26,8 +26,20 @@ var HARD=['No phone for the whole week. For many RJ students this is the hardest
  'Physical work: roofs, fences, brush, compost and gardens, in Kansas City heat or cold. Some of it will not look like helping until someone tells you whom it is for.',
  'A bell that calls everyone to prayer several times a day, and a schedule set by the community, not by you.'];
 
-T.weekIntro='<div class="sec mirror"><p class="kick">This immersion is different</p><h3 style="margin-top:.2em">A week of chosen simple living</h3>'+
- '<p>Jerusalem Farm is not a trip abroad. It is a week inside a community that has chosen to live simply, close to the earth and close to its neighbors: rainwater, bucket showers, solar power, compost, plant-based meals, no phones. The days are prayer, community, and repairing houses with neighbors who could not otherwise afford it. It is meant to be challenging.</p>'+
+T.weekIntro='<div class="sec mirror"><p class="kick">This immersion is different</p><h3 style="margin-top:.2em">A week with neighbors, lived simply</h3>'+
+ '<p>Jerusalem Farm is not a trip abroad, and it is not a test of how little you can live on. It is a week of relationships: with the community that lives there, with the neighbors whose houses you work on beside them, with each other, and with God. Living simply is what makes room for that. It is a different life, and it is easy to get lost in the living (the bucket showers, the missing phone, the next meal) and miss the people it was meant to bring you closer to.</p>'+
+ '<p>Families in Quispicanchi and Quito share work, meals and tools because they have to. Jerusalem Farm chooses to. Both are about neighbors first.</p>'+
+ '<h4>Living with neighbors</h4>'+facts([
+  S('Jerusalem Farm repairs homes for low-income homeowners in the Historic Northeast. The homeowner repays only the cost of materials, often through a no-interest loan paid in small monthly amounts, and asks no paperwork beyond a signed statement. In 2023 an average project cost about $5,500 and the average bill to the homeowner was about $2,500.','LISC / Hoxie Collective, Jackson County home repair study, 2023','https://www.lisc.org/kansas-city/regional-stories/lisc-releases-report-home-repair-jackson-county'),
+  S('About 70 neighbors were waiting for repairs in 2023, roughly a year’s wait; 50 households were served that year.','LISC / Hoxie Collective, 2023','https://www.lisc.org/kansas-city/regional-stories/lisc-releases-report-home-repair-jackson-county'),
+  S('In July 2023 the farm opened Kansas City’s first community land trust home in the neighborhood: the trust keeps the land, so the house stays affordable for the next buyer. It had sat with an investor for about ten years.','Northeast News, Jul 2023','https://northeastnews.net/pages/jerusalem-farm-welcomes-new-neighbors-in-northeasts-first-community-land-trust-home/'),
+  S('The farm lends ladders and tools to neighbors, collects their food scraps for compost, and shares garden produce.','KCMO Municipal Court resource list; Sisters of St. Joseph of Carondelet','https://www.csjsl.org/news/jerusalem-farm-green-living-in-action',true)])+
+ '<h4>What Quispicanchi and Quito do because they have to</h4><ul class="cus">'+
+  '<li>In the Peruvian Andes, <i>ayni</i> means you work my field and I work yours; <i>minka</i> and <i>faena</i> are communal work days for what the village needs, like cleaning a canal. These practices outlasted the Spanish, the haciendas and land reform. <small>Source: Raider Immersions research, Peru (Quispicanchi)</small></li>'+
+  '<li>Families cook together in <i>ollas comunes</i> (common pots) to save food, fuel and hours; Peru recognized them in law in 2022. <small>Source: <a href="https://busquedas.elperuano.pe/normaslegales/ley-que-reconoce-las-ollas-comunes-y-garantiza-su-sostenibil-ley-n-31458-2061691-1/" target="_blank" rel="noopener">Ley 31458, El Peruano</a></small></li>'+
+  '<li>In Quito, a family with an informal income cannot get a mortgage, so they build a room at a time, and the <i>minga</i>, neighbors’ labor, stands in for the loan. RJ groups have joined mingas laying brick and pouring foundations beside the fathers of the family. <small>Source: <a href="https://www.c4wf.org/faqs" target="_blank" rel="noopener">Center for Working Families</a>; Raider Immersions research, Quito</small></li>'+
+  '<li>Neighbors save together in rotating savings groups, borrowing from each other at no interest because the bank will not lend to them. <small>See each trip’s loan lab.</small></li></ul>'+
+ '<div class="claim"><b>Chosen and necessary.</b> At Jerusalem Farm, sharing tools, meals and work is a way of life a community chose. In Quispicanchi and Quito it is how families survive where the market and the state do not reach. In Denver, most of us buy what neighbors once gave each other. If you could not buy it, what would you have to ask a neighbor for, and who would you ask?</div>'+
  '<h4>How the community lives</h4>'+facts(PRACTICES)+
  '<p class="muted" style="font-size:14px">Most practices are from a profile of the farm in its seventh year (about 2018–19). Ask Jerusalem Farm what has changed before you go.</p>'+
  '<h4>What simple living means</h4>'+
@@ -41,10 +53,11 @@ T.weekIntro='<div class="sec mirror"><p class="kick">This immersion is different
  '<li>Catholic teaching holds that the goods of the earth are meant for everyone, so what we own carries a duty toward those who lack what they need (the universal destination of goods). <small>Source: Compendium of the Social Doctrine of the Church, 171–184</small></li></ul>'+
  '<p><a href="#jfarm/labs/WEEK">What if everyone lived this way? Try it →</a></p>'+
  '<h4>What will be hard</h4><ul class="cus">'+HARD.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul>'+
+ '<div class="claim"><b>Do not get lost in the living.</b> The showers, the meals and the dark Thursday night can become the whole story of the week: what you gave up and whether you made it. They are not the point. At the end of each day, ask whose name you learned, whom you worked beside, and what they taught you.</div>'+
  '<div class="claim"><b>Chosen and not chosen.</b> For you, simplicity is a discipline you take on for a week. Some neighbors on the same blocks go without hot water, a working furnace or a safe roof because they cannot afford them, every week. Both can teach, but they are not the same thing, and mistaking one for the other is a fence. The barriers on this page are about the neighbors. <a href="#jfarm/labs/WEEK">Try a week of simple living →</a></div></div>';
 
 // ---------- before you go: practice ----------
-var TRY=[['phone','A phone-free evening','From dinner to bed, phone off and in another room.'],
+var TRY=[['neighbor','Something with a neighbor','Borrow instead of buying, share a meal, or help with a chore, and let someone help you.'],['phone','A phone-free evening','From dinner to bed, phone off and in another room.'],
  ['shower','A short or bucket shower','Four minutes, or a bucket of water and a cup.'],
  ['food','A plant-based day','Three meals and snacks with no meat, fish, eggs or dairy.'],
  ['dark','An evening with no lights or screens','From sundown: candles or flashlights only if you must, and talk.']];
@@ -70,7 +83,7 @@ var KG={beef:99.48,pork:12.31,chicken:9.87,plant:1.79},SPEND={away:3945,fun:3609
 T.interactive=T.interactive||{};
 T.interactive.WEEK={kind:'SimpleWeek',first:true,title:'A week of simple living',
  question:'Set your own normal week and see what a Jerusalem Farm week changes in water, food and time on a screen. Then see what would happen if everyone lived a little more simply.',
- notice:'The biggest change is usually not water or carbon. It is the hours.',
+ notice:'The biggest change is usually not water or carbon. It is the hours, and whom you spend them with.',
  yourCall:'Which part of the week would be hardest for you to give up, and why? Which of these do neighbors in the Historic Northeast go without because they choose to, and which because they have to?'};
 window.SIMPLE_WEEK=function(t,cfg,box){
   var st={cut:25,give:50,showers:7,mins:7.8,gpm:2.1,bucket:2,beef:3,chicken:5,pork:2,serve:150,screen:8};
@@ -112,7 +125,7 @@ window.SIMPLE_WEEK=function(t,cfg,box){
       row('Water for showers',myWater,jfWater,'gallons',0)+
       row('Greenhouse gas from the main food in your meals',myFood,jfFood,'kg CO₂e',1)+
       row('Hours on a screen for fun',myScreen,0,'hours',0)+
-      '<p class="fsum">A Jerusalem Farm week: one normal shower and two bucket showers, 21 plant-based meals, no phone. That gives back <b>'+fmt(myScreen)+' hours</b>, saves about <b>'+fmt(Math.max(0,myWater-jfWater))+' gallons</b> of shower water, and cuts the food emissions counted here by about <b>'+fmt(Math.max(0,myFood-jfFood),1)+' kg CO₂e</b> (our arithmetic).</p>'+
+      '<p class="fsum">A Jerusalem Farm week: one normal shower and two bucket showers, 21 plant-based meals, no phone. That gives back <b>'+fmt(myScreen)+' hours</b> for the people around you, saves about <b>'+fmt(Math.max(0,myWater-jfWater))+' gallons</b> of shower water, and cuts the food emissions counted here by about <b>'+fmt(Math.max(0,myFood-jfFood),1)+' kg CO₂e</b> (our arithmetic).</p>'+
       '<ul class="cus"><li>'+esc(WATER.text)+' <small>Source: '+srcA(WATER)+'</small></li><li>'+esc(FOOD.text)+' <small>Source: '+srcA(FOOD)+'</small></li><li>'+esc(SCREEN.text)+' <small>Source: '+srcA(SCREEN)+'</small></li></ul>'+
       '<p class="muted" style="font-size:14px">Only the main protein of each meal is counted, so the totals are smaller than a full diet’s footprint. Global averages, not Kansas City farms.</p></div>'+
       everyone()+
