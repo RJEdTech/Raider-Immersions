@@ -39,7 +39,7 @@ function page(t,tab,sub){
   if(sub==null)window.scrollTo(0,0)}
 
 function over(t,p){var up=t.ft-D.ft;
-  p.innerHTML='<p class="lede">'+esc(t.region)+'.</p><div class="stats">'+
+  p.innerHTML=(t.weekIntro||'')+'<p class="lede">'+esc(t.region)+'.</p><div class="stats">'+
    (miles(t)<30?'<div class="stat"><b>Here</b><span>in the Denver metro</span></div>':'<div class="stat"><b>'+fmt(miles(t))+' mi</b><span>from Denver, in a straight line</span></div>')+
    '<div class="stat"><b>'+fmt(t.ft)+' ft</b><span>'+(Math.abs(up)<300?'about the same as Denver':up>0?fmt(up)+' ft higher than Denver':fmt(-up)+' ft lower than Denver')+'</span></div>'+
    '<div class="stat"><b style="font-size:19px">'+esc(t.lang)+'</b><span>what you will hear</span></div></div>'+
@@ -86,7 +86,7 @@ function cushion(t,p){
 
 /* ---------- labs ---------- */
 function labList(t){var L=(t.labs||[]).slice(),I=t.interactive||{};
-  Object.keys(I).forEach(function(k){if(!L.some(function(l){return l.key===k})&&I[k].title)L.push({key:k,title:I[k].title,question:I[k].question,notice:I[k].notice,yourCall:I[k].yourCall})});
+  Object.keys(I).forEach(function(k){if(!L.some(function(l){return l.key===k})&&I[k].title)L[I[k].first?'unshift':'push']({key:k,title:I[k].title,question:I[k].question,notice:I[k].notice,yourCall:I[k].yourCall})});
   return L}
 function labs(t,p,sub){var L=labList(t);
   if(sub==null||!L.filter(function(l){return l.key===sub})[0]){
@@ -104,6 +104,7 @@ function labs(t,p,sub){var L=labList(t);
   else if(cfg&&cfg.kind==='WhoDecides')whoDecides(t,cfg,box);
   else if(cfg&&cfg.kind==='HoursOfWork')hoursOfWork(t,cfg,box);
   else if(cfg&&cfg.kind==='NoFloor')noFloor(t,cfg,box);
+  else if(cfg&&cfg.kind==='SimpleWeek'&&window.SIMPLE_WEEK)window.SIMPLE_WEEK(t,cfg,box);
   else box.innerHTML=(l.changes?'<div class="sec"><p class="kick">What you change</p><p>'+md(l.changes)+'</p></div>':'')+(l.data?'<div class="sec"><p class="kick">The real numbers</p><p>'+md(l.data)+'</p></div>':'')}
 
 function oneBadWeek(t,c,box){
