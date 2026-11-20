@@ -116,3 +116,5 @@ button.linkish{background:none;border:0;color:var(--rj,#a6192e);text-decoration:
 .mirrorbox .big{font-size:30px;font-weight:700;margin:.2em 0}
 .tbl{overflow-x:auto;margin:.6em 0}.tbl table{border-collapse:collapse;width:100%;font-size:15px}.tbl th,.tbl td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}.tbl thead th{font-size:13px;color:var(--muted);font-weight:600}.tbl tbody th{font-weight:600;min-width:9em}
 .wlog{font-size:15px}.wlog li{margin:.35em 0}
+.dangerbox{border-left:4px solid var(--bad)}.choices{display:grid;gap:.6em;margin:.4em 0 1em}.choice{display:flex;flex-direction:column;gap:.25em}.choice button{text-align:left}.choice span{font-size:14px}.roadmapd summary{cursor:pointer;font-size:14px}
+.choice button{border-radius:12px;align-self:flex-start;border-color:var(--rj)}

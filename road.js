@@ -53,6 +53,21 @@ var F={
  peru:S('Leading candidates in Peru’s April 2026 election promised to expel migrants without status, often linking crime to immigration.','Primicias/AFP, Apr 2026','https://www.primicias.ec/internacional/elecciones-peru-candidatos-presidenciales-discursos-crimen-migrantes-120152/'),
  ecuador:S('Surveys in January 2026 found 70% of Venezuelans in Ecuador wanted to leave; about 3 in 100 people detained for crimes there in 2021–25 were Venezuelan.','La Prensa de Lara','https://laprensadelara.com/mundo/ecuador-venezolanos-datos-migracion/',true),
  colombia:S('Colombia gave temporary protection to about 1.96 million Venezuelans; 521,272 were still without status in February 2026.','Migración Colombia via IRB Canada','https://irb-cisr.gc.ca/en/country-information/rir/Pages/index.aspx?doc=459107&pls=1'),
+ darien:S('520,085 people crossed the Darién Gap between Colombia and Panama in 2023 and 302,203 in 2024; after both governments tightened controls it fell to 3,091 in 2025 and 539 in January–September 2026.','La Prensa Panamá, 2026','https://www.prensa.com/sociedad/ciudadanos-de-estas-nacionalidades-siguen-desafiando-la-travesia-de-cruzar-el-tapon-de-darien/'),
+ darienViol:S('In the Darién, an armed group controls who passes and collects about $125 a person (Colombian military estimate); MSF has treated hundreds of people for sexual violence there, most of them women.','Human Rights Watch, 2024','https://hrw.org/node/386413'),
+ darienDead:S('IOM recorded 174 migrant deaths in the Darién in 2024 and 523 along the U.S.–Mexico border.','IOM via Latin Times','https://www.latintimes.com/2024-was-deadliest-year-record-migrants-over-1200-deaths-reported-across-americas-579152'),
+ mx1100:S('Crossing Mexico from south to north is more than 1,100 km, often on foot or riding freight trains (La Bestia), through heat, rain, hunger, extortion and abuse.','El Imparcial, Oct 2025','https://www.elimparcial.com/mexico/2025/10/19/crisis-silenciosa-muertes-en-la-frontera-se-duplican-mientras-bajan-los-cruces/'),
+ bestia:S('A Red Cross program has treated hundreds of migrants who lost limbs to the freight trains; shelter directors link more accidents to crackdowns on buses and roads.','EFE via Primicias','https://primicias.ec/noticias/sociedad/sobreviviendo-bestia-migrantes-amputados',true),
+ mxGuard:S('In February 2025 Mexico sent 10,000 National Guard troops to its northern border; Human Rights Watch warned this would push migrants onto more dangerous routes and strengthen organized crime.','El Imparcial, Feb 2025','https://www.elimparcial.com/mexico/2025/02/19/despliegue-de-la-guardia-nacional-en-la-frontera-empoderaria-al-crimen-organizado-advierte-human-rights-watch/'),
+ trailer:S('In 2022, 66 people were locked in a tractor-trailer with broken air conditioning in Texas; 53 died, including six children. They had paid $12,000–15,000 each.','Irish Times, Jun 2025','https://www.irishtimes.com/world/americas/2025/06/28/two-jailed-for-life-over-roles-in-texas-deaths-of-53-migrants-in-locked-truck'),
+ deadliest:S('The U.S.–Mexico border is the deadliest land migration route in the world; U.S. Border Patrol recovered the remains of 10,784 migrants from 1988 to 2024.','IOM; The Conversation via Yahoo','https://www.yahoo.com/news/why-migrants-dying-trying-cross-134604367.html'),
+ terrain:S('People die of heat in the Sonoran and Chihuahuan deserts, drown in the Rio Grande (about 1,107 deaths in 2017–23) and in California’s canals, and die in vehicle crashes in South Texas.','The Conversation via Yahoo; Strauss Center','https://www.yahoo.com/news/why-migrants-dying-trying-cross-134604367.html'),
+ ptd:S('Since 1994 the U.S. has walled the border in cities, expecting the remote desert to deter people. It moved crossings into the desert instead: southern Arizona went from about 20 sets of remains a year before 2000 to 4,517 found since 1981, 1,639 never identified.','Daily Wildcat; Cronkite News','https://cronkitenews.azpbs.org/?p=107271'),
+ wall:S('Congress gave $46.5 billion for border barriers in July 2025; 232.4 miles of new walls, roads and surveillance had been completed by September 2026, with more under way. Advocates say surveillance pushes people onto more dangerous routes; CBP says it makes crossing harder.','Newsweek, Sept 2026; AP via Boston Globe','https://www.newsweek.com/map-border-wall-progress-new-work-begins-12463380'),
+ nda:S('Four military zones now cover more than 510 miles of the border; troops may detain people there, and more than 2,700 people have been charged with trespassing in New Mexico and West Texas.','American Homefront Project; Texas Public Radio','https://americanhomefront.wunc.org/news/2025-09-09/near-southern-border-military-zones-locals-say-its-not-always-clear-where-the-boundaries-are'),
+ mxDeaths:S('Mexico counted 582 of its citizens dead at the border in January–September 2025, double the year before, while crossings by Mexicans fell more than 80%; most died on the Arizona–Sonora stretch.','El Imparcial, Oct 2025','https://www.elimparcial.com/mexico/2025/10/19/crisis-silenciosa-muertes-en-la-frontera-se-duplican-mientras-bajan-los-cruces/'),
+ azDeaths:S('In southern Arizona, July 2026 had the most deaths of any July in two years; deaths have not fallen as fast as crossings. In the western desert, reaching a highway can mean walking 60 miles in 115-degree heat.','Cronkite News, 2026','https://cronkitenews.azpbs.org/?p=107271'),
+ kidsDanger:S('IOM warns that children traveling alone face more rights violations, trafficking and exploitation.','IOM via La Prensa','https://www.laprensa.hn/honduras/oim-menores-hondurenos-migra-cuenta-propia-hacia-estados-unidos-HB14046573'),
  hearingWait:S('In Mexico, refugee applicants must sign in regularly at the office where they applied while their case is decided.','UNHCR Mexico','https://help.unhcr.org/mexico/2026/10/08/curp-temporal-como-la-obtengo/')
 };
 
@@ -66,6 +81,10 @@ var ODDS={
  asylum:{label:'An immigration judge grants asylum',def:5.5,kind:'source',why:'5.5% of decisions in June 2026 (TRAC).',f:'asylum'},
  arrest:{label:'Arrested by ICE in a given year while living without papers',def:3.5,kind:'arith',why:'Our arithmetic: 491,000 arrests in fiscal 2026 ÷ about 14 million people without status (2023). The population has fallen since, so read with care.',f:'ice'},
  thirdc:{label:'Deported to a country that is not your own',def:5,kind:'arith',why:'Our arithmetic: at least 25,447 third-country deportations ÷ 483,200 deportations. Read with care.',f:'third'},
+ train:{label:'Badly hurt riding the freight trains',def:5,kind:'yours',why:'No published odds. A Red Cross program has treated hundreds of people who lost limbs to the trains.',f:'bestia'},
+ vehicle:{label:'A sealed vehicle on the road north turns deadly',def:3,kind:'yours',why:'No published odds. In 2022, 53 of 66 people locked in one trailer died.',f:'trailer'},
+ desert:{label:'Lost in the desert or the river, and never heard from again',def:5,kind:'yours',why:'No published odds. Deaths have not fallen as fast as crossings, and many bodies are never found.',f:'azDeaths'},
+ caught:{label:'Caught after crossing away from the walls',def:85,kind:'yours',why:'No reliable count of people who are not caught. Walls, surveillance towers and military zones cover more of the border every month.',f:'wall'},
  retal:{label:'The employer retaliates after a wage complaint',def:30,kind:'yours',why:'No published odds. Threats to call ICE over wage complaints are illegal but reported to be rising.',f:'fear82'}
 };
 var KIND={source:'sourced',survey:'survey share',arith:'our arithmetic',yours:'your estimate'};
@@ -73,45 +92,66 @@ var KIND={source:'sourced',survey:'survey share',arith:'our arithmetic',yours:'y
 // ---------- characters and scenes ----------
 // scene: {stage, text, facts:[keys], choices:[{label, go, add:{debt,months,sent}}]} or chance:{odds, yes, no, yesText, noText, add}
 var C={};
-C.teen={name:'A 14-year-old from San Pedro Sula',sub:'Sent to earn for the family. The family lives on informal pay; a cousin in the U.S. sends money some months.',cur:'$',start:'t0',scenes:{
+C.teen={who:'kidsDanger',name:'A 14-year-old from San Pedro Sula',sub:'Sent to earn for the family. The family lives on informal pay; a cousin in the U.S. sends money some months.',cur:'$',start:'t0',scenes:{
  t0:{stage:'Home',text:'Your mother does piece work at home; your older brother sells in the market. The cousin in the U.S. stopped sending money in February. Your uncle says a boy your age can earn more in a month up north than your mother earns in three. A man in the neighborhood says he can take you, for a price.',facts:['kidsAlone','remit','price190'],
   choices:[{label:'Stay and work here',go:'E_stay'},{label:'Go with the man the family borrows to pay ($7,000)',go:'t1s',add:{debt:7000}},{label:'Go on your own with a caravan',go:'t1c'}]},
- t1s:{stage:'Through Guatemala and Mexico',chance:{odds:'abandon',yes:'t2a',no:'t2'},text:'The family has borrowed against the house. You leave at night with two other boys.',facts:['price12','sells'],add:{months:1}},
- t1c:{stage:'Through Guatemala and Mexico',chance:{odds:'stopped',yes:'E_returnedChild',no:'t2'},text:'You join a few hundred people walking. Many are families. Within days the group is smaller.',facts:['caravan','mexEntry'],add:{months:1}},
+ t1s:{stage:'Through Guatemala and Mexico',chance:{odds:'abandon',yes:'t2a',no:'t2r'},text:'The family has borrowed against the house. You leave at night with two other boys.',facts:['price12','sells'],add:{months:1}},
+ t1c:{stage:'Through Guatemala and Mexico',chance:{odds:'stopped',yes:'E_returnedChild',no:'t2r'},text:'You join a few hundred people walking. Many are families. Within days the group is smaller.',facts:['caravan','mexEntry'],add:{months:1}},
  t2a:{stage:'Southern Mexico',text:'The man who took the money is gone. You are in a city where you know no one, with no money and a phone with no credit. Your mother calls every night.',facts:['price12','mexDisc'],
-  choices:[{label:'Ask for refuge in Mexico',go:'t3m'},{label:'Keep going north with whoever is going',go:'t2'}]},
+  choices:[{label:'Ask for refuge in Mexico',go:'t3m'},{label:'Keep going north with whoever is going',go:'t2r'}]},
+ t2r:{stage:'Crossing Mexico',text:'Mexico is more than a thousand kilometers long. Checkpoints watch the highways and bus stations. Each way north has its own danger.',facts:['mx1100','mxGuard'],danger:['bestia','trailer','crime'],
+  choices:[{label:'Ride the freight trains',go:'t2t',why:'No fare and no bus checkpoints. Days on the roofs of moving cars; falls cost hundreds of people their limbs.'},{label:'Walk, and take buses where you can',go:'t2w',why:'Cheapest and slowest. Checkpoints watch bus stations and highways, so you are the most likely to be stopped and sent back.'},{label:'Let the smuggler move you, hidden in vehicles',go:'t2v',add:{debt:1000},why:'Costs the family more and moves fastest. You are out of sight, and out of reach of help if the vehicle becomes a trap.'}]},
+ t2t:{stage:'On the freight trains',chance:{odds:'train',yes:'E_hurt',no:'t2'},text:'You ride on top of the cars for days, holding on through the night.',facts:['bestia'],add:{months:1}},
+ t2w:{stage:'Walking north',chance:{odds:'stopped',yes:'E_returnedChild',no:'t2'},text:'You walk the back roads around the checkpoints and sleep in shelters run by churches.',facts:['mx1100','mxGuard'],add:{months:2}},
+ t2v:{stage:'Hidden in vehicles',chance:{odds:'vehicle',yes:'E_missing',no:'t2'},text:'The family borrows $1,000 more. You ride in the back of trucks with strangers, the doors shut from outside.',facts:['trailer'],add:{months:1}},
  t2:{stage:'Crossing Mexico',chance:{odds:'crime',yes:'t2k',no:'t3'},text:'The road north through Mexico takes weeks. You sleep where others sleep.',facts:['crime'],add:{months:1}},
  t2k:{stage:'Crossing Mexico',text:'Men stop the group and hold you until each family pays. Your mother borrows again to send $1,000. You are let go. The debt at home has grown.',facts:['crime','stamp'],add:{debt:1000,months:1},choices:[{label:'Go on',go:'t3'},{label:'Ask for refuge in Mexico',go:'t3m'}]},
  t3m:{stage:'Waiting in Mexico',chance:{odds:'comar',yes:'E_mexico',no:'t3'},text:'You file with COMAR. You must stay in this state and sign in regularly; moving means abandoning your case. You find work washing cars for cash.',facts:['comar87','comarStay','comarWork','mexDisc'],add:{months:6}},
- t3:{stage:'Northern Mexico',text:'You reach a city on the U.S. border. Since January 2025 crossing without permission bars asylum; children traveling alone are still taken into U.S. custody. Very few arrive now.',facts:['procl','border95','uac'],
-  choices:[{label:'Go to U.S. border agents as a child traveling alone',go:'t4'},{label:'Stay in northern Mexico and look for work',go:'E_strandedMx'},{label:'Ask to be returned home',go:'E_returnedChild'}]},
+ t3:{stage:'Northern Mexico',text:'You reach a city on the U.S. border. Since January 2025 crossing without permission bars asylum; children traveling alone are still taken into U.S. custody. Very few arrive now.',facts:['procl','border95','uac'],danger:['deadliest','ptd'],
+  choices:[{label:'Go to U.S. border agents as a child traveling alone',go:'t4',why:'Children traveling alone are taken into U.S. custody and kept in shelters while officials look for a sponsor.'},{label:'Cross with a group of adults, away from the walls, through the desert',go:'tx',why:'Walls and towers stand by the towns. Away from them: fewer agents, and heat, distance and no one to call.'},{label:'Stay in northern Mexico and look for work',go:'E_strandedMx',why:'No papers and no case. Work off the books and wait.'},{label:'Ask to be returned home',go:'E_returnedChild'}]},
  t4:{stage:'U.S. custody',chance:{odds:'sponsor',yes:'t5',no:'E_custody'},text:'You are held, then moved to a shelter for children. Staff ask for a relative who can sponsor you. Your cousin is afraid: sponsors’ details now go to ICE.',facts:['uac','custody'],add:{months:6}},
  t5:{stage:'Living in the U.S.',text:'Your cousin signs. You are released to him with a court date years away. School starts at 8; the night shift cleaning a meat plant starts at 11. The family needs money every month.',facts:['nyt','pssi','hearing'],
   choices:[{label:'Work nights and go to school',go:'Y',add:{work:'night'}},{label:'Leave school and work full time',go:'Y',add:{work:'full'}}]},
+ tx:{stage:'The desert',chance:{odds:'desert',yes:'E_missing',no:'tx2'},text:'The walls and towers stand where the towns are. Away from them is open desert. You walk for days with people you met that week.',facts:['ptd','azDeaths','terrain'],danger:['deadliest','nda'],add:{months:1}},
+ tx2:{stage:'The desert',chance:{odds:'caught',yes:'t4',no:'Y'},text:'You reach a road on the U.S. side.',facts:['wall','nda']},
  Y:{years:5,court:true,end:'E_living'}
 }};
-C.mother={name:'A mother from Tegucigalpa with a young child',sub:'Extortion closed her small store. She sold the stock to pay the last demand.',cur:'$',start:'m0',scenes:{
+C.mother={who:'darienViol',name:'A mother from Tegucigalpa with a young child',sub:'Extortion closed her small store. She sold the stock to pay the last demand.',cur:'$',start:'m0',scenes:{
  m0:{stage:'Home',text:'The men who charged the store a weekly fee now say you owe a debt you cannot pay. You have your daughter, some savings, and a sister in Mexico City.',facts:['remit','kidsUS'],
-  choices:[{label:'Move to another neighborhood and start over',go:'E_stay'},{label:'Go to Mexico and ask for refuge',go:'m1'},{label:'Go toward the U.S. border',go:'m2'}]},
- m1:{stage:'Waiting in Mexico',chance:{odds:'comar',yes:'E_mexico',no:'m2'},text:'You apply in the south of Mexico. You may not move to your sister’s city while the case is open. You sell food on the street; some customers tell you to go home.',facts:['comar87','comarStay','comarWork','mexDisc'],add:{months:8}},
+  choices:[{label:'Move to another neighborhood and start over',go:'E_stay'},{label:'Go to Mexico and ask for refuge',go:'m1',why:'Mexico grants most Honduran cases, but you must stay in one state while you wait.'},{label:'Go toward the U.S. border',go:'m2r'}]},
+ m1:{stage:'Waiting in Mexico',chance:{odds:'comar',yes:'E_mexico',no:'m2r'},text:'You apply in the south of Mexico. You may not move to your sister’s city while the case is open. You sell food on the street; some customers tell you to go home.',facts:['comar87','comarStay','comarWork','mexDisc'],add:{months:8}},
+ m2r:{stage:'Crossing Mexico',text:'With a four-year-old, every way north is slower. Each has its own danger.',facts:['mx1100','mxGuard'],danger:['bestia','trailer','crime'],
+  choices:[{label:'Ride the freight trains with your daughter',go:'m2t',why:'No fare and no bus checkpoints, but days on moving cars with a small child.'},{label:'Walk, and take buses where you can',go:'m2w',why:'Cheapest and slowest; the most likely to be stopped at a checkpoint and sent back.'},{label:'Pay a smuggler to move you in vehicles ($3,000)',go:'m2v',add:{debt:3000},why:'Fastest, and a new debt. Out of sight, and out of reach of help.'}]},
+ m2t:{stage:'On the freight trains',chance:{odds:'train',yes:'E_hurt',no:'m2'},text:'You tie your daughter to you with a sheet and hold on.',facts:['bestia'],add:{months:1}},
+ m2w:{stage:'Walking north',chance:{odds:'stopped',yes:'E_deportHome',no:'m2'},text:'You walk the back roads and sleep in church shelters. Your daughter gets sick twice.',facts:['mx1100','mxGuard'],add:{months:3}},
+ m2v:{stage:'Hidden in vehicles',chance:{odds:'vehicle',yes:'E_missing',no:'m2'},text:'You ride in the back of trucks with the doors shut from outside, your daughter on your lap.',facts:['trailer','price12'],add:{months:1}},
  m2:{stage:'Crossing Mexico',chance:{odds:'crime',yes:'m2k',no:'m3'},text:'Traveling with a child is slower. You carry everything you own.',facts:['crime','mexEntry'],add:{months:2}},
  m2k:{stage:'Crossing Mexico',text:'You are held until your sister wires $1,000. She takes a loan to do it.',facts:['crime','stamp'],add:{debt:1000,months:1},choices:[{label:'Go on',go:'m3'},{label:'Ask for refuge in Mexico instead',go:'m1'}]},
- m3:{stage:'The U.S. border',text:'At the border, the 2025 proclamation means that crossing without permission bars asylum. A family that crosses is detained and processed for removal.',facts:['procl','border95'],
-  choices:[{label:'Stay in northern Mexico',go:'E_strandedMx'},{label:'Cross and be detained',go:'D'}]},
+ m3:{stage:'The U.S. border',text:'At the border, the 2025 proclamation means that crossing without permission bars asylum. A family that crosses is detained and processed for removal.',facts:['procl','border95'],danger:['deadliest','ptd','terrain'],
+  choices:[{label:'Stay in northern Mexico',go:'E_strandedMx'},{label:'Cross where the agents are, and be detained',go:'D',why:'Since January 2025, crossing without permission bars asylum. Families are detained and processed for removal.'},{label:'Cross away from the walls, through the desert',go:'mx',why:'Fewer agents, far more risk: heat, distance, a small child, and no one to call.'}]},
+ mx:{stage:'The desert',chance:{odds:'desert',yes:'E_missing',no:'mx2'},text:'You walk at night with your daughter on your back. The water runs out on the second day.',facts:['ptd','azDeaths'],danger:['terrain','nda'],add:{months:1}},
+ mx2:{stage:'The desert',chance:{odds:'caught',yes:'D',no:'Y'},text:'You reach a road on the U.S. side.',facts:['wall','nda']},
+ Y:{years:5,end:'E_living'},
  D:{deport:true}
 }};
-C.ven={name:'A Venezuelan stranded in Mexico',sub:'Left Venezuela for Peru in 2019, went north in 2023, and has been in Mexico for two years.',cur:'$',start:'v0',scenes:{
- v0:{stage:'Mexico',text:'You have worked off the books in three Mexican cities. The U.S. border is closed to asylum. People you know are going south again, back through countries that blamed them the first time.',facts:['procl','mexDisc','chile','peru'],
-  choices:[{label:'Ask for refuge in Mexico',go:'v1'},{label:'Turn back south',go:'v2'},{label:'Go to the U.S. border anyway',go:'D'}]},
+C.ven={home:'E_deportVen',who:'darienDead',name:'A Venezuelan stranded in Mexico',sub:'Left Venezuela for Peru in 2019, went north in 2023, and has been in Mexico for two years.',cur:'$',start:'v0',scenes:{
+ v0:{stage:'Mexico',text:'You have worked off the books in three Mexican cities. The U.S. border is closed to asylum. People you know are going south again, back through countries that blamed them the first time.',facts:['procl','mexDisc','chile','peru'],danger:['deadliest','ptd','darien'],
+  choices:[{label:'Ask for refuge in Mexico',go:'v1'},{label:'Turn back south',go:'v2'},{label:'Go to the U.S. border and turn yourself in',go:'D',why:'Since January 2025, crossing without permission bars asylum; you are detained and processed for removal.'},{label:'Cross away from the walls, through the desert',go:'vx',why:'Fewer agents, far more risk.'}]},
  v1:{stage:'Waiting in Mexico',chance:{odds:'comar',yes:'E_mexico',no:'v2'},text:'You apply and wait in one state, signing in as required. You work for cash at a car wash.',facts:['comarStay','comarWork','hearingWait'],add:{months:8},note:'The 87% figure is for Honduran cases; Venezuelan cases may differ.'},
  v2:{stage:'Going south',text:'Going south costs money too. On Panama’s coast, people wait for relatives to wire the boat fare. Where will you stop?',facts:['boat','colombia','ecuador','chile','peru'],add:{months:3},
   choices:[{label:'Colombia, which gave papers to most Venezuelans',go:'E_south'},{label:'Home to Venezuela',go:'E_venHome'}]},
+ vx:{stage:'The desert',chance:{odds:'desert',yes:'E_missing',no:'vx2'},text:'You crossed the Darién in 2023. This is a different kind of empty.',facts:['ptd','azDeaths','darien'],danger:['terrain','nda'],add:{months:1}},
+ vx2:{stage:'The desert',chance:{odds:'caught',yes:'D',no:'Y'},text:'You reach a road on the U.S. side.',facts:['wall','nda']},
+ Y:{years:5,end:'E_living'},
  D:{deport:true,ven:true}
 }};
-C.mich={name:'A family displaced from Michoacán, waiting in Tijuana',sub:'Mexican citizens who fled violence in their home town. They cannot ask Mexico for refuge: it is their own country.',cur:'MX$',start:'x0',scenes:{
+C.mich={home:'E_tijuanaDeported',who:'mxDeaths',name:'A family displaced from Michoacán, waiting in Tijuana',sub:'Mexican citizens who fled violence in their home town. They cannot ask Mexico for refuge: it is their own country.',cur:'MX$',start:'x0',scenes:{
  x0:{stage:'Tijuana',text:'You live in a shelter that is almost empty of foreigners now and full of Mexicans like you. Its funding has been cut in half. The U.S. border is a few miles away and closed to asylum.',facts:['tjShel','procl','mexicans'],
   choices:[{label:'Rent a room and work informally in Tijuana',go:'E_tijuana'},{label:'Go back to Michoacán',go:'E_backHome'},{label:'Go to the U.S. border',go:'x1'}]},
- x1:{stage:'The U.S. border',text:'Most people apprehended at the border are Mexican, and Mexicans are returned to Mexico quickly. Deported Mexicans arrive in Tijuana every week.',facts:['mexicans','abraza','procl'],choices:[{label:'Go on',go:'E_tijuanaDeported'}]}
+ x1:{stage:'The U.S. border',text:'Most people apprehended at the border are Mexican, and Mexicans are returned to Mexico quickly. Deported Mexicans arrive in Tijuana every week.',facts:['mexicans','abraza','procl'],danger:['mxDeaths','ptd','terrain'],choices:[{label:'Cross where the agents are',go:'E_tijuanaDeported',why:'Mexicans who are caught are usually returned to Mexico within days.'},{label:'Cross away from the walls, through the desert',go:'xx',why:'Since 2025, more Mexicans have died at the border even as fewer cross.'}]},
+ xx:{stage:'The desert',chance:{odds:'desert',yes:'E_missing',no:'xx2'},text:'Your husband goes alone; you and the children stay in Tijuana and wait for his call.',facts:['mxDeaths','azDeaths'],danger:['terrain','nda'],add:{months:1}},
+ xx2:{stage:'The desert',chance:{odds:'caught',yes:'E_tijuanaDeported',no:'Y'},text:'He reaches a road on the U.S. side.',facts:['wall','nda']},
+ Y:{years:5,end:'E_living'}
 }};
 C.tps={name:'A Honduran who lived in the U.S. for 20 years on TPS',sub:'Came at 19, worked construction in Denver with a work permit, two children born here. TPS ended in February 2026.',cur:'$',start:'p0',scenes:{
  p0:{stage:'Denver',text:'Your work permit has expired. Your employer must let you go or keep paying you off the books. Your children are U.S. citizens; the oldest is 15. You send $500 a month to your mother.',facts:['tps','kidsUS','remit','taxes'],
@@ -119,9 +159,12 @@ C.tps={name:'A Honduran who lived in the U.S. for 20 years on TPS',sub:'Came at 
  p1:{stage:'Denver',text:'Your children are U.S. citizens, but a child must be 21 to petition for a parent. If you first entered without permission, leaving to collect the visa could trigger a 10-year bar.',facts:['bar'],choices:[{label:'Stay, and work for cash while you wait',go:'Y',add:{work:'cash'}},{label:'Leave with the $2,600 payment',go:'E_cbpHome'}]},
  Y:{years:6,end:'E_living'}
 }};
-C.cuba={name:'A Cuban deported to Mexico',sub:'Detained in Texas in 2025 and sent across the border to Mexico, a country he has never lived in.',cur:'$',start:'c0',scenes:{
+C.cuba={home:'E_deportMex',who:'third',name:'A Cuban deported to Mexico',sub:'Detained in Texas in 2025 and sent across the border to Mexico, a country he has never lived in.',cur:'$',start:'c0',scenes:{
  c0:{stage:'Mexico',text:'You have the clothes you were detained in and a phone number for a cousin in Miami. Mexico accepted you, but you have no papers here yet.',facts:['third','procl'],
-  choices:[{label:'Ask for refuge in Mexico',go:'c1'},{label:'Work informally and wait',go:'E_strandedMx'}]},
+  choices:[{label:'Ask for refuge in Mexico',go:'c1'},{label:'Work informally and wait',go:'E_strandedMx'},{label:'Try to cross again, away from the walls',go:'cx',why:'There is more wall and more surveillance than when you crossed the first time.'}]},
+ cx:{stage:'The desert',chance:{odds:'desert',yes:'E_missing',no:'cx2'},text:'You know the desert is worse now than when you crossed the first time.',facts:['ptd','azDeaths'],danger:['terrain','nda'],add:{months:1}},
+ cx2:{stage:'The desert',chance:{odds:'caught',yes:'E_deportMex',no:'Y'},text:'You reach a road on the U.S. side.',facts:['wall','nda']},
+ Y:{years:5,end:'E_living'},
  c1:{stage:'Waiting in Mexico',chance:{odds:'comar',yes:'E_mexico',no:'E_strandedMx'},text:'You apply and stay in one state as required. You find work in a kitchen for cash.',facts:['comarStay','comarWork','mexDisc'],add:{months:8},note:'The 87% figure is for Honduran cases; Cuban cases may differ.'}
 }};
 
@@ -129,6 +172,8 @@ C.cuba={name:'A Cuban deported to Mexico',sub:'Detained in Texas in 2025 and sen
 var E={
  E_stay:{title:'Stayed home, in the informal economy',text:'No debt for a trip, no one gone. Also no floor under a bad week.',facts:['remit'],link:['#rules','Try Different rules to live twelve weeks of it']},
  E_returnedChild:{title:'Returned home',text:'Sent back to Honduras. The trip did not happen, but the family still owes whatever it borrowed.',facts:['returned','afterReturn','again']},
+ E_hurt:{title:'Hurt on the road',text:'You are alive and in a migrant shelter in Mexico, learning to walk again. You cannot do the work you left to do. The debt at home is still there.',facts:['bestia','mx1100']},
+ E_missing:{title:'Missing',text:'Your family stops hearing from you. They call the shelters, the consulate, the hospitals. Months later, they still do not know. This ending is told from your family’s side because that is how it happens.',facts:['ptd','azDeaths','trailer','deadliest']},
  E_mexico:{title:'Protected in Mexico',text:'Granted refuge or protection in Mexico. You may live and work there and move freely. It is not the U.S., the pay is lower, and some people make clear they do not want you.',facts:['comar87','comarWork','mexDisc']},
  E_strandedMx:{title:'Stranded in Mexico',text:'No papers, no case, no way forward and nothing to go back to. Work is off the books.',facts:['mexDisc','tjShel']},
  E_custody:{title:'Still in custody',text:'No sponsor came forward. You are still in a shelter for children, months after arriving.',facts:['custody']},
@@ -145,6 +190,26 @@ var E={
  E_backHome:{title:'Went back to Michoacán',text:'Back where the violence was. Some families do, because there is nowhere else.',facts:['tjShel']},
  E_tijuanaDeported:{title:'Returned to Tijuana',text:'Apprehended and returned to Mexico within days, to the same city you left.',facts:['abraza','mexicans']}
 };
+
+// ---------- the road, south to north (broad regions only) ----------
+var BANDS=[
+ ['us','Inside the U.S.','Work, debt, the risk of arrest'],
+ ['usborder','U.S.–Mexico border','Walls by the towns push people into desert, river, canals'],
+ ['mxnorth','Northern Mexico','10,000 National Guard troops since 2025; kidnapping'],
+ ['mxacross','Across Mexico, 1,100+ km','Freight trains, back roads, sealed trucks, checkpoints'],
+ ['mxsouth','Mexico’s southern border','Waiting for papers, stuck in one state'],
+ ['central','Honduras, Guatemala, El Salvador','Home, and where the debt is'],
+ ['darien','Darién Gap, Panama–Colombia','Jungle, rivers, armed groups']];
+var STAGEBAND={'Home':'central','Through Guatemala and Mexico':'mxsouth','Southern Mexico':'mxsouth','Waiting in Mexico':'mxsouth','Crossing Mexico':'mxacross','On the freight trains':'mxacross','Walking north':'mxacross','Hidden in vehicles':'mxacross','Northern Mexico':'mxnorth','The U.S. border':'mxnorth','Tijuana':'mxnorth','Mexico':'mxnorth','The desert':'usborder','U.S. custody':'us','Living in the U.S.':'us','Denver':'us','Going south':'darien'};
+function roadMap(here){
+  var h=46,w=340,out='<svg viewBox="0 0 '+w+' '+(BANDS.length*h+8)+'" role="img" aria-label="The road north, from the Darién Gap to the United States" style="width:100%;max-width:520px;display:block;margin:.4em 0">';
+  BANDS.forEach(function(b,i){var y=4+i*h,on=b[0]===here;
+    out+='<rect x="2" y="'+y+'" width="'+(w-4)+'" height="'+(h-6)+'" rx="8" fill="'+(on?'var(--warn-bg)':'var(--card2)')+'" stroke="'+(on?'var(--rj)':'var(--line)')+'" stroke-width="'+(on?3:1)+'"/>'+
+      '<text x="12" y="'+(y+17)+'" font-size="13" font-weight="700" fill="var(--fg)">'+esc(b[1])+(on?'  ← you are here':'')+'</text>'+
+      '<text x="12" y="'+(y+33)+'" font-size="11" fill="var(--muted)">'+esc(b[2])+'</text>';
+    if(i<BANDS.length-1)out+='<text x="'+(w-18)+'" y="'+(y+h-1)+'" font-size="12" fill="var(--muted)">↑</text>';
+    if(b[0]==='usborder'||b[0]==='mxnorth'||b[0]==='mxsouth')out+='<rect x="'+(w-60)+'" y="'+(y+4)+'" width="40" height="5" fill="var(--bad)"/><text x="'+(w-64)+'" y="'+(y+9)+'" font-size="9" text-anchor="end" fill="var(--bad)">'+(b[0]==='usborder'?'walls':b[0]==='mxnorth'?'troops':'checkpoints')+'</text>'});
+  return out+'</svg>'}
 
 // ---------- engine ----------
 function render(app){
@@ -165,7 +230,8 @@ function render(app){
   function cont(){var sc=st.pending;st.pending=null;var hit=roll(sc.chance.odds);go(hit?sc.chance.yes:sc.chance.no)}
   function deport(sc){
     st.log.push('<b>Detained.</b> Processed for removal under the 2025 proclamation.');st.months+=2;
-    if(sc.ven){var t=roll('thirdc');return finish(t?'E_deportMex':'E_deportVen')}
+    var home=C[st.c].home;if(sc.ven)home='E_deportVen';
+    if(home){var t=roll('thirdc');return finish(t&&home!=='E_deportMex'?'E_deportMex':home)}
     var t3=roll('thirdc');if(!t3)return finish('E_deportHome');
     return finish(Math.random()<20000/25447?'E_deportMex':'E_deportThird')}
   function years(sc){
@@ -206,7 +272,10 @@ function render(app){
     var h='<a class="back" href="#">← All immersions</a><p class="kick">A simulation for every trip</p><h2 style="margin-top:0">The road north</h2>';
     if(!st.c){
       h+='<p class="lede">Six people, six starting points, the rules of November 2026. Choices are yours; some things are left to chance, and every chance is shown with where its number comes from.</p>'+
-       '<div class="claim"><b>Before you start.</b> Each of the six is a composite of many people, not a real person. The simulation never shows routes or ways around the law, and it has no winning ending: nobody counts how many people who leave end up living in the U.S. Some of you have family who made a journey like this. You can walk one of these roads, or <a href="#" data-facts>just read the facts</a>. Nothing you do here is saved.</div>'+
+       '<div class="claim"><b>Before you start.</b> Each of the six is a composite of many people, not a real person. The simulation shows the broad roads north, which are public knowledge, and why they are dangerous. It never names crossing points, methods, contacts or ways around the law, and it has no winning ending: nobody counts how many people who leave end up living in the U.S. Some of you have family who made a journey like this. You can walk one of these roads, or <a href="#" data-facts>just read the facts</a>. Nothing you do here is saved.</div>'+
+       '<div class="sec"><h3>The road, south to north</h3><p>Most people students meet did not take one road. They took the one that was open that year. Every wall, checkpoint and patrol moves the road somewhere else, usually somewhere more remote, more expensive and more controlled by criminal groups.</p>'+roadMap(null)+
+         '<details><summary><b>What changed in 2025–26</b></summary>'+facts(['darien','mx1100','mxGuard','deadliest','ptd','wall','nda','mxDeaths','azDeaths'])+'</details></div>'+
+       '<p class="muted" style="font-size:14px">Some roads in this simulation end with a person missing or hurt. It is shown from the family’s side, without images.</p>'+
        '<div class="grid">'+Object.keys(C).map(function(k){return '<button class="card" data-char="'+k+'" style="text-align:left;cursor:pointer"><h3>'+esc(C[k].name)+'</h3><div class="meta">'+esc(C[k].sub)+'</div></button>'}).join('')+'</div>'+oddsPanel();
       if(st.facts)h+='<div class="sec"><h3>The facts, on their own</h3>'+facts(Object.keys(F))+'</div>';
     } else if(st.end){var e=E[st.end];
@@ -220,8 +289,11 @@ function render(app){
       if(st.pending&&st.pending.exploit){
         h+='<div class="fam mirrorbox"><h4>Living in the U.S. · year 2</h4><p>The boss hasn’t paid you for two weeks of work. He says business is slow. You know the law says he has to pay you, papers or not.</p>'+facts(['wage','fear82','dale'])+'</div><div class="wq"><button data-ex="quiet">Say nothing</button> <button data-ex="ask">Ask him for the money</button> <button data-ex="claim">File a claim with the labor office</button></div>';
       } else {
-        h+='<div class="fam mirrorbox"><h4>'+esc(sc.stage)+'</h4><p>'+esc(sc.text)+'</p>'+(sc.note?'<p class="muted" style="font-size:14px">'+esc(sc.note)+'</p>':'')+facts(sc.facts)+'</div>';
+        if(STAGEBAND[sc.stage])h+='<details class="roadmapd"'+(st.mapOpen?' open':'')+'><summary class="muted">Where you are on the road</summary>'+roadMap(STAGEBAND[sc.stage])+'</details>';
+        h+='<div class="fam mirrorbox"><h4>'+esc(sc.stage)+'</h4><p>'+esc(sc.text)+'</p>'+(sc.note?'<p class="muted" style="font-size:14px">'+esc(sc.note)+'</p>':'')+facts(sc.facts)+'</div>'+
+          (sc.danger?'<div class="fam dangerbox"><h4>How dangerous this stretch is</h4>'+facts(sc.danger)+(ch.who?'<p><b>For you, in particular:</b></p>'+facts([ch.who]):'')+'</div>':'');
         if(sc.chance){var o=ODDS[sc.chance.odds];h+='<p>What happens next is left to chance: <b>'+esc(o.label)+'</b>, '+st.odds[sc.chance.odds]+'% <span class="pill'+(o.kind==='yours'?' care':'')+'">'+KIND[o.kind]+'</span>.</p><p><button class="btn" data-cont>See what happens →</button></p>'}
+        else if(sc.choices.some(function(x){return x.why}))h+='<p><b>What do you do?</b></p><div class="choices">'+sc.choices.map(function(x,i){return '<div class="choice"><button data-ch="'+i+'">'+esc(x.label)+'</button>'+(x.why?'<span class="muted">'+esc(x.why)+'</span>':'')+'</div>'}).join('')+'</div>';
         else h+='<div class="wq">'+sc.choices.map(function(x,i){return '<button data-ch="'+i+'">'+esc(x.label)+'</button>'}).join(' ')+'</div>';
       }
       if(st.log.length)h+='<div class="sec"><h3>So far</h3><ol class="cus wlog">'+st.log.map(function(l){return '<li>'+l+'</li>'}).join('')+'</ol></div>';
