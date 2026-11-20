@@ -105,7 +105,7 @@ function render(app){
         '<p><b>Why the cash worker rarely gets the money back.</b> Denver’s minimum wage and wage-theft rules cover every worker, with or without papers. But a worker who fears being reported does not complain: in a survey of 411 day laborers at Denver-area hiring sites, 62% had been cheated of wages and fewer than 40% of them asked anyone for help (Galemba, University of Denver, 2016–17; older, read with care). The card <i>A buyer or boss doesn’t pay</i> is the one that happens most often and is reported least.</p>'+
         (P.doing?'<p><b>What families here do instead.</b> '+esc(P.doing.text)+' <small>Source: '+esc(P.doing.src)+'</small></p>':'')+
         '<div class="claim"><b>Your call.</b> Which made the bigger difference over twelve weeks: how much the family earned, or the rules around the work? What did the Denver cash worker have in common with the family on your trip?</div>'+
-        '<p><button class="btn" data-again>Run it again with a new deck</button></p></div>'}
+        '<p><button class="btn" data-again>Live twelve new weeks</button></p></div>'}
     app.innerHTML=h;wire()}
   function wire(){
     var q=function(s){return app.querySelector(s)};
