@@ -2,7 +2,7 @@
    plant-based Catholic intentional community, with home repair alongside neighbors.
    This file adds (1) an opening section to the jfarm page and (2) the lab "A week of simple living" (key WEEK). */
 (function(){'use strict';
-var T=window.TRIPS&&window.TRIPS.jfarm;if(!T)return;
+var T=window.TRIPS&&window.TRIPS.jfarm;if(!T)return;T.noRoad=true;
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function fmt(n,d){return Number(n).toLocaleString('en-US',{maximumFractionDigits:d==null?0:d,minimumFractionDigits:d||0})}
 function S(text,src,url,care){return {text:text,src:src,url:url,care:!!care}}
