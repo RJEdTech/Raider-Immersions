@@ -30,7 +30,8 @@ function home(){
   var h='<p class="lede">One set of resources for every immersion: the place and its people, the barriers that set the price of ordinary life there, labs where you change the numbers, and the same structures in the Denver you live in.</p>'+
    '<div class="grid">'+list.map(function(p){var r=p.ready;
      return (r?'<a class="card" href="#'+p.id+'">':'<div class="card soon">')+'<span class="badge'+(p.fresh?' ready':'')+'">'+(p.fresh?'New research':r?'Earlier draft':'Coming next')+'</span><h3>'+esc(p.name)+'</h3><div class="meta">'+esc(p.place)+(r?'<br>'+(miles(p)<30?'In the Denver metro':fmt(miles(p))+' miles from Denver'):'')+'</div>'+(r?'</a>':'</div>')}).join('')+'</div>'+
-   '<h2>The same structures at home</h2><p class="lede">Every barrier on a trip has a mirror in Denver: wages, paid leave, health care, what borrowing costs, housing. <a href="#denver-mirror">See the Denver side →</a></p>';
+   '<h2>The same structures at home</h2><p class="lede">Every barrier on a trip has a mirror in Denver: wages, paid leave, health care, what borrowing costs, housing. <a href="#denver-mirror">See the Denver side →</a></p>'+
+   '<h2>Your own family’s road</h2><p class="lede">How did your family come to be here, under what rules, and why? Put your story beside the ones you will hear. Nothing you enter is saved. <a href="#family">Start →</a></p>';
   app.innerHTML=h;window.scrollTo(0,0)}
 
 var TABS=[['over','Overview'],['bar','Barriers'],['before','Before you go'],['after','After you return'],['tools','Lab tools']];
