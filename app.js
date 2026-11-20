@@ -27,13 +27,15 @@ function home(){
   var TR=window.TRIPS||{},list=[],ORDER=['peru','quito','honduras-sps','honduras-teg','dr','panama','tijuana-toe','tijuana-doc','memphis','jfarm','kentucky','dc','denver'];
   Object.keys(TR).forEach(function(k){var t=TR[k];if(t.status==='public')list.push({id:t.id,name:t.name,place:t.region,ft:t.ft,lat:t.lat,lon:t.lon,ready:true,fresh:true})});
   list.sort(function(a,b){var x=ORDER.indexOf(a.id),y=ORDER.indexOf(b.id);return (x<0?99:x)-(y<0?99:y)});
-  var h='<p class="lede">One set of resources for every immersion: the place and its people, the barriers that set the price of ordinary life there, labs where you change the numbers, and the same structures in the Denver you live in.</p>'+
-   '<div class="grid">'+list.map(function(p){var r=p.ready;
-     return (r?'<a class="card" href="#'+p.id+'">':'<div class="card soon">')+'<span class="badge'+(p.fresh?' ready':'')+'">'+(p.fresh?'New research':r?'Earlier draft':'Coming next')+'</span><h3>'+esc(p.name)+'</h3><div class="meta">'+esc(p.place)+(r?'<br>'+(miles(p)<30?'In the Denver metro':fmt(miles(p))+' miles from Denver'):'')+'</div>'+(r?'</a>':'</div>')}).join('')+'</div>'+
-   '<h2>The same structures at home</h2><p class="lede">Every barrier on a trip has a mirror in Denver: wages, paid leave, health care, what borrowing costs, housing. <a href="#denver-mirror">See the Denver side →</a></p>'+
-   '<h2>Your own family’s road</h2><p class="lede">How did your family come to be here, under what rules, and why? Put your story beside the ones you will hear. Nothing you enter is saved. <a href="#family">Start →</a></p>'+
-   '<h2>Different rules: a twelve-week simulation</h2><p class="lede">Live twelve weeks on a real income from one of the trips, with real prices and a card each week. Then replay the same weeks under Denver’s rules. <a href="#rules">Start →</a></p>'+
-   '<h2>The road north</h2><p class="lede">Six composite people, six starting points, the rules of November 2026: waiting, debt, danger, deportation, and what work in the U.S. is like for someone who cannot report abuse. No winning ending. <a href="#road">Start →</a></p>';
+  function leadPic(id){var P=(window.PICS||{})[id],f=null,l=null;if(!P)return null;Object.keys(P).map(Number).sort(function(x,y){return x-y}).forEach(function(k){P[k].forEach(function(q){f=f||q;if(q.lead)l=l||q})});return l||f}
+  var h='<p class="lede">You are going somewhere to meet people. Start by seeing what an ordinary day costs there, next to what it costs in Denver. Then ask why, and what would actually help.</p>'+
+   '<div class="grid">'+list.map(function(p){var q=leadPic(p.id);
+     return '<a class="card trip" href="#'+p.id+'"><h3>'+esc(p.name)+'</h3><div class="meta">'+esc(p.place)+'<br>'+(miles(p)<30?'In the Denver metro':fmt(miles(p))+' miles from Denver')+'</div>'+(q?'<div class="guess"><b>Guess first:</b> '+esc(String(q.t).replace(/\*/g,''))+'</div>':'')+'</a>'}).join('')+'</div>'+
+   '<h2>For every trip</h2><div class="grid">'+
+   '<a class="card" href="#denver-mirror"><span class="badge">Compare</span><h3>The same structures at home</h3><div class="meta">Every barrier on a trip has a twin in Denver: wages, leave, health care, loans, housing.</div></a>'+
+   '<a class="card" href="#family"><span class="badge">Your story</span><h3>Your own family’s road</h3><div class="meta">How your family came to be here, and under what rules. Nothing you enter is saved.</div></a>'+
+   '<a class="card" href="#rules"><span class="badge ready">Simulation</span><h3>Different rules</h3><div class="meta">Twelve weeks on a real income with real prices. Then the same weeks under Denver’s rules.</div></a>'+
+   '<a class="card" href="#road"><span class="badge ready">Simulation</span><h3>The road north</h3><div class="meta">Six people, six starting points, the rules of November 2026. No winning ending.</div></a></div>';
   app.innerHTML=h;window.scrollTo(0,0)}
 
 var TABS=[['over','Overview'],['bar','Barriers'],['before','Before you go'],['after','After you return'],['tools','Lab tools']];

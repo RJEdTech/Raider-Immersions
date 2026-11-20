@@ -5,7 +5,7 @@
 var T=window.TRIPS||{},M=window.DMIRROR||{},D=window.DENVER,$=function(s,r){return (r||document).querySelector(s)};
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function md(s){return esc(s).replace(/\*\*\*(.+?)\*\*\*/g,'<b><i>$1</i></b>').replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\*(.+?)\*/g,'<i>$1</i>')
-  .replace(/✅/g,'<span class="pill ok" title="Checked against the source">checked</span>').replace(/⚠️?/g,'<span class="pill care" title="Real, but read the note">read with care</span>')}
+  .replace(/✅/g,'<span class="pill ok" title="Checked against the source">checked</span>').replace(/⚠️?/g,'<span class="pill care" title="Not double-checked against the original source. Check it yourself.">read with care</span>')}
 function store(k,v){try{if(v===undefined)return localStorage.getItem('imm:'+k)||'';localStorage.setItem('imm:'+k,v)}catch(e){return ''}}
 function fmt(n,d){return Number(n).toLocaleString('en-US',{maximumFractionDigits:d==null?0:d,minimumFractionDigits:d||0})}
 function miles(a){var R=3958.8,r=Math.PI/180,dl=(a.lat-D.lat)*r,dn=(a.lon-D.lon)*r,h=Math.sin(dl/2)*Math.sin(dl/2)+Math.cos(D.lat*r)*Math.cos(a.lat*r)*Math.sin(dn/2)*Math.sin(dn/2);return Math.round(2*R*Math.asin(Math.sqrt(h))/10)*10}
@@ -13,7 +13,7 @@ function answerBox(k,label){return '<label class="ans"><span>'+esc(label||'Your 
 function wireAnswers(root){root.querySelectorAll('textarea[data-k]').forEach(function(t){t.oninput=function(){store(t.dataset.k,t.value)}})}
 function copyBtn(id){return '<p><button class="btn" data-copy="'+id+'">Copy my answers</button> <span class="muted" data-copied="'+id+'"></span></p>'}
 function wireCopy(root,title){root.querySelectorAll('[data-copy]').forEach(function(b){b.onclick=function(){
-  var parts=[];root.querySelectorAll('label.ans').forEach(function(l){var t=$('textarea',l);parts.push(l.querySelector('span').textContent+'\n'+(t.value||'(blank)'))});
+  var parts=[];root.querySelectorAll('[data-copyline]').forEach(function(l){if(l.textContent)parts.push(l.textContent)});root.querySelectorAll('label.ans').forEach(function(l){var t=$('textarea',l);parts.push(l.querySelector('span').textContent+'\n'+(t.value||'(blank)'))});
   var txt=title+'\n\n'+parts.join('\n\n'),out=root.querySelector('[data-copied="'+b.dataset.copy+'"]');
   try{navigator.clipboard.writeText(txt).then(function(){out.textContent='Copied. Paste it into Canvas.'},function(){out.textContent='Select the text and copy it instead.'})}catch(e){out.textContent='Select the text and copy it instead.'}}})}
 
@@ -25,18 +25,18 @@ function numberCard(t,n){var u=srcUrl(t,n.src);
    (n.mark==='ok'?'<span class="pill ok">checked</span>':n.mark==='care'?'<span class="pill care">read with care</span>':'')+
    (n.note?' <span class="note">'+md(n.note)+'</span>':'')+(u?' · <a href="'+esc(u)+'" target="_blank" rel="noopener">Check it yourself</a>':'')+'</div></li>'}
 
-var TABS=[['over','The place'],['bar','Barriers'],['cush','What catches you'],['labs','Labs'],['before','Before you go'],['after','After you return'],['faith','Faith'],['src','Sources']];
+var TABS=[['see','See it'],['bar','Barriers'],['cush','What catches you'],['labs','Labs'],['act','Respond'],['before','Before you go'],['after','After you return'],['over','The place'],['src','Sources']];
 
 function page(t,tab,sub){
-  document.title=t.name+' · Raider Immersions';tab=tab||'over';
+  document.title=t.name+' · Raider Immersions';tab=tab||(allPics(t).length?'see':'over');if(tab==='faith')tab='act';if(tab==='see'&&!allPics(t).length)tab='over';
   var app=$('#app');
   app.innerHTML='<a class="back" href="#">← All immersions</a><p class="kick">Immersion · research as of '+esc(t.asOf)+'</p><h2 style="margin-top:0">'+esc(t.name)+'</h2>'+
    '<div class="tabs" role="tablist">'+TABS.map(function(x){return '<button role="tab" aria-selected="'+(x[0]===tab)+'" data-tab="'+x[0]+'">'+x[1]+'</button>'}).join('')+'</div><div id="pane"></div>';
   app.querySelectorAll('[data-tab]').forEach(function(b){b.onclick=function(){location.hash=t.id+'/'+b.dataset.tab}});
   var pane=$('#pane');
-  ({over:over,bar:barriers,cush:cushion,labs:labs,before:before,after:after,faith:faith,src:sources}[tab]||over)(t,pane,sub);
+  ({see:see,over:over,bar:barriers,cush:cushion,labs:labs,before:before,after:after,act:respond,src:sources}[tab]||over)(t,pane,sub);
   wireAnswers(pane);wireCopy(pane,t.name+' · '+(TABS.filter(function(x){return x[0]===tab})[0]||TABS[0])[1]);
-  if(sub==null)window.scrollTo(0,0)}
+  if(sub==null||tab==='see')window.scrollTo(0,0)}
 
 function over(t,p){var up=t.ft-D.ft;
   p.innerHTML=(t.weekIntro||'')+'<p class="lede">'+esc(t.region)+'.</p><div class="stats">'+
@@ -53,14 +53,14 @@ function barriers(t,p,sub){
    '<div class="areas">'+t.barriers.map(function(b,k){return '<a class="area-btn" href="#'+t.id+'/bar/'+(k+1)+'" aria-current="'+(k===i)+'"><span class="n">'+(k+1)+'</span><b>'+md(b.title)+'</b></a>'}).join('')+'</div><div id="bar"></div>';
   if(i!=null&&t.barriers[i])barrier(t,i,$('#bar',p))}
 
-function barrier(t,i,box){
+function barrier(t,i,box,keep){
   var b=t.barriers[i],k=t.id+':sort:'+i,mine=store(k);
-  var keys=(b.denverKeys||[]).filter(function(x){return M[x]});
+  var keys=(b.denverKeys||[]).filter(function(x){return M[x]}),nums=b.numbers.filter(function(n){return n.src||!/:\s*$/.test(n.text)}),pics=picsHTML(t,i,true);
   box.innerHTML='<div class="area" id="bar-top"><p class="kick">Barrier '+(i+1)+' of '+t.barriers.length+'</p><h3 style="margin-top:0">'+md(b.title)+'</h3>'+
    (b.plain?'<p class="lede">'+md(b.plain)+'</p>':'')+
-   (b.chain&&b.chain.length?'<div class="sec"><p class="kick">How it got this way</p><ol class="chain">'+b.chain.map(function(s){return '<li>'+md(s.charAt(0).toUpperCase()+s.slice(1))+'</li>'}).join('')+'</ol>'+
-     (b.oneDay?'<div class="oneday"><b>One day:</b> '+md(b.oneDay.charAt(0).toUpperCase()+b.oneDay.slice(1))+'</div>':'')+'</div>':'')+
-   (b.numbers.length?'<div class="sec"><p class="kick">The numbers</p><ul class="nums">'+b.numbers.map(function(n){return numberCard(t,n)}).join('')+'</ul></div>':'')+
+   (b.oneDay?'<div class="oneday"><b>One day:</b> '+md(cap(b.oneDay))+'</div>':'')+
+   (pics?'<div class="sec"><p class="kick">See it</p>'+pics+'</div>':'')+
+   (b.chain&&b.chain.length?'<div class="sec"><p class="kick">How it got this way</p><ol class="chain">'+b.chain.map(function(s){return '<li>'+md(cap(s))+'</li>'}).join('')+'</ol></div>':'')+
    '<div class="sec"><p class="kick">Pull it apart</p><p>Before you read ours: where does most of this barrier come from?</p><div class="sort">'+['Nature','Luck','Built'].map(function(n){return '<button data-s="'+n+'" class="'+(mine===n?'on':'')+'">'+n+'</button>'}).join('')+'</div>'+
    (mine?(b.nlb?'<div class="nlbt">'+md(b.nlb)+'</div>':'')+
      (b.who?'<p class="kick" style="margin-top:14px">Who decided, who gains, who pays</p><div class="gains">'+md(b.who)+'</div>':'')+
@@ -69,10 +69,16 @@ function barrier(t,i,box){
    ((b.denver||b.mirrorQ)?'<div class="sec mirror"><p class="kick">The same structure in Denver</p>'+(b.denver?'<p>'+md(b.denver)+'</p>':'')+
      (keys.length?'<p class="muted">More on Denver: '+keys.map(function(x){return '<a href="#denver-mirror/'+x+'">'+esc(M[x].title)+'</a>'}).join(' · ')+'</p>':'')+
      (b.mirrorQ?answerBox(t.id+':mirror:'+i,b.mirrorQ):'')+'</div>':'')+
+   '<div class="sec"><p class="kick">Three ways to respond</p>'+hoursHTML(t,i,'What would actually help here?','Why did you split it that way? What would your first block actually be?')+
+     '<p class="muted" style="font-size:14px"><a href="#'+t.id+'/act">What the three mean →</a></p></div>'+
+   (nums.length?'<div class="sec"><details class="numsd"><summary><b>Check the numbers</b> ('+nums.length+')</summary><ul class="nums">'+nums.map(function(n){return numberCard(t,n)}).join('')+'</ul></details></div>':'')+
    copyBtn('bar')+
    '<p style="margin-top:16px">'+(i>0?'<a class="btn ghost" href="#'+t.id+'/bar/'+i+'">← Barrier '+i+'</a> ':'')+(i<t.barriers.length-1?'<a class="btn" style="text-decoration:none" href="#'+t.id+'/bar/'+(i+2)+'">Barrier '+(i+2)+' →</a>':'')+'</p></div>';
-  box.querySelectorAll('[data-s]').forEach(function(x){x.onclick=function(){store(k,x.dataset.s);barrier(t,i,box);wireAnswers(box);wireCopy(box,t.name+' · Barrier '+(i+1))}});
-  var top=$('#bar-top');if(top&&top.scrollIntoView)top.scrollIntoView({block:'start'})}
+  function again(){barrier(t,i,box,true);wireAnswers(box);wireCopy(box,t.name+' · Barrier '+(i+1))}
+  box.querySelectorAll('[data-s]').forEach(function(x){x.onclick=function(){store(k,x.dataset.s);again()}});
+  wirePics(box,t,true);
+  wireHours(box,t,function(key,dir,kk){again();var nb=box.querySelector('[data-hrs] [data-'+dir+'="'+kk+'"]');if(nb&&!nb.disabled)nb.focus()});
+  var top=$('#bar-top');if(!keep&&top&&top.scrollIntoView)top.scrollIntoView({block:'start'})}
 
 function mirrorLine(keys){var k=(keys||[]).filter(function(x){return M[x]})[0];if(!k)return '';var f=(M[k].figures||[])[0];
   return (f?md(f.text):md(M[k].plain||''))+' <a href="#denver-mirror/'+k+'">More</a>'}
@@ -153,7 +159,7 @@ function dots(v){var s='';for(var i=0;i<100;i++)s+='<i class="'+(i<Math.round(v)
 function twoWays(t,c,box){var pi=0,V=function(id){return c.views.filter(function(v){return v.id===id})[0]};
   function draw(){var pr=c.pairs[pi].map(V);
     box.innerHTML='<div class="sec"><p class="kick">Pick two ways to count</p><div class="sort">'+c.pairs.map(function(pp,k){var lab=(c.pairLabels||[])[k]||(V(pp[0]).label.replace(/,.*$/,'')+(k===2?' (urban vs rural)':' (two methods)'));return '<button data-p="'+k+'" class="'+(k===pi?'on':'')+'">'+esc(lab)+'</button>'}).join('')+'</div></div>'+
-     '<div class="pair">'+pr.map(function(v){var m=v.mark||'ok';return '<div class="pv"><b class="big">'+fmt(v.value,1)+'%</b><p>'+esc(v.label)+'</p>'+dots(v.value)+'<p class="src">Source: '+esc(v.src)+' <span class="pill '+m+'">'+(m==='ok'?'checked':'read with care')+'</span>'+(v.caveat?'<br><small>'+esc(v.caveat)+'</small>':'')+'</p></div>'}).join('')+'</div>'+
+     '<div class="pair">'+pr.map(function(v){var m=v.mark||'ok';return '<div class="pval"><b class="big">'+fmt(v.value,1)+'%</b><p>'+esc(v.label)+'</p>'+dots(v.value)+'<p class="src">Source: '+esc(v.src)+' <span class="pill '+m+'">'+(m==='ok'?'checked':'read with care')+'</span>'+(v.caveat?'<br><small>'+esc(v.caveat)+'</small>':'')+'</p></div>'}).join('')+'</div>'+
      '<p class="muted">'+esc(c.caption||'Each dot is one child out of 100 aged 6–35 months. Same children, same year: the only thing that changed is the rule for counting, or where you drew the line.')+'</p>';
     box.querySelectorAll('[data-p]').forEach(function(b){b.onclick=function(){pi=+b.dataset.p;draw()}})}
   draw()}
@@ -272,15 +278,124 @@ function loanCost(t,c,box){var start=function(d){return JSON.parse(JSON.stringif
   draw()}
 
 /* ---------- before / after / faith / sources ---------- */
+/* ---------- pictures: one comparison per barrier, guess first (data in pictures.js) ---------- */
+var PICS=window.PICS||{};
+function bare(s){return String(s||'').replace(/\*/g,'')}
+function cap(s){s=String(s||'');return s.charAt(0).toUpperCase()+s.slice(1)}
+function first(s){s=bare(s).replace(/✅|⚠️?/g,'').replace(/\(\s*[;,]?\s*\)/g,'').replace(/\s+\)/g,')').replace(/\(\s+/g,'(').replace(/\s{2,}/g,' ');var m=s.match(/^(.{40,}?[a-z\)\d]{2,}[.!?])(?=\s+[A-Z“*(]|\s*$)/);return m?m[1]:s}
+function picsOf(t,i){var b=t.barriers[i];return b?((PICS[t.id]||{})[i+1]||[]).filter(function(p){return bare(b.title).indexOf(bare(p.b))===0}):[]}
+function allPics(t){var out=[];t.barriers.forEach(function(b,i){picsOf(t,i).forEach(function(p,k){out.push({bi:i,k:k,p:p})})});
+  var L=out.filter(function(x){return x.p.lead})[0];if(L){out.splice(out.indexOf(L),1);out.unshift(L)}return out}
+function dec(p){var d=0;p.rows.forEach(function(r){var s=String(r[1]),i=s.indexOf('.');if(i>=0)d=Math.max(d,s.length-i-1)});if(p.pre&&d===1)d=2;return Math.min(d,2)}
+function val(p,v,d){var s=fmt(v,d==null?dec(p):d);return p.pre?p.u+s:s+(p.u||'')}
+function nice(x){var e=Math.pow(10,Math.floor(Math.log(x)/Math.LN10)),m=x/e,S=[1,1.5,2,2.5,3,4,5,6,8,10],i=0;while(S[i]<m-1e-9)i++;return S[i]*e}
+function axis(p){var mx=Math.max.apply(null,p.rows.map(function(r){return r[1]}));
+  if(p.k==='dots')return p.of||100;if(p.u==='%'&&mx>40&&mx<=100)return 100;return nice(mx*1.15)}
+function gstep(p,ax){if(p.k==='dots')return 1;var d=dec(p),s=nice(ax/200);return d===0?Math.max(1,Math.round(s)):s}
+function dgrid(tot,n,ghost,mark){var s='';for(var i=0;i<tot;i++)s+='<i class="'+(i<n?'on':'')+(mark!=null&&i===mark-1?' gm':'')+'"></i>';return '<div class="dgrid'+(tot!==100?' few':'')+'">'+s+'</div>'}
+var SEG=['var(--rj)','#1565c0','#2e7d32','#d08a2c','#6a1b9a'];
+function picSrc(t,b,p,inBar){var out=[];p.s.forEach(function(s){var x;
+    if(s==='d')x='Denver and Colorado figures: '+(inBar?'see “The same structure in Denver” on this page.':'see the Denver note on the barrier page.');
+    else{var n=b.numbers[+s.slice(1)];if(!n)return;var u=srcUrl(t,n.src);
+      x=(n.src?md(n.src):'This barrier’s number list')+' '+(n.mark==='care'?'<span class="pill care" title="Not double-checked against the original source">read with care</span>':'<span class="pill ok">checked</span>')+(u?' · <a href="'+esc(u)+'" target="_blank" rel="noopener">Check it yourself</a>':'')}
+    if(out.indexOf(x)<0)out.push(x)});
+  var named=out.filter(function(x){return x.indexOf('This barrier’s number list')!==0});if(named.length)out=named;
+  return '<div class="psrc"><b>Source:</b> '+out.join('<br>')+'</div>'}
+/* g: '' = not shown yet, '-' = shown without a guess, a number = the guess */
+function picHTML(t,bi,k,p,g,inBar){
+  var b=t.barriers[bi],ax=axis(p),d=dec(p),xi=-1;p.rows.forEach(function(r,i){if(r[2]==='x')xi=i});
+  var canGuess=xi>=0&&p.k!=='split',open=!canGuess||g!=='',gn=g!==''&&g!=='-'?+g:null,id=t.id+':'+(bi+1)+':'+k;
+  var h='<figure class="pic k-'+p.k+(open?' open':'')+'" data-pic="'+id+'"><figcaption>'+md(p.t)+'</figcaption>';
+  if(p.k==='split'){var sum=p.rows.reduce(function(a,r){return a+r[1]},0),rows=p.rows.slice();if(sum<99.5)rows.push(['Not listed here',Math.round((100-sum)*10)/10,'o']);
+    h+='<div class="split" role="img" aria-label="'+esc(rows.map(function(r){return r[0]+' '+r[1]+'%'}).join(', '))+'">'+rows.map(function(r,i){return '<span style="width:'+r[1]+'%;background:'+(r[2]==='o'?'var(--line)':SEG[i%SEG.length])+'"></span>'}).join('')+'</div>'+
+      '<ul class="sleg">'+rows.map(function(r,i){return '<li><i style="background:'+(r[2]==='o'?'var(--line)':SEG[i%SEG.length])+'"></i><b>'+val(p,r[1],r[2]==='o'?1:null)+'</b> '+esc(r[0])+'</li>'}).join('')+'</ul>';
+  }else{
+    h+='<div class="prs">'+p.rows.map(function(r,i){var me=i===xi,hid=me&&!open,tot=p.of||100;
+      return '<div class="pr'+(me?' hi':'')+(r[2]==='h'?' home':'')+'"><div class="pl">'+esc(r[0])+(r[2]==='h'?' <span class="tag">home</span>':'')+'</div>'+
+        (p.k==='dots'?'<div class="pd">'+dgrid(tot,hid?0:Math.round(r[1]),0,me&&open?gn:null)+'<b class="pval">'+(hid?'?':val(p,r[1],d)+(p.of?' of '+p.of:''))+'</b></div>'
+          :'<div class="pt"><span class="pb" style="width:'+(hid?0:r[1]/ax*100)+'%"></span>'+(hid?'<span class="pb ghost" style="width:0%"></span>':'')+(me&&open&&gn!=null?'<i class="gm" style="left:'+Math.min(100,gn/ax*100)+'%"></i>':'')+'<b class="pval">'+(hid?'?':val(p,r[1],d))+'</b></div>')+
+        (hid?'<div class="pg"><label><span>Drag to guess: <b data-gv>?</b></span><input type="range" min="0" max="'+ax+'" step="'+gstep(p,ax)+'" value="0" aria-label="Your guess for '+esc(r[0])+'"></label><button class="btn" data-show>Show it</button></div>':'')+'</div>'}).join('')+'</div>';
+  }
+  if(open)h+='<p class="psay">'+md(p.say)+'</p>'+
+    (gn!=null?'<p class="pgs">Your guess: <b>'+val(p,gn,d)+'</b>. The number: <b>'+val(p,p.rows[xi][1],d)+'</b>. <button class="linkish" data-again>Guess again</button></p>':'')+picSrc(t,b,p,inBar);
+  return h+'</figure>'}
+function wirePics(root,t,inBar){root.querySelectorAll('figure[data-pic]').forEach(function(f){
+  var a=f.dataset.pic.split(':'),bi=+a[1]-1,k=+a[2],p=picsOf(t,bi)[k];if(!p)return;var ax=axis(p),r=f.querySelector('input[type=range]'),moved=false;
+  function swap(g,from){var tmp=document.createElement('div');tmp.innerHTML=picHTML(t,bi,k,p,g,inBar);var nf=tmp.firstChild;f.parentNode.replaceChild(nf,f);
+    var hb=nf.querySelector('.hi .pb');if(hb&&from!=null&&window.requestAnimationFrame){var w=hb.style.width;hb.style.width=from+'%';requestAnimationFrame(function(){requestAnimationFrame(function(){hb.style.width=w})})}
+    wirePics(nf.parentNode,t,inBar)}
+  if(r){r.oninput=function(){moved=true;var g=+r.value;f.querySelector('[data-gv]').textContent=val(p,g)+(p.of?' of '+p.of:'');
+      var gb=f.querySelector('.pb.ghost');if(gb)gb.style.width=(g/ax*100)+'%';
+      f.querySelectorAll('.hi .dgrid i').forEach(function(x,i){x.className=i<g?'gh':''})};
+    f.querySelector('[data-show]').onclick=function(){var g=moved?String(+r.value):'-';store('pic:'+f.dataset.pic,g);swap(g,moved?+r.value/ax*100:0)}}
+  var ag=f.querySelector('[data-again]');if(ag)ag.onclick=function(){store('pic:'+f.dataset.pic,'');swap('',null)}})}
+function picsHTML(t,i,inBar){return picsOf(t,i).map(function(p,k){return picHTML(t,i,k,p,store('pic:'+t.id+':'+(i+1)+':'+k),inBar)}).join('')}
+
+/* ---------- See it: the pictures one at a time ---------- */
+function see(t,p,sub){var F=allPics(t);if(!F.length){over(t,p);return}
+  var i=sub==null?0:Math.max(0,Math.min(F.length,sub));
+  var steps='<div class="steps" role="navigation" aria-label="Pictures">'+F.map(function(x,k){return '<a href="#'+t.id+'/see/'+(k+1)+'" class="'+(k===i?'on':k<i?'done':'')+'" aria-label="Picture '+(k+1)+'"'+(k===i?' aria-current="step"':'')+'></a>'}).join('')+
+    '<a href="#'+t.id+'/see/'+(F.length+1)+'" class="end'+(i===F.length?' on':'')+'" aria-label="How it stacks up"></a></div>';
+  if(i<F.length){var x=F[i],b=t.barriers[x.bi];
+    p.innerHTML=(i===0?'<p class="lede">Before the reading, look. Each picture is one real comparison. Guess first, then see it.</p>':'')+steps+
+     '<div class="frame"><p class="kick">Picture '+(i+1)+' of '+F.length+'</p><h3 style="margin-top:0">'+md(b.title)+'</h3>'+
+     (b.oneDay?'<div class="oneday"><b>One day:</b> '+md(cap(b.oneDay))+'</div>':b.plain?'<p>'+md(first(b.plain))+'</p>':'')+
+     picHTML(t,x.bi,x.k,x.p,store('pic:'+t.id+':'+(x.bi+1)+':'+x.k),false)+
+     '<p class="seenav"><a class="btn ghost" href="#'+t.id+'/bar/'+(x.bi+1)+'">Why is it like this?</a> <a class="btn" href="#'+t.id+'/see/'+(i+2)+'">'+(i<F.length-1?'Next picture →':'How it stacks up →')+'</a></p></div>';
+    wirePics(p,t,false)}
+  else p.innerHTML=steps+'<div class="frame"><p class="kick">All '+F.length+' pictures</p><h3 style="margin-top:0">How it stacks up</h3>'+
+     (t.web?'<div class="claim">'+md(t.web)+'</div>':'')+
+     '<p>No picture here is the whole story of anyone you will meet. Two questions are left: why it is like this, and what would actually help.</p>'+
+     '<p class="seenav"><a class="btn ghost" href="#'+t.id+'/bar">Why: the barriers →</a> <a class="btn" href="#'+t.id+'/act">What would actually help? →</a></p></div>'}
+
+/* ---------- Respond: help today, change the rule, stand with ---------- */
+var LANES=[['help','Help today','Meet the need in front of you.'],['rule','Change the rule','Change what it costs everyone.'],['with','Stand with','Join the people already working on it.']];
+function hrs(t,key){var s=store('hrs:'+t.id+':'+key).split(',').map(Number);return s.length===3&&!s.some(isNaN)?s:[0,0,0]}
+function hoursHTML(t,key,ask,why){var v=hrs(t,key),left=10-v[0]-v[1]-v[2];
+  return '<div class="act3" data-hrs="'+key+'"><p>'+ask+' Tap <b>+</b> to place your <b>10 blocks of time</b>.</p><div class="lanes">'+LANES.map(function(L,k){var bl='';for(var j=0;j<v[k];j++)bl+='<i></i>';
+     return '<div class="lane '+L[0]+'"><b>'+L[1]+'</b><span>'+L[2]+'</span><div class="blk" role="img" aria-label="'+v[k]+' blocks">'+bl+'</div>'+
+      '<div class="pm"><button data-m="'+k+'" aria-label="One less for '+L[1]+'"'+(v[k]<=0?' disabled':'')+'>−</button><b>'+v[k]+'</b><button data-p="'+k+'" aria-label="One more for '+L[1]+'"'+(left<=0?' disabled':'')+'>+</button></div></div>'}).join('')+'</div>'+
+   '<p class="muted" data-copyline>'+(left>0?left+' of 10 blocks left to place.':'My 10 blocks: help today '+v[0]+', change the rule '+v[1]+', stand with '+v[2]+'.')+'</p>'+
+   (left===0&&why?answerBox(t.id+':hrswhy:'+key,why):'')+'</div>'}
+function wireHours(root,t,after){root.querySelectorAll('[data-hrs]').forEach(function(box){var key=box.dataset.hrs;
+  box.querySelectorAll('[data-p],[data-m]').forEach(function(b){b.onclick=function(){var v=hrs(t,key),k=+(b.dataset.p||b.dataset.m);v[k]+=b.dataset.p?1:-1;
+    if(v[k]<0||v[0]+v[1]+v[2]>10)return;store('hrs:'+t.id+':'+key,v.join(','));after(key,b.dataset.p?'p':'m',k)}})})}
+function mix(v,label){var s=v[0]+v[1]+v[2];return '<div class="mixrow"><span>'+esc(label)+'</span>'+(s?'<div class="mix" role="img" aria-label="'+esc(label)+': help today '+v[0]+', change the rule '+v[1]+', stand with '+v[2]+'">'+LANES.map(function(L,k){return '<i class="'+L[0]+'" style="width:'+(v[k]/s*100)+'%">'+(v[k]/s>=.12?Math.round(v[k]/s*100)+'%':'')+'</i>'}).join('')+'</div>':'<div class="mix none">not placed yet</div>')+'</div>'}
+var WAYS=[['help','Help today','Someone is hungry tonight, and you bring food. The Church calls these the works of mercy.','Tomorrow, food costs what it cost today.',
+   '<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 26h32c0 9-7 14-16 14S8 35 8 26z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M18 20c-2-3 2-5 0-8M24 20c-2-3 2-5 0-8M30 20c-2-3 2-5 0-8" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>'],
+  ['rule','Change the rule','Ask who decided what this costs here, and work to change the decision. The Church calls this justice.','It is slow, and it feeds no one tonight.',
+   '<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 8v32M12 40h24M10 14h28" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M10 14l-6 12a6 6 0 0012 0zM38 14l-6 12a6 6 0 0012 0z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>'],
+  ['with','Stand with','People here are already working on it. Learn their names, follow their lead, and stay in it after you fly home. The Church calls this solidarity.','It costs you something: time, comfort, and being the one who does not lead.',
+   '<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="16" cy="13" r="5" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="32" cy="13" r="5" fill="none" stroke="currentColor" stroke-width="3"/><path d="M6 40V30a10 10 0 0118-6 10 10 0 0118 6v10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>']];
+function respond(t,p){var th=t.theology||{readings:[]},n=0,sum=[0,0,0];
+  t.barriers.forEach(function(b,i){var v=hrs(t,i);if(v[0]+v[1]+v[2]===10){n++;sum[0]+=v[0];sum[1]+=v[1];sum[2]+=v[2]}});
+  var wk=hrs(t,'week'),doing=t.barriers.map(function(b,i){return b.doing?'<li><a href="#'+t.id+'/bar/'+(i+1)+'">'+md(bare(b.title).split(/ [—:] | — /)[0])+'</a><span>'+md(first(b.doing))+'</span></li>':''}).join('');
+  p.innerHTML='<p class="lede">Seeing a barrier is not the end. There are three ways to respond. All three are needed, and they are not the same thing.</p>'+
+   '<div class="ways">'+WAYS.map(function(w){return '<div class="way '+w[0]+'">'+w[4]+'<h3>'+w[1]+'</h3><p>'+w[2]+'</p><p class="cant"><b>What it cannot do:</b> '+w[3]+'</p></div>'}).join('')+'</div>'+
+   '<div class="sec"><h3>Where does a week like yours go?</h3>'+hoursHTML(t,'week','Think about what your group will actually do this week.','')+'</div>'+
+   '<div class="sec"><h3>Your week, and what you would do</h3><p class="muted">On each barrier page you place 10 blocks. They add up here.</p>'+mix(wk,'The week we have')+mix(sum,n?'What I would do, across '+n+' barrier'+(n>1?'s':''):'What I would do')+
+     '<p class="legend"><span class="sg lhelp"></span> help today <span class="sg lrule"></span> change the rule <span class="sg lwith"></span> stand with</p>'+
+     answerBox(t.id+':act:gap','Look at the two bars. Where is the biggest gap, and what is one thing you could do from Denver about it?')+'</div>'+
+   (doing?'<div class="sec"><h3>Who is already at work here</h3><p class="muted">Solidarity starts with knowing who these people are.</p><ul class="work">'+doing+'</ul></div>':'')+
+   '<div class="sec"><h3>What the Church means by these words</h3><ul class="read">'+
+    '<li><b>Mercy and justice are two different feet.</b> Meeting a need today and changing what causes it are both required, and neither replaces the other. <a href="https://www.usccb.org/twofeet" target="_blank" rel="noopener">U.S. bishops, Two Feet of Love in Action</a>.</li>'+
+    '<li><b>Some help is a debt, not a gift.</b> When people lack what they need to live, giving it to them is first a matter of justice. <a href="https://www.vatican.va/archive/ENG0015/_INDEX.HTM" target="_blank" rel="noopener">Catechism of the Catholic Church</a>, 2443 to 2449.</li>'+
+    '<li><b>Solidarity is not a feeling.</b> It is a steady decision to work for the good of everyone, because we are responsible for one another. <a href="https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_30121987_sollicitudo-rei-socialis.html" target="_blank" rel="noopener">John Paul II, Sollicitudo Rei Socialis</a>, 38; Catechism 1939 to 1942.</li>'+
+    '<li><b>Solidarity goes to the causes.</b> It includes working against the structures that keep people poor. <a href="https://www.vatican.va/content/francesco/en/encyclicals/documents/papa-francesco_20201003_enciclica-fratelli-tutti.html" target="_blank" rel="noopener">Francis, Fratelli Tutti</a>, 116.</li>'+
+    '<li><b>Love is still needed in a just society.</b> Building fair structures is the work of politics; no structure removes the need for someone to show up. <a href="https://www.vatican.va/content/benedict-xvi/en/encyclicals/documents/hf_ben-xvi_enc_20051225_deus-caritas-est.html" target="_blank" rel="noopener">Benedict XVI, Deus Caritas Est</a>, 28.</li></ul></div>'+
+   (th.readings.length?'<div class="sec"><h3>For this place</h3><ul class="read">'+th.readings.map(function(r){return '<li>'+md(r)+'</li>'}).join('')+'</ul>'+
+     (th.question?'<div class="claim"><b>Carry this question:</b> '+md(th.question)+'</div>'+answerBox(t.id+':faith',th.question):'')+'</div>':'')+copyBtn('act');
+  wireHours(p,t,function(key,dir,k){respond(t,p);wireAnswers(p);wireCopy(p,t.name+' · Respond');var b=p.querySelector('[data-hrs="'+key+'"] [data-'+dir+'="'+k+'"]');if(b&&!b.disabled)b.focus()})}
+
 function before(t,p){
-  p.innerHTML='<h3>The fences in us</h3><p class="lede">What keeps us from seeing this place clearly. Read these before you pack.</p><div class="fences">'+
-   (t.fences||[]).map(function(f){return '<div class="fence"><b>'+md(f.h)+'</b><p>'+md(f.text)+'</p></div>'}).join('')+'</div>'+
+  p.innerHTML='<h3>The fences in us</h3><p class="lede">What keeps us from seeing this place clearly. Open each one. Mark the ones that are yours.</p><div class="fences">'+
+   (t.fences||[]).map(function(f,i){var k=t.id+':fence:'+i,on=store(k)==='1';return '<details class="fence'+(on?' mine':'')+'"><summary><b>'+md(f.h)+'</b></summary><p>'+md(f.text)+'</p><label class="chk"><input type="checkbox" data-fence="'+k+'" data-h="'+esc(bare(f.h))+'"'+(on?' checked':'')+'> This one is mine</label></details>'}).join('')+'</div><p class="muted" data-copyline id="fmine"></p>'+
    (t.carry||[]).map(function(c){return '<h3>'+md(c.h.replace(/\s*\(.*\)/,''))+'</h3><ul>'+c.items.map(function(i){return '<li>'+md(i)+'</li>'}).join('')+'</ul>'}).join('')+
-   '<h3>Before you go</h3><p class="muted">Your answers stay on this device.</p>'+(window.BEFORE||[]).map(function(q,i){return answerBox(t.id+':before:'+i,(i+1)+'. '+q)}).join('')+copyBtn('before');if(t.beforeExtra)t.beforeExtra(p)}
+   '<h3>Before you go</h3><p class="muted">Your answers stay on this device.</p>'+(window.BEFORE||[]).map(function(q,i){return answerBox(t.id+':before:'+i,(i+1)+'. '+q)}).join('')+copyBtn('before');
+  function mine(){var L=[];p.querySelectorAll('[data-fence]').forEach(function(c){if(c.checked)L.push(c.dataset.h)});var o=$('#fmine',p);if(o)o.textContent=L.length?'Fences I marked as mine: '+L.join('; ')+'.':''}
+  p.querySelectorAll('[data-fence]').forEach(function(c){c.onchange=function(){store(c.dataset.fence,c.checked?'1':'0');c.closest('.fence').classList.toggle('mine',c.checked);mine()}});mine();
+  if(t.beforeExtra)t.beforeExtra(p)}
 function after(t,p){p.innerHTML='<p class="lede">Do these in the first week home. Your answers stay on this device.</p>'+(window.AFTER||[]).map(function(q,i){return answerBox(t.id+':after:'+i,(i+1)+'. '+q)}).join('')+copyBtn('after')}
-function faith(t,p){var th=t.theology||{readings:[]};
-  p.innerHTML='<p class="lede">A theology of encounter: what the Church and people of faith say about meeting this place and its people.</p><ul class="read">'+th.readings.map(function(r){return '<li>'+md(r)+'</li>'}).join('')+'</ul>'+
-   (th.question?'<div class="claim"><b>Carry this question:</b> '+md(th.question)+'</div>'+answerBox(t.id+':faith',th.question)+copyBtn('faith'):'')}
 function sources(t,p){p.innerHTML='<p class="lede">Every number on these pages comes from one of these. Check them yourself: newer data may exist.</p>'+
   (t.sources||[]).map(function(g){return '<h3>'+md(g.h)+'</h3><ul class="src">'+g.items.map(function(i){return '<li>'+(i.url?'<a href="'+esc(i.url)+'" target="_blank" rel="noopener">'+md(i.t)+'</a>':md(i.t))+'</li>'}).join('')+'</ul>'}).join('')+
   ((t.voices||[]).length?'<h2>Voices from the place</h2>'+t.voices.map(function(v){return '<h3>'+md(v.h)+'</h3><ul>'+v.items.map(function(i){return '<li>'+md(i)+'</li>'}).join('')+'</ul>'}).join(''):'')}
@@ -304,6 +419,6 @@ window.TRIP_ROUTE=function(h){
   if(h[0]==='rules'&&window.RULES_PAGE){window.RULES_PAGE();return true}
   if(h[0]==='road'&&window.ROAD_PAGE){window.ROAD_PAGE();return true}
   var t=T[h[0]];if(!t||t.status!=='public')return false;
-  var sub=h[2];if(h[1]==='bar'&&sub!=null){sub=parseInt(sub,10)-1;if(isNaN(sub))sub=null}
+  var sub=h[2];if((h[1]==='bar'||h[1]==='see')&&sub!=null){sub=parseInt(sub,10)-1;if(isNaN(sub))sub=null}
   page(t,h[1],sub==null?null:sub);return true};
 })();
