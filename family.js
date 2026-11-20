@@ -54,6 +54,26 @@ var WHY_NOW=[
  S('Honduran children who migrated named joining family (29.2%) and work (27.8%); 63.4% traveled on their own.','IOM survey via La Prensa','https://www.laprensa.hn/honduras/oim-menores-hondurenos-migra-cuenta-propia-hacia-estados-unidos-HB14046573'),
  S('People who fled Venezuela name economic collapse, political repression and insecurity.','WIIS, Feb 2026','https://wiis.ssmu.ca/2026/02/17/reverse-migration-and-criminal-adaptation-a-new-phase-in-venezuelas-displacement-crisis/')];
 
+var VB_SRC=[S('U.S. State Department Visa Bulletin, November 2026 (final action dates), summarized by GCEB','GCEB, Nov 2026','https://gceb1.com/november-2026-visa-bulletin-family-dates-leap-a-full-year-as-employment-categories-inch-ahead'),
+ S('Same bulletin, summarized by Herman Legal Group','HLG','https://www.lawfirm4immigrants.com/immigration-resources/visa-bulletin-updates/')];
+var VB_C=[{id:'all',label:'Most countries (incl. Honduras, Guatemala, Venezuela, Peru, Ecuador)'},{id:'mx',label:'Mexico'},{id:'ph',label:'Philippines'},{id:'in',label:'India'},{id:'cn',label:'China'}];
+var VB=[
+ {id:'ir',label:'Spouse, parent, or child under 21 of a U.S. citizen',none:true},
+ {id:'f2a',label:'Spouse or child under 21 of a green-card holder',d:{all:'2026-10-22',mx:'2026-04-22',ph:'2026-10-22'}},
+ {id:'f1',label:'Unmarried adult son or daughter of a U.S. citizen',d:{all:'2021-01-22',mx:'2008-09-22',ph:'2013-11-01'},care:{mx:1,ph:1}},
+ {id:'f2b',label:'Unmarried adult son or daughter of a green-card holder',d:{all:'2020-08-22',cn:'2020-08-22',in:'2020-08-22',mx:'2010-05-15',ph:'2013-10-01'}},
+ {id:'f3',label:'Married son or daughter of a U.S. citizen',d:{all:'2015-10-22',cn:'2015-10-22',in:'2015-10-22',mx:'2001-07-15',ph:'2006-07-22'}},
+ {id:'f4',label:'Brother or sister of an adult U.S. citizen',d:{all:'2012-10-22',cn:'2012-10-22',in:'2006-12-15',mx:'2001-04-22',ph:'2008-05-15'}}];
+var WAIT=[
+ S('Government fees for a relative applying from abroad run about $675 for the petition, $325 for the visa application, $120 for the financial-support review and $235 for the green card.','Nolo/AllLaw; eCFR 8 CFR 106.2','https://www.alllaw.com/articles/nolo/us-immigration/how-much-will-it-cost-get-green-card.html'),
+ S('A relative who entered without permission and has lived in the U.S. more than a year faces a 10-year bar if they leave to collect the visa abroad (3 years for more than 180 days). This is why many families with a citizen member cannot simply go home and come back legally.','American Immigration Council','https://americanimmigrationcouncil.org/fact-sheet/three-and-ten-year-bars'),
+ S('People asking for asylum in immigration court wait on average 1,764 days, almost five years, just for a hearing to be scheduled.','TRAC, May 2026','https://tracreports.org/whatsnew/email.260506.html'),
+ S('In Mexico, a refugee applicant may work once they hold a temporary CURP and a humanitarian visitor card, but moving to another state without COMAR permission counts as abandoning the case.','UNHCR Mexico','https://help.unhcr.org/mexico/como-solicitar-la-condicion-de-refugiado-en-mexico/'),
+ S('While they wait, the family at home is waiting too: Hondurans who send money home regularly average $506 a month, more than a self-employed worker in Honduras earns.','BCH survey via La Prensa, Jan 2026','https://www.laprensa.hn/honduras/remesas-honduras-migrantes-envios-bch-2026-FD31762788')];
+var NOWD=new Date('2026-11-01');
+function yrs(d){var x=(NOWD-new Date(d))/31557600000;return x<1?'less than a year':'about '+Math.round(x)+' year'+(Math.round(x)===1?'':'s')}
+function fdate(d){var m=['January','February','March','April','May','June','July','August','September','October','November','December'],p=d.split('-');return m[+p[1]-1]+' '+(+p[2])+', '+p[0]}
+
 var ASK=['Who was the first in our family to come here, and from where?',
  'Why did they leave then, and not earlier or later?',
  'Who decided, and who stayed behind?',
@@ -66,10 +86,17 @@ var ASK=['Who was the first in our family to come here, and from where?',
  'What do you wish people today understood about it?'];
 
 function render(app){
-  var st={how:{},era:{},why:{},notes:''};
+  var st={how:{},era:{},why:{},notes:'',rel:'f4',ctry:'all'};
   document.title='Your family’s road · Raider Immersions';
   function chk(group,list){return '<div class="fq">'+list.map(function(x){return '<label class="fchk"><input type="checkbox" data-g="'+group+'" value="'+x.id+'"'+(st[group][x.id]?' checked':'')+'> '+esc(x.label)+'</label>'}).join('')+'</div>'}
   function facts(arr){return '<ul class="cus">'+arr.map(function(f){return '<li>'+esc(f.text)+' <small>Source: '+src(f)+'</small></li>'}).join('')+'</ul>'}
+  function vbOut(){
+    var r=VB.filter(function(x){return x.id===st.rel})[0],c=VB_C.filter(function(x){return x.id===st.ctry})[0],t;
+    if(r.none)t='<p><b>No line.</b> There is no yearly cap for these relatives, only processing time and fees. But the bar described below can still keep a family apart for 3 or 10 years.</p>';
+    else{var d=r.d[st.ctry];
+      if(!d)t='<p>We have not checked this country for this line yet. Look it up in the bulletin below.</p>';
+      else t='<p class="big">'+esc(yrs(d))+'</p><p>The State Department is now issuing visas to people in this line whose relative filed for them before <b>'+esc(fdate(d))+'</b>. Someone who filed after that is still waiting.'+(r.care&&r.care[st.ctry]?' <small>(Read with care: from one summary.)</small>':'')+'</p>'}
+    return '<div class="fam mirrorbox"><h4>'+esc(r.label)+' · '+esc(c.label)+'</h4>'+t+'<p class="muted" style="font-size:14px">Years are our arithmetic from the bulletin date to November 2026. Lines can move forward or backward each month.</p><small>Source: '+VB_SRC.map(src).join('; ')+' · <a href="https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html" target="_blank" rel="noopener">Check it yourself</a></small></div>'}
   function draw(){
     var hows=HOW.filter(function(x){return st.how[x.id]}),eras=ERAS.filter(function(x){return st.era[x.id]}),whys=WHY.filter(function(x){return st.why[x.id]});
     var h='<a class="back" href="#">← All immersions</a><p class="kick">For every trip</p><h2 style="margin-top:0">Your family’s road</h2>'+
@@ -82,15 +109,21 @@ function render(app){
        (eras.length?'<div class="fam mirrorbox"><h4>The rules for someone arriving in November 2026</h4>'+facts(NOW)+'<p class="fsum">Would the road your family took still be open? If not, what closed it, and when?</p></div>':'')+'</div>'+
      '<div class="sec"><h3>3 · Why did they leave?</h3><p class="muted">Pick what you know. Families often had several reasons at once.</p>'+chk('why',WHY)+
        (whys.length?'<div class="fam"><h4>What people leaving now say</h4>'+facts(WHY_NOW)+'<p class="fsum">Which of your family’s reasons will you hear from people on your trip? Which won’t you hear?</p></div>':'')+'</div>'+
-     '<div class="sec"><h3>4 · Ask someone in your family</h3><p>Pick a few questions, not all ten. Ask; don’t push. “I don’t want to talk about it” is an answer too. You never need to ask about anyone’s papers.</p><ol class="ask">'+ASK.map(function(q){return '<li>'+esc(q)+'</li>'}).join('')+'</ol></div>'+
-     '<div class="sec"><h3>5 · Your notes</h3><label class="ans"><span>What did you learn, and what will you listen for on your trip?</span><textarea rows="6" data-notes>'+esc(st.notes)+'</textarea></label>'+
+     '<div class="sec"><h3>4 · What “wait in line and come legally” means now</h3><p class="muted">People often say a family should wait its turn. Pick a relationship and a country to see how long the line is in November 2026. This is about the rules, not about anyone you know.</p>'+
+       '<div class="sl"><label>Who is waiting <select data-rel>'+VB.map(function(x){return '<option value="'+x.id+'"'+(st.rel===x.id?' selected':'')+'>'+esc(x.label)+'</option>'}).join('')+'</select></label></div>'+
+       '<div class="sl"><label>Born in <select data-ctry>'+VB_C.map(function(x){return '<option value="'+x.id+'"'+(st.ctry===x.id?' selected':'')+'>'+esc(x.label)+'</option>'}).join('')+'</select></label></div>'+
+       vbOut()+'<div class="fam"><h4>What the wait costs</h4>'+facts(WAIT)+'<p class="fsum">If your family had faced this line, could they have waited? What would they have lived on while they did?</p></div></div>'+
+     '<div class="sec"><h3>5 · Ask someone in your family</h3><p>Pick a few questions, not all ten. Ask; don’t push. “I don’t want to talk about it” is an answer too. You never need to ask about anyone’s papers.</p><ol class="ask">'+ASK.map(function(q){return '<li>'+esc(q)+'</li>'}).join('')+'</ol></div>'+
+     '<div class="sec"><h3>6 · Your notes</h3><label class="ans"><span>What did you learn, and what will you listen for on your trip?</span><textarea rows="6" data-notes>'+esc(st.notes)+'</textarea></label>'+
        '<p><button class="btn" data-copyall>Copy everything</button> <span class="muted" data-copied></span></p><p class="muted" style="font-size:14px">Not saved. Copy it into your journal or an email to yourself before you leave the page.</p></div>';
     app.innerHTML=h;
     app.querySelectorAll('[data-g]').forEach(function(c){c.onchange=function(){st[c.dataset.g][c.value]=c.checked;var y=window.scrollY;draw();window.scrollTo(0,y);var el=app.querySelector('[data-g="'+c.dataset.g+'"][value="'+c.value+'"]');if(el)el.focus()}});
+    app.querySelector('[data-rel]').onchange=function(e){st.rel=e.target.value;var y=window.scrollY;draw();window.scrollTo(0,y)};
+    app.querySelector('[data-ctry]').onchange=function(e){st.ctry=e.target.value;var y=window.scrollY;draw();window.scrollTo(0,y)};
     var ta=app.querySelector('[data-notes]');ta.oninput=function(){st.notes=ta.value};
     app.querySelector('[data-copyall]').onclick=function(){
       var lab=function(list,g){return list.filter(function(x){return st[g][x.id]}).map(function(x){return '- '+x.label}).join('\n')||'- (none picked)'};
-      var txt='Your family’s road (Raider Immersions)\n\nHow we came to be here:\n'+lab(HOW,'how')+'\n\nWhen:\n'+lab(ERAS,'era')+'\n\nWhy they left:\n'+lab(WHY,'why')+'\n\nQuestions to ask:\n'+ASK.map(function(q,i){return (i+1)+'. '+q}).join('\n')+'\n\nMy notes:\n'+(st.notes||'(blank)');
+      var txt='Your family’s road (Raider Immersions)\n\nHow we came to be here:\n'+lab(HOW,'how')+'\n\nWhen:\n'+lab(ERAS,'era')+'\n\nWhy they left:\n'+lab(WHY,'why')+'\n\nThe legal line I looked at: '+VB.filter(function(x){return x.id===st.rel})[0].label+' ('+VB_C.filter(function(x){return x.id===st.ctry})[0].label+')\n\nQuestions to ask:\n'+ASK.map(function(q,i){return (i+1)+'. '+q}).join('\n')+'\n\nMy notes:\n'+(st.notes||'(blank)');
       var out=app.querySelector('[data-copied]');
       try{navigator.clipboard.writeText(txt).then(function(){out.textContent='Copied.'},function(){out.textContent='Copy failed; select the text and copy it.'})}catch(e){out.textContent='Copy failed; select the text and copy it.'}};
   }

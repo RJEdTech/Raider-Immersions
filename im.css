@@ -113,3 +113,4 @@ button.linkish{background:none;border:0;color:var(--rj,#a6192e);text-decoration:
 .nf>li{margin:.6em 0}.wq button.on{background:var(--rj);color:#fff;border-color:var(--rj)}.pill.yes{background:#e3f3e6;color:#1d6b2e}.pill.no{background:#fbe4e4;color:#9b1c1c}.rates p{margin:.3em 0}.nfa{margin-top:.3em}
 .sec .wq button{margin:3px 2px}
 .fq{display:grid;gap:6px;margin:.5em 0}.fchk{display:flex;gap:8px;align-items:flex-start;font-size:16px}.fchk input{margin-top:4px;width:18px;height:18px;flex:0 0 18px}.ask li{margin:.35em 0}.mirrorbox{border-left:4px solid var(--rj)}
+.mirrorbox .big{font-size:30px;font-weight:700;margin:.2em 0}
