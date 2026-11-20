@@ -1,4 +1,4 @@
-/* Different rules: a 12-week precarity game. Same family, same events, same choices, replayed under Denver's rules.
+/* Different rules: a 12-week precarity simulation. Same family, same events, same choices, replayed under Denver's rules.
    Every number comes from the trip's lab data (labs/<id>.json → TRIPS[id].interactive), with its source shown. */
 (function(){'use strict';
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
@@ -69,7 +69,7 @@ function render(app){
   function bar(v,max){return '<span class="sg gap" style="width:'+Math.max(0,Math.min(100,v/(max||1)*100))+'%"></span>'}
   function draw(){
     var C=cards(),R=run(P,st,'here',C,st.choices,st.week),cur=P.cur,h='';
-    h+='<a class="back" href="#">← All immersions</a><p class="kick">A game for every trip</p><h2 style="margin-top:0">Different rules</h2>'+
+    h+='<a class="back" href="#">← All immersions</a><p class="kick">A simulation for every trip</p><h2 style="margin-top:0">Different rules</h2>'+
       '<p class="lede">Twelve weeks with a family’s real income and real prices. Each week a card says what happens. You choose what to cut. Then the same twelve weeks, the same cards and your same choices are replayed under Denver’s rules.</p>'+
       '<div class="claim">The family is a composite, not a real family. Every amount comes from a source you can check; anything marked <span class="pill care">your estimate</span> has no source yet.</div>';
     // setup
@@ -105,7 +105,7 @@ function render(app){
         '<p><b>Why the cash worker rarely gets the money back.</b> Denver’s minimum wage and wage-theft rules cover every worker, with or without papers. But a worker who fears being reported does not complain: in a survey of 411 day laborers at Denver-area hiring sites, 62% had been cheated of wages and fewer than 40% of them asked anyone for help (Galemba, University of Denver, 2016–17; older, read with care). The card <i>A buyer or boss doesn’t pay</i> is the one that happens most often and is reported least.</p>'+
         (P.doing?'<p><b>What families here do instead.</b> '+esc(P.doing.text)+' <small>Source: '+esc(P.doing.src)+'</small></p>':'')+
         '<div class="claim"><b>Your call.</b> Which made the bigger difference over twelve weeks: how much the family earned, or the rules around the work? What did the Denver cash worker have in common with the family on your trip?</div>'+
-        '<p><button class="btn" data-again>Play again with a new deck</button></p></div>'}
+        '<p><button class="btn" data-again>Run it again with a new deck</button></p></div>'}
     app.innerHTML=h;wire()}
   function wire(){
     var q=function(s){return app.querySelector(s)};

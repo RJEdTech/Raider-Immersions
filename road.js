@@ -127,13 +127,13 @@ C.cuba={name:'A Cuban deported to Mexico',sub:'Detained in Texas in 2025 and sen
 
 // ---------- endings (none is a win) ----------
 var E={
- E_stay:{title:'Stayed home, in the informal economy',text:'No debt for a trip, no one gone. Also no floor under a bad week.',facts:['remit'],link:['#rules','Play Different rules to live twelve weeks of it']},
+ E_stay:{title:'Stayed home, in the informal economy',text:'No debt for a trip, no one gone. Also no floor under a bad week.',facts:['remit'],link:['#rules','Try Different rules to live twelve weeks of it']},
  E_returnedChild:{title:'Returned home',text:'Sent back to Honduras. The trip did not happen, but the family still owes whatever it borrowed.',facts:['returned','afterReturn','again']},
  E_mexico:{title:'Protected in Mexico',text:'Granted refuge or protection in Mexico. You may live and work there and move freely. It is not the U.S., the pay is lower, and some people make clear they do not want you.',facts:['comar87','comarWork','mexDisc']},
  E_strandedMx:{title:'Stranded in Mexico',text:'No papers, no case, no way forward and nothing to go back to. Work is off the books.',facts:['mexDisc','tjShel']},
  E_custody:{title:'Still in custody',text:'No sponsor came forward. You are still in a shelter for children, months after arriving.',facts:['custody']},
  E_living:{title:'Living in the U.S. without papers',text:'You are here, working, and sending money home. Every year carries a risk of arrest, and you pay taxes for benefits you cannot use.',facts:['ice','taxes','wage','remit']},
- E_court:{title:'Granted asylum',text:'A judge granted asylum. This is the rarest ending in the game, and it came after years of waiting.',facts:['asylum','hearing']},
+ E_court:{title:'Granted asylum',text:'A judge granted asylum. This is the rarest ending in this simulation, and it came after years of waiting.',facts:['asylum','hearing']},
  E_deportHome:{title:'Deported home',text:'Sent back to Honduras with the debt still owed.',facts:['returned','afterReturn','again']},
  E_deportMex:{title:'Deported to Mexico',text:'Sent to Mexico, a country that is not your own.',facts:['third','mexDisc']},
  E_deportThird:{title:'Deported to a country across the world',text:'Sent to a country in Africa you have never seen. Many people sent there are detained and end up going home anyway.',facts:['third','hrw']},
@@ -197,7 +197,7 @@ function render(app){
   function finish(id){st.end=id;st.node=null;draw()}
   function start(c){st.c=c;st.debt=0;st.months=0;st.sent=0;st.log=[];st.end=null;st.work=null;st.pending=null;go(C[c].start)}
 
-  function oddsPanel(){return '<details class="sec"><summary><b>The odds this game uses</b> (change any of them)</summary><p class="muted">No agency counts how many people who leave end up living in the U.S. Most odds below are not published anywhere. Each is labeled: <i>sourced</i>, <i>survey share</i> (people asked, not anyone’s odds), <i>our arithmetic</i>, or <i>your estimate</i>.</p>'+
+  function oddsPanel(){return '<details class="sec"><summary><b>The odds this simulation uses</b> (change any of them)</summary><p class="muted">No agency counts how many people who leave end up living in the U.S. Most odds below are not published anywhere. Each is labeled: <i>sourced</i>, <i>survey share</i> (people asked, not anyone’s odds), <i>our arithmetic</i>, or <i>your estimate</i>.</p>'+
     Object.keys(ODDS).map(function(k){var o=ODDS[k];return '<label class="sl" style="display:block;margin:.6em 0">'+esc(o.label)+': <b>'+st.odds[k]+'%</b> <span class="pill'+(o.kind==='yours'?' care':'')+'">'+KIND[o.kind]+'</span><input type="range" min="0" max="100" step="'+(o.def<10?0.5:1)+'" value="'+st.odds[k]+'" data-odds="'+k+'"><span class="muted" style="font-size:14px">'+esc(o.why)+' <small>Source: '+srcA(F[o.f])+'</small></span></label>'}).join('')+'</details>'}
 
   function ledger(){var ch=C[st.c];return '<p class="muted">Time on the road: '+(st.months<24?st.months+' month'+(st.months===1?'':'s'):fmt(st.months/12)+' years')+' · Debt for the trip: $'+fmt(st.debt)+(st.sent?' · Sent home: $'+fmt(st.sent):'')+'</p>'}
@@ -206,15 +206,15 @@ function render(app){
     var h='<a class="back" href="#">← All immersions</a><p class="kick">A simulation for every trip</p><h2 style="margin-top:0">The road north</h2>';
     if(!st.c){
       h+='<p class="lede">Six people, six starting points, the rules of November 2026. Choices are yours; some things are left to chance, and every chance is shown with where its number comes from.</p>'+
-       '<div class="claim"><b>Before you start.</b> Every character is a composite, not a real person. The game never shows routes or ways around the law, and it has no winning ending: nobody counts how many people who leave end up living in the U.S. Some of you have family who made a journey like this. You can play, or <a href="#" data-facts>just read the facts</a>. Nothing you do here is saved.</div>'+
+       '<div class="claim"><b>Before you start.</b> Every character is a composite, not a real person. The simulation never shows routes or ways around the law, and it has no winning ending: nobody counts how many people who leave end up living in the U.S. Some of you have family who made a journey like this. You can walk through it as a character, or <a href="#" data-facts>just read the facts</a>. Nothing you do here is saved.</div>'+
        '<div class="grid">'+Object.keys(C).map(function(k){return '<button class="card" data-char="'+k+'" style="text-align:left;cursor:pointer"><h3>'+esc(C[k].name)+'</h3><div class="meta">'+esc(C[k].sub)+'</div></button>'}).join('')+'</div>'+oddsPanel();
-      if(st.facts)h+='<div class="sec"><h3>The facts, without playing</h3>'+facts(Object.keys(F))+'</div>';
+      if(st.facts)h+='<div class="sec"><h3>The facts, on their own</h3>'+facts(Object.keys(F))+'</div>';
     } else if(st.end){var e=E[st.end];
       h+='<p class="kick">'+esc(C[st.c].name)+'</p><div class="fam mirrorbox"><h4>Ending</h4><p class="big" style="font-size:26px">'+esc(e.title)+'</p><p>'+esc(e.text)+'</p>'+ledger()+facts(e.facts)+(e.link?'<p><a href="'+e.link[0]+'">'+esc(e.link[1])+' →</a></p>':'')+'</div>'+
-        '<div class="fam"><h4>How realistic was that?</h4><p>Only one ending in this game gives legal status in the U.S., and it is the rarest. In 2026 the real numbers point the same way at every stage:</p>'+facts(['border95','asylum','ice','again'])+'<p class="muted" style="font-size:14px">Play it again, or compare endings with your class. If almost everyone ends somewhere other than where they set out for, the game is doing its job.</p></div>'+
+        '<div class="fam"><h4>How realistic was that?</h4><p>Only one ending in this simulation gives legal status in the U.S., and it is the rarest. In 2026 the real numbers point the same way at every stage:</p>'+facts(['border95','asylum','ice','again'])+'<p class="muted" style="font-size:14px">Run it again, or compare endings with your class. If almost everyone ends somewhere other than where they set out for, the simulation is showing something true.</p></div>'+
         (st.log.length?'<div class="sec"><h3>How you got here</h3><ol class="cus wlog">'+st.log.map(function(l){return '<li>'+l+'</li>'}).join('')+'</ol></div>':'')+
         '<div class="claim"><b>Before your trip.</b> Which of these endings might belong to someone you will meet? What would you want to listen for, and what would you never ask?</div>'+
-        '<p><button class="btn" data-again>Play this character again</button> <button class="btn" data-menu>Choose another character</button> <button class="btn" data-copy>Copy my journey</button> <span class="muted" data-copied></span></p>'+oddsPanel();
+        '<p><button class="btn" data-again>Run this character again</button> <button class="btn" data-menu>Choose another character</button> <button class="btn" data-copy>Copy my journey</button> <span class="muted" data-copied></span></p>'+oddsPanel();
     } else {var ch=C[st.c],sc=st.pending&&st.pending.exploit?null:ch.scenes[st.node];
       h+='<p class="kick">'+esc(ch.name)+'</p>'+ledger();
       if(st.pending&&st.pending.exploit){
