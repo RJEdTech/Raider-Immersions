@@ -118,3 +118,4 @@ button.linkish{background:none;border:0;color:var(--rj,#a6192e);text-decoration:
 .wlog{font-size:15px}.wlog li{margin:.35em 0}
 .dangerbox{border-left:4px solid var(--bad)}.choices{display:grid;gap:.6em;margin:.4em 0 1em}.choice{display:flex;flex-direction:column;gap:.25em}.choice button{text-align:left}.choice span{font-size:14px}.roadmapd summary{cursor:pointer;font-size:14px}
 .choice button{border-radius:12px;align-self:flex-start;border-color:var(--rj)}
+.easy{border-left:3px solid var(--rj);padding:.2em 0 .2em 1em;margin:.6em 0;font-size:16px;line-height:1.5}.easy p{margin:.6em 0}

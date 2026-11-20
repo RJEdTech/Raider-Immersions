@@ -276,7 +276,7 @@ function before(t,p){
   p.innerHTML='<h3>The fences in us</h3><p class="lede">What keeps us from seeing this place clearly. Read these before you pack.</p><div class="fences">'+
    (t.fences||[]).map(function(f){return '<div class="fence"><b>'+md(f.h)+'</b><p>'+md(f.text)+'</p></div>'}).join('')+'</div>'+
    (t.carry||[]).map(function(c){return '<h3>'+md(c.h.replace(/\s*\(.*\)/,''))+'</h3><ul>'+c.items.map(function(i){return '<li>'+md(i)+'</li>'}).join('')+'</ul>'}).join('')+
-   '<h3>Before you go</h3><p class="muted">Your answers stay on this device.</p>'+(window.BEFORE||[]).map(function(q,i){return answerBox(t.id+':before:'+i,(i+1)+'. '+q)}).join('')+copyBtn('before')}
+   '<h3>Before you go</h3><p class="muted">Your answers stay on this device.</p>'+(window.BEFORE||[]).map(function(q,i){return answerBox(t.id+':before:'+i,(i+1)+'. '+q)}).join('')+copyBtn('before');if(t.beforeExtra)t.beforeExtra(p)}
 function after(t,p){p.innerHTML='<p class="lede">Do these in the first week home. Your answers stay on this device.</p>'+(window.AFTER||[]).map(function(q,i){return answerBox(t.id+':after:'+i,(i+1)+'. '+q)}).join('')+copyBtn('after')}
 function faith(t,p){var th=t.theology||{readings:[]};
   p.innerHTML='<p class="lede">A theology of encounter: what the Church and people of faith say about meeting this place and its people.</p><ul class="read">'+th.readings.map(function(r){return '<li>'+md(r)+'</li>'}).join('')+'</ul>'+
