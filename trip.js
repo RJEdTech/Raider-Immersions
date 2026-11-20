@@ -28,7 +28,7 @@ function numberCard(t,n){var u=srcUrl(t,n.src);
 var TABS=[['see','See it'],['bar','Barriers'],['cush','What catches you'],['labs','Labs'],['act','Respond'],['before','Before you go'],['after','After you return'],['over','The place'],['src','Sources']];
 
 function page(t,tab,sub){
-  document.title=t.name+' · Raider Immersions';tab=tab||(allPics(t).length?'see':'over');if(tab==='faith')tab='act';if(tab==='see'&&!allPics(t).length)tab='over';
+  document.title=t.name+' · Raider Immersions';tab=tab||(allPics(t).length&&!t.weekIntro?'see':'over');if(tab==='faith')tab='act';if(tab==='see'&&!allPics(t).length)tab='over';
   var app=$('#app');
   app.innerHTML='<a class="back" href="#">← All immersions</a><p class="kick">Immersion · research as of '+esc(t.asOf)+'</p><h2 style="margin-top:0">'+esc(t.name)+'</h2>'+
    '<div class="tabs" role="tablist">'+TABS.map(function(x){return '<button role="tab" aria-selected="'+(x[0]===tab)+'" data-tab="'+x[0]+'">'+x[1]+'</button>'}).join('')+'</div><div id="pane"></div>';
