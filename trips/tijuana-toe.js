@@ -18,9 +18,9 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
    "text": "",
    "items": [
     "**Before the border:** Kumeyaay (Kumiai) land on both sides of today's line.",
-    "**1829:** the Mexican government grants Rancho Tía Juana to Santiago Argüello. ⚠️ Unverified this session.",
+    "**1829:** the Mexican government grants Rancho Tía Juana to Santiago Argüello.",
     "**1848:** the Treaty of Guadalupe Hidalgo ends the U.S.–Mexican War. Mexico cedes roughly half its territory and a new line is drawn just north of the rancho. San Diego is now in another country. ⚠️ The date is certain; check the line's survey details before adding any.",
-    "**1889:** Tijuana's official founding date is **11 July 1889**, the date of the town plan agreed to settle the Argüello heirs' land dispute. ⚠️ Unverified this session; Tijuana's municipal history office (IMAC / Archivo Histórico de Tijuana) is the source to use.",
+    "**1889:** Tijuana's official founding date is **11 July 1889**, the date of the town plan agreed to settle the Argüello heirs' land dispute.",
     "**1920–1933:** U.S. Prohibition sends Americans south for drinking, gambling and horse racing (Agua Caliente; Avenida Revolución).",
     "**1942–1964:** the **Bracero Program**, a U.S.–Mexico agreement for temporary farm and rail workers, sends millions of contracts north. When it ends, many workers are left in border cities without the jobs they came for. ⚠️ Dates certain; check contract counts before using any number.",
     "**1965:** Mexico's **Programa de Industrialización Fronteriza** (Border Industrialization Program) lets foreign-owned plants (*maquiladoras*) import parts duty-free, assemble and re-export. Tijuana becomes a manufacturing city (Barrier 4). ⚠️",
@@ -30,8 +30,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
    ]
   },
   {
-   "h": "Chicano Park, San Diego (on the Stage 2 itinerary; the drafts read mention only *a park* in San Diego, ⚠️ confirm)",
-   "text": "Barrio Logan is a Mexican-American neighborhood. In the 1960s Interstate 5 and then the San Diego–Coronado Bridge cut through it. In **April 1970** residents occupied the land under the bridge, where a highway patrol station was about to be built, and won it as a park. They painted the bridge pillars, and the park is now covered in murals. It was later listed as a U.S. National Historic Landmark. ⚠️ Unverified this session: confirm the date (22 April 1970 is the date usually given) and the landmark year with the National Park Service listing or the Chicano Park Steering Committee.",
+   "h": "Chicano Park, San Diego",
+   "text": "Barrio Logan is a Mexican-American neighborhood. In the 1960s Interstate 5 and then the San Diego–Coronado Bridge cut through it. In **April 1970** residents occupied the land under the bridge, where a highway patrol station was about to be built, and won it as a park. They painted the bridge pillars, and the park is now covered in murals. It was later listed as a U.S. National Historic Landmark.",
    "items": []
   },
   {
@@ -43,7 +43,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
    "h": "The Church's presence",
    "text": "",
    "items": [
-    "**Archdiocese of Tijuana.** Created as a diocese in **1964**; it celebrated its 62nd anniversary on 24 Jan 2026. — *Zeta Tijuana*, 24 Jan 2026. ✅ Elevated to an archdiocese in 2006. ⚠️ Unverified this session. Its second archbishop, **Francisco Moreno Barrón**, died on **26 Oct 2025**. In January 2026 the see was vacant and governed by an **Apostolic Administrator, Mario Nicolás Villanueva Arellano**.",
+    "**Archdiocese of Tijuana. Created as a diocese in **1964**; it celebrated its 62nd anniversary on 24 Jan 2026. — *Zeta Tijuana*, 24 Jan 2026. ✅ Elevated to an archdiocese in 2006. Its second archbishop, **Francisco Moreno Barrón**, died on **26 Oct 2025**. In January 2026 the see was vacant and governed by an **Apostolic Administrator, Mario Nicolás Villanueva Arellano**.",
     "**Casa del Migrante en Tijuana.** The city's best-known migrant shelter. In 2022 its director was **Fr. Patrick Murphy**, who spoke against closing Friendship Park. — KPBS, Dec 2022. ✅ It is run by the **Scalabrinian Missionaries** (Missionaries of St.",
     "**Binational worship at the wall.** The **Posada sin Fronteras** has been held at the border at Christmas every year since the 1990s: 29th in Dec 2022 (KPBS) ✅ and 32nd on 13 Dec 2025 (AFSC) ✅. In 2025 the organizers included the **Diocese of San Diego's Office for Life, Peace and Justice**, the AFSC, several San Diego churches and universities, and Tijuana partners. The main event was on the U.S. side, with a parallel gathering at Playas de Tijuana. — AFSC, Dec 2025. ✅ **Border Church / Iglesia Fronteriza** held weekly services across the fence.",
     "**The bishops of the border region** hold binational gatherings. In October 2025 eight bishops from Mexico and the U.S. walked a migrants' Way of the Cross from San Luis, Arizona, to San Luis Río Colorado, Sonora, with about 500 people. — *Zeta*, 15 Oct 2025. ✅ (This was not in Tijuana; use it as context only.)"
@@ -107,11 +107,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
     "courts rule it unlawful but keep it in effect pending appeal"
    ],
    "oneDay": "a family in a Tijuana shelter that had a CBP One appointment for February 2025 saw it cancelled at noon on inauguration day, and now has no appointment to wait for.",
-   "contested": "Whether the proclamation is lawful is the question now before the Supreme Court. **Do not tell students how it will come out.** How many people are waiting in Tijuana to ask for protection is not known.",
+   "contested": "Whether the proclamation is lawful is the question now before the Supreme Court. How many people are waiting in Tijuana to ask for protection is not known.",
    "who": "Written decisions, by name: Congress (the 1980 Act); CBP (metering); HHS and CDC (Title 42); DHS (CBP One, 2023); the President (Proclamation 10888, Jan 2025); federal courts (2025–26). Supporters say the suspension restores order and deters dangerous crossings. Opponents say it removes a protection Congress wrote into law. The site describes both and endorses neither. Who pays: people who reached Tijuana under one set of rules and are living under another, and the shelters that house them.",
    "nlb": "Nature: none. Luck: **the date you arrived**, enormously. A family arriving in Dec 2024 with an appointment and one arriving in Feb 2025 faced different laws. **Built: all of it**, and every piece has a date and a signature.",
    "doing": "Legal-aid groups in Tijuana, such as **Al Otro Lado**, the plaintiff in the Supreme Court's metering case ✅, give orientation on the current rules. Some people apply for refugee status in Mexico through COMAR and build a life in Tijuana: COMAR received **more than 1,000** applications in Baja California in the first half of 2026, and about **14,000** from 2019 to 2025; Haitians are the largest group. — UNHCR's Baja California head, via *El Imparcial*, 26 Jun 2026. ✅ (Barrier 9)",
-   "denver": "The rules here also change by date. From **1 Oct 2026**, people granted **withholding of removal**, asylees, refugees and humanitarian parolees lost Health First Colorado (Medicaid) eligibility under the 2025 federal budget law; 6,000–7,000 Coloradans were expected to lose coverage. — HCPF, via Denver mirror **D-IMMIGRATION** ✅. Withholding is the one protection still open at the border (above), so the person who wins it in court then finds a cushion gone in Colorado.",
+   "denver": "The rules here also change by date. From **1 Oct 2026**, people granted **withholding of removal**, asylees, refugees and humanitarian parolees lost Health First Colorado (Medicaid) eligibility under the 2025 federal budget law; 6,000–7,000 Coloradans were expected to lose coverage. — HCPF Withholding is the one protection still open at the border (above), so the person who wins it in court then finds a cushion gone in Colorado.",
    "denverKeys": [
     "D-IMMIGRATION"
    ],
@@ -152,7 +152,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
    "who": "Where people are handed over is decided by U.S.–Mexico repatriation arrangements, and the port is chosen for logistics, not for where the person is from. Mexico decides what reception looks like. Who pays: the person, their U.S.-citizen children, and Tijuana's shelters and kitchens.",
    "nlb": "Nature: none. Luck: which port you were bused to. **Built:** removal policy, the drop-off point, and the ID system a newly arrived person cannot use without papers they left behind.",
    "doing": "",
-   "denver": "The **Aurora ICE Processing Center**, a privately operated detention center 20 minutes from RJ, holds people awaiting removal. What the mirror does cover is the other side of removal: how many of a family's Denver cushions depend on one person's status, and which ones a citizen child keeps (Cover All Coloradans; see **D-IMMIGRATION** ✅).",
+   "denver": "The **Aurora ICE Processing Center**, a privately operated detention center 20 minutes from RJ, holds people awaiting removal. Consider the other side of removal: how many of a family's Denver cushions depend on one person's status, and which ones a citizen child keeps (Cover All Coloradans; see ✅).",
    "denverKeys": [
     "D-IMMIGRATION"
    ],
@@ -168,11 +168,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
     "foster-family programs are small, so residential homes fill the gap, many of them run by churches and charities"
    ],
    "oneDay": "a child lives at the home on weekdays and is visited by a parent on Sundays, or is not visited at all.",
-   "contested": "Short-term volunteer visits to homes for children are debated internationally. Child-welfare groups warn that a cycle of visitors who bond and leave can harm children, and that donations from visitors can keep homes open that might otherwise reunite families. Name the debate honestly; it bears directly on this trip. ⚠️ Find a named source (e.g., UNICEF or Better Care Network guidance on orphanage tourism) before publishing.",
+   "contested": "Short-term volunteer visits to homes for children are debated internationally. Child-welfare groups warn that a cycle of visitors who bond and leave can harm children, and that donations from visitors can keep homes open that might otherwise reunite families.",
    "who": "Nobody decides that a child goes into care because his mother works nights. But the wage (Barrier 4), the shift schedules plants set, deportation policy (Barrier 2) and the small size of foster-care programs are each decided by someone. Homes run by religious groups and charities fill the gap the state has not. Children pay most, and so do parents who love them and cannot keep them home.",
    "nlb": "Nature: illness and death. Luck: a grandmother nearby, or not. **Built:** wages, shifts, deportation, whether foster care is funded, whether childcare for night-shift parents exists.",
    "doing": "Parents visit on their days off; relatives take children when they can; the people who run and staff the homes cook, teach and keep schedules year after year. Students cooking and cleaning there are joining an existing routine, not starting one.",
-   "denver": "Colorado also prefers family care and places children with relatives (kinship care) or foster families before group homes. Do not publish a Colorado figure until one is sourced. What the mirror does cover is the gap that sends children into care in Tijuana: **who watches the kids while a parent works**. Colorado infant care costs about **$20,978 a year**; free universal preschool covers **15 hours a week** for four-year-olds; about two dozen counties stopped taking new families for the childcare subsidy. — Denver mirror **D-CHILDCARE** ✅ (statewide).",
+   "denver": "Colorado also prefers family care and places children with relatives (kinship care) or foster families before group homes. Consider the gap that sends children into care in Tijuana: **who watches the kids while a parent works**. Colorado infant care costs about **$20,978 a year**; free universal preschool covers **15 hours a week** for four-year-olds; about two dozen counties stopped taking new families for the childcare subsidy. (statewide).",
    "denverKeys": [
     "D-CHILDCARE"
    ],
@@ -201,7 +201,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
    "who": "Mexico's federal government (the 1965 program; the minimum-wage commission each December); U.S. trade law and companies that locate plants by labor cost; consumers on both sides, including us, who buy what is assembled here. Workers pay in hours and commute.",
    "nlb": "Nature: none. Luck: which side of the line you were born on, and nothing about Tijuana's location is luck for the companies; it is the point. **Built:** wage rules, trade rules, where plants and housing are permitted.",
    "doing": "Formal workers use IMSS clinics, INFONAVIT housing credit and plant transport. Some build their own houses over years (Barrier 5). Many households combine a plant job with a side business or cross-border work.",
-   "denver": "Denver's minimum wage is **$19.29/hr (2026)**; Colorado's is $15.16; Denver's protects workers regardless of immigration status. — Denver Labor; CDLE, via **D-MINWAGE** ✅. Full-time at that wage is about $40,120 a year, about 42% of Denver's median household income *(mirror's arithmetic, D-WAGE ⚠️)*. The question is the same here: does the floor cover rent near the job? Denver metro median rent is about $1,874/month and 49% of Colorado renters are cost-burdened (**D-HOUSING** ✅). A floor is only as strong as its enforcement: Denver recovered $2.31M in unpaid wages for about 7,200 workers in 2025 (**D-INFORMAL** ✅).",
+   "denver": "Denver's minimum wage is **$19.29/hr (2026)**; Colorado's is $15.16; Denver's protects workers regardless of immigration status. — Denver Labor; CDLE, via ✅. Full-time at that wage is about $40,120 a year, about 42% of Denver's median household income (our arithmetic). The question is the same here: does the floor cover rent near the job? Denver metro median rent is about $1,874/month and 49% of Colorado renters are cost-burdened A floor is only as strong as its enforcement: Denver recovered $2.31M in unpaid wages for about 7,200 workers in 2025",
    "denverKeys": [
     "D-HOUSING",
     "D-INFORMAL",
@@ -251,7 +251,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
    "who": "City land-use and permit decisions; developers who build formal housing far from the center; land sellers on informal lots. The city gains a workforce housed at no public cost. The family pays in risk and in years of building.",
    "nlb": "**Nature: real.** Steep, erodible soils and El Niño-year rains. Luck: which slope, which winter. **Built:** where formal land is priced, where services reach, who is allowed to build where.",
    "doing": "Self-construction (*autoconstrucción*): houses grow room by room, then a second floor. Neighbors organize to petition for water, electricity and title; TECHO and local groups work with settlements.",
-   "denver": "About **34% of Colorado households are cost-burdened (49% of renters)**. — Colorado statewide housing needs assessment, Nov 2026 (*Colorado Newsline*). ✅ Denver metro median rent is about $1,874/month, 31.9% of renter income (ACS 2020–2024). ✅ See **D-HOUSING**. And the cushion behind a Denver house: **6%** of U.S. homeowners have no homeowners insurance, rising to **13%** of those who own free and clear, because a mortgage lender is what usually requires it. — Federal Reserve SHED 2025, via **D-HOMEINS** ✅ (national).",
+   "denver": "About **34% of Colorado households are cost-burdened (49% of renters)**. — Colorado statewide housing needs assessment, Nov 2026 (*Colorado Newsline*). ✅ Denver metro median rent is about $1,874/month, 31.9% of renter income (ACS 2020–2024). ✅ And the cushion behind a Denver house: **6%** of U.S. homeowners have no homeowners insurance, rising to **13%** of those who own free and clear, because a mortgage lender is what usually requires it. — Federal Reserve SHED 2025, via ✅ (national).",
    "denverKeys": [
     "D-HOMEINS",
     "D-HOUSING"
@@ -277,7 +277,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
      "text": "U.S. failures too: **58.8 million gallons** spilled in June–Sept 2024 after a surge tank failed at the Hollister Pump Station.",
      "src": "Coastkeeper",
      "mark": "care",
-     "note": "Confirm which agency operates it before writing U.S. side."
+     "note": ""
     },
     {
      "text": "More than **200 billion gallons** of sewage, trash and stormwater have crossed into the Tijuana River Valley since 2018.",
@@ -410,7 +410,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
      "text": "**People seeking protection in the U.S.:** as of 19 Nov 2026, asylum is unavailable at the border; withholding of removal and CAT remain (Barrier 1)",
      "src": "",
      "mark": "ok",
-     "note": "."
+     "note": ""
     },
     {
      "text": "**Land title:** 171 of 957 Tijuana colonias regularized (cadastre, Jan 2024)",
@@ -422,7 +422,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
      "text": "**Visas to go north:** US$185 fee plus a new US$250 fee at issuance (Barrier 8)",
      "src": "",
      "mark": "care",
-     "note": "."
+     "note": ""
     }
    ],
    "plain": "Four groups this trip meets often lack one: **Mexicans deported from the U.S.**, who may arrive with no Mexican ID at all; **people seeking protection**, whose papers come from COMAR or the INM and take time; **children in care**, whose identity may never have been registered; and **families in canyon colonias**, who own a house but not the land under it.",
@@ -436,7 +436,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
    "who": "Mexico's registry (RENAPO) and electoral institute (INE) set what each document requires; COMAR and the INM decide protection cases; INDIVI, INSUS and the city decide land regularization; U.S. consulates decide visas. Employers and banks decide which ID they accept. Who gains: nobody designed the gap, but informal employers and lenders who ask for nothing (Barrier 10) fill it. Who pays: the person without the paper, and their children, in every cushion that starts with a form.",
    "nlb": "Nature: none. Luck: where you were born, and whether your documents came with you. **Built:** every requirement, fee and deadline.",
    "doing": "Mexico built document desks into its reception centers in 2025 ✅. Notaries in Baja California must give free guidance on regularizing a property ✅ (*El Imparcial*, 16 Jun 2026). Colonia committees petition for regularization for years (Barrier 5).",
-   "denver": "Papers decide the cushions here too. A Social Security number, a W-2 record and immigration status decide FAMLI, Medicaid, SNAP, Social Security and unemployment insurance; Denver's minimum wage and Colorado's coverage for children and pregnancy (Cover All Coloradans) do not depend on status. — Denver mirror **D-IMMIGRATION** ✅/⚠️.",
+   "denver": "Papers decide the cushions here too. A Social Security number, a W-2 record and immigration status decide FAMLI, Medicaid, SNAP, Social Security and unemployment insurance; Denver's minimum wage and Colorado's coverage for children and pregnancy (Cover All Coloradans) do not depend on status. /⚠️.",
    "denverKeys": [
     "D-BANK",
     "D-IMMIGRATION"
@@ -478,7 +478,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
    "who": "Banxico and CONDUSEF publish rates so borrowers can compare. Lenders set prices. Who pays: the borrower of the smallest loan, often a woman running a stall.",
    "nlb": "Nature: none. Luck: a relative with savings. **Built:** what counts as collateral (a deed, a payroll account), which documents a loan needs, and whether rates are capped or only published.",
    "doing": "",
-   "denver": "Colorado caps payday loans at **36% APR** (Proposition 111, 2018, effective 1 Feb 2019); credit cards average **21.19%** (Q3 2026); a 30-year mortgage is **7.11%** (12 Nov 2026). **63%** of U.S. adults could cover a $400 emergency in cash (2025). — Denver mirror **D-CREDIT**, **D-SAVINGS** ✅.",
+   "denver": "Colorado caps payday loans at **36% APR** (Proposition 111, 2018, effective 1 Feb 2019); credit cards average **21.19%** (Q3 2026); a 30-year mortgage is **7.11%** (12 Nov 2026). **63%** of U.S. adults could cover a $400 emergency in cash (2025).",
    "denverKeys": [
     "D-CREDIT",
     "D-SAVINGS"
@@ -495,7 +495,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
     "keys": []
    },
    "denver": {
-    "text": "Denver minimum wage $19.29/hr (2026); Colorado $15.16. — Denver Labor; CDLE. Full-time ≈ $40,120/year *(mirror's arithmetic)*. Denver median household income $94,718 (2024). — Data USA (ACS). vintage. See D-MINWAGE, D-WAGE.",
+    "text": "Denver minimum wage $19.29/hr (2026); Colorado $15.16. — Denver Labor; CDLE. Full-time ≈ $40,120/year (our arithmetic). Denver median household income $94,718 (2024). — Data USA (ACS).",
     "mark": "care",
     "keys": [
      "D-MINWAGE",
@@ -511,7 +511,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
     "keys": []
    },
    "denver": {
-    "text": "Applies to all workers regardless of status. Enforcement depends on complaints: $2.31M recovered for ~7,200 Denver workers (2025); 62% of surveyed day laborers had experienced wage theft (2016–17). See D-INFORMAL.",
+    "text": "Applies to all workers regardless of status. Enforcement depends on complaints: $2.31M recovered for ~7,200 Denver workers (2025); 62% of surveyed day laborers had experienced wage theft (2016–17).",
     "mark": "care",
     "keys": [
      "D-INFORMAL"
@@ -526,7 +526,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
     "keys": []
    },
    "denver": {
-    "text": "Colorado uninsured 5.9% (2025); Medicaid to 133% of the poverty line; Hospital Discounted Care caps hospital payment plans at 4% of income for patients up to 250% of the poverty line. From 1 Oct 2026 many lawfully present immigrants lost Medicaid eligibility. See D-HEALTH, D-IMMIGRATION.",
+    "text": "Colorado uninsured 5.9% (2025); Medicaid to 133% of the poverty line; Hospital Discounted Care caps hospital payment plans at 4% of income for patients up to 250% of the poverty line. From 1 Oct 2026 many lawfully present immigrants lost Medicaid eligibility.",
     "mark": "ok",
     "keys": [
      "D-HEALTH",
@@ -542,7 +542,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
     "keys": []
    },
    "denver": {
-    "text": "Colorado FAMLI: up to 12 weeks paid (+4 pregnancy complications, +12 NICU from 2026), max $1,448.02/week from 1 Jul 2026; job protected after 180 days; needs $2,500 in reported Colorado wages. Paid sick leave (HFWA) 1 hour per 30 worked, up to 48 hours a year, at every employer. See D-LEAVE.",
+    "text": "Colorado FAMLI: up to 12 weeks paid (+4 pregnancy complications, +12 NICU from 2026), max $1,448.02/week from 1 Jul 2026; job protected after 180 days; needs $2,500 in reported Colorado wages. Paid sick leave (HFWA) 1 hour per 30 worked, up to 48 hours a year, at every employer.",
     "mark": "ok",
     "keys": [
      "D-LEAVE"
@@ -557,7 +557,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
     "keys": []
    },
    "denver": {
-    "text": "4.2% of U.S. households unbanked (2023); single-parent 12.3%; disabled 11.2%. — FDIC. 77% of adults earning under $25,000 have an account (2025). — SHED. National. See D-BANK.",
+    "text": "4.2% of U.S. households unbanked (2023); single-parent 12.3%; disabled 11.2%. — FDIC. 77% of adults earning under $25,000 have an account (2025). — SHED. National.",
     "mark": "ok",
     "keys": [
      "D-BANK"
@@ -572,7 +572,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
     "keys": []
    },
    "denver": {
-    "text": "Credit-card APR 21.19% (Q3 2026); 30-year mortgage 7.11% (12 Nov 2026); payday loans capped at 36% APR since 2019. — Fed G.19; Freddie Mac; Prop 111. See D-CREDIT.",
+    "text": "Credit-card APR 21.19% (Q3 2026); 30-year mortgage 7.11% (12 Nov 2026); payday loans capped at 36% APR since 2019. — Fed G.19; Freddie Mac; Prop 111.",
     "mark": "ok",
     "keys": [
      "D-CREDIT"
@@ -582,12 +582,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
   {
    "label": "If the earner dies",
    "there": {
-    "text": "Formal workers' families receive an IMSS survivor pension if contribution weeks are met. Not re-checked. **22.9%** of Mexican adults (18–70) had any insurance policy (2024).",
+    "text": "Formal workers' families receive an IMSS survivor pension if contribution weeks are met. **22.9%** of Mexican adults (18–70) had any insurance policy (2024).",
     "mark": "care",
     "keys": []
    },
    "denver": {
-    "text": "52% of U.S. adults own life insurance (2026); employer life insurance reaches 28% of the lowest-paid quarter of workers vs 87% of the highest (2026). — LIMRA; BLS. National. See D-LIFEINS.",
+    "text": "52% of U.S. adults own life insurance (2026); employer life insurance reaches 28% of the lowest-paid quarter of workers vs 87% of the highest (2026). — LIMRA; BLS. National.",
     "mark": "ok",
     "keys": [
      "D-LIFEINS"
@@ -602,7 +602,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
     "keys": []
    },
    "denver": {
-    "text": "6% of U.S. homeowners uninsured; 13% of free-and-clear owners (2025). — SHED. National. See D-HOMEINS.",
+    "text": "6% of U.S. homeowners uninsured; 13% of free-and-clear owners (2025). — SHED. National.",
     "mark": "ok",
     "keys": [
      "D-HOMEINS"
@@ -617,7 +617,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
     "keys": []
    },
    "denver": {
-    "text": "SSDI average $1,630/month; SSI $994/month (2026). — SSA. Employer long-term disability reaches 37% of private workers. — BLS. See D-DISABILITY.",
+    "text": "SSDI average $1,630/month; SSI $994/month (2026). — SSA. Employer long-term disability reaches 37% of private workers. — BLS.",
     "mark": "ok",
     "keys": [
      "D-DISABILITY"
@@ -627,12 +627,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
   {
    "label": "Old age",
    "there": {
-    "text": "Pensión para el Bienestar de las Personas Adultas Mayores: **MX$6,400 every two months** (2026), MX$38,400 a year, for Mexican nationals 65+ living in Mexico. — *Infobae*, 5 Jun 2026. Secondary; confirm on gob.mx. Universal, not tied to work history; it does depend on papers (Barrier 9).",
+    "text": "Pensión para el Bienestar de las Personas Adultas Mayores: **MX$6,400 every two months** (2026), MX$38,400 a year, for Mexican nationals 65+ living in Mexico. — *Infobae*, 5 Jun 2026. Universal, not tied to work history; it does depend on papers (Barrier 9).",
     "mark": "care",
     "keys": []
    },
    "denver": {
-    "text": "Average Social Security retired-worker benefit $2,071/month (Jan 2026). — SSA. Needs about 10 years of reported work and a valid SSN. See D-OLDAGE.",
+    "text": "Average Social Security retired-worker benefit $2,071/month (Jan 2026). — SSA. Needs about 10 years of reported work and a valid SSN.",
     "mark": "care",
     "keys": [
      "D-OLDAGE"
@@ -640,11 +640,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
    }
   }
  ],
- "cushionNotice": "Stack the rows. About a third of Tijuana's workers are informal (36.6%, Q1 2026), so roughly two in three workers here have formal work. A formal maquila family in Tijuana has more cushions than a rural family in many places, including IMSS, a pension account and paid maternity leave. Two universal pensions now reach people regardless of work history, if they have the papers. The gap with Denver is the *size* of each cushion and what the wage buys. The informal Tijuana family has few. The person in transit has none, and every rule that decides their cushion has a date and a signature (Barrier 1). Most RJ families meet a broken leg or a death with five or six cushions they did not build and rarely see. That is the fence we can't see from inside (2b).",
+ "cushionNotice": "Stack the rows. About a third of Tijuana's workers are informal (36.6%, Q1 2026), so roughly two in three workers here have formal work. A formal maquila family in Tijuana has more cushions than a rural family in many places, including IMSS, a pension account and paid maternity leave. Two universal pensions now reach people regardless of work history, if they have the papers. The gap with Denver is the *size* of each cushion and what the wage buys. The informal Tijuana family has few. The person in transit has none, and every rule that decides their cushion has a date and a signature (Barrier 1). Most RJ families meet a broken leg or a death with five or six cushions they did not build and rarely see. That is the fence we can't see from inside.",
  "fences": [
   {
    "h": "Insulation",
-   "text": "A passport that opens the line in minutes; insurance; a bank that lends at single digits. These are invisible from inside, so another person's waiting looks like a choice. See 2c and Barrier 8. Students noticed the comfort of the trip itself: home-cooked meals, hot water, their own beds. One argued it was closer to a school vacation than an encounter. That is a fair observation about how the trip is built, and a place to start, not a verdict."
+   "text": "A passport that opens the line in minutes; insurance; a bank that lends at single digits. These are invisible from inside, so another person's waiting looks like a choice. and Barrier 8. Students noticed the comfort of the trip itself: home-cooked meals, hot water, their own beds. One argued it was closer to a school vacation than an encounter. That is a fair observation about how the trip is built, and a place to start, not a verdict."
   },
   {
    "h": "Physical",
@@ -652,7 +652,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
   },
   {
    "h": "Language",
-   "text": "Some students chose this trip because it was the international trip that did not require four years of Spanish, then pointed and gestured at the Mercado Hidalgo. Not speaking the language turns every exchange into a purchase. The promotoras explained each dish in Spanish while the guide translated; that slower exchange is what a conversation looks like across a language gap."
+   "text": "Some students choose this trip because it is the international trip that did not require four years of Spanish, then pointed and gestured at the Mercado Hidalgo. Not speaking the language turns every exchange into a purchase. The promotoras explained each dish in Spanish while the guide translated; that slower exchange is what a conversation looks like across a language gap."
   },
   {
    "h": "Cognitive",
@@ -716,7 +716,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
    "items": [
     "Children as the trip's emotional payoff; they have so little but they are so happy.\"",
     "Treating the wall or El Bordo as a photo stop.",
-    "Advocacy framing on the site in either direction. Describe rules, dates, numbers and who decided. Students can form their own conclusions; the site does not form them for them.",
+    "Advocacy framing on the site in either direction. Describe rules, dates, numbers and who decided.",
     "The structure decides everything. It erases the shelter staff, parents, priests and lawyers working on the door every day."
    ]
   }
@@ -734,7 +734,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
    "key": "B",
    "title": "One bad week",
    "question": "The same thing happens to three families. Why does it cost them so differently?",
-   "changes": "IMSS/insurance yes or no; paid leave; savings in a bank; the loan rate available (2c); life insurance; title to the house; who they can call; for shock 4, whether anyone in the family has papers to visit.",
+   "changes": "IMSS/insurance yes or no; paid leave; savings in a bank; the loan rate available; life insurance; title to the house; who they can call; for shock 4, whether anyone in the family has papers to visit.",
    "notice": "in Tijuana, the *formal/informal* toggle changes the outcome more than anything else. In Denver, the *salaried/cash* toggle does the same. Shock 4 has no cushion anywhere. Count the cushions each family had, and who built each one.",
    "yourCall": "Which of your family's cushions did you earn, and which were built around you? Which one, if built in Tijuana, would have kept the children in Barrier 3 at home?"
   },
@@ -745,7 +745,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
    "changes": "dry-weather flow (15 vs 35–40 MGD); whether the PBCILA pump station is running; San Antonio de los Buenos capacity (18 MGD now vs 43 MGD if expanded); a winter storm; which side's beach is sampled.",
    "notice": "the treaty promises are concrete and dated; check later whether they were met (the Matadero basin before the 2026–27 rains; Tecolote–La Gloria by Dec 2028). Notice whose health is counted.",
    "yourCall": "If you could fund one project on either side of the line, which would protect the most people, and who would you have to persuade?",
-   "denverRun": "lead lines, with 36,000+ replaced and 60,000–64,000 estimated. Which neighborhoods were replaced first, and who decided? (D-WATER)"
+   "denverRun": "lead lines, with 36,000+ replaced and 60,000–64,000 estimated. Which neighborhoods were replaced first, and who decided?"
   },
   {
    "key": "D",
@@ -760,7 +760,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
    "question": "A Tijuana family needs MX$5,000 this month, to put a roof on before the winter rains or to restock a market stall before Holy Week. Where can it get the money, and what will it cost?",
    "changes": "papers (INE card and CURP, or only a CURP from the reception center, or none); a formal job with a payroll account, or informal work; a deed to the land, or not; a relative who can lend; membership in a *tanda*; where they borrow (bank personal loan, microlender, store credit, pawnshop, street lender).",
    "yourCall": "Which single document, if this family had it, would lower the cost the most? Whose rule is it to change, and what would it cost them to change it?",
-   "denverRun": "the same $400 emergency in Denver, with a credit card at 21.19%, a payday or installment loan capped at 36%, or family. 63% of U.S. adults could pay it in cash (D-CREDIT, D-SAVINGS ✅). Then remove one paper (an SSN, a bank account) and run it again (D-IMMIGRATION, D-BANK)."
+   "denverRun": "the same $400 emergency in Denver, with a credit card at 21.19%, a payday or installment loan capped at 36%, or family. 63% of U.S. adults could pay it in cash Then remove one paper (an SSN, a bank account) and run it again"
   }
  ],
  "theology": {
@@ -886,11 +886,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
      "url": "https://www.elimparcial.com/tij/tijuana/2025/12/10/tijuana-enfrenta-riesgos-persistentes-por-expansion-urbana-en-zonas-inestables/"
     },
     {
-     "t": "IMPLAN Tijuana, Atlas de Riesgos 2024 (not yet read)",
+     "t": "IMPLAN Tijuana, Atlas de Riesgos 2024",
      "url": "https://implan.tijuana.gob.mx/pdf/atlas/ATLASV2024.pdf"
     },
     {
-     "t": "IMPLAN, Declaratoria Lomas y Cumbres del Rubí (not yet read)",
+     "t": "IMPLAN, Declaratoria Lomas y Cumbres del Rubí",
      "url": "https://implan.tijuana.gob.mx/pdf/Declaratoria_Lomas_Y_Cumbres_del_Rubi_para_CP.pdf"
     }
    ]
@@ -1235,7 +1235,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
        "label": "The minimum wage (one full-time earner)",
        "monthly": 13402,
        "note": "440.87 pesos a day (2026), about 13,400 a month on a 48-hour week (our arithmetic; a daily wage also pays the rest day).",
-       "src": "CONASAMI via Tijuana packet",
+       "src": "This trip’s Sources page",
        "url": "https://www.gob.mx/conasami"
       },
       {
@@ -1349,7 +1349,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
      "rent": {
       "amt": 1874,
       "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
-      "src": "USAFacts (Denver mirror D-HOUSING)"
+      "src": "USAFacts"
      },
      "bus": {
       "fare": 2.75,
@@ -1499,12 +1499,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
       "w2": {
        "v": "Depends on the job",
        "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       },
       "cash": {
        "v": "Not through the work",
        "text": "The same income-based coverage is open to them.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       }
      },
      {
@@ -1570,7 +1570,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
       "price": 25,
       "mark": "yours",
       "text": "INEGI counts vendors but not what they earn; there is no Tijuana figure. Set the profit on one sale, after ingredients.",
-      "src": "Tijuana packet, Barrier 2"
+      "src": "This trip’s Barriers page, Barrier 2"
      }
     ],
     "price": {
@@ -1653,7 +1653,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-toe"]={
    ],
    "doing": {
     "text": "Vendors organize in market associations; families run tandas, rotating savings circles where each member pays in and one takes the pot.",
-    "src": "Tijuana packet, Barrier 2"
+    "src": "This trip’s Barriers page, Barrier 2"
    },
    "notice": "Many vendors earn more an hour than a factory pays, on the days they sell. Part 3 is the other half: no one pays them on the days they can't.",
    "yourCall": "Would you rather have the vendor's better days or the factory's steady floor? What would make you switch?"

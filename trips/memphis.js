@@ -9,13 +9,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "items": []
   },
   {
-   "h": "Simulation",
-   "text": "See Barrier 7.",
-   "items": []
-  },
-  {
-   "h": "Which neighborhoods students actually stand in:",
-   "text": "confirmed — **Midtown** (bunkhouse, Crosstown, Manna House at 38104), **downtown/South Main** (NCRM, Beale Street, the bike route). Likely — Soulsville (Four Way). Unconfirmed — Orange Mound, Southwest Memphis/Boxtown. **No student in either year names a Memphis neighborhood** when writing about what they saw.",
+   "h": "Where you will be",
+   "text": "**Midtown** (the bunkhouse, Crosstown, Manna House) and **downtown and South Main** (the National Civil Rights Museum, Beale Street, the bike route). Possibly Soulsville (the Four Way).",
    "items": []
   },
   {
@@ -25,7 +20,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "City of Memphis, 2024: **24.0%** of residents in poverty and **38.8%** of children, against 13.5% for Tennessee and 12.1% for the U.S. Shelby County: 19.0% (children 31.3%). Median household income: city **$52,679**; Shelby County $64,995; metro $68,124. Poverty in the city by group: Black 27.9%, Hispanic/Latino 34.2%, non-Hispanic white 10.8%. Among metros over 1 million people, Memphis ranks 2nd in overall poverty and 1st in child poverty. — University of Memphis School of Social Work (Delavega & Blumenthal), *2025 Memphis Poverty Fact Sheet*, from ACS 2024 1-year estimates. ✅",
     "Population about 619,000 (2024); about 63% Black (non-Hispanic) and 22% white (non-Hispanic) *(our arithmetic from Data USA's counts)*; 44.9% of homes owner-occupied. — Data USA, from ACS. ⚠️ Data USA doesn't name the ACS vintage; its 23.1% poverty rate differs from the fact sheet's 1-year figure. Use the fact sheet for poverty and income.",
     "About two-thirds of Memphis renters are Black. — MLK50 analysis, 2026. ✅",
-    "Shelby County lost more residents in 2024 than any other U.S. county or city, in Chalkbeat's framing. ✅ as reported; ⚠️ check the Census release for exact wording."
+    "Shelby County lost more residents in 2024 than any other U.S. county or city, in Chalkbeat's framing."
    ]
   },
   {
@@ -33,10 +28,10 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "text": "",
    "items": [
     "**1890:** Developer E. E. Meacham lays out **Orange Mound** on part of the Deaderick plantation, with lots sold to Black buyers — now documented by the City of Memphis's own 2025 survey as the first planned community in the U.S. built by and for African Americans. Residents owned rather than rented; Carnes Avenue became a Black business district. — Tennessee Encyclopedia; Orange Mound Neighborhood Survey, City of Memphis HCD, Aug 2025. ✅",
-    "**1892:** After a white mob lynched three men who ran the People's Grocery, a Black-owned store in South Memphis, journalist **Ida B. Wells** — co-owner of a Memphis newspaper — wrote *Southern Horrors*. Her press was destroyed and she was driven from the city. ⚠️ Standard history; cite Tennessee Encyclopedia or the NCRM before publishing. *In her own words:* *Southern Horrors* (1892) is public domain.",
+    "**1892:** After a white mob lynched three men who ran the People's Grocery, a Black-owned store in South Memphis, journalist **Ida B. Wells** — co-owner of a Memphis newspaper — wrote *Southern Horrors*. Her press was destroyed and she was driven from the city. *In her own words:* *Southern Horrors* (1892) is public domain.",
     "**1930s:** The federal Home Owners' Loan Corporation drew a lending-risk map of Memphis.",
-    "**1957:** Stax Records opens in a former movie theater in South Memphis; the neighborhood takes the name **Soulsville**. ⚠️ Standard history; cite the Stax Museum.",
-    "**1968:** Black sanitation workers strike after two co-workers are crushed in a garbage truck; their signs read **I AM A MAN**. Dr. Martin Luther King Jr. comes to support them, gives his last speech at Mason Temple on 3 April, and is killed the next evening at the Lorraine Motel — now the National Civil Rights Museum, which students visit. ⚠️ Standard history; cite NCRM.",
+    "**1957:** Stax Records opens in a former movie theater in South Memphis; the neighborhood takes the name **Soulsville**.",
+    "**1968:** Black sanitation workers strike after two co-workers are crushed in a garbage truck; their signs read **I AM A MAN**. Dr. Martin Luther King Jr. comes to support them, gives his last speech at Mason Temple on 3 April, and is killed the next evening at the Lorraine Motel — now the National Civil Rights Museum, which students visit.",
     "**2013–2014:** Memphis City Schools merges into Shelby County Schools — which the Daily Memphian called the largest, and shortest-lived, public school district merger in U.S. history — and within a year six suburbs leave to form their own districts (Barrier 3). ✅",
     "**2021:** Residents of Boxtown, a Black neighborhood in Southwest Memphis, stop a crude-oil pipeline routed through their wellfield (Barrier 4). ✅",
     "**2024–26:** xAI builds the Colossus supercomputer in South Memphis's industrial corridor (Barrier 4). ✅"
@@ -53,8 +48,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "items": [
     "**St. Patrick's** — the parish where RJ groups attend Mass (Feb 2026 and Oct 2025). ✅.",
     "**Manna House** — day hospitality (coffee, showers, clothes) for people without housing; it says it stands in the **Catholic Worker** tradition. ✅ (catholicworker.org directory)",
-    "**Dorothy Day House** — family housing named for the Catholic Worker's founder. ⚠️ Founded 2006 (*Daily Memphian* ✅); confirm any Catholic sponsorship before saying so.",
-    "**Room in the Inn–Memphis** — a shelter network of 55 congregations (*Memphis Magazine*, 2020 ✅). ⚠️ Confirm who it serves now (adults, families) and its recovery program.",
+    "**Dorothy Day House** — family housing named for the Catholic Worker's founder.",
+    "**Room in the Inn–Memphis** — a shelter network of 55 congregations (*Memphis Magazine*, 2020 ✅).",
     "**Neighborhood Christian Center**, **Streets Ministries**, **Urban Bicycle Food Ministry** — Protestant ministries. ⚠️",
     "**Catholic Charities of West Tennessee** — historically a refugee resettlement agency.",
     "**Mason Temple** (Church of God in Christ world headquarters) and **Clayborn Temple** (the 1968 strike's staging church) — the Black church as the infrastructure of the civil rights movement in this city. ⚠️",
@@ -109,8 +104,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "contested": "How many filings end in an actual move-out — a filing is not an eviction, and a trade-press post claims one in three ends without the landlord getting possession (⚠️ unvetted). Landlords' side: high late-payment rates and thin margins in older stock are real; ask Serve901 or a housing speaker how small local landlords see it.",
    "who": "Filing is cheap and legal; repeat filing lets a landlord collect late fees and court costs. Owners and their investors gain predictable collections. The county's PILOT board decided which complexes get tax breaks — and, until MLK50 compared the lists, no one had to look at the overlap. Tenants pay in fees, in records, and in moves.",
    "nlb": "Nature: none. Luck: a cut in hours, a sick child, a car repair. **Built:** how cheap filing is, what screening companies report, which properties get tax breaks, and whether anyone tracks the overlap.",
-   "doing": "MLK50: Justice Through Journalism publishes the filers' names and the data; Memphis Area Legal Services represents tenants (⚠️ confirm current eviction work); a Shelby County judge runs an eviction-education program (Local Memphis, ⚠️ not opened). Families double up with relatives to avoid the record.",
-   "denver": "See Denver mirror **D-HOUSING**: about 49% of Colorado renter households are cost-burdened, and Denver-metro median rent was about $1,874/month, 31.9% of renter income.",
+   "doing": "MLK50: Justice Through Journalism publishes the filers' names and the data; Memphis Area Legal Services represents tenants; a Shelby County judge runs an eviction-education program. Families double up with relatives to avoid the record.",
+   "denver": "About 49% of Colorado renter households are cost-burdened, and Denver-metro median rent was about $1,874/month, 31.9% of renter income.",
    "denverKeys": [
     "D-HOUSING"
    ],
@@ -123,7 +118,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
      "text": "2022: Tennessee became the first state to make camping on public land a **Class E felony** — up to six years in prison and a $3,000 fine — expanding a 2012 ban on state property that was raised to a felony in 2020.",
      "src": "WPLN, Apr 2025; NPR, 2026",
      "mark": "care",
-     "note": "Check the statute for what applies to city parks vs. state land before writing public property."
+     "note": ""
     },
     {
      "text": "2025: Tennessee added faster clearing of encampments under highways and bridges (30 days from a complaint) and easier removal from vacant commercial property.",
@@ -150,8 +145,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "contested": "Whether camping bans move people into shelter or just out of sight; supporters argue they push people toward services and keep public space usable. Both claims need data that has not been published for Memphis.",
    "who": "The Tennessee General Assembly, by statute. Neighbors and businesses who want parks and underpasses cleared gain a tool. People without housing pay — and so do the congregations that end up running the beds.",
    "nlb": "Nature: Memphis summers and winters make sleeping outside dangerous. Luck: whether a bed is open tonight. **Built:** the law, the shelter count, and the choice to fund shelter through volunteers.",
-   "doing": "Manna House offers showers, coffee and clothes; Room in the Inn congregations host guests overnight; the Urban Bicycle Food Ministry has delivered meals by bicycle twice a week for years (⚠️ confirm). CAFTH runs a housing-first model and reported that 96% of people placed in permanent supportive housing stayed (*Memphis Flyer*, 2020 ✅ ⚠️ old).",
-   "denver": "See Denver mirror **D-HOUSING**: the Jan 2026 Point-in-Time count found 6,411 people without housing in Denver, 518 of them unsheltered; MDHI's full-year data counted 35,601 across the metro, more than three times the one-night count. — MDHI via Denver7 and *Colorado Politics*, May 2026. ✅ / ⚠️ (reporting year). Denver also bans urban camping by city ordinance rather than state felony. ⚠️ Not in the mirror yet; add a sourced line there before publishing.",
+   "doing": "Manna House offers showers, coffee and clothes; Room in the Inn congregations host guests overnight; the Urban Bicycle Food Ministry has delivered meals by bicycle twice a week for years. CAFTH runs a housing-first model and reported that 96% of people placed in permanent supportive housing stayed (*Memphis Flyer*, 2020 ✅ ⚠️ old).",
+   "denver": "The Jan 2026 Point-in-Time count found 6,411 people without housing in Denver, 518 of them unsheltered; MDHI's full-year data counted 35,601 across the metro, more than three times the one-night count. — MDHI via Denver7 and *Colorado Politics*, May 2026. ✅ / ⚠️ (reporting year). Denver also bans urban camping by city ordinance rather than state felony.",
    "denverKeys": [
     "D-HOUSING"
    ],
@@ -216,8 +211,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "contested": "Supporters of the municipal districts argue for local control and smaller districts; EdBuild argues secession concentrates poverty. Supporters of state oversight cite results; opponents cite local democracy. Describe both; take neither.",
    "who": "The Tennessee General Assembly wrote the rule that lets towns leave. Families in the six towns gained districts drawn around their tax base. MSCS families pay in buildings, closures and longer rides. *Nobody — a budget that never had to grow* fits the repair bill: no one decided to let the roofs fail.",
    "nlb": "Nature: none. Luck: which side of a municipal line your house is on. **Built:** the secession law, county capital budgets, state formulas tied to enrollment.",
-   "doing": "Parents organize to keep community schools open (Chalkbeat, Feb 2026 ⚠️ not opened); MSCS teachers stay in priority schools with retention bonuses; churches and nonprofits run tutoring and after-school programs; Junior Achievement BizTown brings MSCS fifth-graders to run a simulated economy (RJ students help).",
-   "denver": "See Denver mirror **D-SCHOOL**: Denver families may choose schools outside their zone, but transport limits who can use the choice; RTD youth fares are free. ⚠️ Denver had its own fight over a district line: after the Supreme Court's *Keyes v. School District No. 1* (1973) ordered Denver to desegregate, Colorado voters passed the Poundstone Amendment (1974), which made it far harder for Denver to annex suburban land. ⚠️ *Keyes* and Poundstone are **not in D-SCHOOL yet**; add them to the mirror with a source before publishing.",
+   "doing": "Parents organize to keep community schools open; MSCS teachers stay in priority schools with retention bonuses; churches and nonprofits run tutoring and after-school programs; Junior Achievement BizTown brings MSCS fifth-graders to run a simulated economy (RJ students help).",
+   "denver": "Denver families may choose schools outside their zone, but transport limits who can use the choice; RTD youth fares are free. ⚠️ Denver had its own fight over a district line: after the Supreme Court's *Keyes v. School District No. 1* (1973) ordered Denver to desegregate, Colorado voters passed the Poundstone Amendment (1974), which made it far harder for Denver to annex suburban land.",
    "denverKeys": [
     "D-SCHOOL"
    ],
@@ -271,11 +266,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "xAI runs dozens of gas turbines to power Colossus before a permit covers them (2024–25)"
    ],
    "oneDay": "a child at a school near the corridor breathes air under a Code Orange alert the day after the turbines' permit is approved; her family's tap water comes from a wellfield a pipeline was routed through.",
-   "contested": "Whether Colossus's jobs and tax revenue outweigh its air and water costs is a live public argument in Memphis. Present it as one: the Chamber, the mayor and xAI on one side; MCAP, Young, Gifted & Green, the NAACP and SELC on the other; residents on both. What the aquifer can sustain long-term (recharge is poorly understood, per CAESER). Mississippi sued Tennessee over the aquifer and lost at the U.S. Supreme Court (2021) — ⚠️ confirm citation.",
+   "contested": "Whether Colossus's jobs and tax revenue outweigh its air and water costs is a live public argument in Memphis. Present it as one: the Chamber, the mayor and xAI on one side; MCAP, Young, Gifted & Green, the NAACP and SELC on the other; residents on both. What the aquifer can sustain long-term (recharge is poorly understood, per CAESER).",
    "who": "Permits are decided by the Shelby County Health Department and the Memphis and Shelby County Air Pollution Control Board, under EPA rules; siting follows zoning decided decades ago. The company and the region's economic-development leaders gain a marquee project; MLGW and TVA gain a large customer. Neighbors in South and Southwest Memphis carry the air.",
    "nlb": "Nature: the aquifer itself — a gift. Luck: where the clay happens to be thin. **Built:** where industry is zoned, where pipelines may run, what a temporary turbine needs, and whose objections are expected.",
    "doing": "**Memphis Community Against the Pipeline** (founded Oct 2020 in Boxtown, led by Justin J. Pearson, now a state representative) stopped Byhalia; it continues as **Memphis Community Against Pollution** (KeShaun Pearson, director). **Protect Our Aquifer** won wellhead and setback rules; **Young, Gifted & Green** organizes youth on air quality; **CAESER** at the University of Memphis maps the breaches. Students meet Protect Our Aquifer.",
-   "denver": "Denver's lead service lines are the water mirror: an estimated 60,000–64,000 remain, more than 36,000 replaced since 2020 at no direct cost to customers, in a roughly $670 million program. — Denver Water, *Year in Review* 2025 ✅; Inside Climate News ⚠️. See Denver mirror **D-WATER**. The air mirror is the industrial corridor along I-70 — Globeville, Elyria-Swansea and the Suncor refinery in Commerce City. ⚠️ **No air key in the mirror yet**; source this before publishing.",
+   "denver": "Denver's lead service lines are the water mirror: an estimated 60,000–64,000 remain, more than 36,000 replaced since 2020 at no direct cost to customers, in a roughly $670 million program. — Denver Water, *Year in Review* 2025 ✅; Inside Climate News ⚠️. The air mirror is the industrial corridor along I-70 — Globeville, Elyria-Swansea and the Suncor refinery in Commerce City.",
    "denverKeys": [
     "D-WATER"
    ],
@@ -309,7 +304,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "who": "Lenders, appraisers and federal agencies decided where credit went; white suburban buyers gained subsidized mortgages and rising home values. Black homeowners paid twice — in credit they couldn't get, and in value their homes never gained.",
    "nlb": "Nature: none. Luck: none. **Built: all of it — and well documented.**",
    "doing": "Orange Mound residents and alumni keep Melrose High's identity alive across cities; the city is pursuing National Register status and an **ABODE** affordable-house demonstration project with Self+Tucker Architects, a Black-owned Memphis firm (✅ survey; ⚠️ firm ownership). The Stax Museum and Stax Music Academy anchor Soulsville (⚠️). The Four Way has fed Soulsville for decades (⚠️).",
-   "denver": "Denver was mapped by HOLC too, and the neighborhoods graded worst — including parts of Five Points, Globeville and Elyria-Swansea — are among those later cut by I-70 and I-25. ⚠️ Not in the mirror.",
+   "denver": "Denver was mapped by HOLC too, and the neighborhoods graded worst — including parts of Five Points, Globeville and Elyria-Swansea — are among those later cut by I-70 and I-25.",
    "denverKeys": [
     "D-HOMEINS",
     "D-HOUSING"
@@ -323,13 +318,13 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
      "text": "Tennessee has no state minimum wage; the federal $7.25/hour applies.",
      "src": "",
      "mark": "care",
-     "note": "Stable law, not re-fetched this session — confirm at TN Dept. of Labor and Workforce Development."
+     "note": ""
     },
     {
      "text": "**Memphis may not set its own.** State law says a local government may not require a private employer to pay an hourly wage above what federal or state law requires.",
-     "src": "Tenn.",
+     "src": "Tenn. Code § 50-2-112",
      "mark": "care",
-     "note": "Confirm the current version. Denver did the opposite (D-MINWAGE)."
+     "note": "Denver did the opposite"
     },
     {
      "text": "Tennessee has **not adopted** the ACA Medicaid expansion; it is one of 10 states.",
@@ -353,7 +348,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
      "text": "No state paid sick or family leave law.",
      "src": "",
      "mark": "care",
-     "note": "Confirm."
+     "note": ""
     },
     {
      "text": "Reentry: a felony record (including a camping felony — Barrier 2) narrows which jobs are open. See Barrier 9. The region had 15,000–20,000 job openings in 2019",
@@ -380,8 +375,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "contested": "Supporters of Tennessee's choices argue low costs and no state income tax attract employers (FedEx, logistics); opponents argue the cost moves to families and hospitals. Present the trade, not a verdict.",
    "who": "The General Assembly and the governor, in writing. Employers gain lower labor costs; taxpayers avoid the state share of expansion. Workers pay in unpaid sick days and medical debt; hospitals absorb uncompensated care.",
    "nlb": "Nature: illness. Luck: which employer hires you. **Built:** the wage floor, the coverage rules, the leave rules.",
-   "doing": "Job-training programs (Landmark, ⚠️ purpose unconfirmed); construction-trade pipelines such as We Build 901 (Chamber, 2019 ✅ ⚠️); church-based clinics; families pooling care. **Junior Achievement BizTown** teaches MSCS children budgeting and paychecks — RJ students help run it. Ask them: what wage did the simulation use?",
-   "denver": "See Denver mirror **D-MINWAGE**: Denver's minimum wage is $19.29/hour (2026), Colorado's $15.16, protected regardless of immigration status (Denver Labor; CDLE ✅). **D-WAGE**: Denver median household income $94,718, poverty 11.2% (2024, Data USA ⚠️ vintage). **D-LEAVE**: FAMLI pays up to 12 weeks; HFWA gives up to 48 hours of paid sick leave a year at every employer. ✅ **D-HEALTH**: Colorado's uninsured rate is 5.9% (2025 ✅); Health First Colorado covers adults 19–64, with or without children, up to 133% of the poverty level. ✅ **D-INFORMAL**: the floor holds only where it is enforced.",
+   "doing": "Job-training programs; construction-trade pipelines such as We Build 901 (Chamber, 2019 ✅ ⚠️); church-based clinics; families pooling care. **Junior Achievement BizTown** teaches MSCS children budgeting and paychecks — RJ students help run it. Ask them: what wage did the simulation use?",
+   "denver": "Denver's minimum wage is $19.29/hour (2026), Colorado's $15.16, protected regardless of immigration status (Denver Labor; CDLE ✅). Denver median household income $94,718, poverty 11.2% (2024, Data USA ⚠️). FAMLI pays up to 12 weeks; HFWA gives up to 48 hours of paid sick leave a year at every employer. ✅ Colorado's uninsured rate is 5.9% (2025 ✅); Health First Colorado covers adults 19–64, with or without children, up to 133% of the poverty level. ✅ the floor holds only where it is enforced.",
    "denverKeys": [
     "D-HEALTH",
     "D-INFORMAL",
@@ -396,7 +391,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "numbers": [
     {
      "text": "SNAP's maximum benefit for a family of four is **$1,023 a month** from 1 Oct 2026, the same in Tennessee and Colorado (48 states).",
-     "src": "USDA via *Colorado Politics*, Sept 2026 (Denver mirror D-FOOD)",
+     "src": "USDA via *Colorado Politics*, Sept 2026",
      "mark": "care",
      "note": "National. That is about **$8.50 per person per day** at the maximum *(our arithmetic: 1,023 ÷ 4 ÷ 30)*. Use it to check the trip's own food-stamp meal."
     },
@@ -426,7 +421,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "who": "Grocery chains decide where to build; the city and county decide incentives; Congress decides SNAP. Food banks absorb what is left. Families pay in time and health.",
    "nlb": "Nature: none. Luck: a car. **Built:** store siting, incentives, SNAP rules.",
    "doing": "",
-   "denver": "See Denver mirror **D-FOOD**: about 612,700 Coloradans received SNAP each month in FY2025 (10.2% of the population, vs.",
+   "denver": "About 612,700 Coloradans received SNAP each month in FY2025 (10.2% of the population, vs.",
    "denverKeys": [
     "D-FOOD"
    ],
@@ -462,11 +457,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "rent, jobs and English classes must come together within months"
    ],
    "oneDay": "a father with professional training takes a night warehouse shift because the first job offered must be accepted.",
-   "contested": "The right number of admissions is a political question; the packet describes the mechanism, not the number. How many families RJ groups have helped: ask Serve901.",
+   "contested": "The right number of admissions is a political question.",
    "who": "The President, by determination; Congress, by appropriation; the state, by its laws on charities. Employers gain workers; congregations and volunteers fill gaps. Refugee families carry the risk of the short runway.",
    "nlb": "Nature: none. Luck: enormous — which camp, which year, which ceiling. **Built:** the ceiling, the runway, the funding.",
    "doing": "",
-   "denver": "See Denver mirror **D-IMMIGRATION**: from 1 Oct 2026, refugees, asylees and other lawfully present immigrants lose Health First Colorado eligibility; 6,000–7,000 Coloradans are expected to lose coverage. Colorado keeps children and pregnant people covered regardless of status (Cover All Coloradans). ✅ **D-LANGUAGE**: 40.8% of DPS students speak another language at home. ✅",
+   "denver": "From 1 Oct 2026, refugees, asylees and other lawfully present immigrants lose Health First Colorado eligibility; 6,000–7,000 Coloradans are expected to lose coverage. Colorado keeps children and pregnant people covered regardless of status (Cover All Coloradans). ✅ 40.8% of DPS students speak another language at home. ✅",
    "denverKeys": [
     "D-IMMIGRATION",
     "D-LANGUAGE"
@@ -514,8 +509,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "contested": "Employers and landlords say screening protects other workers and tenants and limits their liability; reentry advocates say old or minor records shut out people who have done their time. Both can be true at once; present the trade.",
    "who": "The Tennessee General Assembly decides what is a felony and what can be expunged; court clerks set the process; private screening companies decide what appears on a report and for how long; employers and landlords decide what to do with it. Congress and the President decide refugees' status and benefits. Landlords and employers gain a quick filter. People with records pay in jobs and apartments they never hear back from — and so do their families.",
    "nlb": "Nature: none. Luck: whether a charge was filed, whether a landlord files or calls, which year a refugee arrived. **Built:** what counts as a felony, what can be cleared and at what cost, what screening companies report, and which benefits depend on status.",
-   "doing": "Free expungement clinics run by the county clerk, held in churches; legal-aid lawyers (Memphis Area Legal Services ⚠️ confirm current work); shelter caseworkers who help with IDs and applications (⚠️ confirm at Room in the Inn); former refugees who become caseworkers and interpreters.",
-   "denver": "See Denver mirror **D-IMMIGRATION**: count the cushions under a family and ask which would vanish if one paper changed.",
+   "doing": "Free expungement clinics run by the county clerk, held in churches; legal-aid lawyers; shelter caseworkers who help with IDs and applications; former refugees who become caseworkers and interpreters.",
+   "denver": "Count the cushions under a family and ask which would vanish if one paper changed.",
    "denverKeys": [
     "D-IMMIGRATION",
     "D-RECORD"
@@ -533,13 +528,13 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     },
     {
      "text": "**Payday (deferred presentment) loans:** a fee of up to 15% of the check or $30, whichever is less; no more than $500 outstanding per customer and two checks at once; up to 31 days; no renewals.",
-     "src": "Tenn.",
+     "src": "Tenn. Code § 45-17-112 (2010 text)",
      "mark": "care",
-     "note": "Confirm the current text. A $30 fee on a two-week $200 loan works out to about **391% a year** *(our arithmetic: 15% × 365 ÷ 14)*."
+     "note": "A $30 fee on a two-week $200 loan works out to about **391% a year** *(our arithmetic: 15% × 365 ÷ 14)*."
     },
     {
      "text": "**Bank credit, for comparison:** credit cards 21.19% APR; 30-year mortgage 7.11% (Nov 2026).",
-     "src": "Federal Reserve G.19; Freddie Mac (Denver mirror D-CREDIT)",
+     "src": "Federal Reserve G.19; Freddie Mac",
      "mark": "ok",
      "note": "National — the same in both states."
     }
@@ -556,7 +551,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "contested": "Lenders argue that high-cost credit serves people banks will not, and that small loans to risky borrowers cost more to make; critics argue that repeat renewals are the business model. Present the trade, not a verdict.",
    "who": "The Tennessee General Assembly wrote each ceiling; flex loans became legal in 2015 under a bill signed by Gov. Bill Haslam (ProPublica ✅). Banks decide whom they lend to. Licensed lenders and their investors gain. Borrowers with the least cushion pay the highest rates for the smallest loans. The history is older than the statutes: the lending map drawn in the 1930s (Barrier 5) decided whose families built equity to borrow against.",
    "nlb": "Nature: the breakdown, the storm. Luck: a relative who can lend. **Built:** the rate ceilings, what counts as collateral, what a credit file holds, and where banks and lenders open branches.",
-   "doing": "CDFIs and HOPE Credit Union; River City Capital's loans with coaching on cash flow and paperwork; church benevolence funds (⚠️ confirm with Serve901 partners); families pooling money. **Junior Achievement BizTown** teaches MSCS fifth-graders budgets and paychecks — ask the staff whether it teaches borrowing.",
+   "doing": "CDFIs and HOPE Credit Union; River City Capital's loans with coaching on cash flow and paperwork; church benevolence funds; families pooling money. **Junior Achievement BizTown** teaches MSCS fifth-graders budgets and paychecks — ask the staff whether it teaches borrowing.",
    "denver": "",
    "denverKeys": [
     "D-BANK",
@@ -575,7 +570,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "keys": []
    },
    "denver": {
-    "text": "Denver median household income **$94,718**; poverty **11.2%** (2024). — Data USA (ACS). vintage. Full-time at $19.29 ≈ $40,120/yr *(our arithmetic)*. See.",
+    "text": "Denver median household income **$94,718**; poverty **11.2%** (2024). — Data USA (ACS). Full-time at $19.29 ≈ $40,120/yr *(our arithmetic)*.",
     "mark": "care",
     "keys": [
      "D-WAGE"
@@ -590,7 +585,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "keys": []
    },
    "denver": {
-    "text": "Denver **$19.29**/hr; Colorado $15.16 (2026); applies regardless of immigration status. — Denver Labor; CDLE. Enforcement recovered $2.31M for ~7,200 Denver workers in 2025. See,.",
+    "text": "Denver **$19.29**/hr; Colorado $15.16 (2026); applies regardless of immigration status. — Denver Labor; CDLE. Enforcement recovered $2.31M for ~7,200 Denver workers in 2025.",
     "mark": "ok",
     "keys": [
      "D-INFORMAL",
@@ -606,7 +601,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "keys": []
    },
    "denver": {
-    "text": "Colorado uninsured **5.9%** (2025). Health First Colorado covers adults 19–64 to **133%** of poverty, children or not; Hospital Discounted Care caps hospital payment plans at 4% of income. From 2027, work requirements and six-month renewals for expansion adults. See.",
+    "text": "Colorado uninsured **5.9%** (2025). Health First Colorado covers adults 19–64 to **133%** of poverty, children or not; Hospital Discounted Care caps hospital payment plans at 4% of income. From 2027, work requirements and six-month renewals for expansion adults.",
     "mark": "ok",
     "keys": [
      "D-HEALTH"
@@ -616,14 +611,14 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
   {
    "label": "Paid leave — sick, injured, new baby",
    "there": {
-    "text": "No state paid sick or family leave law. Depends entirely on the employer. National: 61% of the lowest-paid quarter of private workers have paid sick leave vs. 95% of the highest-paid (BLS, Mar 2026, via D-LEAVE).",
+    "text": "No state paid sick or family leave law. Depends entirely on the employer. National: 61% of the lowest-paid quarter of private workers have paid sick leave vs. 95% of the highest-paid (BLS, Mar 2026, via).",
     "mark": "care",
     "keys": [
      "D-LEAVE"
     ]
    },
    "denver": {
-    "text": "**FAMLI**: up to 12 weeks (+4 pregnancy complications, +12 NICU), 90% of wages for lower earners, max $1,448.02/week from Jul 2026, job-protected after 180 days. **HFWA**: up to 48 hours of paid sick leave a year at every employer. See.",
+    "text": "**FAMLI**: up to 12 weeks (+4 pregnancy complications, +12 NICU), 90% of wages for lower earners, max $1,448.02/week from Jul 2026, job-protected after 180 days. **HFWA**: up to 48 hours of paid sick leave a year at every employer.",
     "mark": "ok",
     "keys": [
      "D-LEAVE"
@@ -638,7 +633,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "keys": []
    },
    "denver": {
-    "text": "Same national figure. See.",
+    "text": "Same national figure.",
     "mark": "ok",
     "keys": [
      "D-SAVINGS"
@@ -653,7 +648,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "keys": []
    },
    "denver": {
-    "text": "See.",
+    "text": "",
     "mark": "",
     "keys": [
      "D-BANK"
@@ -668,7 +663,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "keys": []
    },
    "denver": {
-    "text": "Payday capped at **36% APR** since 2019 (Prop 111), down from ~129% average in 2016. Cards 21.19%; 30-yr mortgage 7.11% (national, Nov 2026). See.",
+    "text": "Payday capped at **36% APR** since 2019 (Prop 111), down from ~129% average in 2016. Cards 21.19%; 30-yr mortgage 7.11% (national, Nov 2026).",
     "mark": "ok",
     "keys": [
      "D-CREDIT"
@@ -683,7 +678,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "keys": []
    },
    "denver": {
-    "text": "See.",
+    "text": "",
     "mark": "",
     "keys": [
      "D-HOUSING"
@@ -708,12 +703,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
   {
    "label": "If you're a refugee",
    "there": {
-    "text": "FY2026 ceiling 7,500; three months of stipends (~$1,300/month); Medicaid ends for many refugees from 1 Oct 2026 (federal; confirm TennCare). See Barrier 8.",
+    "text": "FY2026 ceiling 7,500; three months of stipends (~$1,300/month); Medicaid ends for many refugees from 1 Oct 2026. See Barrier 8.",
     "mark": "care",
     "keys": []
    },
    "denver": {
-    "text": "Same federal change: refugees lose Health First Colorado from 1 Oct 2026; 6,000–7,000 expected to lose coverage. See.",
+    "text": "Same federal change: refugees lose Health First Colorado from 1 Oct 2026; 6,000–7,000 expected to lose coverage.",
     "mark": "ok",
     "keys": [
      "D-IMMIGRATION"
@@ -728,7 +723,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "keys": []
    },
    "denver": {
-    "text": "612,700 Coloradans on SNAP (10.2%); free school meals for every student at 1,803 schools. See.",
+    "text": "612,700 Coloradans on SNAP (10.2%); free school meals for every student at 1,803 schools.",
     "mark": "ok",
     "keys": [
      "D-FOOD"
@@ -743,7 +738,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "keys": []
    },
    "denver": {
-    "text": "Same national figures; employer life insurance reaches 28% of the lowest-paid vs. 87% of the highest-paid (BLS 2026). See.",
+    "text": "Same national figures; employer life insurance reaches 28% of the lowest-paid vs. 87% of the highest-paid (BLS 2026).",
     "mark": "ok",
     "keys": [
      "D-LIFEINS"
@@ -758,7 +753,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "keys": []
    },
    "denver": {
-    "text": "Homeownership 48.8% (Data USA ). See.",
+    "text": "Homeownership 48.8% (Data USA ).",
     "mark": "care",
     "keys": [
      "D-HOMEINS"
@@ -773,7 +768,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "keys": []
    },
    "denver": {
-    "text": "See.",
+    "text": "",
     "mark": "",
     "keys": [
      "D-DISABILITY"
@@ -788,7 +783,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
     "keys": []
    },
    "denver": {
-    "text": "Same. See.",
+    "text": "Same.",
     "mark": "ok",
     "keys": [
      "D-OLDAGE"
@@ -796,11 +791,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    }
   }
  ],
- "cushionNotice": "Federal programs (Social Security, SSDI, SSI, SNAP) are the same in both places. The gaps open where **states** decide: the wage floor and whether a city may raise it, Medicaid, leave, loan ceilings, eviction rules, what counts as a felony. Stack them: a Memphis single parent of two earning $14 an hour meets a broken leg with no paid leave, no Medicaid, and a 279.5% loan as the fastest cash; most RJ families meet it with employer insurance, paid leave, savings and a lender who charges a fraction of that. That is the fence we can't see from inside (2b).",
+ "cushionNotice": "Federal programs (Social Security, SSDI, SSI, SNAP) are the same in both places. The gaps open where **states** decide: the wage floor and whether a city may raise it, Medicaid, leave, loan ceilings, eviction rules, what counts as a felony. Stack them: a Memphis single parent of two earning $14 an hour meets a broken leg with no paid leave, no Medicaid, and a 279.5% loan as the fastest cash; most RJ families meet it with employer insurance, paid leave, savings and a lender who charges a fraction of that. That is the fence we can't see from inside.",
  "fences": [
   {
    "h": "Insulation",
-   "text": "Our families' cushions — employer insurance, paid leave, a landlord who calls instead of filing, a Colorado wage floor — feel like normal life, not like decisions. So a Memphis family's fall looks like a choice. See 2c."
+   "text": "Our families' cushions — employer insurance, paid leave, a landlord who calls instead of filing, a Colorado wage floor — feel like normal life, not like decisions. So a Memphis family's fall looks like a choice."
   },
   {
    "h": "Physical",
@@ -824,7 +819,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
   },
   {
    "h": "Race, felt but not placed",
-   "text": "For many, the first time being among the only white people in a room. The discomfort was named honestly and rarely connected to Memphis history or to who lives where in Denver."
+   "text": "For some students this is the first time being among the only white people in a room. Name the discomfort honestly, then connect it to Memphis history and to who lives where in Denver."
   },
   {
    "h": "Helper and impact framing",
@@ -832,7 +827,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
   },
   {
    "h": "The group as refuge",
-   "text": "Asked what the group did well, most journals (about 15 of 18) talk about the RJ group: bunkroom nights, cards, the talent show, van rides. Many also say the group should have been more serious in nightly reflection and asked more questions (about 8 of 18)."
+   "text": "A week like this can become mostly about your own group: bunkroom nights, cards, the talent show, van rides. Those are good. Ask more questions than feels comfortable, and take the nightly reflection seriously."
   },
   {
    "h": "Reluctance",
@@ -848,7 +843,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
   },
   {
    "h": "Letting a machine do the noticing",
-   "text": "— several post-trip analyses pasted a chatbot's evaluation of whether the student had encountered people. The noticing is the part only the student can do."
+   "text": "— pasting a chatbot's evaluation of whether you encountered people. The noticing is the part only you can do."
   }
  ],
  "voices": [
@@ -934,7 +929,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "data": "SELC and Chamber figures side by side (NOx 2 ppm with SCR vs. 2,000+ tons/yr estimated unpermitted); 1 million gallons/day vs. 4.745 billion gallons/yr conserved by the recycling plant; the Byhalia route through the Davis Well Field and its cancellation.",
    "notice": "each side's numbers are true about different things; the decision ran through a county health department and a board most residents have never heard of; the 2021 neighborhood won by changing the rules (setbacks, overlay), not one permit.",
    "yourCall": "If you sat on the Air Pollution Control Board, what would you need to know before voting — and whom would you ask first?",
-   "denverRun": "the Suncor refinery's permits and the I-70 corridor. Who sits on Colorado's air board, and how would you find out? (D-WATER)"
+   "denverRun": "the Suncor refinery's permits and the I-70 corridor. Who sits on Colorado's air board, and how would you find out?"
   },
   {
    "key": "C",
@@ -944,7 +939,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "data": "six towns left in 2014 under a law needing no consent from the district left behind; MSCS enrollment 116,000 → 105,000; >$1 billion in repairs; one in four schools under 60% full; 35 schools closed in the west since 2010; $750 million / 10 years requested; $35 million request not filled (Chalkbeat ✅).",
    "notice": "closures follow old buildings and empty seats, which follow the neighborhoods that lost people and value first (Barrier 5); no one chose the leaking roofs.",
    "yourCall": "Should a town be able to leave a school district without the district's consent? What would you give the families left behind?",
-   "denverRun": "*Keyes* (1973) and the Poundstone Amendment (1974). What line was drawn around Denver, and does it still shape where you go to school? (D-SCHOOL)"
+   "denverRun": "*Keyes* (1973) and the Poundstone Amendment (1974). What line was drawn around Denver, and does it still shape where you go to school?"
   },
   {
    "key": "D",
@@ -961,7 +956,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
    "changes": "credit file (good / thin / an eviction judgment on it); a bank account or not; a paid-off car title or not; a relative who can lend; whether a CDFI or credit union is reachable; which state the family lives in.",
    "notice": "the same $500 costs a family with credit and a bank a little, and a family without them a lot, again every 30 days. The cheapest money needs the most paper.",
    "yourCall": "Tennessee and Colorado chose different ceilings. If you were drafting Tennessee's next rule, what would you change, and who would object?",
-   "denverRun": "the same $500 in Denver with a credit card, a 36%-capped loan, or a parent's savings. (D-CREDIT, D-SAVINGS, D-BANK)"
+   "denverRun": "the same $500 in Denver with a credit card, a 36%-capped loan, or a parent's savings."
   },
   {
    "key": "F",
@@ -1575,7 +1570,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["memphis"]={
      "q": "Whether a low-wage Memphis parent can get Medicaid",
      "level": "state",
      "detail": "Tennessee has not expanded Medicaid; TennCare covers a parent only up to 100% of the poverty level.",
-     "src": "TennCare eligibility guide (Memphis packet)",
+     "src": "TennCare eligibility guide",
      "mark": "ok",
      "url": "https://www.tn.gov/tenncare/members-applicants/eligibility-reference-guide.html"
     }

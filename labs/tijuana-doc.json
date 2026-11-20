@@ -275,7 +275,7 @@
        "label": "The minimum wage (one full-time earner)",
        "monthly": 13402,
        "note": "440.87 pesos a day (2026), about 13,400 a month on a 48-hour week (our arithmetic; a daily wage also pays the rest day).",
-       "src": "CONASAMI via Tijuana packet",
+       "src": "This trip’s Sources page",
        "url": "https://www.gob.mx/conasami"
       },
       {
@@ -389,7 +389,7 @@
      "rent": {
       "amt": 1874,
       "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
-      "src": "USAFacts (Denver mirror D-HOUSING)"
+      "src": "USAFacts"
      },
      "bus": {
       "fare": 2.75,
@@ -539,12 +539,12 @@
       "w2": {
        "v": "Depends on the job",
        "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       },
       "cash": {
        "v": "Not through the work",
        "text": "The same income-based coverage is open to them.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       }
      },
      {
@@ -610,7 +610,7 @@
       "price": 25,
       "mark": "yours",
       "text": "INEGI counts vendors but not what they earn; there is no Tijuana figure. Set the profit on one sale, after ingredients.",
-      "src": "Tijuana packet, Barrier 2"
+      "src": "This trip’s Barriers page, Barrier 2"
      }
     ],
     "price": {
@@ -693,7 +693,7 @@
    ],
    "doing": {
     "text": "Vendors organize in market associations; families run tandas, rotating savings circles where each member pays in and one takes the pot.",
-    "src": "Tijuana packet, Barrier 2"
+    "src": "This trip’s Barriers page, Barrier 2"
    },
    "notice": "Many vendors earn more an hour than a factory pays, on the days they sell. Part 3 is the other half: no one pays them on the days they can't.",
    "yourCall": "Would you rather have the vendor's better days or the factory's steady floor? What would make you switch?"

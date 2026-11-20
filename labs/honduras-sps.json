@@ -360,12 +360,12 @@
       "w2": {
        "v": "Depends on the job",
        "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       },
       "cash": {
        "v": "Not through the work",
        "text": "The same income-based coverage is open to them.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       }
      },
      {
@@ -513,7 +513,7 @@
    ],
    "doing": {
     "text": "Families pool a maquila wage with informal income and money sent from abroad.",
-    "src": "San Pedro Sula packet, Barrier 5"
+    "src": "This trip’s Barriers page, Barrier 5"
    },
    "notice": "Switch between 2022 and 2026. Nothing about the work changed; only a price set far away. A worker paid by the hour would have had the same wage both years.",
    "yourCall": "Who carries the risk when a world price falls: the picker, the buyer or the exporter? Who should?"
@@ -607,7 +607,7 @@
      "rent": {
       "amt": 1874,
       "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
-      "src": "USAFacts (Denver mirror D-HOUSING)"
+      "src": "USAFacts"
      },
      "bus": {
       "fare": 2.75,

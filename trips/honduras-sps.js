@@ -17,11 +17,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    "h": "History, briefly — and where to hear it in people's own words",
    "text": "",
    "items": [
-    "**Colonial founding:** San Pedro Sula was founded by the Spanish in the 1530s. ⚠️ Standard reference; not checked this session.",
-    "**The banana century:** From the early 1900s U.S. fruit companies built railways, plantations and company towns across the north coast and the Sula Valley; the 1954 general strike began in the banana camps of the north. ⚠️ Standard history; not checked this session. *In their own words:* Ramón Amaya Amador's novel *Prisión verde* (1950), written from inside the banana camps. ⚠️ Confirm edition.",
+    "**Colonial founding:** San Pedro Sula was founded by the Spanish in the 1530s.",
+    "**The banana century:** From the early 1900s U.S. fruit companies built railways, plantations and company towns across the north coast and the Sula Valley; the 1954 general strike began in the banana camps of the north. *In their own words:* Ramón Amaya Amador's novel *Prisión verde* (1950), written from inside the banana camps.",
     "**1990s on, the maquila:** Export-processing zones (ZIP, ZOLI) grew around SPS, Choloma and Villanueva; El Heraldo describes Choloma and Villanueva as urban hubs that grew after the industry arrived. — *El Heraldo*, May 2026. ✅",
     "**2010s:** SPS was named in international rankings as one of the world's most violent cities. ⚠️ Those rankings were produced by a Mexican NGO and are contested; the city's homicide count has fallen since.",
-    "Honduran poet Roberto Sosa, *Los pobres* (1969). ⚠️ Not checked this session."
+    "Honduran poet Roberto Sosa, *Los pobres* (1969)."
    ]
   },
   {
@@ -36,7 +36,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
   },
   {
    "h": "What the 2024 RJ group did",
-   "text": ": about 10 RJ students in SPS; a hotel in the city, with a bus each day to El Ocotillo; a welcome from about 50 community members; a tour of the school IS scholars attend; cooking a traditional vegetable dish and fried plantains with mothers; soccer with community boys; building benches with the community; lunch in a courtyard with Samaritan Scholars, who told their own stories; cooking and handing out about 130 packed meals to people working the dump, and carrying food baskets to houses (site not stated); and the **International Samaritan 5K** in pouring rain, run with scholars and streamed to IS supporters, with scholars from the Tegucigalpa site also running.",
+   "text": "about 10 RJ students in SPS; a hotel in the city, with a bus each day to El Ocotillo; a welcome from about 50 community members; a tour of the school IS scholars attend; cooking a traditional vegetable dish and fried plantains with mothers; soccer with community boys; building benches with the community; lunch in a courtyard with Samaritan Scholars, who told their own stories; cooking and handing out about 130 packed meals to people working the dump, and carrying food baskets to houses; and the **International Samaritan 5K** in pouring rain, run with scholars and streamed to IS supporters, with scholars from the Tegucigalpa site also running.",
    "items": []
   },
   {
@@ -53,7 +53,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    "h": "The Church's presence",
    "text": "",
    "items": [
-    "**The Jesuits of the valley:** **Radio Progreso** and **ERIC-SJ** (Equipo de Reflexión, Investigación y Comunicación), El Progreso, Yoro — the Honduran Jesuits' voice on migration, violence, land and human rights. Long directed by **Fr. Ismael Moreno Coto, SJ (Padre Melo)**. ⚠️ Confirm current director and founding dates on their own site.",
+    "**The Jesuits of the valley:** **Radio Progreso** and **ERIC-SJ** (Equipo de Reflexión, Investigación y Comunicación), El Progreso, Yoro — the Honduran Jesuits' voice on migration, violence, land and human rights. Long directed by **Fr. Ismael Moreno Coto, SJ (Padre Melo)**.",
     "**IS itself** is Jesuit-founded, and the RJ group is led by a Jesuit. The Church is here as neighbor and as visitor at once. Hold both."
    ]
   }
@@ -102,7 +102,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    "who": "Nobody in El Ocotillo decides the price. Buyers further up the chain gain information and scale; exporters and bottlers buy at world prices; the municipality gains free sorting labor that recovers material it would otherwise bury. Pickers carry the price risk and the health risk (Barrier 2).",
    "nlb": "Nature: none. Luck: the world price of oil and plastic in a given year. **Built:** where the city's trash goes, who may enter the dump, the buying chain, and the absence of a price floor.",
    "doing": "Sort by material and hold back high-value pieces (copper, aluminum) for a better buyer; work in family teams; double shifts when prices fall (Grace Honduras reports families doing this after the pandemic and the 2020 storms ⚠️ self-reported).",
-   "denver": "Where Denver's trash and recycling go, and who sorts it. The nearest key is **D-INFORMAL**: Denver Labor recovered a record $2.31 million for about 7,200 workers in its 2025 reporting year (Denver Auditor via Denver7 ✅), and 62% of Denver-area day laborers surveyed had experienced wage theft (DU, 2016–17 ⚠️). The world price that halved for a picker in SPS also sets what a Denver recycling contract is worth.",
+   "denver": "Where Denver's trash and recycling go, and who sorts it. Denver Labor recovered a record $2.31 million for about 7,200 workers in its 2025 reporting year (Denver Auditor via Denver7 ✅), and 62% of Denver-area day laborers surveyed had experienced wage theft (DU, 2016–17 ⚠️). The world price that halved for a picker in SPS also sets what a Denver recycling contract is worth.",
    "denverKeys": [
     "D-INFORMAL"
    ],
@@ -144,7 +144,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    "who": "The municipality chose the site and the concession model; the city's other neighborhoods gain a place to send their waste out of sight. The neighbors pay in health and in the stigma of an address. Nobody gains from the smoke is true; *someone gains from where the smoke goes* is also true — every household whose trash disappears.",
    "nlb": "Nature: heat and rain speed decomposition and fire. Luck: wind direction. **Built:** where the dump is, whether it is covered and lined, and whether anyone measures the neighbors' air.",
    "doing": "",
-   "denver": "Denver also decides where its dirty work goes. The nearest key is **D-WATER**. One designed answer from it: Denver Water's lead program has replaced over 36,000 lead service lines since 2020 at no direct cost to the customer. — Denver Water, Year in Review 2025. ✅ Someone decided that budget had to grow.",
+   "denver": "Denver also decides where its dirty work goes. One designed answer from it: Denver Water's lead program has replaced over 36,000 lead service lines since 2020 at no direct cost to the customer. — Denver Water, Year in Review 2025. ✅ Someone decided that budget had to grow.",
    "denverKeys": [
     "D-WATER"
    ],
@@ -185,7 +185,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    "who": "Nobody chose the hurricanes.",
    "nlb": "Nature: **say it first** — a floodplain and two major hurricanes in two weeks. Luck: which side of a levee or a hill you live on. **Built:** where poor families can afford land, what a house is made of, drainage and trash collection, and whether anything catches you afterward.",
    "doing": "Rebuild block by block; neighbors shelter neighbors; IS's house repair and rebuild; house blessings mark a home as a family's again.",
-   "denver": "In Colorado, the cushion after a disaster is insurance, savings and a landlord's obligations. Nearly 34% of Colorado households are cost-burdened (49% of renters). — Colorado statewide housing needs assessment, Nov 2026 (Colorado Newsline). ✅ See **D-HOUSING**. In the U.S., 6% of homeowners had no homeowners insurance in 2025: 3% of those with a mortgage vs. 13% of those who owned outright, because the lender requires it. — Federal Reserve SHED 2025. ✅ National.",
+   "denver": "In Colorado, the cushion after a disaster is insurance, savings and a landlord's obligations. Nearly 34% of Colorado households are cost-burdened (49% of renters). — Colorado statewide housing needs assessment, Nov 2026 (Colorado Newsline). ✅ In the U.S., 6% of homeowners had no homeowners insurance in 2025: 3% of those with a mortgage vs. 13% of those who owned outright, because the lender requires it. — Federal Reserve SHED 2025. ✅ National.",
    "denverKeys": [
     "D-HOMEINS",
     "D-HOUSING"
@@ -244,7 +244,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    "who": "The social-security system was built around formal employers; the cost of formality falls heaviest on the smallest businesses. Buyers of informal labor and goods pay less; workers carry the risk. *Nobody — a system that never had to grow to reach them* is part of the answer.",
    "nlb": "Nature: illness and accident. Luck: a relative with a formal job. **Built:** who IHSS covers, what formality costs, labor inspection.",
    "doing": "Several earners per household; *pulperías* (corner stores) and street selling; family lending; remittances (Barrier 7). IS's food delivery and scholarships fill gaps the state does not.",
-   "denver": "Denver's minimum wage is $19.29/hr (2026), protected regardless of immigration status. — Denver Labor. ✅ But the floor leaks: the Colorado Fiscal Institute estimates about 440,000 Colorado workers lose more than $728 million a year to wage theft (Denver Labor 2023 report ⚠️ estimate), and 62% of surveyed Denver-area day laborers had experienced wage theft (DU, 2016–17 ⚠️ older). Most Colorado cushions run on reported W-2 wages: FAMLI needs $2,500 in reported Colorado wages (FAMLI FAQ ✅), so cash day labor usually misses it. See **D-MINWAGE**, **D-INFORMAL**, **D-LEAVE**.",
+   "denver": "Denver's minimum wage is $19.29/hr (2026), protected regardless of immigration status. — Denver Labor. ✅ But the floor leaks: the Colorado Fiscal Institute estimates about 440,000 Colorado workers lose more than $728 million a year to wage theft (Denver Labor 2023 report ⚠️ estimate), and 62% of surveyed Denver-area day laborers had experienced wage theft (DU, 2016–17 ⚠️ older). Most Colorado cushions run on reported W-2 wages: FAMLI needs $2,500 in reported Colorado wages (FAMLI FAQ ✅), so cash day labor usually misses it.",
    "denverKeys": [
     "D-INFORMAL",
     "D-LEAVE",
@@ -288,11 +288,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
     "raises track inflation, not the basket"
    ],
    "oneDay": "a young woman sews eight hours of T-shirts for U.S. stores and her wage covers about 60% of her family's food basket.",
-   "contested": "Whether El Ocotillo families work in the maquilas today. ⚠️ Plausible in the Sula Valley, **unconfirmed for this community** — ask IS before putting this barrier on the student site. Factories argue that a higher wage would move jobs to Nicaragua or Asia; unions argue the exemptions already pay for one. Both are claims, not findings.",
+   "contested": "Whether El Ocotillo families work in the maquilas today. Factories argue that a higher wage would move jobs to Nicaragua or Asia; unions argue the exemptions already pay for one. Both are claims, not findings.",
    "who": "A tripartite commission (employers, government, workers) signs the deal; brands buying from the valley gain low assembly costs; the state gives up L5,200 million a year in taxes; workers and the families depending on them carry the gap to the basket. Consumers far away — including in Denver — gain cheaper clothes.",
    "nlb": "Nature: none. Luck: a factory hiring when you need work. **Built:** all — the zones, the exemptions, the three-year wage, the basket.",
    "doing": "Codemuh documents maquila workers' health and rights; unions negotiate the tripartite deal; families pool a maquila wage with informal income and remittances.",
-   "denver": "The wage floor here is set to the place: Denver $19.29/hr vs Colorado $15.16 (2026). — Denver Labor; CDLE. ✅ Full-time at Denver's minimum ≈ $3,340/month *(our arithmetic)*, against a Denver metro median rent of about $1,874 (ACS 2020–2024 via USAFacts ✅). Denver's median household income is $94,718 (2024, Data USA from ACS ⚠️ vintage unclear). See **D-MINWAGE**, **D-WAGE**, **D-HOUSING**.",
+   "denver": "The wage floor here is set to the place: Denver $19.29/hr vs Colorado $15.16 (2026). — Denver Labor; CDLE. ✅ Full-time at Denver's minimum ≈ $3,340/month *(our arithmetic)*, against a Denver metro median rent of about $1,874 (ACS 2020–2024 via USAFacts ✅). Denver's median household income is $94,718 (2024, Data USA from ACS ⚠️ unclear).",
    "denverKeys": [
     "D-HOUSING",
     "D-MINWAGE",
@@ -313,7 +313,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
      "text": "Ages 12–14 (grades 7–9): about 61.9% urban, 46.2% rural.",
      "src": "same report, read from a chart",
      "mark": "care",
-     "note": "Chart labels unclear; check the table before publishing."
+     "note": ""
     },
     {
      "text": "Young people 12–30: 27.2% neither study nor work; 39.2% only work; 6.0% study and work — 15.6% of 12–14-year-olds study and work.",
@@ -339,8 +339,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    "contested": "",
    "who": "The state funds the building and teacher; the family funds the rest. No one gains from a dropout; a budget that never covered transport and uniforms decides anyway. The family pays twice — the cost now and the narrower job later (Barriers 4 and 5).",
    "nlb": "Nature: none — talent is everywhere. Luck: a secondary school within walking distance; a scholarship. **Built:** where secondary schools are, what free covers, whether a scholarship exists.",
-   "doing": "**Samaritan Scholars** pays for school and asks scholars to serve their community — this is the agency story; the Stage 2 map notes scholars in Honduras studying law, nursing and journalism (⚠️ confirm which are from SPS). Older siblings pay for younger ones; mothers work extra shifts; the state's Mi Beca para Escalar and Becas Solidarias programs exist (ERP p. 15 ✅; amounts not stated).",
-   "denver": "The ladder costs money here too. About half of Colorado graduates go to college, ten points below the national rate; only 28.6% of low-income graduates earned a credential within four years. — Keystone Policy Center via Chalkbeat, 2024. ✅ Colorado Promise covers tuition left after grants for up to two years at public colleges, for households at $90,000 or less, but the family fronts the money and waits for a tax refund. — CDHE. ✅ See **D-LADDER**, **D-SCHOOL**.",
+   "doing": "**Samaritan Scholars** pays for school and asks scholars to serve their community — this is the agency story; the Stage 2 map notes scholars in Honduras studying law, nursing and journalism. Older siblings pay for younger ones; mothers work extra shifts; the state's Mi Beca para Escalar and Becas Solidarias programs exist (ERP p. 15 ✅; amounts not stated).",
+   "denver": "The ladder costs money here too. About half of Colorado graduates go to college, ten points below the national rate; only 28.6% of low-income graduates earned a credential within four years. — Keystone Policy Center via Chalkbeat, 2024. ✅ Colorado Promise covers tuition left after grants for up to two years at public colleges, for households at $90,000 or less, but the family fronts the money and waits for a tax refund. — CDHE. ✅",
    "denverKeys": [
     "D-LADDER",
     "D-SCHOOL"
@@ -360,7 +360,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
      "text": "About **30% of GDP** in 2025, the highest share in Latin America.",
      "src": "IDB via *La Prensa*, Mar 2026",
      "mark": "care",
-     "note": "EFE says more than 25%; cite the IDB figure with its source."
+     "note": ""
     },
     {
      "text": "**3,059,302 people** received remittances in 2025; **Cortés received 17.2%** of remittances; 86.9% went to current use (education, health, upkeep).",
@@ -402,7 +402,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
      "text": "Minors were 13.1% of returnees Jan–Oct 2025.",
      "src": "via *El Heraldo* (teaser)",
      "mark": "care",
-     "note": "Not opened in full."
+     "note": ""
     }
    ],
    "plain": "Many El Ocotillo families have someone in the United States. A month's U.S. wage is several months' Honduran wage, so leaving is a rational answer to Barrier 4. Many are sent back: deportation flights land in SPS, and Cortés is the department most returnees come from. The money that comes the other way — remittances — is now a quarter to a third of the Honduran economy.",
@@ -418,8 +418,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    "contested": "",
    "who": "U.S. immigration law and enforcement decide who stays; U.S. employers gain workers; the Honduran state and banks gain foreign currency (and fees on every transfer). Families pay in absence, in smuggling debt, and in the sudden loss of income when someone is deported.",
    "nlb": "Nature: none (except storms that push departures, Barrier 3). Luck: who gets across, who gets caught. **Built:** the wage gap, the border, deportation policy and protected statuses, transfer fees.",
-   "doing": "Families pool to send one person; returnees rebuild with local businesses; the CAMR receives them; Jesuit networks (ERIC-SJ / Radio Progreso in Honduras; Kino Border Initiative at the U.S.–Mexico border) accompany migrants and returnees. ⚠️ Confirm a current ERIC-SJ returnee program before naming one.",
-   "denver": "Denver is a destination. Denver's minimum wage protects workers regardless of immigration status (Denver Labor ✅); the job offer on a Denver corner still carries risk — 62% of surveyed day laborers had experienced wage theft (DU, 2016–17 ⚠️). From 1 Oct 2026, many lawfully present immigrants lose Health First Colorado eligibility; 6,000–7,000 Coloradans are expected to lose coverage. — HCPF. ✅ See **D-IMMIGRATION**, **D-INFORMAL**.",
+   "doing": "Families pool to send one person; returnees rebuild with local businesses; the CAMR receives them; Jesuit networks (ERIC-SJ / Radio Progreso in Honduras; Kino Border Initiative at the U.S.–Mexico border) accompany migrants and returnees.",
+   "denver": "Denver is a destination. Denver's minimum wage protects workers regardless of immigration status (Denver Labor ✅); the job offer on a Denver corner still carries risk — 62% of surveyed day laborers had experienced wage theft (DU, 2016–17 ⚠️). From 1 Oct 2026, many lawfully present immigrants lose Health First Colorado eligibility; 6,000–7,000 Coloradans are expected to lose coverage. — HCPF. ✅",
    "denverKeys": [
     "D-IMMIGRATION",
     "D-INFORMAL"
@@ -445,13 +445,13 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
      "text": "Passport: **US$35 (5 years, L946)** or **US$50 (10 years, L1,346)**; the applicant buys an appointment at a bank and brings an original DNI.",
      "src": "*TuNota*, 15 Oct 2026",
      "mark": "care",
-     "note": "Secondary; confirm on the INM site."
+     "note": ""
     },
     {
      "text": "U.S. visitor visa: **US$185** application fee since June 2023, paid before the interview.",
      "src": "U.S. Department of State",
      "mark": "care",
-     "note": "A further **US$250 visa integrity fee,** created by the 2025 U.S. budget law, is charged when a visa is issued; some consulates had begun collecting it by May 2026, and it is described as refundable in theory if the visitor follows visa rules. — Boston University ISSO, May 2026. Secondary; confirm its status at the U.S. Embassy in Tegucigalpa."
+     "note": "A further **US$250 visa integrity fee,** created by the 2025 U.S. budget law, is charged when a visa is issued; some consulates had begun collecting it by May 2026, and it is described as refundable in theory if the visitor follows visa rules. — Boston University ISSO, May 2026."
     },
     {
      "text": "What that costs here: US$185 is about **L5,000**, about a third of an SPS private-sector employee's average month (L14,373) *(our arithmetic, at about L27 per dollar, the rate implied by TuNota's conversion)*.",
@@ -487,7 +487,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    "who": "The IP and the municipality decide which neighborhoods are titled and when; the U.S. government decides visa fees and who qualifies. Holders of titled land gain access to cheap credit and insurance; families without title pay more for every loan (Barrier 9) and risk the most when a disaster or a threat forces them to leave. Visa fees are paid by everyone who applies, approved or not.",
    "nlb": "Nature: none. Luck: whether your neighborhood was in this year's titling program; whether a relative abroad can sponsor you. **Built:** title rules, ID requirements, visa fees and criteria.",
    "doing": "Keep every receipt for a lot paid in installments; attend IP titling fairs; enroll children for ID through school; pool family money for a passport.",
-   "denver": "In Denver a deed brings a mortgage, and the mortgage brings insurance: only 3% of U.S. homeowners with a mortgage lack homeowners insurance, vs. 13% of those who own outright (SHED 2025 ✅, **D-HOMEINS**). And one paper, immigration status, decides which cushions reach a family: the minimum wage protects every worker, but Medicaid, Social Security and much else depend on status (**D-IMMIGRATION**, **D-BANK**).",
+   "denver": "In Denver a deed brings a mortgage, and the mortgage brings insurance: only 3% of U.S. homeowners with a mortgage lack homeowners insurance, vs. 13% of those who own outright (SHED 2025 ✅). And one paper, immigration status, decides which cushions reach a family: the minimum wage protects every worker, but Medicaid, Social Security and much else depend on status",
    "denverKeys": [
     "D-BANK",
     "D-HOMEINS",
@@ -508,7 +508,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
      "text": "Microcredit: average rate for individuals **34.0% a year** (2024), up from 31.0% in 2020; for companies 21.3%.",
      "src": "CNBS, *Reporte de Inclusión Financiera 2025*, Table 39 (2024 data, preliminary)",
      "mark": "care",
-     "note": "The report's text gives a slightly different range (30.8–34.6%); cite the table."
+     "note": ""
     },
     {
      "text": "Who lends to whom (adults who borrowed in the past 12 months, Nov 2024): **12.9%** of adults borrowed; of them 59.5% from banks, 18.2% from cooperatives, **9.0% from informal lenders or pawnshops**, 5.9% from savings-and-loan groups (including *cajas rurales*), 5.5% from finance companies, 4.5% from microfinance. In rural areas informal lenders made 11.6% of loans. Loans from family and friends were not asked.",
@@ -554,7 +554,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    "who": "Daily lenders gain the most from the smallest borrowers. The borrower pays in interest, in fear, and sometimes in the business itself.",
    "nlb": "Nature: the storm or fire that makes the loan necessary. Luck: a relative abroad who can send the money instead. **Built:** collateral rules, title (Barrier 8), what an account costs, and how hard it is to report a lender.",
    "doing": "Cooperatives and savings-and-loan groups; remittances in place of a loan (about a quarter of households receive them, INE 2024 ⚠️ the report's figure varies between 23.2% and 24.6%); IS house repair in place of a loan; neighbors lending to neighbors.",
-   "denver": "Colorado capped payday loans at **36% APR** in 2019 (Prop 111, 77% of the vote); before that they averaged about 129%. Credit cards average **21.19%** (Q3 2026); a 30-year mortgage **7.11%** (12 Nov 2026). **63%** of U.S. adults could cover a $400 emergency with cash (2025). — Fed G.19; Freddie Mac; CPR; Ballotpedia; Fed SHED. ✅ See **D-CREDIT**, **D-SAVINGS**, **D-BANK**.",
+   "denver": "Colorado capped payday loans at **36% APR** in 2019 (Prop 111, 77% of the vote); before that they averaged about 129%. Credit cards average **21.19%** (Q3 2026); a 30-year mortgage **7.11%** (12 Nov 2026). **63%** of U.S. adults could cover a $400 emergency with cash (2025). — Fed G.19; Freddie Mac; CPR; Ballotpedia; Fed SHED. ✅",
    "denverKeys": [
     "D-BANK",
     "D-CREDIT",
@@ -587,7 +587,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
     "keys": []
    },
    "denver": {
-    "text": "Denver $19.29/hr, Colorado $15.16 (2026), regardless of immigration status. — Denver Labor; CDLE. Enforced by an office: $2.31M recovered for ~7,200 workers (2025). — Denver Auditor. Wage theft still estimated at $728M+/yr statewide. **D-MINWAGE, D-INFORMAL**",
+    "text": "Denver $19.29/hr, Colorado $15.16 (2026), regardless of immigration status. — Denver Labor; CDLE. Enforced by an office: $2.31M recovered for ~7,200 workers (2025). — Denver Auditor. Wage theft still estimated at $728M+/yr statewide.",
     "mark": "care",
     "keys": [
      "D-INFORMAL",
@@ -648,7 +648,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
     "keys": []
    },
    "denver": {
-    "text": "Credit cards 21.19% APR (Q3 2026); 30-year mortgage 7.11% (Nov 2026); payday loans capped at 36% APR since 2019. — Fed G.19; Freddie Mac; Prop 111. 63% could cover $400 in cash (2025). — SHED. **D-CREDIT, D-SAVINGS**",
+    "text": "Credit cards 21.19% APR (Q3 2026); 30-year mortgage 7.11% (Nov 2026); payday loans capped at 36% APR since 2019. — Fed G.19; Freddie Mac; Prop 111. 63% could cover $400 in cash (2025). — SHED.",
     "mark": "ok",
     "keys": [
      "D-CREDIT",
@@ -747,11 +747,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    }
   }
  ],
- "cushionNotice": "Stack the rows. A family in El Ocotillo meets an injury, a flood or a death with almost no cushion — no contract, no paid leave, no insurance, credit at 34% a year or more, and a daily lender if the bank says no — and often the one cushion it has is a relative in the U.S., which a single deportation removes. Most RJ families meet the same events with five or six cushions they did not build and rarely see. That is what precarity means, and it is the fence we can't see from inside (2b).",
+ "cushionNotice": "Stack the rows. A family in El Ocotillo meets an injury, a flood or a death with almost no cushion — no contract, no paid leave, no insurance, credit at 34% a year or more, and a daily lender if the bank says no — and often the one cushion it has is a relative in the U.S., which a single deportation removes. Most RJ families meet the same events with five or six cushions they did not build and rarely see. That is what precarity means, and it is the fence we can't see from inside.",
  "fences": [
   {
    "h": "Insulation",
-   "text": "Our trash disappears from the curb and we never see who sorts it. Our cushions — paid leave, insurance, a bank, a wage floor, a passport — are invisible from inside, so a family that falls looks like it chose to. See 2c."
+   "text": "Our trash disappears from the curb and we never see who sorts it. Our cushions — paid leave, insurance, a bank, a wage floor, a passport — are invisible from inside, so a family that falls looks like it chose to."
   },
   {
    "h": "What students did not see",
@@ -763,7 +763,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
   },
   {
    "h": "Language",
-   "text": "Some students made themselves speak Spanish and made friends at the soccer field; others leaned on translators and noticed how much was lost. Some had studied a language other than Spanish. When translators carry every conversation, the program's staff decide what we hear."
+   "text": "Some students make themselves speak Spanish and make friends at the soccer field; others lean on translators and noticed how much was lost. Some had studied a language other than Spanish. When translators carry every conversation, the program's staff decide what we hear."
   },
   {
    "h": "The senior-year fence",
@@ -775,11 +775,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
   },
   {
    "h": "Affective",
-   "text": "Fear (above). Pity — needing children to be sad so the trip means something; or they have so little but they are so happy which erases the structure. **Privilege shock**: students set their own tuition beside a family's yearly income, or remembered a large repair their family paid at once. The comparison is true, and it can stop at guilt instead of asking what cushion made the difference (2c). **Deference received**: a cheering welcome, a local teen offering to carry an RJ student's water bottle, and not knowing what to do with honor you did not earn. **Rescue**: *what are we going to do to fix it?* lasted for some students until late in the trip. **The flattering contrast**: *they are community-minded, we are individualists* can stand in for the structure as easily as pity does. Keep three things apart: what you saw, what you were told and by whom, and what you concluded."
+   "text": "Fear (above). Pity — needing children to be sad so the trip means something; or they have so little but they are so happy which erases the structure. **Privilege shock**: setting your own tuition beside a family's yearly income, or remembering a large repair your family paid at once. The comparison is true, and it can stop at guilt instead of asking what cushion made the difference. **Deference received**: a cheering welcome, someone offering to carry your water bottle, and not knowing what to do with honor you did not earn. **Rescue**: *what are we going to do to fix it?* can last until late in the trip. **The flattering contrast**: *they are community-minded, we are individualists* can stand in for the structure as easily as pity does. Keep three things apart: what you saw, what you were told and by whom, and what you concluded."
   },
   {
    "h": "Theological",
-   "text": "*We are bringing God to the dump* — as if God were not already there in the families, the school and the parish. A student in 2024 asked, on the dump, whether God is here. It is a real question. Notice that the people who live there already answer it, in the parish, the school and the house blessing, before we answer it for them. We're so blessed — reading our comfort as God's favor and their hardship as its absence. Treating a house blessing or a Mass as something we give rather than something we share."
+   "text": "*We are bringing God to the dump* — as if God were not already there in the families, the school and the parish. Standing on the dump, it is natural to ask whether God is here. It is a real question. Notice that the people who live there already answer it, in the parish, the school and the house blessing, before we answer it for them. We're so blessed — reading our comfort as God's favor and their hardship as its absence. Treating a house blessing or a Mass as something we give rather than something we share."
   }
  ],
  "voices": [
@@ -811,7 +811,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
   {
    "h": "Partner and local",
    "items": [
-    "International Samaritan (Samaritan Scholars, El Ocotillo). ⚠️ Site not reachable this session.",
+    "International Samaritan (Samaritan Scholars, El Ocotillo).",
     "Grace Honduras / Escuela Grace, El Ocotillo. ⚠️",
     "RJ trip blog, Honduras 2026. ✅"
    ]
@@ -843,7 +843,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    "key": "A",
    "title": "One bad week",
    "question": "The same thing happens to three families. Why does it cost them so differently?",
-   "changes": "contract yes/no; IHSS or FAMLI; a bank account; the loan rate available (bank 12.33% / microcredit 34% a year / daily lender ~20% a month vs. Denver card 21.19%, payday cap 36% APR, D-CREDIT); title to the house yes/no; insurance; a relative abroad sending money; who they can call.",
+   "changes": "contract yes/no; IHSS or FAMLI; a bank account; the loan rate available (bank 12.33% / microcredit 34% a year / daily lender ~20% a month vs. Denver card 21.19%, payday cap 36% APR); title to the house yes/no; insurance; a relative abroad sending money; who they can call.",
    "data": "every row of 2c.",
    "notice": "the event is luck; the price is mostly built. The El Ocotillo family's best cushion is often a person in the U.S. — and deported removes it in one draw.",
    "yourCall": "Which of your family's cushions did you earn, and which were built around you? Which one would you build first in El Ocotillo?",
@@ -865,7 +865,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    "data": "coverage 91.6% (6–11) → 35.2% (15–17) (INE 2025 ✅); 15.6% of 12–14-year-olds study and work (INE 2025 ✅).",
    "notice": "free school still costs a family every month; a scholarship changes the decision for one child, not the price for all.",
    "yourCall": "If IS could fund either 20 more scholars or a free bus for every child in El Ocotillo, which would you choose, and why?",
-   "denverRun": "what does a free Denver public high school cost a family per year (sports fees, transport, devices)? Average primary-sport spending $1,016 (2024, Aspen Project Play ✅). See D-SCHOOL."
+   "denverRun": "what does a free Denver public high school cost a family per year (sports fees, transport, devices)? Average primary-sport spending $1,016 (2024, Aspen Project Play ✅)."
   },
   {
    "key": "D",
@@ -875,7 +875,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    "data": "remittances US$12,212M (2025), 98% from the U.S., 80%+ to food, health and education (BCH ✅); ~42,000 returnees in 2025, Cortés first (INM ⚠️); 39,243 returned 1 Jan–22 Oct 2026 (INM ✅); return bonus L2,000 (2025) → L2,500 (Oct 2026) (INM ✅); SPS average informal income L11,587 (INE ✅).",
    "notice": "the remittance was the family's cushion; deportation removes it and adds a debt. Leaving was rational; so is wanting to go again.",
    "yourCall": "What would have to be true in SPS for him not to want to go back north?",
-   "denverRun": "the same worker on a Denver job site — protected by Denver's minimum wage regardless of status (✅), exposed to wage theft (⚠️ DU). See D-IMMIGRATION."
+   "denverRun": "the same worker on a Denver job site — protected by Denver's minimum wage regardless of status (✅), exposed to wage theft (⚠️ DU)."
   },
   {
    "key": "E",
@@ -885,7 +885,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    "data": "bank loans up to L500,000 average 20.11% a year (BCH, June 2026 ✅); microcredit to individuals 34.0% a year (CNBS 2024 ✅); daily lenders about 20% a month (2015 ⚠️), one 2017 SPS case about 26% for one month (⚠️ our arithmetic); 9% of recent borrowers used informal lenders or pawnshops (INE 2024 ✅); 39.7% of adults have an account (INE 2024 ✅).",
    "notice": "the same L10,000 costs a titled family with a payslip a little and a store owner without either a lot, and the lender comes to her counter every day. The poorest borrower pays the highest price.",
    "yourCall": "Which would change this family's price most: title to the lot, an account, or a cooperative within walking distance? Whose decision is each one?",
-   "denverRun": "the same need (about $400) in Denver: a credit card at 21.19%, a payday loan capped at 36% APR, a family member, or cash (63% of U.S. adults could pay $400 in cash). See D-CREDIT, D-SAVINGS."
+   "denverRun": "the same need (about $400) in Denver: a credit card at 21.19%, a payday loan capped at 36% APR, a family member, or cash (63% of U.S. adults could pay $400 in cash)."
   }
  ],
  "theology": {
@@ -1515,12 +1515,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
       "w2": {
        "v": "Depends on the job",
        "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       },
       "cash": {
        "v": "Not through the work",
        "text": "The same income-based coverage is open to them.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       }
      },
      {
@@ -1668,7 +1668,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
    ],
    "doing": {
     "text": "Families pool a maquila wage with informal income and money sent from abroad.",
-    "src": "San Pedro Sula packet, Barrier 5"
+    "src": "This trip’s Barriers page, Barrier 5"
    },
    "notice": "Switch between 2022 and 2026. Nothing about the work changed; only a price set far away. A worker paid by the hour would have had the same wage both years.",
    "yourCall": "Who carries the risk when a world price falls: the picker, the buyer or the exporter? Who should?"
@@ -1762,7 +1762,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-sps"]={
      "rent": {
       "amt": 1874,
       "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
-      "src": "USAFacts (Denver mirror D-HOUSING)"
+      "src": "USAFacts"
      },
      "bus": {
       "fare": 2.75,

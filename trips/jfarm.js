@@ -5,7 +5,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
  "place": [
   {
    "h": "Where",
-   "text": "The Historic Northeast of Kansas City, Missouri — a cluster of old neighborhoods on the bluffs above the Missouri River, east of downtown: **Pendleton Heights**, Scarritt Renaissance, Indian Mound, Sheffield, Lykins, Independence Plaza, and others. Jerusalem Farm sits at **520 Garfield Ave., KC, MO 64124**, in Pendleton Heights. ✅ (Catholic Volunteer Network; Flatland 2022.) Pendleton Heights runs from Paseo east to Chestnut Trafficway, and from Independence Avenue north to Cliff Drive. ✅ (Wikipedia.) That puts it **east of Troost Avenue**, the city's best-known racial dividing line (see Barrier 4). ⚠️ Our reading of the map; confirm on the CST walk.",
+   "text": "The Historic Northeast of Kansas City, Missouri — a cluster of old neighborhoods on the bluffs above the Missouri River, east of downtown: **Pendleton Heights**, Scarritt Renaissance, Indian Mound, Sheffield, Lykins, Independence Plaza, and others. Jerusalem Farm sits at **520 Garfield Ave., KC, MO 64124**, in Pendleton Heights. ✅ (Catholic Volunteer Network; Flatland 2022.) Pendleton Heights runs from Paseo east to Chestnut Trafficway, and from Independence Avenue north to Cliff Drive. ✅ (Wikipedia.) That puts it **east of Troost Avenue**, the city's best-known racial dividing line (see Barrier 4).",
    "items": []
   },
   {
@@ -35,7 +35,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
     "**What RJ groups have actually done**. Students stay at Jerusalem Farm all week. JF's live-in community members run the day; a bell calls everyone to chapel several times a day; meals are vegetarian, showers short, phones put away, and there is no sightseeing. The **Feb 2025** group had a welcome tour on why the community lives simply, a tool-safety class, a night without electricity, a neighborhood walk with a values talk, a nature walk, garden and debris work, and work at a **house site** for a neighbor (demolishing and insulating basements, sanding), where students first heard about the land trust. That group also visited **Cherith Brook Catholic Worker**.",
     "**Also:** curbside compost pickup, gardens and chickens, and help with a Giving Grove orchard; work on saving the St. Francis apartment building (300 Gladstone Blvd.) from demolition. ✅ (Flatland 2022; Wikipedia.) The city's Housing Court lists Jerusalem Farm as a **tool-lending** resource for the Northeast (ladders and tools). ✅ (KCMO Municipal Court.)",
     "**Listening:** a **community research project** run every two years (2020, 2022, 2024): listening sessions with interpreters, then a neighborhood-wide survey, then a report for residents and developers. The last cycle drew 500 responses. ✅ (*Northeast Narratives*.) Jordan Schiele said the aim is a survey that comes from the community itself, not from Jerusalem Farm. ✅",
-    "**Public staff:** Jessie Schiele, executive director; Jordan Schiele, project/program director, described in 2024 as a founder. ✅ (Flatland 2022; *Northeast Narratives* 2024.) ⚠️ Confirm current roles on JF's site.",
+    "**Public staff:** Jessie Schiele, executive director; Jordan Schiele, project/program director, described in 2024 as a founder.",
     "⚠️ **Founding year disagrees:** *Northeast Narratives* says 2004, in Pendleton Heights, inspired by the Catholic Worker movement. Flatland (2022) says about ten years ago. Use JF's own date."
    ]
   },
@@ -124,7 +124,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
    "who": "Nobody decided that roofs fail; physics did. What was decided is how much public money goes to repair (mostly federal block grants passed through the city), and that it is far less than the need. Repair rarely makes a ribbon-cutting. Who gains when an older owner can't repair: a cash buyer who gets the house at a discount, and an investor who rents or flips it. The homeowner and the block pay.",
    "nlb": "Nature: weather, age, wear. Luck: whether the roof fails the year after you retire or the year before. **Built:** program budgets, waitlists, income limits, and the lack of a county-wide count.",
    "doing": "Jerusalem Farm's model: the homeowner works alongside the crew and repays materials without interest, so the house is still theirs, by their own labor. Westside Housing, Rebuilding Together KC, Habitat, Children's Mercy's healthy-homes work, MARC Aging Services and Front Porch Alliance run repair programs. LISC's 2023 study recommends a shared intake for all providers, a multilingual resource list and more contractor training. ✅ (LISC 2023.) In 2026 the Urban League's **Operation Rebuild** began giving up to $20,000 per home to 43 homeowners in the Santa Fe neighborhood, using leftover federal pandemic money. ✅ (KCUR, Sep 2026; not the Northeast, but the same idea.)",
-   "denver": "About 34% of Colorado households are cost-burdened (49% of renters). — Colorado statewide housing needs assessment, Nov 2026, via *Colorado Newsline*. ✅ (D-HOUSING.) Owners who own outright, as many older owners do, are the ones most likely to have no homeowners insurance: 13% of free-and-clear owners vs 3% with a mortgage (U.S., 2025).",
+   "denver": "About 34% of Colorado households are cost-burdened (49% of renters). — Colorado statewide housing needs assessment, Nov 2026, via *Colorado Newsline*. ✅ Owners who own outright, as many older owners do, are the ones most likely to have no homeowners insurance: 13% of free-and-clear owners vs 3% with a mortgage (U.S., 2025).",
    "denverKeys": [
     "D-HOMEINS",
     "D-HOUSING",
@@ -139,7 +139,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
      "text": "Enforcement is complaint-driven through 311; reports can be anonymous; officers must respond to every report; 10 days for nuisance and 30 days for property violations; Housing Court is the last resort, and judges can refer owners to nonprofits like Jerusalem Farm or the Municipal Court Fund.",
      "src": "KCUR (Jodi Fortino), Oct 2021, quoting the city's Neighborhoods and Housing Services department",
      "mark": "care",
-     "note": "2021 — confirm the deadlines are current."
+     "note": ""
     },
     {
      "text": "**Jerusalem Farm's pilot (2020):** JF partnered with the **Indian Mound Neighborhood Association** to handle all 311 complaints in that neighborhood, working directly with residents. It resolved **80% of complaints without fines**.",
@@ -169,7 +169,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
    "who": "The City Council wrote the code and chose complaint-driven enforcement. That is cheaper than inspecting every block, and it sends inspectors where someone is bothered. The neighbor who complains gains a tidier block; a developer gains when an owner gives up. The owner pays twice — in fines and in hourly wages lost to court, as Jordan Schiele pointed out (KCUR 2021). ✅",
    "nlb": "Nature: paint peels, weeds grow. Luck: whether your neighbor calls 311. **Built:** the deadlines, the fines, the court, and whether the city sends help or a penalty first.",
    "doing": "Jerusalem Farm's restorative approach: treat the complaint as a repair request, not a penalty, and work with the owner. Neighborhood associations (Indian Mound, Pendleton Heights) and Housing Court's Neighborhood Accountability Board for the Northeast; Legal Aid of Western Missouri works with associations on abandoned properties. The city ran a similar partnership with Northland Neighborhoods, Inc. ✅ (KCUR 2021; LISC 2023.)",
-   "denver": "Propose a D-CODE key; confirm the complaint process and fine schedule before publishing.",
+   "denver": "",
    "denverKeys": [
     "D-CODE",
     "D-HOUSING"
@@ -225,7 +225,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
      "text": "**Senior freeze:** Missouri's 2023 law (SB 190) lets counties freeze assessments for older homeowners. Jackson County adopted it in 2023, effective 2024, for homes valued under $550,000, with no income cap.",
      "src": "Flatland, Oct 2023",
      "mark": "care",
-     "note": "**Flatland says 65+; check the statute's age (we believe 62+, tied to Social Security eligibility) and Jackson County's current rules** before publishing."
+     "note": ""
     }
    ],
    "plain": "Jackson County reassesses every property every two years. In 2023, assessed values jumped about 30% on average, and much more for some homes. Owners who meant to stay — not sell — got a bigger bill and nothing to pay it with. A state commission and a judge later found the county had broken notice rules. But refunds aren't coming: owners get credits spread over 2026–2028.",
@@ -242,7 +242,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
    "who": "State law requires market-value assessment; the county ran the process; schools, libraries, cities and fire districts depend on the money. The State Tax Commission found the county had broken the notice rules. Who gains from rising values: sellers, and investors who buy before prices rise. Who pays: owners who mean to stay — especially those on fixed incomes, whose house is worth more on paper while their income stays the same.",
    "nlb": "Nature: none. Luck: whether your block got hot. **Built:** the two-year cycle, market-value assessment, the notice rules, the freeze's age and value limits, and credits instead of refunds.",
    "doing": "Neighbors and realtors helped seniors file appeals; residents packed county meetings; the County Legislature voted (5–4) to comply with the rollback; the state passed the freeze.",
-   "denver": "Colorado's 2023 reassessment and later relief measures, and the Senior Homestead Exemption, need a D-PROPTAX key before the site uses them.",
+   "denver": "",
    "denverKeys": [
     "D-HOUSING",
     "D-PROPTAX"
@@ -273,7 +273,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
    "who": "Historically, explicitly and in writing: developers who wrote covenants, federal agencies that drew maps, and banks that followed them. The covenants are no longer enforceable (Supreme Court, 1948), and redlining has been illegal since the Fair Housing Act (1968). Who gained: people who could buy where values were protected, and their heirs — including, for some RJ families, our own grandparents' houses. Who pays now: owners who still can't get a loan on this side of the map.",
    "nlb": "Nature: none. Luck: which side of a street your family arrived on. **Built: all of it — and the original decisions are on paper.**",
    "doing": "Jerusalem Farm's no-interest materials loans work, in effect, as a bank where the banks don't lend. CDBG-funded city repair, Westside Housing and the Urban League's Operation Rebuild do the same.",
-   "denver": "What a loan costs today is in D-CREDIT: a 30-year mortgage at 7.11% (12 Nov 2026) and credit cards at 21.19% (Q3 2026), priced by credit score.",
+   "denver": "What a loan costs today is in a 30-year mortgage at 7.11% (12 Nov 2026) and credit cards at 21.19% (Q3 2026), priced by credit score.",
    "denverKeys": [
     "D-CREDIT"
    ],
@@ -377,7 +377,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
    "who": "Every office that never had to translate. One language is cheaper to print, staff and answer. Nobody gains when a family misses a deadline, but the cost of translation stays off the city's books and lands on the family — often on a child.",
    "nlb": "Nature: none. Luck: whether your neighbor speaks your language. **Built:** which languages a notice is printed in, and whether an interpreter is offered.",
    "doing": "Della Lamb Community Services (founded 1897) and Jewish Vocational Service resettle refugees; Mattie Rhodes Center (since 1894) has offered bilingual counseling since the late 1980s, plus ESL and workforce programs; RISE at the North-East Branch Library; the Latinx Education Collaborative; Northeast News publishes in Spanish. Jerusalem Farm offers interpreters at its listening sessions. ✅ (*Northeast Narratives*; KCUR 2024.) Bilingual children and multilingual neighbors are a resource this neighborhood has and most of Denver's suburbs do not.",
-   "denver": "40.8% of DPS students speak another language at home; 25.8% of multilingual learners currently receive services; 200+ languages. — DPS Thrives Roadmap, 2024. ✅ (D-LANGUAGE.) The mirror's warning fits the Northeast too: offices that work in English and Spanish leave speakers of other languages with a second language at best.",
+   "denver": "40.8% of DPS students speak another language at home; 25.8% of multilingual learners currently receive services; 200+ languages. — DPS Thrives Roadmap, 2024. ✅ The mirror's warning fits the Northeast too: offices that work in English and Spanish leave speakers of other languages with a second language at best.",
    "denverKeys": [
     "D-LANGUAGE"
    ],
@@ -390,13 +390,13 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
      "text": "**Missouri minimum wage, 2026: $15.00/hour**, after $13.75 in 2025, under Proposition A (Nov 2024). **HB 567** (2025) kept the $15 rate but eliminated the inflation-based yearly increases that voters had set to begin in 2027.",
      "src": "Littler, Jul 2025",
      "mark": "care",
-     "note": "Law-firm summary; labor.mo.gov not opened."
+     "note": ""
     },
     {
      "text": "**Missouri paid sick leave:** Prop A required 1 hour of paid sick leave per 30 hours worked, from May 2025",
      "src": "",
      "mark": "care",
-     "note": "(start date not re-checked). The legislature passed HB 567 repealing it; Gov. Mike Kehoe signed it on **10 Jul 2025**, and the repeal took effect **28 Aug 2025**. — Littler, Jul 2025. Missouri workers had a state sick-leave right for about four months *(our arithmetic)*. This is the sharpest decided by someone, in writing example in the packet."
+     "note": "The legislature passed HB 567 repealing it; Gov. Mike Kehoe signed it on **10 Jul 2025**, and the repeal took effect **28 Aug 2025**. — Littler, Jul 2025. Missouri workers had a state sick-leave right for about four months *(our arithmetic)*."
     },
     {
      "text": "Construction, landscaping and agriculture are the main work of the region's newer Latino immigrants.",
@@ -423,7 +423,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
    "who": "Voters decided (2024); the legislature and governor decided again (2025). Both are on the record. Employers save on sick leave; workers carry the risk of every illness and appointment. It is also a time barrier: the system assumes you can take a weekday morning off.",
    "nlb": "Nature: people get sick. Luck: an employer who lets you swap a shift. **Built:** the wage floor, the leave law, and courts and offices that are open only during working hours.",
    "doing": "",
-   "denver": "Denver's minimum wage is $19.29/hour in 2026 (Colorado $15.16), protected regardless of immigration status. — Denver Labor; CDLE. ✅ (D-MINWAGE.) Colorado's sick-leave law (HFWA, 2020) still stands: 1 hour per 30 worked, up to 48 hours a year, at employers of every size. — CDLE, Feb 2026. ✅ (D-LEAVE.) Denver Labor recovered $2.31 million for about 7,200 workers in 2025. — Denver Auditor via Denver7. ✅ (D-INFORMAL.)",
+   "denver": "Denver's minimum wage is $19.29/hour in 2026 (Colorado $15.16), protected regardless of immigration status. — Denver Labor; CDLE. ✅ Colorado's sick-leave law (HFWA, 2020) still stands: 1 hour per 30 worked, up to 48 hours a year, at employers of every size. — CDLE, Feb 2026. ✅ Denver Labor recovered $2.31 million for about 7,200 workers in 2025. — Denver Auditor via Denver7. ✅",
    "denverKeys": [
     "D-INFORMAL",
     "D-LEAVE",
@@ -438,7 +438,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
      "text": "KCPS lost accreditation 1 May 2000 (first district in the nation); the state withdrew it again effective 1 Jan 2012; provisional accreditation Aug 2014; **full accreditation 11 Jan 2022**.",
      "src": "Wikipedia, citing LA Times (2000), NYT (2011), Missouri DESE, KCUR (2022)",
      "mark": "care",
-     "note": "Secondary — verify on DESE before publishing."
+     "note": ""
     },
     {
      "text": "*Missouri v. Jenkins* (1985–1999): a federal court ordered the state to fund magnet schools; the district's budget more than tripled. The Supreme Court limited the order in 1995.",
@@ -479,7 +479,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
    "who": "The state board grants or withdraws accreditation; the district decides closures; federal courts once decided funding. Families who could leave gained options; school-district lines kept wealthier suburbs' schools separate. Families who stayed paid in lost buildings and lost standing — and in what a school's reputation does to home values on the block.",
    "nlb": "Nature: none. Luck: which side of a district line you were born on. **Built:** district lines, accreditation rules, funding, closures.",
    "doing": "Northeast High's alumni association (founded 1948) and families fought the 2022 closure list, and the school stayed open. ✅ (via Wikipedia.) The New Americans program; the Harmony Project (music for students from 51 schools) ✅ (*Northeast Narratives*); the Latinx Education Collaborative works to bring more Latino teachers into KC classrooms. ✅",
-   "denver": "Denver families choose schools through DPS SchoolChoice, but choice depends on transportation, which mostly serves the home zone. — Denverite 2017. ⚠️ (D-SCHOOL.) About half of Colorado graduates go to college, ten points below national; 28.6% of low-income graduates earn a credential within four years.",
+   "denver": "Denver families choose schools through DPS SchoolChoice, but choice depends on transportation, which mostly serves the home zone. — Denverite 2017. ⚠️ About half of Colorado graduates go to college, ten points below national; 28.6% of low-income graduates earn a credential within four years.",
    "denverKeys": [
     "D-LADDER",
     "D-SCHOOL"
@@ -505,7 +505,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
      "text": "**Missouri law on heirs' property:** co-heirs own the house together as tenants in common. Missouri's **Save the Family Farm Act** (2019, RSMo 528.700 and following) changed how a court-ordered partition sale works.",
      "src": "Missouri heirs' property fact sheet, Farmland Access Legal Toolkit, 2024",
      "mark": "care",
-     "note": "Written for farmland; check the statute's reach to city houses before teaching it."
+     "note": ""
     },
     {
      "text": "**The same tangle elsewhere in Missouri:** after the May 2025 St. Louis tornado, tangled titles kept insurance checks and city repair programs from reaching some families; Legal Services of Eastern Missouri's volunteer unit went from about 10 to about 20 new cases a month.",
@@ -556,7 +556,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
      "text": "Compare: Colorado caps payday loans at **36% APR**.",
      "src": "Prop 111 (2018)",
      "mark": "care",
-     "note": "(D-CREDIT.) Missouri's average payday APR is about ten times Colorado's cap *(our arithmetic: 365 ÷ 36)*. Whether it is among the highest legal caps in the country was not checked against a state-by-state source; don't say it until it is."
+     "note": "Missouri's average payday APR is about ten times Colorado's cap *(our arithmetic: 365 ÷ 36)*."
     },
     {
      "text": "**What a bank repair loan looked like in 2023:** Commerce Bank first lien 8.21%–9.82% and second lien 10.16%–11.82%, **$10,000 minimum**; a 36-month personal loan from KC Unidos at 10.75%–18%; home-equity lines of $5,000–$100,000.",
@@ -601,7 +601,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
    "who": "The Missouri legislature wrote the 75% rule; Colorado voters wrote the 36% cap. Banks set minimum loan sizes and title rules. Who gains: lenders, and borrowers who need cash in an hour. Who pays: the borrowers with the least cushion, at the highest price for the smallest loans.",
    "nlb": "Nature: none. Luck: a relative who can lend. **Built:** the payday rules, bank minimums, what counts as collateral, and whether a no-interest lender exists in your ZIP code.",
    "doing": "Jerusalem Farm's no-interest materials loans; the city's grant-funded repair program; CHES, Inc. (HUD-approved counseling) leads **BankOn KC**, which connects people to certified low-cost accounts. ✅ (CHES release, Nov 2024 ⚠️ self-reported.) AltCap lends where banks don't. Neighbors trade labor instead of borrowing.",
-   "denver": "Credit cards 21.19% APR (Q3 2026); 30-year mortgage 7.11% (12 Nov 2026); payday capped at 36% since 2019. — Federal Reserve G.19; Freddie Mac; Prop 111. ✅ (D-CREDIT.) 63% of U.S. adults could cover a $400 emergency in cash (2025). — Federal Reserve SHED. ✅ (D-SAVINGS, D-BANK.)",
+   "denver": "Credit cards 21.19% APR (Q3 2026); 30-year mortgage 7.11% (12 Nov 2026); payday capped at 36% since 2019. — Federal Reserve G.19; Freddie Mac; Prop 111. ✅ 63% of U.S. adults could cover a $400 emergency in cash (2025). — Federal Reserve SHED. ✅",
    "denverKeys": [
     "D-BANK",
     "D-CREDIT",
@@ -619,7 +619,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
     "keys": []
    },
    "denver": {
-    "text": "Denver $19.29/hr (2026); Colorado $15.16; protected regardless of immigration status. — Denver Labor; CDLE. Denver median household income $94,718 (2024). — Data USA (ACS). vintage. (D-MINWAGE, D-WAGE.)",
+    "text": "Denver $19.29/hr (2026); Colorado $15.16; protected regardless of immigration status. — Denver Labor; CDLE. Denver median household income $94,718 (2024). — Data USA (ACS).",
     "mark": "care",
     "keys": [
      "D-MINWAGE",
@@ -635,7 +635,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
     "keys": []
    },
    "denver": {
-    "text": "Denver Labor recovered $2.31M for ~7,200 workers (2025). — Denver Auditor. ~440,000 Colorado workers lose >$728M/yr to wage theft (CFI estimate). (D-INFORMAL.)",
+    "text": "Denver Labor recovered $2.31M for ~7,200 workers (2025). — Denver Auditor. ~440,000 Colorado workers lose >$728M/yr to wage theft (CFI estimate).",
     "mark": "care",
     "keys": [
      "D-INFORMAL"
@@ -652,7 +652,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
     ]
    },
    "denver": {
-    "text": "Colorado uninsured 5.9% (2025). Medicaid to 133% FPL (138% with the federal disregard); Hospital Discounted Care caps hospital payment plans at 4% of income for patients at or below 250% FPL; **Cover All Coloradans** covers children and pregnancy regardless of status. — CHI; HCPF. (D-HEALTH, D-IMMIGRATION.)",
+    "text": "Colorado uninsured 5.9% (2025). Medicaid to 133% FPL (138% with the federal disregard); Hospital Discounted Care caps hospital payment plans at 4% of income for patients at or below 250% FPL; **Cover All Coloradans** covers children and pregnancy regardless of status. — CHI; HCPF.",
     "mark": "ok",
     "keys": [
      "D-HEALTH",
@@ -668,7 +668,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
     "keys": []
    },
    "denver": {
-    "text": "HFWA paid sick leave: 1 hr per 30 worked, up to 48 hrs/yr, all employers. — CDLE. FAMLI: up to 12 weeks paid (+4 pregnancy complications, +12 NICU from 2026); 90% of wages for lower earners; max $1,448.02/week from Jul 2026; job protected after 180 days. — CDLE. (D-LEAVE.)",
+    "text": "HFWA paid sick leave: 1 hr per 30 worked, up to 48 hrs/yr, all employers. — CDLE. FAMLI: up to 12 weeks paid (+4 pregnancy complications, +12 NICU from 2026); 90% of wages for lower earners; max $1,448.02/week from Jul 2026; job protected after 180 days. — CDLE.",
     "mark": "ok",
     "keys": [
      "D-LEAVE"
@@ -678,12 +678,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
   {
    "label": "A bank account",
    "there": {
-    "text": "Kansas City metro **0.8%** unbanked (2023), down from 6.4% (2021) — FDIC Table A.4.  90% range 0.1–6.0%; metro-wide. Missouri 3.4% — FDIC Table A.3. BankOn KC (CHES) connects people to low-cost accounts.",
+    "text": "Kansas City metro **0.8%** unbanked (2023), down from 6.4% (2021) — FDIC Table A.4. 90% range 0.1–6.0%; metro-wide. Missouri 3.4% — FDIC Table A.3. BankOn KC (CHES) connects people to low-cost accounts.",
     "mark": "care",
     "keys": []
    },
    "denver": {
-    "text": "U.S. 4.2% of households unbanked (2023); single-parent 12.3%; working-age disabled 11.2%. — FDIC. 77% of adults under $25k have an account (2025). (D-BANK.)",
+    "text": "U.S. 4.2% of households unbanked (2023); single-parent 12.3%; working-age disabled 11.2%. — FDIC. 77% of adults under $25k have an account (2025).",
     "mark": "ok",
     "keys": [
      "D-BANK"
@@ -698,7 +698,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
     "keys": []
    },
    "denver": {
-    "text": "Payday capped at **36% APR** since 2019 (Prop 111). Credit cards 21.19% (Q3 2026); 30-yr mortgage 7.11% (12 Nov 2026). — Fed G.19; Freddie Mac. National. (D-CREDIT.)",
+    "text": "Payday capped at **36% APR** since 2019 (Prop 111). Credit cards 21.19% (Q3 2026); 30-yr mortgage 7.11% (12 Nov 2026). — Fed G.19; Freddie Mac. National.",
     "mark": "ok",
     "keys": [
      "D-CREDIT"
@@ -743,7 +743,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
     "keys": []
    },
    "denver": {
-    "text": "Same national figures; employer life insurance reaches 28% of the lowest-paid quarter vs 87% of the highest. — BLS. (D-LIFEINS.)",
+    "text": "Same national figures; employer life insurance reaches 28% of the lowest-paid quarter vs 87% of the highest. — BLS.",
     "mark": "ok",
     "keys": [
      "D-LIFEINS"
@@ -758,7 +758,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
     "keys": []
    },
    "denver": {
-    "text": "Same SSDI/SSI figures; employer long-term disability reaches 37%. — SSA; BLS. FAMLI can bridge 12 weeks. (D-DISABILITY.)",
+    "text": "Same SSDI/SSI figures; employer long-term disability reaches 37%. — SSA; BLS. FAMLI can bridge 12 weeks.",
     "mark": "ok",
     "keys": [
      "D-DISABILITY"
@@ -782,11 +782,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
    }
   }
  ],
- "cushionNotice": "Both cities are in the same country, under the same federal programs (Social Security, Medicare, SSDI, the 2025 Medicaid changes). Most of what differs is **state and city law**: the wage floor, paid sick leave (Colorado kept it; Missouri repealed it after four months), what a payday lender may charge (about 365% on average vs a 36% cap), how property is taxed and who gets a break. Stack the rows for one older Northeast homeowner and one Denver salaried family, and the same broken furnace is a nuisance in one house and a crisis in the other. RJ families are inside cushions they did not build: an employer's sick days, a credit card at a fraction of a payday rate, homeowners' insurance on a newer roof. That insulation is the fence we can't see (2b).",
+ "cushionNotice": "Both cities are in the same country, under the same federal programs (Social Security, Medicare, SSDI, the 2025 Medicaid changes). Most of what differs is **state and city law**: the wage floor, paid sick leave (Colorado kept it; Missouri repealed it after four months), what a payday lender may charge (about 365% on average vs a 36% cap), how property is taxed and who gets a break. Stack the rows for one older Northeast homeowner and one Denver salaried family, and the same broken furnace is a nuisance in one house and a crisis in the other. RJ families are inside cushions they did not build: an employer's sick days, a credit card at a fraction of a payday rate, homeowners' insurance on a newer roof. That insulation is the fence we can't see.",
  "fences": [
   {
    "h": "Insulation",
-   "text": "Our houses are newer, our parents' jobs come with sick days, and if a roof fails, insurance and savings absorb it. So a peeling porch looks like a choice. See 2c."
+   "text": "Our houses are newer, our parents' jobs come with sick days, and if a roof fails, insurance and savings absorb it. So a peeling porch looks like a choice."
   },
   {
    "h": "We fixed her house — the work as ours",
@@ -810,7 +810,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
   },
   {
    "h": "Destination snobbery",
-   "text": "A domestic trip read as second-best: a short flight, regret at not going abroad, Kansas City ranked last among immersion choices two years running. The fence: believing that encounter needs a passport. The barriers in this packet are a two-hour flight away, and several have Denver twins."
+   "text": "A domestic trip read as second-best: a short flight, regret at not going abroad, Kansas City ranked last among immersion choices two years running. The fence: believing that encounter needs a passport. The barriers on these pages are a two-hour flight away, and several have Denver twins."
   },
   {
    "h": "Comfort",
@@ -818,7 +818,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
   },
   {
    "h": "Cynicism about structure",
-   "text": "The prayer bell felt at first like being controlled, then like a structure that held the day. Students who make that turn can be asked the same question about the city: which structures hold people, and which hold them down?"
+   "text": "The prayer bell felt at first like being controlled, then like a structure that held the day. If you make that turn, ask the same question about the city: which structures hold people, and which hold them down?"
   },
   {
    "h": "Only chores",
@@ -834,7 +834,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
   },
   {
    "h": "Before the meal",
-   "text": "Students describe arriving at the Catholic Worker house seeing unhoused people as statistics, or guessing at addiction, until a guest greeted them. That guess is the fence; the greeting is the encounter."
+   "text": "It is easy to arrive at the Catholic Worker house seeing unhoused people as statistics, or guessing at addiction, until a guest greets you. That guess is the fence; the greeting is the encounter."
   }
  ],
  "voices": [
@@ -859,7 +859,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
   {
    "h": "History of the color line",
    "items": [
-    "Kevin Fox Gotham, *Race, Real Estate, and Uneven Development: The Kansas City Experience, 1900–2000* (SUNY Press, 2002). ⚠️ Not opened this session; widely cited.",
+    "Kevin Fox Gotham, *Race, Real Estate, and Uneven Development: The Kansas City Experience, 1900–2000* (SUNY Press, 2002).",
     "Kansas City Public Library, Missouri Valley Special Collections."
    ]
   },
@@ -877,14 +877,14 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
    "h": "Handle with care (adults first)",
    "items": [
     "**Homeowners' privacy.** No names, addresses, house photos with street numbers, or before and after photos that make a person's home into evidence of poverty. Ask the homeowner before photographing anything, and ask JF what its practice is.",
-    "**Never ask a neighbor about money, taxes, immigration status, code violations or whether they plan to sell.** Structural questions go to Jerusalem Farm staff. If a homeowner tells you something, listen; don't take notes on it for the site.",
+    "**Never ask a neighbor about money, taxes, immigration status, code violations or whether they plan to sell. Structural questions go to Jerusalem Farm staff.",
     "Immigration status is especially dangerous to ask about or record, for the family and for the partner."
    ]
   },
   {
    "h": "Framings that would be disrespectful or turn the trip into poverty tourism",
    "items": [
-    "We fixed their houses. See 2b.",
+    "We fixed their houses.",
     "Blight, the hood, the inner city, sketchy — for neighborhoods where people have lived for fifty years.",
     "Revitalization as simple good news, without asking who gets to stay.",
     "Romanticizing simplicity as a lifestyle choice for people who did not choose it.",
@@ -937,7 +937,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["jfarm"]={
    "data": "LISC 2023 (document rules, bank rates, JF terms); Missouri Division of Finance 2023 (payday); FDIC 2023 (unbanked); KCMO 2022 (Northeast denial rates); Missouri DSS (Medicaid status rule).",
    "notice": "the same $2,500 costs nothing extra at Jerusalem Farm but takes a year; is cheap per dollar at a bank, but only if she has the papers and borrows $10,000 against the house; and can cost more than the repair at a payday lender, today. Paper decides which door opens; time decides which one she takes.",
    "yourCall": "If you ran a repair program, would you require a deed? What would you ask for instead, and what risk would you accept?",
-   "denverRun": "the same $2,500 in Denver with a credit card (21.19%), a 36%-capped loan, or savings (63% of U.S. adults could cover $400 in cash). See D-CREDIT, D-SAVINGS, D-IMMIGRATION."
+   "denverRun": "the same $2,500 in Denver with a credit card (21.19%), a 36%-capped loan, or savings (63% of U.S. adults could cover $400 in cash)."
   }
  ],
  "theology": {

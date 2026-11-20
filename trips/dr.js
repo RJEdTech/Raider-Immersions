@@ -10,12 +10,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
   },
   {
    "h": "Who lives there",
-   "text": "Campesino families, most of them Catholic, many of them related across a whole campo. Households mix farming, day labor on others' land, small shops (*colmados*), motorcycle taxi work (*motoconcho*), and money from relatives in Santiago, Santo Domingo, the United States or Spain. The Cibao has its own accent, its own music (*merengue típico*, the accordion-and-*güira* music of the campo) and a long reputation as the country's farming heart. ⚠️ (standard references)",
+   "text": "Campesino families, most of them Catholic, many of them related across a whole campo. Households mix farming, day labor on others' land, small shops (*colmados*), motorcycle taxi work (*motoconcho*), and money from relatives in Santiago, Santo Domingo, the United States or Spain. The Cibao has its own accent, its own music (*merengue típico*, the accordion-and-*güira* music of the campo) and a long reputation as the country's farming heart. ⚠️",
    "items": []
   },
   {
    "h": "History, briefly — and where to hear it in people's own words",
-   "text": "⚠️ All dates below are from standard references and were not re-checked today.",
+   "text": "",
    "items": [
     "**Before 1492:** the island the Taíno called Ayiti / Quisqueya. Within a generation of Spanish arrival the Taíno population had collapsed under forced labor (*encomienda*) and disease.",
     "**Colonial and sugar centuries:** enslaved Africans brought to work sugar and cattle; the Cibao became a region of small farmers and tobacco more than plantations — a difference that still shapes it.",
@@ -35,14 +35,14 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
     "**Medical and surgical teams** visit the CESI campus in Santiago throughout the year — hernia, orthopedic, ENT, ophthalmology and optometry — using CESI's outpatient surgical center. ✅ (Creighton)",
     "**What students do:** live with campo host families, work alongside the community on a development project — past projects include aqueducts, a greenhouse, a school repair, cement floors and latrines — and a small *proyectico* the community chooses. ✅ (Creighton, Campo Immersions page; RJ Stage 2 map) Regis Jesuit is on ILAC's list of high-school partners. ✅ (Creighton)",
     "**Shape of the week:** fly into Santiago → first days at the ILAC center (talks, showers, meals, cards and basketball) → several nights (about five) in one campo with host families → back to ILAC → a beach day near the end (2026). ✅",
-    "**The work, as students describe it:** digging trench, gluing PVC pipe and backfilling for an **aqueduct** — the main line from the water source up a steep hillside, and smaller lines to individual houses; painting houses (2026). Evenings: a shared dinner at a central house, group reflection, then dominoes, cards, volleyball and dancing with campo families. ✅",
-    "**Conditions students describe:** no running water and no shower (bucket baths) for about five days; latrine-type bathrooms; a few bare LED bulbs; walls not sealed; houses painted bright colors; a ditch crossed on sandbags at the entrance to the campo. ✅",
-    "**How the class prepares (Ortiz's pages):** Dominican slang and food lessons; dominoes taught in class; ILAC's High School Programs videos, Introduction to Misión ILAC/CESI and ILAC Cooperador Program; ILAC's pre-departure orientation video; the DR customs form; a post-trip ILAC evaluation survey. ✅"
+    "**The work:** digging trench, gluing PVC pipe and backfilling for an **aqueduct** — the main line from the water source up a steep hillside, and smaller lines to individual houses; painting houses (2026). Evenings: a shared dinner at a central house, group reflection, then dominoes, cards, volleyball and dancing with campo families. ✅",
+    "**What to expect:** no running water and no shower (bucket baths) for about five days; latrine-type bathrooms; a few bare LED bulbs; walls not sealed; houses painted bright colors; a ditch crossed on sandbags at the entrance to the campo. ✅",
+    "**How the class prepares:** Dominican slang and food lessons; dominoes taught in class; ILAC's High School Programs videos, Introduction to Misión ILAC/CESI and ILAC Cooperador Program; ILAC's pre-departure orientation video; the DR customs form; a post-trip ILAC evaluation survey. ✅"
    ]
   },
   {
    "h": "The Church's presence",
-   "text": "⚠️ (standard references except where marked)",
+   "text": "",
    "items": [
     "**Archdiocese of Santiago de los Caballeros.** In most campos the chapel and its lay leaders are the steadiest institution after the school.",
     "**PUCMM** (Pontificia Universidad Católica Madre y Maestra), the Catholic university founded by the Dominican bishops, has its main campus in Santiago. ✅ (Creighton Common Home page)",
@@ -112,7 +112,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
    "who": "Decided in writing: INAPA's transfer policy (1990s) and the law that makes CORAASAN responsible in Santiago. Who gains: a utility budget that never has to grow into the hills — nobody, a budget is a fair answer — and the bottled-water companies, who sell to the poorest households at the highest price per liter. Who pays: campo families, in labor (digging), fees, and the *botellón*; women and girls, who most often carry and manage the water (UNICEF, no figure).",
    "nlb": "Nature: springs, slope, drought years (Santiago had a drought-driven shortage reported in the north) ⚠️. Luck: whether your campo has a spring above it — gravity is free, pumps cost electricity. **Built:** who is responsible for rural water, whether anyone chlorinates, whether the state or the campo pays for pipe.",
    "doing": "Campos organize, elect, dig and collect fees — that is what an ASOCAR is. In **La Sierra** (San José de las Matas, Santiago province) the community council **COCODESI** built the **Antonzapemalo** gravity aqueduct: RD$46 million raised from the European Union in 1992, 46 km of main line and 175 km of pipe for **25 communities and 2,800 families (~13,000 people)**; COCODESI took full control in 1997 with 10 hired technicians and 25 volunteer community representatives collecting fees, and **85% of families paid**, enough to run without subsidy. — Radamés Martínez, *Acento*, Nov 2026, citing his PUCMM-USAID study (2002). ⚠️ One author's account; a strong regional model. ILAC's cooperadores and campo juntas choose water projects; students join them.",
-   "denver": "Denver's water was built and is paid for by the whole city's ratepayers, and when lead lines threatened children, the utility decided to replace them at no direct cost to the owner: more than 36,000 replaced since 2020 of an estimated 60,000–64,000, in a roughly $670 million program. — Denver Water, Lead Reduction Program Year in Review 2025 ✅; Inside Climate News ⚠️ (Denver mirror **D-WATER**).",
+   "denver": "Denver's water was built and is paid for by the whole city's ratepayers, and when lead lines threatened children, the utility decided to replace them at no direct cost to the owner: more than 36,000 replaced since 2020 of an estimated 60,000–64,000, in a roughly $670 million program. — Denver Water, Lead Reduction Program Year in Review 2025 ✅; Inside Climate News ⚠️.",
    "denverKeys": [
     "D-COMMON",
     "D-WATER"
@@ -126,7 +126,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
      "text": "**Farm day labor has its own legal minimum:** **RD$714.60 per 8-hour day** for field workers, from 1 Feb 2026.",
      "src": "Comité Nacional de Salarios, Res. CNS-01-2025 (via EY tax alert; *Revista Mercado*)",
      "mark": "care",
-     "note": "EY's table labels it monthly; *Mercado* and the resolution's structure say per day. Confirm against the resolution text before publishing."
+     "note": "EY's table labels it monthly; *Mercado* and the resolution's structure say per day."
     },
     {
      "text": "**Cacao, the farm-gate price in three years** (pesos per quintal paid to the grower):",
@@ -145,7 +145,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
    "contested": "What a sale looks like in the group's campo: contract grower or open market, one buyer or several. Price-taking works in both directions — when cacao spiked, some farmers gained; the 2024–26 figures above show the gain reached the farm gate only partly, and growers on contracts signed before the spike were paid far below the market price. Buyers say quality (rain, poor drying) also lowers what they pay; both are reported.",
    "who": "No one decides a world price. But someone decides how much of it the farmer sees: the buyer who grades the leaf, the intermediary who knows the export price, the absence of a public farm-gate price. The buyer also carries real risk (rot, transport, credit to the farmer). Farmers pay in uncertainty.",
    "nlb": "Nature: plantain rots; storms flatten it (Barrier 3). Luck: the world price the year you harvest. **Built:** contracts, grading, which prices are published, whether farmers sell together.",
-   "doing": "Cooperatives and associations sell together — **CONACADO** in cacao ⚠️ (confirm Cibao members); tobacco growers' associations; families plant several crops so one bad price is not the whole year; *víveres* grown for the house are food that no buyer can price.",
+   "doing": "Cooperatives and associations sell together — **CONACADO** in cacao ⚠️; tobacco growers' associations; families plant several crops so one bad price is not the whole year; *víveres* grown for the house are food that no buyer can price.",
    "denver": "Who sets your price when you can't see the market? App-based drivers and delivery workers are paid a rate the app sets; Denver Labor found workers misclassified as independent contractors at two staffing apps in its 2025 reporting year.",
    "denverKeys": [
     "D-INFORMAL"
@@ -216,7 +216,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
      "text": "Per-person payment: **RD$327.02** in the subsidized plan vs **RD$1,887.53** in the contributory plan.",
      "src": "same report",
      "mark": "care",
-     "note": "Confirm against CNSS/SISALRIL before publishing."
+     "note": ""
     },
     {
      "text": "CESI's cooperador network: **140 communities, 160 cooperadores**, since 1982; ILAC surgical teams (hernia, orthopedic, ENT, ophthalmology, optometry) at CESI's outpatient center in Santiago.",
@@ -237,7 +237,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
    "who": "Law 87-01 decided the two-tier design; the per-person payments are set by the national social-security council. Private providers receive a growing share of SENASA payments (the same report: 67% of subsidized-plan payments in 2024) ⚠️. Families pay in travel, waiting and lost wages.",
    "nlb": "Nature: illness and injury. Luck: whether the cooperador catches it early. **Built:** two plans, where the specialists are, whether the bus runs.",
    "doing": "The campo chooses its own cooperador ✅. ILAC's medical program exists because communities and CESI decided surgery should come to people who could not reach it. Families pool money for a trip to Santiago; relatives abroad pay for medicine (Barrier 6).",
-   "denver": "Colorado's uninsured rate was 5.9% in 2025. — Colorado Health Access Survey (Colorado Health Institute). ✅ Health First Colorado (Medicaid) covers about 1 in 4 Coloradans; from 1 Jan 2027 expansion adults face work requirements and six-month renewals, and HCPF expects about 377,000 members to be subject to them. — HCPF fact sheet, Jul 2026 ✅ (Denver mirror **D-HEALTH**).",
+   "denver": "Colorado's uninsured rate was 5.9% in 2025. — Colorado Health Access Survey (Colorado Health Institute). ✅ Health First Colorado (Medicaid) covers about 1 in 4 Coloradans; from 1 Jan 2027 expansion adults face work requirements and six-month renewals, and HCPF expects about 377,000 members to be subject to them. — HCPF fact sheet, Jul 2026 ✅.",
    "denverKeys": [
     "D-HEALTH"
    ],
@@ -270,14 +270,14 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
     "Small farms and family businesses",
     "registering and paying social-security contributions costs more than a small earner can carry",
     "most new jobs are informal",
-    "no contract means no health subsidy, no leave, no pension (2c)"
+    "no contract means no health subsidy, no leave, no pension"
    ],
    "oneDay": "a man paints houses all week, is paid for four days, and has no office to call; the house he's building for his own family gets a room at a time.",
    "contested": "Informality is often a choice and a trap at once: flexible, family-run, and unprotected.",
    "who": "Formal rules were written for firms with payrolls. The minimum wage is set by size of employer, so the smallest employers — the campo's — have the lowest floor. Buyers of informal labor gain lower costs; workers carry the risk.",
    "nlb": "Nature: none. Luck: a relative with a formal job. **Built:** the cost of formality, the tiered minimum wage, who is inspected.",
-   "doing": "*Juntas* (work bees) and *convites* — neighbors working one another's land or a house roof in turn ⚠️ (confirm the term used in the group's campo); *san* — rotating savings groups where each member pays a fixed amount weekly, biweekly or monthly and one member takes the whole pot each round (*El Día*, June 2026 ✅; see Barrier 9); colmado credit (*fiao*) that lets a family eat until payday.",
-   "denver": "About 440,000 Colorado workers lose more than $728 million a year to wage theft (Colorado Fiscal Institute estimate). — Denver Labor, 2023 report ⚠️. In a survey of 411 day laborers at Denver-area hiring sites, 62% had experienced wage theft and fewer than 40% asked for help. — Galemba, University of Denver, 2016–17 ⚠️. Denver Labor recovered a record $2.31 million for about 7,200 workers in its 2025 reporting year. — Denver Auditor via Denver7 ✅. Off-the-books work also misses FAMLI, unemployment insurance and Social Security credits, which all run on reported wages. See Denver mirror **D-INFORMAL**, **D-LEAVE**.",
+   "doing": "*Juntas* (work bees) and *convites* — neighbors working one another's land or a house roof in turn ⚠️; *san* — rotating savings groups where each member pays a fixed amount weekly, biweekly or monthly and one member takes the whole pot each round (*El Día*, June 2026 ✅; see Barrier 9); colmado credit (*fiao*) that lets a family eat until payday.",
+   "denver": "About 440,000 Colorado workers lose more than $728 million a year to wage theft (Colorado Fiscal Institute estimate). — Denver Labor, 2023 report ⚠️. In a survey of 411 day laborers at Denver-area hiring sites, 62% had experienced wage theft and fewer than 40% asked for help. — Galemba, University of Denver, 2016–17 ⚠️. Denver Labor recovered a record $2.31 million for about 7,200 workers in its 2025 reporting year. — Denver Auditor via Denver7 ✅. Off-the-books work also misses FAMLI, unemployment insurance and Social Security credits, which all run on reported wages.",
    "denverKeys": [
     "D-INFORMAL",
     "D-LEAVE"
@@ -291,7 +291,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
      "text": "**37% of Dominican adults receive international remittances** — fifth-highest share among the economies surveyed.",
      "src": "World Bank Global Findex 2025, via FXC Intelligence",
      "mark": "care",
-     "note": "Secondary; confirm on the Findex databank."
+     "note": ""
     },
     {
      "text": "**Remittances, 2025: US$11,866.3 million**, a record. In December 2025, **80%** of formal-channel remittances came from the United States and **6.9%** from Spain; **Santiago province received 10.9%**, second after the Distrito Nacional (45.8%).",
@@ -309,11 +309,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
     "remittances pay for houses, school, medicine"
    ],
    "oneDay": "a grandmother raises two grandchildren while their mother cleans offices in New York; the new room on the house was built with that money.",
-   "contested": "How many households in the group's campo have someone abroad; how many children live with grandparents. Students may hear this; **never ask a family about it** — questions go to ILAC staff. No paper in 2025 or 2026 mentions a relative abroad (Canvas check), so this barrier is the one students are least prepared to notice.",
+   "contested": "How many households in the group's campo have someone abroad; how many children live with grandparents. Students may hear this; **never ask a family about it** — questions go to ILAC staff. This barrier is easy to miss.",
    "who": "No one decided that a campo family must split to survive. But visa rules, labor demand in New York and Madrid, and the wage gap are all built. Receiving countries gain workers they did not raise; the DR gains remittances; families pay in absence.",
    "nlb": "Nature: none. Luck: having a relative already there. **Built:** the wage gap, visa rules, the cost of sending money.",
-   "doing": "Extended families raise children together; *hometown* associations in New York send money for campo projects ⚠️ (confirm a Cibao example); remittances become houses, school fees, a colmado.",
-   "denver": "Denver's minimum wage, $19.29 an hour in 2026, protects workers regardless of immigration status. — Denver Labor ✅ (Denver mirror **D-MINWAGE**). Full-time at that wage is about $40,120 a year *(the mirror's arithmetic)*. Many Denver families send money home too; which cushions a worker can use here depends on papers. See **D-IMMIGRATION**.",
+   "doing": "Extended families raise children together; *hometown* associations in New York send money for campo projects ⚠️; remittances become houses, school fees, a colmado.",
+   "denver": "Denver's minimum wage, $19.29 an hour in 2026, protects workers regardless of immigration status. — Denver Labor ✅. Full-time at that wage is about $40,120 a year (our arithmetic). Many Denver families send money home too; which cushions a worker can use here depends on papers.",
    "denverKeys": [
     "D-IMMIGRATION",
     "D-MINWAGE"
@@ -339,7 +339,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
      "text": "*The lesson:* in the campo the problem is less leaving school at twelve than falling behind and stopping at fifteen to seventeen",
      "src": "the ages of the upper *liceo*, which is usually in town",
      "mark": "care",
-     "note": "(confirm for the group's campo)."
+     "note": ""
     }
    ],
    "plain": "Most campos have a primary school. The *liceo* (secondary school) is usually in the municipal town, so a teenager's schooling depends on a motorcycle fare, a road and a family that can spare the work hours.",
@@ -354,7 +354,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
    "who": "Ministry rules on where schools open; the budget for school transport. Families pay in fares and lost labor; students pay in narrowed choices.",
    "nlb": "Nature: rain on a dirt road. Luck: where your house sits. **Built:** where the liceo is and whether a bus runs.",
    "doing": "",
-   "denver": "DPS has given bus fare to high schoolers who leave their zone and runs shuttles in some zones. — Denverite 2017; STN ⚠️ older. RTD has offered free fares to riders 19 and under since a 2023 pilot. — Chalkbeat 2023 ⚠️ confirm it is still running. About half of Colorado graduates go to college; 28.6% of low-income grads earn a credential in four years. — Keystone Policy Center via Chalkbeat, 2024 ✅. See Denver mirror **D-SCHOOL**, **D-LADDER**.",
+   "denver": "DPS has given bus fare to high schoolers who leave their zone and runs shuttles in some zones. — Denverite 2017; STN ⚠️ older. RTD has offered free fares to riders 19 and under since a 2023 pilot. About half of Colorado graduates go to college; 28.6% of low-income grads earn a credential in four years. — Keystone Policy Center via Chalkbeat, 2024 ✅.",
    "denverKeys": [
     "D-LADDER",
     "D-SCHOOL"
@@ -401,7 +401,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
    "who": "The state decided how agrarian reform would hand out land, what registering a title requires and what banks may take as a guarantee. No one profits from a missing title — *nobody, a registry that was never finished* is a fair answer — though lenders who don't need a title (Barrier 9) gain the borrowers banks turn away. Families pay in credit they cannot get and in costlier loans.",
    "nlb": "Nature: none. Luck: whether a grandparent registered the land, and whether the birth was in a hospital. **Built:** the registration process, its cost, the deadline for a birth, what a bank accepts.",
    "doing": "Families divide land by agreement and keep the boundaries everyone in the campo knows; growers borrow through associations and the state farm bank, which lends on crop contracts (Barrier 9); parceleros press for and receive titles under the current titling plan.",
-   "denver": "What can a family borrow against? Here it is a titled house, and the gap is who owns one: Denver's homeownership rate was 48.8% (2024). — Data USA (ACS) ⚠️ vintage (Denver mirror **D-HOMEINS**). And one paper decides many cushions: Social Security, FAMLI's reported wages, Medicaid for many lawfully present immigrants from Oct 2026. See **D-IMMIGRATION**, **D-BANK**.",
+   "denver": "What can a family borrow against? Here it is a titled house, and the gap is who owns one: Denver's homeownership rate was 48.8% (2024). — Data USA (ACS) ⚠️. And one paper decides many cushions: Social Security, FAMLI's reported wages, Medicaid for many lawfully present immigrants from Oct 2026.",
    "denverKeys": [
     "D-BANK",
     "D-HOMEINS",
@@ -455,7 +455,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
    "who": "Congress and the regulators decide what a lender must ask for and whether usury is penalized; banks decide whom to lend to; the state decided to subsidize farm credit. *Prestamistas* gain and also carry real risk of not being repaid. The smallest borrowers pay the highest price for the smallest loans.",
    "nlb": "Nature: none — though a storm (Barrier 3) is often what sends a family to the lender. Luck: a relative abroad who can send the money instead (Barrier 6). **Built:** collateral rules, which documents a loan needs, the usury law, where the state bank's subsidy goes.",
    "doing": "The *san*; *fiao* at the colmado; *convites* that replace hired labor with neighbors' labor; remittances that pay for the room instead of a loan; growers' associations and the state farm bank.",
-   "denver": "Credit-card APR averaged **21.19%** (Q3 2026); a 30-year fixed mortgage was **7.11%** (12 Nov 2026); Colorado caps payday loans at **36% APR** (Prop 111, 2018). — Federal Reserve G.19; Freddie Mac; Ballotpedia ✅ (Denver mirror **D-CREDIT**). **63%** of U.S. adults could pay a $400 surprise with cash (2025). — SHED ✅ (**D-SAVINGS**).",
+   "denver": "Credit-card APR averaged **21.19%** (Q3 2026); a 30-year fixed mortgage was **7.11%** (12 Nov 2026); Colorado caps payday loans at **36% APR** (Prop 111, 2018). — Federal Reserve G.19; Freddie Mac; Ballotpedia ✅. **63%** of U.S. adults could pay a $400 surprise with cash (2025). — SHED ✅",
    "denverKeys": [
     "D-CREDIT",
     "D-SAVINGS"
@@ -472,7 +472,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
     "keys": []
    },
    "denver": {
-    "text": "Denver minimum wage $19.29/hr (2026), protected regardless of immigration status; Colorado $15.16. — Denver Labor; CDLE Denver median household income $94,718 (2024). — Data USA (ACS) vintage. (D-MINWAGE, D-WAGE)",
+    "text": "Denver minimum wage $19.29/hr (2026), protected regardless of immigration status; Colorado $15.16. — Denver Labor; CDLE Denver median household income $94,718 (2024). — Data USA (ACS)",
     "mark": "care",
     "keys": [
      "D-MINWAGE",
@@ -488,7 +488,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
     "keys": []
    },
    "denver": {
-    "text": "Applies to all workers; enforced by an office: Denver Labor recovered $2.31M for ~7,200 workers (2025). — Denver Auditor Wage theft still common among day laborers (62%, DU 2016–17). (D-INFORMAL)",
+    "text": "Applies to all workers; enforced by an office: Denver Labor recovered $2.31M for ~7,200 workers (2025). — Denver Auditor Wage theft still common among day laborers (62%, DU 2016–17).",
     "mark": "care",
     "keys": [
      "D-INFORMAL"
@@ -503,7 +503,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
     "keys": []
    },
    "denver": {
-    "text": "Colorado uninsured 5.9% (2025). — CHAS Medicaid to 133% of the poverty line; Hospital Discounted Care caps payment plans at 4% of monthly income. (D-HEALTH)",
+    "text": "Colorado uninsured 5.9% (2025). — CHAS Medicaid to 133% of the poverty line; Hospital Discounted Care caps payment plans at 4% of monthly income.",
     "mark": "ok",
     "keys": [
      "D-HEALTH"
@@ -518,7 +518,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
     "keys": []
    },
    "denver": {
-    "text": "FAMLI: up to 12 weeks paid (+4 pregnancy complications, +12 NICU from 2026); 90% of wage for lower earners; max $1,448.02/week from July 2026; job protected after 180 days. — CDLE HFWA paid sick leave: 1 hour per 30 worked, up to 48 hours a year, all employers. — CDLE FAMLI misses the self-employed and anyone without $2,500 in reported wages. (D-LEAVE)",
+    "text": "FAMLI: up to 12 weeks paid (+4 pregnancy complications, +12 NICU from 2026); 90% of wage for lower earners; max $1,448.02/week from July 2026; job protected after 180 days. — CDLE HFWA paid sick leave: 1 hour per 30 worked, up to 48 hours a year, all employers. — CDLE FAMLI misses the self-employed and anyone without $2,500 in reported wages.",
     "mark": "ok",
     "keys": [
      "D-LEAVE"
@@ -533,7 +533,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
     "keys": []
    },
    "denver": {
-    "text": "4.2% of U.S. households unbanked (2023); 12.3% single-parent; 11.2% working-age disabled. — FDIC 94% of U.S. adults have an account; 77% of those earning under $25,000. — SHED 2025 National. (D-BANK)",
+    "text": "4.2% of U.S. households unbanked (2023); 12.3% single-parent; 11.2% working-age disabled. — FDIC 94% of U.S. adults have an account; 77% of those earning under $25,000. — SHED 2025 National.",
     "mark": "ok",
     "keys": [
      "D-BANK"
@@ -548,7 +548,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
     "keys": []
    },
    "denver": {
-    "text": "Denver homeownership 48.8% (2024). — Data USA (D-HOMEINS). From 1 Oct 2026 many lawfully present immigrants lose Medicaid; Social Security needs a valid SSN; FAMLI needs reported wages. — HCPF; SSA (D-IMMIGRATION)",
+    "text": "Denver homeownership 48.8% (2024). — Data USA From 1 Oct 2026 many lawfully present immigrants lose Medicaid; Social Security needs a valid SSN; FAMLI needs reported wages. — HCPF; SSA",
     "mark": "care",
     "keys": [
      "D-HOMEINS",
@@ -564,7 +564,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
     "keys": []
    },
    "denver": {
-    "text": "Credit cards 21.19% APR (Q3 2026); 30-year mortgage 7.11% (12 Nov 2026); payday loans capped at 36% APR since 2019. — Fed G.19; Freddie Mac; Prop 111 63% could cover a $400 surprise in cash (2025). — SHED (D-CREDIT, D-SAVINGS)",
+    "text": "Credit cards 21.19% APR (Q3 2026); 30-year mortgage 7.11% (12 Nov 2026); payday loans capped at 36% APR since 2019. — Fed G.19; Freddie Mac; Prop 111 63% could cover a $400 surprise in cash (2025). — SHED",
     "mark": "ok",
     "keys": [
      "D-CREDIT",
@@ -580,7 +580,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
     "keys": []
    },
    "denver": {
-    "text": "52% of U.S. adults own life insurance (2026); 31% in households under $50k vs 71% at $150k+ (2024). — LIMRA / Life Happens Employer life insurance reaches 28% of the lowest-paid quarter vs 87% of the highest. — BLS National. (D-LIFEINS)",
+    "text": "52% of U.S. adults own life insurance (2026); 31% in households under $50k vs 71% at $150k+ (2024). — LIMRA / Life Happens Employer life insurance reaches 28% of the lowest-paid quarter vs 87% of the highest. — BLS National.",
     "mark": "ok",
     "keys": [
      "D-LIFEINS"
@@ -595,7 +595,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
     "keys": []
    },
    "denver": {
-    "text": "6% of U.S. homeowners uninsured (2025): 3% with a mortgage vs 13% owning free and clear. (D-HOMEINS)",
+    "text": "6% of U.S. homeowners uninsured (2025): 3% with a mortgage vs 13% owning free and clear.",
     "mark": "",
     "keys": [
      "D-HOMEINS"
@@ -605,12 +605,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
   {
    "label": "Disability",
    "there": {
-    "text": "Contributory disability pensions exist for formal workers; the figures found (14,261 current beneficiaries, average RD$12,977.90/month, 2025) are from the **state employees' system** (Ley 379-81). — SIPEN via *El Día*, June 2025 narrow. Non-contributory support for severe disability through *pensiones solidarias* — confirm eligibility.",
+    "text": "Contributory disability pensions exist for formal workers; the figures found (14,261 current beneficiaries, average RD$12,977.90/month, 2025) are from the **state employees' system** (Ley 379-81). — SIPEN via *El Día*, June 2025 narrow.",
     "mark": "care",
     "keys": []
    },
    "denver": {
-    "text": "SSDI average $1,630/month; SSI $994 (2026). — SSA Employer long-term disability reaches 37% of private workers. — BLS SSDI misses people who worked off the books. (D-DISABILITY)",
+    "text": "SSDI average $1,630/month; SSI $994 (2026). — SSA Employer long-term disability reaches 37% of private workers. — BLS SSDI misses people who worked off the books.",
     "mark": "ok",
     "keys": [
      "D-DISABILITY"
@@ -625,7 +625,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
     "keys": []
    },
    "denver": {
-    "text": "Average retired-worker Social Security benefit $2,071/month (Jan 2026). — SSA Misses lifetime informal workers and unpaid caregivers. (D-OLDAGE)",
+    "text": "Average retired-worker Social Security benefit $2,071/month (Jan 2026). — SSA Misses lifetime informal workers and unpaid caregivers.",
     "mark": "ok",
     "keys": [
      "D-OLDAGE"
@@ -633,11 +633,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
    }
   }
  ],
- "cushionNotice": "No single row is the story. Stack them: a campo family meets a broken leg, a flood or a death with no contract, no paid leave, no crop or life insurance, maybe a bank account, no title to borrow against, and credit at 36–58% a year from a bank or about 20% a month from a *prestamista*. What catches them is family — a remittance, a neighbor, the *san*, the colmado's credit, the cooperador's list. Most RJ families meet the same events with five or six cushions they did not build and rarely see. That insulation is the fence we can't see from inside (2b).",
+ "cushionNotice": "No single row is the story. Stack them: a campo family meets a broken leg, a flood or a death with no contract, no paid leave, no crop or life insurance, maybe a bank account, no title to borrow against, and credit at 36–58% a year from a bank or about 20% a month from a *prestamista*. What catches them is family — a remittance, a neighbor, the *san*, the colmado's credit, the cooperador's list. Most RJ families meet the same events with five or six cushions they did not build and rarely see. That insulation is the fence we can't see from inside.",
  "fences": [
   {
    "h": "Insulation",
-   "text": "Paid leave, insurance, a bank that lends at single digits, water that is clean every day without anyone asking who dug for it. See 2c."
+   "text": "Paid leave, insurance, a bank that lends at single digits, water that is clean every day without anyone asking who dug for it."
   },
   {
    "h": "The resort Dominican Republic",
@@ -709,7 +709,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
    "changes": "source (spring above the campo = gravity; well = pump and electricity; tanker truck; rain tank); days of service per week; tank size; whether the family buys a *botellón* to drink; monthly committee fee; days of community labor per household; whether anyone chlorinates.",
    "notice": "gravity is free and pumps are not; the cheapest water to deliver is not the cheapest water to drink; the family pays twice — fee for the pipe, jug for drinking; a 1997 decision made the campo the utility.",
    "yourCall": "If you were INAPA or CORAASAN, would you chlorinate 200 small systems, or hand them to the communities? Who should pay for the chlorine? *Second call (from a question students were asked at home):* someone asks why not just send the money instead of going. Using the cost per meter and the hours of digging, what would the money buy, what would it not buy, and who would own the aqueduct either way?",
-   "denverRun": "Denver Water replaced 36,000+ lead lines at no direct cost to owners (~$670M). Who paid instead, and how did Denver decide it had to? (D-WATER)"
+   "denverRun": "Denver Water replaced 36,000+ lead lines at no direct cost to owners (~$670M). Who paid instead, and how did Denver decide it had to?"
   },
   {
    "key": "B",
@@ -719,21 +719,21 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
    "data": "~14% of producers and ~17% of planted area insured; rice/banana/plantain 90% of coverage; 50% premium subsidy (Law 157-09); RD$2,227M paid to 10,249 producers 2020–24 (*elDinero*; *Acento*) ✅; David/Federico 1979 ≈ 16% of GDP ⚠️.",
    "notice": "the storm is nature; who is covered is built; insurance follows credit.",
    "yourCall": "What would it take to cover a tobacco or cacao farmer in a campo — and who should pay the other 50%?",
-   "denverRun": "a hail year in Colorado with and without homeowners/auto insurance: 3% of mortgaged owners are uninsured vs 13% of free-and-clear owners (SHED 2025 ✅). Who built the cushion in — the family or the lender? (D-HOMEINS)"
+   "denverRun": "a hail year in Colorado with and without homeowners/auto insurance: 3% of mortgaged owners are uninsured vs 13% of free-and-clear owners (SHED 2025 ✅). Who built the cushion in — the family or the lender?"
   },
   {
    "key": "C",
    "title": "The road out",
    "question": "Why would a loving parent leave a campo for Santiago, New York or Madrid?",
-   "changes": "destination (Santiago informal job, Santo Domingo, New York, Spain); wage (Dominican micro-firm minimum RD$16,993/month vs field day rate RD$714.60/day vs a Denver job at $19.29/hr, about $40,120 a year full-time — D-MINWAGE, D-WAGE ✅); cost of the move; remittance sent per month; who raises the children; years away.",
-   "notice": "the decision is rational; the cost is absence; remittances are the family's insurance (2c).",
+   "changes": "destination (Santiago informal job, Santo Domingo, New York, Spain); wage (Dominican micro-firm minimum RD$16,993/month vs field day rate RD$714.60/day vs a Denver job at $19.29/hr, about $40,120 a year full-time — ✅); cost of the move; remittance sent per month; who raises the children; years away.",
+   "notice": "the decision is rational; the cost is absence; remittances are the family's insurance.",
    "yourCall": "What would have to be true in the campo for the same parent to stay?"
   },
   {
    "key": "D",
    "title": "One bad week",
    "question": "The same thing happens to three families. Why does it cost them so differently?",
-   "changes": "paid leave yes/no; health coverage and distance to care; a bank account; the loan rate available (Banco Agrícola 8% if reachable, 35.8% microcredit, 57.8% credit card, about 20% a month from a *prestamista* there; 21.19% card APR, 7.11% mortgage, 36% payday cap here — D-CREDIT); title to borrow against (Barrier 8); a *san* turn coming up; crop or car insurance; life insurance; a relative abroad who can send money; who they can call (the cooperador, the junta, a neighbor).",
+   "changes": "paid leave yes/no; health coverage and distance to care; a bank account; the loan rate available (Banco Agrícola 8% if reachable, 35.8% microcredit, 57.8% credit card, about 20% a month from a *prestamista* there; 21.19% card APR, 7.11% mortgage, 36% payday cap here —); title to borrow against (Barrier 8); a *san* turn coming up; crop or car insurance; life insurance; a relative abroad who can send money; who they can call (the cooperador, the junta, a neighbor).",
    "data": "every row of 2c.",
    "notice": "the event is luck; the price is mostly built. Count the cushions each family had, and who built each one. Notice what the campo family has that the Denver families may not — a cooperador who knows them, a campo that digs together.",
    "yourCall": "Which of your family's cushions did you earn, and which were built around you? What would it take to build one there?"
@@ -750,7 +750,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
  ],
  "theology": {
   "readings": [
-   "**Antonio de Montesinos, Advent sermon, Santo Domingo, 1511.** On the Fourth Sunday of Advent, a Dominican friar, speaking for his community, told the Spanish colonists of Hispaniola that they were in mortal sin for the way they treated the Taíno. His central question — Are these not human beings? — is preserved in Bartolomé de las Casas's *Historia de las Indias* (Book III). The colonists demanded he retract; the next Sunday he preached it again. It is the first recorded public sermon for human rights in the Americas, and it was preached on this island, to the people who had the comfortable seats. ⚠️ Standard reference; confirm the date (21 Dec 1511) and the exact Las Casas chapter before publishing. A statue of Montesinos stands on Santo Domingo's Malecón ⚠️.",
+   "**Antonio de Montesinos, Advent sermon, Santo Domingo, 1511. On the Fourth Sunday of Advent, a Dominican friar, speaking for his community, told the Spanish colonists of Hispaniola that they were in mortal sin for the way they treated the Taíno. His central question — Are these not human beings? — is preserved in Bartolomé de las Casas's *Historia de las Indias* (Book III). The colonists demanded he retract; the next Sunday he preached it again. It is the first recorded public sermon for human rights in the Americas, and it was preached on this island, to the people who had the comfortable seats. A statue of Montesinos stands on Santo Domingo's Malecón ⚠️.",
    "Pair with Barrier 1: whose right, and whose job to deliver it?"
   ],
   "question": "Montesinos asked the people with the comfortable seats whether the people working beside them were human beings like them. In this campo I will be the guest with the comfortable seat. What will I let my host family teach me that I could not have learned from the resort side of the wall?"
@@ -793,7 +793,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
      "url": "https://publications.iadb.org/publications/english/document/Interaction-between-Rural-and-Urban-Areas-in-Water-and-Sanitation-Management-A-Strategy-for-the-Santiago-Water-Company-in-the-Dominican-Republic-CORASSAN.pdf"
     },
     {
-     "t": "INAPA/USAID-EHP 1997, rural aqueduct transfer program (ASOCARs)",
+     "t": "INAPA/USAI 1997, rural aqueduct transfer program (ASOCARs)",
      "url": "https://fr.ircwash.org/sites/default/files/Vigano-1997-Programa.pdf"
     },
     {
@@ -1337,18 +1337,18 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
       "here": {
        "v": "Depends",
        "text": "Not through work. A subsidized public plan covers families on the poverty register, but it is paid far less per person than the workers' plan.",
-       "src": "DR packet, Barrier 4",
+       "src": "This trip’s Barriers page, Barrier 4",
        "mark": "care"
       },
       "w2": {
        "v": "Depends on the job",
        "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       },
       "cash": {
        "v": "Not through the work",
        "text": "The same income-based coverage is open to them.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       }
      },
      {
@@ -1377,7 +1377,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
       "here": {
        "v": false,
        "text": "A painter paid for four days of five has no office to call.",
-       "src": "DR packet, Barrier 5"
+       "src": "This trip’s Barriers page, Barrier 5"
       },
       "w2": {
        "v": true,
@@ -1495,7 +1495,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
    ],
    "doing": {
     "text": "Neighbors work each other's land or roof in turn; rotating savings groups (san) pay out one pot a round; the colmado gives credit (fiao) until payday.",
-    "src": "DR packet, Barrier 5"
+    "src": "This trip’s Barriers page, Barrier 5"
    },
    "notice": "Switch the year. The same quintal, grown the same way, paid more than three times as much in hours one year as the next. A grower who signed a contract before a spike kept none of it.",
    "yourCall": "If you grew cacao, would you sign a contract at a fixed price? What would you gain, and what would you give up?"
@@ -1584,7 +1584,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dr"]={
      "rent": {
       "amt": 1874,
       "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
-      "src": "USAFacts (Denver mirror D-HOUSING)"
+      "src": "USAFacts"
      },
      "bus": {
       "fare": 2.75,

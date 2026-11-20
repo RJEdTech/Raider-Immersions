@@ -345,18 +345,18 @@
       "here": {
        "v": "Depends",
        "text": "Not through work. A subsidized public plan covers families on the poverty register, but it is paid far less per person than the workers' plan.",
-       "src": "DR packet, Barrier 4",
+       "src": "This trip’s Barriers page, Barrier 4",
        "mark": "care"
       },
       "w2": {
        "v": "Depends on the job",
        "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       },
       "cash": {
        "v": "Not through the work",
        "text": "The same income-based coverage is open to them.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       }
      },
      {
@@ -385,7 +385,7 @@
       "here": {
        "v": false,
        "text": "A painter paid for four days of five has no office to call.",
-       "src": "DR packet, Barrier 5"
+       "src": "This trip’s Barriers page, Barrier 5"
       },
       "w2": {
        "v": true,
@@ -503,7 +503,7 @@
    ],
    "doing": {
     "text": "Neighbors work each other's land or roof in turn; rotating savings groups (san) pay out one pot a round; the colmado gives credit (fiao) until payday.",
-    "src": "DR packet, Barrier 5"
+    "src": "This trip’s Barriers page, Barrier 5"
    },
    "notice": "Switch the year. The same quintal, grown the same way, paid more than three times as much in hours one year as the next. A grower who signed a contract before a spike kept none of it.",
    "yourCall": "If you grew cacao, would you sign a contract at a fixed price? What would you gain, and what would you give up?"
@@ -592,7 +592,7 @@
      "rent": {
       "amt": 1874,
       "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
-      "src": "USAFacts (Denver mirror D-HOUSING)"
+      "src": "USAFacts"
      },
      "bus": {
       "fare": 2.75,

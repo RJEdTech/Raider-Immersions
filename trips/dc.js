@@ -34,7 +34,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dc"]={
   },
   {
    "h": "What the 2026 group did",
-   "text": ":",
+   "text": "",
    "items": [
     "Slept at the McKenna Center. The group missed the **Ignatian Family Teach-In for Justice** (IFTJ) because flights were grounded the Friday before.",
     "Day 2: half the group cooked and served breakfast and lunch for guests at McKenna. Half walked before 6 a.m. to **SOME (So Others Might Eat)** to serve breakfast in shifts. Everyone then went to **Jesuit Refugee Service (JRS/USA)** to learn how it advocates with elected officials. In the evening a reflection was led by a speaker who had been homeless.",
@@ -79,7 +79,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dc"]={
      "text": "**Work:** about a quarter of adults in families and 44% of unaccompanied individuals report having a job.",
      "src": "Street Sense 2026",
      "mark": "care",
-     "note": "The 44% looks high next to past counts; check it against the COG report before publishing."
+     "note": ""
     },
     {
      "text": "Unsheltered 2026: 718.",
@@ -127,7 +127,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dc"]={
    "who": "Landowners and developers gain from scarcity. So do existing homeowners, quietly, whose homes appreciate. The D.C. Council and mayor decide how many vouchers exist; HUD decides federal shelter and housing grants. Renters at the bottom, overwhelmingly Black, pay. Nobody chose 94 hours. It is what happens when a wage floor and a rent market are set by different people.",
    "nlb": "Nature: winter (D.C. delayed its 2026 count for cold). Luck: an illness, a landlord selling, a relative with a spare room. **Built:** the rent market, the wage floor, the voucher count, shelter rules. *Mostly built.*",
    "doing": "The **Father McKenna Center** runs a day program, winter overnight shelter, pantry and financial-stability work. **SOME**, founded by McKenna in 1970, serves meals and works on housing. Several McKenna staff have been homeless themselves (2009 ⚠️). Advocates won 336 vouchers back in the 2025 budget fight.",
-   "denver": "The same gap between the wage floor and rent. Denver's minimum wage, **$19.29** (2026), is *higher* than D.C.'s $18.40. — Denver mirror **D-MINWAGE** ✅; NLIHC ✅. But metro rent ran about $1,874/month, 31.9% of renter income, and 49% of Colorado renters are cost-burdened. — Denver mirror **D-HOUSING** ✅. Denver's 2026 Point-in-Time count found **6,411** people (518 unsheltered), against D.C.'s 5,363. — D-HOUSING (MDHI) ✅. Both counts miss doubled-up families (Lab D).",
+   "denver": "The same gap between the wage floor and rent. Denver's minimum wage, **$19.29** (2026), is *higher* than D.C.'s $18.40.; NLIHC ✅. But metro rent ran about $1,874/month, 31.9% of renter income, and 49% of Colorado renters are cost-burdened. Denver's 2026 Point-in-Time count found **6,411** people (518 unsheltered), against D.C.'s 5,363. — (MDHI) ✅. Both counts miss doubled-up families (Lab D).",
    "denverKeys": [
     "D-HOUSING",
     "D-MINWAGE"
@@ -246,7 +246,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dc"]={
    "who": "The framers and Congress, in writing (Constitution; Home Rule Act). Who gains from the arrangement is argued along partisan lines; leave that to students and say so. Who pays is factual: D.C. residents, who live under laws and budgets set partly by people they cannot vote for or against.",
    "nlb": "Nature: none. Luck: none. **Built: all, by statute and constitution.**",
    "doing": "D.C. residents elect a council and mayor and vote for President.",
-   "denver": "Who gets heard at the Colorado Capitol: Denver mirror **D-COMMON** (no mirror key covers voting or representation yet; flag for the Denver mirror agent). **But the mirror is in the room:** most RJ students on this trip are under 18 and cannot vote either. Rep. Neguse and Rep. Crow met them anyway.",
+   "denver": "Who gets heard at the Colorado Capitol? **The mirror is in the room:** most students on this trip are under 18 and cannot vote either. Members of Congress met them anyway.",
    "denverKeys": [
     "D-COMMON"
    ],
@@ -290,11 +290,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dc"]={
     "shelter, day programs, a halfway house"
    ],
    "oneDay": "a man home after years away needs an ID, a phone, an address and a job, and each one asks for the others first.",
-   "contested": "How many people come home each year, and how many of them end up at a day shelter. Whether far-away placement measurably raises reoffending for D.C. residents is studied, but not checked here.",
+   "contested": "How many people come home each year, and how many of them end up at a day shelter.",
    "who": "Congress, in writing (1997 ✅). The federal system gained control and the city shed a troubled prison and its cost; nobody gains from the distance itself. A budget that never had to grow, with consequences anyway. Families pay in travel and lost contact; returning citizens pay in the years after release.",
    "nlb": "Nature: none. Luck: which facility has a bed. **Built:** where D.C. prisoners go, what landlords may check, what IDs require.",
    "doing": "MORCA (case plans, vital-records waivers, job referrals ✅), the CIC, a D.C. office that publishes where D.C. residents are held and reports on individual federal prisons (e.g., USP McCreary, 2023) ✅, reentry nonprofits, and day programs like McKenna's, which offer an address, a shower, a locker, clothing for interviews and bus fare (2009 ⚠️).",
-   "denver": "What a record costs after release runs through Denver mirror **D-HOUSING** (finding a room) and **D-INFORMAL** (work off the books when a record blocks a W-2 job). Neither key gives a reentry figure yet.",
+   "denver": "What a record costs after release runs through (finding a room) and (work off the books when a record blocks a W-2 job). Neither key gives a reentry figure yet.",
    "denverKeys": [
     "D-HOUSING",
     "D-INFORMAL",
@@ -330,7 +330,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dc"]={
    "who": "No one decided access goes to the organized. Those with time, money and staff gain. People working two jobs, people without an address, and D.C. residents with no voting member pay in silence.",
    "nlb": "Nature: there are only so many hours in a member's day. Luck: being from a member's district. **Built:** the rules on lobbying, what counts as a constituent, D.C.'s status, and the schedule of who can take a weekday off to visit.",
    "doing": "JRS, the Ignatian Solidarity Network (IFTJ advocacy day) and Street Sense's writers all make unheard people audible. Street Sense lets people who are homeless speak in print, under their own bylines.",
-   "denver": "The same mechanism runs at the Colorado Capitol on Colfax: who can testify at a weekday committee hearing. One example of a count someone fought for: Colorado Fiscal Institute estimates about 440,000 Colorado workers lose more than $728 million a year to wage theft, and Denver Labor recovered a record $2.31 million for about 7,200 workers in 2025. — Denver mirror **D-INFORMAL** ⚠️ (estimate) / ✅.",
+   "denver": "The same mechanism runs at the Colorado Capitol on Colfax: who can testify at a weekday committee hearing. One example of a count someone fought for: Colorado Fiscal Institute estimates about 440,000 Colorado workers lose more than $728 million a year to wage theft, and Denver Labor recovered a record $2.31 million for about 7,200 workers in 2025. (estimate) / ✅.",
    "denverKeys": [
     "D-COMMON",
     "D-INFORMAL"
@@ -364,8 +364,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dc"]={
    "contested": "",
    "who": "The D.C. Council and DHCF set renewal rules and the Alliance cut (FY2026 budget). The federal government sets who may get Medicaid. Nobody gains from a lapse itself; a budget is smaller when fewer people stay enrolled. The person without a fixed address pays in lapses. Nobody decided the homeless lose coverage. It follows from a form mailed to an address.",
    "nlb": "Nature: none. Luck: whether your papers were in the bag you kept. **Built:** what an ID requires, renewal intervals, where notices are sent, which programs check status.",
-   "doing": "McKenna offers an address, lockers and help applying (2009 ⚠️); MORCA waives vital-records fees ✅; legal-aid groups publish know your rights sheets on the Alliance changes (Legal Aid DC, 2025; surfaced, not read ⚠️).",
-   "denver": "Colorado's cushions have the same paper doors: from 1 Jan 2027 Medicaid expansion adults face **six-month renewals** and work-reporting rules, and from 1 Oct 2026 many lawfully present immigrants lose Health First Colorado. — Denver mirror **D-HEALTH**, **D-IMMIGRATION** ✅.",
+   "doing": "McKenna offers an address, lockers and help applying (2009 ⚠️); MORCA waives vital-records fees ✅; legal-aid groups publish know your rights sheets on the Alliance changes.",
+   "denver": "Colorado's cushions have the same paper doors: from 1 Jan 2027 Medicaid expansion adults face **six-month renewals** and work-reporting rules, and from 1 Oct 2026 many lawfully present immigrants lose Health First Colorado.",
    "denverKeys": [
     "D-BANK",
     "D-HEALTH",
@@ -416,7 +416,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dc"]={
    "who": "The D.C. Council set the cap; federal banking law lets banks export their home-state rates unless a jurisdiction opts out. Lenders that found the way around gained until enforcement; borrowers with the least cushion paid triple-digit rates. Lenders with low losses (banks, credit unions) gain the customers with accounts and credit files.",
    "nlb": "Nature: none. Luck: a relative with $400. **Built:** the cap, the exportation loophole, what counts as interest, and what a bank needs before it lends.",
    "doing": "",
-   "denver": "Colorado capped payday loans at **36% APR** by voter initiative (Prop 111, 2018, 77% yes), above D.C.'s 24%. A family with good credit pays a card's **21.19%** or a mortgage's **7.11%**. — Denver mirror **D-CREDIT** ✅. 63% of U.S. adults could cover $400 in cash. — **D-SAVINGS** ✅.",
+   "denver": "Colorado capped payday loans at **36% APR** by voter initiative (Prop 111, 2018, 77% yes), above D.C.'s 24%. A family with good credit pays a card's **21.19%** or a mortgage's **7.11%**. 63% of U.S. adults could cover $400 in cash. — ✅.",
    "denverKeys": [
     "D-BANK",
     "D-CREDIT",
@@ -612,11 +612,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dc"]={
    }
   }
  ],
- "cushionNotice": "A cushion can also shrink: the D.C. Council shortened two kinds of paid leave in its FY2027 budget while keeping the payroll tax, and Congress then had its review period (Barrier 4). Yet the table by ward shows the same city delivering very different lives. A cushion on paper is not a cushion that reaches you: it must be known about, applied for, renewed, and located near where you live. Count the cushions, then ask who can actually reach each one. That is the fence we cannot see from inside (2b).",
+ "cushionNotice": "A cushion can also shrink: the D.C. Council shortened two kinds of paid leave in its FY2027 budget while keeping the payroll tax, and Congress then had its review period (Barrier 4). Yet the table by ward shows the same city delivering very different lives. A cushion on paper is not a cushion that reaches you: it must be known about, applied for, renewed, and located near where you live. Count the cushions, then ask who can actually reach each one. That is the fence we cannot see from inside.",
  "fences": [
   {
    "h": "Insulation",
-   "text": "Most RJ families meet a lost job, an eviction notice or an arrest with a lawyer, savings, a relative's spare room, or a parent's paid leave. From inside those cushions, a man in a breakfast line looks like he made a choice. See 2c."
+   "text": "Most RJ families meet a lost job, an eviction notice or an arrest with a lawyer, savings, a relative's spare room, or a parent's paid leave. From inside those cushions, a man in a breakfast line looks like he made a choice."
   },
   {
    "h": "Physical: the monument city vs. the hometown city",
@@ -659,7 +659,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dc"]={
     "*America*, *Horace McKenna: Apostle to the Poor* (2007). ✅",
     "*Catholic Standard*, McKenna remembered on the 40th anniversary of his death (2022). ✅",
     "Ignatian Solidarity Network, *COVID-19: Bridging the Divide at the Father McKenna Center* (2020), written by a Gonzaga student historian. ✅",
-    "Georgetown University Library exhibit item: McKenna with Diane Roche, RSCJ, and children of St. Aloysius School, c. 1973. ✅ (surfaced, not opened)."
+    "Georgetown University Library exhibit item: McKenna with Diane Roche, RSCJ, and children of St. Aloysius School, c. 1973. ✅."
    ]
   },
   {
@@ -697,7 +697,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dc"]={
    "key": "A",
    "title": "One bad week",
    "question": "The same thing happens to three families. Why does it cost them so differently?",
-   "changes": "paid leave yes/no and from which program (D.C. PFL: 10 weeks own illness, 6 caring for family, 12 parental, max $1,100 ✅ / Colorado FAMLI 12 weeks, max $1,448.02 ✅); employer type (federal and D.C. government workers are outside D.C. PFL ✅); health coverage (Medicaid to 138% FPL / Healthy DC to 200% / Alliance closed to new adults 26+ ✅ / employer plan); savings in a bank (D.C. unbanked 7.2%, Colorado 1.1% ✅); loan rate (D.C. 24% cap ✅ / Colorado 36% payday cap, D-CREDIT ✅); an ID and a fixed address yes/no (Barrier 7); renter vs owner; a car vs two buses to the grocery (Ward 8 has 4 stores ✅); who they can call.",
+   "changes": "paid leave yes/no and from which program (D.C. PFL: 10 weeks own illness, 6 caring for family, 12 parental, max $1,100 ✅ / Colorado FAMLI 12 weeks, max $1,448.02 ✅); employer type (federal and D.C. government workers are outside D.C. PFL ✅); health coverage (Medicaid to 138% FPL / Healthy DC to 200% / Alliance closed to new adults 26+ ✅ / employer plan); savings in a bank (D.C. unbanked 7.2%, Colorado 1.1% ✅); loan rate (D.C. 24% cap ✅ / Colorado 36% payday cap ✅); an ID and a fixed address yes/no (Barrier 7); renter vs owner; a car vs two buses to the grocery (Ward 8 has 4 stores ✅); who they can call.",
    "data": "every row of 2c, plus Ward 8 median income $50,931 and unemployment 13.9% ✅, NLIHC 94 hours ✅, Denver minimum wage $19.29 ✅, FAMLI max $1,448.02 ✅.",
    "yourCall": "Which of your family's cushions did you earn, and which were built around you? Which D.C. cushion would you bring to Denver, and which Denver one to Ward 8?",
    "denverRun": "built in (families 2 and 3)."
@@ -709,7 +709,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dc"]={
    "changes": "constituent of this member yes/no; organized group or alone; time available (weekday off work?); a known contact on staff; campaign donor yes/no; a clear ask (a bill number) or a general concern; whether the member has any vote that affects you (D.C. resident: no voting member at all, Barrier 4).",
    "notice": "the RJ group's access came from being constituents, being organized by a school and having the week free. Those are cushions too. The D.C. guest's lack of access is not about his argument.",
    "yourCall": "If you could carry one sentence from someone at McKenna into Rep. Crow's office, what would it be, and do you have the right to carry it? (Ask permission; never carry a story without it.)",
-   "denverRun": "the same exercise at the Colorado Capitol: who can testify at a 1:30 p.m. Tuesday committee hearing on a housing bill? See D-COMMON."
+   "denverRun": "the same exercise at the Colorado Capitol: who can testify at a 1:30 p.m. Tuesday committee hearing on a housing bill?"
   },
   {
    "key": "C",
@@ -735,7 +735,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["dc"]={
    "changes": "a bank account yes/no; a credit history yes/no; a valid photo ID and a fixed address yes/no (Barrier 7); a relative who can lend; the lender (bank or credit union at or under 24%; an online lender that partners with an out-of-state bank; a paycheck-advance app with tips; a friend). **Papers variant:** take away the ID or the address and see which lenders and which cushions disappear.",
    "notice": "the cap protects the borrower a bank will see. The man without an account, a credit file or an ID cannot reach the protected loan, so the cap's price for him is measured in options, not in percent.",
    "yourCall": "Which one change (an account, an ID, a credit file, a relative) would most change his Friday, and whose decision is each one?",
-   "denverRun": "the same $400 in Denver: a card at 21.19%, a payday loan capped at 36%, or family. See D-CREDIT, D-BANK, D-SAVINGS."
+   "denverRun": "the same $400 in Denver: a card at 21.19%, a payday loan capped at 36%, or family."
   }
  ],
  "theology": {

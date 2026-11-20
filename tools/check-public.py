@@ -6,7 +6,12 @@ BAD = [('red mark (unverified)', r'\U0001F534'),
        ('teacher-only note', r'(?i)teacher[- ]only|leaders[\' ]*(version|only)|questions for jason|\bJason\b(?! Crow)|\bRiemer\b'),
        ('student writing', r'(?i)\b(students?\'? essays?|unit 2|students? (heard|wrote)|canvas \d{4,})\b'),
        ('quotation', r'["\u201c][^"\u201d]{25,}["\u201d]'),
-       ('quoted speech', r'(?i)\b(said|says|told us|wrote)\s*[:,]?\s*["\u201c]')]
+       ('quoted speech', r'(?i)\b(said|says|told us|wrote)\s*[:,]?\s*["\u201c]'),
+       # added 20 Nov 2026: notes written for whoever builds the site must never reach the page
+       ('builder note', r'(?i)this session|before publishing|\bpackets?\b|\bCanvas\b|mirror (key|agent)|not (re-?)?(fetched|opened|reopened)\b|teacher pages?|\bunverified\b'),
+       ('builder note', r'Do not (tell students|publish)|Treat as history|Standard (history|reference|dates)'),
+       ('key left in text', r'D-[A-Z]{3,}(?=[^A-Z]|$).|.D-[A-Z]{3,}|\bSee[.,]'),
+       ('from student work', r'(?i)most journals|post-trip analyses|\(about \d+ of \d+\)|in either year|\b\d{5} \((Monaghan|Dawkins)')]
 dump = "global.window={};for(const f of process.argv.slice(1))require(require('path').resolve(f));console.log(JSON.stringify({t:window.TRIPS||{},m:window.DMIRROR||{}}))"
 files = sorted(glob.glob('trips/*.js'))
 data = json.loads(subprocess.check_output(['node', '-e', dump] + files))

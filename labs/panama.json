@@ -174,7 +174,7 @@
      "q": "Creating the Comarca Ngäbe-Buglé and holding its land in common",
      "level": "nat",
      "detail": "The comarca was created by national law in 1997, after decades of Ngäbe organizing; its land is held collectively.",
-     "src": "Ley 10 de 1997 (Panama packet)",
+     "src": "Ley 10 de 1997",
      "mark": "care"
     },
     {
@@ -197,7 +197,7 @@
      "q": "Whether the Cobre Panamá mine contract stood",
      "level": "court",
      "detail": "After nationwide protests, the Supreme Court ruled the contract unconstitutional in late November 2023 and the mine stopped producing.",
-     "src": "Panama packet",
+     "src": "This trip’s Sources page",
      "mark": "care"
     }
    ],
@@ -329,7 +329,7 @@
       "here": {
        "v": false,
        "text": "A day you don't work is a day you aren't paid.",
-       "src": "Panama packet, Barrier 3"
+       "src": "This trip’s Barriers page, Barrier 3"
       },
       "w2": {
        "v": true,
@@ -349,7 +349,7 @@
       "here": {
        "v": false,
        "text": "Paid leave runs through the CSS, and only for people who pay in.",
-       "src": "Panama packet, Barrier 3"
+       "src": "This trip’s Barriers page, Barrier 3"
       },
       "w2": {
        "v": true,
@@ -369,7 +369,7 @@
       "here": {
        "v": false,
        "text": "No contract, no claim.",
-       "src": "Panama packet, Barrier 3"
+       "src": "This trip’s Barriers page, Barrier 3"
       },
       "w2": {
        "v": true,
@@ -389,7 +389,7 @@
       "here": {
        "v": false,
        "text": "No CSS contributions. A minimum pension of $144 is planned for people without enough of them.",
-       "src": "Panama packet, 2c",
+       "src": "This trip’s “What catches you” page",
        "mark": "care"
       },
       "w2": {
@@ -410,17 +410,17 @@
       "here": {
        "v": false,
        "text": "Coverage through the CSS needs contributions.",
-       "src": "Panama packet, Barrier 3"
+       "src": "This trip’s Barriers page, Barrier 3"
       },
       "w2": {
        "v": "Depends on the job",
        "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       },
       "cash": {
        "v": "Not through the work",
        "text": "The same income-based coverage is open to them.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       }
      },
      {
@@ -428,7 +428,7 @@
       "here": {
        "v": false,
        "text": "No payslip, so no bank loan or formal lease on that income.",
-       "src": "Panama packet, Barrier 3"
+       "src": "This trip’s Barriers page, Barrier 3"
       },
       "w2": {
        "v": true,
@@ -448,7 +448,7 @@
       "here": {
        "v": false,
        "text": "A worker hurt the week before payday has no claim and no record of what was owed.",
-       "src": "Panama packet, Barrier 3"
+       "src": "This trip’s Barriers page, Barrier 3"
       },
       "w2": {
        "v": true,
@@ -484,7 +484,7 @@
       "price": 2.92,
       "mark": "yours",
       "text": "No source publishes what a lata pays in Tierras Altas. This starts at the price that would match the farm minimum ($13.12 for an 8-hour day) at 4.5 latas a day (our arithmetic). Find the real price.",
-      "src": "Panama packet, Barriers 2 and 3"
+      "src": "This trip’s Barriers page, Barriers 2 and 3"
      }
     ],
     "price": {
@@ -557,7 +557,7 @@
    ],
    "doing": {
     "text": "Whole families travel for the harvest, often to Costa Rica for four to six months, so more hands earn.",
-    "src": "Panama packet, Barriers 1 and 4"
+    "src": "This trip’s Barriers page, Barriers 1 and 4"
    },
    "notice": "Panama uses the dollar, so the numbers look familiar. They aren't: a full day at the farm minimum is less than one hour at Denver's minimum.",
    "yourCall": "What would a coffee picker need to know before the harvest to bargain for a fair price per lata? Who has that information?"
@@ -640,7 +640,7 @@
      "rent": {
       "amt": 1874,
       "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
-      "src": "USAFacts (Denver mirror D-HOUSING)"
+      "src": "USAFacts"
      },
      "bus": {
       "fare": 2.75,

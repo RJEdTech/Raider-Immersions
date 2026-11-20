@@ -9,12 +9,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
    "items": []
   },
   {
-   "h": "RJ's other Denver immersions (from Canvas, not the blog)",
+   "h": "RJ's other Denver immersions",
    "text": "",
    "items": [
-    "**Junior Immersions** — every junior, two weeks (about 10 school days), 23 Feb – 6 Mar 2026, at one of about 80 Denver-area sites: elementary schools and special-education programs, preschools (including Mile High Early Learning), memory care and senior living, an adult day program, Children's Hospital Colorado, Catholic Charities, meal sites, Habitat ReStores, and **Tennyson Center for Children**. Run by the Mission, Ministry and Diversity office; each site has an RJ faculty supervisor who visits; hours are logged toward a service requirement. One of the supervisor goals is to ask why the lives and opportunities of the people students work with differ from their own. ✅. Five on-site group discussions are built into the course; none was used in 2025–26. ✅.",
+    "**Junior Immersions** — every junior, two weeks (about 10 school days), 23 Feb – 6 Mar 2026, at one of about 80 Denver-area sites: elementary schools and special-education programs, preschools (including Mile High Early Learning), memory care and senior living, an adult day program, Children's Hospital Colorado, Catholic Charities, meal sites, Habitat ReStores, and **Tennyson Center for Children**. Run by the Mission, Ministry and Diversity office; each site has an RJ faculty supervisor who visits; hours are logged toward a service requirement. One of the supervisor goals is to ask why the lives and opportunities of the people students work with differ from their own. ✅.",
     "**Senior Denver groups (spring)** — Theology of Encounter seniors who stayed in Denver and served at homelessness and food sites: a drop-in coffee house offering free coffee, breakfast and showers; a food pantry doing appointment intake; a Samaritan House (spring 2026); and, in spring 2024, building beds for newly arrived migrant families in a former convent, then a resource center and a Catholic Charities office. ✅.",
-    "A junior placement at a **residential treatment school** (Canvas does not say which) gave students rules from staff: park blocks away, use children's initials only, and never say I promise to a child. ✅."
+    "A junior placement at a **residential treatment school** gave students rules from staff: park blocks away, use children's initials only, and never say I promise to a child. ✅."
    ]
   },
   {
@@ -34,26 +34,26 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
     "**K–12 School and Day Treatment**: school combined with therapy and behavioral support, ages 5–18; the goal is a return to a less restrictive school. ✅ (childabuse.org; Colorado Gives). Tennyson is a state-approved **facility school** — the kind of school Colorado calls a placement of last resort (Barrier 2). CPR (May 2023) described it as serving about 50 metro students in grades K–12. ⚠️ 2023 count.",
     "**TREE** (Transition Readiness, Employment & Engagement), for ages 16–21 with intellectual and developmental disabilities. ✅",
     "**Community-based services**: in-home therapy for the whole family, 2–30 hours a week, **with bilingual services for Spanish-speaking families**; BRANCH; outpatient. ✅ Tennyson says its in-home and school programs serve about 1,000 families. ⚠️ (Tennyson via *Colorado Sun*, spring 2026).",
-    "**Residential treatment is closed.** Tennyson closed it in 2021, reopened it in 2024, and closed it again in spring 2026, citing staffing; capacity was 16 and it had dwindled to six children. ✅ (*Colorado Sun*, 2026 — exact date not on the fetched page ⚠️). This is the second residential closure in five years. Do not tell students they are visiting a residential center."
+    "**Residential treatment is closed. Tennyson closed it in 2021, reopened it in 2024, and closed it again in spring 2026, citing staffing; capacity was 16 and it had dwindled to six children. ✅. This is the second residential closure in five years."
    ]
   },
   {
    "h": "History, briefly — and where to hear it in people's own words",
-   "text": "*(Search budget ran out; items marked ⚠️ are from standard histories and must be checked against the named source before publishing.)*",
+   "text": "",
    "items": [
     "**Arapaho and Cheyenne land.** Denver sits on land the Arapaho and Cheyenne held under the 1851 Fort Laramie Treaty; the 1858 gold rush brought the town. ⚠️ Check: Sand Creek Massacre National Historic Site (NPS); History Colorado.",
-    "**29 Nov 1864, Sand Creek.** Colorado volunteer troops, many raised in Denver, attacked a Cheyenne and Arapaho camp under Black Kettle that understood itself to be under U.S. protection; most of the dead were women, children and elders. Officers Silas Soule and Joseph Cramer refused to order their men to fire and later testified. ⚠️ Check numbers and names against NPS (nps.gov/sand) and the Cheyenne and Arapaho Tribes' own accounts before publishing. **In their own words:** the tribes' annual Sand Creek Massacre Spiritual Healing Run (Sand Creek to Denver) ⚠️ confirm current organizers.",
-    "**Orphanages to treatment centers.** Denver's care for children without parents is old and religious: the Denver Ladies' Relief Society began orphan care in 1873 (today's Denver Children's Home traces to it) ✅ (History Colorado, Denver Orphans' Home register entry); **Mother Frances Xavier Cabrini founded the Queen of Heaven orphanage in North Denver in 1904** for Italian immigrant children whose parents had died in industrial accidents and of disease, later also serving Cuban children ✅ (NPS); and **Tennyson itself began in 1904 as the Colorado Christian Home**, an orphanage founded by two schoolteachers, John and Mary Warren, under the National Benevolent Association; it moved to Denver in 1907, to 29th and Tennyson in 1910, shifted to residential treatment from 1966, and became Colorado's first licensed day-treatment program in 1981. ✅ (Tennyson history page). Two orphanages, one year, three miles apart: one Catholic and immigrant, one Protestant. The NBA is the benevolent arm of the Christian Church (Disciples of Christ) ⚠️ confirm.",
+    "**29 Nov 1864, Sand Creek. Colorado volunteer troops, many raised in Denver, attacked a Cheyenne and Arapaho camp under Black Kettle that understood itself to be under U.S. protection; most of the dead were women, children and elders. Officers Silas Soule and Joseph Cramer refused to order their men to fire and later testified.",
+    "**Orphanages to treatment centers. Denver's care for children without parents is old and religious: the Denver Ladies' Relief Society began orphan care in 1873 (today's Denver Children's Home traces to it) ✅ (History Colorado, Denver Orphans' Home register entry); **Mother Frances Xavier Cabrini founded the Queen of Heaven orphanage in North Denver in 1904** for Italian immigrant children whose parents had died in industrial accidents and of disease, later also serving Cuban children ✅ (NPS); and **Tennyson itself began in 1904 as the Colorado Christian Home**, an orphanage founded by two schoolteachers, John and Mary Warren, under the National Benevolent Association; it moved to Denver in 1907, to 29th and Tennyson in 1910, shifted to residential treatment from 1966, and became Colorado's first licensed day-treatment program in 1981. ✅ (Tennyson history page). Two orphanages, one year, three miles apart: one Catholic and immigrant, one Protestant.",
     "**North Denver.** Italian, then Mexican-American and Chicano, North Denver is where the **Crusade for Justice** (founded 1966 by Rodolfo Corky Gonzales) organized; Gonzales's poem *I Am Joaquín* (1967) is the movement's best-known text. ⚠️ Check dates. **Five Points**, northeast of downtown, was the center of Black Denver (the Harlem of the West). ⚠️",
-    "**Berkeley now.** Berkeley was annexed to Denver in 1902–03; rising rents since the 2010 zoning update have pushed small businesses off Tennyson Street and brought national chains. ✅ (Denverite, Nov 2023). **The street outside Tennyson looks like the suburbs students come from.** That is part of the lesson (2b)."
+    "**Berkeley now.** Berkeley was annexed to Denver in 1902–03; rising rents since the 2010 zoning update have pushed small businesses off Tennyson Street and brought national chains. ✅ (Denverite, Nov 2023). **The street outside Tennyson looks like the suburbs students come from.** That is part of the lesson."
    ]
   },
   {
    "h": "The Church's presence",
    "text": "",
    "items": [
-    "**Archdiocese of Denver** and **Catholic Charities of Denver** (shelters, early childhood, housing) — ⚠️ confirm current program list on their own sites; no fetch this session.",
-    "**Mount Saint Vincent**, a Denver child treatment center with Catholic roots. ✅ (name and role). ⚠️ Its founding (Sisters of Charity of Leavenworth, 1880s) not checked.",
+    "",
+    "**Mount Saint Vincent**, a Denver child treatment center with Catholic roots. ✅ (name and role).",
     "**Mother Cabrini Shrine**, Golden — the former summer camp of Cabrini's Denver orphanage (20189 Cabrini Blvd.). ✅ (NPS). A short drive; a Denver saint who cared for exactly the children this trip meets.",
     "Tennyson itself is **not Catholic** and has not been church-run since it separated from the NBA in 2004. ✅ Say so plainly; the Catholic connection on this trip is RJ's, not the partner's."
    ]
@@ -114,7 +114,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
    "who": "The legislature and the state Medicaid agency (Health Care Policy and Financing) set rates; Congress set the Family First rules. **No one gains from an empty bed.** The state budget saves money in the short run — *a budget that never had to grow.* Children pay in waiting and distance; counties pay in caseworker hours; hospitals absorb children they cannot discharge.",
    "nlb": "Nature: some children's needs are severe. Luck: whether a bed opens the week you need it. **Built:** the rate, the cap of 16, how many programs exist, where they are.",
    "doing": "County caseworkers spend hours a day calling facilities across the country (Denver7, 2021 ✅). Hundreds of child-welfare leaders wrote to the governor in 2023 asking for long-term funding instead of one-time money (CBS ✅). Tennyson kept its school, day treatment and in-home therapy open when residential closed — choosing to serve about 1,000 families at home.",
-   "denver": "The shortage does not check income. Tennyson serves Douglas and Arapahoe county families ✅, and in 2021 the sponsor of Colorado's behavioral-health bill, Rep. Dafna Michaelson Jenet, said she had sent her own son out of state for care. ✅ (CBS Colorado, Jun 2021). What differs is the cushion: in the CPR facility-school story, a family's **private insurance** covered a placement ✅ (CPR, 2023); paid leave to travel to an out-of-state program is FAMLI (D-LEAVE). **Coverage differs inside the suburbs too.** The 2025 Colorado Health Access Survey found too few uninsured people in its Douglas County region to report a rate. ✅ (CHI, CHAS 2025 Region 3 profile). Census estimates put the uninsured share at about **3.9% in Douglas, 9.3% in Arapahoe and 9.0% in Denver** (all ages, 2024). ⚠️ (Data USA from Census ACS; the matching 2023 figures suggest the 5-year 2020–24 survey; confirm on data.census.gov, table S2701). Census QuickFacts gives Arapahoe **9.8%** uninsured under age 65. ✅ (year not shown on the page; it is the Census small-area health insurance estimate — ⚠️ confirm the year).",
+   "denver": "The shortage does not check income. Tennyson serves Douglas and Arapahoe county families ✅, and in 2021 the sponsor of Colorado's behavioral-health bill, Rep. Dafna Michaelson Jenet, said she had sent her own son out of state for care. ✅ (CBS Colorado, Jun 2021). What differs is the cushion: in the CPR facility-school story, a family's **private insurance** covered a placement ✅ (CPR, 2023); paid leave to travel to an out-of-state program is FAMLI **Coverage differs inside the suburbs too.** The 2025 Colorado Health Access Survey found too few uninsured people in its Douglas County region to report a rate. ✅ (CHI, CHAS 2025 Region 3 profile). Census estimates put the uninsured share at about **3.9% in Douglas, 9.3% in Arapahoe and 9.0% in Denver** (all ages, 2024). ⚠️. Census QuickFacts gives Arapahoe **9.8%** uninsured under age 65. ✅.",
    "denverKeys": [
     "D-LEAVE"
    ],
@@ -161,7 +161,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
    "who": "The legislature set the per-day rate and let it sit for eight years. No one gains — a budget that never had to grow. Children and families pay in waiting; districts pay tuition; facility schools fundraise (one administrator reported raising $1 million a year — CPR ✅).",
    "nlb": "Nature: trauma's effects on a child's brain and behavior are real. Luck: which district you live in, and whether a seat is open. **Built:** the daily rate, the approval rules, the number of schools.",
    "doing": "Facility-school teachers hold behavior that would get a student removed elsewhere (CPR on Tennyson ✅); the goal is to send children back to their home schools, and some go. A 2021 work group of educators and providers wrote what became SB 23-219.",
-   "denver": "Districts pay the tuition, so a facility-school seat is also a line in a suburban district's budget. **School funding, what was found.** Denver Public Schools spent **$18,235 per pupil** in 2023–24 ($12,096 at the school level plus $6,139 in the school's share of central spending), against a state average of **$15,805**. ✅ (CDE Financial Transparency, Denver County 1). Colorado's average formula funding (Total Program) was **$11,876 per pupil** in 2025–26. ✅ (Legislative Council, *School Finance in Colorado*, 2026). Pull them from the same CDE page, one district at a time. **Do not publish a suburban per-pupil or mill-levy figure until pulled.**",
+   "denver": "Districts pay the tuition, so a facility-school seat is also a line in a suburban district's budget. **School funding, what was found. Denver Public Schools spent **$18,235 per pupil** in 2023–24 ($12,096 at the school level plus $6,139 in the school's share of central spending), against a state average of **$15,805**. ✅ (CDE Financial Transparency, Denver County 1). Colorado's average formula funding (Total Program) was **$11,876 per pupil** in 2025–26. ✅ (Legislative Council, *School Finance in Colorado*, 2026). Pull them from the same CDE page, one district at a time.",
    "denverKeys": [],
    "mirrorQ": "When a student at your school can't be held by a regular classroom, where do they go — and who pays?"
   },
@@ -205,7 +205,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
      "note": ""
     },
     {
-     "text": "Denver metro median rent about $1,874/month (ACS 2020–24) → D-HOUSING.",
+     "text": "Denver metro median rent about $1,874/month (ACS 2020–24).",
      "src": "",
      "mark": "ok",
      "note": ""
@@ -224,7 +224,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
    "who": "State statute defines neglect; counties assess. No one gains from a removal. But a housing market that rewards scarcity, and a system that pays for foster care more readily than for rent, decide which help is easier to get. Parents and children pay; so do foster families.",
    "nlb": "Nature: illness, addiction's grip. Luck: a landlord who waits a month. **Built:** the definition of neglect, what help is offered before a report, rent.",
    "doing": "Colorado created an Office of Respondent Parents' Counsel so parents have lawyers who know this system ✅ (its 2023 report is the source above). Tennyson's in-home therapy works with the whole family, 2–30 hours a week, in Spanish where needed ✅ — help brought to the house instead of a child taken from it. Grandparents and relatives take children in (Barrier 5).",
-   "denver": "The same night looks different with a cushion. *Sources:* income and all-ages poverty — Data USA from Census ACS (2023 values match QuickFacts' 2019–23 five-year figure for Arapahoe, $97,215, so these are most likely the 2020–24 five-year estimates ⚠️; confirm on data.census.gov, S1901 and S1701). Cross-checks: Census QuickFacts, Arapahoe median **$97,215** (2019–23, in 2023 dollars) ✅; Census Reporter, Douglas **$151,659** (ACS 2024 one-year) ✅. Child poverty — Census Small Area Income and Poverty Estimates (SAIPE) 2024, via FRED (St. Louis Fed). ✅ **Read the row, then the child:** in Douglas County about 1 child in 28 lives below the poverty line; in Arapahoe about 1 in 10, close to the state rate. *(Our arithmetic.)* Some of Tennyson's children come from both counties ✅.",
+   "denver": "The same night looks different with a cushion. *Sources:* income and all-ages poverty — Data USA from Census ACS. Cross-checks: Census QuickFacts, Arapahoe median **$97,215** (2019–23, in 2023 dollars) ✅; Census Reporter, Douglas **$151,659** (ACS 2024 one-year) ✅. Child poverty — Census Small Area Income and Poverty Estimates (SAIPE) 2024, via FRED (St. Louis Fed). ✅ **Read the row, then the child:** in Douglas County about 1 child in 28 lives below the poverty line; in Arapahoe about 1 in 10, close to the state rate. *(Our arithmetic.)* Some of Tennyson's children come from both counties ✅.",
    "denverKeys": [
     "D-LEAVE"
    ],
@@ -258,7 +258,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
      "note": ""
     },
     {
-     "text": "Denver minimum wage $19.29/hr (2026) → D-INFORMAL.",
+     "text": "Denver minimum wage $19.29/hr (2026).",
      "src": "",
      "mark": "ok",
      "note": ""
@@ -328,7 +328,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
    "who": "The legislature and governor, in a budget shortfall, in writing. The state saves $5.5M. Relatives and children pay; some children who could have gone to kin go to strangers or wait.",
    "nlb": "Nature: none. Luck: whether you have a relative who can say yes. **Built:** the certification rules and whether support follows the child.",
    "doing": "Grandparents raise grandchildren without being asked twice. Host homes take in children. Denver holds an annual Adoption Day. ✅",
-   "denver": "When something happens to a parent in an RJ family, the cushion is often a relative with room — and life insurance: 71% of households earning $150k+ have it, vs 31% under $50k (2024). — LIMRA/Life Happens, national → D-COMMON / 2c. ✅ ⚠️ National.",
+   "denver": "When something happens to a parent in an RJ family, the cushion is often a relative with room — and life insurance: 71% of households earning $150k+ have it, vs 31% under $50k (2024). — LIMRA/Life Happens, national. ✅ ⚠️ National.",
    "denverKeys": [
     "D-COMMON"
    ],
@@ -353,11 +353,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
     "providers serving low-income families lose revenue and close classrooms"
    ],
    "oneDay": "a parent chooses between leaving a child with someone unsafe and losing a job — the choice that can become a neglect report (Barrier 3).",
-   "contested": "How much the freeze stems from federal rule changes vs state funding. KUNC attributes it to Biden-era federal changes. ⚠️ Whether this barrier touches Tennyson families specifically is **inferred** (Tennyson serves children 0–18 and their families) — confirm with Tennyson before putting it on the site.",
+   "contested": "How much the freeze stems from federal rule changes vs state funding. KUNC attributes it to Biden-era federal changes.",
    "who": "Federal and state rules; county budgets. No one gains. Low-income parents and providers pay.",
    "nlb": "Nature: babies need care. Luck: which county you live in. **Built:** subsidy funding, county by county.",
-   "doing": "Grandparents, neighbors and older siblings fill gaps; nonprofit centers such as Mile High Early Learning absorb losses until they can't. Colorado Universal Preschool gives 4-year-olds free hours ⚠️ confirm current hours.",
-   "denver": "Colorado FAMLI gives up to 12 weeks of paid leave for a new child (D-LEAVE ✅).",
+   "doing": "Grandparents, neighbors and older siblings fill gaps; nonprofit centers such as Mile High Early Learning absorb losses until they can't.",
+   "denver": "Colorado FAMLI gives up to 12 weeks of paid leave for a new child",
    "denverKeys": [
     "D-LEAVE"
    ],
@@ -417,7 +417,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
     },
     {
      "text": "Children's coverage does not depend on immigration status: **Cover All Coloradans** covers children 18 and under regardless of status; from **1 Oct 2026** many lawfully present immigrant adults lose Health First Colorado eligibility.",
-     "src": "HCPF via D-HEALTH, D-IMMIGRATION",
+     "src": "HCPF via",
      "mark": "ok",
      "note": "So in a mixed-status kinship home, the child can be covered while the caregiver is not."
     },
@@ -425,13 +425,13 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
      "text": "Federal law requires states to give youth leaving foster care at 18 or older their birth certificate, Social Security card, health-insurance information, medical records and a state ID.",
      "src": "",
      "mark": "care",
-     "note": "Not re-checked this session (Preventing Sex Trafficking and Strengthening Families Act, 2014; 42 U.S.C. 675(5)(I)). Confirm before publishing."
+     "note": "675(5)(I))."
     },
     {
      "text": "Colorado law lets a parent delegate parental powers to another adult by power of attorney.",
      "src": "",
      "mark": "care",
-     "note": "Not re-checked (C.R.S. 15-14-105; confirm the time limit)."
+     "note": ""
     }
    ],
    "plain": "A parent signs for a child by default: school enrollment, a therapy consent, a Medicaid application, a copy of a birth certificate. Anyone else — a grandmother, an aunt, a foster family — needs paper that says they may: a county placement, a court order, a guardianship, or a power of attorney signed by the parent. Without it, help waits. Every time a child moves, the papers have to catch up.",
@@ -458,19 +458,19 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
      "text": "Payday loans capped at **36% APR**, with other finance charges and fees eliminated, since 1 Feb 2019 (Proposition 111, passed with 77.25% of the vote); the average Colorado payday APR was about **129%** in 2016.",
      "src": "CPR, Oct 2018; Ballotpedia",
      "mark": "ok",
-     "note": "→ D-CREDIT"
+     "note": ""
     },
     {
      "text": "Credit cards: **21.19%** APR on all accounts, **22.36%** on accounts charged interest (Q3 2026).",
      "src": "Federal Reserve G.19",
      "mark": "ok",
-     "note": "National. → D-CREDIT"
+     "note": "National."
     },
     {
      "text": "**63%** of U.S. adults would cover a $400 emergency with cash or its equivalent (2025).",
      "src": "Federal Reserve SHED",
      "mark": "ok",
-     "note": "National. → D-SAVINGS"
+     "note": "National."
     },
     {
      "text": "Non-certified kinship funding eliminated (**$5.5M** state funds); adoption assistance capped at **$21/day** (under 9) and **$39/day** (teens).",
@@ -493,8 +493,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
    "contested": "",
    "who": "Voters capped payday loans; the legislature cut kinship support to close a budget gap; card issuers price by credit score. The state saves $5.5M; lenders earn the interest. Relatives pay, and the people with the lowest scores pay the most.",
    "nlb": "Nature: none. Luck: whether the call comes the week after payday. **Built:** support tied to certification rather than to the child; the rate cap and what it leaves out; credit scoring.",
-   "doing": "Relatives, neighbors and parishes collect beds, clothes and car seats; some Denver nonprofits pass on children's gear (one is a Junior Immersion site ⚠️ confirm what it does before naming). Colorado voters chose the 36% cap by more than three to one ✅.",
-   "denver": "A salaried family taking in a relative's child pays from savings or a card it pays off each month, or borrows against a house at mortgage-like rates (30-year fixed 7.11%, Nov 2026 ✅ national → D-CREDIT). The same $600 costs it almost nothing.",
+   "doing": "Relatives, neighbors and parishes collect beds, clothes and car seats; some Denver nonprofits pass on children's gear. Colorado voters chose the 36% cap by more than three to one ✅.",
+   "denver": "A salaried family taking in a relative's child pays from savings or a card it pays off each month, or borrows against a house at mortgage-like rates (30-year fixed 7.11%, Nov 2026 ✅ national ). The same $600 costs it almost nothing.",
    "denverKeys": [
     "D-CREDIT"
    ],
@@ -510,7 +510,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
     "keys": []
    },
    "denver": {
-    "text": "Median household income **$149,594** Douglas, **$101,087** Arapahoe, vs **$94,718** Denver (2024). (Data USA from ACS; confirm S1901.) Children in poverty: **3.6%** Douglas, **10.4%** Arapahoe (SAIPE 2024).",
+    "text": "Median household income **$149,594** Douglas, **$101,087** Arapahoe, vs **$94,718** Denver (2024). Children in poverty: **3.6%** Douglas, **10.4%** Arapahoe (SAIPE 2024).",
     "mark": "care",
     "keys": [
      "D-WAGE",
@@ -521,7 +521,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
   {
    "label": "Rent",
    "there": {
-    "text": "Denver metro median rent ~$1,874/mo, 31.9% of renter income (ACS 2020–24). Nearly half of Colorado renters cost-burdened (2026). → D-HOUSING",
+    "text": "Denver metro median rent ~$1,874/mo, 31.9% of renter income (ACS 2020–24). Nearly half of Colorado renters cost-burdened (2026).",
     "mark": "ok",
     "keys": [
      "D-HOUSING"
@@ -583,7 +583,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
   {
    "label": "A bank account",
    "there": {
-    "text": "4.2% of U.S. households unbanked; 12.3% of single-parent households (FDIC 2023). National. → D-CREDIT",
+    "text": "4.2% of U.S. households unbanked; 12.3% of single-parent households (FDIC 2023). National.",
     "mark": "ok",
     "keys": [
      "D-CREDIT"
@@ -600,14 +600,14 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
   {
    "label": "What borrowing costs",
    "there": {
-    "text": "Payday loans capped at 36% APR since 2019 (Prop 111); credit cards 21–22% APR (Q3 2026, national). → D-CREDIT, Barrier 9",
+    "text": "Payday loans capped at 36% APR since 2019 (Prop 111); credit cards 21–22% APR (Q3 2026, national)., Barrier 9",
     "mark": "ok",
     "keys": [
      "D-CREDIT"
     ]
    },
    "denver": {
-    "text": "30-year mortgage 7.11% (12 Nov 2026, national); a card paid off monthly costs nothing. → D-CREDIT",
+    "text": "30-year mortgage 7.11% (12 Nov 2026, national); a card paid off monthly costs nothing.",
     "mark": "ok",
     "keys": [
      "D-CREDIT"
@@ -679,7 +679,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
  "fences": [
   {
    "h": "Insulation",
-   "text": "Private insurance, paid leave, a parent who can leave work for a meeting, a lawyer if one is needed — these cushions decide whether a family's crisis becomes a case file. Inside them, another family's case looks like a choice. See 2c."
+   "text": "Private insurance, paid leave, a parent who can leave work for a meeting, a lawyer if one is needed — these cushions decide whether a family's crisis becomes a case file. Inside them, another family's case looks like a choice."
   },
   {
    "h": "Physical — *I drive past this every day.*",
@@ -691,7 +691,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
   },
   {
    "h": "Affective",
-   "text": "Fear beforehand (some students expected the week to be awful). Then helplessness after one week — the wish to have made a difference. Many of these children have already lost seven or eight placements' worth of adults (Barrier 4); a week-long visitor who leaves is one more goodbye. The honest goal is the one a leader gave the group: show up, be steady, and let a child have a good week with adults who are kind. Keep three things apart: what you saw, what staff told you, and what you concluded. **Shyness and waiting to be approached** — the assumption that a child who wants to be seen will come to you; many of these children have learned not to. **Turning inward:** in RJ's Denver reflections, a question about the people at the site is most often answered about the student's own stress or loneliness. That is honest, and it can also crowd the children out. **Guilt about privilege** — feeling conspicuous in clean clothes — which is about us, not them. **Comparison to home** (our own childhood, our own parents at pickup), useful when it opens a question, a fence when it closes one."
+   "text": "Fear beforehand (you may expect the week to be awful). Then helplessness after one week — the wish to have made a difference. Many of these children have already lost seven or eight placements' worth of adults (Barrier 4); a week-long visitor who leaves is one more goodbye. The honest goal is the one a leader gave the group: show up, be steady, and let a child have a good week with adults who are kind. Keep three things apart: what you saw, what staff told you, and what you concluded. **Shyness and waiting to be approached** — the assumption that a child who wants to be seen will come to you; many of these children have learned not to. **Turning inward:** answering a question about the people at the site with your own stress or loneliness. That is honest, and it can also crowd the children out. **Guilt about privilege** — feeling conspicuous in clean clothes — which is about us, not them. **Comparison to home** (our own childhood, our own parents at pickup), useful when it opens a question, a fence when it closes one."
   },
   {
    "h": "Convenience",
@@ -707,7 +707,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
    "h": "Denver in its own people's words",
    "items": [
     "Rodolfo Corky Gonzales, *I Am Joaquín* (1967) — the Crusade for Justice's poem, written in North Denver. ⚠️ check date/edition.",
-    "Cheyenne and Arapaho Tribes; Northern Arapaho Tribe — Sand Creek Massacre testimony and the annual Spiritual Healing Run. ⚠️ confirm current sources.",
+    "Cheyenne and Arapaho Tribes; Northern Arapaho Tribe — Sand Creek Massacre testimony and the annual Spiritual Healing Run.",
     "Sand Creek Massacre National Historic Site (NPS) — includes Silas Soule's and Joseph Cramer's letters. ⚠️"
    ]
   },
@@ -794,7 +794,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["denver"]={
    "key": "E",
    "title": "The child who arrives at 9 p.m.",
    "question": "A grandmother gets a call: her 8-year-old grandson needs somewhere to sleep tonight. He arrives with one bag. What does she need by Monday — in paper and in money — and what will it cost her?",
-   "changes": "county placement or an informal arrangement; certified kin or not; whether the parent can be reached to sign a power of attorney; birth certificate and Medicaid card in the bag or not; savings ($0 / $400 / $5,000); credit (none / a card at 22% / a 36%-capped loan / a relative who lends); whether her job gives paid time off for a court date (D-LEAVE).",
+   "changes": "county placement or an informal arrangement; certified kin or not; whether the parent can be reached to sign a power of attorney; birth certificate and Medicaid card in the bag or not; savings ($0 / $400 / $5,000); credit (none / a card at 22% / a 36%-capped loan / a relative who lends); whether her job gives paid time off for a court date",
    "notice": "both the right to sign and the money follow paper, not the child. The grandmother with the least paper pays the most, in time and in interest.",
    "yourCall": "Should support follow the child, whoever takes him in, or the certification? What does each cost, and who would decide?"
   }

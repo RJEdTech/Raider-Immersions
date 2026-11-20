@@ -237,7 +237,7 @@
        "label": "The minimum wage (one full-time earner)",
        "monthly": 482,
        "note": "$482 a month in 2026, which most Center families do not reach.",
-       "src": "Ministry of Labor, Acuerdo MDT-2025-195 (Quito packet)"
+       "src": "Ministry of Labor, Acuerdo MDT-2025-195"
       },
       {
        "label": "Set it yourself (whole family)",
@@ -269,7 +269,7 @@
       "max": 600,
       "step": 10,
       "label": "Rent for the family (your estimate)",
-      "note": "No source yet for rents in the Center's neighborhoods. A 2025 group was told the cheapest housing starts at about $400 a month; that is unverified. This starts at $250. Set your own.",
+      "note": "No source yet for rents in the Center's neighborhoods. This starts at $250. Set your own.",
       "text": "Your estimate.",
       "src": "not yet sourced"
      },
@@ -313,7 +313,7 @@
      "rent": {
       "amt": 1874,
       "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
-      "src": "USAFacts (Denver mirror D-HOUSING)"
+      "src": "USAFacts"
      },
      "bus": {
       "fare": 2.75,
@@ -436,7 +436,7 @@
       "here": {
        "v": false,
        "text": "No IESS pension. A $100 pension reaches only the poorest people over 65.",
-       "src": "Quito packet, 2c"
+       "src": "This trip’s “What catches you” page"
       },
       "w2": {
        "v": true,
@@ -462,12 +462,12 @@
       "w2": {
        "v": "Depends on the job",
        "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       },
       "cash": {
        "v": "Not through the work",
        "text": "The same income-based coverage is open to them.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       }
      },
      {
@@ -606,7 +606,7 @@
    ],
    "doing": {
     "text": "Families pool income across several earners and trades. The Center's own workshops employ former students and mothers in formal jobs.",
-    "src": "Quito packet, Barrier 1"
+    "src": "This trip’s Barriers page, Barrier 1"
    },
    "notice": "In Quito about a quarter of workers are in the informal sector, though half have no social security at all; among the Center's families, informal work is the norm. Part 3 shows why a sick child is a money problem here and a scheduling problem for a Denver worker with a payslip.",
    "yourCall": "What would the Center's families need first: a higher price per piece, or a floor under the bad weeks? Why?"

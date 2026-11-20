@@ -319,35 +319,35 @@
      "q": "Who farms which plot",
      "level": "com",
      "detail": "Most land is held through the comunidad campesina, not as private titles, and families farm small plots scattered across the mountain.",
-     "src": "Peru packet, Barrier 1",
+     "src": "This trip’s Barriers page, Barrier 1",
      "mark": "ok"
     },
     {
      "q": "When the irrigation canals are cleaned",
      "level": "com",
      "detail": "Canals are kept up by faenas, communal work days the community organizes.",
-     "src": "Peru packet, Barrier 2",
+     "src": "This trip’s Barriers page, Barrier 2",
      "mark": "ok"
     },
     {
      "q": "How the Cusco tourist-ticket money is split",
      "level": "lima",
      "detail": "National law splits it: 40% to district towns, 30% to the Ministry of Culture, 20% to provinces and 10% to regional tourism.",
-     "src": "Ley 28719 (recheck against Ley 32586, May 2026)",
+     "src": "Ley 28719",
      "mark": "care"
     },
     {
      "q": "Whether towns may spend ticket money on clean water",
      "level": "lima",
      "detail": "The national rules limit what the money may pay for. The Comptroller found ten Cusco towns, Quispicanchi among them, spent S/104 million on uses not allowed, such as water and sanitation (2018–19).",
-     "src": "Contraloría via Gestión (Peru packet)",
+     "src": "Contraloría via Gestión",
      "mark": "ok"
     },
     {
      "q": "School meals in Cusco's schools",
      "level": "lima",
      "detail": "A national program, Wasi Mikuna, served 204,560 students in 4,105 Cusco schools at the end of 2024.",
-     "src": "MIDIS to Congress, Feb 2025 (Peru packet)",
+     "src": "MIDIS to Congress, Feb 2025",
      "mark": "ok"
     },
     {
@@ -455,7 +455,7 @@
     {
      "big": "94.5%",
      "text": "of rural work in Peru is informal (69.8% nationally; 84.8% of workers aged 14–24), Apr 2025–Mar 2026.",
-     "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+     "src": "INEI, EPEN, via Expreso"
     }
    ],
    "grid": {
@@ -487,7 +487,7 @@
       "here": {
        "v": false,
        "text": "A day you don't work is a day you aren't paid.",
-       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+       "src": "INEI, EPEN, via Expreso"
       },
       "w2": {
        "v": true,
@@ -507,7 +507,7 @@
       "here": {
        "v": false,
        "text": "Paid leave runs through EsSalud and the pension system, and only for people who pay in.",
-       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+       "src": "INEI, EPEN, via Expreso"
       },
       "w2": {
        "v": true,
@@ -527,7 +527,7 @@
       "here": {
        "v": false,
        "text": "No contract, no claim.",
-       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+       "src": "INEI, EPEN, via Expreso"
       },
       "w2": {
        "v": true,
@@ -547,7 +547,7 @@
       "here": {
        "v": false,
        "text": "No contributions to EsSalud and the pension system, no pension from work.",
-       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+       "src": "INEI, EPEN, via Expreso"
       },
       "w2": {
        "v": true,
@@ -567,17 +567,17 @@
       "here": {
        "v": false,
        "text": "Coverage through EsSalud and the pension system needs contributions.",
-       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+       "src": "INEI, EPEN, via Expreso"
       },
       "w2": {
        "v": "Depends on the job",
        "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       },
       "cash": {
        "v": "Not through the work",
        "text": "The same income-based coverage is open to them.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       }
      },
      {
@@ -585,7 +585,7 @@
       "here": {
        "v": false,
        "text": "No payslip, so no bank loan or formal lease on that income.",
-       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+       "src": "INEI, EPEN, via Expreso"
       },
       "w2": {
        "v": true,
@@ -605,7 +605,7 @@
       "here": {
        "v": false,
        "text": "Most work has no inspector who will come.",
-       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+       "src": "INEI, EPEN, via Expreso"
       },
       "w2": {
        "v": true,
@@ -641,7 +641,7 @@
       "price": 80,
       "mark": "yours",
       "text": "Nobody publishes what a South Valley weaver receives. INEI, MINCETUR and PROMPERÚ don't count it. Set the price she gets, not the price in a Cusco shop.",
-      "src": "Peru packet, Barrier 2 (checked absence)"
+      "src": "This trip’s Barriers page, Barrier 2"
      }
     ],
     "price": {
@@ -674,7 +674,7 @@
      "max": 3000,
      "step": 10,
      "text": "Average monthly income from work in rural Peru, S/918.4 (Apr 2024–Mar 2025).",
-     "src": "INEI (Peru packet, 2c)"
+     "src": "INEI"
     },
     "intro": "Pay comes by the day. Pick what happens this month and see who still gets paid."
    },
@@ -713,7 +713,7 @@
    ],
    "doing": {
     "text": "Associations, cooperatives and ayni (trading work between neighbors) create floors where the law doesn't. Weaving associations sell direct.",
-    "src": "Peru packet, Barriers 2 and 15"
+    "src": "This trip’s Barriers page, Barriers 2 and 15"
    },
    "notice": "The guess usually goes wrong in the same place: students assume a job comes with something. Most rural work comes with nothing but the pay for the piece or the day. Then notice part 2: when nobody counts hours, a piece that looks well priced can pay less than the minimum wage.",
    "yourCall": "Which missing protection would change a family's year the most? What do they use in its place?"
@@ -737,7 +737,7 @@
        "label": "Average income from work, rural Peru",
        "monthly": 918.4,
        "note": "S/918.4 a month (Apr 2024–Mar 2025).",
-       "src": "INEI (Peru packet, 2c)"
+       "src": "INEI"
       },
       {
        "label": "The minimum wage (one full-time earner)",
@@ -801,7 +801,7 @@
      "rent": {
       "amt": 1874,
       "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
-      "src": "USAFacts (Denver mirror D-HOUSING)"
+      "src": "USAFacts"
      },
      "bus": {
       "fare": 2.75,

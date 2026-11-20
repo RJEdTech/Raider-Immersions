@@ -359,12 +359,12 @@
       "w2": {
        "v": "Depends on the job",
        "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       },
       "cash": {
        "v": "Not through the work",
        "text": "The same income-based coverage is open to them.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       }
      },
      {
@@ -431,14 +431,14 @@
       "price": 0.2,
       "mark": "care",
       "text": "L0.20 a pound, from one recycler. Fifteen pounds of cardboard bought one L3 egg.",
-      "src": "El Heraldo, May 2022 (Tegucigalpa packet)"
+      "src": "El Heraldo, May 2022"
      },
      {
       "label": "Plastic bottles, sold at the dump (2022)",
       "price": 1.5,
       "mark": "care",
       "text": "L1–2 a pound; this uses the middle (our arithmetic).",
-      "src": "El Heraldo, May 2022 (Tegucigalpa packet)"
+      "src": "El Heraldo, May 2022"
      },
      {
       "label": "Cardboard, at a collection center (2023)",
@@ -526,7 +526,7 @@
    ],
    "doing": {
     "text": "Families pool incomes across several informal jobs; women run corner stores (pulperías) from their homes; neighbors lend.",
-    "src": "Tegucigalpa packet, Barrier 3"
+    "src": "This trip’s Barriers page, Barrier 3"
    },
    "notice": "Try the dump price, then the collection-center price for the same cardboard. The step up the chain is worth more than any amount of extra effort, and the people at the dump can't take it.",
    "yourCall": "If you could change one thing for a picker, the price, the buyer or a floor under bad weeks, which would you choose and why?"
@@ -627,7 +627,7 @@
      "rent": {
       "amt": 1874,
       "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
-      "src": "USAFacts (Denver mirror D-HOUSING)"
+      "src": "USAFacts"
      },
      "bus": {
       "fare": 2.75,

@@ -4,7 +4,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
  "id": "panama",
  "place": [
   {
-   "h": "What the trip is (confirmed from the RJ trip blog, Feb 2026)",
+   "h": "What the trip is",
    "text": "Ten days, 19–28 Feb 2026, Class of '26 seniors. The group lands in Panama City and stays two nights at **Casa de Retiro Monte Alverna**. It tours Casco Viejo and the Canal and goes to Mass. Then it flies to **David**, the Chiriquí capital, and drives up to the highlands of **Tierras Altas district**. There the group splits in two, with **host families** in **Cerro Punta** and in **Guadalupe** (a community within Cerro Punta). Each group runs a **day camp for children at a local school**: games, sports, skits, dance, a nature day, a trash pickup in Guadalupe, a coffee workshop, and a tour of **Finca Drácula** (an orchid garden). On the last day both groups work at a **recycling center in Volcán** and clean up the town. They drive to David for Mass at **Iglesia Sagrado Corazón de Jesús** and spend a last night there. — regisjesuit.com/immersion-experience-panama and individual posts. ✅",
    "items": []
   },
@@ -12,7 +12,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
    "h": "The partner",
    "text": "**AMIGOS de las Américas (AMIGOS)**, a U.S. nonprofit that runs youth service and immersion programs with host families. The evidence: - **AMIPILA** (Amigos del Parque Internacional La Amistad): environmental education and agrotourism; it helped choose host families. - **GORACE** (Grupo Orgánico de Agricultores Cerropunteños): AMIGOS calls it the only organically certified producers' group in Panama ⚠️ (partner's claim). - **FUNDICCEP**: soil fertility. - **Finca Drácula.** — AMIGOS, *Bienvenidos a Tierras Altas*. ✅ Whether RJ's group works with all of them is not confirmed.",
    "items": [
-    "RJ students write that Amigos volunteers met them at the airport, and a final post thanks Regis and Amigos. ✅",
+    "Amigos volunteers meet the group at the airport.",
     "AMIGOS runs a **Panama: Tierras Altas** program for high-school students: host families in Guadalupe/Cerro Punta, briefings near Boquete, Finca Drácula, school gardens and games with local children, and Canal and Casco Viejo excursions. Its themes are climate action, food justice and sustainable food systems. — amigosinternational.org. ✅",
     "AMIGOS also offers **custom programs for school groups**.",
     "AMIGOS names its **local partner agencies in Cerro Punta**:"
@@ -28,7 +28,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
    "text": "Three groups: The Ngäbe are Panama's largest Indigenous people: **444,878 in the 2023 census**, out of 698,114 Indigenous people (17.2% of the country). — MINSA, *Perfil de salud de los pueblos originarios 2024*, Cuadro 1. ✅ About 15% of Ngäbe live in Chiriquí province, outside the comarca. — Peñuelas 2023. ⚠️",
    "items": [
     "**Ngäbe families who came to work the fields.** Some are settled, especially in Paso Ancho. Others come for a season from the **Comarca Ngäbe-Buglé**. — Cultural Survival, 2022. ✅",
-    "**A newer layer of retirees, tourism and second homes** around Volcán and Boquete. ⚠️ General knowledge; not checked."
+    "**A newer layer of retirees, tourism and second homes** around Volcán and Boquete."
    ]
   },
   {
@@ -41,7 +41,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
     "**9 January 1964:** students try to raise Panama's flag in the Canal Zone. The riots that follow leave more than 20 Panamanians dead, and the country remembers it as **Día de los Mártires**. ⚠️",
     "**1977:** the Torrijos–Carter Treaties. **31 December 1999:** the Canal passes to Panama. ⚠️ Panamanians tell this as a story of sovereignty won back, not of a gift.",
     "**1989:** the U.S. invasion.",
-    "**1997:** the **Comarca Ngäbe-Buglé** is created by law after decades of Ngäbe organizing. ⚠️ (Ley 10 de 1997; confirm.)",
+    "**1997:** the **Comarca Ngäbe-Buglé** is created by law after decades of Ngäbe organizing. ⚠️",
     "**2023:** nationwide protests over the Cobre Panamá copper-mine contract, with road blockades including on the Interamericana in Chiriquí. The Supreme Court ruled the contract unconstitutional in late November 2023 and the mine stopped producing. ⚠️ Keep this neutral and factual. It is national context, not a Tierras Altas barrier.",
     "**2025:** **Ley 462 of 18 March 2025** reformed the CSS (social security). It raised employer contributions in steps and kept the retirement ages at 57 for women and 62 for men. — Morgan & Morgan, 20 Mar 2025. ⚠️ Law firm's summary; see 2c. Teachers went on strike against the law from **23 April 2025**. — *La Prensa*, 12 May 2025. ✅ The strike lasted more than 80 days, into mid-July. — *La Estrella* column. ⚠️ Opinion piece; no exact end date. Keep it neutral: the President defended the reform in an address to the nation, and teachers' unions demanded its repeal (*La Estrella*; *La Prensa* headlines). ⚠️",
     "**In their own words:**"
@@ -49,9 +49,9 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
   },
   {
    "h": "The Church's presence",
-   "text": "**What is *not* in this packet, and why (second test).** The Darién migration route, Guna Yala's sea-level relocation, Colón and the Free Zone, the Canal's drought and the Río Indio reservoir are real Panamanian structures. **None of them shapes the lives of the people this group meets in Tierras Altas**, so they stay out. If the trip itinerary changes, revisit. The Canal appears only as the place students see on day two and as history.",
+   "text": "",
    "items": [
-    "Chiriquí belongs to the **Diocese of David**. ⚠️ Confirm the diocese and the parish serving Cerro Punta.",
+    "Chiriquí belongs to the **Diocese of David**.",
     "**Casa de Retiro Monte Alverna** (Panama City) is a retreat house.",
     "**World Youth Day 2019** was held in Panama.",
     "The Ngäbe have their own 20th-century religious movement, **Mama Tata**, which outsiders have often misread. ⚠️ Name it only after checking a Ngäbe or scholarly source, and never as folklore.",
@@ -113,7 +113,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
    "who": "No one decided that Ngäbe families should pick Chiriquí's vegetables. But three things were decided, in writing: Farms and consumers gain affordable labor and food. Workers pay in absent parents, crowded houses and interrupted school. The communities they come from pay in missing young adults (IDEA 2026).",
    "nlb": "Nature: crops ripen when they ripen; the highlands are fertile. Luck: being born in Nole Duima or in Cerro Punta. **Built:** where the comarca's borders sit, where roads and jobs go, how farm labor is paid and housed, and whether a seasonal worker is covered by CSS.",
    "doing": "",
-   "denver": "Colorado's farms and building sites also run on workers from somewhere else, many paid by the day. In a DU survey of 411 day laborers at Denver-area hiring sites, 62% had experienced wage theft and fewer than 40% asked for help. — Galemba, University of Denver, 2016–17. ⚠️ Not recent. (Figure from Denver mirror **D-INFORMAL**.) On where low-wage workers can afford to sleep, see **D-HOUSING** (49% of Colorado renters cost-burdened ✅).",
+   "denver": "Colorado's farms and building sites also run on workers from somewhere else, many paid by the day. In a DU survey of 411 day laborers at Denver-area hiring sites, 62% had experienced wage theft and fewer than 40% asked for help. — Galemba, University of Denver, 2016–17. ⚠️ Not recent. On where low-wage workers can afford to sleep, see (49% of Colorado renters cost-burdened ✅).",
    "denverKeys": [
     "D-HOUSING",
     "D-IMMIGRATION",
@@ -149,7 +149,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
    "who": "Trade agreements and import permits are written decisions, made in Panama City and Washington. City consumers gain cheaper food. Auction buyers and roasters capture coffee's value; the farm that owns the name gains too. Pickers are paid the same whether the lot sells for $10 or $1,000 a pound.",
    "nlb": "Nature: altitude and volcanic soil make Barú coffee and highland vegetables possible. Luck: a good year or a bad one. **Built:** trade rules, the wholesale market, the auction system, the per-*lata* wage.",
    "doing": "GORACE farmers went organic and certified, so they sell into a different market (AMIGOS). ⚠️ Partner's claim. Farms sell direct to tourists in Guadalupe and Cerro Punta: strawberries and cream, soaps, carvings (AMIGOS). Farmers who went to college run large sustainable farms and host visitors (AMIGOS, 2024). Agrotourism through AMIPILA keeps visitor money in town.",
-   "denver": "App-based drivers and delivery workers take a rate set by an algorithm they can't inspect. Denver's own minimum wage is $19.29/hr (2026), but it reaches only workers classed as employees. — Denver Labor. ✅ See Denver mirror **D-MINWAGE** (who the floor misses) and **D-INFORMAL** (misclassification at two staffing apps, 2025 ✅).",
+   "denver": "App-based drivers and delivery workers take a rate set by an algorithm they can't inspect. Denver's own minimum wage is $19.29/hr (2026), but it reaches only workers classed as employees. — Denver Labor. ✅and (misclassification at two staffing apps, 2025 ✅).",
    "denverKeys": [
     "D-INFORMAL",
     "D-MINWAGE"
@@ -169,7 +169,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
      "text": "Chiriquí province's leading deprivation in 2025 is also precarious work (15.7%).",
      "src": "MEF, *IPM 2025*, Cuadro 1",
      "mark": "care",
-     "note": "Confirm on Gráfica 9."
+     "note": ""
     },
     {
      "text": "**Informal employment, Sept 2025** (share of non-farm workers): **47.1% nationally** (784,990 people); **Chiriquí 52.7%**; **Comarca Ngäbe-Buglé 76.0%**.",
@@ -196,7 +196,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
    "who": "The Labor Code and CSS rules were written for formal employers. Small farms say contributions cost more than a short job is worth. Employers of day labor gain lower costs; workers carry the risk.",
    "nlb": "Nature: harvests are seasonal. Luck: a relative with a formal job. **Built:** who must be registered, who inspects, what a short contract costs.",
    "doing": "Producer groups such as GORACE organize sales and standards together.",
-   "denver": "Day labor, cash jobs, gig work and misclassification as independent contractors are Denver's informal economy. Denver's answer was an enforcement office. The Colorado Fiscal Institute estimates ~440,000 Colorado workers lose more than $728M a year to wage theft. — Denver Labor, 2023 report. ⚠️ Estimate, statewide. Denver Labor recovered $2.31M for about 7,200 workers in 2025. ✅ See Denver mirror **D-INFORMAL**, and **D-LEAVE** for the cushions off-the-books work misses (FAMLI needs $2,500 in reported Colorado wages ✅).",
+   "denver": "Day labor, cash jobs, gig work and misclassification as independent contractors are Denver's informal economy. Denver's answer was an enforcement office. The Colorado Fiscal Institute estimates ~440,000 Colorado workers lose more than $728M a year to wage theft. — Denver Labor, 2023 report. ⚠️ Estimate, statewide. Denver Labor recovered $2.31M for about 7,200 workers in 2025. ✅for the cushions off-the-books work misses (FAMLI needs $2,500 in reported Colorado wages ✅).",
    "denverKeys": [
     "D-INFORMAL",
     "D-LEAVE"
@@ -234,7 +234,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
    "who": "No one chose the storm. But three things were decided: which land was cleared and how, which land is zoned for housing, and who gets reconstruction money. Families on the floodplain pay first. Ngäbe women are named as the most vulnerable in Tierras Altas (Cultural Survival 2022).",
    "nlb": "Nature: real and large. Eta was a hurricane. Luck: which slope your house is on. **Built:** where poor families can afford to live, whether a house is insured, who recovery reaches.",
    "doing": "FUNDICCEP teaches soil-fertility practices. GORACE and AMIPILA promote farming that keeps soil on the slope (AMIGOS). The Paso Ancho community produced its own diagnostic of risk (Cultural Survival 2022).",
-   "denver": "Where housing is cheap and what it sits next to are linked here too: highways, rail yards, floodplains. About 34% of Colorado households are cost-burdened (49% of renters). — Colorado statewide housing needs assessment, Nov 2026. ✅ See Denver mirror **D-HOUSING**. On insurance: 13% of U.S. homeowners who own free and clear have no homeowners insurance, vs 3% with a mortgage (2025). — Fed SHED, via **D-HOMEINS**. ✅ National.",
+   "denver": "Where housing is cheap and what it sits next to are linked here too: highways, rail yards, floodplains. About 34% of Colorado households are cost-burdened (49% of renters). — Colorado statewide housing needs assessment, Nov 2026. ✅ On insurance: 13% of U.S. homeowners who own free and clear have no homeowners insurance, vs 3% with a mortgage (2025). — Fed SHED, via. ✅ National.",
    "denverKeys": [
     "D-HOMEINS",
     "D-HOUSING"
@@ -270,8 +270,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
    "contested": "Whether the children at the camp school include Ngäbe children.",
    "who": "No one gains from a child out of school. Two things were decided: the school calendar, set nationally and not matched to harvest migration, and the absence of schools on remote farms. The child pays, and so does the family's next generation.",
    "nlb": "Nature: harvests are seasonal. Luck: whether your family migrates. **Built:** the school calendar, where schools are, whether school follows the child.",
-   "doing": "Costa Rican farms run harvest-season childcare (Peñuelas 2023). Many workers travel with children, and some children have trouble enrolling in Costa Rican schools. — Guerra & Rodríguez 2026. ⚠️ Panama has an intercultural bilingual education law. ⚠️ (Ley 88 de 2010; confirm.)",
-   "denver": "Children of families who move often also lose school. On the ladder: about half of Colorado graduates go to college; only 28.6% of low-income graduates earn a credential within four years. — Keystone Policy Center via Chalkbeat, 2024. ✅ (**D-LADDER**)",
+   "doing": "Costa Rican farms run harvest-season childcare (Peñuelas 2023). Many workers travel with children, and some children have trouble enrolling in Costa Rican schools. — Guerra & Rodríguez 2026. ⚠️ Panama has an intercultural bilingual education law. ⚠️",
+   "denver": "Children of families who move often also lose school. On the ladder: about half of Colorado graduates go to college; only 28.6% of low-income graduates earn a credential within four years. — Keystone Policy Center via Chalkbeat, 2024. ✅",
    "denverKeys": [
     "D-LADDER",
     "D-SCHOOL"
@@ -312,7 +312,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
    "who": "No one gains from trash in a creek. It is a budget that never had to grow. Municipal revenue, the national transfer formula and who pays for collection decide the route. Households outside the route pay in burning, smoke and dirty water.",
    "nlb": "Nature: rain carries everything downhill. Luck: living on the truck's route. **Built:** the route, the budget, whether recycling exists, what packaging is sold.",
    "doing": "There is a recycling center in Volcán. Community cleanups like the one students joined happen there. AMIPILA runs environmental education, and AMIGOS reports a community mural project. Guadalupe's streets are lined with flower gardens that residents keep (AMIGOS). **A town that keeps flowers on its streets is not careless about its streets.**",
-   "denver": "Denver decided some budgets had to grow. Denver Water estimates 60,000–64,000 customer-owned lead lines and has replaced more than 36,000 since 2020 at no direct cost to the owner. See Denver mirror **D-WATER**. On what Denver shares (MY Denver Card: free rec centers, pools and libraries for ages 5–18 ✅), see **D-COMMON**.",
+   "denver": "Denver decided some budgets had to grow. Denver Water estimates 60,000–64,000 customer-owned lead lines and has replaced more than 36,000 since 2020 at no direct cost to the owner. On what Denver shares (MY Denver Card: free rec centers, pools and libraries for ages 5–18 ✅).",
    "denverKeys": [
     "D-COMMON",
     "D-WATER"
@@ -336,7 +336,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
    "who": "Registry rules, consular locations, birth-registration rules, border categories, election calendars and the comarca's collective land are all written decisions. The collective title was something the Ngäbe fought for: it keeps comarca land from being sold off. It also means the land cannot back a loan. It is an office no one had to bring to the fields. Employers who need workers for weeks gain from crossings that are easy and irregular. Workers pay in lost rights and benefits, and their children in missing surnames and missing coverage.",
    "nlb": "Nature: none. Luck: being home when the card expires; which side of the border a baby is born on. **Built:** all of it.",
    "doing": "",
-   "denver": "Papers decide access to the cushions here too. Count them in Denver mirror **D-IMMIGRATION**: from 1 Oct 2026, 6,000–7,000 lawfully present immigrants in Colorado are expected to lose Medicaid, while Cover All Coloradans keeps children and pregnant people covered regardless of status. Language access is a decision too: 40.8% of DPS students speak another language at home; only 25.8% of multilingual learners currently receive services. — DPS Thrives Roadmap, 2024. ✅ (**D-LANGUAGE**)",
+   "denver": "Papers decide access to the cushions here too. Count them from 1 Oct 2026, 6,000–7,000 lawfully present immigrants in Colorado are expected to lose Medicaid, while Cover All Coloradans keeps children and pregnant people covered regardless of status. Language access is a decision too: 40.8% of DPS students speak another language at home; only 25.8% of multilingual learners currently receive services. — DPS Thrives Roadmap, 2024. ✅",
    "denverKeys": [
     "D-BANK",
     "D-IMMIGRATION",
@@ -381,7 +381,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
    "who": "Banks decide what counts as proof of income and collateral. The comarca law decided that its land would not be sold (Barrier 7). Farm owners decided how and when pickers are paid. Lenders who ask for no paperwork set their own terms. The borrower with the fewest papers pays the highest price, or borrows from people who can't afford to lend.",
    "nlb": "Nature: storms and harvests decide when the money is needed. Luck: a relative with a salary. **Built:** what counts as collateral, which documents a loan needs, rate rules, and when wages are paid.",
    "doing": "Families borrow from each other and pool work.",
-   "denver": "The same emergency costs different families very different prices here too. A card APR is 21.19%, a 30-year mortgage 7.11%, and Colorado has capped payday loans at 36% APR since 2019. — Denver mirror **D-CREDIT**. ✅ 63% of U.S. adults could cover a $400 emergency in cash (2025). — **D-SAVINGS**. ✅ 77% of U.S. adults earning under $25,000 have a bank account. — **D-BANK**. ✅ National.",
+   "denver": "The same emergency costs different families very different prices here too. A card APR is 21.19%, a 30-year mortgage 7.11%, and Colorado has capped payday loans at 36% APR since 2019. ✅ 63% of U.S. adults could cover a $400 emergency in cash (2025). —. ✅ 77% of U.S. adults earning under $25,000 have a bank account. —. ✅ National.",
    "denverKeys": [
     "D-BANK",
     "D-CREDIT",
@@ -399,7 +399,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
     "keys": []
    },
    "denver": {
-    "text": "Denver median household income $94,718 (2024); poverty 11.2%. — Data USA (ACS). Vintage unclear. Full-time at Denver's minimum ≈ $40,120/yr *(mirror's arithmetic)*.",
+    "text": "Denver median household income $94,718 (2024); poverty 11.2%. — Data USA (ACS). Vintage unclear. Full-time at Denver's minimum ≈ $40,120/yr (our arithmetic).",
     "mark": "care",
     "keys": [
      "D-WAGE"
@@ -424,7 +424,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
   {
    "label": "Formal or informal",
    "there": {
-    "text": "Informal share of **non-farm** workers, Sept 2025: national **47.1%**; Chiriquí **52.7%**; Comarca Ngäbe-Buglé **76.0%**. — INEC EML, Cuadro 7. Farm workers are not in this measure. Precarious work is the top deprivation in Cerro Punta (27.6%) and Paso Ancho (30.1%) (2023). Confirm columns.",
+    "text": "Informal share of **non-farm** workers, Sept 2025: national **47.1%**; Chiriquí **52.7%**; Comarca Ngäbe-Buglé **76.0%**. — INEC EML, Cuadro 7. Farm workers are not in this measure. Precarious work is the top deprivation in Cerro Punta (27.6%) and Paso Ancho (30.1%) (2023).",
     "mark": "care",
     "keys": []
    },
@@ -591,7 +591,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
  "fences": [
   {
    "h": "Insulation",
-   "text": "Paid leave, insurance, a bank that will open you an account, an ID you can renew online: these are invisible to those inside them. See 2c. Panama uses the U.S. dollar, so its numbers look familiar. They aren't. A full day at the farm minimum ($13.12) is less than one hour at Denver's minimum ($19.29) *(our arithmetic)*."
+   "text": "Paid leave, insurance, a bank that will open you an account, an ID you can renew online: these are invisible to those inside them. Panama uses the U.S. dollar, so its numbers look familiar. They aren't. A full day at the farm minimum ($13.12) is less than one hour at Denver's minimum ($19.29) *(our arithmetic)*."
   },
   {
    "h": "Physical",
@@ -623,7 +623,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
    "items": [
     "Jackeline María Guerra Batista & Roberto Rodríguez-Rodríguez (Universidad de Panamá), *Estudio de la movilidad laboral transfronteriza: el caso de la etnia Ngäbe Buglé…*, Revista de Iniciación Científica 12(1), 2026. ✅",
     "Alicia Del Aguila (International IDEA Panama), *Migrantes, indígenas y ciudadanos: los jóvenes Ngäbe Buglé* Aug 2026 (also in *La Prensa*). ✅",
-    "Joaquín Beleño, *Luna verde* (1951), a Canal Zone novel. ⚠️ Confirm the edition."
+    "Joaquín Beleño, *Luna verde* (1951), a Canal Zone novel."
    ]
   },
   {
@@ -684,17 +684,17 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
    "data": "",
    "notice": "the choice is rational on every axis students can see. The costs (school, ID, vote, a child's surname) arrive months later and in other offices.",
    "yourCall": "Which one change would make staying as good as going, and whose job is it?",
-   "denverRun": "a Denver family deciding whether to move for work mid-year. What does a school change, a lapsed license or an unregistered vote cost here? (Denver mirror D-SCHOOL / D-IMMIGRATION.)"
+   "denverRun": "a Denver family deciding whether to move for work mid-year. What does a school change, a lapsed license or an unregistered vote cost here?"
   },
   {
    "key": "C",
    "title": "Five corregimientos, one budget",
    "question": "If you were mayor of Tierras Altas with money for one thing, what would you fix first, and for whom?",
    "changes": "pick one corregimiento and one deprivation to fund (garbage, water, sanitation, schooling, work); see how the district's poverty rate moves.",
-   "data": "IPM por Corregimiento 2024, p. 37: populations, H, A, M0 and the top three deprivations for Volcán, Cerro Punta, Paso Ancho, Cuesta de Piedra and Nueva California. ⚠️ Confirm columns.",
+   "data": "IPM por Corregimiento 2024, p. 37: populations, H, A, M0 and the top three deprivations for Volcán, Cerro Punta, Paso Ancho, Cuesta de Piedra and Nueva California.",
    "notice": "",
    "yourCall": "Fund the most people, or the deepest need?",
-   "denverRun": "Denver Water's lead lines: 60,000–64,000 estimated, 36,000+ replaced. Which neighborhoods went first, and who decided? (D-WATER.)"
+   "denverRun": "Denver Water's lead lines: 60,000–64,000 estimated, 36,000+ replaced. Which neighborhoods went first, and who decided?"
   },
   {
    "key": "D",
@@ -711,16 +711,16 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
    "title": "Fix the roof or plant the field",
    "question": "After a storm, a family needs $300 to fix the roof or replant a plot. Where can it get the money, and what will it cost?",
    "changes": "a valid cédula or not; a bank account or not; a payslip and CSS record or not; titled land, comarca land or no land; membership in a producer group or cooperative; a relative with a salary; whether the employer holds back part of the wage until the harvest ends.",
-   "data": "64.1% have an account, 45.5% of the poorest 40%; 47.3% borrowed but only 15.9% formally; 45.6% could find emergency money in 30 days (Findex 2025 ⚠️); 76.0% informal in the comarca (INEC ✅); withheld savings funds on Costa Rican farms (FLACSO 2014 ⚠️). Denver: card 21.19%, mortgage 7.11%, payday cap 36%; 63% could pay $400 in cash (D-CREDIT, D-SAVINGS).",
+   "data": "64.1% have an account, 45.5% of the poorest 40%; 47.3% borrowed but only 15.9% formally; 45.6% could find emergency money in 30 days (Findex 2025 ⚠️); 76.0% informal in the comarca (INEC ✅); withheld savings funds on Costa Rican farms (FLACSO 2014 ⚠️). Denver: card 21.19%, mortgage 7.11%, payday cap 36%; 63% could pay $400 in cash",
    "notice": "the same storm, the same $300. The family with papers, a payslip and a title borrows from a bank. The family without them borrows from people who can't afford to lend, or waits.",
    "yourCall": "Which one paper would change this family's options most, and who issues it?",
-   "denverRun": "the same $300 in Denver with a credit card, a 36%-capped loan, or a relative. Which papers made those options yours? (D-CREDIT, D-BANK, D-IMMIGRATION.)"
+   "denverRun": "the same $300 in Denver with a credit card, a 36%-capped loan, or a relative. Which papers made those options yours?"
   }
  ],
  "theology": {
   "readings": [
-   "Pair with Barrier 6. ⚠️ Recheck the paragraph number on vatican.va.",
-   "Pair with Barrier 1 and the Ngäbe woman's definition of not being poor. ⚠️ Recheck."
+   "Pair with Barrier 6.",
+   "Pair with Barrier 1 and the Ngäbe woman's definition of not being poor."
   ],
   "question": "The people who picked the food at my host family's table may have come from a place I will never see. Whom did I meet this week, whom did I not meet, and what would it take to hear from them in their own words?"
  },
@@ -749,7 +749,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
      "url": "https://www.regisjesuit.com/news-detail?pk=1414335"
     },
     {
-     "t": "Pre-trip post (Jan 2025, suggests an earlier Panama group in 2025; confirm)",
+     "t": "Pre-trip post",
      "url": "https://www.regisjesuit.com/news-detail?pk=1366309"
     }
    ]
@@ -1083,7 +1083,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
      "q": "Creating the Comarca Ngäbe-Buglé and holding its land in common",
      "level": "nat",
      "detail": "The comarca was created by national law in 1997, after decades of Ngäbe organizing; its land is held collectively.",
-     "src": "Ley 10 de 1997 (Panama packet)",
+     "src": "Ley 10 de 1997",
      "mark": "care"
     },
     {
@@ -1106,7 +1106,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
      "q": "Whether the Cobre Panamá mine contract stood",
      "level": "court",
      "detail": "After nationwide protests, the Supreme Court ruled the contract unconstitutional in late November 2023 and the mine stopped producing.",
-     "src": "Panama packet",
+     "src": "This trip’s Sources page",
      "mark": "care"
     }
    ],
@@ -1238,7 +1238,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
       "here": {
        "v": false,
        "text": "A day you don't work is a day you aren't paid.",
-       "src": "Panama packet, Barrier 3"
+       "src": "This trip’s Barriers page, Barrier 3"
       },
       "w2": {
        "v": true,
@@ -1258,7 +1258,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
       "here": {
        "v": false,
        "text": "Paid leave runs through the CSS, and only for people who pay in.",
-       "src": "Panama packet, Barrier 3"
+       "src": "This trip’s Barriers page, Barrier 3"
       },
       "w2": {
        "v": true,
@@ -1278,7 +1278,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
       "here": {
        "v": false,
        "text": "No contract, no claim.",
-       "src": "Panama packet, Barrier 3"
+       "src": "This trip’s Barriers page, Barrier 3"
       },
       "w2": {
        "v": true,
@@ -1298,7 +1298,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
       "here": {
        "v": false,
        "text": "No CSS contributions. A minimum pension of $144 is planned for people without enough of them.",
-       "src": "Panama packet, 2c",
+       "src": "This trip’s “What catches you” page",
        "mark": "care"
       },
       "w2": {
@@ -1319,17 +1319,17 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
       "here": {
        "v": false,
        "text": "Coverage through the CSS needs contributions.",
-       "src": "Panama packet, Barrier 3"
+       "src": "This trip’s Barriers page, Barrier 3"
       },
       "w2": {
        "v": "Depends on the job",
        "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       },
       "cash": {
        "v": "Not through the work",
        "text": "The same income-based coverage is open to them.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       }
      },
      {
@@ -1337,7 +1337,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
       "here": {
        "v": false,
        "text": "No payslip, so no bank loan or formal lease on that income.",
-       "src": "Panama packet, Barrier 3"
+       "src": "This trip’s Barriers page, Barrier 3"
       },
       "w2": {
        "v": true,
@@ -1357,7 +1357,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
       "here": {
        "v": false,
        "text": "A worker hurt the week before payday has no claim and no record of what was owed.",
-       "src": "Panama packet, Barrier 3"
+       "src": "This trip’s Barriers page, Barrier 3"
       },
       "w2": {
        "v": true,
@@ -1393,7 +1393,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
       "price": 2.92,
       "mark": "yours",
       "text": "No source publishes what a lata pays in Tierras Altas. This starts at the price that would match the farm minimum ($13.12 for an 8-hour day) at 4.5 latas a day (our arithmetic). Find the real price.",
-      "src": "Panama packet, Barriers 2 and 3"
+      "src": "This trip’s Barriers page, Barriers 2 and 3"
      }
     ],
     "price": {
@@ -1466,7 +1466,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
    ],
    "doing": {
     "text": "Whole families travel for the harvest, often to Costa Rica for four to six months, so more hands earn.",
-    "src": "Panama packet, Barriers 1 and 4"
+    "src": "This trip’s Barriers page, Barriers 1 and 4"
    },
    "notice": "Panama uses the dollar, so the numbers look familiar. They aren't: a full day at the farm minimum is less than one hour at Denver's minimum.",
    "yourCall": "What would a coffee picker need to know before the harvest to bargain for a fair price per lata? Who has that information?"
@@ -1549,7 +1549,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
      "rent": {
       "amt": 1874,
       "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
-      "src": "USAFacts (Denver mirror D-HOUSING)"
+      "src": "USAFacts"
      },
      "bus": {
       "fare": 2.75,

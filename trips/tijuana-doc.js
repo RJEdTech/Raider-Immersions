@@ -15,14 +15,14 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
   },
   {
    "h": "History, briefly — and where to hear it in people's own words",
-   "text": "*(Standard dates, not re-checked this session; confirm before publishing.)*",
+   "text": "",
    "items": [
     "**1848:** the Treaty of Guadalupe Hidalgo draws the line. Tijuana is a ranch on the Mexican side.",
     "**1920s:** U.S. Prohibition sends Southern Californians south for drink and gambling. The party town image starts here, and it has outlasted almost everything else.",
     "**1942–1964:** the Bracero Program brings Mexican farmworkers north under contract. Border towns fill with people coming and going.",
     "**1965 onward:** the Border Industrialization Program opens *maquiladoras*, foreign-owned assembly plants that import parts duty-free and export finished goods. **1994:** NAFTA. **2020:** USMCA replaces it.",
     "**1990s–2000s:** the fence is built and then rebuilt at the beach and in the canyons. Crossing moves east into the desert.",
-    "**2019–2026:** U.S. asylum rules change several times, and each change shows up in Tijuana's shelters. Title 42 expulsions ran **20 Mar 2020 – 11 May 2023** (Immigration Policy Tracking Project ✅). CBP One appointments ran from **Jan 2023** until scheduling was removed and all appointments cancelled at noon on **20 Jan 2025** (CBP press release, 21 Jan 2025 ✅). Proclamation 10888 suspended asylum at the southern border from **20 Jan 2025**. The Supreme Court agreed to review it on **13 Nov 2026** (CGRS ✅). *All copied from Packet 08, Barrier 1; status as of 19 Nov 2026.*",
+    "**2019–2026:** U.S. asylum rules change several times, and each change shows up in Tijuana's shelters. Title 42 expulsions ran **20 Mar 2020 – 11 May 2023** (Immigration Policy Tracking Project ✅). CBP One appointments ran from **Jan 2023** until scheduling was removed and all appointments cancelled at noon on **20 Jan 2025** (CBP press release, 21 Jan 2025 ✅). Proclamation 10888 suspended asylum at the southern border from **20 Jan 2025**. The Supreme Court agreed to review it on **13 Nov 2026** (CGRS ✅).",
     "The weekly *Zeta* and the daily *El Imparcial*, the city's own newsrooms."
    ]
   },
@@ -36,14 +36,13 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
    ]
   },
   {
-   "h": "What RJ's Canvas shows about this trip",
-   "text": "** **Who the *promotoras* are.** *Promotoras* (community health or community organizing workers) are neighbors trained to carry health information, screenings, and sometimes legal or environmental organizing door to door. In Mexico and along the border, the model grew where clinics were far away or split by job status (Barrier 7).",
+   "h": "What the course asks of you",
+   "text": "**Who the *promotoras* are.** *Promotoras* (community health or community organizing workers) are neighbors trained to carry health information, screenings, and sometimes legal or environmental organizing door to door. In Mexico and along the border, the model grew where clinics were far away or split by job status (Barrier 7).",
    "items": [
     "**The course is a film class first.** Assignments: A-roll practice, greenlight questions, two edited A-roll interviews, storyboarding and a final documentary film. Alongside these: reflections on the film *Human Flow*, a Catholic social teaching research essay, a Jesuit border article and podcast, and a reflection on a Jesuit Refugee Service (JRS) classroom talk.",
     "**PeaceWorks's founder briefs the class herself before the trip.** A priest also visits as a guest speaker. Students get a trip binder titled Crossing Borders (PDF). The packing list asks for modest dress and for students not to draw attention in the street, and frames the week as cultural learning, not a vacation.",
-    "**Prep sequence** (page dated from a January 2024 cycle): border history, NAFTA and geography; short border documentaries; local service sites; a prayer service; equipment and interview practice; packing the gear.",
-    "**A Denver field trip is already built in:** La Raza Park, with its own release form.",
-    "**Other sections:** 15596 (Monaghan, spring 2026) has the same pre-trip text assignments. Its post-trip work (storyboards, a shared short film) is all PDF, JPEG or video. 15217 (Dawkins, fall 2025) has 12 readable JRS-talk reflections. 17030 (Monaghan, fall 2026) is unpublished and empty."
+    "**Prep sequence:** border history, NAFTA and geography; short border documentaries; local service sites; a prayer service; equipment and interview practice; packing the gear.",
+    "**A Denver field trip is already built in:** La Raza Park, with its own release form."
    ]
   },
   {
@@ -118,7 +117,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
    "who": "Firms gain from labor priced in pesos and products sold in dollars, and so do U.S. consumers of the medical devices and TVs assembled here. Workers pay in hours.",
    "nlb": "Nature: none. Luck: being born on this side of the line, and which plant is hiring. **Built:** the wage floor, the trade rules, the length of the legal workweek. The 2027 reform shows the workweek can be changed by decision.",
    "doing": "Households pool two or three incomes; workers change plants for a few pesos more (turnover is the bargaining power that exists); families run a side business from the front room. In the 2000s, women workers organized as promotoras and won a lead-site cleanup (*Maquilapolis*).",
-   "denver": "Denver's minimum wage is $19.29/hr (2026), protected regardless of immigration status; full time is about $3,340/month *(our arithmetic)*. — Denver Labor (D-MINWAGE). ✅ Full time at that wage is about 42% of Denver's median household income of $94,718 (2024) *(the mirror's arithmetic)*. — Data USA/ACS (D-WAGE). ⚠️ vintage. Denver metro median rent was about $1,874/month, 31.9% of renter income (ACS 2020–2024). — USAFacts (D-HOUSING). ✅ The mechanism is the same: a floor set by one government, prices set by the market next to it. See Denver mirror **D-MINWAGE, D-WAGE, D-HOUSING**.",
+   "denver": "Denver's minimum wage is $19.29/hr (2026), protected regardless of immigration status; full time is about $3,340/month *(our arithmetic)*. — Denver Labor ✅ Full time at that wage is about 42% of Denver's median household income of $94,718 (2024) (our arithmetic). — Data USA/ACS ⚠️ Denver metro median rent was about $1,874/month, 31.9% of renter income (ACS 2020–2024). — USAFacts ✅ The mechanism is the same: a floor set by one government, prices set by the market next to it.",
    "denverKeys": [
     "D-HOUSING",
     "D-MINWAGE",
@@ -179,7 +178,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
    "who": "Social security in Mexico is tied to a formal employer (Ley del Seguro Social), so everyone else is outside it by design. The city decides how many permits exist. Buyers get cheap food and goods; whoever collects informal fees gains; vendors carry the risk.",
    "nlb": "Nature: none. Luck: a relative with a formal job or a permit. **Built:** the employer-based safety net, the permit cap, enforcement.",
    "doing": "Vendors organize: market associations, merchants' groups on Avenida Revolución, the national small-commerce chamber (Canacope Tijuana). Families run **tandas**, rotating savings circles in which each member pays in weekly and one takes the pot (a credit system without a bank).",
-   "denver": "Day labor, cash jobs, street vending and gig work misclassified as independent contractors are Denver's informal economy. In a DU survey of 411 day laborers at Denver-area hiring sites, 62% had experienced wage theft and fewer than 40% asked for help. — Galemba, University of Denver, 2016–17. ⚠️ Not recent. Denver Labor recovered a record $2.31 million for about 7,200 workers in its 2025 reporting year, and found workers misclassified as contractors at two staffing apps. — Denver Auditor via Denver7, 3 Nov 2025. ✅ Off-the-books work also misses FAMLI, unemployment insurance and Social Security credits. See Denver mirror **D-INFORMAL** (and D-LEAVE).",
+   "denver": "Day labor, cash jobs, street vending and gig work misclassified as independent contractors are Denver's informal economy. In a DU survey of 411 day laborers at Denver-area hiring sites, 62% had experienced wage theft and fewer than 40% asked for help. — Galemba, University of Denver, 2016–17. ⚠️ Not recent. Denver Labor recovered a record $2.31 million for about 7,200 workers in its 2025 reporting year, and found workers misclassified as contractors at two staffing apps. — Denver Auditor via Denver7, 3 Nov 2025. ✅ Off-the-books work also misses FAMLI, unemployment insurance and Social Security credits.",
    "denverKeys": [
     "D-INFORMAL",
     "D-LEAVE"
@@ -193,13 +192,13 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
      "text": "**54 *asentamientos populares*** identified in Tijuana, on canyon and arroyo edges: one communal water connection per settlement, **no drainage** (septic tanks), metered CFE electricity, no paved roads.",
      "src": "TECHO México study (2021) via *Zeta*, 21 Feb 2022",
      "mark": "ok",
-     "note": "*(from Packet 08)*"
+     "note": ""
     },
     {
      "text": "More than 1,000 irregular settlements in Tijuana.",
      "src": "N+, 7 Sep 2026",
      "mark": "care",
-     "note": "Unattributed estimate with a different definition. **Teach the gap between 54 and 1,000 as a counting question.** *(from Packet 08)*"
+     "note": "Unattributed estimate with a different definition. **Teach the gap between 54 and 1,000 as a counting question.**"
     },
     {
      "text": "**Eight in ten** of Tijuana's 957 *fraccionamientos* and colonias were irregular: only 171 had been formally received by the city. Unreceived areas are harder to serve with garbage collection and paving.",
@@ -223,7 +222,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
      "text": "Tijuana's Civil Protection director (Dec 2025): new settlements keep appearing, the count of homes labeled at risk is rising, and damage is growing in Sánchez Taboada and Camino Verde from eroded soils and irregular cuts.",
      "src": "*El Imparcial*, 9 Dec 2025",
      "mark": "ok",
-     "note": "*(from Packet 08)*"
+     "note": ""
     }
    ],
    "plain": "Much of Tijuana was built by the people who live in it. Families bought or occupied lots on canyon slopes before streets, pipes or legal title arrived, then built a room at a time. A house without a clean title can't easily back a loan, be insured, or be sold at full value, and slopes graded by hand slide in heavy rain.",
@@ -238,7 +237,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
    "who": "Land developers and *ejido* holders who sold unserviced lots gained; the city gained a workforce housed at no public cost. Families paid twice: for the lot, then for the services. Decades of delay are a budget that never had to grow.",
    "nlb": "Nature: canyons, clay soils and winter storms. Luck: which slope your lot sits on. **Built:** who could buy serviced land, how long title takes, where pipes go first.",
    "doing": "Families build in stages; an unfinished second floor with rebar sticking up is **a savings account in concrete**, not neglect. Neighbors organize *comités de colonos* to petition for water, paving and title.",
-   "denver": "What can a family borrow against? A titled house, and the gap is who owns one. Denver's homeownership rate is 48.8% (2024). — Data USA/ACS (D-HOMEINS). ⚠️ vintage. About 34% of Colorado households are cost-burdened (49% of renters). — Colorado statewide housing needs assessment, Nov 2026, via *Colorado Newsline* (D-HOUSING). ✅ A mortgage lender requires insurance, so the loan builds the cushion in: 3% of U.S. owners with a mortgage are uninsured vs 13% of those who own outright (2025). — Federal Reserve SHED (D-HOMEINS). ✅ National. A deed also opens a 30-year mortgage at 7.11% (12 Nov 2026). — Freddie Mac (D-CREDIT). ✅ See Denver mirror **D-HOUSING, D-HOMEINS, D-CREDIT**.",
+   "denver": "What can a family borrow against? A titled house, and the gap is who owns one. Denver's homeownership rate is 48.8% (2024). — Data USA/ACS ⚠️ About 34% of Colorado households are cost-burdened (49% of renters). — Colorado statewide housing needs assessment, Nov 2026, via *Colorado Newsline* ✅ A mortgage lender requires insurance, so the loan builds the cushion in: 3% of U.S. owners with a mortgage are uninsured vs 13% of those who own outright (2025). — Federal Reserve SHED ✅ National. A deed also opens a 30-year mortgage at 7.11% (12 Nov 2026). — Freddie Mac ✅",
    "denverKeys": [
     "D-CREDIT",
     "D-HOMEINS",
@@ -277,7 +276,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
      "text": "Border-area beaches were closed continuously from **8 Dec 2021**; the Imperial Beach shoreline closed again on **27 Sep 2026**.",
      "src": "Coastkeeper; *Times of San Diego*, 28 Sep 2026",
      "mark": "care",
-     "note": "**Do not publish a day count**: Coastkeeper's page gives two different ones."
+     "note": ""
     },
     {
      "text": "**Minute 328** (July 2022): a new Mexican plant; U.S. South Bay plant to expand from 25 to 50 MGD (2027 target).",
@@ -318,13 +317,13 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
      "text": "Re-entry bars: some deported mothers face **10-year bans**, some **lifetime bans**; one of the few routes back, the U visa for certain crime victims, is capped at **10,000 a year** with a long waiting list.",
      "src": "*Al Jazeera*, Nov 2016",
      "mark": "care",
-     "note": "The law cited is still in force; confirm the current wait time on USCIS."
+     "note": ""
     },
     {
      "text": "**2025:** 160,192 Mexicans were repatriated from the U.S.; **19,990** came through Baja California, mostly through Tijuana (about 12.5%; fourth of nine reception states).",
      "src": "Unidad de Política Migratoria via *El Imparcial*, 8 Feb 2026",
      "mark": "care",
-     "note": "Agency data through a newspaper; pull the UPM table before publishing."
+     "note": ""
     },
     {
      "text": "**Jan–Apr 2026:** 5,747 returned through Baja California's ports, against 6,514 in the same months of 2025, and far below 2024.",
@@ -336,7 +335,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
      "text": "U.S. removals in 2025: estimates run from about 310,000 (Brookings) to DHS's claim of 527,000; they count different things.",
      "src": "via Wikipedia",
      "mark": "care",
-     "note": "*(from Packet 08)* Say so if used."
+     "note": ""
     },
     {
      "text": "**México te abraza** (federal reception program, from Jan 2025): a 2,000-peso card, IMSS enrollment on humanitarian grounds, and help getting a CURP and a birth certificate. In its first five months it reported 14,305 people supported, 2,941 CURPs and 1,951 birth certificates issued (May 2025).",
@@ -473,7 +472,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
      "text": "**The U.S. side has been closed since Feb 2020** and remains closed as of **11 Apr 2026**.",
      "src": "Pedro Rios (AFSC), *Times of San Diego*",
      "mark": "ok",
-     "note": "*(from Packet 08)* Families on the Mexican side can still reach the wall; families on the U.S. side cannot."
+     "note": "Families on the Mexican side can still reach the wall; families on the U.S. side cannot."
     },
     {
      "text": "**18 Aug 1971:** First Lady Pat Nixon dedicated the U.S. side.",
@@ -493,8 +492,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
    "contested": "Security vs. access is a real policy debate; state both sides' stated reasons with dates. CBP has cited security and construction; Friends of Friendship Park seeks regular access. When or whether the U.S. side reopens is unknown (Nov 2026).",
    "who": "U.S. Customs and Border Protection decides access on its side; Congress funds the wall. Families with mixed status pay.",
    "nlb": "Nature: the beach. Luck: the country of your birth. **Built:** the fence, the access hours, the visa rules.",
-   "doing": "Friends of Friendship Park has campaigned for decades for public access and a binational park; the binational garden at Playas is tended from both sides ✅ (PeaceWorks itinerary); Dreamers' Moms brought families to the fence and won the door openings ✅. The binational Mass is covered in the ToE packet.",
-   "denver": "Mixed-status families, with a citizen child covered, a parent not, and a grandparent on a third rule, are common in Denver too, and fear can keep eligible people from applying. See Denver mirror **D-IMMIGRATION**.",
+   "doing": "Friends of Friendship Park has campaigned for decades for public access and a binational park; the binational garden at Playas is tended from both sides ✅ (PeaceWorks itinerary); Dreamers' Moms brought families to the fence and won the door openings ✅.",
+   "denver": "Mixed-status families, with a citizen child covered, a parent not, and a grandparent on a third rule, are common in Denver too, and fear can keep eligible people from applying.",
    "denverKeys": [
     "D-IMMIGRATION"
    ],
@@ -529,7 +528,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
    "who": "The rights terms are PeaceWorks's and the school's; the edit is the students'. The students gain (skills, festival credit, portfolios, college essays); the trip company gains a product to show future schools; the subjects gain only what the crew chooses to give back. That is not a villain: it is how a contract is written when nobody asks the subject. Sometimes the answer to who benefits? is us.",
    "nlb": "Nature: none. Luck: which family the crew happens to meet. **Built:** the rights clause, the consent form (or its absence), the festival rules, the edit.",
    "doing": "Tijuana tells its own story: the weekly *Zeta* (founded 1980) and daily *El Imparcial* report the city's labor, housing and migration every week (both are sources here). Humanizando la Deportación lets deported people author their own accounts ✅. *Maquilapolis* put cameras in workers' hands and made them co-authors ⚠️. Local photographers and journalists keep working at real risk.",
-   "denver": "How is your neighborhood portrayed? Coverage of East Colfax, of Montbello, of migrant shelters in 2023–24: who filmed it, who was interviewed, and who was the problem? The course already sends students to **La Raza Park** in Denver with a release form: practice the consent conversation and the who tells it question there first, at home, where the students will have to live with the result. Language is part of who tells the story: 40.8% of DPS students speak a language other than English at home. Nearest keys: Denver mirror **D-LANGUAGE, D-IMMIGRATION**.",
+   "denver": "How is your neighborhood portrayed? Coverage of East Colfax, of Montbello, of migrant shelters in 2023–24: who filmed it, who was interviewed, and who was the problem? The course already sends students to **La Raza Park** in Denver with a release form: practice the consent conversation and the who tells it question there first, at home, where the students will have to live with the result. Language is part of who tells the story: 40.8% of DPS students speak a language other than English at home. Nearest keys.",
    "denverKeys": [
     "D-IMMIGRATION",
     "D-LANGUAGE",
@@ -544,7 +543,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
      "text": "INM gives repatriated Mexicans a **reception record** (*Constancia de Recepción de Mexicanos Repatriados*). It serves as temporary ID for first steps: a temporary CURP, a civil-registry document, basic health care, the national employment service, school enrollment. It does **not** replace an INE or passport, and remittances can be collected on it only at Telecomm. People who come back on their own, without a migration authority, don't get one.",
      "src": "Univision, 30 Dec 2025",
      "mark": "care",
-     "note": "News explainer; confirm on gob.mx/inm."
+     "note": ""
     },
     {
      "text": "México te abraza issued 2,941 CURPs and 1,951 birth certificates in its first five months (to May 2025).",
@@ -590,8 +589,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
    "contested": "",
    "who": "Mexico's Interior Ministry (RENAPO, the CURP), the electoral institute (INE), the INM, COMAR, the state housing agency and the courts each write their own requirements. None of them is designed to lock anyone out; the lock is the sequence, where each office asks for a paper from another one. Employers who hire without papers gain cheap, unprotected labor. People who arrive with nothing pay in months.",
    "nlb": "Nature: none. Luck: whether your documents were in your pocket on the day you were stopped; whether the lot your parents bought was ever received by the city. **Built:** every requirement, and the order they come in.",
-   "doing": "The city loan accepts a relative's utility bill with proof of the family tie (SEDETI ✅), so a family's address can be shared. Colonia committees push for regularization, and INDIVI has titled more than 15,000 lots statewide since 2022 (Barrier 3 ✅). Legal-aid groups such as Al Otro Lado explain the current rules (✅ as plaintiff in *Mullin v. Al Otro Lado*; Packet 08).",
-   "denver": "Status and documents decide the cushions here too: a Social Security number for Social Security and SSDI; work authorization for unemployment insurance (with Colorado's Benefit Recovery Fund as a partial exception ⚠️); from Oct 2026, specific immigration categories for Medicaid. — Denver mirror D-IMMIGRATION. See Denver mirror **D-IMMIGRATION, D-BANK**.",
+   "doing": "The city loan accepts a relative's utility bill with proof of the family tie (SEDETI ✅), so a family's address can be shared. Colonia committees push for regularization, and INDIVI has titled more than 15,000 lots statewide since 2022 (Barrier 3 ✅). Legal-aid groups such as Al Otro Lado explain the current rules.",
+   "denver": "Status and documents decide the cushions here too: a Social Security number for Social Security and SSDI; work authorization for unemployment insurance (with Colorado's Benefit Recovery Fund as a partial exception ⚠️); from Oct 2026, specific immigration categories for Medicaid.",
    "denverKeys": [
     "D-BANK",
     "D-IMMIGRATION"
@@ -645,7 +644,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
    "who": "Banks decide what counts as collateral and proof of income. The city decided to lend at 3% and decided which documents it would ask for. Lenders gain from high-rate small loans; the smallest borrowers, often women, pay the most per peso.",
    "nlb": "Nature: none (a broken stove is luck). Luck: a relative with a payroll account, or a *tanda* that pays out the right month. **Built:** collateral rules, document requirements, the absence of a rate cap, the design of the city program.",
    "doing": "*Tandas*: each member pays in weekly and one takes the pot, credit without interest or a bank. Group microcredit, where neighbors guarantee each other. Building in stages, so the house rises when cash exists (Barrier 3). Applying, when papers allow, to the city's 3% loan and its training course.",
-   "denver": "Colorado capped payday loans at **36% APR** in 2019 (they averaged about 129% in 2016); voters approved the cap with 77.25%. — CPR; Ballotpedia (D-CREDIT). ✅ Credit cards average **21.19%** (Q3 2026); a 30-year mortgage **7.11%** (12 Nov 2026). — Federal Reserve G.19; Freddie Mac (D-CREDIT). ✅ National. 63% of U.S. adults could cover a $400 emergency in cash (2025). See Denver mirror **D-CREDIT, D-SAVINGS**.",
+   "denver": "Colorado capped payday loans at **36% APR** in 2019 (they averaged about 129% in 2016); voters approved the cap with 77.25%. — CPR; Ballotpedia ✅ Credit cards average **21.19%** (Q3 2026); a 30-year mortgage **7.11%** (12 Nov 2026). — Federal Reserve G.19; Freddie Mac ✅ National. 63% of U.S. adults could cover a $400 emergency in cash (2025).",
    "denverKeys": [
     "D-CREDIT",
     "D-SAVINGS"
@@ -662,7 +661,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
     "keys": []
    },
    "denver": {
-    "text": "Denver minimum wage $19.29/hr (2026), protected regardless of immigration status; Colorado $15.16. — Denver Labor; CDLE. ≈ $3,340/month full time *(arithmetic)*. Denver median household income $94,718 (2024). — Data USA/ACS. vintage. *D-MINWAGE, D-WAGE.*",
+    "text": "Denver minimum wage $19.29/hr (2026), protected regardless of immigration status; Colorado $15.16. — Denver Labor; CDLE. ≈ $3,340/month full time *(arithmetic)*. Denver median household income $94,718 (2024). — Data USA/ACS.*",
     "mark": "care",
     "keys": [
      "D-MINWAGE",
@@ -678,7 +677,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
     "keys": []
    },
    "denver": {
-    "text": "Applies to all workers; Denver Labor recovered $2.31M for about 7,200 workers (2025). — Denver Auditor via Denver7. Wage theft remains common among day laborers (62%, DU 2016–17). *D-INFORMAL.*",
+    "text": "Applies to all workers; Denver Labor recovered $2.31M for about 7,200 workers (2025). — Denver Auditor via Denver7. Wage theft remains common among day laborers (62%, DU 2016–17).*",
     "mark": "care",
     "keys": [
      "D-INFORMAL"
@@ -693,7 +692,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
     "keys": []
    },
    "denver": {
-    "text": "Social Security, SSDI and unemployment insurance need an SSN or work authorization; from 1 Oct 2026, Medicaid depends on specific immigration categories. — HCPF; SSA. / *D-IMMIGRATION.*",
+    "text": "Social Security, SSDI and unemployment insurance need an SSN or work authorization; from 1 Oct 2026, Medicaid depends on specific immigration categories. — HCPF; SSA. /.*",
     "mark": "care",
     "keys": [
      "D-IMMIGRATION"
@@ -708,7 +707,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
     "keys": []
    },
    "denver": {
-    "text": "Colorado uninsured 5.9% (2025). — Colorado Health Access Survey. Uninsured patients under 250% of poverty pay discounted hospital rates, capped at 4% of income. *D-HEALTH.*",
+    "text": "Colorado uninsured 5.9% (2025). — Colorado Health Access Survey. Uninsured patients under 250% of poverty pay discounted hospital rates, capped at 4% of income.*",
     "mark": "ok",
     "keys": [
      "D-HEALTH"
@@ -723,7 +722,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
     "keys": []
    },
    "denver": {
-    "text": "Colorado FAMLI: up to 12 weeks paid (+4 pregnancy complications, +12 NICU from 2026); 90% of wages for lower earners; max $1,448.02/week from 1 July 2026; job protected after 180 days; needs $2,500 in reported Colorado wages. — CDLE FAMLI. Paid sick leave (HFWA): 1 hour per 30 worked, up to 48 hours a year, at every employer. — CDLE. *D-LEAVE.*",
+    "text": "Colorado FAMLI: up to 12 weeks paid (+4 pregnancy complications, +12 NICU from 2026); 90% of wages for lower earners; max $1,448.02/week from 1 July 2026; job protected after 180 days; needs $2,500 in reported Colorado wages. — CDLE FAMLI. Paid sick leave (HFWA): 1 hour per 30 worked, up to 48 hours a year, at every employer. — CDLE.*",
     "mark": "ok",
     "keys": [
      "D-LEAVE"
@@ -738,7 +737,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
     "keys": []
    },
    "denver": {
-    "text": "4.2% of U.S. households unbanked (2023); single-parent 12.3%; working-age disabled 11.2%. — FDIC. 77% of adults earning under $25,000 have an account (2025). — Fed SHED. National. *D-BANK.*",
+    "text": "4.2% of U.S. households unbanked (2023); single-parent 12.3%; working-age disabled 11.2%. — FDIC. 77% of adults earning under $25,000 have an account (2025). — Fed SHED. National.*",
     "mark": "ok",
     "keys": [
      "D-BANK"
@@ -753,7 +752,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
     "keys": []
    },
    "denver": {
-    "text": "Card APR 21.19% (Q3 2026); 30-yr mortgage 7.11% (12 Nov 2026); payday loans capped at 36% APR since 2019. — Fed G.19; Freddie Mac; Prop 111. 63% could pay a $400 emergency in cash (2025). — Fed SHED. National. *D-CREDIT, D-SAVINGS.*",
+    "text": "Card APR 21.19% (Q3 2026); 30-yr mortgage 7.11% (12 Nov 2026); payday loans capped at 36% APR since 2019. — Fed G.19; Freddie Mac; Prop 111. 63% could pay a $400 emergency in cash (2025). — Fed SHED. National.*",
     "mark": "ok",
     "keys": [
      "D-CREDIT",
@@ -769,7 +768,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
     "keys": []
    },
    "denver": {
-    "text": "52% of U.S. adults own life insurance (2026); 31% in households under $50k vs 71% at $150k+ (2024). — LIMRA / Life Happens. Employer life insurance reaches 28% of the lowest-paid quarter vs 87% of the highest (Mar 2026). — BLS. National. *D-LIFEINS.*",
+    "text": "52% of U.S. adults own life insurance (2026); 31% in households under $50k vs 71% at $150k+ (2024). — LIMRA / Life Happens. Employer life insurance reaches 28% of the lowest-paid quarter vs 87% of the highest (Mar 2026). — BLS. National.*",
     "mark": "ok",
     "keys": [
      "D-LIFEINS"
@@ -784,7 +783,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
     "keys": []
    },
    "denver": {
-    "text": "6% of U.S. homeowners are uninsured: 3% with a mortgage vs 13% who own outright (2025). *D-HOMEINS.*",
+    "text": "6% of U.S. homeowners are uninsured: 3% with a mortgage vs 13% who own outright (2025).*",
     "mark": "",
     "keys": [
      "D-HOMEINS"
@@ -799,7 +798,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
     "keys": []
    },
    "denver": {
-    "text": "SSDI average $1,630/month; SSI $994 (2026). — SSA. Employer long-term disability reaches 37% (Mar 2026). *D-DISABILITY.*",
+    "text": "SSDI average $1,630/month; SSI $994 (2026). — SSA. Employer long-term disability reaches 37% (Mar 2026).*",
     "mark": "ok",
     "keys": [
      "D-DISABILITY"
@@ -809,12 +808,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
   {
    "label": "Old age",
    "there": {
-    "text": "Universal federal pension for adults 65+: **6,400 pesos every two months** (2026). — Secretaría de Bienestar via *El Imparcial*, 5 Jan 2026. Announced figure; confirm on gob.mx/bienestar.",
+    "text": "Universal federal pension for adults 65+: **6,400 pesos every two months** (2026). — Secretaría de Bienestar via *El Imparcial*, 5 Jan 2026.",
     "mark": "care",
     "keys": []
    },
    "denver": {
-    "text": "Average retired-worker Social Security benefit $2,071/month (Jan 2026). — SSA. Needs about 10 years of reported work. *D-OLDAGE.*",
+    "text": "Average retired-worker Social Security benefit $2,071/month (Jan 2026). — SSA. Needs about 10 years of reported work.*",
     "mark": "ok",
     "keys": [
      "D-OLDAGE"
@@ -822,11 +821,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
    }
   }
  ],
- "cushionNotice": "Stack the rows twice for Tijuana, once for a worker at a large plant and once for a vendor, and the gap between them is nearly as wide as the gap between Tijuana and Denver. The plant worker's cushions are real, built by law and paid for by contributions she sees on her pay stub. Most RJ families have five or six cushions they did not build and rarely see. Read the papers and borrowing rows together: the same documents that get a Tijuana worker into IMSS also get her the 3% loan instead of the 58% one. **And one cushion appears only here: a passport.** It lets a Denver family cross for work, care or family in twenty minutes. That is what precarity means, and it is the fence we can't see from inside (2b).",
+ "cushionNotice": "Stack the rows twice for Tijuana, once for a worker at a large plant and once for a vendor, and the gap between them is nearly as wide as the gap between Tijuana and Denver. The plant worker's cushions are real, built by law and paid for by contributions she sees on her pay stub. Most RJ families have five or six cushions they did not build and rarely see. Read the papers and borrowing rows together: the same documents that get a Tijuana worker into IMSS also get her the 3% loan instead of the 58% one. **And one cushion appears only here: a passport.** It lets a Denver family cross for work, care or family in twenty minutes. That is what precarity means, and it is the fence we can't see from inside.",
  "fences": [
   {
    "h": "Insulation",
-   "text": "Paid leave, health insurance, a deed, a mortgage at 7% instead of a microloan at 58–73% (Barrier 11), a full set of papers nobody questions (Barrier 10), and a U.S. passport. Because those cushions are invisible from inside, someone else's fall looks like a choice. See 2c."
+   "text": "Paid leave, health insurance, a deed, a mortgage at 7% instead of a microloan at 58–73% (Barrier 11), a full set of papers nobody questions (Barrier 10), and a U.S. passport. Because those cushions are invisible from inside, someone else's fall looks like a choice."
   },
   {
    "h": "Physical",
@@ -873,7 +872,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
   {
    "h": "On the ethics of documentary (for Lab B and the Cautions)",
    "items": [
-    "Documentary Accountability Working Group (DAWG), *From Reflection to Release: Framework for Values, Ethics, and Accountability in Nonfiction Filmmaking* (21 Sep 2022), by Natalie Bullock Brown, Sonya Childress, Patricia Aufderheide and others. Questions for each stage of a film, focused on participants' well-being; topics include consent, compensation, and care and safety. ✅ (listing page read; full framework at docaccountability.org not read)"
+    "Documentary Accountability Working Group (DAWG), *From Reflection to Release: Framework for Values, Ethics, and Accountability in Nonfiction Filmmaking* (21 Sep 2022), by Natalie Bullock Brown, Sonya Childress, Patricia Aufderheide and others. Questions for each stage of a film, focused on participants' well-being; topics include consent, compensation, and care and safety. ✅"
    ]
   }
  ],
@@ -905,7 +904,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
    "data": "every row of 2c. Border minimum 440.87/day; poverty line 4,951.66/person; Tijuana informality 36.6%; IMSS sick pay 60% from day 4 vs work injury 100% from day 1 ⚠️; Banxico rates (Aug 2025) ✅; FAMLI 12 weeks at up to $1,448.02/week; Denver minimum $19.29; 63% of U.S. adults could cover $400 in cash; U.S. life-insurance ownership 31% vs 71% by income.",
    "notice": "the event is luck; the price is mostly built. In Tijuana the same shock costs differently depending on *which parent* it hits, formal or informal, which is the same split as the Denver salaried vs. day-labor families. The deportation shock hits Denver family 3 and the Tijuana family from opposite sides of the same law. Count the cushions each family had and who built each one.",
    "yourCall": "Which of your family's cushions did you earn, and which were built around you? Which one would you build first for the vendor?",
-   "denverRun": "run the deportation card on the Denver day-labor family only. Who picks up the children, who pays the rent, and which Denver organization would they call? (Denver mirror D-IMMIGRATION, D-INFORMAL, D-SAVINGS)"
+   "denverRun": "run the deportation card on the Denver day-labor family only. Who picks up the children, who pays the rent, and which Denver organization would they call?"
   },
   {
    "key": "B",
@@ -933,7 +932,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
    "data": "10-year and lifetime bars; U visa cap 10,000/year; two-minute reunions at the opened door in 2015 and 2016 (*Al Jazeera* 2016) ✅. U.S. side of Friendship Park closed since Feb 2020, still closed Apr 2026 ✅. CBP One ended 20 Jan 2025; asylum suspended at the border, withholding and CAT still available (as of 19 Nov 2026) ✅. COMAR: stay in the state, sign in weekly ⚠️.",
    "notice": "nobody in the family did anything different on Sunday; documents decided the seating chart. The students in the van are the only ones who can sit anywhere.",
    "yourCall": "If you were filming this family, would you film the Sunday at the fence? Whose permission would you need, and who could be harmed by the film being public?",
-   "denverRun": "mixed-status families in Denver schools (see D-IMMIGRATION). Who at your school might not be able to travel with the class next spring?"
+   "denverRun": "mixed-status families in Denver schools Who at your school might not be able to travel with the class next spring?"
   },
   {
    "key": "E",
@@ -942,12 +941,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
    "changes": "papers (INE with a Tijuana address, or only an INM reception record, or a COMAR receipt); a utility bill in your own name; a bank account; a payroll job with IMSS or informal work; a deed or not; a relative who can lend; membership in a *tanda*; the purpose (equipment is allowed in the city loan; construction is not).",
    "notice": "the cheapest money in the city goes to the people with the most papers. The roof is the hardest thing to borrow for: the city loan excludes construction, and a house without a deed can't easily back a loan (Barrier 3; mechanism, not a sourced figure). A *tanda* has no interest but no flexibility either: you get the pot on your turn, not on the day the rain comes.",
    "yourCall": "If you ran the city loan, which one document requirement would you drop, and what risk would you take on by dropping it?",
-   "denverRun": "the same need ($500) in Denver with a credit card at 21.19%, a payday loan capped at 36%, a home-equity loan for a family with a deed, or a relative. Which families in your school have which option? (Denver mirror D-CREDIT, D-SAVINGS, D-BANK)"
+   "denverRun": "the same need ($500) in Denver with a credit card at 21.19%, a payday loan capped at 36%, a home-equity loan for a family with a deed, or a relative. Which families in your school have which option?"
   }
  ],
  "theology": {
   "readings": [
-   "**Pope Francis, Message for the 55th World Communications Day, Come and See (2021).** ⚠️ Confirm the date and title on vatican.va. Francis asks journalists and storytellers to go and see in person, to meet people where and as they are rather than repeating ready-made stories. It reads as if written for a film crew of teenagers: the story begins when you stop knowing it already.",
+   "**Pope Francis, Message for the 55th World Communications Day, Come and See (2021). Francis asks journalists and storytellers to go and see in person, to meet people where and as they are rather than repeating ready-made stories. It reads as if written for a film crew of teenagers: the story begins when you stop knowing it already.",
    "The Church's response to migrants summed up in four verbs (welcome, protect, promote, integrate), and the claim that a person's dignity doesn't depend on which side of a border they stand on. Pair with Barrier 8."
   ],
   "question": "I came with a camera to tell someone's story. What would it take for this to become their story, told with me, and am I willing to give up the version I wanted?"
@@ -1159,15 +1158,15 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
      "url": "https://zetatijuana.com/2026/07/cespt-hara-tandeos-de-agua/"
     },
     {
-     "t": "San Diego Coastkeeper, Tijuana River sewage *(from Packet 08)*: https://www.sdcoastkeeper.org/tijuana-river-sewage/",
+     "t": "San Diego Coastkeeper, Tijuana River sewage: https://www.sdcoastkeeper.org/tijuana-river-sewage/",
      "url": "https://www.sdcoastkeeper.org/tijuana-river-sewage/"
     },
     {
-     "t": "KPBS, Minute 333 (15 Dec 2025) *(from Packet 08)*: https://www.kpbs.org/news/environment/2025/12/15/trump-administration-signs-updated-agreement-with-mexico-over-tijuana-sewage",
+     "t": "KPBS, Minute 333 (15 Dec 2025): https://www.kpbs.org/news/environment/2025/12/15/trump-administration-signs-updated-agreement-with-mexico-over-tijuana-sewage",
      "url": "https://www.kpbs.org/news/environment/2025/12/15/trump-administration-signs-updated-agreement-with-mexico-over-tijuana-sewage"
     },
     {
-     "t": "*Times of San Diego*, Imperial Beach closure (28 Sep 2026) *(from Packet 08)*: https://timesofsandiego.com/?p=402830",
+     "t": "*Times of San Diego*, Imperial Beach closure (28 Sep 2026): https://timesofsandiego.com/?p=402830",
      "url": "https://timesofsandiego.com/?p=402830"
     }
    ]
@@ -1176,15 +1175,15 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
    "h": "Colonias, land and title",
    "items": [
     {
-     "t": "*Zeta*, 54 settlements (TECHO 2021) (21 Feb 2022) *(from Packet 08)*: https://zetatijuana.com/2022/02/identifican-54-asentamientos-irregulares-en-tijuana/",
+     "t": "*Zeta*, 54 settlements (TECHO 2021) (21 Feb 2022): https://zetatijuana.com/2022/02/identifican-54-asentamientos-irregulares-en-tijuana/",
      "url": "https://zetatijuana.com/2022/02/identifican-54-asentamientos-irregulares-en-tijuana/"
     },
     {
-     "t": "N+, more than 1,000 irregular settlements (7 Sep 2026) *(from Packet 08)*: https://www.nmas.com.mx/baja-california/sociedad/estiman-mas-de-mil-asentamientos-irregulares-en-distintas-zonas-en-tijuana-bc/",
+     "t": "N+, more than 1,000 irregular settlements (7 Sep 2026): https://www.nmas.com.mx/baja-california/sociedad/estiman-mas-de-mil-asentamientos-irregulares-en-distintas-zonas-en-tijuana-bc/",
      "url": "https://www.nmas.com.mx/baja-california/sociedad/estiman-mas-de-mil-asentamientos-irregulares-en-distintas-zonas-en-tijuana-bc/"
     },
     {
-     "t": "*El Imparcial*, urban risk, Civil Protection (9–10 Dec 2025) *(from Packet 08)*: https://www.elimparcial.com/tij/tijuana/2025/12/10/tijuana-enfrenta-riesgos-persistentes-por-expansion-urbana-en-zonas-inestables/",
+     "t": "*El Imparcial*, urban risk, Civil Protection (9–10 Dec 2025): https://www.elimparcial.com/tij/tijuana/2025/12/10/tijuana-enfrenta-riesgos-persistentes-por-expansion-urbana-en-zonas-inestables/",
      "url": "https://www.elimparcial.com/tij/tijuana/2025/12/10/tijuana-enfrenta-riesgos-persistentes-por-expansion-urbana-en-zonas-inestables/"
     },
     {
@@ -1533,7 +1532,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
        "label": "The minimum wage (one full-time earner)",
        "monthly": 13402,
        "note": "440.87 pesos a day (2026), about 13,400 a month on a 48-hour week (our arithmetic; a daily wage also pays the rest day).",
-       "src": "CONASAMI via Tijuana packet",
+       "src": "This trip’s Sources page",
        "url": "https://www.gob.mx/conasami"
       },
       {
@@ -1647,7 +1646,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
      "rent": {
       "amt": 1874,
       "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
-      "src": "USAFacts (Denver mirror D-HOUSING)"
+      "src": "USAFacts"
      },
      "bus": {
       "fare": 2.75,
@@ -1797,12 +1796,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
       "w2": {
        "v": "Depends on the job",
        "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       },
       "cash": {
        "v": "Not through the work",
        "text": "The same income-based coverage is open to them.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       }
      },
      {
@@ -1868,7 +1867,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
       "price": 25,
       "mark": "yours",
       "text": "INEGI counts vendors but not what they earn; there is no Tijuana figure. Set the profit on one sale, after ingredients.",
-      "src": "Tijuana packet, Barrier 2"
+      "src": "This trip’s Barriers page, Barrier 2"
      }
     ],
     "price": {
@@ -1951,7 +1950,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["tijuana-doc"]={
    ],
    "doing": {
     "text": "Vendors organize in market associations; families run tandas, rotating savings circles where each member pays in and one takes the pot.",
-    "src": "Tijuana packet, Barrier 2"
+    "src": "This trip’s Barriers page, Barrier 2"
    },
    "notice": "Many vendors earn more an hour than a factory pays, on the days they sell. Part 3 is the other half: no one pays them on the days they can't.",
    "yourCall": "Would you rather have the vendor's better days or the factory's steady floor? What would make you switch?"

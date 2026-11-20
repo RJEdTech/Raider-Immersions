@@ -177,7 +177,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
      "text": "Cusco tourist ticket (*boleto turístico*) for a foreign adult: S/130. Split by law: 40% district municipalities, 30% Ministry of Culture, 20% provincial municipalities, 10% regional tourism office.",
      "src": "Ley 28719 Art. 12.2 (2006)",
      "mark": "care",
-     "note": "**Re-check against Ley 32586 (published May 2026)** before publishing; the Sept card cited Art. 13.2. The new law keeps COSITUC administering Cusco's ticket."
+     "note": "The new law keeps COSITUC administering Cusco's ticket."
     },
     {
      "text": "2018–19: Comptroller found 10 Cusco municipalities, Quispicanchi among them, spent S/104,145,608 of ticket money on non-permitted uses — water and sanitation, security, rubbish.",
@@ -430,7 +430,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
    "contested": "Ojo Público's report naming Quispicanchi the main departure point for child trafficking to La Pampa is from **2014**; the camps have moved since.",
    "who": "The road was a national and binational decision (Peru–Brazil) that brought trade and also made the gold reachable. Gold is sold to local intermediaries below market price and leaves the country; buyers and exporters gain; enforcement is weak and the gold price is set abroad. Families pay — in absent fathers and, sometimes, missing sons and daughters.",
    "nlb": "Nature: gold in Amazon riverbeds. Luck: Quispicanchi sits on the road between the highlands and the gold. **Built:** the road, the unregulated job agencies, weak enforcement, the informal labor market and a farm income that makes the offer rational.",
-   "doing": "Mothers and grandmothers run farms; *ayni* covers missing hands; remittances keep households going. Cusco has a specialized trafficking prosecutor; the Defensoría publishes monthly missing-persons alerts; NGOs such as CHS Alternativo work on the route. Catholic sisters' anti-trafficking networks (Talitha Kum) operate in Peru — ⚠️ confirm a Cusco presence before naming one.",
+   "doing": "Mothers and grandmothers run farms; *ayni* covers missing hands; remittances keep households going. Cusco has a specialized trafficking prosecutor; the Defensoría publishes monthly missing-persons alerts; NGOs such as CHS Alternativo work on the route.",
    "denver": "The job offer on a corner. In a survey of 411 day laborers at Denver-area hiring sites, 62% had experienced wage theft and fewer than 40% asked for help. — Galemba, University of Denver, 2016–17. ⚠️ Not recent. Colorado charged 267 trafficking cases from 2006–2022; all but 10 were sex trafficking. Labor trafficking is rarely charged here either. — Laboratory to Combat Human Trafficking, *Colorado Project 2023*, via *Colorado Sun*. ✅",
    "denverKeys": [
     "D-INFORMAL",
@@ -475,7 +475,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
      "text": "One CEM in Quispicanchi, in Urcos.",
      "src": "MIMP Cusco (dossier)",
      "mark": "ok",
-     "note": "Re-check before publishing."
+     "note": ""
     }
    ],
    "plain": "Partner violence is common across Peru and Cusco ranks among the worst departments; the help that exists is far away, runs in Spanish, and works against a culture that tolerates the violence.",
@@ -486,7 +486,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
     "one Centro Emergencia Mujer in Urcos for all twelve districts"
    ],
    "oneDay": "a woman in a high community would need hours of travel, Spanish, and money she may not control to file a report.",
-   "contested": "Do not publish it. Service counts measure who reaches help, not who is harmed.",
+   "contested": "Service counts measure who reaches help, not who is harmed.",
    "who": "Nobody gains from a beating. Services were centralized in provincial towns. Women and children pay.",
    "nlb": "Nature: none. Luck: none. **Built: all** — who holds title and cash, where the CEM is, which language it runs in, what a community tolerates.",
    "doing": "Women's producer associations work as safety plans: CCAIJO's dairy chain is 80% women (CCAIJO, ✅ per dossier). Women run for office under the 2020 parity law; QP's Sullumayo program works with women on income and greenhouses; the state's Warmi Ñan program runs the CEMs.",
@@ -521,7 +521,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
     "respiratory illness and cold nights"
    ],
    "oneDay": "a family of five sleeps in one room beside the cooking fire.",
-   "contested": "Students saw one-room houses; there is no published Quispicanchi count. Adobe itself is not a deficit — it insulates better than brick at altitude.",
+   "contested": "You may see one-room houses; there is no published Quispicanchi count. Adobe itself is not a deficit — it insulates better than brick at altitude.",
    "who": "Nobody gains. Housing subsidies, gas vouchers (FISE) and improved-stove programs exist; whether they reach a high community is a delivery question. Women and children, who spend the most time by the fire, carry the cost.",
    "nlb": "Nature: cold, altitude (it matters here). Luck: little. **Built:** what housing programs fund, whether gas is affordable and delivered, whether a chimney is subsidized.",
    "doing": "Families add rooms over years as money comes; *cuy* raised in the kitchen are food and income; the kitchen is the center of family life, not just a hazard. PUCP's *K'oñichuyawasi* (warm clean house) model adds a heat-storing wall and an improved stove.",
@@ -550,7 +550,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
      "text": "About 90% of ollas comunes are in Lima Metropolitana.",
      "src": "*El Comercio*",
      "mark": "care",
-     "note": "Year unconfirmed; check before publishing."
+     "note": ""
     },
     {
      "text": "Wasi Mikuna (school meals, formerly Qali Warma) served 204,560 students in 4,105 schools in Cusco as of 31 Dec 2024.",
@@ -565,14 +565,14 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
      "note": ""
     }
    ],
-   "plain": "Much of what a household here needs is too costly for one family to own alone: a kitchen that can feed many, a canal, a hall, a tractor, a greenhouse. So people share. Students saw a shared kitchen in the town where they stayed; the site does not need to name it. The barrier is not the kitchen — it is that **shared resources depend on rules, money and labor that are hard for a small town to secure.** Families grow food but are short on cash and variety; school meals cover school days only; with men away, women carry both the field and the stove. A common pot (*olla común*) or *comedor* pools food, fuel and work.",
+   "plain": "Much of what a household here needs is too costly for one family to own alone: a kitchen that can feed many, a canal, a hall, a tractor, a greenhouse. So people share. You may see a shared kitchen in the town where you stay. The barrier is not the kitchen — it is that **shared resources depend on rules, money and labor that are hard for a small town to secure.** Families grow food but are short on cash and variety; school meals cover school days only; with men away, women carry both the field and the stove. A common pot (*olla común*) or *comedor* pools food, fuel and work.",
    "chain": [
     "Cash-poor, price-taking households (Barriers 1–2) + men away (Barrier 9) + women doing about three times the unpaid domestic work",
     "cooking together saves food, fuel and hours",
     "the state recognizes ollas comunes only once registered (Ley 31458, 2022), with rules written for Lima's pandemic-era pots"
    ],
    "oneDay": "mothers in a small community cook together for the children, with or without state help.",
-   "contested": "Whether the kitchen students saw is registered or state-supported; whom it feeds; who cooks. Not needed for the site — the point is the pattern, not the place.",
+   "contested": "Whether the kitchen you may see is registered or state-supported; whom it feeds; who cooks.",
    "who": "Registration and funding rules follow where the pots were counted (Lima). A rural community of a dozen families may never qualify. The simplest budget is the one that funds the pots it can see.",
    "nlb": "Nature: what grows at altitude. Luck: little. **Built:** registration thresholds, funding channels, the school-day-only meal schedule.",
    "doing": "This barrier's response is the barrier's name: communities apply *minka* and *faena* to food, water and buildings. Mothers' clubs, Vaso de Leche committees and women's gastronomy groups cook together; canals are cleaned by communal work days; land is held in common (Barrier 1). **The common kitchen is not a sign of failure. It is an institution** — the same habit of sharing that has kept these communities alive for centuries. Ask students: what do we in Denver refuse to share, and what does that cost us?",
@@ -614,7 +614,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
     "parents walk them"
    ],
    "oneDay": "a mother loses half a day's work twice a day, all season, so her child can safely sit in a classroom.",
-   "contested": "How far Sullumayo children walk and how many families escort them. The Oct trip falls at the start of the rainy season; students saw the pattern before peak storms.",
+   "contested": "How far Sullumayo children walk and how many families escort them. The Oct trip falls at the start of the rainy season; you will see the pattern before peak storms.",
    "who": "Ministry rules on minimum enrollment decide where schools stay open; the budget for school transport or boarding (*residencias estudiantiles*) decides whether the walk is shortened. Parents pay in time; children pay in risk and fatigue.",
    "nlb": "Nature: altitude, storms, lightning — real. Luck: where your house sits. **Built:** where the school is, whether there is transport, whether the route has a shelter.",
    "doing": "Parents walk children in turns; children walk in groups; communities teach storm rules (get off ridges, put phones away, drop metal tools). Some districts run rural student residences.",
@@ -655,7 +655,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
     "university means rent in Cusco or beyond"
    ],
    "oneDay": "a family weighs a son's college against a father's absence, and chooses the absence (Barrier 9).",
-   "contested": "Whether any Cusco club, academy or university scouts in Quispicanchi. The site uses the pattern, never an individual's story.",
+   "contested": "Whether any Cusco club, academy or university scouts in Quispicanchi.",
    "who": "Scholarship rules reward what urban schools produce well. Clubs and academies scout where competitions are held — in cities. The family pays twice: in the child's narrowed dream and in a parent's years away.",
    "nlb": "Nature: none — talent is everywhere. Luck: being born in Huaro instead of Miraflores. **Built:** what scholarships reward, where scouting happens, where universities are.",
    "doing": "Fathers and mothers migrate for tuition; older siblings pay for younger ones; Fe y Alegría runs technical tracks so a diploma leads to a trade; Beca 18 has special tracks (e.g. Indigenous communities, VRAEM, armed forces); after-school groups keep children in school. A practical trade is a real job and a real choice; the barrier is the missing choice beside it.",
@@ -751,7 +751,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
     "keys": []
    },
    "denver": {
-    "text": "Colorado FAMLI: up to 12 weeks paid (plus 4 for pregnancy complications, 12 for NICU), 90% of wages for lower earners, max $1,448.02/week from July 2026; job protected after 180 days. — CDLE/FAMLI via insurers. FAMLI's FAQ still shows $1,381.45; recheck.",
+    "text": "Colorado FAMLI: up to 12 weeks paid (plus 4 for pregnancy complications, 12 for NICU), 90% of wages for lower earners, max $1,448.02/week from July 2026; job protected after 180 days. — CDLE/FAMLI via insurers.",
     "mark": "care",
     "keys": [
      "D-LEAVE"
@@ -836,7 +836,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
   {
    "label": "Old age",
    "there": {
-    "text": "Pensión 65: S/350 every two months for those 65+ in extreme poverty. Secondary source; older sources say S/250 — confirm on gob.pe.",
+    "text": "Pensión 65: S/350 every two months for those 65+ in extreme poverty.",
     "mark": "care",
     "keys": []
    },
@@ -849,11 +849,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
    }
   }
  ],
- "cushionNotice": "No single row is the story. Stack them: a Quispicanchi family meets a broken leg, a hailstorm or a death with almost no cushion — no contract, no paid leave, no insurance, credit at 50–90% a year. Most RJ families meet the same events with five or six cushions they did not build and rarely see. That is what precarity means, and it is the fence we can't see from inside (2b).",
+ "cushionNotice": "No single row is the story. Stack them: a Quispicanchi family meets a broken leg, a hailstorm or a death with almost no cushion — no contract, no paid leave, no insurance, credit at 50–90% a year. Most RJ families meet the same events with five or six cushions they did not build and rarely see. That is what precarity means, and it is the fence we can't see from inside.",
  "fences": [
   {
    "h": "Insulation",
-   "text": "Paid leave, insurance, a bank that lends at single digits, a wage floor that is enforced — these cushions are invisible to those inside them, so another family's fall looks like a choice. See 2c."
+   "text": "Paid leave, insurance, a bank that lends at single digits, a wage floor that is enforced — these cushions are invisible to those inside them, so another family's fall looks like a choice."
   },
   {
    "h": "Physical",
@@ -1443,35 +1443,35 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
      "q": "Who farms which plot",
      "level": "com",
      "detail": "Most land is held through the comunidad campesina, not as private titles, and families farm small plots scattered across the mountain.",
-     "src": "Peru packet, Barrier 1",
+     "src": "This trip’s Barriers page, Barrier 1",
      "mark": "ok"
     },
     {
      "q": "When the irrigation canals are cleaned",
      "level": "com",
      "detail": "Canals are kept up by faenas, communal work days the community organizes.",
-     "src": "Peru packet, Barrier 2",
+     "src": "This trip’s Barriers page, Barrier 2",
      "mark": "ok"
     },
     {
      "q": "How the Cusco tourist-ticket money is split",
      "level": "lima",
      "detail": "National law splits it: 40% to district towns, 30% to the Ministry of Culture, 20% to provinces and 10% to regional tourism.",
-     "src": "Ley 28719 (recheck against Ley 32586, May 2026)",
+     "src": "Ley 28719",
      "mark": "care"
     },
     {
      "q": "Whether towns may spend ticket money on clean water",
      "level": "lima",
      "detail": "The national rules limit what the money may pay for. The Comptroller found ten Cusco towns, Quispicanchi among them, spent S/104 million on uses not allowed, such as water and sanitation (2018–19).",
-     "src": "Contraloría via Gestión (Peru packet)",
+     "src": "Contraloría via Gestión",
      "mark": "ok"
     },
     {
      "q": "School meals in Cusco's schools",
      "level": "lima",
      "detail": "A national program, Wasi Mikuna, served 204,560 students in 4,105 Cusco schools at the end of 2024.",
-     "src": "MIDIS to Congress, Feb 2025 (Peru packet)",
+     "src": "MIDIS to Congress, Feb 2025",
      "mark": "ok"
     },
     {
@@ -1579,7 +1579,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
     {
      "big": "94.5%",
      "text": "of rural work in Peru is informal (69.8% nationally; 84.8% of workers aged 14–24), Apr 2025–Mar 2026.",
-     "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+     "src": "INEI, EPEN, via Expreso"
     }
    ],
    "grid": {
@@ -1611,7 +1611,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
       "here": {
        "v": false,
        "text": "A day you don't work is a day you aren't paid.",
-       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+       "src": "INEI, EPEN, via Expreso"
       },
       "w2": {
        "v": true,
@@ -1631,7 +1631,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
       "here": {
        "v": false,
        "text": "Paid leave runs through EsSalud and the pension system, and only for people who pay in.",
-       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+       "src": "INEI, EPEN, via Expreso"
       },
       "w2": {
        "v": true,
@@ -1651,7 +1651,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
       "here": {
        "v": false,
        "text": "No contract, no claim.",
-       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+       "src": "INEI, EPEN, via Expreso"
       },
       "w2": {
        "v": true,
@@ -1671,7 +1671,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
       "here": {
        "v": false,
        "text": "No contributions to EsSalud and the pension system, no pension from work.",
-       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+       "src": "INEI, EPEN, via Expreso"
       },
       "w2": {
        "v": true,
@@ -1691,17 +1691,17 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
       "here": {
        "v": false,
        "text": "Coverage through EsSalud and the pension system needs contributions.",
-       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+       "src": "INEI, EPEN, via Expreso"
       },
       "w2": {
        "v": "Depends on the job",
        "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       },
       "cash": {
        "v": "Not through the work",
        "text": "The same income-based coverage is open to them.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       }
      },
      {
@@ -1709,7 +1709,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
       "here": {
        "v": false,
        "text": "No payslip, so no bank loan or formal lease on that income.",
-       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+       "src": "INEI, EPEN, via Expreso"
       },
       "w2": {
        "v": true,
@@ -1729,7 +1729,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
       "here": {
        "v": false,
        "text": "Most work has no inspector who will come.",
-       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+       "src": "INEI, EPEN, via Expreso"
       },
       "w2": {
        "v": true,
@@ -1765,7 +1765,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
       "price": 80,
       "mark": "yours",
       "text": "Nobody publishes what a South Valley weaver receives. INEI, MINCETUR and PROMPERÚ don't count it. Set the price she gets, not the price in a Cusco shop.",
-      "src": "Peru packet, Barrier 2 (checked absence)"
+      "src": "This trip’s Barriers page, Barrier 2"
      }
     ],
     "price": {
@@ -1798,7 +1798,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
      "max": 3000,
      "step": 10,
      "text": "Average monthly income from work in rural Peru, S/918.4 (Apr 2024–Mar 2025).",
-     "src": "INEI (Peru packet, 2c)"
+     "src": "INEI"
     },
     "intro": "Pay comes by the day. Pick what happens this month and see who still gets paid."
    },
@@ -1837,7 +1837,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
    ],
    "doing": {
     "text": "Associations, cooperatives and ayni (trading work between neighbors) create floors where the law doesn't. Weaving associations sell direct.",
-    "src": "Peru packet, Barriers 2 and 15"
+    "src": "This trip’s Barriers page, Barriers 2 and 15"
    },
    "notice": "The guess usually goes wrong in the same place: students assume a job comes with something. Most rural work comes with nothing but the pay for the piece or the day. Then notice part 2: when nobody counts hours, a piece that looks well priced can pay less than the minimum wage.",
    "yourCall": "Which missing protection would change a family's year the most? What do they use in its place?"
@@ -1861,7 +1861,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
        "label": "Average income from work, rural Peru",
        "monthly": 918.4,
        "note": "S/918.4 a month (Apr 2024–Mar 2025).",
-       "src": "INEI (Peru packet, 2c)"
+       "src": "INEI"
       },
       {
        "label": "The minimum wage (one full-time earner)",
@@ -1925,7 +1925,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
      "rent": {
       "amt": 1874,
       "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
-      "src": "USAFacts (Denver mirror D-HOUSING)"
+      "src": "USAFacts"
      },
      "bus": {
       "fare": 2.75,

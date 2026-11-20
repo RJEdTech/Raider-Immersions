@@ -5,7 +5,7 @@ window.DMIRROR={
   "title": "What a household earns",
   "figures": [
    {
-    "text": "Denver median household income **$94,718** (2024, ±$1,644); poverty rate **11.2%** (79.5k of 707k people). — Data USA, from Census ACS. Data USA doesn't name the ACS vintage (1-year or 5-year). Confirm on data.census.gov, table S1901 (income) and S1701 (poverty), Denver County, before publishing.",
+    "text": "Denver median household income **$94,718** (2024, ±$1,644); poverty rate **11.2%** (79.5k of 707k people). — Data USA, from Census ACS. Data USA doesn't name the ACS vintage (1-year or 5-year).",
     "mark": "care"
    },
    {
@@ -13,7 +13,7 @@ window.DMIRROR={
     "mark": "ok"
    },
    {
-    "text": "Full-time at Denver's minimum wage ≈ **$40,120/year** *(our arithmetic: $19.29 × 2,080 hours)* — about 42% of the median household. Arithmetic, not a source figure; label it as ours.",
+    "text": "Full-time at Denver's minimum wage ≈ **$40,120/year** *(our arithmetic: $19.29 × 2,080 hours)* — about 42% of the median household.",
     "mark": "care"
    }
   ],
@@ -25,7 +25,7 @@ window.DMIRROR={
    "https://www.federalreserve.gov/publications/2026-economic-well-being-of-us-households-in-2025-executive-summary.htm"
   ],
   "plain": "What the middle Denver household brings in, and how many can cover a small emergency.",
-  "how": "No one sets household income, but rules set its floor (D-MINWAGE), what is taxed and what reaches workers who are paid off the books (D-INFORMAL). The Census Bureau's American Community Survey (ACS) is the standard count.",
+  "how": "No one sets household income, but rules set its floor, what is taxed and what reaches workers who are paid off the books The Census Bureau's American Community Survey (ACS) is the standard count.",
   "mirrorQ": "What does the middle Denver family have that the middle family on this trip doesn't, and how much of it did either one choose?"
  },
  "D-MINWAGE": {
@@ -38,7 +38,7 @@ window.DMIRROR={
    }
   ],
   "misses": [
-   "It covers employees working within Denver. It does not reach work done for cash where no one files a complaint, or **independent contractors** (a real contractor is not an employee; a misclassified one should be but often isn't counted until someone investigates, see D-INFORMAL). A floor is only as strong as its enforcement."
+   "It covers employees working within Denver. It does not reach work done for cash where no one files a complaint, or **independent contractors** (a real contractor is not an employee; a misclassified one should be but often isn't counted until someone investigates, see). A floor is only as strong as its enforcement."
   ],
   "sources": [],
   "plain": "The lowest an employer may legally pay for an hour of work, in the city and the state.",
@@ -58,12 +58,12 @@ window.DMIRROR={
     "mark": "ok"
    },
    {
-    "text": "Survey of **411 day laborers** at Denver-area hiring sites: **62%** had experienced wage theft; fewer than 40% sought help. — Galemba, University of Denver, 2016–17. Not recent.",
+    "text": "Survey of **411 day laborers** at Denver-area hiring sites: **62%** had experienced wage theft; fewer than 40% sought help. — Galemba, University of Denver, 2016–17.",
     "mark": "care"
    }
   ],
   "misses": [
-   "The ordinance covers anyone working in Denver. It reaches the worker who files a complaint or works where an audit lands. It misses the worker who is afraid to complain, doesn't know the office exists, or can't prove hours worked. **Cushions missed by off-the-books work:** FAMLI (needs $2,500 in reported Colorado wages, see D-LEAVE), unemployment insurance, Social Security credits (D-OLDAGE, D-DISABILITY). *(Our reading of the eligibility rules, not a source's sentence.)*",
+   "The ordinance covers anyone working in Denver. It reaches the worker who files a complaint or works where an audit lands. It misses the worker who is afraid to complain, doesn't know the office exists, or can't prove hours worked. **Cushions missed by off-the-books work:** FAMLI (needs $2,500 in reported Colorado wages, see), unemployment insurance, Social Security credits *(Our reading of the eligibility rules, not a source's sentence.)*",
    "Look at the Colorado General Assembly bill archive and the CDLE website for a transportation network company transparency law."
   ],
   "sources": [
@@ -79,7 +79,7 @@ window.DMIRROR={
   "title": "Paid time when you're sick, injured or have a baby",
   "figures": [
    {
-    "text": "**FAMLI:** up to **12 weeks** paid (+4 for pregnancy complications; +12 for a NICU stay from 2026); 90% of wages up to half the state average weekly wage, 50% above that; max **$1,448.02/week** from 1 Jul 2026 ( FAMLI's own FAQ still showed $1,381.45 on 19 Nov; recheck before publishing); job protected after 180 days. — CDLE FAMLI; Littler, June 2026; DHR notice, Dec 2025. Premium for 2026 is listed in the seed as 0.44%. Confirm whether that is each side's share (employer and employee) or the total.",
+    "text": "**FAMLI:** up to **12 weeks** paid (+4 for pregnancy complications; +12 for a NICU stay from 2026); 90% of wages up to half the state average weekly wage, 50% above that; max **$1,448.02/week** from 1 Jul 2026; job protected after 180 days. — CDLE FAMLI; Littler, June 2026; DHR notice, Dec 2025. Premium for 2026 is listed in the seed as 0.44%.",
     "mark": "care"
    },
    {
@@ -101,7 +101,7 @@ window.DMIRROR={
   ],
   "misses": [
    "**FAMLI misses:** the **self-employed and independent contractors** unless they opt in (and opting in is a 3-year commitment to pay premiums); **federal employees**; employees of local governments that opted out (they can opt in individually, but without FAMLI job protection); anyone without $2,500 in *reported* Colorado wages, which in practice means cash day labor.",
-   "**HFWA misses:** federal employees, some railroad workers, and real independent contractors. Its protection depends on the employer following the law (Denver Labor's 2025 cases included sick-pay violations, see D-INFORMAL).",
+   "**HFWA misses:** federal employees, some railroad workers, and real independent contractors. Its protection depends on the employer following the law (Denver Labor's 2025 cases included sick-pay violations, see).",
    "**FMLA misses:** almost half of workers, and most low-wage workers."
   ],
   "sources": [
@@ -156,7 +156,7 @@ window.DMIRROR={
    "https://www.denver7.com/news/front-range/denver/denver-health-says-unpaid-health-care-costs-will-soar-to-155-million-this-year"
   ],
   "plain": "Whether you have coverage, what happens to the bill if you don't, and where Denver sends people no one else will see.",
-  "how": "**Health First Colorado** (Colorado's Medicaid) covers about **1 in 4 Coloradans**. Since the Affordable Care Act expansion, adults 19–64 qualify up to **133% of the federal poverty level** (just over $21,000 a year for one person). *(Federal rules add a 5% income disregard, so this is often quoted as 138%.)* **Changes under the 2025 federal budget law (H.R. 1):** from **1 Oct 2026**, Medicaid eligibility ends for many lawfully present immigrants (refugees, asylees, humanitarian parolees and others; see D-IMMIGRATION). From **1 Jan 2027**, expansion adults face **work/community-engagement requirements** (with exceptions for parents and caregivers, some veterans, the medically frail and others) and **six-month renewals** instead of yearly ones. Cost sharing for some expansion adults begins Oct 2028. **Colorado Hospital Discounted Care (HB21-1198):** patients at or below **250% of the poverty level**, insured or not, are billed at state-set discounted rates at hospitals and freestanding ERs. Payment plans are capped at **4%** of gross monthly income for hospital bills (2% per separately billing provider), and the bill counts as **paid in full after 36 payments**. **Uninsured patients are screened automatically** unless they opt out. **Ambulances:** the federal No Surprises Act covers air ambulances, not ground ones. Colorado's state protections reach only **state-regulated plans**. A 2025 bill to extend them to public ambulance services passed unanimously and was vetoed over premium costs. **Denver Health** is the city's safety-net hospital and clinic system.",
+  "how": "**Health First Colorado** (Colorado's Medicaid) covers about **1 in 4 Coloradans**. Since the Affordable Care Act expansion, adults 19–64 qualify up to **133% of the federal poverty level** (just over $21,000 a year for one person). *(Federal rules add a 5% income disregard, so this is often quoted as 138%.)* **Changes under the 2025 federal budget law (H.R. 1):** from **1 Oct 2026**, Medicaid eligibility ends for many lawfully present immigrants (refugees, asylees, humanitarian parolees and others; see). From **1 Jan 2027**, expansion adults face **work/community-engagement requirements** (with exceptions for parents and caregivers, some veterans, the medically frail and others) and **six-month renewals** instead of yearly ones. Cost sharing for some expansion adults begins Oct 2028. **Colorado Hospital Discounted Care (HB21-1198):** patients at or below **250% of the poverty level**, insured or not, are billed at state-set discounted rates at hospitals and freestanding ERs. Payment plans are capped at **4%** of gross monthly income for hospital bills (2% per separately billing provider), and the bill counts as **paid in full after 36 payments**. **Uninsured patients are screened automatically** unless they opt out. **Ambulances:** the federal No Surprises Act covers air ambulances, not ground ones. Colorado's state protections reach only **state-regulated plans**. A 2025 bill to extend them to public ambulance services passed unanimously and was vetoed over premium costs. **Denver Health** is the city's safety-net hospital and clinic system.",
   "mirrorQ": "In Denver the hospital is close, and the question is the bill. On this trip, what is the question?"
  },
  "D-BANK": {
@@ -189,7 +189,7 @@ window.DMIRROR={
   "title": "The $400 test",
   "figures": [],
   "misses": [
-   "The other 37%, who would borrow, sell something or not pay. The next key (D-CREDIT) is what borrowing costs them."
+   "The other 37%, who would borrow, sell something or not pay. The next key is what borrowing costs them."
   ],
   "sources": [],
   "plain": "Whether a surprise bill can be paid without borrowing.",
@@ -212,7 +212,7 @@ window.DMIRROR={
     "mark": "ok"
    },
    {
-    "text": "Compare Peru's microenterprise loans at about 53–95% a year (Peru packet 2c).",
+    "text": "Compare Peru's microenterprise loans at about 53–95% a year.",
     "mark": ""
    }
   ],
@@ -247,7 +247,7 @@ window.DMIRROR={
   ],
   "sources": [],
   "plain": "Whether the family keeps the house and the school when a paycheck stops for good.",
-  "how": "In the U.S., life insurance mostly comes through an employer as a benefit, and keeping it depends on keeping the job. Social Security survivor benefits are the public layer (covered workers only; see D-OLDAGE).",
+  "how": "In the U.S., life insurance mostly comes through an employer as a benefit, and keeping it depends on keeping the job. Social Security survivor benefits are the public layer (covered workers only; see).",
   "mirrorQ": "Who in your family is insured, and did anyone choose that, or did it come with the job?"
  },
  "D-HOMEINS": {
@@ -259,7 +259,7 @@ window.DMIRROR={
     "mark": "ok"
    },
    {
-    "text": "Denver homeownership rate **48.8%** (2024). — Data USA (ACS). Confirm vintage on data.census.gov.",
+    "text": "Denver homeownership rate **48.8%** (2024). — Data USA (ACS).",
     "mark": "care"
    },
    {
@@ -301,7 +301,7 @@ window.DMIRROR={
   ],
   "sources": [],
   "plain": "What replaces a paycheck when a body or mind can no longer do the job.",
-  "how": "**SSDI** (Social Security Disability Insurance, 1956): insurance earned through payroll taxes. You need enough recent work credits, and a disability expected to last a year or more that prevents substantial work. **SSI** (Supplemental Security Income): a needs-based federal payment for disabled, blind or older people with very low income and assets, with no work record required. **Employer short- and long-term disability:** a job benefit. **FAMLI** (D-LEAVE) can bridge up to 12 weeks for a serious health condition.",
+  "how": "**SSDI** (Social Security Disability Insurance, 1956): insurance earned through payroll taxes. You need enough recent work credits, and a disability expected to last a year or more that prevents substantial work. **SSI** (Supplemental Security Income): a needs-based federal payment for disabled, blind or older people with very low income and assets, with no work record required. **Employer short- and long-term disability:** a job benefit. **FAMLI** can bridge up to 12 weeks for a serious health condition.",
   "mirrorQ": "If a disability is decided by a form, who helps fill the form, and who waits alone?"
  },
  "D-OLDAGE": {
@@ -313,7 +313,7 @@ window.DMIRROR={
     "mark": "ok"
    },
    {
-    "text": "Compare Peru's Pensión 65 at S/350 every two months (Peru packet 2c).",
+    "text": "Compare Peru's Pensión 65 at S/350 every two months.",
     "mark": ""
    }
   ],
@@ -322,7 +322,7 @@ window.DMIRROR={
   ],
   "sources": [],
   "plain": "What a person lives on after 65.",
-  "how": "**Social Security** (1935) pays retirement benefits based on a lifetime of reported earnings, adjusted yearly for inflation (the COLA). **Medicare** (1965) covers health care at 65; premium-free Part A usually requires about 10 years of covered work. ⚠️ Medicare rule not re-checked this session; confirm on medicare.gov.",
+  "how": "**Social Security** (1935) pays retirement benefits based on a lifetime of reported earnings, adjusted yearly for inflation (the COLA). **Medicare** (1965) covers health care at 65; premium-free Part A usually requires about 10 years of covered work.",
   "mirrorQ": "Who in your family will retire on a check, and whose work, like your grandparents' or a nanny's, was never counted toward one?"
  },
  "D-FOOD": {
@@ -338,7 +338,7 @@ window.DMIRROR={
     "mark": "ok"
    },
    {
-    "text": "**1,803** schools participate in Healthy School Meals for All; about 382 would have lost free meals without LL and MM. — Chalkbeat Colorado, 4 Nov 2025. MM passed. — Chalkbeat/CBS headlines, 4 Nov 2025. Read from headlines only; confirm the vote share.",
+    "text": "**1,803** schools participate in Healthy School Meals for All; about 382 would have lost free meals without LL and MM. — Chalkbeat Colorado, 4 Nov 2025. MM passed. — Chalkbeat/CBS headlines, 4 Nov 2025.",
     "mark": "care"
    },
    {
@@ -377,7 +377,7 @@ window.DMIRROR={
    }
   ],
   "misses": [
-   "UPK covers every four-year-old for part of the day; a full-time job needs more hours than UPK provides. It misses infants and toddlers, the years when care costs most. Confirm."
+   "UPK covers every four-year-old for part of the day; a full-time job needs more hours than UPK provides. It misses infants and toddlers, the years when care costs most."
   ],
   "sources": [
    "https://coloradosun.com/2026/02/15/colorado-child-care-unaffordable-out-of-reach-school-families/",
@@ -416,7 +416,7 @@ window.DMIRROR={
    "https://www.denver7.com/news/local-news/denver-records-decrease-in-overall-homelessness-for-first-time-in-9-years-city-reports"
   ],
   "plain": "Whether rent leaves enough for everything else, and who ends up without a room at all.",
-  "how": "Housing prices come from land, zoning, interest rates (D-CREDIT) and wages. Cost-burdened means a household spending 30%+ of income on housing. Homelessness is counted two ways: the **Point-in-Time (PIT) count**, one January night led by the Metro Denver Homeless Initiative (MDHI) for HUD, and MDHI's year-round data, which counts far more people.",
+  "how": "Housing prices come from land, zoning, interest rates and wages. Cost-burdened means a household spending 30%+ of income on housing. Homelessness is counted two ways: the **Point-in-Time (PIT) count**, one January night led by the Metro Denver Homeless Initiative (MDHI) for HUD, and MDHI's year-round data, which counts far more people.",
   "mirrorQ": "Who in Denver shares a room because a second one costs too much, and would any count find them?"
  },
  "D-COMMON": {
@@ -428,7 +428,7 @@ window.DMIRROR={
     "mark": "ok"
    },
    {
-    "text": "Universal school meals (D-FOOD) and UPK (D-CHILDCARE) are the state's common goods for children. RTD youth fares are also free (D-SCHOOL).",
+    "text": "Universal school meals and UPK are the state's common goods for children. RTD youth fares are also free",
     "mark": ""
    }
   ],
@@ -449,7 +449,7 @@ window.DMIRROR={
     "mark": "care"
    },
    {
-    "text": "RTD made youth rides free year-round (2023). — Chalkbeat Colorado, 31 Jul 2023 (headline). Confirm the program is still running in 2026 on rtd-denver.com.",
+    "text": "RTD made youth rides free year-round (2023). — Chalkbeat Colorado, 31 Jul 2023 (headline).",
     "mark": "care"
    },
    {
@@ -486,7 +486,7 @@ window.DMIRROR={
    }
   ],
   "misses": [
-   "Colorado Promise reaches students who enroll quickly at a public college and file taxes the next year to get the money back. A family has to front the tuition and wait for the refund. Confirm with CDHE."
+   "Colorado Promise reaches students who enroll quickly at a public college and file taxes the next year to get the money back. A family has to front the tuition and wait for the refund."
   ],
   "sources": [],
   "plain": "The ladder from talent to opportunity, and who pays for each rung.",
@@ -520,11 +520,11 @@ window.DMIRROR={
    }
   ],
   "misses": [
-   "Reaches people who can get there during open hours and feel safe with the agencies involved. **Immigration status is a barrier to care:** from 1 Oct 2026, survivors with a pending or approved VAWA petition, and trafficking survivors with a T-visa application, lose Health First Colorado eligibility (D-IMMIGRATION). — HCPF FAQ. ✅"
+   "Reaches people who can get there during open hours and feel safe with the agencies involved. **Immigration status is a barrier to care:** from 1 Oct 2026, survivors with a pending or approved VAWA petition, and trafficking survivors with a T-visa application, lose Health First Colorado eligibility — HCPF FAQ. ✅"
   ],
   "sources": [],
   "plain": "Where a person goes when home isn't safe.",
-  "how": "Denver put help in one building: the **Rose Andom Center** (opened 2016), Colorado's first family justice center. State law also builds safety into work: HFWA sick leave may be used for needs after domestic violence, sexual assault or criminal harassment (D-LEAVE).",
+  "how": "Denver put help in one building: the **Rose Andom Center** (opened 2016), Colorado's first family justice center. State law also builds safety into work: HFWA sick leave may be used for needs after domestic violence, sexual assault or criminal harassment",
   "mirrorQ": "Denver put help in one building, closed at night. Who knows it exists, and who would walk in?"
  },
  "D-TRAFFICK": {
@@ -541,7 +541,7 @@ window.DMIRROR={
    }
   ],
   "misses": [
-   "Charges reach cases someone recognized. Labor trafficking hides inside the informal work in D-INFORMAL (fear of deportation, debt, no record of employment). T-visa applicants lose Medicaid from Oct 2026 (D-IMMIGRATION)."
+   "Charges reach cases someone recognized. Labor trafficking hides inside the informal work in (fear of deportation, debt, no record of employment). T-visa applicants lose Medicaid from Oct 2026"
   ],
   "sources": [],
   "plain": "When a job offer is a trap.",

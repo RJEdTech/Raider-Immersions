@@ -17,7 +17,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
    "h": "History, briefly — and where to hear it in people's own words",
    "text": "",
    "items": [
-    "**Early 1900s:** coal camps and company towns. **Van Lear**, in neighboring Johnson County, was one; the group visited a coal miners' museum there in a three-story building that once held a school, a jail, a dentist and a doctor's office. ✅. ⚠️ That it was a company building is the usual history of Van Lear; confirm with the museum.",
+    "**Early 1900s:** coal camps and company towns. **Van Lear**, in neighboring Johnson County, was one; the group visited a coal miners' museum there in a three-story building that once held a school, a jail, a dentist and a doctor's office. ✅.",
     "**1970s–80s:** local people survey who owns their own counties (the 1981 Appalachian land study, Barrier 3) and organize.",
     "**1990s – 2010s:** coal employment falls. In the 13 counties declared after the 2022 flood, mining and natural-resource jobs fell **77% (9,544 jobs) from 2006 to 2022**, mostly in coal. ✅ Cleveland Fed, 2023 (Barrier 4).",
     "**2014:** Kentucky expands Medicaid. ✅ (USA Today via AOL, 2025).",
@@ -90,7 +90,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
    "who": "No one profits from a rotten porch. But a manufactured home is financed like a car and loses value like one, so the family's largest possession is not wealth. The trades left when the coal money left. Public programs pay for medical equipment more readily than for the house it has to fit into. **A budget that never had to grow** — and volunteer groups from Colorado now fill a gap a market and a state left open. Older homeowners and their caregivers pay, mostly in isolation.",
    "nlb": "Nature: aging, illness. Luck: which body, which job, which piece of ground. **Built:** what kind of house was affordable, what public programs cover, where the tradespeople went. *Nature gives the condition; structure decides what it costs.*",
    "doing": "Kin build ramps for each other; churches organize work days; Hand in Hand's site staff and contractors turn volunteer weeks into finished ramps; the Christian Appalachian Project replaces failing ramps and underpinning so older residents can stay safe, warm and dry ✅ (CAP); Appalachia Service Project repairs homes across the region ✅. Aging in place is a choice people make to stay near kin and land — the ramp protects a choice, not just a body.",
-   "denver": "An older Denver homeowner in a 1920s bungalow faces the same steps, but usually with equity to borrow against and contractors a phone call away. Nearly 34% of Colorado households are cost-burdened (49% of renters). — Colorado statewide housing needs assessment, Nov 2026 (Colorado Newsline). ✅ Borrowing against a house: 30-year mortgage 7.11% (12 Nov 2026, Freddie Mac; national) ✅. See Denver mirror **D-HOUSING**, **D-CREDIT**.",
+   "denver": "An older Denver homeowner in a 1920s bungalow faces the same steps, but usually with equity to borrow against and contractors a phone call away. Nearly 34% of Colorado households are cost-burdened (49% of renters). — Colorado statewide housing needs assessment, Nov 2026 (Colorado Newsline). ✅ Borrowing against a house: 30-year mortgage 7.11% (12 Nov 2026, Freddie Mac; national) ✅.",
    "denverKeys": [
     "D-CREDIT",
     "D-HOUSING"
@@ -163,7 +163,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
    "who": "FEMA draws the maps, and its maps are built mostly for river and coastal flooding, not mountain flash floods. ✅ (E&E News). Congress sets the aid caps. Nobody gains from an uninsured house; the insurance program is priced for risk, and risk here is high and income low. Families pay — with savings they don't have, then with debt or by leaving.",
    "nlb": "Nature: rain, steep slopes — real. Luck: **enormous — which creek, which night.** **Built:** where flat land was left for houses, what the maps show, what insurance costs, what aid is capped at. *Mostly nature and luck at the moment of the flood; mostly built in what it costs afterward.*",
    "doing": "Neighbors rescue neighbors and muck out each other's houses; churches become shelters and kitchens. After the 2025 flood, Prestonsburg's mayor said everyone was pitching in. ✅ (WEKU). The **Foundation for Appalachian Kentucky** and its **Floyd County Community Foundation** run a Crisis and Recovery Fund ✅; the Team Eastern Kentucky Flood Relief Fund raised $5.2 million in the first two weeks of Aug 2022 ✅ (RFF); the Red Cross sheltered people at Jenny Wiley State Resort Park in 2025 ✅; the **Ohio River Valley Institute** documented who was hurt and why ✅.",
-   "denver": "The same rule decides who is insured: **mortgage lenders require homeowners insurance**, so families who own outright go without most often. **6%** of U.S. homeowners had no homeowners insurance in 2025: 3% with a mortgage vs **13%** of free-and-clear owners. — Federal Reserve SHED 2025. ✅ National. That is the Floyd County pattern too: about half the homes in the disaster counties had no mortgage, so no lender asked. See Denver mirror **D-HOMEINS**.",
+   "denver": "The same rule decides who is insured: **mortgage lenders require homeowners insurance**, so families who own outright go without most often. **6%** of U.S. homeowners had no homeowners insurance in 2025: 3% with a mortgage vs **13%** of free-and-clear owners. — Federal Reserve SHED 2025. ✅ National. That is the Floyd County pattern too: about half the homes in the disaster counties had no mortgage, so no lender asked.",
    "denverKeys": [
     "D-HOMEINS"
    ],
@@ -203,7 +203,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
    "who": "Written down, with dates: the deeds, the court rulings, and the tax rules. Mineral owners and their shareholders, mostly outside the region, gained the coal at low tax. Counties and their schools paid in lost revenue; surface owners paid in damaged land and wells. Some of this was later changed by people here (below).",
    "nlb": "Nature: coal under the mountains. Luck: whether your family's land had a seam worth buying. **Built:** the deeds, the courts' reading of them, the tax rates. *Built, and written down.*",
    "doing": "**The land study itself** — about 100 local residents researched who owned their own counties. ✅ It led to the **Kentucky Fair Tax Coalition**, now **Kentuckians For The Commonwealth (KFTC)**, which helped end strip mining over surface owners' objections. ✅ (*YES!*). That is not resilience; it is a research project and a statewide organizing campaign by people who were told it couldn't be changed.",
-   "denver": "(D-WATER is lead service lines, a different structure.) Ask for a new key before publishing this line. Colorado's coal history — the southern coalfield company towns and the 1914 Ludlow Massacre — is the same story of who owned the ground and who worked it. ⚠️ (History recalled; source before publishing.)",
+   "denver": "Colorado's coal history — the southern coalfield company towns and the 1914 Ludlow Massacre — is the same story of who owned the ground and who worked it. ⚠️",
    "denverKeys": [
     "D-WATER"
    ],
@@ -268,7 +268,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
    "who": "The companies decided where to mine and when to stop; the coal price is set far away; utilities chose gas when it was cheaper. Shareholders and electricity customers elsewhere gained cheap power for a century. Workers and towns paid twice — in the work, and then in its end. *No villain:* the price falls when someone in another state chooses the cheaper fuel.",
    "nlb": "Nature: where the seams were, and that they run out. Luck: when your seam ran out. **Built:** an economy left with one industry, and where the profits went.",
    "doing": "Jenny Wiley State Resort Park and music heritage (Loretta Lynn's home place, which the group toured) draw visitors. ✅ Many who leave come home; many who stay chose to.",
-   "denver": "And Denver is the *other end* of brain drain — it gains the young graduates rural places lose. About half of Colorado graduates go to college, ten points below the national rate; 28.6% of low-income graduates earn a credential within four years. — Keystone Policy Center via Chalkbeat, 2024. ✅ Denver median household income is **$94,718** (2024), more than double Floyd County's $41,279. — Data USA. ⚠️ Vintage to confirm (D-WAGE). See Denver mirror **D-LADDER**, **D-WAGE**. (No mirror key covers Colorado coal towns.)",
+   "denver": "And Denver is the *other end* of brain drain — it gains the young graduates rural places lose. About half of Colorado graduates go to college, ten points below the national rate; 28.6% of low-income graduates earn a credential within four years. — Keystone Policy Center via Chalkbeat, 2024. ✅ Denver median household income is **$94,718** (2024), more than double Floyd County's $41,279. — Data USA.",
    "denverKeys": [
     "D-LADDER",
     "D-WAGE"
@@ -321,7 +321,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
    "who": "Kentucky's governor expanded Medicaid in 2014 under the federal Affordable Care Act ✅; Congress changed the rules in 2025 ✅. Hospitals, clinics, pharmacies and health workers — now the county's largest employers — gain from coverage; so do patients. Taxpayers nationally pay most of the cost. Who pays when rules tighten: people who miss a form, and hospitals that lose payments.",
    "nlb": "Nature: illness, age. Luck: none. **Built: almost all** — who is eligible, what is covered, how often you must prove it.",
    "doing": "Clinics enroll patients; churches and family resource centers help with paperwork; residential treatment programs run on Medicaid (at one, 9 in 10 clients rely on it ✅ USA Today, Perry County).",
-   "denver": "Colorado's uninsured rate is 5.9% (2025 Colorado Health Access Survey). ✅ Floyd County's uninsured rate is about the same, but because of Medicaid, not employer plans. Colorado's Medicaid (Health First Colorado) covers about **1 in 4 Coloradans**, and the same 2025 federal law brings work requirements and six-month renewals from **1 Jan 2027**; about **377,000** Colorado members are affected. See Denver mirror **D-HEALTH**.",
+   "denver": "Colorado's uninsured rate is 5.9% (2025 Colorado Health Access Survey). ✅ Floyd County's uninsured rate is about the same, but because of Medicaid, not employer plans. Colorado's Medicaid (Health First Colorado) covers about **1 in 4 Coloradans**, and the same 2025 federal law brings work requirements and six-month renewals from **1 Jan 2027**; about **377,000** Colorado members are affected.",
    "denverKeys": [
     "D-HEALTH"
    ],
@@ -343,7 +343,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
      "note": "Secondary."
     },
     {
-     "text": "**SSDI, Floyd County, Dec 2025:** **2,660 disabled workers** draw Social Security disability, plus 460 children of disabled workers. They were paid $4.33 million that month, about **$1,626 per disabled worker** *(our arithmetic)*, close to the U.S. average of $1,630 (D-DISABILITY).",
+     "text": "**SSDI, Floyd County, Dec 2025:** **2,660 disabled workers** draw Social Security disability, plus 460 children of disabled workers. They were paid $4.33 million that month, about **$1,626 per disabled worker** *(our arithmetic)*, close to the U.S. average of $1,630",
      "src": "SSA, *OASDI Beneficiaries by State and County, 2025*, Tables 4–5",
      "mark": "ok",
      "note": ""
@@ -380,7 +380,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
    "who": "Nobody gains from a person who could work part-time staying home — but the rule was written for a simpler idea of disability than people live. Disabled people pay in narrowed choices; the local economy loses their work.",
    "nlb": "Nature: injury, illness, age. Luck: which job, which accident. **Built:** the earnings limit, the application process, which jobs exist nearby.",
    "doing": "",
-   "denver": "A disabled Denver worker meets the same federal rules. Colorado adds paid family and medical leave (FAMLI) for short-term illness: up to 12 weeks at up to 90% of wages for lower earners. — CDLE. ✅ Kentucky has **no state paid family, medical or sick leave law**. — KFF state table, 2025. ✅ SSDI averages $1,630/month and SSI pays $994/month for an individual (2026). Employer long-term disability insurance reaches 37% of private-sector workers. — SSA; BLS. ✅ National. Working-age disabled households are unbanked at 11.2% nationally vs 4.2% overall. — FDIC 2023. ✅ See Denver mirror **D-DISABILITY**, **D-LEAVE**.",
+   "denver": "A disabled Denver worker meets the same federal rules. Colorado adds paid family and medical leave (FAMLI) for short-term illness: up to 12 weeks at up to 90% of wages for lower earners. — CDLE. ✅ Kentucky has **no state paid family, medical or sick leave law**. — KFF state table, 2025. ✅ SSDI averages $1,630/month and SSI pays $994/month for an individual (2026). Employer long-term disability insurance reaches 37% of private-sector workers. — SSA; BLS. ✅ National. Working-age disabled households are unbanked at 11.2% nationally vs 4.2% overall. — FDIC 2023. ✅",
    "denverKeys": [
     "D-DISABILITY",
     "D-LEAVE"
@@ -403,7 +403,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
    "who": "Regulators were slow. Families paid — and are still paying, mostly through the unpaid work of grandparents.",
    "nlb": "Nature: pain, and how addiction works in a body. Luck: which pill, which friend, which year. **Built:** how opioids were marketed and distributed, how few treatment beds there were, who pays for treatment now (Medicaid, Barrier 5).",
    "doing": "",
-   "denver": "Fentanyl reached Denver too, and Denver grandparents also raise grandchildren. Colorado's Medicaid faces the same 2027 work-requirement and renewal rules (D-HEALTH ✅). A Colorado grandparent who takes in a child has HFWA paid sick leave for a family member's illness (up to 48 hours a year) and possibly FAMLI. Kentucky has neither. See Denver mirror **D-HEALTH**, **D-LEAVE**, **D-CHILDCARE**.",
+   "denver": "Fentanyl reached Denver too, and Denver grandparents also raise grandchildren. Colorado's Medicaid faces the same 2027 work-requirement and renewal rules A Colorado grandparent who takes in a child has HFWA paid sick leave for a family member's illness (up to 48 hours a year) and possibly FAMLI. Kentucky has neither.",
    "denverKeys": [
     "D-CHILDCARE",
     "D-HEALTH",
@@ -438,8 +438,8 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
    "contested": "How common heirs' property is here; no Appalachian Kentucky count was found. Never ask a homeowner.",
    "who": "FEMA writes the proof rules, meant to pay owners for owners' repairs and to prevent fraud ⚠️; Congress sets the caps; banks and the SBA set collateral rules. Nobody profits from a clouded title. It is **a rule written for a world of recorded deeds, met by families who never needed one** until the day they had to prove it. Probate costs lawyer time and fees; heirs who live far away must sign; one heir can block the rest. Families pay in denied aid, unsellable land and repairs no one will lend for.",
    "nlb": "Nature: none, except death, which starts the problem. Luck: whether your grandparent wrote a will, and whether every cousin answers the letter. **Built:** what counts as proof, who must sign, what probate costs, whether a mobile home and its land are one property or two.",
-   "doing": "Families keep tax receipts and utility bills as everyday proof of living there ⚠️ (general; confirm what FEMA accepted in 2022).",
-   "denver": "A Denver home with a mortgage usually has a clear recorded title, because a lender checks title before it lends ⚠️ (general practice; not in the mirror). Lender-required homeowners insurance comes with the loan (D-HOMEINS ✅). Papers decide cushions in Denver too, but mostly through immigration status: who can get a Social Security number, FAMLI, Medicaid or a bank account.",
+   "doing": "Families keep tax receipts and utility bills as everyday proof of living there ⚠️.",
+   "denver": "A Denver home with a mortgage usually has a clear recorded title, because a lender checks title before it lends ⚠️. Lender-required homeowners insurance comes with the loan Papers decide cushions in Denver too, but mostly through immigration status: who can get a Social Security number, FAMLI, Medicaid or a bank account.",
    "denverKeys": [
     "D-BANK",
     "D-HOMEINS",
@@ -458,7 +458,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
     },
     {
      "text": "$15 per $100 for 14 days is about **391% a year** *(our arithmetic: 15% × 365 ÷ 14)*. Colorado caps payday loans at **36%** a year (Prop 111, 2018).",
-     "src": "D-CREDIT",
+     "src": "",
      "mark": "ok",
      "note": ""
     },
@@ -478,7 +478,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
      "text": "Credit-card APR 21.19% (Q3 2026); 30-year mortgage 7.11% (12 Nov 2026).",
      "src": "Fed G.19; Freddie Mac",
      "mark": "ok",
-     "note": "National (D-CREDIT)."
+     "note": "National"
     },
     {
      "text": "SBA disaster loans need collateral and good credit; $11.3 million had been approved in eastern Kentucky when RFF wrote (Aug 2022).",
@@ -500,7 +500,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
    "who": "The General Assembly wrote the fee cap and raised the loan limit in 2026; banks decide whom they lend to; the SBA sets collateral rules. Lenders gain fees on the smallest loans. Homeowners with the least cushion pay the highest price per dollar, or pay in waiting.",
    "nlb": "Nature: rot and weather. Luck: a relative who can lend, or a church crew that comes this year. **Built:** the fee caps, what counts as collateral, which houses gain value and which lose it.",
    "doing": "Kin lend to kin and build for each other; churches take up collections; Hand in Hand, the Christian Appalachian Project and Appalachia Service Project do the work for free ✅. In effect a volunteer week replaces a loan.",
-   "denver": "Colorado caps payday loans at 36% APR (Prop 111, 77.25% of the vote, 2018); a family with good credit borrows to repair a house on a credit card at about 21%, or against home equity at mortgage rates. 63% of U.S. adults could pay a $400 surprise in cash (2025). — Fed SHED. ✅ National. See Denver mirror **D-CREDIT**, **D-SAVINGS**.",
+   "denver": "Colorado caps payday loans at 36% APR (Prop 111, 77.25% of the vote, 2018); a family with good credit borrows to repair a house on a credit card at about 21%, or against home equity at mortgage rates. 63% of U.S. adults could pay a $400 surprise in cash (2025). — Fed SHED. ✅ National.",
    "denverKeys": [
     "D-CREDIT",
     "D-SAVINGS"
@@ -517,7 +517,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
     "keys": []
    },
    "denver": {
-    "text": "Denver median household income **$94,718** (2024); poverty 11.2%. — Data USA (ACS). Vintage to confirm. Denver minimum wage $19.29/hr (2026); Colorado $15.16. — Denver Labor; CDLE. See,.",
+    "text": "Denver median household income **$94,718** (2024); poverty 11.2%. — Data USA (ACS). Denver minimum wage $19.29/hr (2026); Colorado $15.16. — Denver Labor; CDLE.",
     "mark": "care",
     "keys": [
      "D-MINWAGE",
@@ -533,7 +533,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
     "keys": []
    },
    "denver": {
-    "text": "Full-time at Denver's minimum ≈ $40,120/year *(our arithmetic)*. Protects all workers regardless of status, but reaches cash work only when someone complains: Denver Labor recovered $2.31M for ~7,200 workers (2025). See,.",
+    "text": "Full-time at Denver's minimum ≈ $40,120/year *(our arithmetic)*. Protects all workers regardless of status, but reaches cash work only when someone complains: Denver Labor recovered $2.31M for ~7,200 workers (2025).",
     "mark": "ok",
     "keys": [
      "D-INFORMAL",
@@ -549,7 +549,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
     "keys": []
    },
    "denver": {
-    "text": "Colorado uninsured 5.9% (2025). — Colorado Health Access Survey. Health First Colorado covers about 1 in 4 Coloradans; low-income patients' hospital payment plans capped at 4% of income. — HCPF. See.",
+    "text": "Colorado uninsured 5.9% (2025). — Colorado Health Access Survey. Health First Colorado covers about 1 in 4 Coloradans; low-income patients' hospital payment plans capped at 4% of income. — HCPF.",
     "mark": "ok",
     "keys": [
      "D-HEALTH"
@@ -564,7 +564,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
     "keys": []
    },
    "denver": {
-    "text": "Colorado FAMLI: up to 12 weeks paid (+4 pregnancy complications, +12 NICU); 90% of wages for lower earners; max $1,448.02/week from July 2026. HFWA: 48 hours a year of paid sick leave at every employer. — CDLE. See.",
+    "text": "Colorado FAMLI: up to 12 weeks paid (+4 pregnancy complications, +12 NICU); 90% of wages for lower earners; max $1,448.02/week from July 2026. HFWA: 48 hours a year of paid sick leave at every employer. — CDLE.",
     "mark": "ok",
     "keys": [
      "D-LEAVE"
@@ -579,7 +579,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
     "keys": []
    },
    "denver": {
-    "text": "4.2% of U.S. households unbanked (2023); 12.3% single-parent; 11.2% working-age disabled. See.",
+    "text": "4.2% of U.S. households unbanked (2023); 12.3% single-parent; 11.2% working-age disabled.",
     "mark": "",
     "keys": [
      "D-BANK"
@@ -594,7 +594,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
     "keys": []
    },
    "denver": {
-    "text": "63% of U.S. adults would pay a $400 emergency in cash (2025). — Fed SHED. National. See.",
+    "text": "63% of U.S. adults would pay a $400 emergency in cash (2025). — Fed SHED. National.",
     "mark": "ok",
     "keys": [
      "D-SAVINGS"
@@ -609,7 +609,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
     "keys": []
    },
    "denver": {
-    "text": "Payday capped at **36% APR** since 2019 (Prop 111). Credit cards 21.19% APR; 30-yr mortgage 7.11% (Nov 2026). — Ballotpedia; Fed G.19; Freddie Mac. See.",
+    "text": "Payday capped at **36% APR** since 2019 (Prop 111). Credit cards 21.19% APR; 30-yr mortgage 7.11% (Nov 2026). — Ballotpedia; Fed G.19; Freddie Mac.",
     "mark": "ok",
     "keys": [
      "D-CREDIT"
@@ -624,7 +624,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
     "keys": []
    },
    "denver": {
-    "text": "See, (papers by status).",
+    "text": "",
     "mark": "",
     "keys": [
      "D-HOMEINS",
@@ -640,7 +640,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
     "keys": []
    },
    "denver": {
-    "text": "52% of U.S. adults own life insurance (2026); 31% in households under $50k vs 71% at $150k+ (2024); employer life insurance reaches 28% of the lowest-paid workers vs 87% of the highest. — LIMRA / Life Happens; BLS. National. See.",
+    "text": "52% of U.S. adults own life insurance (2026); 31% in households under $50k vs 71% at $150k+ (2024); employer life insurance reaches 28% of the lowest-paid workers vs 87% of the highest. — LIMRA / Life Happens; BLS. National.",
     "mark": "ok",
     "keys": [
      "D-LIFEINS"
@@ -655,7 +655,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
     "keys": []
    },
    "denver": {
-    "text": "6% of U.S. homeowners uninsured; **13% of those who own free and clear** (2025). See.",
+    "text": "6% of U.S. homeowners uninsured; **13% of those who own free and clear** (2025).",
     "mark": "",
     "keys": [
      "D-HOMEINS"
@@ -670,7 +670,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
     "keys": []
    },
    "denver": {
-    "text": "Same federal programs: SSDI avg $1,630/mo, SSI $994 (2026); FAMLI bridges short illness; employer long-term disability reaches 37%. — SSA; BLS. See.",
+    "text": "Same federal programs: SSDI avg $1,630/mo, SSI $994 (2026); FAMLI bridges short illness; employer long-term disability reaches 37%. — SSA; BLS.",
     "mark": "ok",
     "keys": [
      "D-DISABILITY"
@@ -685,7 +685,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
     "keys": []
    },
    "denver": {
-    "text": "Average U.S. retired-worker benefit **$2,071/month** (Jan 2026). — SSA. See.",
+    "text": "Average U.S. retired-worker benefit **$2,071/month** (Jan 2026). — SSA.",
     "mark": "ok",
     "keys": [
      "D-OLDAGE"
@@ -700,7 +700,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
     "keys": []
    },
    "denver": {
-    "text": "About 612,700 Coloradans on SNAP a month (FY2025, 10.2%); free school meals at 1,803 schools. — USDA FNS via USAFacts; Chalkbeat. See.",
+    "text": "About 612,700 Coloradans on SNAP a month (FY2025, 10.2%); free school meals at 1,803 schools. — USDA FNS via USAFacts; Chalkbeat.",
     "mark": "ok",
     "keys": [
      "D-FOOD"
@@ -708,11 +708,11 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
    }
   }
  ],
- "cushionNotice": "No single row is the story. Stack them: an older Floyd County homeowner meets a fall, a flood or a death in the family with **public cushions** — Medicaid, Social Security, SNAP — and almost no private ones: no flood insurance, no paid leave, no equity to borrow against, a minimum wage less than half of Denver's. Many RJ families meet the same events with private cushions they did not build and rarely see — an employer's health plan, a mortgage-backed home that gains value, a 401(k), FAMLI, a credit line. **Here the cushion is visible because it comes with a form to fill out. At home it is invisible because it comes with a job.** That is the fence (2b).",
+ "cushionNotice": "No single row is the story. Stack them: an older Floyd County homeowner meets a fall, a flood or a death in the family with **public cushions** — Medicaid, Social Security, SNAP — and almost no private ones: no flood insurance, no paid leave, no equity to borrow against, a minimum wage less than half of Denver's. Many RJ families meet the same events with private cushions they did not build and rarely see — an employer's health plan, a mortgage-backed home that gains value, a 401(k), FAMLI, a credit line. **Here the cushion is visible because it comes with a form to fill out. At home it is invisible because it comes with a job.** That is the fence.",
  "fences": [
   {
    "h": "Insulation",
-   "text": "Our families' cushions come through jobs and property, so we don't see them as help. A Kentucky family's cushions come through Medicaid and Social Security, so we do — and we judge. See 2c."
+   "text": "Our families' cushions come through jobs and property, so we don't see them as help. A Kentucky family's cushions come through Medicaid and Social Security, so we do — and we judge."
   },
   {
    "h": "Physical",
@@ -806,7 +806,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
    "data": "5% of damaged homes insured; 3.8% NFIP of owner-occupied; 45% of parcels at highest risk vs 22% of them in a FEMA zone; ~80% of inundated homes outside high-risk areas; average NFIP payout in Kentucky ~$49,000, max $250,000; FEMA cap $37,900; 60% of damaged homes in households earning ≤$30,000; insurance ≈ 7% of median income. (Cleveland Fed; RFF; E&E News.) ✅",
    "notice": "the map told most families they were safe; the premium was a month's income; the grant fixes a house enough to live in, not enough to restore it. And the insured family was the luckier one, not the more responsible one — most had no lender telling them to buy.",
    "yourCall": "Should flood insurance be required everywhere in these valleys, subsidized, or replaced by moving people to higher ground? Who pays in each choice — and who decides where higher ground is, if companies own it (Barrier 3)?",
-   "denverRun": "Does your house have flood insurance? Run your own house through the same choices. Your lender likely required homeowners insurance; 13% of free-and-clear U.S. owners have none (SHED 2025 ✅). Standard policies generally exclude flood ⚠️ (general rule; not sourced in the mirror). See D-HOMEINS."
+   "denverRun": "Does your house have flood insurance? Run your own house through the same choices. Your lender likely required homeowners insurance; 13% of free-and-clear U.S. owners have none (SHED 2025 ✅). Standard policies generally exclude flood ⚠️ (general rule; not sourced in the mirror)."
   },
   {
    "key": "C",
@@ -814,7 +814,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
    "question": "A homeowner needs a ramp. What does it take — and why are high-school volunteers from Colorado the answer?",
    "notice": "the volunteer crew fills a gap left by a shrunken trade, a house that can't be borrowed against, and programs that pay for wheelchairs but not for the door. The ramp is real help — and also a sign of what is missing.",
    "yourCall": "Is a volunteer ramp program a solution or a symptom? If you could change one rule so the next homeowner didn't need to wait for a school group, which would it be?",
-   "denverRun": "an older Denver homeowner needs the same ramp. Equity, contractors, Area Agency on Aging programs — what does she have that the Floyd County homeowner doesn't? See D-HOUSING."
+   "denverRun": "an older Denver homeowner needs the same ramp. Equity, contractors, Area Agency on Aging programs — what does she have that the Floyd County homeowner doesn't?"
   },
   {
    "key": "D",
@@ -831,7 +831,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["kentucky"]={
    "changes": "bank account yes/no; credit score; equity in the house (none / some); clear title or heirs' property (Barrier 8); a relative who can lend; whether a volunteer crew (Hand in Hand, a church) can come this year, and the wait.",
    "notice": "the homeowner with the least cushion faces the highest price per dollar, or no loan at all. The volunteer crew is the cheapest option and the slowest. The price there is waiting, and a body that can't use the steps in the meantime.",
    "yourCall": "If you could change one rule so the Floyd County homeowner could borrow like the Denver one, which would it be: the fee cap, what counts as collateral, how mobile homes are titled, or something else? Who would have to agree?",
-   "denverRun": "the same $1,000 for your family's house. Which option would you use, and who set its price? See D-CREDIT, D-SAVINGS."
+   "denverRun": "the same $1,000 for your family's house. Which option would you use, and who set its price?"
   }
  ],
  "theology": {

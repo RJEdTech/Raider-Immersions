@@ -5,7 +5,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
  "place": [
   {
    "h": "Where",
-   "text": "Quito, Ecuador's capital, a city of just over 2 million (partner's figure) in a long Andean valley at about 9,350 ft. The Center's campus is in **Cotocollao, north Quito**. It consolidated there in 2017 after decades with a second campus in La Marín, downtown. ✅ (c4wf.org, *Our Work*). Its child-development centers have been in north-Quito neighborhoods: **Enrique Velasco, Carcelén Bajo I and II, and Roldós**, under a 2020 agreement with the Ministry of Economic and Social Inclusion (MIES). ✅ (2020 nomination file to Quito's city council). The course map page gives the site as **José Nogales N69-172 y Piedras Negras, Cotocollao**. ✅ (Canvas, teacher page).",
+   "text": "Quito, Ecuador's capital, a city of just over 2 million (partner's figure) in a long Andean valley at about 9,350 ft. The Center's campus is in **Cotocollao, north Quito**. It consolidated there in 2017 after decades with a second campus in La Marín, downtown. ✅ (c4wf.org, *Our Work*). Its child-development centers have been in north-Quito neighborhoods: **Enrique Velasco, Carcelén Bajo I and II, and Roldós**, under a 2020 agreement with the Ministry of Economic and Social Inclusion (MIES). ✅ (2020 nomination file to Quito's city council). ✅.",
    "items": []
   },
   {
@@ -39,9 +39,9 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
     "**The Center – A Family of Families (CEFF).** In Ecuador it is *Centro una Familia de Familias*, formerly *Centro del Muchacho Trabajador* (CMT) / Working Boys' Center. ✅ It is the same lineage: same founder, same 1964 start and same campus. The US fundraising partner is **The Center for Working Families (C4WF)**, Brookfield, Wisconsin. ✅",
     "**How it describes itself.** A social work of the Society of Jesus that, in its own words, does not seek charity for working children. It builds skills and opportunities instead. ✅ (2020 council file). Halligan said the same in 2009: the Center is not a charity program (NCR).",
     "**What it runs:** child-development centers from age 1; basic education; a technical high-school diploma in metal mechanics and construction; carpentry, sewing and metal-mechanics workshops that employ former students and mothers; health, nutrition and dental care; savings promotion; family counseling and violence prevention; after-school programs aimed at ending child labor. ✅ (2020 file; c4wf.org). Storefront businesses run by community members include two restaurants, a beauty salon and an auto-parts business. ✅",
-    "**What RJ students do.** They stay in the **Community House** on the campus. Groups may join a **minga**, a hands-on project with paint and dirt. ✅ (c4wf.org FAQ). From the teacher pages and modules (2023, 2025, 2026) ✅:",
-    "**The 10 values.** The course pages present ten founding values from Padre Juan (Halligan), drawn from Scripture.",
-    "**What the Center asks of families. Treat as history until confirmed.** In 2009, membership required parents to commit to working their way out of poverty. A child could not finish primary school until the parents had passed literacy classes. Children and adults were taught to save, and working children could keep part of their own earnings in savings accounts that belonged to them. ⚠️ (NCR 2009). **The Center took no money from the children.** Fr. Halligan and Madre Miguel Conway founded it to help poor children, and the savings were the children's own."
+    "**What RJ students do.** They stay in the **Community House** on the campus. Groups may join a **minga**, a hands-on project with paint and dirt. ✅ (c4wf.org FAQ).",
+    "**The 10 values.** The Center teaches ten founding values from Padre Juan (Halligan), drawn from Scripture.",
+    "**What the Center asked of families (2009).** In 2009, membership required parents to commit to working their way out of poverty. A child could not finish primary school until the parents had passed literacy classes. Children and adults were taught to save, and working children could keep part of their own earnings in savings accounts that belonged to them. ⚠️ (NCR 2009). **The Center took no money from the children.** Fr. Halligan and Madre Miguel Conway founded it to help poor children, and the savings were the children's own."
    ]
   },
   {
@@ -51,7 +51,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
     "The Center itself is a Jesuit work. It began in La Compañía, the city's great Jesuit church. Classes open with prayer, daily Mass is offered, and religion is not required. ⚠️ (NCR 2009).",
     "Its partners include the Pontificia Universidad Católica del Ecuador (PUCE, the Jesuit university), the Quito Food Bank and MIES. ✅ (2020 file).",
     "The article could not be opened, so do not claim a papal visit or gift to the Center until it is read.",
-    "Two Ecuadorian saints: **St. Mariana de Jesús**, Quito's 17th-century laywoman who served the poor, and **St. Miguel Febres Cordero (Hermano Miguel)**, a teacher. ⚠️ Both are standard. Confirm dates before publishing."
+    "Two Ecuadorian saints: **St. Mariana de Jesús**, Quito's 17th-century laywoman who served the poor, and **St. Miguel Febres Cordero (Hermano Miguel)**, a teacher. ⚠️ Both are standard."
    ]
   }
  ],
@@ -115,7 +115,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    "who": "The tax and social-security rules were written around a salaried employee with a boss who files the paperwork. Buyers of informal goods and labor gain lower prices. The state gains nothing it can count: fewer contributors make the IESS weaker, so it does not lose from this, but it does not gain either. Workers and their children carry the risk.",
    "nlb": "Nature: none. Luck: a relative with a formal job and an IESS card. **Built:** the RUC line, the contribution cost, labor inspection, and who the minimum wage reaches.",
    "doing": "The Center's own workshops (carpentry, sewing, metal mechanics) employ former students and mothers inside a formal structure. ✅ (2020 file). It teaches savings and enterprise, and community members run storefront businesses on its block. Families pool income across several earners and trades.",
-   "denver": "Denver's minimum wage is $19.29/hr (2026) and protects workers regardless of immigration status. — Denver Labor. ✅ Even so, 62% of 411 surveyed Denver-area day laborers had experienced wage theft, and fewer than 40% asked for help. — Galemba, University of Denver, 2016–17. ⚠️ Not recent. Denver Labor recovered a record $2.31 million for about 7,200 workers in its 2025 reporting year. — Denver Auditor via Denver7. ✅ Off-the-books work also misses FAMLI, unemployment insurance and Social Security credits. See Denver mirror **D-MINWAGE** and **D-INFORMAL**.",
+   "denver": "Denver's minimum wage is $19.29/hr (2026) and protects workers regardless of immigration status. — Denver Labor. ✅ Even so, 62% of 411 surveyed Denver-area day laborers had experienced wage theft, and fewer than 40% asked for help. — Galemba, University of Denver, 2016–17. ⚠️ Not recent. Denver Labor recovered a record $2.31 million for about 7,200 workers in its 2025 reporting year. — Denver Auditor via Denver7. ✅ Off-the-books work also misses FAMLI, unemployment insurance and Social Security credits.",
    "denverKeys": [
     "D-INFORMAL",
     "D-MINWAGE"
@@ -175,7 +175,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    "who": "Employers decide what a diploma is worth, and the diploma is a cheap way to sort applicants. The state decided what age range public childcare covers. Nobody gains from a mother staying home against her will. The cost is a household income that stays informal.",
    "nlb": "Nature: children need care. Luck: a grandmother nearby. **Built:** the diploma requirement, the age limits of public childcare, work hours, and who is expected to do care.",
    "doing": "This barrier is the Center's founding design. In 1968 boys studied half the day so they could still work the other half. Today it offers childcare from age 1, adult education, a technical diploma, and parents' literacy classes tied to their children's graduation. ⚠️ (Literacy rule is from 2009.) Older siblings carry younger ones; grandmothers take shifts.",
-   "denver": "Colorado FAMLI pays up to 12 weeks of leave for a new baby, at 90% of wages for lower earners, with job protection after 180 days. — CDLE FAMLI. ✅ After those 12 weeks, unsubsidized center care for an infant in Colorado costs about $20,978 a year (2024). — Child Care Aware via *Colorado Sun*. ✅ Statewide. Free public preschool (UPK) covers up to 15 hours a week, and only in the year before kindergarten. — CDEC. ✅ The same gap as Quito's age 1–3 CDIs, at a different age. See Denver mirror **D-LEAVE** and **D-CHILDCARE**; for diplomas and the college ladder, **D-LADDER**.",
+   "denver": "Colorado FAMLI pays up to 12 weeks of leave for a new baby, at 90% of wages for lower earners, with job protection after 180 days. — CDLE FAMLI. ✅ After those 12 weeks, unsubsidized center care for an infant in Colorado costs about $20,978 a year (2024). — Child Care Aware via *Colorado Sun*. ✅ Statewide. Free public preschool (UPK) covers up to 15 hours a week, and only in the year before kindergarten. — CDEC. ✅ The same gap as Quito's age 1–3 CDIs, at a different age.; for diplomas and the college ladder.",
    "denverKeys": [
     "D-CHILDCARE",
     "D-LADDER",
@@ -231,7 +231,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    "who": "Banks lend on documented income. That rule is reasonable for the bank, and it is the barrier for the family. The family pays twice: first in rent, then in years of building.",
    "nlb": "Nature: the steep slopes of the valley. Luck: a cheap lot that later gets water and a bus line. **Built:** who gets a mortgage, how fast a neighborhood is legalized, where the city runs water and buses.",
    "doing": "The **minga** is the answer, and it belongs to them, not to visitors. Families save for land; the Center teaches savings; neighbors build each other's houses. The Center's metal and carpentry shops make doors, windows and frames. ✅ (2020 file).",
-   "denver": "Nearly 34% of Colorado households are cost-burdened (49% of renters). — Colorado statewide housing needs assessment, Nov 2026 (*Colorado Newsline*). ✅ Denver metro median rent was about $1,874/month, 31.9% of renter income. — ACS 2020–2024. ✅ A family with documented income borrows for a house at about 7.11% (30-year fixed, Nov 2026). — Freddie Mac. ✅ National. The mortgage lender also requires homeowners insurance, so the loan builds in a cushion. See Denver mirror **D-HOUSING**, **D-CREDIT** and **D-HOMEINS**.",
+   "denver": "Nearly 34% of Colorado households are cost-burdened (49% of renters). — Colorado statewide housing needs assessment, Nov 2026 (*Colorado Newsline*). ✅ Denver metro median rent was about $1,874/month, 31.9% of renter income. — ACS 2020–2024. ✅ A family with documented income borrows for a house at about 7.11% (30-year fixed, Nov 2026). — Freddie Mac. ✅ National. The mortgage lender also requires homeowners insurance, so the loan builds in a cushion.",
    "denverKeys": [
     "D-CREDIT",
     "D-HOMEINS",
@@ -293,7 +293,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    "who": "Lawmakers set the minimum age; nobody voted on the family budget that makes a child's income necessary. Buyers of cheap street goods gain a little. Children pay in school years, and their parents pay in fear of being reported.",
    "nlb": "Nature: none. Luck: an earner who stays healthy. **Built:** school hours, the minimum wage and who it reaches, child-labor law, and the Center's own design.",
    "doing": "The Center's half-day school (1968–2015), after-school programs to eradicate child labor with MIES, three meals a day, and savings accounts in the children's own names: in 2009, graduates often left with $400–500 of their own money saved. ✅/⚠️ The Center never took a share of what children earned; its founders, a Jesuit and a Sister of Charity of the BVM, set out to help poor children. Families move children's work from the street into family businesses.",
-   "denver": "The MY Denver Card gives every Denver youth aged 5–18 free access to rec centers, pools and libraries. That is a public answer to the question of where children go after school. ✅ Colorado's universal school meals (1,803 schools, no application) are the public version of the Center's three meals a day. — Chalkbeat Colorado. ✅ See Denver mirror **D-COMMON** and **D-FOOD**.",
+   "denver": "The MY Denver Card gives every Denver youth aged 5–18 free access to rec centers, pools and libraries. That is a public answer to the question of where children go after school. ✅ Colorado's universal school meals (1,803 schools, no application) are the public version of the Center's three meals a day. — Chalkbeat Colorado. ✅",
    "denverKeys": [
     "D-COMMON",
     "D-FOOD"
@@ -359,7 +359,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    "who": "Gangs gain directly. Buyers of cocaine abroad, including in the US, fund the business. Decades of weak prisons and courts were budgets that never had to grow. Small shopkeepers, bus drivers and the young men killed pay the most.",
    "nlb": "Nature: none. Luck: which street your shop is on. **Built: all of it.** The drug market, the prison system, the decree, and who is protected.",
    "doing": "People report confidentially by QR code and use Police and ECU 911 lines (✅, *Primicias*). The Center keeps children inside programs during the hours they would otherwise be on the street, and runs violence prevention. ✅ (2020 file).",
-   "denver": "The mechanism to look for: who cannot safely call the police, so that whoever threatens them gains power. Workers afraid of immigration questions are one example. Denver's minimum wage, at least, protects workers regardless of status. ✅ Colorado charged 267 trafficking cases from 2006 to 2022, all but 10 of them sex trafficking: labor exploitation is rarely charged because someone has to recognize and report it. — Laboratory to Combat Human Trafficking. ✅ See Denver mirror **D-IMMIGRATION** and **D-TRAFFICK**.",
+   "denver": "The mechanism to look for: who cannot safely call the police, so that whoever threatens them gains power. Workers afraid of immigration questions are one example. Denver's minimum wage, at least, protects workers regardless of status. ✅ Colorado charged 267 trafficking cases from 2006 to 2022, all but 10 of them sex trafficking: labor exploitation is rarely charged because someone has to recognize and report it. — Laboratory to Combat Human Trafficking. ✅",
    "denverKeys": [
     "D-IMMIGRATION",
     "D-TRAFFICK"
@@ -406,7 +406,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    "who": "Successive governments decided what to build and maintain (the plants were built 2007–2017; new investment fell afterward). Coca Codo Sinclair, the largest plant, has been under constant repair for factory faults. Generator sellers gained. Households and businesses without a generator paid, and commerce paid most.",
    "nlb": "Nature: the drought, and it was real. Luck: whether your feeder line was on the short or long schedule. **Built:** a grid with little backup, plants left to age, and the decision of whom to cut first.",
    "doing": "Not sourced here. Generators and solar panels were offered on credit through the public bank BanEcuador. ⚠️",
-   "denver": "Common goods are budgets someone decided had to grow. Denver Water is replacing lead service lines at no direct cost to customers. It has replaced more than 36,000 since 2020, in a roughly $670 million program. — Denver Water Year in Review 2025 ✅; Inside Climate News ⚠️. Colorado's paid sick leave law (HFWA) also lets workers use sick hours when a workplace closes for loss of power or water. — CDLE. ✅ That is a cushion for exactly this shock. See Denver mirror **D-WATER**, **D-COMMON** and **D-LEAVE**.",
+   "denver": "Common goods are budgets someone decided had to grow. Denver Water is replacing lead service lines at no direct cost to customers. It has replaced more than 36,000 since 2020, in a roughly $670 million program. — Denver Water Year in Review 2025 ✅; Inside Climate News ⚠️. Colorado's paid sick leave law (HFWA) also lets workers use sick hours when a workplace closes for loss of power or water. — CDLE. ✅ That is a cushion for exactly this shock.",
    "denverKeys": [
     "D-COMMON",
     "D-LEAVE",
@@ -455,7 +455,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    "who": "US employers who hire undocumented workers gain, and so do smugglers. Ecuador's economy gains remittances. Ecuador's visa and regularization rules decide what Venezuelans can earn. Children pay in absent parents. Newcomers pay in work without protection.",
    "nlb": "Nature: none. Luck: a relative already abroad. **Built:** borders, visas, regularization rules, and the conditions that push people out.",
    "doing": "Grandparents raise grandchildren. Families send remittances. Migrant women run home businesses. The Center accepts families by vulnerability, not nationality (its criteria list no nationality rule ✅). The UN's R4V platform coordinates services for Venezuelans.",
-   "denver": "Denver's minimum wage protects workers regardless of immigration status. ✅ (Denver Labor). Mixed-status families can have a citizen child covered, a parent not, and a grandparent under a third rule. See Denver mirror **D-IMMIGRATION** and **D-INFORMAL**.",
+   "denver": "Denver's minimum wage protects workers regardless of immigration status. ✅ (Denver Labor). Mixed-status families can have a citizen child covered, a parent not, and a grandparent under a third rule.",
    "denverKeys": [
     "D-IMMIGRATION",
     "D-INFORMAL"
@@ -521,7 +521,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    "who": "The government decides when windows open and close. Employers who pay cash below the minimum wage gain, and so do street lenders. Newcomers pay in unprotected work, and their children pay in everything that requires a document.",
    "nlb": "Nature: none. Luck: which month you arrived, and whether your passport had expired. **Built:** visa rules, fees and deadlines; bank account rules; who can join the IESS.",
    "doing": "Venezuelan migrants run their own savings-and-credit groups (*cajas de ahorro*); cooperatives such as Cooperativa Mujeres Unidas lend to refugees with repayment rates that match or beat locals' (UNHCR); the Asociación Venezuela en Ecuador presses for new regularization. The Center admits families by need, not nationality.",
-   "denver": "Immigration status decides access to the cushions here too: who can get a Social Security number, FAMLI, Medicaid, a bank account or a mortgage. From 1 Oct 2026, 6,000–7,000 lawfully present immigrants in Colorado are expected to lose Medicaid under the 2025 federal budget law. — HCPF. ✅ See Denver mirror **D-IMMIGRATION** and **D-BANK**. Denver's wage laws protect all workers regardless of status (Denver Labor ✅).",
+   "denver": "Immigration status decides access to the cushions here too: who can get a Social Security number, FAMLI, Medicaid, a bank account or a mortgage. From 1 Oct 2026, 6,000–7,000 lawfully present immigrants in Colorado are expected to lose Medicaid under the 2025 federal budget law. — HCPF. ✅ Denver's wage laws protect all workers regardless of status (Denver Labor ✅).",
    "denverKeys": [
     "D-BANK",
     "D-IMMIGRATION"
@@ -580,7 +580,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    "who": "The Junta sets the caps; banks decide whom they will lend to. Street lenders gain, and some are tied to organized crime. Small borrowers pay the most for the smallest loans, often women running businesses.",
    "nlb": "Nature: none. Luck: a relative who can lend. **Built:** what counts as collateral, which documents a loan needs, the rate caps, and how hard it is to report a lender.",
    "doing": "Rotating savings groups and *cajas de ahorro*; cooperatives; the minga instead of a loan (Barrier 3); the Center's savings teaching. Neighbors in north Quito have organized with alarms and cameras against extortion. ✅ (*Expreso*)",
-   "denver": "Colorado caps payday loans at 36% APR (Prop 111, 2018, in force 2019). — CPR; Ballotpedia. ✅ Credit cards average 21.19% APR (Q3 2026). — Federal Reserve G.19. ✅ National. 63% of U.S. adults could cover a $400 emergency in cash (2025); the rest would borrow, sell something or not pay. — Federal Reserve SHED. ✅ National. See Denver mirror **D-CREDIT** and **D-SAVINGS**.",
+   "denver": "Colorado caps payday loans at 36% APR (Prop 111, 2018, in force 2019). — CPR; Ballotpedia. ✅ Credit cards average 21.19% APR (Q3 2026). — Federal Reserve G.19. ✅ National. 63% of U.S. adults could cover a $400 emergency in cash (2025); the rest would borrow, sell something or not pay. — Federal Reserve SHED. ✅ National.",
    "denverKeys": [
     "D-CREDIT",
     "D-SAVINGS"
@@ -597,7 +597,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
     "keys": []
    },
    "denver": {
-    "text": "Denver median household income $94,718 (2024). — Data USA (ACS). Vintage unconfirmed. Full-time at Denver's minimum ≈ $40,120 a year *(our arithmetic: 19.29 × 2,080)*. See.",
+    "text": "Denver median household income $94,718 (2024). — Data USA (ACS). Full-time at Denver's minimum ≈ $40,120 a year *(our arithmetic: 19.29 × 2,080)*.",
     "mark": "care",
     "keys": [
      "D-WAGE"
@@ -612,7 +612,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
     "keys": []
    },
    "denver": {
-    "text": "Denver $19.29/hr, Colorado $15.16 (2026), regardless of immigration status. — Denver Labor; CDLE. Denver Labor recovered $2.31 million for about 7,200 workers (2025). 62% of day laborers surveyed had experienced wage theft (2016–17). Old. See,.",
+    "text": "Denver $19.29/hr, Colorado $15.16 (2026), regardless of immigration status. — Denver Labor; CDLE. Denver Labor recovered $2.31 million for about 7,200 workers (2025). 62% of day laborers surveyed had experienced wage theft (2016–17). Old.",
     "mark": "care",
     "keys": [
      "D-INFORMAL",
@@ -628,7 +628,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
     "keys": []
    },
    "denver": {
-    "text": "Colorado uninsured 5.9% (2025). — CHAS. Medicaid covers adults up to 133% of the poverty line; Hospital Discounted Care caps payment plans at 4% of monthly income for patients up to 250% of the poverty line. See.",
+    "text": "Colorado uninsured 5.9% (2025). — CHAS. Medicaid covers adults up to 133% of the poverty line; Hospital Discounted Care caps payment plans at 4% of monthly income for patients up to 250% of the poverty line.",
     "mark": "ok",
     "keys": [
      "D-HEALTH"
@@ -643,7 +643,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
     "keys": []
    },
    "denver": {
-    "text": "FAMLI: up to 12 weeks paid (+4 for pregnancy complications, +12 for NICU), 90% of wage for lower earners, max $1,448.02/week from Jul 2026; job protected after 180 days; needs $2,500 in reported Colorado wages. — CDLE FAMLI. HFWA: 1 hour of paid sick leave per 30 worked, up to 48 a year, at every employer. Federal FMLA reaches 56% of workers, 38% of low-wage workers (2018). See.",
+    "text": "FAMLI: up to 12 weeks paid (+4 for pregnancy complications, +12 for NICU), 90% of wage for lower earners, max $1,448.02/week from Jul 2026; job protected after 180 days; needs $2,500 in reported Colorado wages. — CDLE FAMLI. HFWA: 1 hour of paid sick leave per 30 worked, up to 48 a year, at every employer. Federal FMLA reaches 56% of workers, 38% of low-wage workers (2018).",
     "mark": "care",
     "keys": [
      "D-LEAVE"
@@ -653,12 +653,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
   {
    "label": "Who watches the children",
    "there": {
-    "text": "Public child-development centers (CDIs, with MIES) take ages 1–3; the Center runs CDIs from age 1. (2020 council file). Students saw a baby carried to work for lack of care (Canvas pattern).",
+    "text": "Public child-development centers (CDIs, with MIES) take ages 1–3; the Center runs CDIs from age 1. (2020 council file).",
     "mark": "ok",
     "keys": []
    },
    "denver": {
-    "text": "Colorado infant center care about $20,978 a year (2024). — Child Care Aware via *Colorado Sun*. UPK: up to 15 free hours a week in the year before kindergarten. — CDEC. See.",
+    "text": "Colorado infant center care about $20,978 a year (2024). — Child Care Aware via *Colorado Sun*. UPK: up to 15 free hours a week in the year before kindergarten. — CDEC.",
     "mark": "ok",
     "keys": [
      "D-CHILDCARE"
@@ -668,12 +668,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
   {
    "label": "A bank account",
    "there": {
-    "text": "**65% of Ecuadorian adults had an account in 2024** (64% in 2021); 35% had none, and cost and distance were the main reasons. 36% saved in the past year (Latin America 44%). — World Bank Global Findex 2025, via Red Financiera de Desarrollo, *Boletín* 45, Jul 2025. Secondary summary; confirm on worldbank.org/globalfindex. The Center teaches savings and helped working children keep accounts in their own names. (NCR 2009)",
+    "text": "**65% of Ecuadorian adults had an account in 2024** (64% in 2021); 35% had none, and cost and distance were the main reasons. 36% saved in the past year (Latin America 44%). — World Bank Global Findex 2025, via Red Financiera de Desarrollo, *Boletín* 45, Jul 2025. The Center teaches savings and helped working children keep accounts in their own names. (NCR 2009)",
     "mark": "care",
     "keys": []
    },
    "denver": {
-    "text": "4.2% of U.S. households unbanked (2023); 12.3% of single-parent and 11.2% of disabled households. — FDIC. 94% of U.S. adults had an account (2025), 77% of those earning under $25,000. — Federal Reserve SHED. National. See.",
+    "text": "4.2% of U.S. households unbanked (2023); 12.3% of single-parent and 11.2% of disabled households. — FDIC. 94% of U.S. adults had an account (2025), 77% of those earning under $25,000. — Federal Reserve SHED. National.",
     "mark": "ok",
     "keys": [
      "D-BANK"
@@ -688,7 +688,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
     "keys": []
    },
    "denver": {
-    "text": "Credit cards 21.19% APR (Q3 2026); 30-year mortgage 7.11% (Nov 2026); payday loans capped at 36% since 2019. — Fed G.19; Freddie Mac; Prop 111. 63% could pay a $400 emergency in cash (2025). See,.",
+    "text": "Credit cards 21.19% APR (Q3 2026); 30-year mortgage 7.11% (Nov 2026); payday loans capped at 36% since 2019. — Fed G.19; Freddie Mac; Prop 111. 63% could pay a $400 emergency in cash (2025).",
     "mark": "ok",
     "keys": [
      "D-CREDIT",
@@ -704,7 +704,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
     "keys": []
    },
    "denver": {
-    "text": "52% of U.S. adults own life insurance (2026); 31% in households under $50k vs 71% at $150k+ (2024). — LIMRA / Life Happens. Employer life insurance: 28% of the lowest-paid quarter of workers have access, 87% of the highest. — BLS. National. See.",
+    "text": "52% of U.S. adults own life insurance (2026); 31% in households under $50k vs 71% at $150k+ (2024). — LIMRA / Life Happens. Employer life insurance: 28% of the lowest-paid quarter of workers have access, 87% of the highest. — BLS. National.",
     "mark": "ok",
     "keys": [
      "D-LIFEINS"
@@ -719,7 +719,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
     "keys": []
    },
    "denver": {
-    "text": "6% of U.S. homeowners uninsured: 3% with a mortgage, 13% who own free and clear (2025). See.",
+    "text": "6% of U.S. homeowners uninsured: 3% with a mortgage, 13% who own free and clear (2025).",
     "mark": "",
     "keys": [
      "D-HOMEINS"
@@ -734,7 +734,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
     "keys": []
    },
    "denver": {
-    "text": "SSDI averages $1,630/month and SSI $994 (2026). — SSA. 37% of private-sector workers have employer long-term disability insurance. See.",
+    "text": "SSDI averages $1,630/month and SSI $994 (2026). — SSA. 37% of private-sector workers have employer long-term disability insurance.",
     "mark": "ok",
     "keys": [
      "D-DISABILITY"
@@ -749,7 +749,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
     "keys": []
    },
    "denver": {
-    "text": "Average Social Security retirement benefit $2,071/month (Jan 2026). — SSA. It misses lifetime informal workers and unpaid caregivers. See.",
+    "text": "Average Social Security retirement benefit $2,071/month (Jan 2026). — SSA. It misses lifetime informal workers and unpaid caregivers.",
     "mark": "ok",
     "keys": [
      "D-OLDAGE"
@@ -764,7 +764,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
     "keys": []
    },
    "denver": {
-    "text": "SNAP reached about 612,700 Coloradans a month (FY2025, 10.2%); maximum $1,023/month for a family of four from Oct 2026. — USDA FNS via USAFacts; *Colorado Politics*. Free school meals at 1,803 schools. See.",
+    "text": "SNAP reached about 612,700 Coloradans a month (FY2025, 10.2%); maximum $1,023/month for a family of four from Oct 2026. — USDA FNS via USAFacts; *Colorado Politics*. Free school meals at 1,803 schools.",
     "mark": "ok",
     "keys": [
      "D-FOOD"
@@ -776,7 +776,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
  "fences": [
   {
    "h": "Insulation",
-   "text": "Paid leave, health insurance, a bank that will lend, a wage floor that is enforced. These are invisible from inside, so another family's fall looks like a choice. See 2c. Ecuador uses the US dollar, which makes it worse: $482 looks like a number we understand. It isn't. A month's minimum wage there is about 25 hours at Denver's minimum *(our arithmetic: 482 ÷ 19.29)*. Prices in Quito are not a quarter of Denver's."
+   "text": "Paid leave, health insurance, a bank that will lend, a wage floor that is enforced. These are invisible from inside, so another family's fall looks like a choice. Ecuador uses the US dollar, which makes it worse: $482 looks like a number we understand. It isn't. A month's minimum wage there is about 25 hours at Denver's minimum *(our arithmetic: 482 ÷ 19.29)*. Prices in Quito are not a quarter of Denver's."
   },
   {
    "h": "What we didn't notice",
@@ -808,7 +808,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    "h": "From the Center's own community",
    "items": [
     "Unda Lara, Llanos Erazo & Herrera Montero, *Espacios de socialización de niños, niñas y adolescentes en el Centro del Muchacho Trabajador* (UPS / Abya-Yala, 2014). The Center's children aged 8–18 talk about family, school and work. Spanish.",
-    "Carlos Gómez Luna, a former shoeshine boy who became one of the Center's co-directors (NCR, 2009). A public figure in published reporting, and the clearest example of the Center's own people running it. ⚠️ Confirm his current role.",
+    "Carlos Gómez Luna, a former shoeshine boy who became one of the Center's co-directors (NCR, 2009). A public figure in published reporting, and the clearest example of the Center's own people running it.",
     "Teleamazonas, *Centro una Familia de Familias: niños…* (Jan 2025). Short Ecuadorian TV/press feature, photos by the Center."
    ]
   },
@@ -874,7 +874,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    "data": "$482 minimum wage; Quito women's adequate employment 47.6% vs men 62.0%; NEET women 26.6% vs men 14.5%; women's average income $580.1 vs men $723.5; women's unpaid care ~31 h/week (2012); 37.7% of Quito households female-headed; CDIs from age 1 at the Center.",
    "notice": "the rational answer flips with one variable: a grandmother, a child turning four, a later shift. The barrier isn't her willingness. It's how the job and the childcare were designed.",
    "yourCall": "If you could change one rule (school hours, the CDI age limit, shift times, the diploma requirement), which would help most, and who would object?",
-   "denverRun": "the same mother in Denver with FAMLI's 12 weeks. What happens in week 13, when infant care costs about $20,978 a year and free preschool starts only at four, for 15 hours a week? (See D-LEAVE, D-CHILDCARE.)"
+   "denverRun": "the same mother in Denver with FAMLI's 12 weeks. What happens in week 13, when infant care costs about $20,978 a year and free preschool starts only at four, for 15 hours a week?"
   },
   {
    "key": "C",
@@ -884,7 +884,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    "data": "14-hour cuts from 25 Oct 2024; 93 days; weekly cuts for large industries again from Sept 2026, households spared (as of Oct 2026); 62% hydro capacity; thermal averaging 641 of 3,000 MW; 2 of 10 planned plants built; $1,916 million in losses, $763.1 million in commerce; one restaurant's sales falling from $1,500 to $600 (a case, not a statistic).",
    "notice": "the drought was nature; the shortfall was mostly decided years earlier; the cost landed by who could buy a backup.",
    "yourCall": "In 2017, someone could have voted to build backup plants instead of something else. What would you have cut to pay for it, and would anyone have thanked you before the drought?",
-   "denverRun": "Denver's lead-line program is a common good someone decided had to grow ($670 million; 36,000+ lines replaced). Colorado sick leave can be used when a workplace closes for loss of power. What Denver system is under-built right now, and who would pay first if it failed? (See D-WATER, D-COMMON, D-LEAVE.)"
+   "denverRun": "Denver's lead-line program is a common good someone decided had to grow ($670 million; 36,000+ lines replaced). Colorado sick leave can be used when a workplace closes for loss of power. What Denver system is under-built right now, and who would pay first if it failed?"
   },
   {
    "key": "D",
@@ -893,7 +893,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    "data": "60.3% of graduates lived in single rooms before joining, 2.9% after (Center study, 2006); 21% → 67% owners (2007); 900+ homes built or improved by minga brigades (2009); 92% of Venezuelan households in Quito rent (2022).",
    "notice": "time is the cost. The minga turns a year into a weekend, but only after the family saved for land and materials.",
    "yourCall": "Your group joins a minga. Whose house is it at the end of the day, and what should you never say about it?",
-   "denverRun": "Denver metro median rent of $1,874/month is 31.9% of renter income; 49% of Colorado renters are cost-burdened. A family with documented income borrows for a house at about 7.11%. How many years of rent would buy the land? (See D-HOUSING, D-CREDIT.)"
+   "denverRun": "Denver metro median rent of $1,874/month is 31.9% of renter income; 49% of Colorado renters are cost-burdened. A family with documented income borrows for a house at about 7.11%. How many years of rent would buy the land?"
   },
   {
    "key": "E",
@@ -903,7 +903,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    "data": "microcredit max 28.23% and average 19.20% (2026); street lending about 20% a month; social housing 4.99% with title; only 3.5% of migrants in one survey had ever obtained credit (2020).",
    "notice": "the same $400 costs a documented, titled family a little and an undocumented vendor a lot. The poorest borrower pays the highest price, and the lender comes to her counter every day.",
    "yourCall": "What would it take for this family to borrow at the bank's rate, and whose rule is it to change?",
-   "denverRun": "the same $400 in Denver with a credit card (21.19% APR), a payday loan capped at 36%, or a family member; 63% of U.S. adults could pay it in cash. See D-CREDIT, D-SAVINGS."
+   "denverRun": "the same $400 in Denver with a credit card (21.19% APR), a payday loan capped at 36%, or a family member; 63% of U.S. adults could pay it in cash."
   },
   {
    "key": "F",
@@ -920,7 +920,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
   "readings": [
    "**Pope Francis in Quito, 5–8 July 2015.** He celebrated Mass in Bicentenario Park, in the north of the city, and spoke to civil society at the Church of San Francisco. His theme there included the family as the first school of solidarity, and gratuitousness: giving without calculating return. ⚠️ Read both texts on vatican.va (Francis → Travels → 2015 → Ecuador) before paraphrasing, and quote nothing until checked. It stands without the course: a Pope speaking to *this city* about families.",
    "**A family of families.** The partner's own name is a theology. The Center chose it in 2021 because it learned that breaking poverty takes whole families, held together by other families (c4wf.org ✅). Read beside Halligan's not a charity program: the work is accompaniment and shared structure, not alms.",
-   "*(Optional)* **Leonidas Proaño** (1910–1988), bishop of Riobamba, known as the bishop of the Indians for his work with Indigenous Chimborazo communities. Many highland families who moved to Quito came out of the world he served. ⚠️ Confirm biography and pick a short text (e.g., *Creo en el hombre y en la comunidad*) before using."
+   "*(Optional)* **Leonidas Proaño** (1910–1988), bishop of Riobamba, known as the bishop of the Indians for his work with Indigenous Chimborazo communities. Many highland families who moved to Quito came out of the world he served."
   ],
   "question": "The families here built houses, workshops and a school by working together for sixty years, without the cushions I was born inside. When they tell me how they did it, will I hear a story about effort, a story about structure, or the truth that is both?"
  },
@@ -985,7 +985,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
      "url": "https://dspace.ups.edu.ec/bitstream/123456789/10956/1/Introduccion.pdf"
     },
     {
-     "t": "UPS thesis on family socialization at the CMT (not read)",
+     "t": "UPS thesis on family socialization at the CMT",
      "url": "https://dspace.ups.edu.ec/bitstream/123456789/10959/1/La%20experiencia%20de%20la%20socializacion%20familiar%20de%20ninos%20ninas%20y%20adolescentes%20del%20Centro%20del%20Muchacho%20Trabajador.pdf"
     }
    ]
@@ -1147,7 +1147,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
      "url": "https://rfd.org.ec/docs/boletines_rfd/Boleti%CC%81n_Resultados_Global_Findex_24%20Ec.pdf"
     },
     {
-     "t": "World Bank, Global Findex 2025 (to confirm the Ecuador figure)",
+     "t": "World Bank, Global Findex 2025",
      "url": "https://www.worldbank.org/en/publication/globalfindex/report"
     },
     {
@@ -1431,7 +1431,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
        "label": "The minimum wage (one full-time earner)",
        "monthly": 482,
        "note": "$482 a month in 2026, which most Center families do not reach.",
-       "src": "Ministry of Labor, Acuerdo MDT-2025-195 (Quito packet)"
+       "src": "Ministry of Labor, Acuerdo MDT-2025-195"
       },
       {
        "label": "Set it yourself (whole family)",
@@ -1463,7 +1463,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
       "max": 600,
       "step": 10,
       "label": "Rent for the family (your estimate)",
-      "note": "No source yet for rents in the Center's neighborhoods. A 2025 group was told the cheapest housing starts at about $400 a month; that is unverified. This starts at $250. Set your own.",
+      "note": "No source yet for rents in the Center's neighborhoods. This starts at $250. Set your own.",
       "text": "Your estimate.",
       "src": "not yet sourced"
      },
@@ -1507,7 +1507,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
      "rent": {
       "amt": 1874,
       "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
-      "src": "USAFacts (Denver mirror D-HOUSING)"
+      "src": "USAFacts"
      },
      "bus": {
       "fare": 2.75,
@@ -1630,7 +1630,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
       "here": {
        "v": false,
        "text": "No IESS pension. A $100 pension reaches only the poorest people over 65.",
-       "src": "Quito packet, 2c"
+       "src": "This trip’s “What catches you” page"
       },
       "w2": {
        "v": true,
@@ -1656,12 +1656,12 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
       "w2": {
        "v": "Depends on the job",
        "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       },
       "cash": {
        "v": "Not through the work",
        "text": "The same income-based coverage is open to them.",
-       "src": "Denver mirror (D-HEALTH)"
+       "src": "Denver mirror"
       }
      },
      {
@@ -1800,7 +1800,7 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["quito"]={
    ],
    "doing": {
     "text": "Families pool income across several earners and trades. The Center's own workshops employ former students and mothers in formal jobs.",
-    "src": "Quito packet, Barrier 1"
+    "src": "This trip’s Barriers page, Barrier 1"
    },
    "notice": "In Quito about a quarter of workers are in the informal sector, though half have no social security at all; among the Center's families, informal work is the norm. Part 3 shows why a sick child is a money problem here and a scheduling problem for a Denver worker with a payslip.",
    "yourCall": "What would the Center's families need first: a higher price per piece, or a floor under the bad weeks? Why?"
