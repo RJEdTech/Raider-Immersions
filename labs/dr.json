@@ -217,6 +217,391 @@
      }
     ]
    }
+  },
+  "FLOOR": {
+   "kind": "NoFloor",
+   "title": "Work with no floor: the campo and Denver",
+   "question": "More than half of Dominican workers are informal. What does that take away, and what does a quintal of cacao pay by the hour?",
+   "hereLabel": "Informal work in the campo",
+   "guessIntro": "For each item, guess whether the work comes with it. Then check, and compare with two Denver workers: one with a payslip and one paid in cash.",
+   "rates": [
+    {
+     "big": "54.1%",
+     "text": "of employed Dominicans were informal in early 2026, and 82.7% of the year's net new jobs were informal.",
+     "src": "Banco Central, ENCFT, via Revista Mercado, May 2026",
+     "url": "https://revistamercado.do/money-invest/republica-dominicana/record-y-realidad-rd-alcanza-5-2-millones-de-trabajadores-pero-la-informalidad-no-da-tregua/"
+    }
+   ],
+   "grid": {
+    "rows": [
+     {
+      "q": "A minimum wage that applies to you",
+      "here": {
+       "v": false,
+       "text": "Outside a contract, the minimum wage doesn't reach you.",
+       "src": "Banco Central, ENCFT, via Revista Mercado, May 2026",
+       "url": "https://revistamercado.do/money-invest/republica-dominicana/record-y-realidad-rd-alcanza-5-2-millones-de-trabajadores-pero-la-informalidad-no-da-tregua/"
+      },
+      "w2": {
+       "v": true,
+       "text": "$19.29 an hour in 2026, for anyone working in Denver, whatever their immigration status.",
+       "src": "Denver Labor",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/Citywide-Minimum-Wage"
+      },
+      "cash": {
+       "v": "On paper",
+       "text": "The same law covers cash work, but 62% of 411 surveyed Denver-area day laborers had been cheated of wages.",
+       "src": "Galemba, University of Denver, 2016–17 (via Denver Labor)",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/2023-Annual-Wage-Theft-Report",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Paid sick days",
+      "here": {
+       "v": false,
+       "text": "A day you don't work is a day you aren't paid.",
+       "src": "Banco Central, ENCFT, via Revista Mercado, May 2026",
+       "url": "https://revistamercado.do/money-invest/republica-dominicana/record-y-realidad-rd-alcanza-5-2-millones-de-trabajadores-pero-la-informalidad-no-da-tregua/"
+      },
+      "w2": {
+       "v": true,
+       "text": "1 hour for every 30 worked, up to 48 hours a year, at every employer. It also covers a sick child and weather closures.",
+       "src": "CDLE, Healthy Families and Workplaces Act",
+       "url": "https://cdle.colorado.gov/sites/cdle/files/info_%236b_rights_and_obligations_under_hfwa_2.27.2026.pdf"
+      },
+      "cash": {
+       "v": "Only if the boss follows the law",
+       "text": "Denver Labor's 2025 cases included sick-pay violations.",
+       "src": "Denver Auditor via Denver7, Nov 2025",
+       "url": "https://www.denver7.com/news/local-news/denver-says-it-has-recovered-a-record-2-31m-in-unpaid-wages-for-7-200-workers"
+      }
+     },
+     {
+      "q": "Paid time off after a new baby or a serious illness or injury",
+      "here": {
+       "v": false,
+       "text": "Paid leave runs through the social security system, and only for people who pay in.",
+       "src": "Banco Central, ENCFT, via Revista Mercado, May 2026",
+       "url": "https://revistamercado.do/money-invest/republica-dominicana/record-y-realidad-rd-alcanza-5-2-millones-de-trabajadores-pero-la-informalidad-no-da-tregua/"
+      },
+      "w2": {
+       "v": true,
+       "text": "FAMLI: up to 12 weeks at about 90% of pay for lower earners, once you have $2,500 in reported Colorado wages.",
+       "src": "Colorado FAMLI",
+       "url": "https://famli.colorado.gov/individuals-and-families/individuals-and-families-faqs"
+      },
+      "cash": {
+       "v": false,
+       "text": "FAMLI runs on reported wages. Cash pay doesn't count.",
+       "src": "Colorado FAMLI",
+       "url": "https://famli.colorado.gov/individuals-and-families/individuals-and-families-faqs"
+      }
+     },
+     {
+      "q": "Pay while you look for work if the job ends",
+      "here": {
+       "v": false,
+       "text": "No contract, no claim.",
+       "src": "Banco Central, ENCFT, via Revista Mercado, May 2026",
+       "url": "https://revistamercado.do/money-invest/republica-dominicana/record-y-realidad-rd-alcanza-5-2-millones-de-trabajadores-pero-la-informalidad-no-da-tregua/"
+      },
+      "w2": {
+       "v": true,
+       "text": "Unemployment insurance, based on reported wages.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "No reported wages, no claim.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Credit toward a pension in old age",
+      "here": {
+       "v": false,
+       "text": "No contributions to the social security system, no pension from work.",
+       "src": "Banco Central, ENCFT, via Revista Mercado, May 2026",
+       "url": "https://revistamercado.do/money-invest/republica-dominicana/record-y-realidad-rd-alcanza-5-2-millones-de-trabajadores-pero-la-informalidad-no-da-tregua/"
+      },
+      "w2": {
+       "v": true,
+       "text": "Every reported paycheck builds Social Security credits.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "Unreported pay builds no credits.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Health care that comes with the work",
+      "here": {
+       "v": "Depends",
+       "text": "Not through work. A subsidized public plan covers families on the poverty register, but it is paid far less per person than the workers' plan.",
+       "src": "DR packet, Barrier 4",
+       "mark": "care"
+      },
+      "w2": {
+       "v": "Depends on the job",
+       "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
+       "src": "Denver mirror (D-HEALTH)"
+      },
+      "cash": {
+       "v": "Not through the work",
+       "text": "The same income-based coverage is open to them.",
+       "src": "Denver mirror (D-HEALTH)"
+      }
+     },
+     {
+      "q": "A pay record a bank or landlord will accept",
+      "here": {
+       "v": false,
+       "text": "No payslip, so no bank loan or formal lease on that income.",
+       "src": "Banco Central, ENCFT, via Revista Mercado, May 2026",
+       "url": "https://revistamercado.do/money-invest/republica-dominicana/record-y-realidad-rd-alcanza-5-2-millones-de-trabajadores-pero-la-informalidad-no-da-tregua/"
+      },
+      "w2": {
+       "v": true,
+       "text": "A payslip and a tax record.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "Cash leaves no record.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "An office that will come if you are cheated",
+      "here": {
+       "v": false,
+       "text": "A painter paid for four days of five has no office to call.",
+       "src": "DR packet, Barrier 5"
+      },
+      "w2": {
+       "v": true,
+       "text": "Denver Labor recovered a record $2.31 million for about 7,200 workers in 2025.",
+       "src": "Denver Auditor via Denver7, Nov 2025",
+       "url": "https://www.denver7.com/news/local-news/denver-says-it-has-recovered-a-record-2-31m-in-unpaid-wages-for-7-200-workers"
+      },
+      "cash": {
+       "v": "On paper",
+       "text": "The office covers anyone working in Denver, but fewer than 40% of cheated day laborers asked for help.",
+       "src": "Galemba, University of Denver, 2016–17 (via Denver Labor)",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/2023-Annual-Wage-Theft-Report",
+       "mark": "care"
+      }
+     }
+    ],
+    "after": "Informal doesn't mean illegal or lazy. It means work that the protections were never built to reach: social insurance, paid sick days, paid leave. Denver has informal work too. The difference is how much of all the work it is.",
+    "def": {
+     "src": "ILO (ILOSTAT), definition of informal employment",
+     "url": "https://ilostat.ilo.org/blog/decent-work-reality-check-informality-is-everywhere/"
+    }
+   },
+   "piece": {
+    "cur": "RD$",
+    "unit": "quintal of cacao",
+    "units": "quintals",
+    "minHour": 89.33,
+    "minText": "the field workers' minimum, RD$714.60 for an 8-hour day",
+    "intro": "A cacao grower learns the price on the day of sale. Turn a quintal into hours of work.",
+    "optLabel": "Which year's price",
+    "options": [
+     {
+      "label": "Farm-gate price, May 2026",
+      "price": 7500,
+      "text": "RD$7,000–8,000 a quintal; this uses the middle (our arithmetic).",
+      "src": "El Día, May 2026",
+      "url": "https://eldia.com.do/precio-del-cacao-cae-hasta-un-60-y-preocupa-al-sector-exportador/"
+     },
+     {
+      "label": "Farm-gate price, a year earlier",
+      "price": 25000,
+      "text": "RD$20,000–30,000 a quintal; this uses the middle (our arithmetic).",
+      "src": "El Día, May 2026",
+      "url": "https://eldia.com.do/precio-del-cacao-cae-hasta-un-60-y-preocupa-al-sector-exportador/"
+     }
+    ],
+    "price": {
+     "min": 1000,
+     "max": 40000,
+     "step": 250
+    },
+    "pace": {
+     "inv": true,
+     "def": 80,
+     "min": 10,
+     "max": 400,
+     "step": 5,
+     "label": "Hours of work for one quintal (your estimate)",
+     "note": "Pruning, harvest, fermenting and drying, over a season. No source gives it. Set your own, and leave out what the inputs cost."
+    },
+    "after": "Work paid by the piece is counted in pieces and prices, never in hours. The hours disappear, and so does the comparison with a wage."
+   },
+   "month": {
+    "days": 26,
+    "den": {
+     "src": "CDLE, Healthy Families and Workplaces Act",
+     "url": "https://cdle.colorado.gov/sites/cdle/files/info_%236b_rights_and_obligations_under_hfwa_2.27.2026.pdf"
+    },
+    "denNote": "Paid sick leave (48 hours a year) covers your own illness, a child's, and weather closures. FAMLI covers a longer illness or injury once you have $2,500 in reported wages. Both need a payslip; cash work gets neither in practice.",
+    "cur": "RD$",
+    "pay": {
+     "monthly": 16993.2,
+     "min": 2000,
+     "max": 40000,
+     "step": 250,
+     "mark": "care",
+     "text": "The lowest legal monthly minimum (micro firms), RD$16,993.20 from Feb 2026. What informal campo work pays is not published, so set your own.",
+     "src": "CNS via Revista Mercado",
+     "url": "https://revistamercado.do/money-invest/daily-news/salario-minimo-en-rd/"
+    },
+    "intro": "Pay comes by the day. Pick what happens this month and see who still gets paid."
+   },
+   "events": [
+    {
+     "label": "I'm sick (3 days)",
+     "days": 3,
+     "hfwa": true
+    },
+    {
+     "label": "My child is sick (2 days)",
+     "days": 2,
+     "hfwa": true
+    },
+    {
+     "label": "Storms stop work (2 days)",
+     "days": 2,
+     "hfwa": true
+    },
+    {
+     "label": "I'm hurt (12 days)",
+     "days": 12,
+     "hfwa": true,
+     "famli": true
+    },
+    {
+     "label": "Slow week: half the usual sales (3 days)",
+     "days": 3,
+     "w2": "a payslip job can cut hours too, so this is unpaid"
+    },
+    {
+     "label": "A buyer or boss doesn't pay (1 day)",
+     "days": 1,
+     "w2": "unpaid unless a claim with Denver Labor recovers it"
+    }
+   ],
+   "doing": {
+    "text": "Neighbors work each other's land or roof in turn; rotating savings groups (san) pay out one pot a round; the colmado gives credit (fiao) until payday.",
+    "src": "DR packet, Barrier 5"
+   },
+   "notice": "Switch the year. The same quintal, grown the same way, paid more than three times as much in hours one year as the next. A grower who signed a contract before a spike kept none of it.",
+   "yourCall": "If you grew cacao, would you sign a contract at a fixed price? What would you gain, and what would you give up?"
+  },
+  "HOURS": {
+   "kind": "HoursOfWork",
+   "title": "What the pay has to cover: the campo and Denver",
+   "question": "What share of a month's pay does the basic basket for the lowest-income households take? Compare it with Denver.",
+   "people": 4,
+   "rides": 44,
+   "notice": "The basket here is the Banco Central's own measure for the poorest fifth of households, and it already includes more than food. One field worker at the legal minimum covers less than two-thirds of it.",
+   "yourCall": "What fills the gap: a second earner, money from New York or Madrid, or credit at the colmado? What does each one cost?",
+   "places": [
+    {
+     "id": "do",
+     "label": "Northern Cibao campo",
+     "cur": "RD$",
+     "month": 208,
+     "pays": [
+      {
+       "label": "The field workers' minimum (26 days)",
+       "monthly": 18579.6,
+       "note": "RD$714.60 for an 8-hour day, × 26 days (our arithmetic).",
+       "src": "CNS via Revista Mercado",
+       "url": "https://revistamercado.do/money-invest/daily-news/salario-minimo-en-rd/"
+      },
+      {
+       "label": "The micro-firm minimum wage",
+       "monthly": 16993.2,
+       "note": "RD$16,993.20 a month from Feb 2026, the lowest legal monthly minimum.",
+       "src": "CNS via Revista Mercado",
+       "url": "https://revistamercado.do/money-invest/daily-news/salario-minimo-en-rd/"
+      },
+      {
+       "label": "Set it yourself",
+       "custom": true,
+       "def": 10000,
+       "min": 1000,
+       "max": 40000,
+       "step": 250,
+       "note": "Informal campo pay isn't published. Set your own and say so.",
+       "household": false
+      }
+     ],
+     "food": {
+      "hh": 29489.84,
+      "short": "The basic basket",
+      "lab": "Basic basket, lowest-income fifth of households",
+      "text": "Banco Central: RD$29,489.84 a month for a household in the lowest-income fifth, food and other needs (May 2026).",
+      "src": "BCRD via Revista Mercado",
+      "url": "https://revistamercado.do/nacional/cuanto-cuesta-vivir-en-rd-segun-tu-region-e-ingresos-la-canasta-basica-en-mayo-2026/"
+     },
+     "rent": null,
+     "bus": null
+    },
+    {
+     "id": "den",
+     "label": "Denver",
+     "cur": "$",
+     "month": 173.33333333333334,
+     "pays": [
+      {
+       "label": "The minimum wage (one full-time earner)",
+       "monthly": 3344,
+       "note": "$19.29 an hour in 2026, about $3,343 a month full time (our arithmetic).",
+       "src": "Denver Department of Finance",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/News/2025/Denver-Local-Minimum-Wage-Adjusts-to-19.29-per-Hour-for-2026"
+      },
+      {
+       "label": "Set it yourself",
+       "custom": true,
+       "def": 3343,
+       "min": 500,
+       "max": 8000,
+       "step": 50,
+       "note": "Day labor and cash work often pay less: 62% of surveyed Denver-area day laborers had experienced wage theft (2016–17).",
+       "household": false
+      }
+     ],
+     "food": {
+      "pp": 254.55,
+      "text": "USDA Thrifty Food Plan: $1,018.20 a month for a family of four (June 2026), about $255 a person (our arithmetic). National, not Denver prices.",
+      "src": "USDA Thrifty Food Plan via WTOP",
+      "url": "https://wtop.com/news/2026/07/how-much-should-i-spend-on-groceries/"
+     },
+     "rent": {
+      "amt": 1874,
+      "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
+      "src": "USAFacts (Denver mirror D-HOUSING)"
+     },
+     "bus": {
+      "fare": 2.75,
+      "text": "RTD standard fare: $2.75 for a three-hour pass.",
+      "src": "RTD",
+      "url": "https://www.rtd-denver.com/fares"
+     }
+    }
+   ]
   }
  },
  "replace": [

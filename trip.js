@@ -103,6 +103,7 @@ function labs(t,p,sub){var L=labList(t);
   else if(cfg&&cfg.kind==='LoanCost')loanCost(t,cfg,box);
   else if(cfg&&cfg.kind==='WhoDecides')whoDecides(t,cfg,box);
   else if(cfg&&cfg.kind==='HoursOfWork')hoursOfWork(t,cfg,box);
+  else if(cfg&&cfg.kind==='NoFloor')noFloor(t,cfg,box);
   else box.innerHTML=(l.changes?'<div class="sec"><p class="kick">What you change</p><p>'+md(l.changes)+'</p></div>':'')+(l.data?'<div class="sec"><p class="kick">The real numbers</p><p>'+md(l.data)+'</p></div>':'')}
 
 function oneBadWeek(t,c,box){
@@ -175,23 +176,23 @@ function whoDecides(t,c,box){var st={dv:false,g:{},rev:{}};
   draw()}
 
 function hoursOfWork(t,c,box){var st={people:c.people||4,rides:c.rides||44,rent:{},pay:{},custom:{}};
-  c.places.forEach(function(p){if(p.rent.amt==null)st.rent[p.id]=p.rent.guess;st.pay[p.id]=0;var cu=p.pays.filter(function(x){return x.custom})[0];if(cu)st.custom[p.id]=cu.def});
+  c.places.forEach(function(p){if(p.rent&&p.rent.amt==null)st.rent[p.id]=p.rent.guess;st.pay[p.id]=0;var cu=p.pays.filter(function(x){return x.custom})[0];if(cu)st.custom[p.id]=cu.def});
   function payOf(p){var o=p.pays[st.pay[p.id]];return {o:o,monthly:o.custom?st.custom[p.id]:o.monthly}}
-  function draw(){var R=c.places.map(function(p){var P=payOf(p),hourly=P.monthly/p.month,rent=p.rent.amt!=null?p.rent.amt:st.rent[p.id],
-      it=[{k:'food',lab:p.food.lab||'Food for the household',cost:p.food.pp*st.people},{k:'rent',lab:'Rent',cost:rent},{k:'bus',lab:'Bus rides',cost:p.bus.fare*st.rides}];
+  function draw(){var R=c.places.map(function(p){var P=payOf(p),hourly=P.monthly/p.month,rent=!p.rent?0:p.rent.amt!=null?p.rent.amt:st.rent[p.id],
+      it=[{k:'food',lab:p.food.lab||'Food for the household',cost:p.food.hh!=null?p.food.hh:p.food.pp*st.people}];if(p.rent)it.push({k:'rent',lab:'Rent',cost:rent});if(p.bus)it.push({k:'bus',lab:'Bus rides',cost:p.bus.fare*st.rides});
       it.forEach(function(x){x.h=hourly>0?x.cost/hourly:0});var cost=it.reduce(function(a,b){return a+b.cost},0);
       return {p:p,P:P,it:it,cost:cost,tot:hourly>0?cost/hourly:0,share:P.monthly>0?cost/P.monthly:0}}),
       max=Math.max.apply(null,R.map(function(r){return Math.max(r.tot,r.p.month)}));
     box.innerHTML='<div class="sec"><div class="sliders"><label>People in the household: <b>'+st.people+'</b><input type="range" min="1" max="8" value="'+st.people+'" data-hw="people"></label>'+
       '<label>Bus rides a month: <b>'+st.rides+'</b><input type="range" min="0" max="120" value="'+st.rides+'" data-hw="rides"></label>'+
-      c.places.filter(function(p){return p.rent.amt==null}).map(function(p){return '<label>'+esc(p.rent.label)+': <b>'+p.cur+fmt(st.rent[p.id])+'</b><input type="range" min="'+p.rent.min+'" max="'+p.rent.max+'" step="'+p.rent.step+'" value="'+st.rent[p.id]+'" data-rent="'+p.id+'"></label><p class="muted" style="font-size:14px">'+esc(p.rent.note)+'</p>'}).join('')+
+      c.places.filter(function(p){return p.rent&&p.rent.amt==null}).map(function(p){return '<label>'+esc(p.rent.label)+': <b>'+p.cur+fmt(st.rent[p.id])+'</b><input type="range" min="'+p.rent.min+'" max="'+p.rent.max+'" step="'+p.rent.step+'" value="'+st.rent[p.id]+'" data-rent="'+p.id+'"></label><p class="muted" style="font-size:14px">'+esc(p.rent.note)+'</p>'}).join('')+
       '</div></div>'+
       R.map(function(r){var p=r.p,o=r.P.o,whole=o.household;return '<div class="fam"><h4>'+esc(p.label)+'</h4>'+
         '<label class="sl">Whose pay? <select data-pay="'+p.id+'">'+p.pays.map(function(x,i){return '<option value="'+i+'"'+(i===st.pay[p.id]?' selected':'')+'>'+esc(x.label)+'</option>'}).join('')+'</select></label>'+
         (o.custom?'<label class="sl">Monthly pay: <b>'+p.cur+fmt(st.custom[p.id])+'</b><input type="range" min="'+o.min+'" max="'+o.max+'" step="'+o.step+'" value="'+st.custom[p.id]+'" data-cu="'+p.id+'"></label>':'')+
         '<p class="muted" style="font-size:14px">'+esc(o.note||'')+(o.src?' <small>Source: '+srcLink(o)+'</small>':'')+(o.mark==='care'?' <span class="pill care">read with care</span>':'')+'</p>'+
         '<div class="stack hw" role="img" aria-label="'+esc(p.label)+': '+fmt(r.tot)+' hours of work a month">'+r.it.map(function(x){return '<span class="sg '+({food:'leave',rent:'gap',bus:'sav'})[x.k]+'" style="width:'+(x.h/max*100)+'%"></span>'}).join('')+'<i class="mark" style="left:'+(p.month/max*100)+'%"></i></div>'+
-        '<p class="fsum">Food, rent and bus cost <b>'+p.cur+fmt(r.cost)+'</b> a month: <b>'+fmt(r.share*100)+'%</b> of '+(whole?'what the whole family earns':'this pay')+'. '+
+        '<p class="fsum">'+r.it.map(function(x){return x.k==='food'?(p.food.short||'Food'):x.k}).join(', ').replace(/, ([^,]*)$/,' and $1').replace(/^./,function(a){return a.toUpperCase()})+(r.it.length>1?' cost':' costs')+' <b>'+p.cur+fmt(r.cost)+'</b> a month: <b>'+fmt(r.share*100)+'%</b> of '+(whole?'what the whole family earns':'this pay')+'. '+
           (whole?(r.share>1?'The family is short <b>'+p.cur+fmt(r.cost-r.P.monthly)+'</b> every month before anything else: clothes, school, a doctor.':'What is left for everything else: <b>'+p.cur+fmt(r.P.monthly-r.cost)+'</b>.'):
           'At this pay that is <b>'+fmt(r.tot)+' hours</b> of work, or <b>'+fmt(r.share,1)+'</b> full-time '+(r.share>=1.05?'earners':'earner')+'.')+'</p>'+
         (p.line&&whole?'<p class="fsum">Per person: <b>'+p.cur+fmt(r.P.monthly/st.people)+'</b> a month. '+esc(p.line.text)+' <small>Source: '+srcLink(p.line)+'</small></p>':'')+'<ul class="cus">'+r.it.map(function(x){var src=x.k==='food'?p.food:x.k==='rent'?p.rent:p.bus;return '<li><b>'+x.lab+'</b>: '+p.cur+fmt(x.cost)+'. '+esc(src.text||'')+' <small>Source: '+srcLink(src)+'</small></li>'}).join('')+'</ul></div>'}).join('')+
@@ -200,6 +201,54 @@ function hoursOfWork(t,c,box){var st={people:c.people||4,rides:c.rides||44,rent:
     box.querySelectorAll('[data-rent]').forEach(function(r){r.oninput=function(){st.rent[r.dataset.rent]=+r.value;draw();box.querySelector('[data-rent="'+r.dataset.rent+'"]').focus()}});
     box.querySelectorAll('[data-cu]').forEach(function(r){r.oninput=function(){st.custom[r.dataset.cu]=+r.value;draw();box.querySelector('[data-cu="'+r.dataset.cu+'"]').focus()}});
     box.querySelectorAll('[data-pay]').forEach(function(r){r.onchange=function(){st.pay[r.dataset.pay]=+r.value;draw();box.querySelector('[data-pay="'+r.dataset.pay+'"]').focus()}})}
+  draw()}
+
+function noFloor(t,c,box){var P=c.piece,M=c.month,G=c.grid,EV=c.events,
+  st={g:{},shown:false,opt:0,price:P.options[0].price,pace:P.pace.def,hrs:(P.hours||{def:8}).def,cost:P.cost?P.cost.def:0,monthly:M.pay.monthly,ev:{}};
+  function yn(v){return v===true?'<span class="pill yes">Yes</span>':v===false?'<span class="pill no">No</span>':'<span class="pill care">'+esc(v)+'</span>'}
+  function cell(x){return yn(x.v)+(x.text?' <span class="muted">'+esc(x.text)+'</span>':'')+(x.src?' <small>Source: '+srcLink(x)+'</small>':'')}
+  function draw(){var right=0,asked=0;
+    // ---- part 1: the guess
+    var h='<div class="sec"><h3>1 · What does the work come with?</h3><p>'+esc(c.guessIntro)+'</p>'+
+      '<div class="rates">'+c.rates.map(function(r){return '<p><b>'+esc(r.big)+'</b> '+esc(r.text)+' <small>Source: '+srcLink(r)+'</small>'+(r.mark==='care'?' <span class="pill care">read with care</span>':'')+'</p>'}).join('')+'</div>'+
+      '<ol class="nf">'+G.rows.map(function(r,i){var g=st.g[i];if(g!=null){asked++;if(g===r.here.v)right++}
+        return '<li><p><b>'+esc(r.q)+'</b></p>'+
+          (st.shown?'':'<div class="wq"><span class="muted">'+esc(c.hereLabel)+':</span> <button data-g="'+i+'" data-v="1" class="'+(g===true?'on':'')+'">Yes</button> <button data-g="'+i+'" data-v="0" class="'+(g===false?'on':'')+'">No</button></div>')+
+          (st.shown?'<ul class="cus nfa"><li><b>'+esc(c.hereLabel)+'</b>: '+cell(r.here)+(g!=null?(g===r.here.v?' <span class="pill yes">you got it</span>':' <span class="pill no">you guessed '+(g?'yes':'no')+'</span>'):'')+'</li>'+
+            '<li><b>A Denver job with a payslip</b>: '+cell(r.w2)+'</li><li><b>Cash or day work in Denver</b>: '+cell(r.cash)+'</li></ul>':'')+'</li>'}).join('')+'</ol>'+
+      (st.shown?'<p class="fsum">You guessed <b>'+right+' of '+asked+'</b> right. '+esc(G.after)+' <small>Source: '+srcLink(G.def)+'</small></p>':'<p><button class="btn" data-show>Show the answers</button> <span class="muted">('+asked+' of '+G.rows.length+' guessed)</span></p>')+'</div>';
+    // ---- part 2: by the piece
+    var o=P.options[st.opt],rate=P.pace.inv?1/(st.pace||1):st.pace,perHour=st.price*rate-(st.cost/(st.hrs||1)),day=perHour*st.hrs,mon=day*(P.days||26),need=P.minHour>0&&st.price>0?(P.minHour+st.cost/(st.hrs||1))/st.price:0,needPrice=(P.minHour+st.cost/(st.hrs||1))/(rate||1);
+    h+='<div class="sec"><h3>2 · Paid by the piece</h3><p>'+esc(P.intro)+'</p><div class="sliders">'+
+      (P.options.length>1?'<label class="sl">'+esc(P.optLabel||'What is sold')+': <select data-opt>'+P.options.map(function(x,i){return '<option value="'+i+'"'+(i===st.opt?' selected':'')+'>'+esc(x.label)+'</option>'}).join('')+'</select></label>':'')+
+      '<p class="muted" style="font-size:14px">'+esc(o.text)+(o.src?' <small>Source: '+srcLink(o)+'</small>':'')+(o.mark==='care'?' <span class="pill care">read with care</span>':o.mark==='yours'?' <span class="pill care">your estimate</span>':'')+'</p>'+
+      '<label>Price for one '+esc(P.unit)+': <b>'+P.cur+fmt(st.price,2)+'</b><input type="range" min="'+P.price.min+'" max="'+P.price.max+'" step="'+P.price.step+'" value="'+st.price+'" data-nf="price"></label>'+
+      '<label>'+esc(P.pace.label)+': <b>'+fmt(st.pace,2)+'</b><input type="range" min="'+P.pace.min+'" max="'+P.pace.max+'" step="'+P.pace.step+'" value="'+st.pace+'" data-nf="pace"></label><p class="muted" style="font-size:14px">'+esc(P.pace.note)+'</p>'+
+      '<label>Hours of work a day: <b>'+st.hrs+'</b><input type="range" min="1" max="14" step="1" value="'+st.hrs+'" data-nf="hrs"></label>'+
+      (P.cost?'<label>'+esc(P.cost.label)+': <b>'+P.cur+fmt(st.cost)+'</b><input type="range" min="'+P.cost.min+'" max="'+P.cost.max+'" step="'+P.cost.step+'" value="'+st.cost+'" data-nf="cost"></label><p class="muted" style="font-size:14px">'+esc(P.cost.note)+(P.cost.src?' <small>Source: '+srcLink(P.cost)+'</small>':'')+'</p>':'')+
+      '</div><p class="fsum">That is <b>'+P.cur+fmt(perHour,2)+' an hour</b>, '+P.cur+fmt(day)+' a day, about <b>'+P.cur+fmt(mon)+'</b> a month of '+(P.days||26)+' working days (our arithmetic). '+
+      (P.minHour?'The minimum wage works out to '+P.cur+fmt(P.minHour,2)+' an hour ('+esc(P.minText)+'). '+(perHour>=P.minHour?'At this pace and price the work beats the minimum, on the days it happens.':(P.pace.inv?'To reach it, one '+esc(P.unit)+' would have to take no more than <b>'+fmt(st.price/(P.minHour||1),1)+' hours</b>, or sell for <b>'+P.cur+fmt(needPrice)+'</b>.':'To reach it you would need <b>'+fmt(need,1)+' '+esc(P.units)+' an hour</b>, or a price of <b>'+P.cur+fmt(needPrice,2)+'</b> each.')):'')+'</p>'+
+      '<p class="muted">'+esc(P.after)+'</p></div>';
+    // ---- part 3: a month
+    var daily=st.monthly/(M.days||26),denDay=19.29*8,bank=6,lostI=0,lostW=0,lostC=0,rows=[];
+    EV.forEach(function(e,i){if(!st.ev[i])return;var d=e.days;lostI+=d*daily;lostC+=d*denDay;var w=0,how;
+      if(e.hfwa){var use=Math.min(bank,d);bank-=use;var rest=d-use;w=rest*denDay*(e.famli?0.1:1);how=use?'Colorado paid sick leave covers '+use+' day'+(use>1?'s':'')+(rest?(e.famli?'; FAMLI pays about 90% of the rest':'; the rest is unpaid'):''):(e.famli?'Paid sick leave is used up; FAMLI pays about 90%':'Paid sick leave is used up: unpaid')}
+      else{w=d*denDay;how=e.w2}
+      lostW+=w;rows.push('<li><b>'+esc(e.label)+'</b>. Here: '+M.cur+fmt(d*daily)+' gone. Denver payslip job: '+esc(how)+'. Denver cash work: gone.</li>')});
+    var denMon=denDay*26,sh=[['here',c.hereLabel,lostI/st.monthly],['w2','A Denver job with a payslip, at the minimum',lostW/denMon],['cash','Cash or day work in Denver, at the minimum',lostC/denMon]];
+    h+='<div class="sec"><h3>3 · A month with no floor</h3><p>'+esc(M.intro)+'</p><div class="sliders"><label>A month of pay here: <b>'+M.cur+fmt(st.monthly)+'</b><input type="range" min="'+M.pay.min+'" max="'+M.pay.max+'" step="'+M.pay.step+'" value="'+st.monthly+'" data-nf="monthly"></label>'+
+      '<p class="muted" style="font-size:14px">'+esc(M.pay.text)+' <small>Source: '+srcLink(M.pay)+'</small>'+(M.pay.mark==='care'?' <span class="pill care">read with care</span>':'')+' That is about '+M.cur+fmt(daily)+' for each of '+(M.days||26)+' working days (our arithmetic).</p></div>'+
+      '<p><b>What happens this month?</b></p><div class="wq">'+EV.map(function(e,i){return '<button data-ev="'+i+'" class="'+(st.ev[i]?'on':'')+'">'+esc(e.label)+'</button>'}).join(' ')+'</div>'+
+      sh.map(function(x){return '<div class="fam"><h4>'+esc(x[1])+'</h4><div class="stack hw"><span class="sg gap" style="width:'+Math.min(100,x[2]*100)+'%"></span></div><p class="fsum"><b>'+fmt(x[2]*100)+'%</b> of the month\'s pay lost.</p></div>'}).join('')+
+      (rows.length?'<ul class="cus">'+rows.join('')+'</ul>':'<p class="muted">Pick what happens to see who still gets paid.</p>')+
+      '<p class="muted" style="font-size:14px">Denver: '+esc(M.denNote)+' <small>Source: '+srcLink(M.den)+'</small></p>'+
+      '<p><b>What families here do instead.</b> '+esc(c.doing.text)+' <small>Source: '+esc(c.doing.src)+'</small></p></div>';
+    box.innerHTML=h;
+    box.querySelectorAll('[data-g]').forEach(function(b){b.onclick=function(){st.g[b.dataset.g]=b.dataset.v==='1';draw()}});
+    var sb=box.querySelector('[data-show]');if(sb)sb.onclick=function(){st.shown=true;draw()};
+    var so=box.querySelector('[data-opt]');if(so)so.onchange=function(){st.opt=+so.value;st.price=P.options[st.opt].price;draw();box.querySelector('[data-opt]').focus()};
+    box.querySelectorAll('[data-nf]').forEach(function(r){r.oninput=function(){st[r.dataset.nf]=+r.value;draw();box.querySelector('[data-nf="'+r.dataset.nf+'"]').focus()}});
+    box.querySelectorAll('[data-ev]').forEach(function(b){b.onclick=function(){st.ev[b.dataset.ev]=!st.ev[b.dataset.ev];draw();box.querySelector('[data-ev="'+b.dataset.ev+'"]').focus()}})}
   draw()}
 
 function loanCost(t,c,box){var start=function(d){return JSON.parse(JSON.stringify((d&&d.start)||{papers:true}))},st={dv:false,amt:c.amount,g:start(c)};

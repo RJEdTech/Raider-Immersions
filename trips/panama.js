@@ -1187,6 +1187,378 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["panama"]={
      }
     ]
    }
+  },
+  "FLOOR": {
+   "kind": "NoFloor",
+   "title": "Work with no floor: Tierras Altas and Denver",
+   "question": "Farm work in the highlands is day work, mostly without contract. What does that take away, and what does a lata of coffee pay by the hour?",
+   "hereLabel": "Informal farm work in Tierras Altas",
+   "guessIntro": "For each item, guess whether the work comes with it. Then check, and compare with two Denver workers: one with a payslip and one paid in cash.",
+   "rates": [
+    {
+     "big": "76.0%",
+     "text": "of non-farm workers in the Comarca Ngäbe-Buglé are informal; Chiriquí 52.7%; national 47.1% (Sept 2025). Farm work is not even in this count.",
+     "src": "INEC, Encuesta de Mercado Laboral, Sept 2025, Cuadro 7",
+     "url": "https://www.inec.gob.pa/archivos/P0705547520260304112943Cuadro"
+    },
+    {
+     "big": "25.1%",
+     "text": "of Indigenous people in Panama are covered by social security (CSS), by the 2023 census as reported secondhand.",
+     "src": "Guerra & Rodríguez 2026, citing La Estrella",
+     "mark": "care"
+    }
+   ],
+   "grid": {
+    "rows": [
+     {
+      "q": "A minimum wage that applies to you",
+      "here": {
+       "v": false,
+       "text": "Agriculture's minimum is $1.64 an hour at small farms, but spoken, informal farm work often sits outside it.",
+       "src": "La Prensa, Jan 2026",
+       "url": "https://www.prensa.com/economia/salario-minimo-2026-en-panama-estas-son-las-nuevas-tarifas-por-actividad-y-region/",
+       "mark": "care"
+      },
+      "w2": {
+       "v": true,
+       "text": "$19.29 an hour in 2026, for anyone working in Denver, whatever their immigration status.",
+       "src": "Denver Labor",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/Citywide-Minimum-Wage"
+      },
+      "cash": {
+       "v": "On paper",
+       "text": "The same law covers cash work, but 62% of 411 surveyed Denver-area day laborers had been cheated of wages.",
+       "src": "Galemba, University of Denver, 2016–17 (via Denver Labor)",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/2023-Annual-Wage-Theft-Report",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Paid sick days",
+      "here": {
+       "v": false,
+       "text": "A day you don't work is a day you aren't paid.",
+       "src": "Panama packet, Barrier 3"
+      },
+      "w2": {
+       "v": true,
+       "text": "1 hour for every 30 worked, up to 48 hours a year, at every employer. It also covers a sick child and weather closures.",
+       "src": "CDLE, Healthy Families and Workplaces Act",
+       "url": "https://cdle.colorado.gov/sites/cdle/files/info_%236b_rights_and_obligations_under_hfwa_2.27.2026.pdf"
+      },
+      "cash": {
+       "v": "Only if the boss follows the law",
+       "text": "Denver Labor's 2025 cases included sick-pay violations.",
+       "src": "Denver Auditor via Denver7, Nov 2025",
+       "url": "https://www.denver7.com/news/local-news/denver-says-it-has-recovered-a-record-2-31m-in-unpaid-wages-for-7-200-workers"
+      }
+     },
+     {
+      "q": "Paid time off after a new baby or a serious illness or injury",
+      "here": {
+       "v": false,
+       "text": "Paid leave runs through the CSS, and only for people who pay in.",
+       "src": "Panama packet, Barrier 3"
+      },
+      "w2": {
+       "v": true,
+       "text": "FAMLI: up to 12 weeks at about 90% of pay for lower earners, once you have $2,500 in reported Colorado wages.",
+       "src": "Colorado FAMLI",
+       "url": "https://famli.colorado.gov/individuals-and-families/individuals-and-families-faqs"
+      },
+      "cash": {
+       "v": false,
+       "text": "FAMLI runs on reported wages. Cash pay doesn't count.",
+       "src": "Colorado FAMLI",
+       "url": "https://famli.colorado.gov/individuals-and-families/individuals-and-families-faqs"
+      }
+     },
+     {
+      "q": "Pay while you look for work if the job ends",
+      "here": {
+       "v": false,
+       "text": "No contract, no claim.",
+       "src": "Panama packet, Barrier 3"
+      },
+      "w2": {
+       "v": true,
+       "text": "Unemployment insurance, based on reported wages.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "No reported wages, no claim.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Credit toward a pension in old age",
+      "here": {
+       "v": false,
+       "text": "No CSS contributions. A minimum pension of $144 is planned for people without enough of them.",
+       "src": "Panama packet, 2c",
+       "mark": "care"
+      },
+      "w2": {
+       "v": true,
+       "text": "Every reported paycheck builds Social Security credits.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "Unreported pay builds no credits.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Health care that comes with the work",
+      "here": {
+       "v": false,
+       "text": "Coverage through the CSS needs contributions.",
+       "src": "Panama packet, Barrier 3"
+      },
+      "w2": {
+       "v": "Depends on the job",
+       "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
+       "src": "Denver mirror (D-HEALTH)"
+      },
+      "cash": {
+       "v": "Not through the work",
+       "text": "The same income-based coverage is open to them.",
+       "src": "Denver mirror (D-HEALTH)"
+      }
+     },
+     {
+      "q": "A pay record a bank or landlord will accept",
+      "here": {
+       "v": false,
+       "text": "No payslip, so no bank loan or formal lease on that income.",
+       "src": "Panama packet, Barrier 3"
+      },
+      "w2": {
+       "v": true,
+       "text": "A payslip and a tax record.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "Cash leaves no record.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "An office that will come if you are cheated",
+      "here": {
+       "v": false,
+       "text": "A worker hurt the week before payday has no claim and no record of what was owed.",
+       "src": "Panama packet, Barrier 3"
+      },
+      "w2": {
+       "v": true,
+       "text": "Denver Labor recovered a record $2.31 million for about 7,200 workers in 2025.",
+       "src": "Denver Auditor via Denver7, Nov 2025",
+       "url": "https://www.denver7.com/news/local-news/denver-says-it-has-recovered-a-record-2-31m-in-unpaid-wages-for-7-200-workers"
+      },
+      "cash": {
+       "v": "On paper",
+       "text": "The office covers anyone working in Denver, but fewer than 40% of cheated day laborers asked for help.",
+       "src": "Galemba, University of Denver, 2016–17 (via Denver Labor)",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/2023-Annual-Wage-Theft-Report",
+       "mark": "care"
+      }
+     }
+    ],
+    "after": "Informal doesn't mean illegal or lazy. It means work that the protections were never built to reach: social insurance, paid sick days, paid leave. Denver has informal work too. The difference is how much of all the work it is.",
+    "def": {
+     "src": "ILO (ILOSTAT), definition of informal employment",
+     "url": "https://ilostat.ilo.org/blog/decent-work-reality-check-informality-is-everywhere/"
+    }
+   },
+   "piece": {
+    "cur": "$",
+    "unit": "lata of coffee",
+    "units": "latas",
+    "minHour": 1.64,
+    "minText": "the farm minimum at small farms, $1.64 an hour",
+    "intro": "Coffee pickers are paid by the lata (a can of picked cherries), not by the hour. Turn the latas into an hour of work.",
+    "options": [
+     {
+      "label": "Coffee picked, per lata",
+      "price": 2.92,
+      "mark": "yours",
+      "text": "No source publishes what a lata pays in Tierras Altas. This starts at the price that would match the farm minimum ($13.12 for an 8-hour day) at 4.5 latas a day (our arithmetic). Find the real price.",
+      "src": "Panama packet, Barriers 2 and 3"
+     }
+    ],
+    "price": {
+     "min": 0.25,
+     "max": 8,
+     "step": 0.05
+    },
+    "pace": {
+     "def": 0.56,
+     "min": 0.1,
+     "max": 3,
+     "step": 0.01,
+     "label": "Latas picked in an hour (your estimate)",
+     "note": "One worker reported 4–5 latas a day in Panama and 15–20 in Costa Rica, where the harvest is heavier (an anecdote, time unclear)."
+    },
+    "after": "Work paid by the piece is counted in pieces and prices, never in hours. The hours disappear, and so does the comparison with a wage."
+   },
+   "month": {
+    "days": 26,
+    "den": {
+     "src": "CDLE, Healthy Families and Workplaces Act",
+     "url": "https://cdle.colorado.gov/sites/cdle/files/info_%236b_rights_and_obligations_under_hfwa_2.27.2026.pdf"
+    },
+    "denNote": "Paid sick leave (48 hours a year) covers your own illness, a child's, and weather closures. FAMLI covers a longer illness or injury once you have $2,500 in reported wages. Both need a payslip; cash work gets neither in practice.",
+    "cur": "$",
+    "pay": {
+     "monthly": 341,
+     "min": 50,
+     "max": 1500,
+     "step": 5,
+     "mark": "care",
+     "text": "The farm minimum, $1.64 an hour × 8 hours × 26 days (our arithmetic). Ngäbe workers reported farm cleaning paying about $13 a day.",
+     "src": "La Prensa, Jan 2026",
+     "url": "https://www.prensa.com/economia/salario-minimo-2026-en-panama-estas-son-las-nuevas-tarifas-por-actividad-y-region/"
+    },
+    "intro": "Pay comes by the day. Pick what happens this month and see who still gets paid."
+   },
+   "events": [
+    {
+     "label": "I'm sick (3 days)",
+     "days": 3,
+     "hfwa": true
+    },
+    {
+     "label": "My child is sick (2 days)",
+     "days": 2,
+     "hfwa": true
+    },
+    {
+     "label": "Storms stop work (2 days)",
+     "days": 2,
+     "hfwa": true
+    },
+    {
+     "label": "I'm hurt (12 days)",
+     "days": 12,
+     "hfwa": true,
+     "famli": true
+    },
+    {
+     "label": "Slow week: half the usual sales (3 days)",
+     "days": 3,
+     "w2": "a payslip job can cut hours too, so this is unpaid"
+    },
+    {
+     "label": "A buyer or boss doesn't pay (1 day)",
+     "days": 1,
+     "w2": "unpaid unless a claim with Denver Labor recovers it"
+    }
+   ],
+   "doing": {
+    "text": "Whole families travel for the harvest, often to Costa Rica for four to six months, so more hands earn.",
+    "src": "Panama packet, Barriers 1 and 4"
+   },
+   "notice": "Panama uses the dollar, so the numbers look familiar. They aren't: a full day at the farm minimum is less than one hour at Denver's minimum.",
+   "yourCall": "What would a coffee picker need to know before the harvest to bargain for a fair price per lata? Who has that information?"
+  },
+  "HOURS": {
+   "kind": "HoursOfWork",
+   "title": "What the pay has to cover: Tierras Altas and Denver",
+   "question": "Can a month at the farm minimum feed a household? Compare it with Denver, in the same dollars.",
+   "people": 4,
+   "rides": 44,
+   "notice": "A full month at the farm minimum does not quite buy the food basket alone. Same currency as Denver, so no exchange rate hides it.",
+   "yourCall": "If one month of farm work can't feed the household, what does the family do the rest of the year?",
+   "places": [
+    {
+     "id": "pa",
+     "label": "Tierras Altas, Chiriquí",
+     "cur": "$",
+     "month": 208,
+     "pays": [
+      {
+       "label": "The farm minimum (26 days of 8 hours)",
+       "monthly": 341,
+       "mark": "care",
+       "note": "$1.64 an hour at small farms (2026–27) × 8 × 26 (our arithmetic). Spoken, informal farm work often pays outside it.",
+       "src": "La Prensa, Jan 2026",
+       "url": "https://www.prensa.com/economia/salario-minimo-2026-en-panama-estas-son-las-nuevas-tarifas-por-actividad-y-region/"
+      },
+      {
+       "label": "Set it yourself",
+       "custom": true,
+       "def": 250,
+       "min": 50,
+       "max": 1500,
+       "step": 5,
+       "note": "Set a month of day work, for example farm cleaning reported at about $13 a day.",
+       "household": false
+      }
+     ],
+     "food": {
+      "hh": 345.2,
+      "short": "Food",
+      "lab": "The basic food basket (urban, outside the capital)",
+      "text": "MEF: $345.20 a month to feed an average household of 3.6 people in urban areas outside the capital (June 2026). No rural Chiriquí basket is published.",
+      "src": "MEF, June 2026",
+      "url": "https://www.mef.gob.pa/wp-content/uploads/2026/08/MEF-DAES-Canasta-Basica-Familiar-de-Alimentos-JUNIO-2026.pdf"
+     },
+     "rent": null,
+     "bus": null
+    },
+    {
+     "id": "den",
+     "label": "Denver",
+     "cur": "$",
+     "month": 173.33333333333334,
+     "pays": [
+      {
+       "label": "The minimum wage (one full-time earner)",
+       "monthly": 3344,
+       "note": "$19.29 an hour in 2026, about $3,343 a month full time (our arithmetic).",
+       "src": "Denver Department of Finance",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/News/2025/Denver-Local-Minimum-Wage-Adjusts-to-19.29-per-Hour-for-2026"
+      },
+      {
+       "label": "Set it yourself",
+       "custom": true,
+       "def": 3343,
+       "min": 500,
+       "max": 8000,
+       "step": 50,
+       "note": "Day labor and cash work often pay less: 62% of surveyed Denver-area day laborers had experienced wage theft (2016–17).",
+       "household": false
+      }
+     ],
+     "food": {
+      "pp": 254.55,
+      "text": "USDA Thrifty Food Plan: $1,018.20 a month for a family of four (June 2026), about $255 a person (our arithmetic). National, not Denver prices.",
+      "src": "USDA Thrifty Food Plan via WTOP",
+      "url": "https://wtop.com/news/2026/07/how-much-should-i-spend-on-groceries/"
+     },
+     "rent": {
+      "amt": 1874,
+      "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
+      "src": "USAFacts (Denver mirror D-HOUSING)"
+     },
+     "bus": {
+      "fare": 2.75,
+      "text": "RTD standard fare: $2.75 for a three-hour pass.",
+      "src": "RTD",
+      "url": "https://www.rtd-denver.com/fares"
+     }
+    }
+   ]
   }
  }
 };

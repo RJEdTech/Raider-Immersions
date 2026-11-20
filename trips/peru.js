@@ -1568,6 +1568,373 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["peru"]={
      }
     ]
    }
+  },
+  "FLOOR": {
+   "kind": "NoFloor",
+   "title": "Work with no floor: Quispicanchi and Denver",
+   "question": "Most work in rural Peru is informal. What does that take away, and what does a woven piece pay by the hour?",
+   "hereLabel": "Informal work in rural Peru",
+   "guessIntro": "For each item, guess whether the work comes with it. Then check, and compare with two Denver workers: one with a payslip and one paid in cash.",
+   "rates": [
+    {
+     "big": "94.5%",
+     "text": "of rural work in Peru is informal (69.8% nationally; 84.8% of workers aged 14–24), Apr 2025–Mar 2026.",
+     "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+    }
+   ],
+   "grid": {
+    "rows": [
+     {
+      "q": "A minimum wage that applies to you",
+      "here": {
+       "v": false,
+       "text": "S/1,230 a month since October 2026, but most artisans and farm workers are not employees and never touch it.",
+       "src": "D.S. 015-2026-TR",
+       "url": "https://img.lpderecho.pe/wp-content/uploads/2026/09/DS-015-2026-TR-LPDerecho.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "$19.29 an hour in 2026, for anyone working in Denver, whatever their immigration status.",
+       "src": "Denver Labor",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/Citywide-Minimum-Wage"
+      },
+      "cash": {
+       "v": "On paper",
+       "text": "The same law covers cash work, but 62% of 411 surveyed Denver-area day laborers had been cheated of wages.",
+       "src": "Galemba, University of Denver, 2016–17 (via Denver Labor)",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/2023-Annual-Wage-Theft-Report",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Paid sick days",
+      "here": {
+       "v": false,
+       "text": "A day you don't work is a day you aren't paid.",
+       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+      },
+      "w2": {
+       "v": true,
+       "text": "1 hour for every 30 worked, up to 48 hours a year, at every employer. It also covers a sick child and weather closures.",
+       "src": "CDLE, Healthy Families and Workplaces Act",
+       "url": "https://cdle.colorado.gov/sites/cdle/files/info_%236b_rights_and_obligations_under_hfwa_2.27.2026.pdf"
+      },
+      "cash": {
+       "v": "Only if the boss follows the law",
+       "text": "Denver Labor's 2025 cases included sick-pay violations.",
+       "src": "Denver Auditor via Denver7, Nov 2025",
+       "url": "https://www.denver7.com/news/local-news/denver-says-it-has-recovered-a-record-2-31m-in-unpaid-wages-for-7-200-workers"
+      }
+     },
+     {
+      "q": "Paid time off after a new baby or a serious illness or injury",
+      "here": {
+       "v": false,
+       "text": "Paid leave runs through EsSalud and the pension system, and only for people who pay in.",
+       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+      },
+      "w2": {
+       "v": true,
+       "text": "FAMLI: up to 12 weeks at about 90% of pay for lower earners, once you have $2,500 in reported Colorado wages.",
+       "src": "Colorado FAMLI",
+       "url": "https://famli.colorado.gov/individuals-and-families/individuals-and-families-faqs"
+      },
+      "cash": {
+       "v": false,
+       "text": "FAMLI runs on reported wages. Cash pay doesn't count.",
+       "src": "Colorado FAMLI",
+       "url": "https://famli.colorado.gov/individuals-and-families/individuals-and-families-faqs"
+      }
+     },
+     {
+      "q": "Pay while you look for work if the job ends",
+      "here": {
+       "v": false,
+       "text": "No contract, no claim.",
+       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+      },
+      "w2": {
+       "v": true,
+       "text": "Unemployment insurance, based on reported wages.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "No reported wages, no claim.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Credit toward a pension in old age",
+      "here": {
+       "v": false,
+       "text": "No contributions to EsSalud and the pension system, no pension from work.",
+       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+      },
+      "w2": {
+       "v": true,
+       "text": "Every reported paycheck builds Social Security credits.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "Unreported pay builds no credits.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Health care that comes with the work",
+      "here": {
+       "v": false,
+       "text": "Coverage through EsSalud and the pension system needs contributions.",
+       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+      },
+      "w2": {
+       "v": "Depends on the job",
+       "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
+       "src": "Denver mirror (D-HEALTH)"
+      },
+      "cash": {
+       "v": "Not through the work",
+       "text": "The same income-based coverage is open to them.",
+       "src": "Denver mirror (D-HEALTH)"
+      }
+     },
+     {
+      "q": "A pay record a bank or landlord will accept",
+      "here": {
+       "v": false,
+       "text": "No payslip, so no bank loan or formal lease on that income.",
+       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+      },
+      "w2": {
+       "v": true,
+       "text": "A payslip and a tax record.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "Cash leaves no record.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "An office that will come if you are cheated",
+      "here": {
+       "v": false,
+       "text": "Most work has no inspector who will come.",
+       "src": "INEI, EPEN, via Expreso (Peru packet, Barrier 15)"
+      },
+      "w2": {
+       "v": true,
+       "text": "Denver Labor recovered a record $2.31 million for about 7,200 workers in 2025.",
+       "src": "Denver Auditor via Denver7, Nov 2025",
+       "url": "https://www.denver7.com/news/local-news/denver-says-it-has-recovered-a-record-2-31m-in-unpaid-wages-for-7-200-workers"
+      },
+      "cash": {
+       "v": "On paper",
+       "text": "The office covers anyone working in Denver, but fewer than 40% of cheated day laborers asked for help.",
+       "src": "Galemba, University of Denver, 2016–17 (via Denver Labor)",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/2023-Annual-Wage-Theft-Report",
+       "mark": "care"
+      }
+     }
+    ],
+    "after": "Informal doesn't mean illegal or lazy. It means work that the protections were never built to reach: social insurance, paid sick days, paid leave. Denver has informal work too. The difference is how much of all the work it is.",
+    "def": {
+     "src": "ILO (ILOSTAT), definition of informal employment",
+     "url": "https://ilostat.ilo.org/blog/decent-work-reality-check-informality-is-everywhere/"
+    }
+   },
+   "piece": {
+    "cur": "S/",
+    "unit": "woven piece",
+    "units": "pieces",
+    "minHour": 5.91,
+    "minText": "S/1,230 a month on a 48-hour week, our arithmetic",
+    "intro": "A weaver thinks in pieces: what one piece brings. Turn it into an hour of work.",
+    "options": [
+     {
+      "label": "A woven piece (your estimate)",
+      "price": 80,
+      "mark": "yours",
+      "text": "Nobody publishes what a South Valley weaver receives. INEI, MINCETUR and PROMPERÚ don't count it. Set the price she gets, not the price in a Cusco shop.",
+      "src": "Peru packet, Barrier 2 (checked absence)"
+     }
+    ],
+    "price": {
+     "min": 5,
+     "max": 600,
+     "step": 5
+    },
+    "pace": {
+     "inv": true,
+     "def": 16,
+     "min": 2,
+     "max": 80,
+     "step": 1,
+     "label": "Hours of work for one piece (your estimate)",
+     "note": "16 hours is two working days. Spinning, dyeing and weaving all count. Set your own."
+    },
+    "after": "Work paid by the piece is counted in pieces and prices, never in hours. The hours disappear, and so does the comparison with a wage."
+   },
+   "month": {
+    "days": 26,
+    "den": {
+     "src": "CDLE, Healthy Families and Workplaces Act",
+     "url": "https://cdle.colorado.gov/sites/cdle/files/info_%236b_rights_and_obligations_under_hfwa_2.27.2026.pdf"
+    },
+    "denNote": "Paid sick leave (48 hours a year) covers your own illness, a child's, and weather closures. FAMLI covers a longer illness or injury once you have $2,500 in reported wages. Both need a payslip; cash work gets neither in practice.",
+    "cur": "S/",
+    "pay": {
+     "monthly": 918.4,
+     "min": 100,
+     "max": 3000,
+     "step": 10,
+     "text": "Average monthly income from work in rural Peru, S/918.4 (Apr 2024–Mar 2025).",
+     "src": "INEI (Peru packet, 2c)"
+    },
+    "intro": "Pay comes by the day. Pick what happens this month and see who still gets paid."
+   },
+   "events": [
+    {
+     "label": "I'm sick (3 days)",
+     "days": 3,
+     "hfwa": true
+    },
+    {
+     "label": "My child is sick (2 days)",
+     "days": 2,
+     "hfwa": true
+    },
+    {
+     "label": "Storms stop work (2 days)",
+     "days": 2,
+     "hfwa": true
+    },
+    {
+     "label": "I'm hurt (12 days)",
+     "days": 12,
+     "hfwa": true,
+     "famli": true
+    },
+    {
+     "label": "Slow week: half the usual sales (3 days)",
+     "days": 3,
+     "w2": "a payslip job can cut hours too, so this is unpaid"
+    },
+    {
+     "label": "A buyer or boss doesn't pay (1 day)",
+     "days": 1,
+     "w2": "unpaid unless a claim with Denver Labor recovers it"
+    }
+   ],
+   "doing": {
+    "text": "Associations, cooperatives and ayni (trading work between neighbors) create floors where the law doesn't. Weaving associations sell direct.",
+    "src": "Peru packet, Barriers 2 and 15"
+   },
+   "notice": "The guess usually goes wrong in the same place: students assume a job comes with something. Most rural work comes with nothing but the pay for the piece or the day. Then notice part 2: when nobody counts hours, a piece that looks well priced can pay less than the minimum wage.",
+   "yourCall": "Which missing protection would change a family's year the most? What do they use in its place?"
+  },
+  "HOURS": {
+   "kind": "HoursOfWork",
+   "title": "What the pay has to cover: Quispicanchi and Denver",
+   "question": "How much of a rural Peruvian income does food alone take? Compare it with Denver's food, rent and bus at the minimum wage.",
+   "people": 5,
+   "rides": 44,
+   "notice": "The average rural income from work buys the food basket for about three and a half people, with nothing left for anything else. Most rural families own an adobe house and walk, so there is no rent or bus here. Their cushion is the farm itself.",
+   "yourCall": "If the food basket takes the whole income, what pays for school, a doctor or seed? Where does that money come from?",
+   "places": [
+    {
+     "id": "pe",
+     "label": "Quispicanchi (rural Cusco)",
+     "cur": "S/",
+     "month": 208,
+     "pays": [
+      {
+       "label": "Average income from work, rural Peru",
+       "monthly": 918.4,
+       "note": "S/918.4 a month (Apr 2024–Mar 2025).",
+       "src": "INEI (Peru packet, 2c)"
+      },
+      {
+       "label": "The minimum wage (one full-time earner)",
+       "monthly": 1230,
+       "note": "S/1,230 a month since October 2026, which most rural workers never touch.",
+       "src": "D.S. 015-2026-TR",
+       "url": "https://img.lpderecho.pe/wp-content/uploads/2026/09/DS-015-2026-TR-LPDerecho.pdf"
+      },
+      {
+       "label": "Set it yourself",
+       "custom": true,
+       "def": 500,
+       "min": 50,
+       "max": 3000,
+       "step": 10,
+       "note": "Set a month's income from farm work, weaving or day labor.",
+       "household": false
+      }
+     ],
+     "food": {
+      "pp": 260,
+      "short": "Food",
+      "lab": "Food at Peru's extreme-poverty line",
+      "text": "INEI's basic food basket: S/260 a person a month (2025). Below it is extreme poverty.",
+      "src": "INEI via El Peruano",
+      "url": "https://elperuano.pe/noticia/295035-inei-pobreza-se-redujo-en-19-en-el-2025-y-afecta-al-257-de-peruanos"
+     },
+     "rent": null,
+     "bus": null
+    },
+    {
+     "id": "den",
+     "label": "Denver",
+     "cur": "$",
+     "month": 173.33333333333334,
+     "pays": [
+      {
+       "label": "The minimum wage (one full-time earner)",
+       "monthly": 3344,
+       "note": "$19.29 an hour in 2026, about $3,343 a month full time (our arithmetic).",
+       "src": "Denver Department of Finance",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/News/2025/Denver-Local-Minimum-Wage-Adjusts-to-19.29-per-Hour-for-2026"
+      },
+      {
+       "label": "Set it yourself",
+       "custom": true,
+       "def": 3343,
+       "min": 500,
+       "max": 8000,
+       "step": 50,
+       "note": "Day labor and cash work often pay less: 62% of surveyed Denver-area day laborers had experienced wage theft (2016–17).",
+       "household": false
+      }
+     ],
+     "food": {
+      "pp": 254.55,
+      "text": "USDA Thrifty Food Plan: $1,018.20 a month for a family of four (June 2026), about $255 a person (our arithmetic). National, not Denver prices.",
+      "src": "USDA Thrifty Food Plan via WTOP",
+      "url": "https://wtop.com/news/2026/07/how-much-should-i-spend-on-groceries/"
+     },
+     "rent": {
+      "amt": 1874,
+      "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
+      "src": "USAFacts (Denver mirror D-HOUSING)"
+     },
+     "bus": {
+      "fare": 2.75,
+      "text": "RTD standard fare: $2.75 for a three-hour pass.",
+      "src": "RTD",
+      "url": "https://www.rtd-denver.com/fares"
+     }
+    }
+   ]
   }
  }
 };

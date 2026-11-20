@@ -399,6 +399,304 @@
      }
     }
    ]
+  },
+  "FLOOR": {
+   "kind": "NoFloor",
+   "title": "Work with no floor: Tijuana and Denver",
+   "question": "One in three Tijuana workers is informal. What does that take away, and what does selling from a cart pay by the hour?",
+   "hereLabel": "Informal work in Tijuana",
+   "guessIntro": "For each item, guess whether the work comes with it. Then check, and compare with two Denver workers: one with a payslip and one paid in cash.",
+   "rates": [
+    {
+     "big": "36.6%",
+     "text": "of Tijuana workers are informal (Q1 2026), below the 43.4% average for 39 Mexican cities.",
+     "src": "INEGI, ENOE results by city, Q1 2026",
+     "url": "https://www.inegi.org.mx/contenidos/programas/enoe/15ymas/doc/resultados_ciudades_enoe_2026_trim1.pdf"
+    },
+    {
+     "big": "43.0%",
+     "text": "of Tijuana workers were unemployed, underemployed or in critical conditions such as 35+ hours at up to one minimum wage (Q1 2026), up from 33.7%.",
+     "src": "INEGI, ENOE results by city, Q1 2026",
+     "url": "https://www.inegi.org.mx/contenidos/programas/enoe/15ymas/doc/resultados_ciudades_enoe_2026_trim1.pdf"
+    }
+   ],
+   "grid": {
+    "rows": [
+     {
+      "q": "A minimum wage that applies to you",
+      "here": {
+       "v": false,
+       "text": "Outside a contract, the minimum wage doesn't reach you.",
+       "src": "INEGI, ENOE results by city, Q1 2026",
+       "url": "https://www.inegi.org.mx/contenidos/programas/enoe/15ymas/doc/resultados_ciudades_enoe_2026_trim1.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "$19.29 an hour in 2026, for anyone working in Denver, whatever their immigration status.",
+       "src": "Denver Labor",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/Citywide-Minimum-Wage"
+      },
+      "cash": {
+       "v": "On paper",
+       "text": "The same law covers cash work, but 62% of 411 surveyed Denver-area day laborers had been cheated of wages.",
+       "src": "Galemba, University of Denver, 2016–17 (via Denver Labor)",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/2023-Annual-Wage-Theft-Report",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Paid sick days",
+      "here": {
+       "v": false,
+       "text": "A day you don't work is a day you aren't paid.",
+       "src": "INEGI, ENOE results by city, Q1 2026",
+       "url": "https://www.inegi.org.mx/contenidos/programas/enoe/15ymas/doc/resultados_ciudades_enoe_2026_trim1.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "1 hour for every 30 worked, up to 48 hours a year, at every employer. It also covers a sick child and weather closures.",
+       "src": "CDLE, Healthy Families and Workplaces Act",
+       "url": "https://cdle.colorado.gov/sites/cdle/files/info_%236b_rights_and_obligations_under_hfwa_2.27.2026.pdf"
+      },
+      "cash": {
+       "v": "Only if the boss follows the law",
+       "text": "Denver Labor's 2025 cases included sick-pay violations.",
+       "src": "Denver Auditor via Denver7, Nov 2025",
+       "url": "https://www.denver7.com/news/local-news/denver-says-it-has-recovered-a-record-2-31m-in-unpaid-wages-for-7-200-workers"
+      }
+     },
+     {
+      "q": "Paid time off after a new baby or a serious illness or injury",
+      "here": {
+       "v": false,
+       "text": "Paid leave runs through the IMSS, and only for people who pay in.",
+       "src": "INEGI, ENOE results by city, Q1 2026",
+       "url": "https://www.inegi.org.mx/contenidos/programas/enoe/15ymas/doc/resultados_ciudades_enoe_2026_trim1.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "FAMLI: up to 12 weeks at about 90% of pay for lower earners, once you have $2,500 in reported Colorado wages.",
+       "src": "Colorado FAMLI",
+       "url": "https://famli.colorado.gov/individuals-and-families/individuals-and-families-faqs"
+      },
+      "cash": {
+       "v": false,
+       "text": "FAMLI runs on reported wages. Cash pay doesn't count.",
+       "src": "Colorado FAMLI",
+       "url": "https://famli.colorado.gov/individuals-and-families/individuals-and-families-faqs"
+      }
+     },
+     {
+      "q": "Pay while you look for work if the job ends",
+      "here": {
+       "v": false,
+       "text": "No contract, no claim.",
+       "src": "INEGI, ENOE results by city, Q1 2026",
+       "url": "https://www.inegi.org.mx/contenidos/programas/enoe/15ymas/doc/resultados_ciudades_enoe_2026_trim1.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "Unemployment insurance, based on reported wages.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "No reported wages, no claim.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Credit toward a pension in old age",
+      "here": {
+       "v": false,
+       "text": "No contributions to the IMSS, no pension from work.",
+       "src": "INEGI, ENOE results by city, Q1 2026",
+       "url": "https://www.inegi.org.mx/contenidos/programas/enoe/15ymas/doc/resultados_ciudades_enoe_2026_trim1.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "Every reported paycheck builds Social Security credits.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "Unreported pay builds no credits.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Health care that comes with the work",
+      "here": {
+       "v": "Not through work",
+       "text": "IMSS covers contributors; IMSS-Bienestar serves people without it.",
+       "src": "Zeta Tijuana",
+       "url": "https://zetatijuana.com/2023/11/imss-bienestar-bc-inicia-rebasado-y-sin-recursos/"
+      },
+      "w2": {
+       "v": "Depends on the job",
+       "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
+       "src": "Denver mirror (D-HEALTH)"
+      },
+      "cash": {
+       "v": "Not through the work",
+       "text": "The same income-based coverage is open to them.",
+       "src": "Denver mirror (D-HEALTH)"
+      }
+     },
+     {
+      "q": "A pay record a bank or landlord will accept",
+      "here": {
+       "v": false,
+       "text": "No payslip, so no bank loan or formal lease on that income.",
+       "src": "INEGI, ENOE results by city, Q1 2026",
+       "url": "https://www.inegi.org.mx/contenidos/programas/enoe/15ymas/doc/resultados_ciudades_enoe_2026_trim1.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "A payslip and a tax record.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "Cash leaves no record.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "An office that will come if you are cheated",
+      "here": {
+       "v": false,
+       "text": "No contract means nothing an inspector can enforce.",
+       "src": "INEGI, ENOE results by city, Q1 2026",
+       "url": "https://www.inegi.org.mx/contenidos/programas/enoe/15ymas/doc/resultados_ciudades_enoe_2026_trim1.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "Denver Labor recovered a record $2.31 million for about 7,200 workers in 2025.",
+       "src": "Denver Auditor via Denver7, Nov 2025",
+       "url": "https://www.denver7.com/news/local-news/denver-says-it-has-recovered-a-record-2-31m-in-unpaid-wages-for-7-200-workers"
+      },
+      "cash": {
+       "v": "On paper",
+       "text": "The office covers anyone working in Denver, but fewer than 40% of cheated day laborers asked for help.",
+       "src": "Galemba, University of Denver, 2016–17 (via Denver Labor)",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/2023-Annual-Wage-Theft-Report",
+       "mark": "care"
+      }
+     }
+    ],
+    "after": "Informal doesn't mean illegal or lazy. It means work that the protections were never built to reach: social insurance, paid sick days, paid leave. Denver has informal work too. The difference is how much of all the work it is.",
+    "def": {
+     "src": "ILO (ILOSTAT), definition of informal employment",
+     "url": "https://ilostat.ilo.org/blog/decent-work-reality-check-informality-is-everywhere/"
+    }
+   },
+   "piece": {
+    "cur": "MX$",
+    "unit": "item sold",
+    "units": "items",
+    "minHour": 64.29,
+    "minText": "440.87 pesos a day on a 48-hour week, our arithmetic",
+    "intro": "A vendor counts sales, not hours. Turn the sales into an hour of work, after the cost of the spot.",
+    "options": [
+     {
+      "label": "Food or goods from a cart or stall (your estimate)",
+      "price": 25,
+      "mark": "yours",
+      "text": "INEGI counts vendors but not what they earn; there is no Tijuana figure. Set the profit on one sale, after ingredients.",
+      "src": "Tijuana packet, Barrier 2"
+     }
+    ],
+    "price": {
+     "min": 2,
+     "max": 150,
+     "step": 1
+    },
+    "pace": {
+     "def": 6,
+     "min": 1,
+     "max": 40,
+     "step": 1,
+     "label": "Sales in an hour (your estimate)",
+     "note": "Count the slow hours too: setting up, waiting, packing away."
+    },
+    "cost": {
+     "def": 0,
+     "min": 0,
+     "max": 1500,
+     "step": 50,
+     "label": "A fee for the spot, per day",
+     "note": "Officials acknowledged 60–70 complaints of vendors charged 200–1,500 pesos for a spot (allegations).",
+     "src": "Zeta Tijuana, Dec 2025",
+     "url": "https://zetatijuana.com/2025/12/675-mil-personas-en-la-informalidad-sobreruedas-sin-permisos/"
+    },
+    "after": "Work paid by the piece is counted in pieces and prices, never in hours. The hours disappear, and so does the comparison with a wage."
+   },
+   "month": {
+    "days": 26,
+    "den": {
+     "src": "CDLE, Healthy Families and Workplaces Act",
+     "url": "https://cdle.colorado.gov/sites/cdle/files/info_%236b_rights_and_obligations_under_hfwa_2.27.2026.pdf"
+    },
+    "denNote": "Paid sick leave (48 hours a year) covers your own illness, a child's, and weather closures. FAMLI covers a longer illness or injury once you have $2,500 in reported wages. Both need a payslip; cash work gets neither in practice.",
+    "cur": "MX$",
+    "pay": {
+     "monthly": 6700,
+     "min": 1000,
+     "max": 30000,
+     "step": 250,
+     "mark": "care",
+     "text": "In Baja California 31.5% of workers earned up to one minimum wage and 30.4% did not report their pay (Q2 2025). This starts at half the minimum; set your own.",
+     "src": "INEGI ENOE, Baja California",
+     "url": "https://www.inegi.org.mx/contenidos/saladeprensa/boletines/2025/enoe/enoe2025_08_BC.pdf"
+    },
+    "intro": "Pay comes by the day. Pick what happens this month and see who still gets paid."
+   },
+   "events": [
+    {
+     "label": "I'm sick (3 days)",
+     "days": 3,
+     "hfwa": true
+    },
+    {
+     "label": "My child is sick (2 days)",
+     "days": 2,
+     "hfwa": true
+    },
+    {
+     "label": "Storms stop work (2 days)",
+     "days": 2,
+     "hfwa": true
+    },
+    {
+     "label": "I'm hurt (12 days)",
+     "days": 12,
+     "hfwa": true,
+     "famli": true
+    },
+    {
+     "label": "Slow week: half the usual sales (3 days)",
+     "days": 3,
+     "w2": "a payslip job can cut hours too, so this is unpaid"
+    },
+    {
+     "label": "A buyer or boss doesn't pay (1 day)",
+     "days": 1,
+     "w2": "unpaid unless a claim with Denver Labor recovers it"
+    }
+   ],
+   "doing": {
+    "text": "Vendors organize in market associations; families run tandas, rotating savings circles where each member pays in and one takes the pot.",
+    "src": "Tijuana packet, Barrier 2"
+   },
+   "notice": "Many vendors earn more an hour than a factory pays, on the days they sell. Part 3 is the other half: no one pays them on the days they can't.",
+   "yourCall": "Would you rather have the vendor's better days or the factory's steady floor? What would make you switch?"
   }
  },
  "replace": [

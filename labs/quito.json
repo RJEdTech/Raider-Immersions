@@ -323,6 +323,293 @@
      }
     }
    ]
+  },
+  "FLOOR": {
+   "kind": "NoFloor",
+   "title": "Work with no floor: Quito and Denver",
+   "question": "Most families the Center serves work informally. What does that take away, and what does piecework pay by the hour?",
+   "hereLabel": "Informal work in Quito",
+   "guessIntro": "For each item, guess whether the work comes with it. Then check, and compare with two Denver workers: one with a payslip and one paid in cash.",
+   "rates": [
+    {
+     "big": "51.9%",
+     "text": "of people with work in Quito have no social-security affiliation at all (2025).",
+     "src": "Quito Instituto de Investigaciones de la Ciudad, Mercado Laboral 2025",
+     "url": "https://investigaciones.quito.gob.ec/wp-content/uploads/2026/04/Mercado-Laboral-Anual-2025.pdf"
+    },
+    {
+     "big": "52.8%",
+     "text": "of employed Ecuadorians work in the informal sector, with no tax number (May 2026).",
+     "src": "INEC, ENEMDU, via Expreso",
+     "url": "https://www.expreso.ec/economia-y-negocios/significa-empleo-adecuado-ecuador-sigue-estancado-36-6-286685.html"
+    }
+   ],
+   "grid": {
+    "rows": [
+     {
+      "q": "A minimum wage that applies to you",
+      "here": {
+       "v": false,
+       "text": "Outside a contract, the minimum wage doesn't reach you.",
+       "src": "Quito Instituto de Investigaciones de la Ciudad, Mercado Laboral 2025",
+       "url": "https://investigaciones.quito.gob.ec/wp-content/uploads/2026/04/Mercado-Laboral-Anual-2025.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "$19.29 an hour in 2026, for anyone working in Denver, whatever their immigration status.",
+       "src": "Denver Labor",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/Citywide-Minimum-Wage"
+      },
+      "cash": {
+       "v": "On paper",
+       "text": "The same law covers cash work, but 62% of 411 surveyed Denver-area day laborers had been cheated of wages.",
+       "src": "Galemba, University of Denver, 2016–17 (via Denver Labor)",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/2023-Annual-Wage-Theft-Report",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Paid sick days",
+      "here": {
+       "v": false,
+       "text": "A day you don't work is a day you aren't paid.",
+       "src": "Quito Instituto de Investigaciones de la Ciudad, Mercado Laboral 2025",
+       "url": "https://investigaciones.quito.gob.ec/wp-content/uploads/2026/04/Mercado-Laboral-Anual-2025.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "1 hour for every 30 worked, up to 48 hours a year, at every employer. It also covers a sick child and weather closures.",
+       "src": "CDLE, Healthy Families and Workplaces Act",
+       "url": "https://cdle.colorado.gov/sites/cdle/files/info_%236b_rights_and_obligations_under_hfwa_2.27.2026.pdf"
+      },
+      "cash": {
+       "v": "Only if the boss follows the law",
+       "text": "Denver Labor's 2025 cases included sick-pay violations.",
+       "src": "Denver Auditor via Denver7, Nov 2025",
+       "url": "https://www.denver7.com/news/local-news/denver-says-it-has-recovered-a-record-2-31m-in-unpaid-wages-for-7-200-workers"
+      }
+     },
+     {
+      "q": "Paid time off after a new baby or a serious illness or injury",
+      "here": {
+       "v": false,
+       "text": "Paid leave runs through the IESS, and only for people who pay in.",
+       "src": "Quito Instituto de Investigaciones de la Ciudad, Mercado Laboral 2025",
+       "url": "https://investigaciones.quito.gob.ec/wp-content/uploads/2026/04/Mercado-Laboral-Anual-2025.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "FAMLI: up to 12 weeks at about 90% of pay for lower earners, once you have $2,500 in reported Colorado wages.",
+       "src": "Colorado FAMLI",
+       "url": "https://famli.colorado.gov/individuals-and-families/individuals-and-families-faqs"
+      },
+      "cash": {
+       "v": false,
+       "text": "FAMLI runs on reported wages. Cash pay doesn't count.",
+       "src": "Colorado FAMLI",
+       "url": "https://famli.colorado.gov/individuals-and-families/individuals-and-families-faqs"
+      }
+     },
+     {
+      "q": "Pay while you look for work if the job ends",
+      "here": {
+       "v": false,
+       "text": "No contract, no claim.",
+       "src": "Quito Instituto de Investigaciones de la Ciudad, Mercado Laboral 2025",
+       "url": "https://investigaciones.quito.gob.ec/wp-content/uploads/2026/04/Mercado-Laboral-Anual-2025.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "Unemployment insurance, based on reported wages.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "No reported wages, no claim.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Credit toward a pension in old age",
+      "here": {
+       "v": false,
+       "text": "No IESS pension. A $100 pension reaches only the poorest people over 65.",
+       "src": "Quito packet, 2c"
+      },
+      "w2": {
+       "v": true,
+       "text": "Every reported paycheck builds Social Security credits.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "Unreported pay builds no credits.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Health care that comes with the work",
+      "here": {
+       "v": false,
+       "text": "Coverage through the IESS needs contributions.",
+       "src": "Quito Instituto de Investigaciones de la Ciudad, Mercado Laboral 2025",
+       "url": "https://investigaciones.quito.gob.ec/wp-content/uploads/2026/04/Mercado-Laboral-Anual-2025.pdf"
+      },
+      "w2": {
+       "v": "Depends on the job",
+       "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
+       "src": "Denver mirror (D-HEALTH)"
+      },
+      "cash": {
+       "v": "Not through the work",
+       "text": "The same income-based coverage is open to them.",
+       "src": "Denver mirror (D-HEALTH)"
+      }
+     },
+     {
+      "q": "A pay record a bank or landlord will accept",
+      "here": {
+       "v": false,
+       "text": "No payslip, so no bank loan or formal lease on that income.",
+       "src": "Quito Instituto de Investigaciones de la Ciudad, Mercado Laboral 2025",
+       "url": "https://investigaciones.quito.gob.ec/wp-content/uploads/2026/04/Mercado-Laboral-Anual-2025.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "A payslip and a tax record.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "Cash leaves no record.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "An office that will come if you are cheated",
+      "here": {
+       "v": false,
+       "text": "No contract means nothing an inspector can enforce.",
+       "src": "Quito Instituto de Investigaciones de la Ciudad, Mercado Laboral 2025",
+       "url": "https://investigaciones.quito.gob.ec/wp-content/uploads/2026/04/Mercado-Laboral-Anual-2025.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "Denver Labor recovered a record $2.31 million for about 7,200 workers in 2025.",
+       "src": "Denver Auditor via Denver7, Nov 2025",
+       "url": "https://www.denver7.com/news/local-news/denver-says-it-has-recovered-a-record-2-31m-in-unpaid-wages-for-7-200-workers"
+      },
+      "cash": {
+       "v": "On paper",
+       "text": "The office covers anyone working in Denver, but fewer than 40% of cheated day laborers asked for help.",
+       "src": "Galemba, University of Denver, 2016–17 (via Denver Labor)",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/2023-Annual-Wage-Theft-Report",
+       "mark": "care"
+      }
+     }
+    ],
+    "after": "Informal doesn't mean illegal or lazy. It means work that the protections were never built to reach: social insurance, paid sick days, paid leave. Denver has informal work too. The difference is how much of all the work it is.",
+    "def": {
+     "src": "ILO (ILOSTAT), definition of informal employment",
+     "url": "https://ilostat.ilo.org/blog/decent-work-reality-check-informality-is-everywhere/"
+    }
+   },
+   "piece": {
+    "cur": "$",
+    "unit": "sewn piece",
+    "units": "pieces",
+    "minHour": 2.78,
+    "minText": "$482 a month on a 40-hour week, our arithmetic",
+    "intro": "A mother sewing at home is paid per piece. Turn the piece rate into an hour of work.",
+    "options": [
+     {
+      "label": "Piecework sewing at home (your estimate)",
+      "price": 0.25,
+      "mark": "yours",
+      "text": "No source gives a Quito piece rate. Set your own and say so in your answer.",
+      "src": "not yet sourced"
+     }
+    ],
+    "price": {
+     "min": 0.05,
+     "max": 3,
+     "step": 0.05
+    },
+    "pace": {
+     "def": 6,
+     "min": 1,
+     "max": 30,
+     "step": 1,
+     "label": "Pieces finished in an hour (your estimate)",
+     "note": "Count the hours around a child's day: sewing stops when the child needs her."
+    },
+    "after": "Work paid by the piece is counted in pieces and prices, never in hours. The hours disappear, and so does the comparison with a wage."
+   },
+   "month": {
+    "days": 26,
+    "den": {
+     "src": "CDLE, Healthy Families and Workplaces Act",
+     "url": "https://cdle.colorado.gov/sites/cdle/files/info_%236b_rights_and_obligations_under_hfwa_2.27.2026.pdf"
+    },
+    "denNote": "Paid sick leave (48 hours a year) covers your own illness, a child's, and weather closures. FAMLI covers a longer illness or injury once you have $2,500 in reported wages. Both need a payslip; cash work gets neither in practice.",
+    "cur": "$",
+    "pay": {
+     "monthly": 360,
+     "min": 50,
+     "max": 1200,
+     "step": 10,
+     "mark": "care",
+     "text": "The Center's families average just over $360 a month for about five people (undated page). Here it is treated as one earner's month.",
+     "src": "The Center (c4wf.org)",
+     "url": "https://www.c4wf.org/our-work"
+    },
+    "intro": "Pay comes by the day. Pick what happens this month and see who still gets paid."
+   },
+   "events": [
+    {
+     "label": "I'm sick (3 days)",
+     "days": 3,
+     "hfwa": true
+    },
+    {
+     "label": "My child is sick (2 days)",
+     "days": 2,
+     "hfwa": true
+    },
+    {
+     "label": "Storms stop work (2 days)",
+     "days": 2,
+     "hfwa": true
+    },
+    {
+     "label": "I'm hurt (12 days)",
+     "days": 12,
+     "hfwa": true,
+     "famli": true
+    },
+    {
+     "label": "Slow week: half the usual sales (3 days)",
+     "days": 3,
+     "w2": "a payslip job can cut hours too, so this is unpaid"
+    },
+    {
+     "label": "A buyer or boss doesn't pay (1 day)",
+     "days": 1,
+     "w2": "unpaid unless a claim with Denver Labor recovers it"
+    }
+   ],
+   "doing": {
+    "text": "Families pool income across several earners and trades. The Center's own workshops employ former students and mothers in formal jobs.",
+    "src": "Quito packet, Barrier 1"
+   },
+   "notice": "In Quito about a quarter of workers are in the informal sector, though half have no social security at all; among the Center's families, informal work is the norm. Part 3 shows why a sick child is a money problem here and a scheduling problem for a Denver worker with a payslip.",
+   "yourCall": "What would the Center's families need first: a higher price per piece, or a floor under the bad weeks? Why?"
   }
  },
  "replace": [

@@ -109,3 +109,6 @@ button.linkish{background:none;border:0;color:var(--rj,#a6192e);text-decoration:
 .legend .mark.inline{position:relative;display:inline-block;height:14px;vertical-align:middle;top:0}
 
 .sl select{max-width:100%;font-size:15px}
+
+.nf>li{margin:.6em 0}.wq button.on{background:var(--rj);color:#fff;border-color:var(--rj)}.pill.yes{background:#e3f3e6;color:#1d6b2e}.pill.no{background:#fbe4e4;color:#9b1c1c}.rates p{margin:.3em 0}.nfa{margin-top:.3em}
+.sec .wq button{margin:3px 2px}

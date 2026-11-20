@@ -1484,6 +1484,431 @@ window.TRIPS=window.TRIPS||{};window.TRIPS["honduras-teg"]={
      }
     ]
    }
+  },
+  "FLOOR": {
+   "kind": "NoFloor",
+   "title": "Work with no floor: Tegucigalpa and Denver",
+   "question": "Three in four Honduran workers are informal. What does that take away, and what does a pound of cardboard pay by the hour?",
+   "hereLabel": "Informal work in Honduras",
+   "guessIntro": "For each item, guess whether the work comes with it. Then check, and compare with two Denver workers: one with a payslip and one paid in cash.",
+   "rates": [
+    {
+     "big": "74.8%",
+     "text": "of Honduran workers are informal (Nov 2024); 95.7% of workers aged 15–18.",
+     "src": "INE Honduras, Informalidad 2024",
+     "url": "https://ine.gob.hn/wp-content/uploads/2025/09/Documento-Informalida2024.pdf"
+    },
+    {
+     "big": "About 22%",
+     "text": "of workers pay into social security (IHSS), by the business council's own figures (our arithmetic).",
+     "src": "Cohep via TuNota, May 2026",
+     "url": "https://www.tunota.com/honduras-hoy/trabajadores-no-cuentan-seguridad-social-honduras-2026-05-01",
+     "mark": "care"
+    },
+    {
+     "big": "L9,776",
+     "text": "a month is the average income of self-employed Hondurans (2026); domestic workers average L5,628.",
+     "src": "INE EPHPM via E&N, Sept 2026",
+     "url": "https://www.revistaeyn.com/empresasymanagement/ingreso-laboral-en-honduras-crece-69-pero-pobreza-alcanza-a-611-de-hogares-FA32105653"
+    }
+   ],
+   "grid": {
+    "rows": [
+     {
+      "q": "A minimum wage that applies to you",
+      "here": {
+       "v": false,
+       "text": "No minimum wage anyone enforces. Even among wage earners, 44.75% were paid less than the minimum in 2025.",
+       "src": "STSS via El Heraldo, Jul 2026",
+       "url": "https://www.elheraldo.hn/economia/casi-870-000-trabajadores-privados-no-reciben-salario-minimo-honduras-AA31572211"
+      },
+      "w2": {
+       "v": true,
+       "text": "$19.29 an hour in 2026, for anyone working in Denver, whatever their immigration status.",
+       "src": "Denver Labor",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/Citywide-Minimum-Wage"
+      },
+      "cash": {
+       "v": "On paper",
+       "text": "The same law covers cash work, but 62% of 411 surveyed Denver-area day laborers had been cheated of wages.",
+       "src": "Galemba, University of Denver, 2016–17 (via Denver Labor)",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/2023-Annual-Wage-Theft-Report",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Paid sick days",
+      "here": {
+       "v": false,
+       "text": "A day you don't work is a day you aren't paid.",
+       "src": "INE Honduras, Informalidad 2024",
+       "url": "https://ine.gob.hn/wp-content/uploads/2025/09/Documento-Informalida2024.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "1 hour for every 30 worked, up to 48 hours a year, at every employer. It also covers a sick child and weather closures.",
+       "src": "CDLE, Healthy Families and Workplaces Act",
+       "url": "https://cdle.colorado.gov/sites/cdle/files/info_%236b_rights_and_obligations_under_hfwa_2.27.2026.pdf"
+      },
+      "cash": {
+       "v": "Only if the boss follows the law",
+       "text": "Denver Labor's 2025 cases included sick-pay violations.",
+       "src": "Denver Auditor via Denver7, Nov 2025",
+       "url": "https://www.denver7.com/news/local-news/denver-says-it-has-recovered-a-record-2-31m-in-unpaid-wages-for-7-200-workers"
+      }
+     },
+     {
+      "q": "Paid time off after a new baby or a serious illness or injury",
+      "here": {
+       "v": false,
+       "text": "Paid leave runs through the IHSS, and only for people who pay in.",
+       "src": "INE Honduras, Informalidad 2024",
+       "url": "https://ine.gob.hn/wp-content/uploads/2025/09/Documento-Informalida2024.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "FAMLI: up to 12 weeks at about 90% of pay for lower earners, once you have $2,500 in reported Colorado wages.",
+       "src": "Colorado FAMLI",
+       "url": "https://famli.colorado.gov/individuals-and-families/individuals-and-families-faqs"
+      },
+      "cash": {
+       "v": false,
+       "text": "FAMLI runs on reported wages. Cash pay doesn't count.",
+       "src": "Colorado FAMLI",
+       "url": "https://famli.colorado.gov/individuals-and-families/individuals-and-families-faqs"
+      }
+     },
+     {
+      "q": "Pay while you look for work if the job ends",
+      "here": {
+       "v": false,
+       "text": "No contract, no claim.",
+       "src": "INE Honduras, Informalidad 2024",
+       "url": "https://ine.gob.hn/wp-content/uploads/2025/09/Documento-Informalida2024.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "Unemployment insurance, based on reported wages.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "No reported wages, no claim.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Credit toward a pension in old age",
+      "here": {
+       "v": false,
+       "text": "No contributions to the IHSS, no pension from work.",
+       "src": "INE Honduras, Informalidad 2024",
+       "url": "https://ine.gob.hn/wp-content/uploads/2025/09/Documento-Informalida2024.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "Every reported paycheck builds Social Security credits.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "Unreported pay builds no credits.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "Health care that comes with the work",
+      "here": {
+       "v": false,
+       "text": "Coverage through the IHSS needs contributions.",
+       "src": "INE Honduras, Informalidad 2024",
+       "url": "https://ine.gob.hn/wp-content/uploads/2025/09/Documento-Informalida2024.pdf"
+      },
+      "w2": {
+       "v": "Depends on the job",
+       "text": "Many low-wage jobs offer none. Health First Colorado covers adults up to 133% of the poverty level whatever their job.",
+       "src": "Denver mirror (D-HEALTH)"
+      },
+      "cash": {
+       "v": "Not through the work",
+       "text": "The same income-based coverage is open to them.",
+       "src": "Denver mirror (D-HEALTH)"
+      }
+     },
+     {
+      "q": "A pay record a bank or landlord will accept",
+      "here": {
+       "v": false,
+       "text": "No payslip, so no bank loan or formal lease on that income.",
+       "src": "INE Honduras, Informalidad 2024",
+       "url": "https://ine.gob.hn/wp-content/uploads/2025/09/Documento-Informalida2024.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "A payslip and a tax record.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      },
+      "cash": {
+       "v": false,
+       "text": "Cash leaves no record.",
+       "src": "our reading of the eligibility rules (Denver mirror)",
+       "mark": "care"
+      }
+     },
+     {
+      "q": "An office that will come if you are cheated",
+      "here": {
+       "v": false,
+       "text": "No contract means nothing an inspector can enforce.",
+       "src": "INE Honduras, Informalidad 2024",
+       "url": "https://ine.gob.hn/wp-content/uploads/2025/09/Documento-Informalida2024.pdf"
+      },
+      "w2": {
+       "v": true,
+       "text": "Denver Labor recovered a record $2.31 million for about 7,200 workers in 2025.",
+       "src": "Denver Auditor via Denver7, Nov 2025",
+       "url": "https://www.denver7.com/news/local-news/denver-says-it-has-recovered-a-record-2-31m-in-unpaid-wages-for-7-200-workers"
+      },
+      "cash": {
+       "v": "On paper",
+       "text": "The office covers anyone working in Denver, but fewer than 40% of cheated day laborers asked for help.",
+       "src": "Galemba, University of Denver, 2016–17 (via Denver Labor)",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Auditors-Office/Denver-Labor/2023-Annual-Wage-Theft-Report",
+       "mark": "care"
+      }
+     }
+    ],
+    "after": "Informal doesn't mean illegal or lazy. It means work that the protections were never built to reach: social insurance, paid sick days, paid leave. Denver has informal work too. The difference is how much of all the work it is.",
+    "def": {
+     "src": "ILO (ILOSTAT), definition of informal employment",
+     "url": "https://ilostat.ilo.org/blog/decent-work-reality-check-informality-is-everywhere/"
+    }
+   },
+   "piece": {
+    "cur": "L",
+    "unit": "pound",
+    "units": "pounds",
+    "minHour": 69.71,
+    "minText": "L13,292.06 a month in a small business, on a 44-hour week, our arithmetic",
+    "intro": "At the dump, people count pounds and lempiras, never hours. Turn the pounds into an hour of work.",
+    "optLabel": "What is sold, and where",
+    "options": [
+     {
+      "label": "Cardboard, sold at the dump (2022)",
+      "price": 0.2,
+      "mark": "care",
+      "text": "L0.20 a pound, from one recycler. Fifteen pounds of cardboard bought one L3 egg.",
+      "src": "El Heraldo, May 2022 (Tegucigalpa packet)"
+     },
+     {
+      "label": "Plastic bottles, sold at the dump (2022)",
+      "price": 1.5,
+      "mark": "care",
+      "text": "L1–2 a pound; this uses the middle (our arithmetic).",
+      "src": "El Heraldo, May 2022 (Tegucigalpa packet)"
+     },
+     {
+      "label": "Cardboard, at a collection center (2023)",
+      "price": 0.75,
+      "mark": "care",
+      "text": "L0.50–1 a pound, one step up the chain; this uses the middle (our arithmetic).",
+      "src": "El Heraldo, Mar 2023",
+      "url": "https://www.elheraldo.hn/elheraldoplus/interactivos/honduras-pierde-millones-de-lempiras-al-solo-reciclar-el-5-de-la-basura-que-se-genera-EN12796828"
+     },
+     {
+      "label": "Plastic bottles, at a collection center (2023)",
+      "price": 3,
+      "mark": "care",
+      "text": "L3 a pound, one step up the chain.",
+      "src": "El Heraldo, Mar 2023",
+      "url": "https://www.elheraldo.hn/elheraldoplus/interactivos/honduras-pierde-millones-de-lempiras-al-solo-reciclar-el-5-de-la-basura-que-se-genera-EN12796828"
+     }
+    ],
+    "price": {
+     "min": 0.1,
+     "max": 15,
+     "step": 0.05
+    },
+    "pace": {
+     "def": 10,
+     "min": 1,
+     "max": 60,
+     "step": 1,
+     "label": "Pounds sorted in an hour (your estimate)",
+     "note": "No one publishes how many pounds a person sorts in an hour. Set your own estimate and say so."
+    },
+    "after": "Every pound is weighed by the buyer, at the buyer's price. Nobody counts the hours, so the pay never has to look like a wage."
+   },
+   "month": {
+    "days": 26,
+    "den": {
+     "src": "CDLE, Healthy Families and Workplaces Act",
+     "url": "https://cdle.colorado.gov/sites/cdle/files/info_%236b_rights_and_obligations_under_hfwa_2.27.2026.pdf"
+    },
+    "denNote": "Paid sick leave (48 hours a year) covers your own illness, a child's, and weather closures. FAMLI covers a longer illness or injury once you have $2,500 in reported wages. Both need a payslip; cash work gets neither in practice.",
+    "cur": "L",
+    "pay": {
+     "monthly": 9776,
+     "min": 1000,
+     "max": 30000,
+     "step": 100,
+     "text": "Average monthly income of self-employed workers in Honduras, L9,776 (2026).",
+     "src": "INE EPHPM via E&N, Sept 2026",
+     "url": "https://www.revistaeyn.com/empresasymanagement/ingreso-laboral-en-honduras-crece-69-pero-pobreza-alcanza-a-611-de-hogares-FA32105653"
+    },
+    "intro": "Pay comes by the day. Pick what happens this month and see who still gets paid."
+   },
+   "events": [
+    {
+     "label": "I'm sick (3 days)",
+     "days": 3,
+     "hfwa": true
+    },
+    {
+     "label": "My child is sick (2 days)",
+     "days": 2,
+     "hfwa": true
+    },
+    {
+     "label": "Storms stop work (2 days)",
+     "days": 2,
+     "hfwa": true
+    },
+    {
+     "label": "I'm hurt (12 days)",
+     "days": 12,
+     "hfwa": true,
+     "famli": true
+    },
+    {
+     "label": "Slow week: half the usual sales (3 days)",
+     "days": 3,
+     "w2": "a payslip job can cut hours too, so this is unpaid"
+    },
+    {
+     "label": "A buyer or boss doesn't pay (1 day)",
+     "days": 1,
+     "w2": "unpaid unless a claim with Denver Labor recovers it"
+    }
+   ],
+   "doing": {
+    "text": "Families pool incomes across several informal jobs; women run corner stores (pulperías) from their homes; neighbors lend.",
+    "src": "Tegucigalpa packet, Barrier 3"
+   },
+   "notice": "Try the dump price, then the collection-center price for the same cardboard. The step up the chain is worth more than any amount of extra effort, and the people at the dump can't take it.",
+   "yourCall": "If you could change one thing for a picker, the price, the buyer or a floor under bad weeks, which would you choose and why?"
+  },
+  "HOURS": {
+   "kind": "HoursOfWork",
+   "title": "What the pay has to cover: Tegucigalpa and Denver",
+   "question": "What share of a month's pay does the basic basket take for a household in Tegucigalpa? Compare it with Denver.",
+   "people": 4,
+   "rides": 44,
+   "notice": "The basic basket for four costs more than twice what the average self-employed worker earns. Even the minimum wage, which many never see, doesn't cover it. That is why households need several earners, including teenagers.",
+   "yourCall": "Who in a Tegucigalpa household would have to earn for the basket to be covered? What would they stop doing?",
+   "places": [
+    {
+     "id": "tg",
+     "label": "Tegucigalpa",
+     "cur": "L",
+     "month": 190.66666666666666,
+     "pays": [
+      {
+       "label": "Average income, self-employed",
+       "monthly": 9776,
+       "note": "L9,776 a month (2026).",
+       "src": "INE EPHPM via E&N, Sept 2026",
+       "url": "https://www.revistaeyn.com/empresasymanagement/ingreso-laboral-en-honduras-crece-69-pero-pobreza-alcanza-a-611-de-hogares-FA32105653"
+      },
+      {
+       "label": "Average income, domestic workers",
+       "monthly": 5628,
+       "note": "L5,628 a month (2026).",
+       "src": "INE EPHPM via E&N, Sept 2026",
+       "url": "https://www.revistaeyn.com/empresasymanagement/ingreso-laboral-en-honduras-crece-69-pero-pobreza-alcanza-a-611-de-hogares-FA32105653"
+      },
+      {
+       "label": "The minimum wage (small business)",
+       "monthly": 13292.06,
+       "note": "L13,292.06 a month (2026); 44.75% of wage earners were paid less in 2025.",
+       "src": "STSS via El Heraldo",
+       "url": "https://www.elheraldo.hn/economia/casi-870-000-trabajadores-privados-no-reciben-salario-minimo-honduras-AA31572211"
+      },
+      {
+       "label": "Set it yourself",
+       "custom": true,
+       "def": 6000,
+       "min": 500,
+       "max": 30000,
+       "step": 100,
+       "note": "Set a month's pay, for example a picker's at the dump.",
+       "household": false
+      }
+     ],
+     "food": {
+      "pp": 5367.2,
+      "short": "The basic basket",
+      "lab": "Basic basket",
+      "text": "INE: L5,367.20 a person a month, urban Honduras (2025).",
+      "src": "INE Honduras",
+      "url": "https://ine.gob.hn/wp-content/uploads/2025/11/ResultadosMedicionPobreza18nov2025.pdf"
+     },
+     "rent": null,
+     "bus": {
+      "fare": 13,
+      "text": "L13 a ride in Tegucigalpa and Comayagüela, held there by a government subsidy (2026).",
+      "src": "El Heraldo, Jul 2026",
+      "url": "https://www.elheraldo.hn/tegucigalpa/transportistas-advierten-mantener-pasaje-depende-pago-subsidio-FF31438481"
+     }
+    },
+    {
+     "id": "den",
+     "label": "Denver",
+     "cur": "$",
+     "month": 173.33333333333334,
+     "pays": [
+      {
+       "label": "The minimum wage (one full-time earner)",
+       "monthly": 3344,
+       "note": "$19.29 an hour in 2026, about $3,343 a month full time (our arithmetic).",
+       "src": "Denver Department of Finance",
+       "url": "https://denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/News/2025/Denver-Local-Minimum-Wage-Adjusts-to-19.29-per-Hour-for-2026"
+      },
+      {
+       "label": "Set it yourself",
+       "custom": true,
+       "def": 3343,
+       "min": 500,
+       "max": 8000,
+       "step": 50,
+       "note": "Day labor and cash work often pay less: 62% of surveyed Denver-area day laborers had experienced wage theft (2016–17).",
+       "household": false
+      }
+     ],
+     "food": {
+      "pp": 254.55,
+      "text": "USDA Thrifty Food Plan: $1,018.20 a month for a family of four (June 2026), about $255 a person (our arithmetic). National, not Denver prices.",
+      "src": "USDA Thrifty Food Plan via WTOP",
+      "url": "https://wtop.com/news/2026/07/how-much-should-i-spend-on-groceries/"
+     },
+     "rent": {
+      "amt": 1874,
+      "text": "Denver metro median rent: $1,874 a month, all units (ACS 2020–2024).",
+      "src": "USAFacts (Denver mirror D-HOUSING)"
+     },
+     "bus": {
+      "fare": 2.75,
+      "text": "RTD standard fare: $2.75 for a three-hour pass.",
+      "src": "RTD",
+      "url": "https://www.rtd-denver.com/fares"
+     }
+    }
+   ]
   }
  }
 };
